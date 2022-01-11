@@ -19,20 +19,20 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Key bits of information were taken from the full description from the links below:
 
-* Application call: [https://novonordiskfonden.dk/en/grants/data-science-research-infrastructure-2021/](https://novonordiskfonden.dk/en/grants/data-science-research-infrastructure-2021/)
+- Application call: [https://novonordiskfonden.dk/en/grants/data-science-research-infrastructure-2021/](https://novonordiskfonden.dk/en/grants/data-science-research-infrastructure-2021/)
 
-* More details: [https://novonordiskfonden.dk/wp-content/uploads/Data-Science-Research-Infrastructure-guidelines-2021-1.pdf](https://novonordiskfonden.dk/wp-content/uploads/Data-Science-Research-Infrastructure-guidelines-2021-1.pdf)
+- More details: [https://novonordiskfonden.dk/wp-content/uploads/Data-Science-Research-Infrastructure-guidelines-2021-1.pdf](https://novonordiskfonden.dk/wp-content/uploads/Data-Science-Research-Infrastructure-guidelines-2021-1.pdf)
 
 ## Key points and takeaways
 
-* State of the art
-* Computational and database infrastructures
-* Openness, transparency, and FAIR principles
-* Data engineering/infrastructure necessary for research
-* Qualifications of all involved (staff, collaborators) for continued maintenance
-* Funding for highly skilled personnel (e.g. technical, computational skills)
-* Boost research, including in companies that might not be able to invest in this
-* Education and training
+- State of the art
+- Computational and database infrastructures
+- Openness, transparency, and FAIR principles
+- Data engineering/infrastructure necessary for research
+- Qualifications of all involved (staff, collaborators) for continued maintenance
+- Funding for highly skilled personnel (e.g. technical, computational skills)
+- Boost research, including in companies that might not be able to invest in this
+- Education and training
 
 ## Purpose and overall description
 
@@ -40,15 +40,15 @@ The Data Science Research Infrastructure Programme aims to create bottom-up oppo
 
 The programme also aims to:
 
-* Strengthen _education and training_ in data science.
-* Ensure that facilities are _continuously developed and maintained_, also after their implementation. 
-* _Boost the research environment_, including companies (e.g.,small and medium-sized enterprises (SMEs) and incubators), that cannot invest in this to the same extent.
+- Strengthen _education and training_ in data science.
+- Ensure that facilities are _continuously developed and maintained_, also after their implementation. 
+- _Boost the research environment_, including companies (e.g.,small and medium-sized enterprises (SMEs) and incubators), that cannot invest in this to the same extent.
 
 Infrastructure must **state-of-the-art **and is defined as:
 
-* _Computational_ infrastructures, including supercomputers, GPUs, _storage_, software, etc.
-* _Databases and data resources, including data collection, cleaning, annotation, integration, management, etc._
-* Includes building and maintenance of existing databases if it promotes _collaboration_ and _FAIR_ (Findable, Accessible, Interoperable, Reusable) principles, as well as _secure_ and _ethical_ use of such data.
+- _Computational_ infrastructures, including supercomputers, GPUs, _storage_, software, etc.
+- _Databases and data resources, including data collection, cleaning, annotation, integration, management, etc._
+- Includes building and maintenance of existing databases if it promotes _collaboration_ and _FAIR_ (Findable, Accessible, Interoperable, Reusable) principles, as well as _secure_ and _ethical_ use of such data.
 
 ## Assessment criteria
 
@@ -68,17 +68,17 @@ Infrastructure must **state-of-the-art **and is defined as:
 
 The infrastructure must be linked to ongoing research and be within the scope of the NNF Data Science Initiative: 
 
-1. Development of new ... methods and technologies within data science, …, data engineering, …
+1. Development of new ... methods and technologies within data science, ..., data engineering, ...
 
 For projects mainly concerned with data science methods development, it is important that the applicants clearly show the relevance for potential future application and impact within life science, health science, or biotechnology.
 
 ## Eligibility 
 
-* Infrastructure linked to ongoing research and applicants must document expertise at the highest level.  
-* Must be established at a research institution with expertise within the relevant field to ensure that the infrastructure can _develop in parallel with the scientific progress_ in the area, and that there are qualified personnel to operate and maintain the equipment/facility.
-* _Infrastructure should be shared_ with the national research community. Priority for funding will be given to applications that demonstrate coordination with other Danish research groups.
-* Applications to maintain or expand existing infrastructures are eligible.
-* Funding may be requested for _skilled technical staff_ that can offer research-based training, consultation, data processing, data analysis, data management, software/database development, and dissemination of data/tools.
+- Infrastructure linked to ongoing research and applicants must document expertise at the highest level.  
+- Must be established at a research institution with expertise within the relevant field to ensure that the infrastructure can _develop in parallel with the scientific progress_ in the area, and that there are qualified personnel to operate and maintain the equipment/facility.
+- _Infrastructure should be shared_ with the national research community. Priority for funding will be given to applications that demonstrate coordination with other Danish research groups.
+- Applications to maintain or expand existing infrastructures are eligible.
+- Funding may be requested for _skilled technical staff_ that can offer research-based training, consultation, data processing, data analysis, data management, software/database development, and dissemination of data/tools.
 
 ## Funding 
 
@@ -86,54 +86,54 @@ DKK 1-3 million on average per year over 5 years, for a total of DKK 5-15 millio
 
 ## Project application details
 
-* **Grant period:** Start and end dates
-* **Project title:** Short title, maximum 150 characters
-* **Brief project description: **Brief stand-alone summary of project, describing its purpose, target group, and activities. Max 2000 characters, including spaces, line breaks and special characters
-* **Project description:** 
-    * Max 30,000 characters, including spaces, line breaks and special characters. Include purpose, background, methods, collaborations, and significance of the project. Plus 4 figures/diagrams.
-    * Clearly describe how the infrastructure will support and strengthen data science research and education in Denmark.
-    * Describe how the proposal compares to, supplements, and aligns with current national landscape and relevant future national strategies and initiatives, since the evaluation committee will be purely international.
-    * Address: 
-        * The scientific need, including a mapping of similar, existing infrastructures in Denmark, assessment of the timeliness of the infrastructure, and how it differs from those available in Danish research environments.
-        * The scientific and technical expertise within the relevant field at the institution where the infrastructure will be established.
-        * How the technical expertise will be obtained to ensure qualified operation and maintenance of infrastructure, as well as instruction of new and experienced users.
-        * The potential users of the infrastructure, including core collaborators and other relevant users. Should provide an estimate of the distribution of expected use by the applicant, core users, and external users.
-        * A clear plan for how the infrastructure will be made available for a wider group of scientists from, e.g., other research institutions, SME’s (companies), or incubators, including communication and outreach activities, access criteria, and possible payment schemes for external users. Priority for funding will be given to applications that demonstrate coordination with other Danish research groups. Open access is encouraged.
-        * A clear plan for data management (storage, databases, handling and processing of data using cloud/edge/fog computing, etc.).
-        * The organisation of the infrastructure, including a timeline for establishment, running and maintenance of the infrastructure and a description of a steering committee and its responsibilities. 
-        * A business plan describing how the infrastructure will be embedded, used, maintained, and financed during and after the grant has ended.If possible, please provide relevant key performance indicators.
-        * In case of user fees for using the infrastructure, make sure to describe how the income from such sources will be used during and after the grant period. For instance, if the funds will be used to upgrade, maintain, expand, etc.,the infrastructure.
-        * A plan for how the main applicant and/or core collaborators plan to actively participate in and direct educational or training courses in data science in Denmark, leveraging the proposed infrastructure. 
-        * Permits from public authorities needed to establish the infrastructure, if relevant. Abbreviations should be defined at the first use, and preferably a list of abbreviations should be included in the project description. 
-* **Literature references:** Please provide the reference information for the literature cited in the project description (maximum 4,000 characters, including spaces, line breaks and special characters).
-* **Lay project description:** Please provide a brief summary for non-experts in lay language. If the application is awarded a grant, the text may be used for publication (in English, maximum 1,000 characters, including spaces, line breaks,and special characters).
-* **Budget:** Applicants may apply for funding for the following types of expenses when directly related to the project:
-    * Equipment, i.e., purchase of equipment for the infrastructure. This is not necessarily a single piece of equipment but can be several that cover different aspects of the same field or can be equipment that is often used sequentially. However, the intent is that only larger equipment should be put in the equipment budget category.
-    * Infrastructure, i.e.,establishment and installation of the infrastructure. This may include minor modifications strictly necessary for establishing and operating the infrastructure.
-    * Operating expenses, e.g.:
-        * Materials, consumables, and service contracts directly related to operating and maintaining the infrastructure.
-        * Funds for hosting annual networking/outreach events.
-        * Specialised software needed for the infrastructure.
-    * Salary for technical personnel (i.e. AC TAP or TAP). These can also offer research-based training, consultation, data processing, data analysis, data management, software/database development, and dissemination of data/tools. Salary can be used for personnel with an academic background but not for conducting research. 
-    * Training for running and maintaining the infrastructure, including travel and accommodations.
-    * Data management, e.g. expenses for collecting and storing data.
-    * Direct administrative expenses of up to 5% of the total funding:
-        * Such as for accounting, payment of salaries, purchasing, hiring, auditing, and financial reporting on the project.
-        * Cannot cover administrative expenses not directly related to the project.
+- **Grant period:** Start and end dates
+- **Project title:** Short title, maximum 150 characters
+- **Brief project description: **Brief stand-alone summary of project, describing its purpose, target group, and activities. Max 2000 characters, including spaces, line breaks and special characters
+- **Project description:** 
+    - Max 30,000 characters, including spaces, line breaks and special characters. Include purpose, background, methods, collaborations, and significance of the project. Plus 4 figures/diagrams.
+    - Clearly describe how the infrastructure will support and strengthen data science research and education in Denmark.
+    - Describe how the proposal compares to, supplements, and aligns with current national landscape and relevant future national strategies and initiatives, since the evaluation committee will be purely international.
+    - Address: 
+        - The scientific need, including a mapping of similar, existing infrastructures in Denmark, assessment of the timeliness of the infrastructure, and how it differs from those available in Danish research environments.
+        - The scientific and technical expertise within the relevant field at the institution where the infrastructure will be established.
+        - How the technical expertise will be obtained to ensure qualified operation and maintenance of infrastructure, as well as instruction of new and experienced users.
+        - The potential users of the infrastructure, including core collaborators and other relevant users. Should provide an estimate of the distribution of expected use by the applicant, core users, and external users.
+        - A clear plan for how the infrastructure will be made available for a wider group of scientists from, e.g., other research institutions, SME’s (companies), or incubators, including communication and outreach activities, access criteria, and possible payment schemes for external users. Priority for funding will be given to applications that demonstrate coordination with other Danish research groups. Open access is encouraged.
+        - A clear plan for data management (storage, databases, handling and processing of data using cloud/edge/fog computing, etc.).
+        - The organisation of the infrastructure, including a timeline for establishment, running and maintenance of the infrastructure and a description of a steering committee and its responsibilities. 
+        - A business plan describing how the infrastructure will be embedded, used, maintained, and financed during and after the grant has ended.If possible, please provide relevant key performance indicators.
+        - In case of user fees for using the infrastructure, make sure to describe how the income from such sources will be used during and after the grant period. For instance, if the funds will be used to upgrade, maintain, expand, etc.,the infrastructure.
+        - A plan for how the main applicant and/or core collaborators plan to actively participate in and direct educational or training courses in data science in Denmark, leveraging the proposed infrastructure. 
+        - Permits from public authorities needed to establish the infrastructure, if relevant. Abbreviations should be defined at the first use, and preferably a list of abbreviations should be included in the project description. 
+- **Literature references:** Please provide the reference information for the literature cited in the project description (maximum 4,000 characters, including spaces, line breaks and special characters).
+- **Lay project description:** Please provide a brief summary for non-experts in lay language. If the application is awarded a grant, the text may be used for publication (in English, maximum 1,000 characters, including spaces, line breaks,and special characters).
+- **Budget:** Applicants may apply for funding for the following types of expenses when directly related to the project:
+    - Equipment, i.e., purchase of equipment for the infrastructure. This is not necessarily a single piece of equipment but can be several that cover different aspects of the same field or can be equipment that is often used sequentially. However, the intent is that only larger equipment should be put in the equipment budget category.
+    - Infrastructure, i.e.,establishment and installation of the infrastructure. This may include minor modifications strictly necessary for establishing and operating the infrastructure.
+    - Operating expenses, e.g.:
+        - Materials, consumables, and service contracts directly related to operating and maintaining the infrastructure.
+        - Funds for hosting annual networking/outreach events.
+        - Specialised software needed for the infrastructure.
+    - Salary for technical personnel (i.e. AC TAP or TAP). These can also offer research-based training, consultation, data processing, data analysis, data management, software/database development, and dissemination of data/tools. Salary can be used for personnel with an academic background but not for conducting research. 
+    - Training for running and maintaining the infrastructure, including travel and accommodations.
+    - Data management, e.g. expenses for collecting and storing data.
+    - Direct administrative expenses of up to 5% of the total funding:
+        - Such as for accounting, payment of salaries, purchasing, hiring, auditing, and financial reporting on the project.
+        - Cannot cover administrative expenses not directly related to the project.
 
 # Trimmed Project Application
 
 Character counts:
 
-* Title: 101 / 150
-* Brief project description**:** 1996 / 2000
-* Lay project description: 919 / 1000
-* Project description: ~29,500 / 30,000
-* Literature references: / 4000
+- Title: 101 / 150
+- Brief project description**:** 1996 / 2000
+- Lay project description: 919 / 1000
+- Project description: ~29,500 / 30,000
+- Literature references: / 4000
 
 Figure counts:
 
-* 3 / 4
+- 3 / 4
 
 ## Brief project description 
 
@@ -214,17 +214,17 @@ In order to maximise the potential for re-use and to minimise the technical debt
 
 Based on the above principles, we have chosen the following software and conventions to form the framework’s foundation:
 
-* **R and/or Python:** Are open source and established.
-* **RESTful API:** REST (representational state transfer) is the de facto standard for building APIs.
-* **CSV, SQL, and JSON format for data storage:** Are open source and established formats for data and other web information.
-    * JSON (JavaScript Object Notation) is the Internet’s de facto standard format for information transfer.
-    * CSV is well known to researchers.
-    * SQL (a querying language and data storage format) is a widely used format for storing data.
-* **Git, GitLab, and DVC for version control: **Formal version control (VC) systems are software that track changes to files and are standard practice software engineering. After Git was developed, it has increasingly been used by researchers across scientific fields to improve research transparency and openness. GitLab is an open source product to host Git projects and handles many modern software development tasks. DVC, or Data Version Control, is a machine learning VC software for data and models that integrates with Git. 
-* **Markdown for documentation:** Markdown is a common web format and is quickly becoming a standard in data science and even within many scientific fields. It is a simple syntax for writing documents that enables easy conversion to file formats like HTML or Word. It is simple and portable, so will be used for writing the data dictionary, results, documentation, and training material.
-* **Tools for modern web-based interfaces:** These include HTML, CSS, JavaScript, and other web technologies, as well as User Interface (UI)/User Experience (UX) design principles.
-* **Software development best practices: **This includes unit testing, continuous integration, and document-driven development (to emphasize usability). We’ll use the concept of Minimum Viable Product (MVP) as a means of quickly building something that is minimally workable.
-* **Re-use of similar infrastructures:** Modules from initiatives like Gen3 will either be re-used directly or modified to fit our requirements. TODO: Our added value over Gen3.
+- **R and/or Python:** Are open source and established.
+- **RESTful API:** REST (representational state transfer) is the de facto standard for building APIs.
+- **CSV, SQL, and JSON format for data storage:** Are open source and established formats for data and other web information.
+    - JSON (JavaScript Object Notation) is the Internet’s de facto standard format for information transfer.
+    - CSV is well known to researchers.
+    - SQL (a querying language and data storage format) is a widely used format for storing data.
+- **Git, GitLab, and DVC for version control: **Formal version control (VC) systems are software that track changes to files and are standard practice software engineering. After Git was developed, it has increasingly been used by researchers across scientific fields to improve research transparency and openness. GitLab is an open source product to host Git projects and handles many modern software development tasks. DVC, or Data Version Control, is a machine learning VC software for data and models that integrates with Git. 
+- **Markdown for documentation:** Markdown is a common web format and is quickly becoming a standard in data science and even within many scientific fields. It is a simple syntax for writing documents that enables easy conversion to file formats like HTML or Word. It is simple and portable, so will be used for writing the data dictionary, results, documentation, and training material.
+- **Tools for modern web-based interfaces:** These include HTML, CSS, JavaScript, and other web technologies, as well as User Interface (UI)/User Experience (UX) design principles.
+- **Software development best practices: **This includes unit testing, continuous integration, and document-driven development (to emphasize usability). We’ll use the concept of Minimum Viable Product (MVP) as a means of quickly building something that is minimally workable.
+- **Re-use of similar infrastructures:** Modules from initiatives like Gen3 will either be re-used directly or modified to fit our requirements. TODO: Our added value over Gen3.
 
 ## The framework’s layers
 
@@ -320,14 +320,14 @@ While the proposed framework is software-based, storing and deploying the infras
 
 To have a meaningful impact on improving research infrastructure, the minimum skills and knowledge necessary are:
 
-* Building and interacting with RESTful APIs (or APIs in general)
-* Creating websites and knowledge on UI/UX designs
-* Developing software/general programming in R/Python
-* Using Git and GitHub/GitLab
-* Database management/administration
-* Familiar with creating training material and teaching
-* Experience in working on open source projects and with FAIR principles
-* Experience in the Danish research computing environments, e.g., “forskermaskine” (research engine on Denmark Statistics (DST))
+- Building and interacting with RESTful APIs (or APIs in general)
+- Creating websites and knowledge on UI/UX designs
+- Developing software/general programming in R/Python
+- Using Git and GitHub/GitLab
+- Database management/administration
+- Familiar with creating training material and teaching
+- Experience in working on open source projects and with FAIR principles
+- Experience in the Danish research computing environments, e.g., “forskermaskine” (research engine on Denmark Statistics (DST))
 
 ## Applying the framework to DD2
 
@@ -406,15 +406,15 @@ Within the DD2 setting, an open, transparent, and easy access to this constantly
 
 Character counts:
 
-* Title: / 150
-* Brief project description**: **/ 2000
-* Project description: / 30,000
-* Literature references: / 4000
-* Lay project description: / 1000
+- Title: / 150
+- Brief project description**: **/ 2000
+- Project description: / 30,000
+- Literature references: / 4000
+- Lay project description: / 1000
 
 Figure counts:
 
-* 3 / 4
+- 3 / 4
 
 ## Brief project description
 
@@ -424,15 +424,15 @@ Figure counts:
 
 This is the chosen one: 
 
-* A framework for an open and scalable infrastructure for biomedical data exemplified by the DD2 initiative
+- A framework for an open and scalable infrastructure for biomedical data exemplified by the DD2 initiative
 
 Other potential options:
 
-* An Open and Scalable Framework for An Infrastructure for Biomedical Data
-* Infrastructure for Biomedical Data: An open and scalable framework
-* Data infrastructure for the DD2 study using an open and scalable framework
-* Data Infrastructure Project for Biomedical Data (DIP for biomedical data)
-* Data Infrastructure Project for Diabetes Data (DIP for Diabetes)
+- An Open and Scalable Framework for An Infrastructure for Biomedical Data
+- Infrastructure for Biomedical Data: An open and scalable framework
+- Data infrastructure for the DD2 study using an open and scalable framework
+- Data Infrastructure Project for Biomedical Data (DIP for biomedical data)
+- Data Infrastructure Project for Diabetes Data (DIP for Diabetes)
 
 ## Background
 
@@ -468,11 +468,11 @@ Thus, continuously increasing the number of participants recruited, adding new d
 
 At the same time, it is becoming increasingly important and resource heavy to maintain, extend and improve the existing DD2 research infrastructure in order to ensure the success of this resource. However, very little funding has been allocated to this so far, despite the increasing need for:
 
-* Better data documentation
-* Streamlining and automating procedures for transparency and less manual processing
-* Improved traceability and reproducibility
-* Fast, easy and transparent access to data for (even more) researchers
-* Formal training of research staff in these skills
+- Better data documentation
+- Streamlining and automating procedures for transparency and less manual processing
+- Improved traceability and reproducibility
+- Fast, easy and transparent access to data for (even more) researchers
+- Formal training of research staff in these skills
 
 ### Current state-of-the-art
 
@@ -538,17 +538,17 @@ In order to maximise the potential for re-use by the wider research community an
 
 Based on the above principles, the following software, tools, and conventions are chosen that would form the basis of the framework itself and of developing it:
 
-* **R and/or Python:** Both are open source, widely used, well established, stable, and reliable programming languages. R will likely be familiar to many researchers given its strength in data science, while Python is widely used in formal software engineering. Either of these languages will be used as the basis for creating many of the software components of the framework.
-* **RESTful API:** REST means representational state transfer and is the de facto guide for building APIs across industries (e.g. GitHub, Google, Gen3). This guide will be used to form the basis of the entire data infrastructure API.
-* **CSV, SQL (other types?), or JSON format for data storage:** All are open source, widely used, and well established formats for storing data as well as storing relevant information that will be displayed to the users, including the data documentation.
-    * JSON (JavaScript Object Notation) is the de facto standard format for information transfer on the Internet and integrates very well with APIs and all programming languages. Working with JSON files is similar to working with CSV files.
-    * CSV is very well known to researchers and works well with other programming languages.
-    * SQL (a querying language and data storage format) is a widely used format for storing data on the Internet because of its speed, power, and flexibility in interacting with data. It’s a bit more difficult to work with and requires knowledge of the SQL language.
-* **Git, GitLab (maybe?), and DVC for version control: **Formal version control systems are software that track changes to files and have been used in software engineering for decades. With the development of the version control software Git, it has increasingly been used by researchers across scientific fields as a means of improving research transparency and openness. GitLab is an open source product that hosts Git projects and is required for many modern software development tasks. It can be deployed on the server where the data are stored. These are used to track changes to the data and to the infrastructure framework, as well as to adhere to transparency, openness, and FAIR principles. DVC, which stands for Data Version Control ([https://dvc.org/](https://dvc.org/)), is a machine learning version control system for data and models that is compatible and integrates with Git. 
-* **Markdown for documentation:** Markdown is a common format used throughout the web and is quickly becoming a standard in data science and even within many scientific fields in general. It is a simple syntax for writing documents that enable easy translation to multiple file formats, such as HTML, Word, and PDF. Because of its simplicity and portability, it will be used for writing and displaying the documentation of the data, results, as well as the training and educational material.
-* **Tools used in any modern web-based interface:** These include the standard HTML, CSS, JavaScript and other web technologies, as well as User Interface (UI)/User Experience (UX) design principles.
-* **Best practices for software development: **This includes unit testing, continuous integration, and document-driven development (to emphasize usability, especially for novice users). We’ll use the concept of Minimum Viable Product as a means of building something that is minimally workable as soon as possible.
-* **Re-use of similar infrastructures:** ...Like Gen3.
+- **R and/or Python:** Both are open source, widely used, well established, stable, and reliable programming languages. R will likely be familiar to many researchers given its strength in data science, while Python is widely used in formal software engineering. Either of these languages will be used as the basis for creating many of the software components of the framework.
+- **RESTful API:** REST means representational state transfer and is the de facto guide for building APIs across industries (e.g. GitHub, Google, Gen3). This guide will be used to form the basis of the entire data infrastructure API.
+- **CSV, SQL (other types?), or JSON format for data storage:** All are open source, widely used, and well established formats for storing data as well as storing relevant information that will be displayed to the users, including the data documentation.
+    - JSON (JavaScript Object Notation) is the de facto standard format for information transfer on the Internet and integrates very well with APIs and all programming languages. Working with JSON files is similar to working with CSV files.
+    - CSV is very well known to researchers and works well with other programming languages.
+    - SQL (a querying language and data storage format) is a widely used format for storing data on the Internet because of its speed, power, and flexibility in interacting with data. It’s a bit more difficult to work with and requires knowledge of the SQL language.
+- **Git, GitLab (maybe?), and DVC for version control: **Formal version control systems are software that track changes to files and have been used in software engineering for decades. With the development of the version control software Git, it has increasingly been used by researchers across scientific fields as a means of improving research transparency and openness. GitLab is an open source product that hosts Git projects and is required for many modern software development tasks. It can be deployed on the server where the data are stored. These are used to track changes to the data and to the infrastructure framework, as well as to adhere to transparency, openness, and FAIR principles. DVC, which stands for Data Version Control ([https://dvc.org/](https://dvc.org/)), is a machine learning version control system for data and models that is compatible and integrates with Git. 
+- **Markdown for documentation:** Markdown is a common format used throughout the web and is quickly becoming a standard in data science and even within many scientific fields in general. It is a simple syntax for writing documents that enable easy translation to multiple file formats, such as HTML, Word, and PDF. Because of its simplicity and portability, it will be used for writing and displaying the documentation of the data, results, as well as the training and educational material.
+- **Tools used in any modern web-based interface:** These include the standard HTML, CSS, JavaScript and other web technologies, as well as User Interface (UI)/User Experience (UX) design principles.
+- **Best practices for software development: **This includes unit testing, continuous integration, and document-driven development (to emphasize usability, especially for novice users). We’ll use the concept of Minimum Viable Product as a means of building something that is minimally workable as soon as possible.
+- **Re-use of similar infrastructures:** ...Like Gen3.
 
 ### Core layers of the framework
 
@@ -650,17 +650,17 @@ While the proposed infrastructure framework is largely software-based, storing a
 
 The technical skills and knowledge required for building these types of state of the art infrastructure are in high demand given the impact on efficiency, scalability, and productivity in organizations and companies of all sizes. To have any meaningful impact on improving and modernizing research infrastructure, the skills and knowledge needed at a minimum would include:
 
-* Building RESTful APIs (or APIs in general)
-* Creating websites and knowledge on modern UI/UX design principles
-* Developing software/general programming in R/Python
-* Using Git and GitHub/GitLab, version control in general
-* Familiar with interacting with APIs
-* Database management/administration
-* Writing and linking data documentation and using Markdown
-* Familiar with teaching, running workshops, and creating some training tutorials
-* Experienced in working on open source projects
-* Experienced in working with FAIR database management and creation.
-* Experience working within the Danish research computing environments, e.g. “forskermaskine” on Denmark Statistics (DST).
+- Building RESTful APIs (or APIs in general)
+- Creating websites and knowledge on modern UI/UX design principles
+- Developing software/general programming in R/Python
+- Using Git and GitHub/GitLab, version control in general
+- Familiar with interacting with APIs
+- Database management/administration
+- Writing and linking data documentation and using Markdown
+- Familiar with teaching, running workshops, and creating some training tutorials
+- Experienced in working on open source projects
+- Experienced in working with FAIR database management and creation.
+- Experience working within the Danish research computing environments, e.g. “forskermaskine” on Denmark Statistics (DST).
 
 At the least, a data infrastructure/research software engineer, database administrator, and project manager positions would be needed for this project. To have the most impact however, the recommended positions would be having a data infrastructure engineer, research software engineer, website developer, database administrator, project manager(s), training tutorial material developers and teachers. Aside from the required positions, many of the other jobs and necessary skills could be hired out as consultants on an as-needed basis as an efficient and cost effective solution.
 
@@ -696,14 +696,14 @@ The advisory group of DD2 will also act as the advisory group of the current pro
 
  
 
-    * Kurt Højlund (DD2, SDCO) 
-    * Henrik Toft Sørensen (KEA) 
-    * Allan Vaag (SDCC)
-    * Torben Hansen (KU) 
-    * Michael Olsen (SDCS)
-    * Peter Vestergaard (SDCN)
-    * Niels Jessen (SDCA)
-    * Søren Brunak (UCPH)
+    - Kurt Højlund (DD2, SDCO) 
+    - Henrik Toft Sørensen (KEA) 
+    - Allan Vaag (SDCC)
+    - Torben Hansen (KU) 
+    - Michael Olsen (SDCS)
+    - Peter Vestergaard (SDCN)
+    - Niels Jessen (SDCA)
+    - Søren Brunak (UCPH)
 
 ## Significance
 
@@ -731,100 +731,100 @@ Finally, the same data infrastructure template can easily be applied to other Da
 
 ## Before submission
 
-* Copy application and paste in new section to trim it to character limit.
-* Write lay proposal
-* Write brief description
+- Copy application and paste in new section to trim it to character limit.
+- Write lay proposal
+- Write brief description
 
 ## After submission
 
-* TODO: Will eventually need to build a more detailed use case description. 
-* IDEA: Some way of generating a DOI for the DD2 itself/for the underlying database, without actually making the data public? Maybe the code or framework, along with the version? Need people to cite it somehow.
-* IDEA: Use this as the basis for a paper on the implementation details of the framework, to show we’re serious about it, and as a way to make this proposal itself a scientific output.
-* TODO: Reference to Data Package/Frictionless Data as Common Data Model: [https://frictionlessdata.io/](https://frictionlessdata.io/) ? Need to decide on exact Data Model.
-* TODO: Basic overview of strengths and weaknesses?
-* TODO: Add notes about licensing and copyright. For software, usually copyright resides with the employer (e.g. for SDCA that would be Region Midt). We’d need to discuss this with the employer before we can move too much forward. License should be permissible, e.g. by using MIT License.
-* TODO: Will need to include a list of “prerequisites” that potential users of this framework would need access to (or similar enough free resources) in order to either minimally or optimally make use the framework
+- TODO: Will eventually need to build a more detailed use case description. 
+- IDEA: Some way of generating a DOI for the DD2 itself/for the underlying database, without actually making the data public? Maybe the code or framework, along with the version? Need people to cite it somehow.
+- IDEA: Use this as the basis for a paper on the implementation details of the framework, to show we’re serious about it, and as a way to make this proposal itself a scientific output.
+- TODO: Reference to Data Package/Frictionless Data as Common Data Model: [https://frictionlessdata.io/](https://frictionlessdata.io/) ? Need to decide on exact Data Model.
+- TODO: Basic overview of strengths and weaknesses?
+- TODO: Add notes about licensing and copyright. For software, usually copyright resides with the employer (e.g. for SDCA that would be Region Midt). We’d need to discuss this with the employer before we can move too much forward. License should be permissible, e.g. by using MIT License.
+- TODO: Will need to include a list of “prerequisites” that potential users of this framework would need access to (or similar enough free resources) in order to either minimally or optimally make use the framework
 
 # From feedback
 
-* Title, background, and purpose:
-    * Text as it is now perhaps is a bit too generic. 
-    * It would be good if it more specifically would be mentioned how principles and technical solutions from the two role model examples, UK Biobank and Gen3, would be lifted over into the proposed framework.
-    * Title: Enabling accessibility of patient relevant type 2 diabetes data in Denmark building on the DD2 database; or similar. Good to mention T2D and to position DD2 as an example or tool to reach a higher arching goal
-    * Title is too broad and generic
-    * DD2 is rather a Danish national type 2 diabetes research collaboration and database initiative
-    * Highlight more that the low use of DD2 is mainly caused by the lack of a better infrastructure, more advanced interoperability with other resources, performance limitations etc. etc.
-    * Mention that the DD2 initiative was founded by money from the Danish National Strategic Research Council, which actually was a major reason for why NNF has provided so much financial support.
-    * Important not to mix too much the two aims of establishing the cohort and improving the infrastructure. Perhaps stress that this grant will not be used for the former.
-    * Clarify that the application is not going with the “hosted server” model like UKBB.
-    * This effort is mostly about data “findability” and whom to direct data access applications to. Not for running a study like DD2.
-    * For similar efforts, What about Danish data sources? For example: The Blood Donor Study? The Copenhagen Population Study? The National Biobank?
-    * Title: I suggest that "the DD2 biobank" or "the largest national type 2 diabetes biobank" is included in the title
-    * Make sure anything in the background is crystal clear how it relates to the project.
-    * Regarding complications: It's not different complications, but "different risks of complications and prognosis"
-* Methods:
-    * About User 1: I think this type of usage is very similar to the eCRF concept. There is a lot of methodology/practices around eCRFs that the reviewers would expect the project to take advantage of. The wording is unclear in relation to data types, how would e.g. RNAseq data or Mesoscale data find their way into the infrastructure? (This probably refers to GWAS data, which will be on a high performance computing (HPC) platform, e.g., Computerome2, while the "small" data will be on "forskermaskine" and the original stored at Odense.)
-    * About open source: Consider that biomedical data domain uses largely commercial tools
-    * How does SQL relate to images and non-text based data? Backend for these data types?
-    * Legality section needs clarification as it could be confusing.
-    * Not sure how sustainability will be ensured? Less resources / staff needed when infrastructure has been established? Renew and update IT?
-    * Clarify the structure of the methods section (e.g. explicit on talking about framework first than how it will be applied to DD2).
-    * Define “modern”?
-    * Large amounts of data are stored at SDS
-    * Should describe how to deal with the linkage with DST/SDS.
-    * Data for DD2 stored in Vejle, and the plan is to store all samples at two locations. A copy part for most participants are stored at Statens Seruminstitut.
-* From Jens:
-    * As disused today a I hereby send a fast estimated budget on what is need to join the 3 current databases (biobank data, clinical data and PROM-data) used for data collection and maintain them in the future. The 3 databases are related to data collection prior handing data over to data management at KEA where they are linking to registers. The data management in this data collection phase includes – online consent (Nem-ID), biobank data from GP to Vejle (keeping track of sample quality and location), maintains of WebPatient and WebReq and ensuring a daily update on all GPs I DK and linking patients to their current GP
-    * 
-* Misc:
-    * Not adopt Gen3 directly? Are there technical or political barriers?
-    * power users that can drive it programmatically and create programs that interface with it?
-    * For saving raw data files: Depending on the amount of data, you might want to opt for binary formats to save space. Or at least some heavy compression. I don't know how it compares storage-wise if these are stored in the database or separately with links from the database.
-    * How many User 4 are there or are needed?
-    * For Frontend for User 1: Does this mean that it will check for JSON &lt; CSV etc. Or does it mean that you will check if the data within those files follow the right format? Tidy etc
-    * For User 3: Will you do any viz etc to show key findings to some of the user group, or is it already enough that there are scientific papers accompanying many of these datasets for those who want to read more? Is there an outreach/educational component to this?
-    * maby use "data warehouse" or "enterprise data warehouse"
-    * The HL7® FHIR® (Fast Healthcare Interoperability Resources 1 ) standard defines how healthcare information can be exchanged between different computer systems regardless of how it is stored in those systems.
+- Title, background, and purpose:
+    - Text as it is now perhaps is a bit too generic. 
+    - It would be good if it more specifically would be mentioned how principles and technical solutions from the two role model examples, UK Biobank and Gen3, would be lifted over into the proposed framework.
+    - Title: Enabling accessibility of patient relevant type 2 diabetes data in Denmark building on the DD2 database; or similar. Good to mention T2D and to position DD2 as an example or tool to reach a higher arching goal
+    - Title is too broad and generic
+    - DD2 is rather a Danish national type 2 diabetes research collaboration and database initiative
+    - Highlight more that the low use of DD2 is mainly caused by the lack of a better infrastructure, more advanced interoperability with other resources, performance limitations etc. etc.
+    - Mention that the DD2 initiative was founded by money from the Danish National Strategic Research Council, which actually was a major reason for why NNF has provided so much financial support.
+    - Important not to mix too much the two aims of establishing the cohort and improving the infrastructure. Perhaps stress that this grant will not be used for the former.
+    - Clarify that the application is not going with the “hosted server” model like UKBB.
+    - This effort is mostly about data “findability” and whom to direct data access applications to. Not for running a study like DD2.
+    - For similar efforts, What about Danish data sources? For example: The Blood Donor Study? The Copenhagen Population Study? The National Biobank?
+    - Title: I suggest that "the DD2 biobank" or "the largest national type 2 diabetes biobank" is included in the title
+    - Make sure anything in the background is crystal clear how it relates to the project.
+    - Regarding complications: It's not different complications, but "different risks of complications and prognosis"
+- Methods:
+    - About User 1: I think this type of usage is very similar to the eCRF concept. There is a lot of methodology/practices around eCRFs that the reviewers would expect the project to take advantage of. The wording is unclear in relation to data types, how would e.g. RNAseq data or Mesoscale data find their way into the infrastructure? (This probably refers to GWAS data, which will be on a high performance computing (HPC) platform, e.g., Computerome2, while the "small" data will be on "forskermaskine" and the original stored at Odense.)
+    - About open source: Consider that biomedical data domain uses largely commercial tools
+    - How does SQL relate to images and non-text based data? Backend for these data types?
+    - Legality section needs clarification as it could be confusing.
+    - Not sure how sustainability will be ensured? Less resources / staff needed when infrastructure has been established? Renew and update IT?
+    - Clarify the structure of the methods section (e.g. explicit on talking about framework first than how it will be applied to DD2).
+    - Define “modern”?
+    - Large amounts of data are stored at SDS
+    - Should describe how to deal with the linkage with DST/SDS.
+    - Data for DD2 stored in Vejle, and the plan is to store all samples at two locations. A copy part for most participants are stored at Statens Seruminstitut.
+- From Jens:
+    - As disused today a I hereby send a fast estimated budget on what is need to join the 3 current databases (biobank data, clinical data and PROM-data) used for data collection and maintain them in the future. The 3 databases are related to data collection prior handing data over to data management at KEA where they are linking to registers. The data management in this data collection phase includes – online consent (Nem-ID), biobank data from GP to Vejle (keeping track of sample quality and location), maintains of WebPatient and WebReq and ensuring a daily update on all GPs I DK and linking patients to their current GP
+    - 
+- Misc:
+    - Not adopt Gen3 directly? Are there technical or political barriers?
+    - power users that can drive it programmatically and create programs that interface with it?
+    - For saving raw data files: Depending on the amount of data, you might want to opt for binary formats to save space. Or at least some heavy compression. I don't know how it compares storage-wise if these are stored in the database or separately with links from the database.
+    - How many User 4 are there or are needed?
+    - For Frontend for User 1: Does this mean that it will check for JSON &lt; CSV etc. Or does it mean that you will check if the data within those files follow the right format? Tidy etc
+    - For User 3: Will you do any viz etc to show key findings to some of the user group, or is it already enough that there are scientific papers accompanying many of these datasets for those who want to read more? Is there an outreach/educational component to this?
+    - maby use "data warehouse" or "enterprise data warehouse"
+    - The HL7® FHIR® (Fast Healthcare Interoperability Resources 1 ) standard defines how healthcare information can be exchanged between different computer systems regardless of how it is stored in those systems.
 
 # Misc useful information
 
-* Access to data through “forskermaskine” requires a valid authorization, usually given to only one person (often the head of department) per approved institution. Importantly, if even one researcher working under the institution's authorization breaches data confidentiality (through transferring microdata outside the “forskermaskine”), the access is closed for the entire institution, and in the worst case permanently. Therefore, the authorized institutions (and corresponding persons) are reluctant to give access to researchers outside their own institutions or close collaborators. Thus, DD2 is presently working on establishing legal procedures for data access for researchers from different institutions (national and international).
-* File size of SNP/Genotyping/GWAS data: 0.000072MB per SNP per individual. So for 6,000 individuals and 1 mio genotyped SNPs: 0.4 TB. Also, approx 20 mio SNPs will probably be imputed, so times that by 20, and you get about 8 TB. This is for the planned GWAS 2. GWAS 1 is already available (first 3,000 participants and 500,000 genotyped SNPs, several mio. imputed) is maybe half that size, or smaller, so approx. additional 2-4 TB. Some references [here](https://www.ncbi.nlm.nih.gov/pubmed/29734293) and [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2795954/). 
-* [https://www.ohdsi.org/data-standardization/the-common-data-model/](https://www.ohdsi.org/data-standardization/the-common-data-model/)
+- Access to data through “forskermaskine” requires a valid authorization, usually given to only one person (often the head of department) per approved institution. Importantly, if even one researcher working under the institution's authorization breaches data confidentiality (through transferring microdata outside the “forskermaskine”), the access is closed for the entire institution, and in the worst case permanently. Therefore, the authorized institutions (and corresponding persons) are reluctant to give access to researchers outside their own institutions or close collaborators. Thus, DD2 is presently working on establishing legal procedures for data access for researchers from different institutions (national and international).
+- File size of SNP/Genotyping/GWAS data: 0.000072MB per SNP per individual. So for 6,000 individuals and 1 mio genotyped SNPs: 0.4 TB. Also, approx 20 mio SNPs will probably be imputed, so times that by 20, and you get about 8 TB. This is for the planned GWAS 2. GWAS 1 is already available (first 3,000 participants and 500,000 genotyped SNPs, several mio. imputed) is maybe half that size, or smaller, so approx. additional 2-4 TB. Some references [here](https://www.ncbi.nlm.nih.gov/pubmed/29734293) and [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2795954/). 
+- [https://www.ohdsi.org/data-standardization/the-common-data-model/](https://www.ohdsi.org/data-standardization/the-common-data-model/)
 
 # Minutes
 
 ## 2021-04-21
 
-* Organization diagram:
-    * DD2 Project management group: At KEA? At Odense? At Biobank?
-    * Called Research Advisory Board
-        * Two persons from each region of Denmark?
-            * One from Steno Center and another from GPs?
-    * Link: [https://dd2.dk/om-dd2/fagligt-raadgivningsforum](https://dd2.dk/om-dd2/fagligt-raadgivningsforum)
-    * Strategy is approved by DD2 Board
-    * Attach us to the Research Advisory Board?
-        * To highlight we are part of research 
-        * To make sure we are “online” with other budget decisions
-* Funding… Update DST data into research engine.
-    * Update where data is stored
-* Data managers at KEA will need access
+- Organization diagram:
+    - DD2 Project management group: At KEA? At Odense? At Biobank?
+    - Called Research Advisory Board
+        - Two persons from each region of Denmark?
+            - One from Steno Center and another from GPs?
+    - Link: [https://dd2.dk/om-dd2/fagligt-raadgivningsforum](https://dd2.dk/om-dd2/fagligt-raadgivningsforum)
+    - Strategy is approved by DD2 Board
+    - Attach us to the Research Advisory Board?
+        - To highlight we are part of research 
+        - To make sure we are “online” with other budget decisions
+- Funding… Update DST data into research engine.
+    - Update where data is stored
+- Data managers at KEA will need access
 
 ## 2021-04-28
 
-* Need to include data storage and merging data?
-    * Merging data as in from Core DD2, from DST/SDS, and from the HPC for the larger data
-        * KEA has only additional data from DST/SDS
-            * They are working on ways to streamlining linking and merging.
-        * GWAS (might be) on Computerome2?
-            * Because it is so large (...size?), so can’t really be put on DST/SDS
-            * GWAS also require HPC for its processing
-            * Need two solutions for storage, because one for the large stuff and one for the DST
-    * Data storage at maybe three locations
-        * Data from Forskinemaskiner (?) on DST
-            * Have a shared authorization for sharing DST maskiner
-    * Describe these as key issues to deal with, rather than a key component of this framework.
-        * Data management position should be considered.
-    * SDCA could take lead over the legal stuff? But then it would not be at Odense… but doesn’t mean we take data ownership.
-        * Since we need to work within rules of DST
-        * And get a shared DST server in SDCA?
+- Need to include data storage and merging data?
+    - Merging data as in from Core DD2, from DST/SDS, and from the HPC for the larger data
+        - KEA has only additional data from DST/SDS
+            - They are working on ways to streamlining linking and merging.
+        - GWAS (might be) on Computerome2?
+            - Because it is so large (...size?), so can’t really be put on DST/SDS
+            - GWAS also require HPC for its processing
+            - Need two solutions for storage, because one for the large stuff and one for the DST
+    - Data storage at maybe three locations
+        - Data from Forskinemaskiner (?) on DST
+            - Have a shared authorization for sharing DST maskiner
+    - Describe these as key issues to deal with, rather than a key component of this framework.
+        - Data management position should be considered.
+    - SDCA could take lead over the legal stuff? But then it would not be at Odense… but doesn’t mean we take data ownership.
+        - Since we need to work within rules of DST
+        - And get a shared DST server in SDCA?
