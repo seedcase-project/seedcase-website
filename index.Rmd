@@ -13,9 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-
 # NNF Data Science Research Infrastructure Grant 2021
-
 
 # Description of application
 
@@ -27,8 +25,6 @@ Key bits of information were taken from the full description from the links belo
 
 ## Key points and takeaways
 
-
-
 * State of the art
 * Computational and database infrastructures
 * Openness, transparency, and FAIR principles
@@ -38,14 +34,11 @@ Key bits of information were taken from the full description from the links belo
 * Boost research, including in companies that might not be able to invest in this
 * Education and training
 
-
 ## Purpose and overall description
 
 The Data Science Research Infrastructure Programme aims to create bottom-up opportunities for open, national data science infrastructures, which are critical for achieving excellent data science driven research in Denmark. Such infrastructure is in this context defined as computational infrastructures, databases and data resources, and data-generating technologies.
 
 The programme also aims to:
-
-
 
 * Strengthen _education and training_ in data science.
 * Ensure that facilities are _continuously developed and maintained_, also after their implementation. 
@@ -53,16 +46,11 @@ The programme also aims to:
 
 Infrastructure must **state-of-the-art **and is defined as:
 
-
-
 * _Computational_ infrastructures, including supercomputers, GPUs, _storage_, software, etc.
 * _Databases and data resources, including data collection, cleaning, annotation, integration, management, etc._
 * Includes building and maintenance of existing databases if it promotes _collaboration_ and _FAIR_ (Findable, Accessible, Interoperable, Reusable) principles, as well as _secure_ and _ethical_ use of such data.
 
-
 ## Assessment criteria
-
-
 
 1. Scientific need for the infrastructure (locally and nationally).
 2. State-of-the-art of the requested equipment and how widespread its use will be.
@@ -76,21 +64,15 @@ Infrastructure must **state-of-the-art **and is defined as:
     3. _Short explanation of criteria: _The infrastructure should be shared with the national research community. Priority for funding will be given to applications that demonstrate coordination with other Danish research groups.
 8. The applicant’s and/or collaborators’ plan to actively participate in, and direct, educational or training courses in data science in Denmark, leveraging on the proposed infrastructure.
 
-
 ## Areas of support
 
 The infrastructure must be linked to ongoing research and be within the scope of the NNF Data Science Initiative: 
-
-
 
 1. Development of new ... methods and technologies within data science, …, data engineering, …
 
 For projects mainly concerned with data science methods development, it is important that the applicants clearly show the relevance for potential future application and impact within life science, health science, or biotechnology.
 
-
 ## Eligibility 
-
-
 
 * Infrastructure linked to ongoing research and applicants must document expertise at the highest level.  
 * Must be established at a research institution with expertise within the relevant field to ensure that the infrastructure can _develop in parallel with the scientific progress_ in the area, and that there are qualified personnel to operate and maintain the equipment/facility.
@@ -98,15 +80,11 @@ For projects mainly concerned with data science methods development, it is impor
 * Applications to maintain or expand existing infrastructures are eligible.
 * Funding may be requested for _skilled technical staff_ that can offer research-based training, consultation, data processing, data analysis, data management, software/database development, and dissemination of data/tools.
 
-
 ## Funding 
 
 DKK 1-3 million on average per year over 5 years, for a total of DKK 5-15 million. Can apply for **skilled personnel** anchored in a specific institution and linked to ongoing research, as well as for personnel that can offer _research-based training, consultation, data processing_, data analysis, _data management, software/database development, and dissemination of data/tools._
 
-
 ## Project application details
-
-
 
 * **Grant period:** Start and end dates
 * **Project title:** Short title, maximum 150 characters
@@ -143,12 +121,9 @@ DKK 1-3 million on average per year over 5 years, for a total of DKK 5-15 millio
         * Such as for accounting, payment of salaries, purchasing, hiring, auditing, and financial reporting on the project.
         * Cannot cover administrative expenses not directly related to the project.
 
-
 # Trimmed Project Application
 
 Character counts:
-
-
 
 * Title: 101 / 150
 * Brief project description**:** 1996 / 2000
@@ -158,25 +133,19 @@ Character counts:
 
 Figure counts:
 
-
-
 * 3 / 4
-
 
 ## Brief project description 
 
 In clinical and health research, especially for small- to mid-sized research groups, funding for building modern, open source software infrastructures for managing and using data has been limited. This gap has naturally led to organizational challenges for managing existing and incoming data for many research initiatives, including the Danish Centre for Strategic Research in Type 2 Diabetes (DD2) initiative, a national research collaboration and database initiative established in 2010 with continual enrollment of persons with type 2 diabetes. The aim of our project is to close this gap by creating and implementing an efficient, scalable, and open source data infrastructure framework that connects data collectors, researchers, clinicians, and other stakeholders, with the data, documentation, and findings within the DD2 study. This will improve and extend the existing DD2 research infrastructure into an open national state-of-the-art research infrastructure that will provide easy and transparent access to this resource for researchers, clinicians and stakeholders, thus enabling excellent data science driven research. Furthermore, we will create this framework in such a way that other research groups and companies, who are unable to adequately invest in building infrastructures of this type, can relatively easily implement it, and modify as needed, for their own purposes. By building this framework, we have the potential to help propel research groups and companies across Denmark (and globally) to quickly getting updated on modern, scalable, and efficient approaches to working with data. Within the DD2 setting, an open, transparent, and easy access to this constantly growing resource has the potential of greatly improving the interest in, use of, and scientific impact of this resource, thus leading to substantial scientific and medical advancements, individualised treatment and improved human health in not only persons with type 2 diabetes, but population overall. 
 
-
 ## Lay project description 
 
 Many initiatives in clinical research, including the Danish Centre for Strategic Research in Type 2 Diabetes (DD2) initiative, have a hard time getting funds for building and maintaining needed software that make sure health science is the highest quality it can be. We aim to make software tools that are easy to use and that make it easier to do better research using data from DD2. We will share these tools widely and freely, so that as many research groups as possible can use it for their own projects. Not only will we build these tools to help researchers with managing and sharing their data, we also will create them with beginner-friendly documentation and training material to make sure more researchers use our tools, no matter their skill level. We believe that with these tools, science on health and well-being can become better, ultimately helping people with diabetes and society in general.
 
-
 ## Title 
 
 A framework for an open and scalable infrastructure for health data exemplified by the DD2 initiative
-
 
 # Background
 
@@ -186,9 +155,7 @@ Funding for participant recruitment and data acquisition has historically been (
 
 DD2 is a national type 2 diabetes (T2D) research collaboration and database initiative that was established in 2010, with on-going enrollment by hospital physicians and general practitioners (GPs). Although T2D is a single diagnosis, it comprises several phenotypes with diverse prognoses and risks for complications, which can lead to treatments tailored to each phenotype. The overarching aim of DD2 is to improve and individualise the treatment of persons with T2D. Figure 1 shows the several datasets within DD2 [(4–7)](https://www.zotero.org/google-docs/?AQhWYI). DD2 has received extensive funding from the Danish Council for Strategic Research and the Novo Nordisk Foundation as well as a Steno National Collaborative Grant for deep phenotyping. Continuously recruiting more participants, adding new data, and expanding the data access to researchers throughout Denmark and abroad has the potential to further increase the value of DD2. However, this comes with higher costs and resources for maintaining, extending, and improving on the existing DD2 research infrastructure.
 
-
 ![alt_text](images/image1.png "image_tooltip")
-
 
 Building modern data infrastructures has slowly been taking greater priority by funding and research agencies globally. For instance, the UK Biobank [(8,9)](https://www.zotero.org/google-docs/?tPX6Aq) is a large-scale biomedical database with highly detailed data on ~500,000 participants. It is regularly expanded with additional data and is globally accessible to approved researchers and is a role model to building a modern research infrastructure.
 
@@ -196,19 +163,15 @@ While the UK Biobank is a source of inspiration on the state-of-the-art, the und
 
 Our primary aim is to create and implement an efficient, scalable, and open source data infrastructure _framework_ that connects data collectors, researchers, clinicians, and other stakeholders, with the data, documentation, and findings within the DD2 study. This will improve and extend the existing DD2 into an open national state-of-the-art research infrastructure that will provide easy and transparent access to this resource for researchers, thus enabling excellent data science driven research. Our secondary aim is to create this framework in such a way so that other research groups and companies, who are unable to adequately invest in building similar infrastructures, can relatively easily implement it and modify as needed for their own purposes. 
 
-
 # Methods
 
 Our first steps are to build a data infrastructure framework and the second step is to implement it in DD2. The details of the framework itself are described first and later we describe how we will apply it to DD2.
-
 
 ## Overview of the data infrastructure framework
 
 For this project, the data infrastructure _framework_ is defined as 1) a set of software programs, 2) a defined and fixed set of conventions on the structure and format of the filesystem and URL paths, and 3) a defined structure to the data and associated documentation, all of which are linked together as modular components. The framework will serve as an open source starting template for setting up data infrastructures that make use of modern tools and processes.
 
 This framework encompasses four target users and three layers, with a complete schematic shown in Figure 2. The three layers are the web portal frontend, the database and documentation backend, and the API (Application Programming Interface) that interacts with both. The four users and their associated use cases are:
-
-
 
 1. **User 1**: Those _inputting data, _e.g., authorized centers and researchers. The use cases are:
     1. Authorized centers (GPs and hospitals) upload standardized and routine data through the data entry web portal.
@@ -226,16 +189,11 @@ This framework encompasses four target users and three layers, with a complete s
 
 Throughout this application, we’ll refer to these four users and three layers as we expand on and describe the framework.
 
-
 ![alt_text](images/image2.png "image_tooltip")
-
-
 
 ### Key principles underlying the framework
 
 To ensure the development of this framework is efficient and focused, it will adhere to key principles that are supported by strong philosophical and scientific rationale:
-
-
 
 1. Follow FAIR (Findable, Accessible, Interoperable, and Reusable), open, and transparent principles for the framework itself and to enable FAIR principles in the database.
 2. Be openly licensed and re-usable to facilitate uptake in other national groups (or companies) who are unable to invest in and build it.
@@ -243,8 +201,6 @@ To ensure the development of this framework is efficient and focused, it will ad
 4. Be beginner-friendly and targeted to (potential) non-computationally technical users of the framework.
 
 In order to maximise the potential for re-use and to minimise the technical debt and expertise needed to use, maintain, and modify the framework, we will use software and tools underlying the framework that fit these principles:
-
-
 
 1. Wherever possible, re-use existing material: There already exists many great software tools, infrastructures, and resources that haven’t been incorporated into common health research practice. We will make use of and/or modify these materials where we can. 
 2. Be familiar to or used by researchers currently or within the near future: To ensure the greatest potential for continued maintenance, development, and use, the framework should use or be built with tools and skills that are at least familiar or soon to be familiar to researchers.
@@ -254,12 +210,9 @@ In order to maximise the potential for re-use and to minimise the technical debt
 6. Historically stable and reliable: While there are always new software being built, maintenance and development is easier when using those that are established.
 7. Likely to be used in the future or is easily interchangeable with potential future tools: Technology progresses quite quickly, so we will rely on software that is likely to still be used or can be switched to other tools.
 
-
 ### Selected software and tools to use
 
 Based on the above principles, we have chosen the following software and conventions to form the framework’s foundation:
-
-
 
 * **R and/or Python:** Are open source and established.
 * **RESTful API:** REST (representational state transfer) is the de facto standard for building APIs.
@@ -273,15 +226,11 @@ Based on the above principles, we have chosen the following software and convent
 * **Software development best practices: **This includes unit testing, continuous integration, and document-driven development (to emphasize usability). We’ll use the concept of Minimum Viable Product (MVP) as a means of quickly building something that is minimally workable.
 * **Re-use of similar infrastructures:** Modules from initiatives like Gen3 will either be re-used directly or modified to fit our requirements. TODO: Our added value over Gen3.
 
-
 ## The framework’s layers
-
 
 ### Frontend interface: The web portal
 
 This interface is what all users interact with and use, with essentially three “permission” levels available:
-
-
 
 1. Full access: User 4.
 2. Authorized access:
@@ -291,13 +240,11 @@ This interface is what all users interact with and use, with essentially three �
 
 All content would be rendered directly as plain HTML text to ease use of existing webpage translation services (e.g. Google Translated), so that content written in another language, i.e., Danish, would still be readable to non-native speakers. This would also lower the amount of maintenance necessary for documentation.
 
-
 ### Middle-layer: The API
 
 Modern web and computational infrastructures are built on web APIs. Any modern online resource or interface makes use of an API, such as from Google, Gen3, or the UK Biobank. An API is a mechanism by which different programs can communicate with one another. They form a set of instructions or conventions that allow easy communication between a user and the computer. APIs by their nature are transparent and if well-documented would ensure the linked data would be FAIR, safely and securely.
 
 In this case, the API would be between the user and the web server that stores the underlying database and documentation. The API would be a combination of a predefined set of instructions that are sent to the web server to run certain commands as well as a set of explicit conventions and rules on how files and folders are structured and named. Taken together, this API would allow other software like R packages to be built to interact with the backend to automate tasks done by the users.
-
 
 ### Backend: The database and documentation
 
@@ -307,9 +254,7 @@ A major challenge to building the backend is in the heterogeneity of the data in
 
 The backend documentation is either largely generated automatically or manually written. For instance, the list of projects and findings would be generated by the submitted projects and input from User 2 (researchers) while the changelog would be updated either by automated additions or, optionally, manually from User 4. The data dictionary would be stored as a JSON file with the documentation text itself as Markdown text. This data dictionary would be publicly accessible and could be updated by anyone (with approval from User 4), potentially through “Merge Request” mechanisms. This mechanism involves automatically linking any addition or correction back to the main documentation and requesting it be merged into it.
 
-
 ## User-to-backend pipeline
-
 
 ### User 1: Inputting data
 
@@ -319,37 +264,28 @@ Sources of data that don’t have well-established data input processes, such as
 
 Once the data is submitted through the portal, it would get sent in an encrypted, legally-compliant format to the server and stored in the way defined by the API and CDM. Any new or updated data that is uploaded would trigger generic automated data cleaning, processing, quality control checks of this new data. Any automated processing that is developed specific to a project would need to adhere to the API’s conventions. If any issues are found or if the data is entirely new to the database, they get sent to a log and User 4 would receive a notification to deal with the issue. If there are no issues or the issues have been dealt with, an automated script would take a snapshot of the data with the VC system, the version number (based on [Semantic Versioning](https://semver.org/)) of the data would be updated, an entry would get added to the changelog, and the formal database would get updated.
 
-
 ### User 2: Requesting access
 
 Researchers and other users who want to request access to the data would first need their identity verified and then be approved for authorized access. After approval, they would interact with the frontend by two routes: 
-
-
 
 1. Browsing from the catalogue of existing variables in the database, along with the data dictionary and the data changelog, and then selecting those variables that are relevant to their project. The catalogue of variables would be a table that is built from the underlying set of files that contain the documentation and that includes a button to select and save the variables of interest. If they desired, they could also update any errors or types in the data dictionary through the “Merge Request” mechanism described above.
 2. Writing a description of the scientific rationale of the project and adding any relevant information into a web form that User 4 would use to decide on approval and that would be displayed on the website for User 3.
 
 When User 4 approves a data request project, it will trigger an API request that would automatically extract the requested subset of data, bundle and encrypt it, and send it to the researcher’s secure server. The framework will contain sufficiently generic methods for automating the data transfer process. 
 
-
 ### User 3: Viewing details
 
 The framework assumes that this user would interact with the portal through at least three routes:
-
-
 
 1. Reading about the database, its history, organizational structure and ownership, and any other details in a typical “About” section. Since this is a part of a basic website layout, it is not fully part of the framework.
 2. Browsing completed and ongoing projects making use of the database, along with the description of the project and variables used. This would be based on a “database” of projects that have requested access to the data, would be stored in JSON format, and through the API specification would be generated into a table on the portal.
 3. Getting updates on the latest results from the projects and browsing some basic aggregate statistics of some key variables. This would involve programmatically generating standard aggregate statistics of the underlying database, formatting results according to the API, transferring them to the web server, and have it generated into a webpage format. Overlapping with the second route, key findings from completed projects can be stored in the projects database and be generated into a listing on the website.
 
-
 ### User 4: Administrators and data controllers
 
 These users would largely interact with the web portal for managing and overseeing ongoing projects, approve access for new researchers, and approve projects requesting access to data. Approving new researchers would grant the researchers access permissions to enter the User 2 portal.
 
-
 ## Additional key components
-
 
 ### Security, privacy, and legality
 
@@ -357,42 +293,32 @@ The framework itself does not contain any personal data. When the framework is d
 
 For data transfers of personal data, either from data collection centers, data generated from researchers, or when transferring data for approved projects, we would use well-established and compliant encrypted data transfer processes. Key authentication principles such as two-factor authentication and OAuth (open standard for access authentication) will be central to the framework to control who can update or transfer the data. The endpoint of the data transfer is dealt with by the legal teams of the relevant institutions.
 
-
 ### Dissemination of framework
 
 To be aligned to the goals of openness, transparency, and FAIR principles, the complete development of the framework will take place openly on GitHub. From there we will link to and promote it through various outlets, including publications, conferences, and social media. The framework and all its components will be licensed under permissive copyright licenses like the MIT License for the software and the Creative Commons Attribution License for non-software content. 
 
-
 ### Sustainability
 
 Integral to this framework is ensuring it is sustainable over the long-term by:
-
-
 
 1. Integrating the development of the framework and using it in multiple projects at the host institution Steno Diabetes Center Aarhus (SDCA).
 2. Prototyping MVP to build and document maintenance procedures.
 3. Incorporating fundamental open source sustainability concepts and documentation such as writing a Code of Conduct and Contributing Guidelines and encouraging external users to contribute.
 4. Including duties for the hired personnel to contribute back to open source software that the framework depends on to help their, and indirectly the framework’s, sustainability.
 
-
 ### Training and educational development 
 
 Usage of this framework depends on the quality of its documentation and training material. A key concept we will use heavily is Documentation Driven Development, where the framework’s development is guided and informed from the development of the documentation, which places documentation as a high priority. We will also be creating and running short workshops and tutorials that teach researchers how they can use this framework.
 
-
 ## Resource requirements
-
 
 ### Computational and physical infrastructure
 
 While the proposed framework is software-based, storing and deploying the infrastructure requires server space and IT support. The framework itself takes up little space and can optimise computational resources, but the underlying DD2 data requires considerable server space.
 
-
 ### Technical skills and personnel
 
 To have a meaningful impact on improving research infrastructure, the minimum skills and knowledge necessary are:
-
-
 
 * Building and interacting with RESTful APIs (or APIs in general)
 * Creating websites and knowledge on UI/UX designs
@@ -403,12 +329,9 @@ To have a meaningful impact on improving research infrastructure, the minimum sk
 * Experience in working on open source projects and with FAIR principles
 * Experience in the Danish research computing environments, e.g., “forskermaskine” (research engine on Denmark Statistics (DST))
 
-
 ## Applying the framework to DD2
 
 The biggest potential challenge to applying the framework to DD2 is getting the database backend into the appropriate structure to fit within the framework. With the current state of the DD2 data, considerable time and effort is needed to organize it. Our initial steps will be to:
-
-
 
 1. _Survey and map out all data, documentation, and processing steps_. Currently, the original enrollment data are stored in a secure server at the DD2 headquarters at Odense, while subsets of data collected for specific research projects are spread across several research institutions.
 2. _Map the data input sources and formats from the various collection centers._ GP clinics have an existing pipeline for sending data to DD2 through their system, “sundhedsdatanettet” (national healthcare portal), following a patient visit. Other collection centers like hospitals have custom, but not standardized, approaches to sending data to DD2. No formal approach is available for returning data from completed projects. The core DD2 data is sent to “forskermaskine” and gets merged there with the registry data, which is in a standard DST format. 
@@ -425,20 +348,15 @@ Currently, User 3 can request data by filling out a Word [application form](http
 
 The costs of storing the original data are covered by DD2, while applicants cover the costs related to storing the transferred data. We will not charge for data access. As per legal requirements, researchers can only use the data for the intended purposes listed in the application. After project completion, the researchers must delete or close access to the data and inform DD2 as legally required. Any newly generated data must be returned to DD2 by uploading via the User 1 portal.
 
-
 ## Deliverables and milestones
 
 Because the framework will be built with modularity in mind, where each component could be used alone or together, nearly all the components could be deliverables (each User by each layer). Each deliverable would be to prototype a MVP to begin testing it, identifying bugs, getting feedback, and establishing maintenance procedures. See Figure 3 for the Gantt chart.
 
-
 ![alt_text](images/image3.png "image_tooltip")
-
-
 
 # Collaborations
 
 The framework will be developed at SDCA with Professor Annelli Sandbæk (applicant) as the lead PI responsible for reaching the overall goals of the project and defined milestones, as well as two postdocs, Luke Johnston, MSc, PhD [(15,16)](https://www.zotero.org/google-docs/?nklM5t) and Alisa Kjærgaard, MD, PhD [(17,18)](https://www.zotero.org/google-docs/?huIJaJ). A project group headed by the PI will be established that includes central persons from SDCA and DD2. In close collaboration with the project manager of DD2 and the current data manager, the deliverables will be planned and carried through. Completing the proposed project requires hiring data and research software engineer personnel into the project, which will be the first step in the project process. The DD2 advisory group will also act as the advisory group for this project. This group is chaired by Kurt Højlund, MD, PhD, head of research at Steno Diabetes Center Odense and contains representatives from affiliated research projects and other DD2 stakeholders.
-
 
 # Significance
 
@@ -446,69 +364,47 @@ We are at a key point in time within clinical research where it is increasingly 
 
 Within the DD2 setting, an open, transparent, and easy access to this constantly growing resource has the potential of greatly improving the interest in, use of, and scientific impact of this resource. Incorporating new data generated from the DD2 resource back into DD2 will enable other researchers to test or use this data to advance their own work. This would lead to substantial scientific and medical advancements, which will ultimately lead to individualised treatment and improved human health in individuals with type 2 diabetes, and very likely the population overall. 
 
-
 # References
-
 
     [1. 	Lowndes JSS, Best BD, Scarborough C, Afflerbach JC, Frazier MR, O’Hara CC, et al. Our path to better science in less time using open data science tools. Nat Ecol Evol. 2017 May 23;1(6):1–7.](https://www.zotero.org/google-docs/?yumUlu)
 
-
     [2. 	Nielsen JS, Thomsen RW, Steffensen C, Christiansen JS. The Danish Centre for Strategic Research in Type 2 Diabetes (DD2) study: implementation of a nationwide patient enrollment system. Clin Epidemiol. 2012 Sep 21;4(Supplement 1 Diabetes):27–36.](https://www.zotero.org/google-docs/?yumUlu)
-
 
     [3. 	DD2 [Internet]. DD2. [cited 2021 May 2]. Available from: https://dd2.dk/](https://www.zotero.org/google-docs/?yumUlu)
 
-
     [4. 	Jakobsen PR, Christensen JR, Nielsen JB, Søndergaard J, Ejg Jarbøl D, Olsen MH, et al. Identification of Important Factors Affecting Use of Digital Individualised Coaching and Treatment of Type 2 Diabetes in General Practice: A Qualitative Feasibility Study. Int J Environ Res Public Health. 2021 Jan;18(8):3924.](https://www.zotero.org/google-docs/?yumUlu)
-
 
     [5. 	Gylfadottir SS, Christensen DH, Nicolaisen SK, Andersen H, Callaghan BC, Itani M, et al. Diabetic polyneuropathy and pain, prevalence, and patient characteristics: a cross-sectional questionnaire study of 5,514 patients with recently diagnosed type 2 diabetes. Pain. 2020 Mar;161(3):574–83.](https://www.zotero.org/google-docs/?yumUlu)
 
-
     [6. 	Stidsen JV, Nielsen JS, Henriksen JE, Friborg SG, Thomsen RW, Olesen TB, et al. Protocol for the specialist supervised individualised multifactorial treatment of new clinically diagnosed type 2 diabetes in general practice (IDA): a prospective controlled multicentre open-label intervention study. BMJ Open. 2017 Dec 1;7(12):e017493.](https://www.zotero.org/google-docs/?yumUlu)
-
 
     [7. 	Valentiner LS, Thorsen IK, Kongstad MB, Brinkløv CF, Larsen RT, Karstoft K, et al. Effect of ecological momentary assessment, goal-setting and personalized phone-calls on adherence to interval walking training using the InterWalk application among patients with type 2 diabetes—A pilot randomized controlled trial. PLOS ONE. 2019 Jan 10;14(1):e0208181.](https://www.zotero.org/google-docs/?yumUlu)
 
-
     [8. 	Sudlow C, Gallacher J, Allen N, Beral V, Burton P, Danesh J, et al. UK Biobank: An Open Access Resource for Identifying the Causes of a Wide Range of Complex Diseases of Middle and Old Age. PLOS Med. 2015 Mar 31;12(3):e1001779.](https://www.zotero.org/google-docs/?yumUlu)
-
 
     [9. 	UK Biobank [Internet]. [cited 2021 May 2]. Available from: https://www.ukbiobank.ac.uk/](https://www.zotero.org/google-docs/?yumUlu)
 
-
     [10. 	En indgang til sundhedsdata [Internet]. [cited 2021 May 2]. Available from: https://www.enindgangtilsundhedsdata.dk/](https://www.zotero.org/google-docs/?yumUlu)
-
 
     [11. 	Gen3 Data Commons [Internet]. [cited 2021 May 2]. Available from: http://gen3.org/](https://www.zotero.org/google-docs/?yumUlu)
 
-
     [12. 	Center for Translational Data Science GitHub Repositories [Internet]. GitHub. [cited 2021 May 2]. Available from: https://github.com/uc-cdis](https://www.zotero.org/google-docs/?yumUlu)
-
 
     [13. 	Gen3 Software [Internet]. Center for Translational Data Science. [cited 2021 May 2]. Available from: https://ctds.uchicago.edu/gen3](https://www.zotero.org/google-docs/?yumUlu)
 
-
     [14. 	Gen3 - Powered by Gen3 [Internet]. [cited 2021 May 2]. Available from: http://gen3.org/powered-by-gen3/](https://www.zotero.org/google-docs/?yumUlu)
-
 
     [15. 	Johnston L. Luke W. Johnston (0000-0003-4169-2616) [Internet]. ORCID. [cited 2021 May 3]. Available from: https://orcid.org/0000-0003-4169-2616](https://www.zotero.org/google-docs/?yumUlu)
 
-
     [16. 	Johnston L. lwjohnst86 - Overview [Internet]. GitHub. [cited 2021 May 3]. Available from: https://github.com/lwjohnst86](https://www.zotero.org/google-docs/?yumUlu)
-
 
     [17. 	Kjaergaard A. Alisa Kjaergaard (0000-0003-3899-1324) [Internet]. ORCID. [cited 2021 May 3]. Available from: https://orcid.org/0000-0003-3899-1324](https://www.zotero.org/google-docs/?yumUlu)
 
-
     [18. 	Kjaergaard A. Alisa Devedzic Kjærgaard | LinkedIn [Internet]. Linkedin. [cited 2021 May 3]. Available from: https://www.linkedin.com/in/alisa-d-kjaergaard/](https://www.zotero.org/google-docs/?yumUlu)
-
 
 # Full Length Project Application
 
 Character counts:
-
-
 
 * Title: / 150
 * Brief project description**: **/ 2000
@@ -518,35 +414,25 @@ Character counts:
 
 Figure counts:
 
-
-
 * 3 / 4
-
 
 ## Brief project description
 
-
 ## Lay project description
-
 
 ## Title 
 
 This is the chosen one: 
 
-
-
 * A framework for an open and scalable infrastructure for biomedical data exemplified by the DD2 initiative
 
 Other potential options:
-
-
 
 * An Open and Scalable Framework for An Infrastructure for Biomedical Data
 * Infrastructure for Biomedical Data: An open and scalable framework
 * Data infrastructure for the DD2 study using an open and scalable framework
 * Data Infrastructure Project for Biomedical Data (DIP for biomedical data)
 * Data Infrastructure Project for Diabetes Data (DIP for Diabetes)
-
 
 ## Background
 
@@ -555,7 +441,6 @@ The importance of an efficient data infrastructure within the field of biomedica
 Indeed, implementing a scalable data infrastructure built on open-source software tools has the potential of producing more transparent and streamlined workflow resulting in reproducible research and better science in less time ([https://www.nature.com/articles/s41559-017-0160](https://www.nature.com/articles/s41559-017-0160)).
 
 As the amounts and complexity of data collected are growing, it is increasingly important and resource heavy to maintain, extend and improve the existing research infrastructure. At the same time, it is more difficult to achieve funding dedicated to data infrastructure than to participant recruitment and data acquisition. This is the case for many research initiatives within the field of biomedical research, including the Danish Centre for Strategic Research in Type 2 Diabetes (DD2) initiative, all of which could benefit from bringing the data infrastructure to the state-of-the-art level.
-
 
 ### Purpose
 
@@ -567,16 +452,13 @@ Our secondary aim is to create this framework in such a way that other research 
 
 Explicitly, the funding of this project will go towards development of a data infrastructure framework, and NOT towards operating expenses of the current DD2 data infrastructure, nor biomedical research projects within the DD2.
 
-
 ### Description of the DD2 database
 
 The DD2 is a prospective study of individuals with a recent diagnosis of type 2 diabetes (T2D). Although T2D is a single diagnosis, it comprises several phenotypes with different prognosis and risks of developing complications, which should lead to different treatments tailored to each phenotype. Thus, the overarching aim of the DD2 study is to improve and individualise the treatment of individuals with T2D. 
 
 The study was initiated in 2010 as a nationwide resource for research with ongoing-enrollment performed by hospital physicians (diabetes specialist outpatient clinics) and general practitioners. The DD2 resource consists of several datasets summarized in Figure {{REF}}: 
 
-
 ![alt_text](images/image4.png "image_tooltip")
-
 
 {{FIGURE CAPTION}}: Summary of DD2 data.
 
@@ -586,14 +468,11 @@ Thus, continuously increasing the number of participants recruited, adding new d
 
 At the same time, it is becoming increasingly important and resource heavy to maintain, extend and improve the existing DD2 research infrastructure in order to ensure the success of this resource. However, very little funding has been allocated to this so far, despite the increasing need for:
 
-
-
 * Better data documentation
 * Streamlining and automating procedures for transparency and less manual processing
 * Improved traceability and reproducibility
 * Fast, easy and transparent access to data for (even more) researchers
 * Formal training of research staff in these skills
-
 
 ### Current state-of-the-art
 
@@ -605,19 +484,15 @@ Thus, we are unaware of any current national efforts based on open-source that c
 
 Fortunately, the Gen3 platform consists of modular open-source software services, and is therefore the optimal choice for this purpose ([https://gen3.org/](https://gen3.org/)). The Gen3 data platform is the third generation of open-source software services actively maintained and developed by the Center for Translational Data Science at the University of Chicago ([https://ctds.uchicago.edu/gen3/](https://ctds.uchicago.edu/gen3/), [https://github.com/uc-cdis](https://github.com/uc-cdis)). This technology powers numerous large-scale research platforms, including several institutes under the National Institutes of Health, etc ([https://gen3.org/powered-by-gen3/](https://gen3.org/powered-by-gen3/)). Thus, the Gen3 modular services can be freely re-used and modified for the purposes of our project.
 
-
 ## Methods
 
 The exact approach we aim to take to building this data infrastructure framework and its implementation in the DD2 initiative is described in two sections. The first sections {{REF?}} are specifically about the details of the framework itself and one of the final sections {{REF?}} is about applying it to DD2.
-
 
 ### Overview of the infrastructure framework
 
 For this project, the framework is defined as a set of software programs, a defined and fixed set of conventions on the structure and format of the filesystem and URL paths, and a defined structure to the data and associated documentation that are all linked together as modular components. In this way, the framework will serve as an open source starting template for building up data infrastructures that make use of modern tools and processes.
 
 This framework of an infrastructure for data encompasses four target users and three layers, shown in a simplified overview in Figure {{REF}}, with a much more detailed schematic shown in Figure {{REF}}. The three layers are the web portal frontend, the database and documentation backend, and the API (Application Programming Interface) that interacts with both, which will all be described fully later. The four primary users of the data infrastructure and their associated use cases are:
-
-
 
 5. **User 1**: Those _inputting data_, the source of which will generally be quite heterogeneous such as from general practitioner (GP) clinics, regional hospitals, and returned data from researchers after a project’s completion. The use cases are:
     10. Authorized centers upload standardized and routine data through the data entry web portal.
@@ -635,18 +510,13 @@ This framework of an infrastructure for data encompasses four target users and t
 
 Throughout this application, we’ll refer to these four users and three layers  as we expand on and describe the framework.
 
-
 ![alt_text](images/image5.png "image_tooltip")
 
-
 {{FIGURE CAPTION}}: Simplified overview of the data infrastructure framework.
-
 
 #### Key principles underlying the framework
 
 To ensure efficient and focused development of this framework, it must adhere to some key principles that are supported by strong philosophical and scientific rationale. These key principles are:
-
-
 
 5. Follow FAIR (Findable, Accessible, Interoperable, and Reusable) principles for the framework itself and to enable FAIR principles in the underlying database.
 6. Apply open, transparent, and reproducible principles throughout the framework.
@@ -656,8 +526,6 @@ To ensure efficient and focused development of this framework, it must adhere to
 
 In order to maximise the potential for re-use by the wider research community and to minimise the technical debt and expertise needed to use, maintain, and modify the infrastructure framework, we aim to use software and tools that will underlie the framework that fit these principles:
 
-
-
 8. Wherever possible, re-use existing material: There already exists many great software tools, infrastructures, and resources that haven’t yet been incorporated into common biomedical research practice. So as much as possible we will make use of and/or modify these existing tools. 
 9. Be familiar and/or used by researchers currently or within the near future: To ensure the greatest potential for continued maintenance, development, and use, the framework should use or be built with tools and skills that are at least familiar to researchers presently or, given current trends, will be in the near future.
 10. Be familiar to skilled personnel (e.g. research software engineers, data engineers, data scientists): This infrastructure will be built by skilled personnel, so the tools and skills should be familiar to them.
@@ -666,12 +534,9 @@ In order to maximise the potential for re-use by the wider research community an
 13. Historically stable and reliable: There are always new software being developed, however, the ones we use for the framework must be stable and reliable so that maintenance and development is easier.
 14. High likelihood of continued future use or is easily interchangeable with other tools that will develop in the future: Technological innovation and development happens at an extraordinary pace. Any software we rely on should be in some way still likely to be used and at the least be able to be easily interchanged with other future tools.
 
-
 #### Selected software and tools to use
 
 Based on the above principles, the following software, tools, and conventions are chosen that would form the basis of the framework itself and of developing it:
-
-
 
 * **R and/or Python:** Both are open source, widely used, well established, stable, and reliable programming languages. R will likely be familiar to many researchers given its strength in data science, while Python is widely used in formal software engineering. Either of these languages will be used as the basis for creating many of the software components of the framework.
 * **RESTful API:** REST means representational state transfer and is the de facto guide for building APIs across industries (e.g. GitHub, Google, Gen3). This guide will be used to form the basis of the entire data infrastructure API.
@@ -685,21 +550,15 @@ Based on the above principles, the following software, tools, and conventions ar
 * **Best practices for software development: **This includes unit testing, continuous integration, and document-driven development (to emphasize usability, especially for novice users). We’ll use the concept of Minimum Viable Product as a means of building something that is minimally workable as soon as possible.
 * **Re-use of similar infrastructures:** ...Like Gen3.
 
-
 ### Core layers of the framework
-
 
 ![alt_text](images/image6.png "image_tooltip")
 
-
 {{FIGURE CAPTION}}: Simple overview of the data infrastructure framework. TODO: Add legend explaining what shapes mean.
-
 
 #### Frontend interface: The web portal
 
 This interface is what all users interact with and use. There would be essentially three “permission” levels to the web portal, with the administrators (User 4) having full access:
-
-
 
 4. Full access: User 4.
 5. Authorized access to two specific web portals:
@@ -709,13 +568,11 @@ This interface is what all users interact with and use. There would be essential
 
 All content and documentation would be rendered directly as plain HTML text to make use of existing webpage translation services (e.g. Google Translated) that are common in multiple browsers (e.g. Chrome) so that any content written in another language such as Danish would still be readable to non-native speakers. This would also lower the amount of maintenance necessary for documentation.
 
-
 #### Middle-layer: The API
 
 Modern web and computational infrastructures are built on web APIs, or Application Programming Interface. Any modern and state-of-the-art online resource or web interface makes use of an API, from Google to GitHub to the UK Biobank to the CPR system in Denmark (e.g. how it links with banks, employers, doctors and so on). An API is a mechanism by which different programs can communicate with one another. They make up a set of instructions or conventions that allow easy communication between a user and the computer. APIs by their nature are transparent and if well-documented they would ensure the linked data will be FAIR.
 
 In this case, the API would be between the user (or another program) and the web server that stores the underlying database and documentation. The API would be a combination of a predefined set of instructions that could be sent to the web server to run certain commands as well as a set of explicit conventions and rules on how files and folders are structured and named. Taken together, this API would allow other software like R packages to be built to interact with the backend to further automate tasks done by the users if desired.
-
 
 #### Backend: The database and documentation
 
@@ -725,9 +582,7 @@ A challenge to building the backend is in the heterogeneity of the data input. T
 
 The backend documentation is either largely generated automatically or manually written. For instance, the list of projects and findings would be generated by the submitted projects and input from User 2 (researchers) while the changelog would be updated either by automated additions or, optionally, manually from the database administrator. The data dictionary would be stored as a JSON file with the documentation as Markdown text. This data dictionary would be publicly accessible and could be updated by anyone (with final approval from the database administrator), potentially through GitHub “Pull Request” mechanisms. This Pull Request process involves any addition or correction being automatically linked back to the main documentation and requesting it be integrated back into it.
 
-
 ### User-to-backend pipeline
-
 
 #### User 1: Inputting data
 
@@ -739,37 +594,28 @@ Once the data is submitted through the web portal, it would get sent in an encry
 
 For this framework, the exact physical location of the data is irrelevant to the framework and will heavily depend on User 4, who would be responsible for ensuring the data comply with relevant legal, privacy, and security requirements.
 
-
 #### User 2: Requesting access
 
 Researchers and other users who want to request access to the data would first need to be approved to verify the identity of the researcher. They would then interact with the frontend by largely two routes: 
-
-
 
 3. Browsing from a catalogue of existing variables in the database, along with their associated documentation and including changes to the data, and selecting those variables that are relevant for their project. For this route, the catalogue of variables in the database would be shown as a table that includes a button to select the variables of interest. The table would be built from an underlying set of files, as defined by the API, that contain the data documentation. The documentation would be linked to existing variables in the database and could be updated easily, e.g., to fix a typo, by approved non-staff users (to reduce maintenance by staff).
 4. Adding a description of their project, as well as any other relevant information, that would be used by both the data controllers to decide whether to approve the project or to be displayed on the website as ongoing projects. This involves writing in forms for a description of the proposed project that would be used by the data controllers to determine scientific relevance and be used as part of the approval process.
 
 When User 4 approves a data request project, it will trigger an API request that will automate the extraction of the relevant data from the database and send it to the researcher’s secure server location. The specific details of where the data will be transferred, e.g. a “forskermaskine”  (Statistics Denmark’s or Danish Health Data Authority's servers) or other high-performance computing servers, will be defined within the Material Transfer Agreement. The framework will contain sufficiently generic methods for automating the data transfer process. 
 
-
 #### User 3: Viewing details
 
 The general public, policymakers, clinicians, and other interested stakeholders would interact with this section of the frontend web portal to generally get information or key findings from the database. The framework assumes at least three routes:
-
-
 
 4. Reading about the database, its history, organizational structure and ownership, and any other details in a typical “About” section. This would be covered by any basic website layout, so is not fully part of the framework. 
 5. Browse completed and ongoing projects making use of the database, along with the description of the project and variables used. This would be based on a “database” of projects that have been submitted requesting access to the data. This project database would be stored in a common format, i.e. a JSON data file, and according to the API specification would be structured into a table on the website.
 6. Get updated on the latest results from the projects and browse some basic aggregate statistics of some key variables. This route would involve programmatically generating standard aggregate statistics of the underlying database, formatting results according to the API, transferring them to the web server, and have it generated into a webpage format. Overlapping with the second route, key findings from completed projects can be stored in the projects database and be generated into a listing on the website.
 
-
 #### User 4: Administrators and data controllers
 
 The administrators and data controllers would largely interact with the web portal for managing and overseeing ongoing projects, approve access for new researchers, and approve projects requesting access to data. Approving new researchers would be granting the researchers access permissions to enter the User 2 portal. When data requests for a project have been approved, this would trigger automated processes that would extract the requested subset of data, bundle and encrypt it, and send it to the researcher. The location that the data gets sent to would be determined by the data controllers and would be generic enough to allow a variety of locations.
 
-
 ### Additional key components
-
 
 #### Security, privacy, and legality
 
@@ -777,42 +623,32 @@ Within biomedical research and especially since the advent of GDPR, privacy and 
 
 However, when dealing with data through data transfers either from data collection centers, data generated from researchers, or when transferring data for approved projects, security and privacy would use the well-established and compliant encrypted data transfer processes. Key authentication principles such as two-factor authentication and OAuth (open standard for access authentication) will be central to the framework to control who can update or transfer the data. The data controller would be responsible for writing and establishing Material Transfer Agreements and any legally required contracts, which authorized researchers of approved projects would need to sign before any data transfer occurs. This aspect of the data transfer, however, is external to this framework as it is dealt with by the legal teams of the relevant institutions. Regardless of the legal contracts involved, no one other than the data controllers, can directly access or view the health data.
 
-
 #### Dissemination of framework
 
 To be aligned to the goals of openness, transparency, and FAIR principles, the complete development of the framework will take place openly on GitLab and/or GitHub. From there we will link to and promote it through various outlets, including publications, conferences, and social media. Exposure would also occur when we contribute back to upstream dependent software. The framework and all its components will be licensed under permissive copyright licenses like the MIT License for the software and the Creative Commons Attribution License for non-software content. 
 
-
 #### Sustainability
 
 Integral to this framework is ensuring it is sustainable over the long-term, as is important to any software-related project. We will do this by:
-
-
 
 5. Integrating the development and use of the framework for multiple projects at the host institution (SDCA).
 6. Prototyping Minimum Viable Products early on to begin building stable and documented maintenance procedures.
 7. Incorporating fundamental open source sustainability concepts and documentation such as writing and highlighting Code of Conduct and Contributing Guidelines, encouraging contributions from outside users, and creating training and tutorial material for contributing and using the framework.
 8. Including duties for the hired skilled personnel to contribute back to open source software that the framework depends on, to help their, indirectly the framework’s, sustainability.
 
-
 #### Training and educational development 
 
 Usage of this framework depends on the quality of its documentation and training material. A key concept we will use heavily is Document Driven Development, where the development of the framework is guided by and informed from the development of the framework’s documentation. This ensures that usage documentation takes high priority. In addition to the documentation, we will be creating and running short workshops and tutorials that teach researchers how they can use this framework in their current or future research projects.
 
-
 ### Resource requirements
-
 
 #### Computational and physical infrastructure
 
 While the proposed infrastructure framework is largely software-based, storing and deploying the infrastructure requires server space, IT equipment, and IT support. The infrastructure framework itself does not take up much memory space and can optimise computational resources, but the underlying data still requires a considerable amount of server space given the size and ambition of the DD2 study.
 
-
 #### Technical skills and personnel
 
 The technical skills and knowledge required for building these types of state of the art infrastructure are in high demand given the impact on efficiency, scalability, and productivity in organizations and companies of all sizes. To have any meaningful impact on improving and modernizing research infrastructure, the skills and knowledge needed at a minimum would include:
-
-
 
 * Building RESTful APIs (or APIs in general)
 * Creating websites and knowledge on modern UI/UX design principles
@@ -828,12 +664,9 @@ The technical skills and knowledge required for building these types of state of
 
 At the least, a data infrastructure/research software engineer, database administrator, and project manager positions would be needed for this project. To have the most impact however, the recommended positions would be having a data infrastructure engineer, research software engineer, website developer, database administrator, project manager(s), training tutorial material developers and teachers. Aside from the required positions, many of the other jobs and necessary skills could be hired out as consultants on an as-needed basis as an efficient and cost effective solution.
 
-
 ### Applying the framework to DD2
 
 As with any established project, there are several potential challenges to applying the framework to DD2, the biggest of which is getting the database backend into the appropriate structure to fit within the framework. Due to the lack of sufficient funding for formal data infrastructures in any research project, the current state of the DD2 data will require considerable time and effort to organize into a formal and modern data infrastructure.
-
-
 
 8. _Survey and map out all data, documentation, and cleaning and processing steps_. Currently, the original enrollment data are stored in a secure server at the DD2 headquarters at Odense, while subsets of data collected for specific research projects are spread across several research institutions (overview undocumented). 
 9. _Map of data input sources and formats, from GP clinics, hospitals, and other collection centers._ GP clinics have an existing pipeline for sending data to DD2 through their Sundhed system following a patient visit. Other collection centers like the hospitals have custom, but not standardized, approaches to sending data to DD2. No formal approach is available for returning data from completed projects. The core DD2 data is sent to “forskermaskine” (research engine at DST) and gets merged there with the registry data, which is in a standard DST format. 
@@ -847,7 +680,6 @@ Currently, User 3 can request data by filling out a Word [application form](http
 
 The costs of storing the original data, linkages with registries, and transferring the data are completed by DD2, while applicants carry the costs related to the storage of the transferred data. We have no current plans for charging for access to the data. As per legal requirements, researchers can only use the resource for their intended purposes listed in the application. Access is granted for up to 3 years, with a possible extension. Researchers are required to submit yearly progress reports and submit any presentations or publications based on the DD2 data. After project completion, the researchers must delete or close access to the data and inform DD2 as legally required. Any newly generated data must be returned to DD2 by uploading via the User 1 portal.
 
-
 ### Deliverables and milestones
 
 Because the framework will be built with modularity in mind, where each component could be used alone or together, nearly all the components could be deliverables (approximately each User by each layer). Each deliverable would be prototyping a Minimum Viable Product to begin user testing, identifying weaknesses and bugs, getting feedback on the framework, and building in maintenance procedures.
@@ -855,7 +687,6 @@ Because the framework will be built with modularity in mind, where each componen
 [https://docs.google.com/spreadsheets/d/1lnwHenkWjUOfnBdmT1m1PdlPMnnzH-7IAAOzOLtg5VA/edit#gid=0](https://docs.google.com/spreadsheets/d/1lnwHenkWjUOfnBdmT1m1PdlPMnnzH-7IAAOzOLtg5VA/edit#gid=0)
 
 {{FIGURE CAPTION}} Gantt chart of deliverables, milestones, and timelines.
-
 
 ## Collaborations
 
@@ -865,8 +696,6 @@ The advisory group of DD2 will also act as the advisory group of the current pro
 
  
 
-
-
     * Kurt Højlund (DD2, SDCO) 
     * Henrik Toft Sørensen (KEA) 
     * Allan Vaag (SDCC)
@@ -875,7 +704,6 @@ The advisory group of DD2 will also act as the advisory group of the current pro
     * Peter Vestergaard (SDCN)
     * Niels Jessen (SDCA)
     * Søren Brunak (UCPH)
-
 
 ## Significance
 
@@ -889,10 +717,7 @@ researchers, as well as be modified and implemented by small enterprises/compani
 
 Finally, the same data infrastructure template can easily be applied to other Danish cohorts (e.g., ADDITION) and several cohorts can be combined for research purposes. 
 
-
 # Questions to discuss (before or after submission)
-
-
 
 1. What is DD2's current Research Data Management Plan?
 2. Where will personnel be employed? SDCA?
@@ -902,22 +727,15 @@ Finally, the same data infrastructure template can easily be applied to other Da
 5. Move draft out and save somewhere for others to use as an example? (e.g. Steno Common Docs?)
 6. When we get funding, how to limit new personnel from the struggles of dealing with the Region’s IT setup? And not have them be given a Region computer, which will *for sure* reduce their productivity. 
 
-
 # TODO
 
-
 ## Before submission
-
-
 
 * Copy application and paste in new section to trim it to character limit.
 * Write lay proposal
 * Write brief description
 
-
 ## After submission
-
-
 
 * TODO: Will eventually need to build a more detailed use case description. 
 * IDEA: Some way of generating a DOI for the DD2 itself/for the underlying database, without actually making the data public? Maybe the code or framework, along with the version? Need people to cite it somehow.
@@ -927,10 +745,7 @@ Finally, the same data infrastructure template can easily be applied to other Da
 * TODO: Add notes about licensing and copyright. For software, usually copyright resides with the employer (e.g. for SDCA that would be Region Midt). We’d need to discuss this with the employer before we can move too much forward. License should be permissible, e.g. by using MIT License.
 * TODO: Will need to include a list of “prerequisites” that potential users of this framework would need access to (or similar enough free resources) in order to either minimally or optimally make use the framework
 
-
 # From feedback
-
-
 
 * Title, background, and purpose:
     * Text as it is now perhaps is a bit too generic. 
@@ -971,22 +786,15 @@ Finally, the same data infrastructure template can easily be applied to other Da
     * maby use "data warehouse" or "enterprise data warehouse"
     * The HL7® FHIR® (Fast Healthcare Interoperability Resources 1 ) standard defines how healthcare information can be exchanged between different computer systems regardless of how it is stored in those systems.
 
-
 # Misc useful information
-
-
 
 * Access to data through “forskermaskine” requires a valid authorization, usually given to only one person (often the head of department) per approved institution. Importantly, if even one researcher working under the institution's authorization breaches data confidentiality (through transferring microdata outside the “forskermaskine”), the access is closed for the entire institution, and in the worst case permanently. Therefore, the authorized institutions (and corresponding persons) are reluctant to give access to researchers outside their own institutions or close collaborators. Thus, DD2 is presently working on establishing legal procedures for data access for researchers from different institutions (national and international).
 * File size of SNP/Genotyping/GWAS data: 0.000072MB per SNP per individual. So for 6,000 individuals and 1 mio genotyped SNPs: 0.4 TB. Also, approx 20 mio SNPs will probably be imputed, so times that by 20, and you get about 8 TB. This is for the planned GWAS 2. GWAS 1 is already available (first 3,000 participants and 500,000 genotyped SNPs, several mio. imputed) is maybe half that size, or smaller, so approx. additional 2-4 TB. Some references [here](https://www.ncbi.nlm.nih.gov/pubmed/29734293) and [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2795954/). 
 * [https://www.ohdsi.org/data-standardization/the-common-data-model/](https://www.ohdsi.org/data-standardization/the-common-data-model/)
 
-
 # Minutes
 
-
 ## 2021-04-21
-
-
 
 * Organization diagram:
     * DD2 Project management group: At KEA? At Odense? At Biobank?
@@ -1002,10 +810,7 @@ Finally, the same data infrastructure template can easily be applied to other Da
     * Update where data is stored
 * Data managers at KEA will need access
 
-
 ## 2021-04-28
-
-
 
 * Need to include data storage and merging data?
     * Merging data as in from Core DD2, from DST/SDS, and from the HPC for the larger data
