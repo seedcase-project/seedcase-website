@@ -1,5 +1,5 @@
 ---
-title: "DIF Project"
+title: "A framework for an open and scalable infrastructure for health data exemplified by the DD2 initiative"
 description: |
   Welcome to the website. I hope you enjoy it!
 site: distill::distill_website
@@ -7,18 +7,13 @@ site: distill::distill_website
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
 ```
 
-# Trimmed Project Application
-
-Character counts:
+<!-- 
+Character counts: 
 
 - Title: 101 / 150
-- Brief project description**:** 1996 / 2000
+- Brief project description: 1996 / 2000
 - Lay project description: 919 / 1000
 - Project description: ~29,500 / 30,000
 - Literature references: / 4000
@@ -26,8 +21,25 @@ Character counts:
 Figure counts:
 
 - 3 / 4
+-->
 
-## Brief project description
+
+# Lay description
+
+Many initiatives in clinical research, including the Danish Centre for
+Strategic Research in Type 2 Diabetes (DD2) initiative, have a hard time
+getting funds for building and maintaining needed software that make sure
+health science is the highest quality it can be. We aim to make software tools
+that are easy to use and that make it easier to do better research using data
+from DD2. We will share these tools widely and freely, so that as many research
+groups as possible can use it for their own projects. Not only will we build
+these tools to help researchers with managing and sharing their data, we also
+will create them with beginner-friendly documentation and training material to
+make sure more researchers use our tools, no matter their skill level. We
+believe that with these tools, science on health and well-being can become
+better, ultimately helping people with diabetes and society in general.
+
+# Summary
 
 In clinical and health research, especially for small- to mid-sized research
 groups, funding for building modern, open source software infrastructures for
@@ -56,26 +68,6 @@ greatly improving the interest in, use of, and scientific impact of this
 resource, thus leading to substantial scientific and medical advancements,
 individualised treatment and improved human health in not only persons with
 type 2 diabetes, but population overall.
-
-## Lay project description
-
-Many initiatives in clinical research, including the Danish Centre for
-Strategic Research in Type 2 Diabetes (DD2) initiative, have a hard time
-getting funds for building and maintaining needed software that make sure
-health science is the highest quality it can be. We aim to make software tools
-that are easy to use and that make it easier to do better research using data
-from DD2. We will share these tools widely and freely, so that as many research
-groups as possible can use it for their own projects. Not only will we build
-these tools to help researchers with managing and sharing their data, we also
-will create them with beginner-friendly documentation and training material to
-make sure more researchers use our tools, no matter their skill level. We
-believe that with these tools, science on health and well-being can become
-better, ultimately helping people with diabetes and society in general.
-
-## Title
-
-A framework for an open and scalable infrastructure for health data exemplified
-by the DD2 initiative
 
 # Background
 
