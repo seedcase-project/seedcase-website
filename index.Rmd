@@ -1,8 +1,8 @@
 ---
 title: "A framework for an open and scalable infrastructure for health data exemplified by the DD2 initiative"
-description: |
-  Welcome to the website. I hope you enjoy it!
 site: distill::distill_website
+bibliography: "resources/references.bib"
+csl: "resources/vancouver.csl"
 ---
 
 ```{r setup, include=FALSE}
