@@ -8,7 +8,7 @@ exclude:
     - "LICENSE.html"
     - "DESCRIPTION"
 description: |
-  ...
+  Application to the Novo Nordisk Foundation Data Science Research Infrastructure grant.
 output_dir: "_site"
 theme: theme.css
 repository_url: https://github.com/steno-aarhus/dif-project
