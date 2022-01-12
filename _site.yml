@@ -13,7 +13,7 @@ exclude:
     - "data"
 description: |
   Application to the Novo Nordisk Foundation Data Science Research Infrastructure grant.
-output_dir: "_site"
+output_dir: "docs"
 theme: theme.css
 repository_url: https://github.com/steno-aarhus/dif-project
 creative_commons: CC BY
