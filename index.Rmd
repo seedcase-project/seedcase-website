@@ -124,8 +124,8 @@ researchers and is a role model to building a modern research infrastructure.
 
 While the UK Biobank is a source of inspiration on the state-of-the-art, the
 underlying infrastructure itself is not openly accessible and reusable. The
-same applies to a similar Danish initiative, the “_Single path to access Danish
-health data_” project [@sundhedsdata], where
+same applies to a similar Danish initiative, the "_Single path to access Danish
+health data_" project [@sundhedsdata], where
 the Danish government and individual regions are collaborating to map out all
 Danish health data. Another state-of-the-art initiative led by the University
 of Chicago, USA is Gen3 [@gen3],
@@ -168,7 +168,7 @@ database and documentation backend, and the API (Application Programming
 Interface) that interacts with both. The four users and their associated use
 cases are:
 
-1. **User 1**: Those _inputting data, _e.g., authorized centers and
+1. **User 1**: Those _inputting data_, e.g., authorized centers and
 researchers. The use cases are:
     1. Authorized centers (GPs and hospitals) upload standardized and routine data through the data entry web portal.
     2. Authorized researchers upload generated data from completed projects. Non-standardized data is manually processed and cleaned before entering into the database.
@@ -176,7 +176,7 @@ researchers. The use cases are:
 cases are:
     3. Interested researchers browse the catalogue of available data and the data dictionary.
     4. Researchers request access to data by submitting a description of their proposed project and selecting the relevant data from the catalogue. This request is sent to a list of projects to await approval from the data controllers (User 4).
-3. **User 3**: Those _viewing updates on findings and results _such as
+3. **User 3**: Those _viewing updates on findings and results_ such as
 aggregate statistics, e.g., policymakers, healthcare workers, journalists,
 researchers, and the general public. Use cases are:
     5. Users view and read through the list of completed, ongoing, and proposed projects that use the database.
@@ -489,7 +489,7 @@ to organize it. Our initial steps will be to:
 Currently, the original enrollment data are stored in a secure server at the
 DD2 headquarters at Odense, while subsets of data collected for specific
 research projects are spread across several research institutions. 
-2. _Map the data input sources and formats from the various collection centers._
+2. _Map the data input sources and formats from the various collection centers_.
 GP clinics have an existing pipeline for sending data to DD2 through their
 system, “sundhedsdatanettet” (national healthcare portal), following a patient
 visit. Other collection centers like hospitals have custom, but not
@@ -497,17 +497,17 @@ standardized, approaches to sending data to DD2. No formal approach is available
 for returning data from completed projects. The core DD2 data is sent to
 “forskermaskine” and gets merged there with the registry data, which is in a
 standard DST format.  
-3. _Move as much data as possible to a central location._ All data will be
+3. _Move as much data as possible to a central location_. All data will be
 stored at the DD2 headquarters in Odense, except large-scale data that will be
 either stored or transferred as needed to a high-performance computing (HPC)
 platform. For linkage with registry data, we will acquire a dedicated DD2 "forskermaskine" server.
 4. _Re-structure current data into the framework’s CDM_. 
 5. _Build software to automate the cleaning, processing, and merging of the
 existing and established data input pipelines into the framework’s required
-backend format._ 
-6. _Establish automated processes for linkages between the data storage servers._
+backend format_.
+6. _Establish automated processes for linkages between the data storage servers_.
 7. _Implement framework’s remaining modules, starting with User 4 and then
-moving from User 1 to 3, in that order._
+moving from User 1 to 3, in that order_.
 
 Currently, User 3 can request data by filling out a Word [application
 form](https://dd2.dk/media/1410/standard-dd2-protocol_final.doc) and emailing

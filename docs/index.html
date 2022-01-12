@@ -2527,7 +2527,7 @@ Figure counts:
 <p>For this project, the data infrastructure <em>framework</em> is defined as 1) a set of software programs, 2) a defined and fixed set of conventions on the structure and format of the filesystem and URL paths, and 3) a defined structure to the data and associated documentation, all of which are linked together as modular components. The framework will serve as an open source starting template for setting up data infrastructures that make use of modern tools and processes.</p>
 <p>This framework encompasses four target users and three layers, with a complete schematic shown in Figure 2. The three layers are the web portal frontend, the database and documentation backend, and the API (Application Programming Interface) that interacts with both. The four users and their associated use cases are:</p>
 <ol type="1">
-<li><strong>User 1</strong>: Those _inputting data, _e.g., authorized centers and researchers. The use cases are:
+<li><strong>User 1</strong>: Those <em>inputting data</em>, e.g., authorized centers and researchers. The use cases are:
 <ol type="1">
 <li>Authorized centers (GPs and hospitals) upload standardized and routine data through the data entry web portal.</li>
 <li>Authorized researchers upload generated data from completed projects. Non-standardized data is manually processed and cleaned before entering into the database.</li>
@@ -2537,7 +2537,7 @@ Figure counts:
 <li>Interested researchers browse the catalogue of available data and the data dictionary.</li>
 <li>Researchers request access to data by submitting a description of their proposed project and selecting the relevant data from the catalogue. This request is sent to a list of projects to await approval from the data controllers (User 4).</li>
 </ol></li>
-<li><strong>User 3</strong>: Those _viewing updates on findings and results _such as aggregate statistics, e.g., policymakers, healthcare workers, journalists, researchers, and the general public. Use cases are:
+<li><strong>User 3</strong>: Those <em>viewing updates on findings and results</em> such as aggregate statistics, e.g., policymakers, healthcare workers, journalists, researchers, and the general public. Use cases are:
 <ol start="5" type="1">
 <li>Users view and read through the list of completed, ongoing, and proposed projects that use the database.</li>
 <li>Users access and view aggregate statistics and the latest published findings that are relevant to them/their practice.</li>
@@ -2664,13 +2664,13 @@ Figure counts:
 <p>The biggest potential challenge to applying the framework to DD2 is getting the database backend into the appropriate structure to fit within the framework. With the current state of the DD2 data, considerable time and effort is needed to organize it. Our initial steps will be to:</p>
 <ol type="1">
 <li><em>Survey and map out all data, documentation, and processing steps</em>. Currently, the original enrollment data are stored in a secure server at the DD2 headquarters at Odense, while subsets of data collected for specific research projects are spread across several research institutions.</li>
-<li><em>Map the data input sources and formats from the various collection centers.</em> GP clinics have an existing pipeline for sending data to DD2 through their system, “sundhedsdatanettet” (national healthcare portal), following a patient visit. Other collection centers like hospitals have custom, but not standardized, approaches to sending data to DD2. No formal approach is available for returning data from completed projects. The core DD2 data is sent to “forskermaskine” and gets merged there with the registry data, which is in a standard DST format.<br />
+<li><em>Map the data input sources and formats from the various collection centers</em>. GP clinics have an existing pipeline for sending data to DD2 through their system, “sundhedsdatanettet” (national healthcare portal), following a patient visit. Other collection centers like hospitals have custom, but not standardized, approaches to sending data to DD2. No formal approach is available for returning data from completed projects. The core DD2 data is sent to “forskermaskine” and gets merged there with the registry data, which is in a standard DST format.<br />
 </li>
-<li><em>Move as much data as possible to a central location.</em> All data will be stored at the DD2 headquarters in Odense, except large-scale data that will be either stored or transferred as needed to a high-performance computing (HPC) platform. For linkage with registry data, we will acquire a dedicated DD2 “forskermaskine” server.</li>
+<li><em>Move as much data as possible to a central location</em>. All data will be stored at the DD2 headquarters in Odense, except large-scale data that will be either stored or transferred as needed to a high-performance computing (HPC) platform. For linkage with registry data, we will acquire a dedicated DD2 “forskermaskine” server.</li>
 <li><em>Re-structure current data into the framework’s CDM</em>.</li>
-<li><em>Build software to automate the cleaning, processing, and merging of the existing and established data input pipelines into the framework’s required backend format.</em></li>
-<li><em>Establish automated processes for linkages between the data storage servers.</em></li>
-<li><em>Implement framework’s remaining modules, starting with User 4 and then moving from User 1 to 3, in that order.</em></li>
+<li><em>Build software to automate the cleaning, processing, and merging of the existing and established data input pipelines into the framework’s required backend format</em>.</li>
+<li><em>Establish automated processes for linkages between the data storage servers</em>.</li>
+<li><em>Implement framework’s remaining modules, starting with User 4 and then moving from User 1 to 3, in that order</em>.</li>
 </ol>
 <p>Currently, User 3 can request data by filling out a Word <a href="https://dd2.dk/media/1410/standard-dd2-protocol_final.doc">application form</a> and emailing it to the chair of the advisory board Kurt Højlund and programme leader Jens Steen Nielsen. Applications are reviewed by the steering committee and, once approved, the data manager at the Department of Clinical Epidemiology (KEA) in Aarhus University Hospital then manually extracts the requested data and transfers the data subset to the applicant’s secure server and does this for each individual research project. If requested, KEA may also perform analyses on the data. Researchers must already have valid authorized access to the secure servers on an existing “forskermaskine” or an <a href="https://www.deic.dk/en/supercomputing/national-hpc-facilities">HPC facility</a> for the large-scale data, such as <a href="https://www.computerome.dk/">Computerome 2</a> and <a href="https://genome.au.dk/">GenomeDK</a>.</p>
 <p>The costs of storing the original data are covered by DD2, while applicants cover the costs related to storing the transferred data. We will not charge for data access. As per legal requirements, researchers can only use the data for the intended purposes listed in the application. After project completion, the researchers must delete or close access to the data and inform DD2 as legally required. Any newly generated data must be returned to DD2 by uploading via the User 1 portal.</p>
