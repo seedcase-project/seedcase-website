@@ -7,6 +7,10 @@ exclude:
     - "LICENSE.md"
     - "LICENSE.html"
     - "DESCRIPTION"
+    - "misc"
+    - "resources"
+    - "R"
+    - "data"
 description: |
   Application to the Novo Nordisk Foundation Data Science Research Infrastructure grant.
 output_dir: "_site"
