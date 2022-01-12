@@ -3,6 +3,7 @@ title: "Data Infrastructure Framework Project"
 base_url: https://steno-aarhus.github.io/dif-project/
 include:
     - "README.html"
+    - ".nojekyll"
 exclude:
     - "LICENSE.md"
     - "LICENSE.html"
