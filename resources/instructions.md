@@ -34,7 +34,7 @@ The programme also aims to:
 - Ensure that facilities are _continuously developed and maintained_, also after their implementation.
 - _Boost the research environment_, including companies (e.g.,small and medium-sized enterprises (SMEs) and incubators), that cannot invest in this to the same extent.
 
-Infrastructure must **state-of-the-art **and is defined as:
+Infrastructure must **state-of-the-art** and is defined as:
 
 - _Computational_ infrastructures, including supercomputers, GPUs, _storage_, software, etc.
 - _Databases and data resources, including data collection, cleaning, annotation, integration, management, etc._
