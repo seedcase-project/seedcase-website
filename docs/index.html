@@ -2533,17 +2533,17 @@ Figure counts:
 <li>Authorized researchers upload generated data from completed projects. Non-standardized data is manually processed and cleaned before entering into the database.</li>
 </ol></li>
 <li><strong>User 2</strong>: Those <em>requesting access</em>, e.g., researchers and clinicians. Use cases are:
-<ol start="3" type="1">
+<ol type="1">
 <li>Interested researchers browse the catalogue of available data and the data dictionary.</li>
 <li>Researchers request access to data by submitting a description of their proposed project and selecting the relevant data from the catalogue. This request is sent to a list of projects to await approval from the data controllers (User 4).</li>
 </ol></li>
 <li><strong>User 3</strong>: Those <em>viewing updates on findings and results</em> such as aggregate statistics, e.g., policymakers, healthcare workers, journalists, researchers, and the general public. Use cases are:
-<ol start="5" type="1">
+<ol type="1">
 <li>Users view and read through the list of completed, ongoing, and proposed projects that use the database.</li>
 <li>Users access and view aggregate statistics and the latest published findings that are relevant to them/their practice.</li>
 </ol></li>
 <li><strong>User 4</strong>: Administrators and data controllers. Use cases are:
-<ol start="7" type="1">
+<ol type="1">
 <li>Approve newly submitted projects that request data and manage existing projects.</li>
 <li>Approve and authorize researchers to access the web portal for data requests and to manage current authorized researchers.</li>
 <li>Manage collection centers’ access and authorization.</li>
@@ -2586,7 +2586,7 @@ Figure counts:
 <li><strong>Markdown for documentation:</strong> Markdown is a common web format and is quickly becoming a standard in data science and even within many scientific fields. It is a simple syntax for writing documents that enables easy conversion to file formats like HTML or Word. It is simple and portable, so will be used for writing the data dictionary, results, documentation, and training material.</li>
 <li><strong>Tools for modern web-based interfaces:</strong> These include HTML, CSS, JavaScript, and other web technologies, as well as User Interface (UI)/User Experience (UX) design principles.</li>
 <li><strong>Software development best practices: </strong>This includes unit testing, continuous integration, and document-driven development (to emphasize usability). We’ll use the concept of Minimum Viable Product (MVP) as a means of quickly building something that is minimally workable.</li>
-<li><strong>Re-use of similar infrastructures:</strong> Modules from initiatives like Gen3 will either be re-used directly or modified to fit our requirements. TODO: Our added value over Gen3.</li>
+<li><strong>Re-use of similar infrastructures:</strong> Modules from initiatives like Gen3 will either be re-used directly or modified to fit our requirements.</li>
 </ul>
 <h2 id="the-frameworks-layers">The framework’s layers</h2>
 <h3 id="frontend-interface-the-web-portal">Frontend interface: The web portal</h3>
@@ -2600,7 +2600,7 @@ Figure counts:
 </ol></li>
 <li>Public access: User 3 would have access to all public pages, which includes the data dictionary, updates on findings, list of current and past projects, and a log of any changes or additions to the data.</li>
 </ol>
-<p>All content would be rendered directly as plain HTML text to ease use of existing webpage translation services (e.g. Google Translated), so that content written in another language, i.e., Danish, would still be readable to non-native speakers. This would also lower the amount of maintenance necessary for documentation.</p>
+<p>All content would be rendered directly as plain HTML text to ease use of existing webpage translation services (e.g. Google Translate), so that content written in another language, i.e., Danish, would still be readable to non-native speakers. This would also lower the amount of maintenance necessary for documentation.</p>
 <h3 id="middle-layer-the-api">Middle-layer: The API</h3>
 <p>Modern web and computational infrastructures are built on web APIs. Any modern online resource or interface makes use of an API, such as from Google, Gen3, or the UK Biobank. An API is a mechanism by which different programs can communicate with one another. They form a set of instructions or conventions that allow easy communication between a user and the computer. APIs by their nature are transparent and if well-documented would ensure the linked data would be FAIR, safely and securely.</p>
 <p>In this case, the API would be between the user and the web server that stores the underlying database and documentation. The API would be a combination of a predefined set of instructions that are sent to the web server to run certain commands as well as a set of explicit conventions and rules on how files and folders are structured and named. Taken together, this API would allow other software like R packages to be built to interact with the backend to automate tasks done by the users.</p>
