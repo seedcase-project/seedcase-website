@@ -174,24 +174,22 @@ researchers. The use cases are:
     2. Authorized researchers upload generated data from completed projects. Non-standardized data is manually processed and cleaned before entering into the database.
 2. **User 2**: Those _requesting access_, e.g., researchers and clinicians. Use
 cases are:
-    3. Interested researchers browse the catalogue of available data and the data dictionary.
-    4. Researchers request access to data by submitting a description of their proposed project and selecting the relevant data from the catalogue. This request is sent to a list of projects to await approval from the data controllers (User 4).
+    1. Interested researchers browse the catalogue of available data and the data dictionary.
+    2. Researchers request access to data by submitting a description of their proposed project and selecting the relevant data from the catalogue. This request is sent to a list of projects to await approval from the data controllers (User 4).
 3. **User 3**: Those _viewing updates on findings and results_ such as
 aggregate statistics, e.g., policymakers, healthcare workers, journalists,
 researchers, and the general public. Use cases are:
-    5. Users view and read through the list of completed, ongoing, and proposed projects that use the database.
-    6. Users access and view aggregate statistics and the latest published findings that are relevant to them/their practice.
+    1. Users view and read through the list of completed, ongoing, and proposed projects that use the database.
+    2. Users access and view aggregate statistics and the latest published findings that are relevant to them/their practice.
 4. **User 4**: Administrators and data controllers. Use cases are:
-    7. Approve newly submitted projects that request data and manage existing projects.
-    8. Approve and authorize researchers to access the web portal for data requests and to manage current authorized researchers.
-    9. Manage collection centers’ access and authorization.
+    1. Approve newly submitted projects that request data and manage existing projects.
+    2. Approve and authorize researchers to access the web portal for data requests and to manage current authorized researchers.
+    3. Manage collection centers’ access and authorization.
 
 Throughout this application, we’ll refer to these four users and three layers
 as we expand on and describe the framework.
 
 ![Figure 2: Detailed schematic of the data infrastructure framework.](images/detailed-schematic.svg "Schematic of DIF.")
-
-
 
 ### Key principles underlying the framework
 
@@ -252,7 +250,7 @@ conventions to form the framework’s foundation:
 - **Markdown for documentation:** Markdown is a common web format and is quickly becoming a standard in data science and even within many scientific fields. It is a simple syntax for writing documents that enables easy conversion to file formats like HTML or Word. It is simple and portable, so will be used for writing the data dictionary, results, documentation, and training material.
 - **Tools for modern web-based interfaces:** These include HTML, CSS, JavaScript, and other web technologies, as well as User Interface (UI)/User Experience (UX) design principles.
 - **Software development best practices: **This includes unit testing, continuous integration, and document-driven development (to emphasize usability). We’ll use the concept of Minimum Viable Product (MVP) as a means of quickly building something that is minimally workable.
-- **Re-use of similar infrastructures:** Modules from initiatives like Gen3 will either be re-used directly or modified to fit our requirements. TODO: Our added value over Gen3.
+- **Re-use of similar infrastructures:** Modules from initiatives like Gen3 will either be re-used directly or modified to fit our requirements.
 
 ## The framework’s layers
 
@@ -270,7 +268,7 @@ the data dictionary, updates on findings, list of current and past projects,
 and a log of any changes or additions to the data.
 
 All content would be rendered directly as plain HTML text to ease use of
-existing webpage translation services (e.g. Google Translated), so that content
+existing webpage translation services (e.g. Google Translate), so that content
 written in another language, i.e., Danish, would still be readable to
 non-native speakers. This would also lower the amount of maintenance necessary
 for documentation.
@@ -539,7 +537,6 @@ deliverables (each User by each layer). Each deliverable would be to prototype
 a MVP to begin testing it, identifying bugs, getting feedback, and establishing
 maintenance procedures. See Figure 3 for the Gantt chart.
 
-
 ![Figure 3: Gantt chart of deliverables and timelines.](images/gantt-chart.svg "Gantt Chart")
 
 # Collaborations
@@ -547,8 +544,7 @@ maintenance procedures. See Figure 3 for the Gantt chart.
 The framework will be developed at SDCA with Professor Annelli Sandbæk
 (applicant) as the lead PI responsible for reaching the overall goals of the
 project and defined milestones, as well as two postdocs, Luke Johnston, MSc,
-PhD and Alisa Kjærgaard,
-MD, PhD. A project group
+PhD and Alisa Kjærgaard, MD, PhD. A project group
 headed by the PI will be established that includes central persons from SDCA
 and DD2. In close collaboration with the project manager of DD2 and the current
 data manager, the deliverables will be planned and carried through. Completing
