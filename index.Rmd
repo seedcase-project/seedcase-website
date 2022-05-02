@@ -27,6 +27,7 @@ Figure counts:
 - 3 / 4
 -->
 
+[![Grant proposal DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6511112.svg)](https://doi.org/10.5281/zenodo.6511112)
 
 # Lay description
 
