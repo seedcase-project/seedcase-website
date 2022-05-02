@@ -1,5 +1,9 @@
 ---
 title: "A framework for an open and scalable infrastructure for health data exemplified by the DD2 initiative"
+author:
+    - Luke W. Johnston
+    - Alisa Devedzic Kjærgaard
+    - Annelli Sandbæk
 site: distill::distill_website
 bibliography: "resources/references.bib"
 csl: "resources/vancouver.csl"
