@@ -21,7 +21,7 @@ version_tag <- git_tag_create(
 )
 git_push()
 git_tag_push(repo_version)
-if (interactive()) browseURL("https://gitlab.com/rostools/r-cubed/-/releases/new")
+if (interactive()) browseURL("https://github.com/steno-aarhus/dif-project/releases/new")
 
 # This is for when we upload to Zenodo
 # tag_archive_file <- str_c("dif-project", repo_version, ".zip")
