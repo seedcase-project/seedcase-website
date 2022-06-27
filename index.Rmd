@@ -260,7 +260,7 @@ conventions to form the framework’s foundation:
     - JSON (JavaScript Object Notation) is the Internet’s de facto standard format for information transfer.
     - CSV is well known to researchers.
     - SQL (a querying language and data storage format) is a widely used format for storing data.
-- **Git, GitLab, and DVC for version control: **Formal version control (VC) systems are software that track changes to files and are standard practice software engineering. After Git was developed, it has increasingly been used by researchers across scientific fields to improve research transparency and openness. GitLab is an open source product to host Git projects and handles many modern software development tasks. DVC, or Data Version Control, is a machine learning VC software for data and models that integrates with Git.
+- **Git, GitLab, and DVC for version control: **Formal version control (VC) systems are software that track changes to files and are standard practice in software engineering. After Git was developed, it has increasingly been used by researchers across scientific fields to improve research transparency and openness. GitLab is an open source product to host Git projects and handles many modern software development tasks. DVC, or Data Version Control, is a machine learning VC software for data and models that integrates with Git.
 - **Markdown for documentation:** Markdown is a common web format and is quickly becoming a standard in data science and even within many scientific fields. It is a simple syntax for writing documents that enables easy conversion to file formats like HTML or Word. It is simple and portable, so will be used for writing the data dictionary, results, documentation, and training material.
 - **Tools for modern web-based interfaces:** These include HTML, CSS, JavaScript, and other web technologies, as well as User Interface (UI)/User Experience (UX) design principles.
 - **Software development best practices: **This includes unit testing, continuous integration, and document-driven development (to emphasize usability). We’ll use the concept of Minimum Viable Product (MVP) as a means of quickly building something that is minimally workable.
@@ -377,7 +377,7 @@ with the data dictionary and the data changelog, and then selecting those
 variables that are relevant to their project. The catalogue of variables would
 be a table that is built from the underlying set of files that contain the
 documentation and that includes a button to select and save the variables of
-interest. If they desired, they could also update any errors or types in the
+interest. If they desired, they could also update any errors or typos in the
 data dictionary through the “Merge Request” mechanism described above.
 2. Writing a description of the scientific rationale of the project and adding
 any relevant information into a web form that User 4 would use to decide on
