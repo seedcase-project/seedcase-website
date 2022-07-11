@@ -1,40 +1,51 @@
+## 
 
-## Overview of entire project
+## Overview of project blocks
 
-- why support
-    - Why the technologies for the 
-- how support
-    - Code of conduct
-        - Who to contact for issues (independent preferably)
-    - Contributing guidelines
-        - team
-        - for public
-    - How/where to communicate
-    - Governance
-- product 
-    - matrix
-        - Four users
-        - Three layers
-    - Connectors
-        - R
-        - Python
-        - Bash/shell
-        - RedCap
-- Documentation
-    - What it is about, mission, and purpose
-    - installation
-        - On different 
+### Why support
+
+- Why the technologies we choose
+
+### How support
+
+- Code of conduct
+    - Who to contact for issues (independent preferably)
+- Contributing guidelines
+    - team
+    - for public
+- How/where to communicate
+- Governance
+
+### Product 
+
+- Matrix/Pathways
+    - Four users
+    - Three layers
+- Connectors
+    - R
+    - Python
+    - Bash/shell
+    - RedCap
+    
+### Documentation
+
+- What it is about, mission, and purpose
+- installation
+    - On different computers
+- Design and architecture
+- Tutorials and training
     - Basic usage
     - Advanced usage
-    - Design and architecture
-- Culture and collaboration
-    - Informal side
-        - blog, as we learn about things, we share, new things found
-        - short training bits, how to do things
-    - Formal side
-        - How we work together, where we work, how plan or coordinate
-        - When we collaborate/co-work (open session and closed session?)
-        - How to manage and coordinate tasks and deadlines
+
+### Culture and collaboration
+
+- Informal side
+    - blog, as we learn about things, we share, new things found
+    - short training bits, how to do things
+- Formal side (largely undocumented/done through other channels aka calendar, etc)
+    - How we work together, where we work, how plan or coordinate
+    - When we collaborate/co-work (open session and closed session?)
+    - How to manage and coordinate tasks and deadlines
         
 ## Steps
 
@@ -70,7 +81,18 @@
 - Do we make a new GH org?
 - How many repos?
     - one for product
+        - including product docs, reference docs, general usage, etc
+        - gh-pages/built docs as website, but not part of installation
     - one for website/docs
         - admin/contributor side? e.g. for contributing docs?
             - e.g. why we decide on certain technologies etc.
         - public side? training, tutorials, introductions, mission?
+        - Where should these outlets be put, in public or admin side?
+            - informal blogs...?
+            - formal posts (aim to publish in zenodo, and other outlets?)
+
+## Milestones
+
+- Rough draft of design and architecture
+- Send design and architecture to consulting firm for review?
+- 
