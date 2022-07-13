@@ -1,22 +1,45 @@
-## 
+## Overview of project blocks and related files
 
-## Overview of project blocks
+### Why
 
-### Why support
+Why the technologies we choose
 
-- Why the technologies we choose
+- design/decisions/why-*
+- design/decisions/why-github.md
+- design/decisions/why-python.md
+- contribute/decisions/why-* (eg. why-discord.md)
 
-### How support
+### How
 
-- Code of conduct
-    - Who to contact for issues (independent preferably)
-- Contributing guidelines
-    - team
-    - for public
-- How/where to communicate
-- Governance
+- CONTRIBUTING.md: General user contributing
+- GOVERNANCE.md: Structure of organization, team, and ownership, how decisions are made.
+- CODE_OF_CONDUCT.md
+    - With contact for issues/conflicts (Annelli, otherwise go with Niels as independent?)
+- contribute/index.md: Link to CONTRIBUTING.md, CODE_OF_CONDUCT.md, and GOVERNANCE.md
+- contribute/team/conduct.md
+- contribute/team/contributing.md
+- contribute/team/events/index.md
+    - Structure of events, how often, etc.
+- contribute/team/events/DATE-agenda.md
+- contribute/team/communication.md (?)
+- contribute/roadmap.md
+    - milestones, gantt chart?
+- contribute/workflow.md (name?)
+    - When and what are tagged as releases (for both product and docs)
 
 ### Product 
+
+
+- pipeline/ (automatic processes for tasks, like rebuilding changelog etc)
+- api/
+- common-data-model/setup.*
+- common-data-model/update.*
+- build-data-model
+- update-data-model
+- build-changelog
+- update-changelog
+- generate-data-doi
+- update-
 
 - Matrix/Pathways
     - Four users
@@ -29,23 +52,64 @@
     
 ### Documentation
 
-- What it is about, mission, and purpose
-- installation
-    - On different computers
-- Design and architecture
-- Tutorials and training
-    - Basic usage
-    - Advanced usage
+What it is about, mission, and purpose
+
+- about/index.md
+- about/mission.md
+    - Values as well: eg. clear over concise
+- about/contact.md
+- about/governance.md (link to GOVERNANCE.md?)
+
+Installation
+
+- installing.md
+
+Design and architecture (pathways will have all use cases, how user interacts with
+product, computational steps taken from user interaction) (as its own repo?)
+
+- design/index.md
+- design/paper.md (name?): connects all docs and sends to Zenodo for each "release"
+- design/overview.md
+    - values and guiding principles
+    - More detailed than the diagram and more pathways and connections
+- design/diagram.png (svg, etc)
+- design/architecture/frontend.md
+- design/architecture/backend.md
+- design/architecture/api.md
+- design/pathways/data-input.md
+- design/pathways/data-discovery.md
+- design/pathways/admin.md
+- design/pathways/knowledge-sharing.md
+    
+Usage, tutorials and training
+
+- usage/index.md: Introduction
+- usage/reference.md: Contains individual function, method, and API documentation 
+(built from package docs? Or link to built package website?)
+- usage/getting-started/user.md
+- usage/getting-started/admin.md
+- usage/installing/* (whole folder for instructions on installing indifferent environments?)
+- learn/courses/*
+    - in-person as well as online material?
+- learn/tutorials/*
+    - in-person as well as online material?
 
 ### Culture and collaboration
 
-- Informal side
-    - blog, as we learn about things, we share, new things found
-    - short training bits, how to do things
-- Formal side (largely undocumented/done through other channels aka calendar, etc)
+Informal side:
+
+- blog/*: As we learn about things, we share, new things found, brief training
+    - Use categories like training, knowledge, tool, etc etc
+
+Formal side (largely undocumented/done through other channels aka calendar, slack, Issue discussions, etc)
+
+- contribute/team/contributing.md
+    - how in-person events are structured and what we do or expectations
     - How we work together, where we work, how plan or coordinate
     - When we collaborate/co-work (open session and closed session?)
-    - How to manage and coordinate tasks and deadlines
+- How to manage and coordinate tasks and deadlines
+    - ....?
+- formal posts (aim to publish in zenodo, and other outlets?)
         
 ## Steps
 
@@ -65,8 +129,6 @@
     - blog/*
 3. Design, architecture, and technologies (-docs)
     - design.md
-        - values and guiding principles
-        - More detailed than the diagram and more pathways and connections
     - architecture/api.md
         - decisions/why-rest-api.md
         - decisions/why-django-or-flask.md
@@ -77,22 +139,11 @@
 
 ## Questions
 
-- Name for the product
-- Do we make a new GH org?
+- Name for the product?
+- Do we make a new GitHub org or use steno-aarhus?
 - How many repos?
     - one for product
         - including product docs, reference docs, general usage, etc
         - gh-pages/built docs as website, but not part of installation
     - one for website/docs
-        - admin/contributor side? e.g. for contributing docs?
-            - e.g. why we decide on certain technologies etc.
-        - public side? training, tutorials, introductions, mission?
-        - Where should these outlets be put, in public or admin side?
-            - informal blogs...?
-            - formal posts (aim to publish in zenodo, and other outlets?)
-
-## Milestones
-
-- Rough draft of design and architecture
-- Send design and architecture to consulting firm for review?
-- 
+- Multiple packages or one single one?
