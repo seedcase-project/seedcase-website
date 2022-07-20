@@ -2,10 +2,6 @@
 title: "A framework for an open and scalable infrastructure for health data exemplified by the DD2 initiative"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 [![](https://zenodo.org/badge/DOI/10.5281/zenodo.6511112.svg){align="left"}](https://doi.org/10.5281/zenodo.6511112)
 
 # Lay description
