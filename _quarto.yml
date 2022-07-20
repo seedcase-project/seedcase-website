@@ -25,7 +25,7 @@ website:
         location: navbar
         type: overlay
     chapters:
-        - index.Rmd
+        - index.qmd
     page-footer:
         center:
             - text: "License under CC-BY 4.0"
