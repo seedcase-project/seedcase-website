@@ -41,8 +41,9 @@ gantt_full_spec <- function(tasks_df, title = "") {
 
     {tasks_string}
     ")
+    gantt_string <- str_remove_all(gantt_string, "\\\\")
 
-    return(gantt_string)
+    return(as.character(gantt_string))
 }
 
 # Produces a Gantt chart from a data frame of tasks
