@@ -101,8 +101,11 @@ abroad has the potential to further increase the value of DD2. However,
 this comes with higher costs and resources for maintaining, extending,
 and improving on the existing DD2 research infrastructure.
 
-![Figure 1: Summary of the different DD2
-databases.](images/dd2-description.svg)
+```{r fig-dd2-description}
+#| echo: false
+#| fig.cap: "Summary of the different DD2 databases."
+knitr::include_graphics("images/dd2-description.svg")
+```
 
 Building modern data infrastructures has slowly been taking greater
 priority by funding and research agencies globally. For instance, the UK
@@ -193,8 +196,11 @@ users and their associated use cases are:
 Throughout this application, we'll refer to these four users and three
 layers as we expand on and describe the framework.
 
-![Figure 2: Detailed schematic of the data infrastructure
-framework.](images/detailed-schematic.svg "Schematic of DIF.")
+```{r fig-detailed-schematic}
+#| echo: false
+#| fig.cap: "Detailed schematic of the data infrastructure framework."
+knitr::include_graphics("images/detailed-schematic.svg")
+```
 
 ### Key principles underlying the framework
 
@@ -604,8 +610,12 @@ be to prototype a MVP to begin testing it, identifying bugs, getting
 feedback, and establishing maintenance procedures. See Figure 3 for the
 Gantt chart.
 
-![Figure 3: Gantt chart of deliverables and
-timelines.](images/gantt-chart.svg "Gantt Chart")
+```{r fig-gantt-chart, echo=FALSE}
+#| fig.cap = "Gantt chart of deliverables and timelines.",
+#| out.width = "100%",
+#| out.height = "1100px"
+knitr::include_graphics("images/gantt-chart.svg")
+```
 
 # Collaborations
 
