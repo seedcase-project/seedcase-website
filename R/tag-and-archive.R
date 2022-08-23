@@ -2,6 +2,10 @@
 library(here)
 library(gert)
 
+# This script was used to generate the HTML file of the application from an
+# older version of the repository when it used distill to create the HTML.
+# Now it uses Quarto instead.
+
 # Generate HTML of application for archiving -------------------------------
 # 1. Comment out the d-title element in the theme.css
 # 2. Comment out the navbar in the _site.yml
