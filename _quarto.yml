@@ -24,18 +24,30 @@ website:
     search:
         location: navbar
         type: overlay
-    chapters:
-        - index.qmd
     page-footer:
         center:
             - text: "License under CC-BY 4.0"
               href: LICENSE.md
     navbar:
         left:
+            - text: "Community"
+              href: community/contribute/index.md
+        right:
             - icon: "globe"
               href: "https://www.stenoaarhus.dk/research"
             - icon: "twitter"
               href: "https://twitter.com/StenoAarhusRes"
+    sidebar:
+        - id: community
+          title: "Community"
+          style: "floating"
+          align: left
+          contents:
+            - text: "Community"
+              href: community/contribute/index.md
+            - section: "Team"
+              contents:
+                - "community/contribute/team/events.md"
 
 bibliography: "resources/references.bib"
 csl: "resources/vancouver.csl"
@@ -49,7 +61,7 @@ format:
         - zephyr
         - theme.scss
     toc: true
-    toc-location: left
+    toc-location: right
     toc-depth: 3
     # include-before-body:
         # - "includes/site-counter.html"
