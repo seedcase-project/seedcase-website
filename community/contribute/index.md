@@ -6,9 +6,9 @@ Image of blocks
 
 Why the technologies we choose
 
--   main/design/decisions/why-\*
--   main/design/decisions/why-github.md
--   main/design/decisions/why-python.md
+-   design/decisions/why-\*
+-   design/decisions/why-github.md
+-   design/decisions/why-python.md
 -   community/contribute/decisions/why-\* (eg. why-discord.md)
 
 ## How
@@ -58,49 +58,49 @@ Why the technologies we choose
 
 What it is about, mission, and purpose
 
--   main/about/index.md
--   main/about/mission.md
+-   about/index.md
+-   about/mission.md
     -   Values as well: eg. clear over concise
--   main/about/contact.md
--   main/about/governance.md (link to GOVERNANCE.md?)
+-   about/contact.md
+-   about/governance.md (link to GOVERNANCE.md?)
 
 Installation
 
--   main/installing.md
+-   installing.md
 
 Design and architecture (pathways will have all use cases, how user
 interacts with product, computational steps taken from user interaction)
 (as its own repo?)
 
--   main/design/index.md
--   main/design/paper.md (name?): connects all docs and sends to Zenodo
-    for each "release"
--   main/design/overview.md
+-   design/index.md
+-   design/paper.md (name?): connects all docs and sends to Zenodo for
+    each "release"
+-   design/overview.md
     -   values and guiding principles
     -   More detailed than the diagram and more pathways and connections
--   main/design/use-cases.md
--   main/design/diagram.png (svg, etc)
--   main/design/architecture/frontend.md
--   main/design/architecture/backend.md
--   main/design/architecture/api.md
--   main/design/pathways/data-input.md
--   main/design/pathways/data-discovery.md
--   main/design/pathways/admin.md
--   main/design/pathways/knowledge-sharing.md
+-   design/use-cases.md
+-   design/diagram.png (svg, etc)
+-   design/architecture/frontend.md
+-   design/architecture/backend.md
+-   design/architecture/api.md
+-   design/pathways/data-input.md
+-   design/pathways/data-discovery.md
+-   design/pathways/admin.md
+-   design/pathways/knowledge-sharing.md
 
 Usage, tutorials and training
 
--   main/usage/index.md: Introduction
--   main/usage/reference.md: Contains individual function, method, and
-    API documentation (built from package docs? Or link to built package
+-   usage/index.md: Introduction
+-   usage/reference.md: Contains individual function, method, and API
+    documentation (built from package docs? Or link to built package
     website?)
--   main/usage/getting-started/user.md
--   main/usage/getting-started/admin.md
--   main/usage/installing/\* (whole folder for instructions on
-    installing indifferent environments?)
--   main/learn/courses/\*
+-   usage/getting-started/user.md
+-   usage/getting-started/admin.md
+-   usage/installing/\* (whole folder for instructions on installing
+    indifferent environments?)
+-   learn/courses/\*
     -   in-person as well as online material?
--   main/learn/tutorials/\*
+-   learn/tutorials/\*
     -   in-person as well as online material?
 
 ## Culture and collaboration
