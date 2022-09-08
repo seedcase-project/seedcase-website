@@ -18,50 +18,33 @@ categories:
 
 ### Day 1: Oct 26
 
-| Time  | Item                                                          |
-|-------|---------------------------------------------------------------|
-| 9:30  | Introductions and overview of next few days                   |
-| 10:00 | [:link:](#onboarding) General onboarding for SDCA             |
-| 10:30 | Coffee, snacks, and break                                     |
-| 10:45 | [:link:](#onboarding) Onboarding for project                  |
-| 12:15 | Lunch                                                         |
-| 13:00 | [:link:](#social-activities) Small social activities          |
-| 13:30 | [:link:](#working-together) How to effectively work together? |
-| 14:15 | Coffee, snacks, and break                                     |
-| 14:45 | [:link:](#working-together) Continue from previous session    |
-| 16:00 | End for day                                                   |
-| 17:30 | Dinner (location in calendar invite)                          |
+| Time  | Item                                                        |
+|-------|-------------------------------------------------------------|
+| 9:30  | Introductions and overview of next few days                 |
+| 10:00 | General onboarding for SDCA ([🔗](#onboarding))             |
+| 10:30 | 🍵 Coffee, snacks, and break                                |
+| 10:45 | Onboarding for project ([🔗](#onboarding))                  |
+| 12:15 | 🍴 Lunch                                                    |
+| 13:00 | 🚶Walking and chatting ([🔗](#social-activities))           |
+| 13:30 | How to effectively work together? ([🔗](#working-together)) |
+| 14:15 | 🍵 Coffee, snacks, and break                                |
+| 14:45 | Continue from previous session ([🔗](#working-together))    |
+| 16:00 | End for day                                                 |
+| 17:30 | 🍴 Dinner (location in calendar invite)                     |
 
 ### Day 2: Oct 27
 
-| Time  | Item                                            |
-|-------|-------------------------------------------------|
-| 9:30  | [:link:](#sharing) Sharing knowledge and skills |
-| 10:30 | Coffee, snacks, and break                       |
-| 10:45 | [:link:]()                                      |
-| 12:15 | Lunch                                           |
-| 13:00 | [:link:](#)                                     |
-| 13:00 | [:link:](#)                                     |
-| 14:15 | Coffee, snacks, and break                       |
-| 14:45 | [:link:](#)                                     |
-| 16:00 | End for day                                     |
-| 17:30 | Dinner (location in calendar invite)            |
-
-4.  Design, architecture, and technologies (-docs)
-
-    -   design.md
-    -   architecture/api.md
-        -   decisions/why-rest-api.md
-        -   decisions/why-django-or-flask.md
-    -   architecture/backend.md
-        -   decisions/why-sqlite-or-parquet.md
-    -   architecture/frontend.md
-        -   decisions/why-...
-
-5.  Architecture Brainstorming
-
-    -   Delegating/assigning tasks and next steps
-    -   Potential name for project (other than DIF)
+| Time  | Item                                               |
+|-------|----------------------------------------------------|
+| 9:30  | Sharing knowledge and skills ([🔗](#sharing))      |
+| 10:30 | 🍵 Coffee, snacks, and break                       |
+| 10:45 | Continue previous session ([🔗](#sharing))         |
+| 12:15 | 🍴 Lunch                                           |
+| 13:00 | 🚶 Walking and chatting ([🔗](#social-activities)) |
+| 13:30 | ([🔗](#))                                          |
+| 14:15 | 🍵 Coffee, snacks, and break                       |
+| 14:45 | ([🔗](#))                                          |
+| 16:00 | End for day                                        |
 
 ## Agenda details
 
@@ -91,8 +74,12 @@ For project:
 
 ### Social activities {#social-activities}
 
--   Things you'd like to learn while in this job/project
--   How do you work best?
+-   Walk around the area
+-   Things to chat about:
+    -   Things you'd like to learn while in this job/project
+    -   How do you work best?
+    -   Things learned from previous positions that worked well or could
+        be improved on
 
 ### Working together session {#working-together}
 
@@ -100,13 +87,15 @@ For project:
     -   Git branch-based workflow (GitHub)
     -   When do we work synchronously together and how often
 -   GOVERNANCE
-    -   e.g. in general I'm responsible for overall plan and structure
-        of project but that doesn't mean others don't get decision. We
-        work as a team, each with areas of responsibilities but we all
-        have a stake in this
+    -   How does overall decision making and responsibility structure
+        look like? To communicate to others outside team how we do
+        things. For instance, while I'm in general responsible for
+        overall plan and structure of project, others can also be
+        involved in decisions since those contributing also have a stake
+        in the project.
 -   CODE OF CONDUCT
-    -   How do we want to work together and behave
-    -   How to resolve conflict
+    -   How do we want to work together and behave?
+    -   How to resolve conflicts?
 -   Tools to communicate with each other or for project management
     -   Which communication channels? (Discord/Slack/Zoom/etc)
     -   What tools to use to manage project? GitHub issues/board?
@@ -115,35 +104,26 @@ For project:
 ### Sharing knowledge and skills {#sharing}
 
 -   How to share what we already know and what we learn?
-    -   For those inside and outside team?
+    -   For those inside and outside the team?
     -   As blog posts? So we can eventually combine them into formal
-        teaching material later?
-    -   Dissemination?
+        teaching material or some other documentation later?
+    -   Other forms of dissemination?
 
-### Next steps
+### Project specific brainstorming {#project-brainstorming}
+
+-   Delegating/assigning tasks and next steps
+-   Brainstorm potential names for project (other than DIF) \[#\]
+-   Do we make a new GitHub organization or use steno-aarhus?
+
+### Next steps {#next-steps}
 
 -   Next (virtual) session:
     -   Brainstorming architecture/design, list of tasks/milestones and
         who does what
-    -   When to schedule?
--   List of "outputs"
-    -   DIF software product (of course)
-    -   Report describing architecture
-    -   Blogs on learning and thoughts
-    -   Tutorial on using it
-    -   Others?
-        -   Connector packages between different data formats to DIF's
-            Common Data Model?
-        -   Packages to simulate data to allow immediate testing of
-            analysis code with
+    -   Scheduling next session
 
 ## Questions to address from meeting
 
 -   Potential name for the product?
--   Do we make a new GitHub organization or use steno-aarhus?
--   How many repositories? So far:
-    -   One for software product
-        -   Including product and reference docs, general usage, etc
-    -   One for project website/docs
 
 ## Minutes from meeting
