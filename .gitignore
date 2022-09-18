@@ -2,6 +2,6 @@
 .RData
 .Rproj.user
 *.tmp
-
+docs
 /.quarto/
 _ignore
