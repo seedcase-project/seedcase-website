@@ -15,6 +15,10 @@ categories:
 | Time | Item |
 |------|------|
 
+-   Finalize name.
+-   Brainstorm (and finalize) design and architecture based on last
+    month of thinking and writing.
+
 4.  Design, architecture, and technologies (-docs)
 
     -   design.md
@@ -33,11 +37,8 @@ categories:
 
 -   How many repositories? So far:
     -   One for software product
-        -   Including product and reference docs, general usage, etc
-    -   One for project website/docs
--   How many repositories? So far:
-    -   One for software product
     -   Including product and reference docs, general usage, etc
     -   One for project website/docs
 
 ## Minutes from meeting
+
