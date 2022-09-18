@@ -1,8 +1,13 @@
-# Overview of project blocks and related files
+---
+title: "Overview"
+---
 
-Image of blocks
+{{< include ../../includes/_wip.qmd >}}
 
-## Why
+![Project blocks that make up the
+DIF.](/images/project-blocks.svg){width="70%"}
+
+## Why support block
 
 Why the technologies we choose
 
@@ -11,7 +16,7 @@ Why the technologies we choose
 -   design/decisions/why-python.md
 -   community/contribute/decisions/why-\* (eg. why-discord.md)
 
-## How
+## How support block
 
 -   community/CONTRIBUTING.md: General user contributing
 -   community/GOVERNANCE.md: Structure of organization, team, and
@@ -32,7 +37,7 @@ Why the technologies we choose
 -   community/contribute/workflow.md (name?)
     -   When and what are tagged as releases (for both product and docs)
 
-## Product
+## Product block
 
 -   pipeline/ (automatic processes for tasks, like rebuilding changelog
     etc)
@@ -54,7 +59,7 @@ Why the technologies we choose
     -   Bash/shell
     -   RedCap
 
-## Documentation
+## Documentation block
 
 What it is about, mission, and purpose
 
@@ -103,7 +108,7 @@ Usage, tutorials and training
 -   learn/tutorials/\*
     -   in-person as well as online material?
 
-## Culture and collaboration
+## Culture and collaboration block
 
 Informal side:
 
