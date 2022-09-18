@@ -7,7 +7,7 @@ project:
         - "*.md"
         - "*.qmd"
     post-render:
-        - touch docs/.nojekyll
+        - touch _site/.nojekyll
 
 website:
     title: "Data Infrastructure Framework Project"
