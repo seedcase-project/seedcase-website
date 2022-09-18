@@ -1,6 +1,6 @@
 ---
 title: "In-person team meeting"
-description: "Details and agenda for the first in-person team meeting"
+description: "Details and agenda for the first in-person team meeting."
 author: "Luke W. Johnston"
 date: "2022-10-26"
 categories:
@@ -14,44 +14,54 @@ categories:
 
 -   2-days at SDCA in Forum (room in calendar invite)
 
-## Schedule of agenda items
+-   **Aims of meeting**:
+
+    -   Get to know each other.
+    -   Discuss and decide on how we will work together.
+    -   Discuss how we include others outside of team in contributing.
+    -   Brainstorm some potential name for the product.
+
+## Schedule
+
+The schedule is meant as a guide only. We might spend more time on some
+topics and less on others.
 
 ### Day 1: Oct 26
 
-| Time  | Item                                                        |
-|-------|-------------------------------------------------------------|
-| 9:30  | Introductions and overview of next few days                 |
-| 10:00 | General onboarding for SDCA ([🔗](#onboarding))             |
-| 10:30 | 🍵 Coffee, snacks, and break                                |
-| 10:45 | Onboarding for project ([🔗](#onboarding))                  |
-| 12:15 | 🍴 Lunch                                                    |
-| 13:00 | 🚶Walking and chatting ([🔗](#social-activities))           |
-| 13:30 | How to effectively work together? ([🔗](#working-together)) |
-| 14:15 | 🍵 Coffee, snacks, and break                                |
-| 14:45 | Continue from previous session ([🔗](#working-together))    |
-| 16:00 | End for day                                                 |
-| 17:30 | 🍴 Dinner (location in calendar invite)                     |
+| Time  | Item                                                   |
+|-------|--------------------------------------------------------|
+| 9:30  | Introductions and overview of next few days            |
+| 10:00 | [General onboarding for SDCA](#onboarding)             |
+| 10:30 | 🍵 Coffee, snacks, and break                           |
+| 10:45 | [Onboarding for project](#onboarding)                  |
+| 12:15 | 🍴 Lunch                                               |
+| 13:00 | [🚶Walking and chatting](#social-activities)           |
+| 13:30 | [How to effectively work together?](#working-together) |
+| 14:15 | 🍵 Coffee, snacks, and break                           |
+| 14:45 | [Continue from previous session](#working-together)    |
+| 16:00 | End for day                                            |
+| 17:30 | 🍴 Dinner (location in calendar invite)                |
 
 ### Day 2: Oct 27
 
-| Time  | Item                                               |
-|-------|----------------------------------------------------|
-| 9:30  | Sharing knowledge and skills ([🔗](#sharing))      |
-| 10:30 | 🍵 Coffee, snacks, and break                       |
-| 10:45 | Continue previous session ([🔗](#sharing))         |
-| 12:15 | 🍴 Lunch                                           |
-| 13:00 | 🚶 Walking and chatting ([🔗](#social-activities)) |
-| 13:30 | ([🔗](#))                                          |
-| 14:15 | 🍵 Coffee, snacks, and break                       |
-| 14:45 | ([🔗](#))                                          |
-| 16:00 | End for day                                        |
+| Time  | Item                                            |
+|-------|-------------------------------------------------|
+| 9:30  | [Sharing knowledge and skills](#sharing)        |
+| 10:30 | 🍵 Coffee, snacks, and break                    |
+| 10:45 | [Continue previous session](#sharing)           |
+| 12:15 | 🍴 Lunch                                        |
+| 13:00 | [🚶 Walking and chatting](#social-activities)   |
+| 13:30 | [General project brainstorming](#brainstorming) |
+| 14:15 | 🍵 Coffee, snacks, and break                    |
+| 14:45 | [Discuss next steps](#next-steps)               |
+| 15:30 | End for day                                     |
 
-## Agenda details
+## Sessions
 
 We can discuss or ask questions anytime throughout the 2 days. They can
 be on topic or off topic :smile:
 
-### Onboarding session {#onboarding}
+### Onboarding {#onboarding}
 
 For project:
 
@@ -81,7 +91,7 @@ For project:
     -   Things learned from previous positions that worked well or could
         be improved on
 
-### Working together session {#working-together}
+### Working together {#working-together}
 
 -   CONTRIBUTING
     -   Git branch-based workflow (GitHub)
@@ -109,21 +119,20 @@ For project:
         teaching material or some other documentation later?
     -   Other forms of dissemination?
 
-### Project specific brainstorming {#project-brainstorming}
+### Project brainstorming {#brainstorming}
 
--   Delegating/assigning tasks and next steps
--   Brainstorm potential names for project (other than DIF) \[#\]
+-   Brainstorm potential names for project (other than DIF)
+    -   Some ideas in Issue
+        [#4](https://github.com/steno-aarhus/dif-project/issues/4#issuecomment-1114582527),
+        like GRID?
 -   Do we make a new GitHub organization or use steno-aarhus?
+-   Delegating/assigning tasks and next steps
+    -   Things to do between now and next virtual meeting?
 
 ### Next steps {#next-steps}
 
--   Next (virtual) session:
-    -   Brainstorming architecture/design, list of tasks/milestones and
-        who does what
-    -   Scheduling next session
-
-## Questions to address from meeting
-
--   Potential name for the product?
+-   Next (virtual) session: Brainstorming architecture/design, list of
+    tasks/milestones and who does what
+-   Scheduling next session, when to do it?
 
 ## Minutes from meeting
