@@ -1,8 +1,8 @@
 ---
 title: "Why SQLite (or other SQL variant)"
-description: ""
-author: ""
-date: ""
+# description: ""
+author: "Luke W. Johnston"
+# date: ""
 draft: true
 categories:
   - backend
