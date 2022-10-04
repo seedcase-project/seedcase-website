@@ -7,38 +7,21 @@ title: "Overview"
 ![Project blocks that make up the
 DIF.](/images/project-blocks.svg){width="70%"}
 
-## Why support block
-
-Why the technologies we choose
-
--   design/decisions/why-\*
--   design/decisions/why-github.md
--   design/decisions/why-python.md
--   community/contribute/decisions/why-\* (eg. why-discord.md)
-
-## How support block
-
--   community/CONTRIBUTING.md: General user contributing
--   community/GOVERNANCE.md: Structure of organization, team, and
-    ownership, how decisions are made.
--   community/CODE_OF_CONDUCT.md
-    -   With contact for issues/conflicts (Annelli, otherwise go with
-        Niels as independent?)
--   community/contribute/index.md: Link to CONTRIBUTING.md,
-    CODE_OF_CONDUCT.md, and GOVERNANCE.md
--   community/contribute/team/conduct.md
--   community/contribute/team/contributing.md
--   community/contribute/team/events/index.md
-    -   Structure of events, how often, etc.
--   community/contribute/team/events/DATE-agenda.md
--   community/contribute/team/communication.md (?)
--   community/contribute/roadmap.md
-    -   milestones, gantt chart?
--   community/contribute/workflow.md (name?)
-    -   When and what are tagged as releases (for both product and docs)
+While the core of this project is the software "Product", it depends on
+the proper functioning of additional "blocks". The Product relies on the
+two foundation layers, which are the "Documentation" about the Product
+and its use as well as the "Culture and Collaboration" that enables both
+Documentation and Product to be developed. Supporting all these layers
+are the support structures that tell "How" and "Why" things are done.
 
 ## Product block
 
+The Product only exists because of the two bottom layers and the
+supports. More details about the Product are found in its own GitHub
+repository (not created yet).
+
+```{=html}
+<!--
 -   pipeline/ (automatic processes for tasks, like rebuilding changelog
     etc)
 -   api/
@@ -58,24 +41,28 @@ Why the technologies we choose
     -   Python
     -   Bash/shell
     -   RedCap
-
-## Documentation block
-
-What it is about, mission, and purpose
-
--   about/index.md
--   about/mission.md
-    -   Values as well: eg. clear over concise
--   about/contact.md
--   about/governance.md (link to GOVERNANCE.md?)
-
 Installation
 
 -   installing.md
+-->
+```
+## Documentation block
 
-Design and architecture (pathways will have all use cases, how user
-interacts with product, computational steps taken from user interaction)
-(as its own repo?)
+This block contains multiple components, related to the overall project,
+to user-friendly usage documents, to technical details about the
+software itself.
+
+For the project itself, those are found in the [About](/about/index.md)
+pages or in the `about/` folder in the GitHub repository. This includes
+contact, history of the project, governance, mission, and the purpose.
+
+For the Product itself, documents describe the design and architecture,
+such as the programmatic pathways between user input to the backend of
+the infrastructure. These details are found in the
+[Design](/design/index.md) pages (or in the `design/` folder on the
+GitHub repository). Specifically:
+
+<!-- TODO:  -->
 
 -   design/index.md
 -   design/paper.md (name?): connects all docs and sends to Zenodo for
@@ -84,7 +71,6 @@ interacts with product, computational steps taken from user interaction)
     -   values and guiding principles
     -   More detailed than the diagram and more pathways and connections
 -   design/use-cases.md
--   design/diagram.png (svg, etc)
 -   design/architecture/frontend.md
 -   design/architecture/backend.md
 -   design/architecture/api.md
@@ -127,3 +113,36 @@ calendar, slack, Issue discussions, etc)
 -   How to manage and coordinate tasks and deadlines
     -   ....?
 -   formal posts (aim to publish in zenodo, and other outlets?)
+
+## "Why" support block
+
+This support block contains explanations and justifications for why we
+choose the technologies, workflows, and designs that we do. This is not
+just for the Product itself, but also for the Documentation and Culture
+and Collaboration.
+
+Files and content related to this support block are found in
+`design/decisions/` and `community/contribute/decisions/` folders on the
+GitHub repository.
+
+## "How" support block
+
+-   [Contributing guidelines](CONTRIBUTING.md): General user
+    contributing
+-   community/GOVERNANCE.md: Structure of organization, team, and
+    ownership, how decisions are made.
+-   community/CODE_OF_CONDUCT.md
+    -   With contact for issues/conflicts (Annelli, otherwise go with
+        Niels as independent?)
+-   community/contribute/index.md: Link to CONTRIBUTING.md,
+    CODE_OF_CONDUCT.md, and GOVERNANCE.md
+-   community/contribute/team/conduct.md
+-   community/contribute/team/contributing.md
+-   community/contribute/team/events/index.md
+    -   Structure of events, how often, etc.
+-   community/contribute/team/events/DATE-agenda.md
+-   community/contribute/team/communication.md (?)
+-   community/contribute/roadmap.md
+    -   milestones, gantt chart?
+-   community/contribute/workflow.md (name?)
+    -   When and what are tagged as releases (for both product and docs)
