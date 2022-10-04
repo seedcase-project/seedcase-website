@@ -50,8 +50,10 @@ website:
           title: "About"
           contents:
             - about/index.md
-            - text: "Mission"
-              href: about/mission.md
+            - text: "History"
+              href: about/history/index.md
+            # - text: "Mission"
+            #   href: about/mission.md
 
 
 bibliography: "includes/references.bib"
