@@ -11,8 +11,6 @@ project:
 
 website:
     title: "Data Infrastructure Framework Project"
-    description: |
-        Application to the Novo Nordisk Foundation Data Science Research Infrastructure grant.
     # apple-touch-icon: "images/apple-touch-icon.png"
     # apple-touch-icon-size: 180
     # favicon: "images/favicon.ico"
