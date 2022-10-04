@@ -23,8 +23,8 @@ categories:
 
 ## Schedule
 
-The schedule is meant as a guide only. We might spend more time on some
-topics and less on others.
+The schedule is meant as a **guide only**. We might spend more time on
+some topics and less on others.
 
 ### Day 1: Oct 26
 
@@ -35,11 +35,12 @@ topics and less on others.
 | 10:30 | 🍵 Coffee, snacks, and break                           |
 | 10:45 | [Onboarding for project](#onboarding)                  |
 | 12:15 | 🍴 Lunch                                               |
-| 13:00 | [🚶Walking and chatting](#social-activities)           |
-| 13:30 | [How to effectively work together?](#working-together) |
-| 14:15 | 🍵 Coffee, snacks, and break                           |
-| 14:45 | [Continue from previous session](#working-together)    |
-| 16:00 | End for day                                            |
+| 13:00 | Meeting with Annelli                                   |
+| 13:30 | [🚶Walking and chatting](#social-activities)           |
+| 14:00 | [How to effectively work together?](#working-together) |
+| 14:30 | 🍵 Coffee, snacks, and break                           |
+| 14:50 | [Continue from previous session](#working-together)    |
+| 16:30 | End for day                                            |
 | 17:30 | 🍴 Dinner (location in calendar invite)                |
 
 ### Day 2: Oct 27
