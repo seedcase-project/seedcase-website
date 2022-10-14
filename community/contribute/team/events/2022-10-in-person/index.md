@@ -12,6 +12,8 @@ categories:
 
 ## Details
 
+-   Dinner on Oct 25th (details in invite)
+
 -   2-days at SDCA in Forum (room in calendar invite)
 
 -   **Aims of meeting**:
@@ -35,12 +37,11 @@ some topics and less on others.
 | 10:30 | 🍵 Coffee, snacks, and break                           |
 | 10:45 | [Onboarding for project](#onboarding)                  |
 | 12:15 | 🍴 Lunch                                               |
-| 13:00 | Meeting with Annelli                                   |
-| 13:30 | [🚶Walking and chatting](#social-activities)           |
-| 14:00 | [How to effectively work together?](#working-together) |
-| 14:30 | 🍵 Coffee, snacks, and break                           |
-| 14:50 | [Continue from previous session](#working-together)    |
-| 16:30 | End for day                                            |
+| 13:00 | [🚶Walking and chatting](#social-activities)           |
+| 13:30 | [How to effectively work together?](#working-together) |
+| 14:15 | 🍵 Coffee, snacks, and break                           |
+| 14:45 | [Continue from previous session](#working-together)    |
+| 16:00 | End for day                                            |
 | 17:30 | 🍴 Dinner (location in calendar invite)                |
 
 ### Day 2: Oct 27
@@ -54,8 +55,8 @@ some topics and less on others.
 | 13:00 | [🚶 Walking and chatting](#social-activities)   |
 | 13:30 | [General project brainstorming](#brainstorming) |
 | 14:15 | 🍵 Coffee, snacks, and break                    |
-| 14:45 | [Discuss next steps](#next-steps)               |
-| 15:30 | End for day                                     |
+| 14:30 | [Discuss next steps](#next-steps)               |
+| 15:00 | End for day                                     |
 
 ## Sessions
 
@@ -119,10 +120,15 @@ For project:
     -   As blog posts? So we can eventually combine them into formal
         teaching material or some other documentation later?
     -   Other forms of dissemination?
+-   How to involve community (internal to SDCA as well as external)
+    -   Needs to be a recurring topic
+    -   How to actively and frequently do it? E.g. invite people to
+        contribute or come to in-person meetings?
+    -   "Stakeholder investigation"
 
 ### Project brainstorming {#brainstorming}
 
--   Brainstorm potential names for project (other than DIF)
+-   Brainstorm potential names and logos for project (other than DIF)
     -   Some ideas in Issue
         [#4](https://github.com/steno-aarhus/dif-project/issues/4#issuecomment-1114582527),
         like GRID?
@@ -137,3 +143,4 @@ For project:
 -   Scheduling next session, when to do it?
 
 ## Minutes from meeting
+
