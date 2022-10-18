@@ -14,14 +14,14 @@ categories:
 
 -   Dinner on Oct 25th (details in invite)
 
--   2-days at SDCA in Forum (room in calendar invite)
+-   2-days at SDCA in Forum (rooms in calendar invite)
 
 -   **Aims of meeting**:
 
     -   Get to know each other.
     -   Discuss and decide on how we will work together.
     -   Discuss how we include others outside of team in contributing.
-    -   Brainstorm some potential name for the product.
+    -   Brainstorm some potential names for the product.
 
 ## Schedule
 
@@ -97,7 +97,9 @@ For project:
 
 -   CONTRIBUTING
     -   Git branch-based workflow (GitHub)
-    -   When do we work synchronously together and how often
+    -   When do we work synchronously together and how often to do
+        virtual meetings
+        -   What to cover during meetings or co-working sessions?
 -   GOVERNANCE
     -   How does overall decision making and responsibility structure
         look like? To communicate to others outside team how we do
@@ -120,6 +122,8 @@ For project:
     -   As blog posts? So we can eventually combine them into formal
         teaching material or some other documentation later?
     -   Other forms of dissemination?
+    -   Improving each other with structured peer feedback sessions?
+        (like I do with instructor peers)?
 -   How to involve community (internal to SDCA as well as external)
     -   Needs to be a recurring topic
     -   How to actively and frequently do it? E.g. invite people to
@@ -141,6 +145,8 @@ For project:
 -   Next (virtual) session: Brainstorming architecture/design, list of
     tasks/milestones and who does what
 -   Scheduling next session, when to do it?
+-   Other items:
+    -   Setting up travellers profile, other things to make planning
+        these events easier.
 
 ## Minutes from meeting
-
