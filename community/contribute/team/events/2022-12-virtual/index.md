@@ -33,7 +33,6 @@ categories:
 5.  Architecture Brainstorming
 
     -   Delegating/assigning tasks and next steps
-    -   Potential name for project (other than DIF)
 
 -   How many repositories? So far:
     -   One for software product

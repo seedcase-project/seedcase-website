@@ -4,8 +4,8 @@ title: "Overview"
 
 {{< include ../../includes/_wip.qmd >}}
 
-![Project blocks that make up the
-DIF.](/images/project-blocks.svg){width="70%"}
+![Project blocks that make up the seedcase
+project.](/images/project-blocks.svg){width="70%"}
 
 ## Why support block
 

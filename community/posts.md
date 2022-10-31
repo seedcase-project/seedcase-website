@@ -1,7 +1,7 @@
 ---
 title: "Posts"
 listing:
-  contents: blog
+  contents: posts
   type: default
   sort: "date"
   fields: 
