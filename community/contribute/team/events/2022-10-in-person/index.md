@@ -42,7 +42,6 @@ some topics and less on others.
 | 14:15 | 🍵 Coffee, snacks, and break                           |
 | 14:45 | [Continue from previous session](#working-together)    |
 | 16:00 | End for day                                            |
-| 17:30 | 🍴 Dinner (location in calendar invite)                |
 
 ### Day 2: Oct 27
 
@@ -149,4 +148,202 @@ For project:
     -   Setting up travellers profile, other things to make planning
         these events easier.
 
-## Minutes from meeting
+## Minutes
+
+### Contributing:
+
+-   Can use CODEOWNERS to make explicit who is responsible for what code
+    pieces
+-   Describe copyright holder (AU), will need to contact them about this
+-   Guidelines for writing commit messages
+    -   Maybe an automatic checker?
+-   Commit often for smaller pieces of code
+-   Connect to issue in commit message (with `#NUMBER`)
+-   PR code review
+    -   Timebound? How long before merging?
+        -   Maybe once a week?
+    -   Smaller code changes per PR
+-   "Meeting"-based code review
+    -   Usually for bigger feature or bigger change to the code
+        -   Maybe do it for a smaller milestone
+        -   We can do something like this for the analysis
+    -   Done on a PR that's big, and focus on the changed part of code
+    -   Screen sharing if remote (which will be done usually)
+        -   Or if in person, don't need a projector, can just do it on
+            computer
+    -   For now only need to do it within team, maybe later include
+        others to disseminate skills/knowledge
+    -   Look over the code before the meeting to best prepare for it
+    -   Explain about the why of the code in a few minutes
+-   Meetings
+    -   Virtual:
+        -   Weekly update, aim for short \~30 min
+        -   Longer meeting for discussion and brainstorming of
+            shorter/minor milestones, schedule when we need it
+            -   Also for showing other "stakeholders" aka Annelli and
+                Alisa
+    -   In-person:
+        -   Important stage to discuss next steps, bigger milestones
+        -   When to schedule, not sure. Maybe use the in-person meetings
+            as a "deadline" to push for finishing one milestone and to
+            discuss the next milestone?
+        -   Good to brainstorm and get into things more
+
+### Governance
+
+-   Simple for now, show who is on the team and their responsibilities
+-   Decision making:
+    -   Voting? Once we're larger scale.
+        -   Indicative vote: To get feedback from community but
+            ultimately can decide by team but justify if the decision is
+            against the feedback
+            -   And that it aligns with values/philosophy (as much as
+                possible)
+            -   Feature to vote on based on votes (through Issues or?)
+        -   Vote based on willness to pay for it or some type of token?
+            -   Each person can have a limited number of points (e.g.
+                100 or 10 tokens), more points used for a given feature
+            -   Maybe also add features based on if requester will fund
+                it/invest in it
+    -   For now, me and then soon will be team decisions.
+    -   And also, if you want it, do it? Do rather than ask
+        -   Like, the popularity of "addons", depends on extensibility
+            of seedcase
+        -   We don't *have* to incorporate something if someone submits
+            a PR, but we're more likely to if they do
+-   TODO: Luke will start making it
+
+### Code of Conduct
+
+-   Use the standard template, we can add more to it if needed.
+    -   When discussing (in general), focus on reasons and the
+        beliefs/rationale for them, and avoid making the discussion
+        personal.
+-   To deal with potential conflicts:
+    -   To resolve bigger conflicts within team, first Luke then go to
+        Annelli
+    -   If outside contributor (in violation of, or bordering it,
+        Conduct)
+        -   Give warning once (in good faith)
+        -   Block after that
+    -   If internal contributor (but not the team)
+        -   First Luke, next go to Annelli (or Niels)
+
+### Communication
+
+-   Another option is Google Chat
+-   Discord?
+    -   Maybe better for longer term community
+    -   We'll test out this option for now and reassess
+    -   TODO: Create Discord server for DIF
+-   Project management:
+    -   JIRA? Cost? We can check it out
+    -   Trello? Can we integrate with GitHub? Can it be public?
+    -   Try out GitHub Project Board, reassess later
+
+### Sharing knowledge and skills
+
+-   Kris would be interested in doing webinars
+    -   But also in making teaching materials
+-   Informally share knowledge with demos during weekly meetings
+    -   Of something we've found or learned
+    -   But can schedule things in more detail at another day if there
+        is interest
+    -   And if we think if it would be useful for others, we can decide
+        if we want to expand to others and how (e.g. use the Steno media
+        room)
+-   Can do short blogs on some new things, doesn't have to be much
+    -   First blog could be how to make a blog post
+-   Structured peer feedback
+    -   May need to continually reassess how we implement this
+    -   One "continue doing" piece of feedback, one to two "to improve"
+        pieces
+    -   Maybe at the end of in-person? Or once per year/half year?
+    -   Make sure to have a strong moderator
+    -   Emphasize neutral tone disagreement, continued with strong
+        reasons
+-   Kris and Annelli could be responsible for the "stakeholder
+    investigation"
+    -   Internal (or external) Steno
+        -   Define who is the stakeholder here
+        -   Start writing out who might be interested and group them
+            together
+        -   Plot on interest and influence scheme
+            -   Manage low interest, high influence
+            -   Each team member could plot them and see how they
+                overlap
+        -   Then make some strategies to:
+            -   Keep engaged or only keep informed.
+            -   Or how to engage those who we think might be important
+                but are probably low interest (aka very busy), high
+                influence (IT, security, upper management)
+        -   Can also try to get more than just health people, also
+            others like ecology etc
+        -   Also incorporate focus groups to get their feedback on
+            functionality they think they might need
+            -   This will be later in the timeline
+            -   And then afterwards can send out an email about general
+                themes that were discussed
+            -   Or thresholds/"red lines" we can't cross or must not
+                have (for features)
+                -   E.g. security, so might need to look into tools to
+                    check security
+        -   Might need to get feedback from security/privacy side early
+            on
+            -   [DPIA](https://gdpr.eu/data-protection-impact-assessment-template/),
+                we might need that
+            -   Maybe make sure to configure it in a way that it only
+                works with DPIA compliant servers?
+
+### Project brainstorming
+
+-   Keep with steno-aarhus GitHub repo for now
+-   Names:
+    -   several ideas came up, related to seeds or nuts or scaffold or
+        shell
+    -   Most of our ideas were already taken by similar data/software
+        type companies/projects
+    -   seedcase was one that we liked the most, we will use that one
+        for now
+-   Tasks:
+    -   Start adding issues and project (Luke)
+    -   Write out value and philosophy (Luke)
+    -   Look through other open source projects and see how their values
+        and missions, and see how we can overlap (Kris)
+    -   Mapping out different databases that are available (Kris)
+    -   Map out other container software (Richard)
+    -   Why we use container software for project (Richard)
+-   Misc topics:
+    -   Visualizing the underlying database:
+        -   Lucy Charts for making diagrams (of databases)
+            -   Is there a CLI for something like that for visualizing
+                data inside seedcase?
+        -   Graph Database? Focus on visualizing the database
+            -   Similar product is Neo4J?
+    -   Unit testing
+        -   "White-box testing": Test all code inside package
+        -   "Gray-box testing": Test user facing functions, e.g. testing
+            mostly the API/function
+        -   "Black-box testing": Testing UI, pretending to be the User
+            -   That's something we'll probably have to hire out?
+    -   Authentication:
+        -   Through eduroam/WAYF module?
+        -   Generic module to allow companies to modify to add there own
+            thing?
+        -   What about for those outside of Denmark?
+        -   Authentication can be added optionally
+
+### Next steps
+
+-   Richard could come every \~3 month for in person meetings
+-   Next virtual Dec. 16th 1030-1330
+-   At some point need to get Richard a traveler account?
+    -   Need to ask Charlotte about doing plane tickets for Richard...?
+
+### Misc ideas:
+
+-   For next session, do input/output schematic showing functions etc
+    when brainstorming, sketched out
+-   Audience:
+    -   Two of them: users and contributors
+    -   Different "pitches" and documentation for different audience
