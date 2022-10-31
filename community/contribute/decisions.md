@@ -5,5 +5,4 @@ listing:
   type: table
   table-hover: true
   table-striped: true
-  categories: true
 ---
