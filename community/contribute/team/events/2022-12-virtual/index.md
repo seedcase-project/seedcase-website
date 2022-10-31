@@ -39,6 +39,7 @@ categories:
     -   One for software product
     -   Including product and reference docs, general usage, etc
     -   One for project website/docs
+-   For next session, do input/output schematic showing functions etc
+    when brainstorming, sketched out
 
 ## Minutes from meeting
-
