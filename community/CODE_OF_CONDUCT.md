@@ -8,11 +8,12 @@ Conduct (see [attribution](#attribution) below).
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in
-our community a harassment-free experience for everyone, regardless of
-age, body size, visible or invisible disability, ethnicity, sex
-characteristics, gender identity and expression, level of experience,
-education, socio-economic status, nationality, personal appearance,
-race, caste, color, religion, or sexual identity and orientation.
+our project and its wider community a harassment-free experience for
+everyone, regardless of age, body size, visible or invisible disability,
+ethnicity, sex characteristics, gender identity and expression, level of
+experience, education, socio-economic status, nationality, personal
+appearance, race, caste, color, religion, or sexual identity and
+orientation.
 
 We pledge to act and interact in ways that contribute to an open,
 welcoming, diverse, inclusive, and healthy community.
@@ -29,6 +30,9 @@ community include:
     mistakes, and learning from the experience
 -   Focusing on what is best not just for us as individuals, but for the
     overall community
+-   During discussions about how to build or improve the project and
+    product, focusing on reasons given as well as the beliefs and
+    rationales underlying them, and avoid any that is personal
 
 Examples of unacceptable behavior include:
 
@@ -41,6 +45,7 @@ Examples of unacceptable behavior include:
     address, without their explicit permission
 -   Other conduct which could reasonably be considered inappropriate in
     a professional setting
+-   Microaggressions or passive aggressive comments
 
 ## Enforcement Responsibilities
 
@@ -50,9 +55,11 @@ corrective action in response to any behavior that they deem
 inappropriate, threatening, offensive, or harmful.
 
 Community leaders have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other
+reject comments, commits, code, text, edits, issues, and other
 contributions that are not aligned to this Code of Conduct, and will
 communicate reasons for moderation decisions when appropriate.
+
+The leaders responsible are Luke Johnston and Annelli Sandbæk.
 
 ## Scope
 
@@ -65,9 +72,11 @@ or acting as an appointed representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may
-be reported to the community leaders responsible for enforcement at
-Luke. All complaints will be reviewed and investigated promptly and
-fairly.
+be reported to either Luke Johnston
+([lwjohnst\@clin.au.dk](mailto:lwjohnst@clin.au.dk){.email}) or Annelli
+Sandbæk ([anesnd\@rm.dk](mailto:anesnd@rm.dk){.email}) who are
+responsible for enforcement. All complaints will be reviewed and
+investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security
 of the reporter of any incident.
