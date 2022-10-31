@@ -10,12 +10,12 @@ project:
         - touch _site/.nojekyll
 
 website:
-    title: "Data Infrastructure Framework Project"
+    title: "seedcase"
     # apple-touch-icon: "images/apple-touch-icon.png"
     # apple-touch-icon-size: 180
     # favicon: "images/favicon.ico"
-    site-url: "https://steno-aarhus.github.io/dif-project/"
-    repo-url: "https://github.com/steno-aarhus/dif-project"
+    site-url: "https://steno-aarhus.github.io/seedcase-project/"
+    repo-url: "https://github.com/steno-aarhus/seedcase-project"
     repo-branch: main
     repo-actions: [edit, issue, source]
     search:

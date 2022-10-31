@@ -71,8 +71,8 @@ For project:
     -   [Common Docs](https://steno-aarhus.github.io/research/)
 -   Overview of project:
     -   [GitHub
-        repository](https://github.com/steno-aarhus/dif-project/)
-    -   [Website](https://steno-aarhus.github.io/dif-project/)
+        repository](https://github.com/steno-aarhus/seedcase-project/)
+    -   [Website](https://steno-aarhus.github.io/seedcase-project/)
 -   Expectations:
     -   Autonomy, flexibility in work and hours
     -   Any side projects or other activities, maybe we can incorporate
@@ -133,7 +133,7 @@ For project:
 
 -   Brainstorm potential names and logos for project (other than DIF)
     -   Some ideas in Issue
-        [#4](https://github.com/steno-aarhus/dif-project/issues/4#issuecomment-1114582527),
+        [#4](https://github.com/steno-aarhus/seedcase-project/issues/4#issuecomment-1114582527),
         like GRID?
 -   Do we make a new GitHub organization or use steno-aarhus?
 -   Delegating/assigning tasks and next steps
