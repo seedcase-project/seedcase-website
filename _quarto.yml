@@ -44,6 +44,7 @@ website:
           contents:
             - community/contribute/index.md
             - community/posts.md
+            - community/CODE_OF_CONDUCT.md
             - section: "Team"
               contents:
                 - "community/contribute/team/events.md"

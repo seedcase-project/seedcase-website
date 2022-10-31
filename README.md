@@ -17,5 +17,8 @@ the website.
 ## Contributing
 
 Looking to contribute? Check out our [contributing
-guidelines](CONTRIBUTING.md). By contributing, you agree to abide by the
-[Code of Conduct](CODE_OF_CONDUCT.md).
+guidelines](CONTRIBUTING.md). Please note that the seedcase project is
+released with a [Contributor Code of
+Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its
+[terms](community/CODE_OF_CONDUCT.md).
