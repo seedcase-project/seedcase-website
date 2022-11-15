@@ -30,5 +30,3 @@ Looking at a number of **CLA**s (in particular Threema, Meta, and ImageWorks) it
 An alternative to a CLA is a Developer Certificate of Origin or DCO.  The **DCO** was first employed by the Linux Foundation in 2004, and is basically just a short document that confirms that the person contributing code is allowed to do so, and happy with the project to subsequently use it, and it is using a git commit to do so.  
 
 ## Our choice
-
-Text
