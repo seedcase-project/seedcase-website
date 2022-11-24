@@ -30,3 +30,7 @@ Looking at a number of **CLA**s (in particular Threema, Meta, and ImageWorks) it
 An alternative to a CLA is a Developer Certificate of Origin or DCO.  The **DCO** was first employed by the Linux Foundation in 2004, and is basically just a short document that confirms that the person contributing code is allowed to do so, and happy with the project to subsequently use it, and it is using a git commit to do so.  
 
 ## Our choice
+
+It is our stated goal that the seedcase software is available for commercial companies as well as academics/healthcare professionals.  We therefore believe that a **permissive** license will be the best fit for the seedcase project.  Of the permissive license types we will go with the MIT style license.
+
+We don't believe that it will be necessary to implement a CLA before people outside the project are permitted to access the code.  Having said that, we will be implementing a **DCO** which future contributers will have to agree to before making a contribution to the project.
