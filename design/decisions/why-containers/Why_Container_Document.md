@@ -1,3 +1,17 @@
+---
+title: "Why choose containerization technology"
+# description: ""
+author: "Richard Ding"
+date: "2022-12-10"
+draft: true
+categories:
+  - containers
+  - installation
+  - software
+  - tools
+  - technology
+---
+
 # Reason for Choosing Containerization Technology
 
 ## What is Containerization
