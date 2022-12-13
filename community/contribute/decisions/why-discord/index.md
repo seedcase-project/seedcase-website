@@ -1,8 +1,8 @@
 ---
 title: "Why Discord"
-description: ""
+# description: ""
 author: "Luke Johnston"
-date: ""
+# date: ""
 draft: true
 categories:
   - backend

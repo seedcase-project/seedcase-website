@@ -3,7 +3,7 @@ title: "Events"
 listing:
   contents: events
   type: table
-  sort: "date"
+  sort: date
   table-hover: true
   table-striped: true
   categories: true
@@ -12,7 +12,3 @@ listing:
     - "date"
     - "title"
 ---
-
-All past and upcoming team events, with agenda's and minutes included,
-are listed here.
-

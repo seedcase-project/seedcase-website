@@ -49,14 +49,15 @@ website:
         - community/CODE_OF_CONDUCT.md
         - section: "Team"
           contents:
-            - "community/contribute/team/events.md"
+            - community/contribute/team/events.md
     - id: design
       title: "Design"
       style: "floating"
       align: left
       contents:
-      - design/overview.md
-      - design/decisions.md
+        - design/index.md
+        - design/overview.md
+        - design/decisions.md
     - id: about
       title: "About"
       contents:
