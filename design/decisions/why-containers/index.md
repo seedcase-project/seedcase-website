@@ -79,3 +79,7 @@ single environment for development and production, which is a common
 roadblock in application development. The development team may create an
 app on a Windows laptop that does not run on a Mac workstation. But the
 containerized application won't run into that issue anymore.
+
+<!-- TODO: Add "disadvantages" -->
+
+<!-- TODO: Add section connecting to the design philosophy -->
