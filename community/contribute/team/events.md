@@ -12,3 +12,6 @@ listing:
     - "date"
     - "title"
 ---
+
+All past and upcoming team events, with agenda's and minutes included,
+are listed here.
