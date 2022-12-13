@@ -1,9 +1,10 @@
 ---
 title: "Why choose containerization technology"
-# description: ""
+description: |
+  Containers are a way to bundle a software's environment to simplify
+  development, installation, and dependency management.
 author: "Richard Ding"
 date: "2022-12-10"
-draft: true
 categories:
   - containers
   - installation
