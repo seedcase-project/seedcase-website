@@ -3,7 +3,7 @@ title: "Events"
 listing:
   contents: events
   type: table
-  sort: "date"
+  sort: date
   table-hover: true
   table-striped: true
   categories: true
