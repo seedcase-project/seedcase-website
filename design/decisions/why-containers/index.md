@@ -22,7 +22,7 @@ single, isolated "container." The software or application inside the
 environment and on any infrastructure, regardless of the operating
 system. The container functions as a sort of computing environment or
 bubble around the software or application, keeping it apart from the
-actual computing environment. It made moving or deploying the software
+actual computing environment. It make moving or deploying the software
 or application to any new computing environment less complicated.
 
 ## Benefit of Containerization
