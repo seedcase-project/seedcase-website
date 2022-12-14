@@ -10,27 +10,28 @@ categories:
   - technology
 ---
 
-# Container Technology Comparison
-
-### Introduction
+## Introduction
 
 When considering container technologies, Docker is by far the most
 well-known and popular container platform in use today. However, there
-are different platform on the market, each with unique approaches and
-use cases. Even all have a similar concept of images and containers, but
-there are some technical differences worth noting.
+are different platforms on the market, each with unique approaches and
+use cases. Even though all have a similar concept of images and
+containers, there are some technical differences worth noting.
+
+## Comparison of technologies
 
 ### Docker
 
 Docker is without a doubt the most popular container
-application/platform. According to Stack Overflow's 2020 Developer
-Survey, which included almost 65,000 respondents, Docker was the second
-most popular platform among developers, trailing only Linux.
+application/platform. According to Stack Overflow's [2020 Developer
+Survey](https://insights.stackoverflow.com/survey/2020), which included
+almost 65,000 respondents, Docker was the second most popular platform
+among developers, trailing only Linux.
 
-Docker is incredible in many ways. Its developer-friendly open source
-platform, which can be used for rapid application development, is
-complemented by outstanding documentation, which is a major reason for
-its popularity.
+Docker is incredible in many ways. It is a developer-friendly open
+source platform that can be used for rapid application development and
+is complemented by outstanding documentation, which is a major reason
+for its popularity.
 
 Docker employs the client-server architecture, which entails clients
 requesting and receiving services from a host, in this case, the Docker
@@ -51,7 +52,7 @@ standards. Presented as a user-friendly container orchestrator developed
 by Red Hat.
 
 Podman is a daemonless container engine that enables users to create,
-manage, and run OCI Containers on the Linux system. Podman, like Docker,
+manage, and run OCI Containers on the Linux system. Podman, like Docker,
 is an open source project. The program's source code is available to
 anyone. Podman, unlike Docker, does not require a daemon process to
 launch and manage containers. This is a significant distinction between
@@ -70,13 +71,13 @@ allowing you to choose the appropriate amount of isolation utilising
 rkt's pluggable runtime architecture, which is divided into different
 phases.
 
-rkt also includes security measures like as signature verification by
+rkt also includes security measures like a signature verification by
 default and even privilege separation, which is in charge of retrieving
 and validating signatures as unprivileged users. Having these
 characteristics can help to mitigate the potential damage caused by
 unforeseen vulnerabilities.
 
-The rkt is not complete platform, end-to-end solutions. It is instead
+The rkt is not a complete platform, end-to-end solution. It is instead
 utilised in conjunction with other technologies or in substitute of
 particular Docker system components.
 
@@ -92,16 +93,16 @@ however, come with a cost: Hyper-V containers have a slightly larger
 infrastructure footprint than Windows and other containers that rely on
 a shared kernel-based system.
 
-The biggest disadvantage of the Hyper-V is that Each guest environment
+The biggest disadvantage of the Hyper-V is that each guest environment
 must be based on Windows, though it might not have been the same version
 as the host.
 
-### Conclusion
+## Conclusion
 
-After researching the container platform on the market, Docker still the
-best option for the current project. First of all, Docker has the
-world's largest repository of container images that allow Docker users
-to create, test, store and distribute containers. Secondly, Docker is a
+After researching the container platform on the market, Docker still is
+the best option for seedcase. First of all, Docker has the world's
+largest repository of container images that allow Docker users to
+create, test, store and distribute containers. Secondly, Docker is a
 single, robust, and autonomous tool. Docker manages, runs, builds, and
 does all other container-related tasks independently of any other
 third-party tools. Lastly, Docker has a lengthy history of working with
