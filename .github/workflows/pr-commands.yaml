@@ -47,3 +47,6 @@ jobs:
       - uses: r-lib/actions/pr-push@v2
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+    # https://github.com/rstudio/rstudio/blob/4f7063b13bb0bae8377639a36d3ff4b7626de6e3/src/gwt/panmirror/src/editor/src/pandoc/pandoc_converter.ts#L90
+    # pandoc about/history/index.md --to markdown-auto_identifiers-smart+yaml_metadata_block --from markdown-smart -o about/history/index.md --self-contained --markdown-headings=setext --wrap=auto --columns=72
