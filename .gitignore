@@ -6,3 +6,5 @@ docs
 _site
 /.quarto/
 _ignore
+.Rbuildignore
+.DS_Store

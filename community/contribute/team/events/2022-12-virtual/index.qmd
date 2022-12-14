@@ -33,12 +33,12 @@ categories:
 5.  Architecture Brainstorming
 
     -   Delegating/assigning tasks and next steps
-    -   Potential name for project (other than DIF)
 
 -   How many repositories? So far:
     -   One for software product
     -   Including product and reference docs, general usage, etc
     -   One for project website/docs
+-   For next session, do input/output schematic showing functions etc
+    when brainstorming, sketched out
 
 ## Minutes from meeting
-
