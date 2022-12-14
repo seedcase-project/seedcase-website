@@ -1,9 +1,8 @@
 ---
 title: "Virtual team brainstorming meeting"
-description: "Agenda for half-day virtual team meeting to brainstorm on the project"
+description: "Agenda for half-day virtual team meeting to brainstorm on the project."
 author: "Luke W. Johnston"
-date: "2022-12-01"
-draft: true
+date: "2022-12-15"
 categories:
   - virtual
   - meeting
@@ -12,33 +11,33 @@ categories:
 
 ## Agenda
 
-| Time | Item |
-|------|------|
-
--   Finalize name.
--   Brainstorm (and finalize) design and architecture based on last
-    month of thinking and writing.
-
-4.  Design, architecture, and technologies (-docs)
-
-    -   design.md
-    -   architecture/api.md
-        -   decisions/why-rest-api.md
-        -   decisions/why-django-or-flask.md
-    -   architecture/backend.md
-        -   decisions/why-sqlite-or-parquet.md
-    -   architecture/frontend.md
-        -   decisions/why-...
-
-5.  Architecture Brainstorming
-
-    -   Delegating/assigning tasks and next steps
-
--   How many repositories? So far:
-    -   One for software product
-    -   Including product and reference docs, general usage, etc
-    -   One for project website/docs
--   For next session, do input/output schematic showing functions etc
-    when brainstorming, sketched out
+-   Brainstorm on backend common data model. This is the key to the
+    whole project, so should focus on it. (Idea: Use whiteboard to
+    sketch I/O?)
+    -   How will it be stored?
+    -   When data comes in, what do the files and folders look like?
+        -   If no files and folders, then stored as SQL? How? If data
+            comes in as CSV, what are the steps involved?
+    -   How should the data be organized as it enters the CDM? Should it
+        be organized by a timestamp?
+    -   Or, when new completely data (e.g. a new table) comes in, where
+        will it be added? (e.g. study gets funding to run metabolic
+        measurements from stored blood)
+        -   Should all data be treated similarly? As in, should any data
+            coming in be structured in a similar way?
+        -   How can we design it to be flexible to incoming data?
+    -   How should the model look?
+    -   Easy enough with rectangular data (e.g. spreadsheet style), what
+        about images, etc?
+    -   How should the API look like to move data into this Model?
+    -   How will changes or additions be put into a changelog file?
+    -   How will data schema be accessible to display in frontend as
+        list of variables available? Or that can be updated (e.g. add
+        description about data)?
+-   Next steps and aims:
+    -   Create an architecture/specification document detailing how
+        seedcase will look like
+    -   Send spec document to get reviewed by external third-party
+-   How to split up tasks, some milestones?
 
 ## Minutes from meeting
