@@ -41,3 +41,15 @@ categories:
 -   How to split up tasks, some milestones?
 
 ## Minutes from meeting
+
+- CDM:
+    - Immediately enter into RDB?
+    - How to enforce certain standards?
+        - each variable has its own uuid?
+    - Does parquet (column) make it easier to input/update data?
+    - Images/non-rectangular:
+        - Image be saved as 
+        - each folder as the "variable" (e.g liver ultrasound)
+        - each image name would have the id included? Along with a UUID appended?
+        - metadata file in the "variable"?
+- Another brainstorming Jan 26th, same time.
