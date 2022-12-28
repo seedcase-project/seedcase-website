@@ -60,9 +60,16 @@ fit these principles:
     will rely on software that is likely to still be used or can be
     switched to other tools.
 
-## Technical assumptions
+## Technical
+
+### Assumptions/key requirements
 
 -   Read speed
 -   Write speed
 -   Ingestion volume
     -   Input will be more in batches rather than streaming
+-   Technical environment
+    -   How much access to memory and storage
+    -   Internet access/connectivity
+    -   Technical knowledge skill required
+
