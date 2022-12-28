@@ -59,3 +59,9 @@ fit these principles:
     potential future tools: Technology progresses quite quickly, so we
     will rely on software that is likely to still be used or can be
     switched to other tools.
+
+## Technical assumptions
+
+-   Read speed
+-   Write speed
+-   Ingestion volume
