@@ -65,3 +65,4 @@ fit these principles:
 -   Read speed
 -   Write speed
 -   Ingestion volume
+    -   Input will be more in batches rather than streaming
