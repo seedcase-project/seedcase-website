@@ -20,3 +20,6 @@ existing webpage translation services (e.g. Google Translate), so that
 content written in another language, i.e., Danish, would still be
 readable to non-native speakers. This would also lower the amount of
 maintenance necessary for documentation.
+
+TODO: Diagram design of basic interface?
+

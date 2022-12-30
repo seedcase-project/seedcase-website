@@ -28,3 +28,7 @@ of the data with the VC system, the version number (based on [Semantic
 Versioning](https://semver.org/)) of the data would be updated, an entry
 would get added to the changelog, and the formal database would get
 updated.
+
+TODO: Directed graph diagram showing pathways actions take from data
+input into final database
+

@@ -23,3 +23,7 @@ request that would automatically extract the requested subset of data,
 bundle and encrypt it, and send it to the researcher's secure server.
 The framework will contain sufficiently generic methods for automating
 the data transfer process.
+
+TODO: Directed graph diagram showing pathways actions take from browsing
+to requesting data.
+

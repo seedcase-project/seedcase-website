@@ -20,3 +20,7 @@ through at least three routes:
     webpage format. Overlapping with the second route, key findings from
     completed projects can be stored in the projects database and be
     generated into a listing on the website.
+
+TODO: Directed graph diagram showing pathways actions take from browsing
+project.
+

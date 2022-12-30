@@ -16,3 +16,6 @@ server to run certain commands as well as a set of explicit conventions
 and rules on how files and folders are structured and named. Taken
 together, this API would allow other software like R packages to be
 built to interact with the backend to automate tasks done by the users.
+
+TODO: File tree structure design with API endpoints.
+

@@ -15,3 +15,5 @@ two-factor authentication and OAuth (open standard for access
 authentication) will be central to the framework to control who can
 update or transfer the data. The endpoint of the data transfer is dealt
 with by the legal teams of the relevant institutions.
+
+Diagram showing layers for security and privilege.

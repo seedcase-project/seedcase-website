@@ -31,3 +31,7 @@ could be updated by anyone (with approval from User 4), potentially
 through "Merge Request" mechanisms. This mechanism involves
 automatically linking any addition or correction back to the main
 documentation and requesting it be merged into it.
+
+TODO: File tree structure design showing where data will be saved and
+how it will look like on the computer.
+
