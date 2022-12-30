@@ -1,4 +1,6 @@
-### Backend: The database and documentation
+---
+title: "The database and documentation layer"
+---
 
 Given the heterogeneity in the sources of data input, the backend will
 need to be composed of multiple components: raw data files as plain
@@ -34,4 +36,3 @@ documentation and requesting it be merged into it.
 
 TODO: File tree structure design showing where data will be saved and
 how it will look like on the computer.
-

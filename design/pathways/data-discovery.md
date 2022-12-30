@@ -1,4 +1,6 @@
-### User 2: Requesting access
+---
+title: "Discovering and requesting data pathways"
+---
 
 Researchers and other users who want to request access to the data would
 first need their identity verified and then be approved for authorized
@@ -26,4 +28,3 @@ the data transfer process.
 
 TODO: Directed graph diagram showing pathways actions take from browsing
 to requesting data.
-

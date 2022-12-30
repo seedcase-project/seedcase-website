@@ -1,4 +1,6 @@
-# Use cases
+---
+title: Use cases
+---
 
 ## Data and analysis locations
 

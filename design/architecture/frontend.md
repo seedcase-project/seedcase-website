@@ -1,4 +1,6 @@
-### Frontend interface: The web portal
+---
+title: "Frontend interface layer"
+---
 
 This interface is what all users interact with and use, with essentially
 three "permission" levels available:
@@ -22,4 +24,3 @@ readable to non-native speakers. This would also lower the amount of
 maintenance necessary for documentation.
 
 TODO: Diagram design of basic interface?
-

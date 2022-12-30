@@ -1,4 +1,6 @@
-### Middle-layer: The API
+---
+title: "API layer"
+---
 
 Modern web and computational infrastructures are built on web APIs. Any
 modern online resource or interface makes use of an API, such as from
@@ -18,4 +20,3 @@ together, this API would allow other software like R packages to be
 built to interact with the backend to automate tasks done by the users.
 
 TODO: File tree structure design with API endpoints.
-

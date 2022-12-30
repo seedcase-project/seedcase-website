@@ -1,4 +1,6 @@
-### User 1: Inputting data
+---
+title: "Data input pathways"
+---
 
 Depending on the source of data, there may already be established data
 input processes. Substantial amounts of biomedical data, especially in
@@ -31,4 +33,3 @@ updated.
 
 TODO: Directed graph diagram showing pathways actions take from data
 input into final database
-

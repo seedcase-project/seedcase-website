@@ -1,4 +1,6 @@
-### User 3: Viewing details
+---
+title: "Knowledge sharing pathways"
+---
 
 The framework assumes that this user would interact with the portal
 through at least three routes:
@@ -23,4 +25,3 @@ through at least three routes:
 
 TODO: Directed graph diagram showing pathways actions take from browsing
 project.
-

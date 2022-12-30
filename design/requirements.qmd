@@ -1,6 +1,8 @@
-## Resource requirements
+---
+title: "Resource requirements"
+---
 
-### Computational and physical infrastructure
+## Computational and physical infrastructure
 
 While the proposed framework is software-based, storing and deploying
 the infrastructure requires server space and IT support. The framework

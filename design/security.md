@@ -1,4 +1,6 @@
-# Security, privacy, and legality
+---
+title: "Security, privacy, and legality"
+---
 
 The framework itself does not contain any personal data. When the
 framework is deployed as an infrastructure for a database, only
