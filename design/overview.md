@@ -2,6 +2,22 @@
 title: "Overview"
 ---
 
+For this project, the data infrastructure *framework* is defined as 1) a
+set of software programs, 2) a defined and fixed set of conventions on
+the structure and format of the filesystem and URL paths, and 3) a
+defined structure to the data and associated documentation, all of which
+are linked together as modular components. The framework will serve as
+an open source starting template for setting up data infrastructures
+that make use of modern tools and processes.
+
+This framework encompasses four target users and three layers, with a
+complete schematic shown in Figure 2. The three layers are the web
+portal frontend, the database and documentation backend, and the API
+(Application Programming Interface) that interacts with both.
+
+![Detailed schematic of the data infrastructure
+framework.](/images/detailed-schematic.svg)
+
 ## Guiding principles
 
 Any human creation is influenced by our values and perspectives of the
@@ -73,3 +89,24 @@ fit these principles:
     -   Internet access/connectivity
     -   Technical knowledge skill required
 
+### Dissemination of framework
+
+TODO: not sure where to put this.
+
+To be aligned to the goals of openness, transparency, and FAIR
+principles, the complete development of the framework will take place
+openly on GitHub. From there we will link to and promote it through
+various outlets, including publications, conferences, and social media.
+The framework and all its components will be licensed under permissive
+copyright licenses like the MIT License for the software and the
+Creative Commons Attribution License for non-software content.
+
+# Data lifecycle stages
+
+-   generation
+-   ingestion
+    -   import, then run checks on data in temp location to send back
+        any issues that it detects?
+-   storage
+-   transformation
+-   serving

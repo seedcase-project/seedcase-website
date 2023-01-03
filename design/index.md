@@ -8,8 +8,6 @@
     includes the values and guiding principles and a big picture look at
     the Product specifications.
 
--   design/index.md
-
 -   design/paper.md (name?): connects all docs and sends to Zenodo for
     each "release"
 
@@ -17,19 +15,3 @@
 
     -   values and guiding principles
     -   More detailed than the diagram and more pathways and connections
-
--   design/use-cases.md
-
--   design/architecture/frontend.md
-
--   design/architecture/backend.md
-
--   design/architecture/api.md
-
--   design/pathways/data-input.md
-
--   design/pathways/data-discovery.md
-
--   design/pathways/admin.md
-
--   design/pathways/knowledge-sharing.md
