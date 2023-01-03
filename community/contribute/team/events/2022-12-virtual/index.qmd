@@ -56,7 +56,7 @@ categories:
             ultrasound)
         -   each image name would have the subject/observation ID
             included and timestamp? Along with a UUID appended?
-        -   Include a "\_metadata.json" type file in the "variable"
+        -   Include a `_metadata.json` type file in the "variable"
             folder?
 -   Action item: Luke will make a sketch of an data input pathway
     diagram for everyone to review later.
