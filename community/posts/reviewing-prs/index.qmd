@@ -51,7 +51,7 @@ Briefly, the steps you take to review a pull request is:
 For a short 4 minute demonstration, check out the YouTube below on doing
 a pull request review.
 
-{{< video https://www.youtube.com/watch?v=lSnbOtw4izI >}}
+{{< video https://www.youtube.com/embed/lSnbOtw4izI >}}
 
 There's also a much longer presentation (40 minutes) by GitHub talking
 about some of the reasons and concepts behind pull requests, code
@@ -60,4 +60,4 @@ submitting pull requests, getting reviewed, and merging). This is more
 for learning to have a better understanding of what and why the "GitHub
 Flow" is useful for collaboration.
 
-{{< video https://www.youtube.com/watch?v=vCwuZfK0VG4 >}}
+{{< video https://www.youtube.com/embed/vCwuZfK0VG4 >}}
