@@ -57,7 +57,7 @@ Regardless, in both routes the steps are:
     add multiple categories to the post by adding a new line starting
     with `-` below the previous category. You can write whatever topic
     word or phrase you want for this. See the YAML metadata of [this
-    post](https://github.com/steno-aarhus/seedcase-project/blob/main/community/posts/adding-posts/index.md)
+    post](https://github.com/steno-aarhus/seedcase-project/blob/main/community/posts/adding-posts/index.qmd)
     for an example of what it should look like.
 
 4.  Then, you can start writing the content of the post below the `---`
