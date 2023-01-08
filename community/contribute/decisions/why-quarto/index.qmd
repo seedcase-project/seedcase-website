@@ -1,21 +1,28 @@
 ---
 title: "Why choose Quarto?"
-description: "Reasons for using Quarto to build the website and write the general documentation."
+description: "Our reasons for using Quarto to build the website and write the general documentation."
 author: "Luke W. Johnston"
-date: "2022-10-31"
+date: "2023-01-03"
 ---
 
 There are many dozens of different types of "static website
 generators"[^1], like [Jekyll](https://jekyllrb.com/) or
-[Hugo](https://gohugo.io/). They all have their pros and cons
+[Hugo](https://gohugo.io/). They all have their pros and cons, and we
+ultimately have to choose one to use when writing content for this
+website and to build it, as well as when writing the documentation for
+Seedcase itself.
 
 [^1]: A static website or blog generator is a framework for building
     websites based on pure, plain HTML files (unlike building websites
     from databases and programming languages like PHP). "Static" meaning
     it is a simple file that is being shown by the browser as a webpage.
 
-1.  Aligns with our values:
-    -   Open source
-    -   Friendly and easy to read documentation
-    -   Multi-programming language support
+Within the R world, a recent new tool came out called
+[Quarto](https://quarto.org/). Since it was released, it has completely
+taken over as the tool to use when working with R and data science. We
+will use this tool because it aligns with our values and philosophies
+for multiple reasons.
 
+-   Open source
+-   Friendly and easy to read documentation
+    -   Multi-programming language support
