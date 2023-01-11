@@ -1,0 +1,25 @@
+### Sustainability
+
+Integral to this framework is ensuring it is sustainable over the
+long-term by:
+
+1.  Integrating the development of the framework and using it in
+    multiple projects at the host institution Steno Diabetes Center
+    Aarhus (SDCA).
+2.  Prototyping MVP to build and document maintenance procedures.
+3.  Incorporating fundamental open source sustainability concepts and
+    documentation such as writing a Code of Conduct and Contributing
+    Guidelines and encouraging external users to contribute.
+4.  Including duties for the hired personnel to contribute back to open
+    source software that the framework depends on to help their, and
+    indirectly the framework's, sustainability.
+
+### Training and educational development
+
+Usage of this framework depends on the quality of its documentation and
+training material. A key concept we will use heavily is Documentation
+Driven Development, where the framework's development is guided and
+informed from the development of the documentation, which places
+documentation as a high priority. We will also be creating and running
+short workshops and tutorials that teach researchers how they can use
+this framework.

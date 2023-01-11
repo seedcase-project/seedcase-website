@@ -41,3 +41,24 @@ categories:
 -   How to split up tasks, some milestones?
 
 ## Minutes from meeting
+
+-   Common data model thoughts:
+    -   Consideration: Data input should immediately enter into
+        relational database? Or go into another storage format instead?
+    -   How to enforce certain standards, like variable naming?
+        -   Each variable has its own UUID? With a list of variable
+            "standards" to select from based on the meta data?
+    -   Question: Does column-based data storage (e.g. Parquet) make it
+        easier to input/update the data?
+    -   Images/non-rectangular thoughts:
+        -   Image be saved as is?
+        -   Create folder that holds the "variable" (e.g liver
+            ultrasound)
+        -   each image name would have the subject/observation ID
+            included and timestamp? Along with a UUID appended?
+        -   Include a `_metadata.json` type file in the "variable"
+            folder?
+-   Action item: Luke will make a sketch of an data input pathway
+    diagram for everyone to review later.
+-   Another brainstorming Jan 26th, same time.
+    -   To discuss anything that wasn't included in this session.
