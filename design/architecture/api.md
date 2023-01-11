@@ -1,3 +1,7 @@
+---
+title: API layer
+---
+
 Modern web and computational infrastructures are built on web APIs. Any
 modern online resource or interface makes use of an API, such as from
 Google, Gen3, or the UK Biobank. An API is a mechanism by which
@@ -15,8 +19,7 @@ and rules on how files and folders are structured and named. Taken
 together, this API would allow other software like R packages to be
 built to interact with the backend to automate tasks done by the users.
 
-API security
-------------
+## API security
 
 Adding a security layer to an API is crucial for ensuring the
 confidentiality, integrity, and availability of the data and systems
@@ -110,8 +113,7 @@ are some basic steps.
 5.  Seedcase used the secret key from OAuth server provide correct
     authorization of the user for accessing the data
 
-API endpoint for data input
----------------------------
+## API endpoint for data input
 
 ### Use PUT request for uploading one file (csv/txt)
 
@@ -119,8 +121,7 @@ API endpoint for data input
 
 ### Pull data from remote seedcase server(future)
 
-API endpoint for data output
-----------------------------
+## API endpoint for data output
 
 ### Use GET request to output data as json format
 
