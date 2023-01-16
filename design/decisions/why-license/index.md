@@ -89,15 +89,13 @@ following:
 -   A change in the type of license that the source code was given at
     the time of contribution.
 
-There are also some that touch on the subject of loss and damages which
-may arise from the use of a particular section of code, as well as how a
-request for support will be dealt with in future.
+There are also some agreements that touch on the subject of loss and damages which may arise from the use of a particular section of code, as well as how a request for support will be dealt with in future.
 
 An alternative to a CLA is a Developer Certificate of Origin or DCO. The
 **DCO** was first employed by the Linux Foundation in 2004, and is
 basically a short document that confirms that the person contributing
 code is allowed to do so, gives permission for the project to
-subsequently use it, and is done through the use of a Git commit.
+subsequently use it, by adding a Signed-off-by line to their commit message (for an example see the [BeeWare projects DCO](https://beeware.org/contributing/how/dco/what/)).
 
 ## Our choice
 
@@ -111,4 +109,4 @@ License.
 We don't yet know if it will be necessary to implement a CLA before
 people outside the project are permitted to access the code. Having said
 that, we will be implementing a **DCO** which future contributers will
-have to agree to before making a contribution to the project.
+have to agree to before making a contribution to the project.  This could be done either by checking that a commit contains the signed-off-by clause before merging it, or by implementing something like the [GitHub App DCO](https://github.com/apps/dco).  The licence text itself is available [here](https://developercertificate.org).
