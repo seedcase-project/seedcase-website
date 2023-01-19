@@ -40,7 +40,7 @@ request
         """ Setup secure view of the API with basic authentication """
         authentication_classes = (BasicAuthentication,)
         permission_classes = (IsAuthenticated,)
-        
+
 
 When make API request need to include the correct username and password
 
@@ -64,14 +64,14 @@ Here is an example for setting up and token class for API requests
 
     class Token():
         """ Access token for API requests."""
-        
+
         # who created the token
         user_name = models.CharField()
-        
+
         # token field
         # Use generate token function to create random string
         token = models.CharField()
-        
+
         # This identifies the project or dataset which will be using this token.
         token_associated_app = models.CharField()
 
@@ -94,7 +94,7 @@ Here is an example for setting up and token class for API requests
             if self.token_associated_app == project_name:
                 return True
             return False
-            
+
 
 When make API request need to include the correct token as the header
 
@@ -117,14 +117,196 @@ are some basic steps.
 
 ### Use PUT request for uploading one file (csv/txt)
 
-### Use PUT request for uploading data directly from database
+Here is an example use this API endpoint to upload csv/txt file to Seedcase box 
 
-### Pull data from remote seedcase server(future)
+````
+# API PUT request
+def post_file(request):
+    ### User need provide the file path and security information ###
+    
+    secured = verify_security(security_information)
+    if not secured:
+        raise PermissionDenied('Failed access control check')
+
+    try:
+        logger.info('Get PUT request to upload file')
+        file_contents = read_file(file_path)
+    except:
+        logger.exception('Failed to read the uploaded file: ')
+        return Response(
+            'Failed to read the uploaded file',
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+    # determine the selected project
+    if 'project_id' in request.data:
+        project_id = request.data['project_id']
+        try:
+            model.project = project.objects.get(id=project_id)
+        except project.DoesNotExist:
+            return Response(
+                f'project with id {project_id} does not exist',
+                status=status.HTTP_400_BAD_REQUEST
+            )
+    else:
+        logger.exception('Failed to provide project id')
+        return Response(
+            'Failed to provide project id',
+            status=status.HTTP_400_BAD_REQUEST
+        )
+        
+
+    # write data to the project
+    try:
+        success_write_data = write_data_to_project(project_id, file_content)
+    except Exception as e:
+        logger.exception('Failed write data to the project')
+        return Response(
+            f'Failed to write data to the projec with error {e}',
+            status=status.HTTP_400_BAD_REQUEST
+        )
+    
+    return Response(status=status.HTTP_201_CREATED)
+
+````
+
+### Use PUT request for uploading data directly from database (remote/local)
+
+Here is an example use this API upload data directly from a database
+
+````
+# API PUT Request
+def post_data_from_database(request):
+    """
+    User need provide the database connection infor, requested data parameter
+    and target project id.
+    """
+    
+    headers = {'Authorization': 'Basic ' + database.credentials}
+    try:
+        data = request.get(database.url, headers=headres, params={data_parameter})
+    except:
+        logger.exception('Failed connect to expected database')
+        return Response(
+            f'Failed connect to expected database with error: {error}',
+            status=status.HTTP_400_BAD_REQUEST
+        )
+    
+    # determine the selected project
+    if 'project_id' in request.data:
+        project_id = request.data['project_id']
+        try:
+            model.project = project.objects.get(id=project_id)
+        except project.DoesNotExist:
+            return Response(
+                f'project with id {project_id} does not exist',
+                status=status.HTTP_400_BAD_REQUEST
+            )
+    else:
+        logger.exception('Failed to provide project id')
+        return Response(
+            'Failed to provide project id',
+            status=status.HTTP_400_BAD_REQUEST
+        )
+        
+    # write data to the project
+    try:
+        success_write_data = write_data_to_project(project_id, file_content)
+    except Exception as e:
+        logger.exception('Failed write data to the project')
+        return Response(
+            f'Failed to write data to the projec with error {e}',
+            status=status.HTTP_400_BAD_REQUEST
+        )
+    
+    return Response(status=status.HTTP_201_CREATED)
+
+````
 
 ## API endpoint for data output
 
 ### Use GET request to output data as json format
 
-### Use POST request to generate data file(csv/txt) for download
+Here is an example use API endpoint to download data as json/csv format
 
-### Push data to remote seedcase servers (future)
+````
+# API GET request
+def download_data_json(request):
+    """
+    User need provide project id, and data parameters and security info
+    """
+    secured = verify_security(security_information)
+    if not secured:
+        raise PermissionDenied('Failed access control check')
+    
+    try:
+        stream = export_data(project_id, data_parameters)
+        # could add one step funciton for convert json into csv or other file
+        response = HttpResponse(stream.getvalue(), content_type='application/json')
+        response['Content-Disposition'] = 'attachment; filename="output_data.json"'
+        return response
+    except Exception as e:
+        logger.exception('fail to download json data')
+        return HttpResponse(
+            f'Failed in exporting to data with error {e}', 
+            status=status.HTTP_400_BAD_REQUEST
+        )
+````
+
+
+### Use POST request to generate data file to a location for download later
+
+Here is an example use API to get the data and post to location for user to 
+download later
+
+````
+# API POST request
+
+def fetch_create_data(request):
+    """
+    User need to provide project id, data parameters and security information.
+    It will be post call to request data generation, and check status. Notify
+    user when the status is true, when data is ready for download at the defined
+    location
+    """
+    secured = verify_security(security_information)
+    if not secured:
+        raise PermissionDenied('Failed access control check')
+    
+    try:
+        generated_data = data_generation(project_id, data_parameters)
+    
+        return Response(status=status.HTTP_201_CREATED)
+        
+    except Exception as e:
+        logger.exception('fail to generate data')
+        return HttpResponse(
+            f'Failed in generating to data with error {e}', 
+            status=status.HTTP_400_BAD_REQUEST
+        )
+    
+    status = False 
+    fail = False
+    while status == False and fail == False:
+        status = check_generating_status(generated_data.process_id)
+        if time >= designed_fail_time
+            fail = True
+    if fail:
+       logger.exception('fail to generate data, it takes too long')
+       publish_data = (
+            designed_location, 
+            content = 'fail to generate data, it takes too long'
+       )
+    else:
+        # Could add function to convert into csv/json file        
+        publish_data = (
+            designed_location, 
+            content = generated_data
+        )
+    # Could add function to notify user
+
+````
+
+
+
+
