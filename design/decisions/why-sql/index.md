@@ -12,9 +12,39 @@ categories:
   - technology
 ---
 
-# Back end technology
+# Backend technology
 
-We will at some point be selecting an open source database as the backbone of our project.  This will support not only the access and security features, but it will also be the place where the user will ultimately store their data.  As the specifications for our system is still being developed, we have not yet made the decision of which database to work with.  
+We will at some point be selecting an open source database as the backbone of our project.  This will support not only the access and security features, but it will also be the place where the user will ultimately store their data.  As the specifications for our system is still being developed, we have not yet made the decision of which database to work with. 
+
+Below we have first detailed the specifications that we are looking for in a backend database, and then a discussion of a selection of specific systems that may meet our requirements.
+
+# Database specifications
+
+This part of the document is expected to change and grow as we narrow down what we will need the seedcase database to do.  There are though some things that we already know it must be able to handle, and these are detailed here.
+
+## Must have functionality
+
+There are some standard features of a database which should be present no matter which system we end up using.  A database backend should be able to handle the data stored, the users, security, and be able to monitor and back up data.
+
+### Data handling
+
+There are some important aspects of data handling that we will need the database to do.  It will need to be able to accept data written into the system, be able to store the data, and able to output the data when needed.  It also needs to ensure that data integrity is preserved and that concurrency issues doesn't arise, in other words it needs to comply with the ACID properties (Atomicity, Consistency, Isolation, and Durability).  
+
+We also need a system that can handle potentially large amounts of data, not only on many individuals (row based), but also many variables for each individual record (column based).  The speed with which it is able to retrieve data will also play a role in our choice of backend.
+
+### User handling
+
+We need a system that is capable of handling users.  We will need a system that can take the access policies we design and implement them, likely through a system of roles and groups which the individual user can be assigned to.  We are currently working with a model where we expect most instances of seedcase to be used by a single user, but it will need to be able to scale to allow for multiple users with very different roles.
+
+### Security
+
+The security of seedcase is discussed in [a different document](link).  We will need to be able to comply with different regulations (like GDPR), it is therefore likely that it will be a combination of backend and frontend security working together to keep data safe.
+
+### Monitoring
+
+The backend of seedcase should contain measures that will ensure that if data is changed or lost it is possible to restore it.  There are a couple of ways to achieve this, either monitoring/logging of changes to the data, or by running backups of all or parts of the data on a regular basis.  These two approaches can of course work in tandem, where important data tables and structures have changes logged in audit tables, combined with frequent backups saved to a separate part of the system.
+
+# Software evaluation
 
 While we develop our specifications, we have looked at the top three open source relational databases (as defined by DB-Engines in November 2022): MySQL, PostgreSQL, and SQLite.
 
