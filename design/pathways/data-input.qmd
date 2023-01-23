@@ -2,6 +2,19 @@
 title: "Data input pathways"
 ---
 
+# outline
+
+-   not go into detail on database, frontend, nor api design
+-   not go into detail on security
+
+## Types of (expected) data being entered
+
+## How/frequency of data being input
+
+## Data, metadata, and expected values input
+
+### Versioning (internal vs external)
+
 Depending on the source of data, there may already be established data
 input processes. Substantial amounts of biomedical data, especially in
 Denmark, come from already established, routinely collected clinical
@@ -33,3 +46,12 @@ updated.
 
 TODO: Directed graph diagram showing pathways actions take from data
 input into final database
+
+```{=html}
+<!---
+Questions:
+
+  - Do some basic QA/QC before data input? How?
+  - 
+-->
+```
