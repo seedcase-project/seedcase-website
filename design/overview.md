@@ -75,6 +75,10 @@ fit these principles:
     potential future tools: Technology progresses quite quickly, so we
     will rely on software that is likely to still be used or can be
     switched to other tools.
+8.  Be developed or supported by organizations that adhere to open
+    principles: There are many organizations that develop or support
+    open source software, but not all of them have openness as a core
+    value and mission.
 
 ## Technical
 
