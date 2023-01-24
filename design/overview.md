@@ -2,21 +2,21 @@
 title: "Overview"
 ---
 
-For this project, the data infrastructure *framework* is defined as 1) a
-set of software programs, 2) a defined and fixed set of conventions on
+Seedcase is a data infrastructure *framework*. We define framework as 1)
+a set of software programs, 2) a defined and fixed set of conventions on
 the structure and format of the filesystem and URL paths, and 3) a
 defined structure to the data and associated documentation, all of which
 are linked together as modular components. The framework will serve as
 an open source starting template for setting up data infrastructures
 that make use of modern tools and processes.
 
-This framework encompasses four target users and three layers, with a
-complete schematic shown in Figure 2. The three layers are the web
+Seedcase encompasses four target users and three layers, with a complete
+schematic shown in @fig-detailed-schematic. The three layers are the web
 portal frontend, the database and documentation backend, and the API
 (Application Programming Interface) that interacts with both.
 
 ![Detailed schematic of the data infrastructure
-framework.](/images/detailed-schematic.svg)
+framework.](/images/detailed-schematic.svg){#fig-detailed-schematic}
 
 ## Guiding principles
 
@@ -48,17 +48,17 @@ developing this project:
 In order to maximise the potential for re-use and to minimise the
 technical debt and expertise needed to use, maintain, and modify the
 framework, we will use software and tools underlying the framework that
-fit these principles:
+*as much as possible, and where relevant*, fit these principles:
 
-1.  Wherever possible, re-use existing material: There already exists
-    many great software tools, infrastructures, and resources that
-    haven't been incorporated into common health research practice. We
-    will make use of and/or modify these materials where we can.
+1.  Re-use existing material: There already exists many great software
+    tools, infrastructures, and resources that haven't been incorporated
+    into common health research practice. We will make use of and/or
+    modify these materials where we can.
 2.  Be familiar to or used by researchers currently or within the near
     future: To ensure the greatest potential for continued maintenance,
     development, and use, the framework should use or be built with
     tools and skills that are at least familiar or soon to be familiar
-    to researchers.
+    to more technical researchers.
 3.  Be familiar to skilled personnel (e.g. research software engineers,
     data engineers, data scientists): Skilled personnel will build this
     framework and need to be familiar with them.
