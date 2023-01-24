@@ -95,22 +95,11 @@ framework, we will use software and tools underlying the framework that
 
 ### Dissemination of framework
 
-TODO: not sure where to put this.
+Aligning with the guiding principles, the complete development of the
+framework will take place openly on GitHub. The framework and all its
+components will be licensed under a permissive copyright licenses.
 
-To be aligned to the goals of openness, transparency, and FAIR
-principles, the complete development of the framework will take place
-openly on GitHub. From there we will link to and promote it through
-various outlets, including publications, conferences, and social media.
-The framework and all its components will be licensed under permissive
-copyright licenses like the MIT License for the software and the
-Creative Commons Attribution License for non-software content.
-
-Be easily installable
-
--   Through Conda?
--   As an image for Windows?
--   Through snapcraft/flak, etc?
--   As a dmg image for Mac?
+Installation
 
 # Data lifecycle stages
 
