@@ -25,8 +25,7 @@ jobs:
           pandoc-version: '2.17.1' # The pandoc version to download (if necessary) and use.
 
       - name: Reformat Markdown files
-        working-directory: src/pr
-        run: bash reformat-markdown.sh
+        run: bash src/pr/reformat-markdown.sh
 
       - name: Commit
         run: |
