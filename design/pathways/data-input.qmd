@@ -1,26 +1,77 @@
----
-title: "Data input pathways"
----
+# Data input pathways
 
-# outline
+The **overall aim** of this section is to describe the general path that
+data takes through Seedcase, from input into the final output.
+Specifically, these items are described as:
 
--   not go into detail on database, frontend, nor api design
--   not go into detail on security
+-   *Input*: Because we currently focus on health research, the type of
+    input data and metadata will be what is typically generated from
+    health studies.
+-   *Output*: The final output object would be the input data stored
+    together as a single database, or at least multiple databases and
+    files explicitly linked in such a way that it conceptually
+    represents a single database. In data engineering terms, this would
+    be a well-connected ["data
+    warehouse"](https://en.wikipedia.org/wiki/Data_warehouse) that will
+    be usable for other components and paths (described in other
+    sections).
+-   *Path*: The computational and programmatic steps the input data and
+    metadata takes from being uploaded by a human (and potentially
+    automatically by a program) into Seedcase, passing through quality
+    control checks, adding to the changelog, and storage into the
+    database.
 
-## Types of (expected) data being entered
+This section doesn't go over what is already covered by other sections,
+such as are more detail on the backend database/data warehouse, the
+frontend, or the API. It also doesn't go over security details.
 
-## How/frequency of data being input
+<!-- TODO: Include links to these sections once they are done. -->
 
-## Data, metadata, and expected values input
+## Expected type of input data
 
-### Versioning (internal vs external)
+Given the (current) focus on health data as well as our own experiences,
+we make some assumptions about the type of data that will be input into
+Seedcase. Health data tends to consist of specific types of data:
 
-Depending on the source of data, there may already be established data
-input processes. Substantial amounts of biomedical data, especially in
-Denmark, come from already established, routinely collected clinical
-data such as from outpatient clinics. For these sources of data, the
-data input pipeline would involve redirecting these data sources through
-the API and storage format so the data continues on to the backend.
+-   **Clinical**: This data is typically collected during patient visits
+    to doctors. Depending on the country or adminitrative region, there
+    will likely already be well-established data processing and storage
+    pipelines in place.
+-   **Register**: This type of data is highly dependent on the country
+    or region. Generally, this data is collected for national or
+    regional administrative purposes, such as, recording employment
+    status, income, address, medication purchases, and diagnoses. Like
+    the routine clinical data, the pipelines in place for processing and
+    storage of this data are usually very extensive and established.
+-   **Biological sample analysis**: This type of data is generated from
+    biological samples, like blood, saliva, semen, hair, or urine. Data
+    generated from sample analytic techniques often produce large
+    volumes of data per person. Samples may be generated in larger
+    established laboratories or in smaller research groups, depending on
+    how what analytic technology is used and how new it is. The
+    structure and format of the generated data also tends to be highly
+    variable and depends heavily on the technology used, sometimes
+    requiring specialized software to process and output.
+-   **Survey or questionnaire**: This type of data is often done based
+    on a given study's aims and research questions. There are hundreds
+    of different questionnaires that can have highly specific purposes
+    and uses for their data. They are also highly variable in the volume
+    of data collected based on the survey, and on the format of the
+    data.
+
+<!-- TODO: Others? -->
+
+## Expected flow of input data
+
+The above described data tends to fit into, mostly, two categories:
+Routine or continuous collection and batch collection.
+
+-   *Routine collection*
+-   *Batch collection*
+
+For these sources of data, the data input pipeline would involve
+redirecting these data sources through the API and storage format so the
+data continues on to the backend.
 
 Sources of data that don't have well-established data input processes,
 such as from hospitals, medical laboratories, and so on, would use the
@@ -31,27 +82,34 @@ it.
 
 Once the data is submitted through the portal, it would get sent in an
 encrypted, legally-compliant format to the server and stored in the way
-defined by the API and CDM. Any new or updated data that is uploaded
-would trigger generic automated data cleaning, processing, quality
-control checks of this new data. Any automated processing that is
-developed specific to a project would need to adhere to the API's
-conventions. If any issues are found or if the data is entirely new to
-the database, they get sent to a log and User 4 would receive a
-notification to deal with the issue. If there are no issues or the
-issues have been dealt with, an automated script would take a snapshot
-of the data with the VC system, the version number (based on [Semantic
-Versioning](https://semver.org/)) of the data would be updated, an entry
-would get added to the changelog, and the formal database would get
-updated.
+defined by the API and CDM.
+
+## Pre- and post-processing of data
+
+Any automated processing that is developed specific to a project would
+need to adhere to the API's conventions. If any issues are found or if
+the data is entirely new to the database, they get sent to a log and
+User 4 would receive a notification to deal with the issue.
+
+## Data, metadata, and expected values input
+
+### Quality control
+
+Any new or updated data that is uploaded would trigger generic automated
+data cleaning, processing, quality control checks of this new data.
+
+### Versioning (internal vs external)
+
+-   versioning, external via DOI with releases of summary stats and
+    changelog. (how often?)
+
+If there are no issues or the issues have been dealt with, an automated
+script would take a snapshot of the data with the VC system, the version
+number (based on [Semantic Versioning](https://semver.org/)) of the data
+would be updated, an entry would get added to the changelog, and the
+formal database would get updated.
+
+## From input to storage
 
 TODO: Directed graph diagram showing pathways actions take from data
 input into final database
-
-```{=html}
-<!---
-Questions:
-
-  - Do some basic QA/QC before data input? How?
-  - 
--->
-```
