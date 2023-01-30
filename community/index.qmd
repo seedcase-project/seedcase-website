@@ -1,4 +1,10 @@
-### Sustainability
+# Community involvement and
+
+-   contributing
+
+-   team specific documents
+
+## Sustainability
 
 Integral to this framework is ensuring it is sustainable over the
 long-term by:
@@ -14,7 +20,7 @@ long-term by:
     source software that the framework depends on to help their, and
     indirectly the framework's, sustainability.
 
-### Training and educational development
+## Training and educational development
 
 Usage of this framework depends on the quality of its documentation and
 training material. A key concept we will use heavily is Documentation
