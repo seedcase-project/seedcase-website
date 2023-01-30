@@ -63,26 +63,45 @@ Seedcase. Health data tends to consist of specific types of data:
 
 ## Expected flow of input data
 
-The above described data tends to fit into, mostly, two categories:
-Routine or continuous collection and batch collection.
+The above described data tends to fit into, mostly, two categories for
+data input.
 
--   *Routine collection*
--   *Batch collection*
+-   *Routine or continuous collection*, where ingested data into
+    Seedcase would occur as soon as the data was collected from one
+    "observational unit"[^data-input-1] or very shortly afterwards.
+    Clinical data as well as survey or questionnaire data may likely
+    fall under this category.
+-   *Batch collection*, where ingested data occurs some time after the
+    data was collected and from multiple observational units. Biological
+    sample data would fall under this category, since laboratories
+    usually run several samples at once and input data after internal
+    quality control checks and machine-specific data processing. While
+    register-based data does get collected continuously, direct access
+    to it is only given on a batch basis, usually once every year.
+    Survey data may also come in batches, depending on the questionnaire
+    and software used for its collection.
 
-For these sources of data, the data input pipeline would involve
-redirecting these data sources through the API and storage format so the
-data continues on to the backend.
+[^data-input-1]: Observational unit is the "entity" that the data was
+    collected from at a given point in time, such as a human participant
+    in a cohort study or a rat in an animal study at a specific time
+    point.
+
+For sources of data from routine collection with well-established data
+input processes, the data input pipeline would likely involve
+redirecting these data sources from their generation into Seedcase via a
+direct call to the API so the data continues on to the backend and
+eventual data storage.
 
 Sources of data that don't have well-established data input processes,
-such as from hospitals, medical laboratories, and so on, would use the
-data input portal. This portal would only accept data that is in a
-pre-defined format and would include documentation, and potentially
-automation scripts, on how to pre-process the data prior to uploading
-it.
+such as from hospitals or medical laboratories, would need to use the
+Seedcase data batch-input portal. This portal would only accept data
+that is in a pre-defined format (as determined and created by the data
+owner) and would include documentation, and potentially automation
+scripts, on how to pre-process the data prior to uploading it.
 
 Once the data is submitted through the portal, it would get sent in an
 encrypted, legally-compliant format to the server and stored in the way
-defined by the API and CDM.
+defined by the API and common data model.
 
 ## Pre- and post-processing of data
 
