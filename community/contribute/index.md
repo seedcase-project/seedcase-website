@@ -1,8 +1,14 @@
 ---
-title: "Overview"
+title: "Introduction to Seedcase's components"
 ---
 
 {{< include ../../includes/_wip.qmd >}}
+
+This document is written to help give a bigger picture overview of the
+different components that make up Seedcase, not just Seedcase the
+software but the entire project. The aim here is to provide a better
+understanding of all the files and folders as well as the reasons we
+have them.
 
 ![Project blocks that make up the seedcase
 project.](/images/project-blocks.svg){width="70%"}
@@ -126,3 +132,4 @@ document), how to contribute (in the
 expected behaviours (in the [Code of
 Conduct](/community/CODE_OF_CONDUCT.md) document). More detail is found
 in the [Community](/community/index.md) page.
+
