@@ -37,10 +37,11 @@ license to use and how permissive we want it to be, in terms of who can
 work on our code and how it can be used.
 
 The primary license is the one that governs how our code can be used,
-modified, and shared, which is described more below. It is debated
-whether an open source project should employ either a Contributor
-License Agreement (CLA), a Developer Certificate of Origin (DCO), or
-neither of those, which we discussion below as well.
+modified, and shared, which is described more below. For managing
+copyright of contributed code from users who are external to the
+project, agreements could include either a Contributor License Agreement
+(CLA), a Developer Certificate of Origin (DCO), or neither of those,
+which we discussion below as well.
 
 ### Software license
 
@@ -118,3 +119,4 @@ by checking that a commit contains the signed-off-by clause before
 merging it, or by implementing something like the [GitHub App
 DCO](https://github.com/apps/dco). The licence text itself is available
 [here](https://developercertificate.org).
+
