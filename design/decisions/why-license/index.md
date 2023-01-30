@@ -6,7 +6,7 @@ description: |
   intellectual ideas with others. The MIT License is a very permissive 
   copyright license.
 author: "Kris Beicher"
-date: "2023-01-12"
+date: last-modified
 categories:
   - licensing
   - copyright
@@ -14,15 +14,15 @@ categories:
 
 For a project like Seedcase to fully succeed in our stated mission, a
 critical key to that is what our copyright license is. Without a
-license, other users are not allowed to (easily) (re-)use, modify,
-contribute, or enhance our software because of copyright reasons. Since
-our mission isn't to just build a product, it's also to develop a
-creative community around Seedcase and the topics we work on. We want
-people to be able to freely and smoothly contribute enhancements and
-other improvements that can be incorporated into future releases of
-Seedcase. It is also our intention to make the Seedcase software
-available to commercial enterprises, which means that we need to
-carefully consider which license we adopt.
+license, other users will not be allowed to (easily) (re-)use, modify,
+contribute, or enhance our software because of copyright reasons. Our
+mission isn't only to build a product, we also aim to develop a creative
+community around Seedcase and the topics we work on. We want people to
+be able to freely and smoothly contribute enhancements and other
+improvements that can be incorporated into future releases of Seedcase.
+It is also our intention to make the Seedcase software available to
+commercial enterprises, which means that we need to carefully consider
+which license we adopt.
 
 Below is a walk-through of the different types of licenses that we
 believe we will need and a discussion on the reasons we make the choices
@@ -30,11 +30,11 @@ that we do.
 
 ## Types of licenses
 
-The Open Source Inititative [approves](https://opensource.org/licenses)
-a specific set of licenses that determine whether a project can be
-called "open source". These licenses are our starting point on deciding
-which license to use and how permissive we want it to be, in terms of
-who can work on our code and how it can be used.
+The Open Source Initiative [approves](https://opensource.org/licenses) a
+specific set of licenses that determine whether a project can be called
+"open source". These licenses are our starting point on deciding which
+license to use and how permissive we want it to be, in terms of who can
+work on our code and how it can be used.
 
 The primary license is the one that governs how our code can be used,
 modified, and shared, which is described more below. It is debated
@@ -89,13 +89,17 @@ following:
 -   A change in the type of license that the source code was given at
     the time of contribution.
 
-There are also some agreements that touch on the subject of loss and damages which may arise from the use of a particular section of code, as well as how a request for support will be dealt with in future.
+There are also some agreements that touch on the subject of loss and
+damages which may arise from the use of a particular section of code, as
+well as how a request for support will be dealt with in future.
 
 An alternative to a CLA is a Developer Certificate of Origin or DCO. The
 **DCO** was first employed by the Linux Foundation in 2004, and is
 basically a short document that confirms that the person contributing
 code is allowed to do so, gives permission for the project to
-subsequently use it, by adding a Signed-off-by line to their commit message (for an example see the [BeeWare projects DCO](https://beeware.org/contributing/how/dco/what/)).
+subsequently use it, by adding a Signed-off-by line to their commit
+message (for an example see the [BeeWare projects
+DCO](https://beeware.org/contributing/how/dco/what/)).
 
 ## Our choice
 
@@ -106,7 +110,11 @@ groups. Aligning with our stated Guiding Principles, we will use a
 project. Of the permissive license types we will go with the MIT
 License.
 
-We don't yet know if it will be necessary to implement a CLA before
-people outside the project are permitted to access the code. Having said
-that, we will be implementing a **DCO** which future contributers will
-have to agree to before making a contribution to the project.  This could be done either by checking that a commit contains the signed-off-by clause before merging it, or by implementing something like the [GitHub App DCO](https://github.com/apps/dco).  The licence text itself is available [here](https://developercertificate.org).
+Currently, we're not sure if we need to implement a CLA before people
+outside the team contribute to the code. However, we will like
+implementing a **DCO** that future contributors will need to agree to
+before making a contribution to the project. This could be done either
+by checking that a commit contains the signed-off-by clause before
+merging it, or by implementing something like the [GitHub App
+DCO](https://github.com/apps/dco). The licence text itself is available
+[here](https://developercertificate.org).
