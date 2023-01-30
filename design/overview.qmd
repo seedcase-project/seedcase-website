@@ -79,34 +79,9 @@ framework, we will use software and tools underlying the framework that
     principles: There are many organizations that develop or support
     open source software, but not all of them have openness as a core
     value and mission.
-
-## Technical
-
-### Assumptions/key requirements
-
--   Read speed
--   Write speed
--   Ingestion volume
-    -   Input will be more in batches rather than streaming
--   Technical environment
-    -   How much access to memory and storage
-    -   Internet access/connectivity
-    -   Technical knowledge skill required
-
-### Dissemination of framework
-
-Aligning with the guiding principles, the complete development of the
-framework will take place openly on GitHub. The framework and all its
-components will be licensed under a permissive copyright licenses.
-
-Installation
-
-# Data lifecycle stages
-
--   generation
--   ingestion
-    -   import, then run checks on data in temp location to send back
-        any issues that it detects?
--   storage
--   transformation
--   serving
+9.  Be usable in diverse computing environments: Not all institutions or
+    companies have the funding or access to more powerful computing
+    environments. To be equitable and inclusive, we will consider, and
+    where relevant, develop for environments with less powerful
+    read/write speeds, limits in memory and storage, and/or lower
+    Internet access and connectivity.
