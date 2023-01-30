@@ -56,7 +56,7 @@ website:
       align: left
       contents:
         - design/index.md
-        - design/overview.md
+        - design/overview.qmd
         - design/decisions.md
     - id: about
       title: "About"
