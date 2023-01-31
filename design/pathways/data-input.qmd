@@ -117,6 +117,11 @@ User 4 would receive a notification to deal with the issue.
 Any new or updated data that is uploaded would trigger generic automated
 data cleaning, processing, quality control checks of this new data.
 
+qc could be based on basic things like checking if file is correct,
+contains proper delims, etc.
+
+<!-- TODO: Would there be a QC for streaming data? -->
+
 ### Versioning (internal vs external)
 
 -   versioning, external via DOI with releases of summary stats and
@@ -130,5 +135,20 @@ formal database would get updated.
 
 ## From input to storage
 
-TODO: Directed graph diagram showing pathways actions take from data
-input into final database
+### Flow for "sample analysis" data
+
+```{mermaid}
+%%| eval: true
+%%| label: fig-data-input-sample-analysis
+%%| fig-cap: "The flow of sample analysis-type data through Seedcase."
+%%| file: images/data-input-sample-analysis.mmd
+```
+
+### Flow for batch data
+
+```{mermaid}
+%%| eval: true
+%%| label: fig-data-input-batch
+%%| fig-cap: "The flow of batch collection data through Seedcase."
+%%| file: images/data-input-batch.mmd
+```
