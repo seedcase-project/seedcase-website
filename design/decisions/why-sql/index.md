@@ -125,9 +125,6 @@ technologies (ADO.NET, JDBC, ODBC, and native APIs).
 
 **Drawbacks**
 
--   There is always a risk that an open source community will break
-    apart and leave a product unsupported, but the risk here looks
-    minimal.
 -   MySQL is run by Oracle which is a commercial entity. There is always
     a risk that the company decides to reverse the open source concept
     and go move to a solution with a free light version and full payable
