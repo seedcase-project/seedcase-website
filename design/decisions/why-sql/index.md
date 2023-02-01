@@ -96,7 +96,7 @@ like MongoDB and Redis.
 
 As we are planning to use container technology to run the database it is
 not as important which operating systems the database will run on.
-Having said that, of the three systems that we are looking at MySQL, and
+Having said that, of the three systems that we are looking at MySQL and
 PostgreSQL will run on multiple operating systems (e.g. Linux, Mac OS,
 and Windows), and SQLite is a classic serverless application.
 
