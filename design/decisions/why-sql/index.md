@@ -83,7 +83,7 @@ system.
 
 # Software evaluation
 
-While we develop our specifications, we have looked at the top three
+To fit our guiding principles of using established and well-known technologies, we're only going to look at the top three
 open source relational databases (as defined by DB-Engines in November
 2022): MySQL, PostgreSQL, and SQLite.
 
