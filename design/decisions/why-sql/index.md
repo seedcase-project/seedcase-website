@@ -104,7 +104,7 @@ comparison](https://db-engines.com/en/system/MySQL%3BPostgreSQL%3BSQLite)
 on [DB-engines](https://db-engines.com) was used to compile some of the
 comparison below.
 
-## [MySQL](www.mysql.com)
+## MySQL
 
 First released in 1995 it is maintained by Oracle Corp and is (at the
 time of writing) on version 8.0.31. It is an open source platform with
