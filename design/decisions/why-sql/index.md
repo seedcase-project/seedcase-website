@@ -150,7 +150,7 @@ and streaming APIs).
     lot of engage users delivering support.
 -   Traditional database system with a recognisable format, should be
     easy to manipulate and work with for the advanced seedcase user.
--   Support for both xml and json formats, both reading and writing.
+-   Support for both XML and JSON formats, both reading and writing.
 -   There are scripts that will allow for PostgreSQL to interact with
     Apache Parquet files.
 -   It is possible to create columnar based tables
