@@ -119,7 +119,7 @@ technologies (ADO.NET, JDBC, ODBC, and native APIs).
     overall with good support and a large community.
 -   Traditional database system with a recognisable format, should be
     easy to manipulate and work with for the advanced seedcase user.
--   Support for both xml and json formats, both reading and writing.
+-   Support for both XML and JSON formats, both reading and writing.
 -   There are a number of ways for MySQL to interact with Apache Parquet
     files.
 
