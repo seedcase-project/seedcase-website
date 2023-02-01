@@ -153,7 +153,7 @@ and streaming APIs).
 -   Support for both xml and json formats, both reading and writing.
 -   There are scripts that will allow for PostgreSQL to interact with
     Apache Parquet files.
--   It is possible (since version @@) to create columnar based tables
+-   It is possible to create columnar based tables
     directly in PostgreSQL.
 
 **Drawbacks**
