@@ -107,8 +107,7 @@ comparison below.
 
 ## MySQL
 
-First released in 1995 it is maintained by Oracle Corp and is (at the
-time of writing) on version 8.0.31. It is an open source platform with
+[MySQL](www.mysql.com) was first released in 1995 it is maintained by Oracle Corp. It is an open source platform with
 the option to deploy either as a local server solution or cloud based.
 The implementation languages are C and C++ and it runs of a variety of
 operating systems. The system allows access through standard
