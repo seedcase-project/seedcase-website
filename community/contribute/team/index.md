@@ -9,7 +9,7 @@ discussions, we use GitHub Issues. And for help or sharing information,
 we use blog posts that we add to the website.
 
 No matter which communication channel is used, we write in Markdown
-format.
+format, though Discord uses a limited set of Markdown features.
 
 ## Guide to the general workflow
 
