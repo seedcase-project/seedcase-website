@@ -62,7 +62,9 @@ website:
       align: left
       contents:
         - design/index.md
-        - design/overview.md
+        - Section: "Architecture Documentation"
+          contents:
+            - design/introduction.md
         - design/decisions.md
     - id: about
       title: "About"
