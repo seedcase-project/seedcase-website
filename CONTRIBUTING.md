@@ -1,1 +1,1 @@
-community/CONTRIBUTING.md
+community/contribute/index.qmd

@@ -2,5 +2,13 @@ Package: seedcaseProject
 Type: Website
 License: CC BY 4.0
 Encoding: UTF-8
-Suggests: 
-    DiagrammeR
+Imports: 
+    DiagrammeR,
+    dplyr,
+    gert,
+    glue,
+    here,
+    purrr,
+    readr,
+    stringr,
+    tidyr
