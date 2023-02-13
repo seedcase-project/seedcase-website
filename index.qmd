@@ -1,25 +1,34 @@
 ---
 title: "Seedcase"
-subtitle: "A framework for an open and scalable infrastructure for health data"
+subtitle: A framework for an open and scalable infrastructure for health data
+about:
+  id: hero-heading
+  template: jolla
+  links: 
+    - icon: cone-striped
+      text: "Software (incomplete)"
+      href: https://github.com/steno-aarhus/seedcase
+    - icon: person-vcard
+      text: "About"
+      href: /about/
+    - icon: people
+      text: "Community"
+      href: /community/
+    - icon: diagram-2
+      text: "Design"
+      href: /design/
 ---
 
-{{< include includes/_wip.qmd >}}
+Getting funds, finding personnel, and allocating resources to build
+functioning software is very difficult in research.
 
-Many initiatives in clinical research, including the Danish Centre for
-Strategic Research in Type 2 Diabetes (DD2) initiative, have a hard time
-getting funds for building and maintaining needed software that make
-sure health science is the highest quality it can be. For this project,
-we aim to build software tools that make it easier to do better
-research, especially for managing and working with data. We'll first be
-building these tools to help support the DD2 initiative.
+Seedcase aims to ease the burden of building, managing, sharing, and
+accessing health data by developing both user-friendly software to
+automate or streamline these jobs as well as beginner-friendly training
+material for data engineering.
 
-<!-- TODO: List overview of purposes here -->
+We believe that with these tools and knowledge, science on health and
+well-being can become better, ultimately helping people with people with
+diseases like diabetes and society in general.
 
-We will be sharing these tools widely and freely, so that as many
-research groups as possible can use it for their own projects. Not only
-will we build these tools to help researchers with managing and sharing
-their data, we also will create them with beginner-friendly
-documentation and training material to make sure more researchers use
-our tools, no matter their skill level. We believe that with these
-tools, science on health and well-being can become better, ultimately
-helping people with diabetes and society in general.
+<!-- TODO: List overview of purposes/principles here? -->
