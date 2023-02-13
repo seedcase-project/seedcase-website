@@ -80,8 +80,6 @@ csl: "includes/vancouver.csl"
 format:
   html:
     from: markdown+emoji
-    # Not sure this works without R, since it uses the downlit package.
-    # code-link: true
     theme:
       - zephyr
       - theme.scss
