@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Seedcase's components"
+title: Project blocks
 ---
 
 {{< include ../../includes/_wip.qmd >}}
@@ -132,4 +132,3 @@ document), how to contribute (in the
 expected behaviours (in the [Code of
 Conduct](/community/CODE_OF_CONDUCT.md) document). More detail is found
 in the [Community](/community/index.md) page.
-
