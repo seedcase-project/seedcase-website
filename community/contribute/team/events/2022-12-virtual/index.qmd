@@ -1,0 +1,64 @@
+---
+title: "Virtual team brainstorming meeting"
+description: "Agenda for half-day virtual team meeting to brainstorm on the project."
+author: "Luke W. Johnston"
+date: "2022-12-15"
+categories:
+  - virtual
+  - meeting
+  - brainstorming
+---
+
+## Agenda
+
+-   Brainstorm on backend common data model. This is the key to the
+    whole project, so should focus on it. (Idea: Use whiteboard to
+    sketch I/O?)
+    -   How will it be stored?
+    -   When data comes in, what do the files and folders look like?
+        -   If no files and folders, then stored as SQL? How? If data
+            comes in as CSV, what are the steps involved?
+    -   How should the data be organized as it enters the CDM? Should it
+        be organized by a timestamp?
+    -   Or, when new completely data (e.g. a new table) comes in, where
+        will it be added? (e.g. study gets funding to run metabolic
+        measurements from stored blood)
+        -   Should all data be treated similarly? As in, should any data
+            coming in be structured in a similar way?
+        -   How can we design it to be flexible to incoming data?
+    -   How should the model look?
+    -   Easy enough with rectangular data (e.g. spreadsheet style), what
+        about images, etc?
+    -   How should the API look like to move data into this Model?
+    -   How will changes or additions be put into a changelog file?
+    -   How will data schema be accessible to display in frontend as
+        list of variables available? Or that can be updated (e.g. add
+        description about data)?
+-   Next steps and aims:
+    -   Create an architecture/specification document detailing how
+        seedcase will look like
+    -   Send spec document to get reviewed by external third-party
+-   How to split up tasks, some milestones?
+
+## Minutes from meeting
+
+-   Common data model thoughts:
+    -   Consideration: Data input should immediately enter into
+        relational database? Or go into another storage format instead?
+    -   How to enforce certain standards, like variable naming?
+        -   Each variable has its own UUID? With a list of variable
+            "standards" to select from based on the meta data?
+    -   Question: Does column-based data storage (e.g. Parquet) make it
+        easier to input/update the data?
+    -   Images/non-rectangular thoughts:
+        -   Image be saved as is?
+        -   Create folder that holds the "variable" (e.g liver
+            ultrasound)
+        -   each image name would have the subject/observation ID
+            included and timestamp? Along with a UUID appended?
+        -   Include a `_metadata.json` type file in the "variable"
+            folder?
+-   Action item: Luke will make a sketch of an data input pathway
+    diagram for everyone to review later.
+-   Another brainstorming Jan 26th, same time.
+    -   To discuss anything that wasn't included in this session.

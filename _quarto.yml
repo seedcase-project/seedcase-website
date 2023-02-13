@@ -1,60 +1,66 @@
 project:
-    type: website
-    output-dir: _site
-    execute-dir: project
-    render:
-        - "*.Rmd"
-        - "*.md"
-        - "*.qmd"
-    post-render:
-        - touch _site/.nojekyll
+  type: website
+  execute-dir: project
 
 website:
-    title: "seedcase"
-    # apple-touch-icon: "images/apple-touch-icon.png"
-    # apple-touch-icon-size: 180
-    # favicon: "images/favicon.ico"
-    site-url: "https://steno-aarhus.github.io/seedcase-project/"
-    repo-url: "https://github.com/steno-aarhus/seedcase-project"
-    repo-branch: main
-    repo-actions: [edit, issue, source]
-    search:
-        location: navbar
-        type: overlay
-    page-footer:
-        center:
-            - text: "License under CC-BY 4.0"
-              href: LICENSE.md
-    navbar:
-        left:
-            - text: "Community"
-              href: community/contribute/index.md
-            - text: "About"
-              href: about/index.md
-        right:
-            - icon: "globe"
-              href: "https://www.stenoaarhus.dk/research"
-            - icon: "twitter"
-              href: "https://twitter.com/StenoAarhusRes"
-    sidebar:
-        - id: community
-          title: "Community"
-          style: "floating"
-          align: left
+  title: "Seedcase"
+  # favicon: "images/favicon.ico"
+  site-url: "https://steno-aarhus.github.io/seedcase-project/"
+  repo-url: "https://github.com/steno-aarhus/seedcase-project"
+  repo-branch: main
+  repo-actions: [edit, issue, source]
+  search:
+    location: navbar
+    type: overlay
+  page-footer:
+    center:
+      - text: "License: CC-BY 4.0"
+        href: LICENSE.md
+  navbar:
+    right:
+      - text: "About"
+        href: about/index.md
+      - text: "Community"
+        href: community/index.qmd
+      - text: "Design"
+        href: design/index.md
+      - icon: github
+        href: "https://github.com/steno-aarhus/seedcase-project"
+  sidebar:
+    - id: community
+      title: "Community"
+      style: "floating"
+      align: left
+      contents:
+        - community/index.qmd
+        - community/posts.md
+        - section: "Contributing"
           contents:
-            - community/contribute/index.md
-            - community/posts.md
-            - section: "Team"
-              contents:
-                - "community/contribute/team/events.md"
-        - id: about
-          title: "About"
+          - community/contribute/index.qmd
+          - community/contribute/blocks.qmd
+          - community/contribute/roadmap.md
+          - community/contribute/decisions.md
+        - section: "Team"
           contents:
-            - about/index.md
-            - text: "History"
-              href: about/history/index.md
-            # - text: "Mission"
-            #   href: about/mission.md
+            - community/contribute/team/index.md
+            - community/contribute/team/events.md
+        - community/CODE_OF_CONDUCT.md
+    - id: design
+      title: "Design"
+      style: "floating"
+      align: left
+      contents:
+        - design/index.md
+        - design/overview.qmd
+        - design/decisions.md
+    - id: about
+      title: "About"
+      contents:
+      - about/index.md
+      - text: "History"
+        href: about/history/index.md
+      # - text: "Mission"
+      #   href: about/mission.md
 
 
 bibliography: "includes/references.bib"
@@ -63,17 +69,17 @@ csl: "includes/vancouver.csl"
 format:
   html:
     from: markdown+emoji
-    # Not sure this works without R, since it uses the downlit package.
-    # code-link: true
     theme:
-        - zephyr
-        - theme.scss
+      - zephyr
+      - theme.scss
     toc: true
     toc-location: right
     toc-depth: 3
     # include-before-body:
-        # - "includes/site-counter.html"
-        # - "includes/contribute.html"
+      # - "includes/site-counter.html"
+      # - "includes/contribute.html"
 
-editor:
-  mode: visual
+editor_options:
+  markdown:
+    wrap: 72
+    canonical: true

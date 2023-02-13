@@ -2,11 +2,52 @@
 title: History of the project
 ---
 
-This project initially formed out of a need to improve the data
-infrastructure of the [Danish Centre for Strategic Research in Type 2
-Diabetes (DD2)](https://dd2.dk/) study [@Christensen2018]. We expanded
-it and generalized the idea to incorporate improving not only DD2, but
-also the infrastructure of other Danish studies.
+In clinical research, software and data infrastructure development is
+undervalued and generally underfunded, particularly for small- to
+mid-sized research organizations. Clinical and health researchers
+largely lack formal training, support, and awareness in research
+software and/or data engineering and in building and managing data
+infrastructures. The result? The overall software and computational
+ecosystem, as well as the technical capacities to maintain them, lags
+far behind multiple other scientific domains (e.g., bioinformatics).
+
+Combined with the recent rise of data science and the greater focus on
+analytical reproducibility, this issue has become increasingly apparent
+as data, and the skills required to work with it, become ever larger,
+more technical, and complex. In fact, investing in and implementing
+scalable and modern data infrastructures as well as software and data
+engineering processes, built with open source software, have the
+potential to greatly improve the quality of science, to produce more
+transparent and streamlined workflows, to lead to reproducible research,
+and generally better science in less time [@Lowndes2017].
+
+Thankfully, building modern data infrastructures has slowly been taking
+greater priority by funding and research agencies globally. For
+instance, the UK Biobank [@Sudlow2015; @UKBiobank] is a large-scale
+biomedical database with highly detailed data on \~500,000 participants.
+It is regularly expanded with additional data and is globally accessible
+to approved researchers and is a role model to building a functioning
+research data infrastructure.
+
+While the UK Biobank is a source of inspiration, the underlying
+infrastructure itself is not openly accessible and reusable. The same
+applies to a similar Danish initiative, the "*Single path to access
+Danish health data*" project [@sundhedsdata], where the Danish
+government and individual regions are collaborating to map out all
+Danish health data. Another state-of-the-art initiative led by the
+University of Chicago, USA is Gen3 [@gen3], which contains modular open
+source services that can form the basis for a data infrastructure
+[@ctds; @gen3software] and powers several research platforms, including
+the National Institutes of Health [@gen3platform]. However, we are
+unaware of any similar current national efforts that are open source,
+re-usable, and suitable for the Danish and EU legal context.
+
+In light of this background, the idea of Seedcase initially formed out
+of a need to improve the data infrastructure of the [Danish Centre for
+Strategic Research in Type 2 Diabetes (DD2)](https://dd2.dk/) study
+[@Christensen2018]. We expanded the idea and generalized the idea to
+improve not only DD2, but also the infrastructure of other Danish
+studies.
 
 The NovoNordiskFonden in Denmark had an grant application call titled
 *Data Science Research Infrastructure Grant* in 2021, of which we've

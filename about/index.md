@@ -1,6 +1,51 @@
 ---
-title: About the project
+title: About Seedcase
 ---
 
-{{< include ../includes/_wip.qmd >}}
+## Who we are
 
+The Seedcase project is developed by a team at the Steno Diabetes Centre
+Aarhus and Department of Clinical Medicine at Aarhus University in
+Aarhus, Denmark, and is funded by a five year grant from the Novo
+Nordisk Foundation.
+
+<!-- TODO: Add pics of team or at least list of names? -->
+
+## Why we build Seedcase
+
+In clinical and health research, especially for small- to mid-sized
+research groups, funding for building modern, open source software
+infrastructures for managing and using data is limited. This lack of
+funding has naturally led to organizational challenges for managing
+existing and incoming data for many research initiatives, including the
+Danish Centre for Strategic Research in Type 2 Diabetes (DD2) initiative
+[@Nielsen2012; @DD2], a national research collaboration and database
+initiative established in 2010 with continual enrollment of persons with
+type 2 diabetes. DD2 is one of our collaborators and key stakeholders of
+Seedcase.
+
+> So, our **primary aim** for Seedcase is to create and implement an
+> efficient, scalable, and open source data infrastructure framework
+> that connects data collectors, researchers, clinicians, and other
+> stakeholders, with the data, documentation, and findings, starting
+> with the DD2 study.
+
+We hope that Seedcase will improve and extend the existing DD2 research
+infrastructure into an open national state-of-the-art research
+infrastructure that will provide easy and transparent access to this
+resource for researchers, clinicians and stakeholders, thus enabling
+excellent data science driven research. Within the DD2 setting, an open,
+transparent, and easy access to this constantly growing resource has the
+potential of greatly improving the interest in, use of, and scientific
+impact of this resource, thus leading to substantial scientific and
+medical advancements, individualised treatment and improved human health
+in not only persons with type 2 diabetes, but population overall.
+
+Seedcase will not be limited to only DD2. Our **secondary aim** to
+create this framework in such a way that other research groups and
+companies, who are unable to adequately invest in building
+infrastructures of this type, can relatively easily implement it, and
+modify as needed, for their own purposes. By building this framework, we
+hope to help propel research groups and companies across Denmark (and
+globally) to quickly getting updated on modern, scalable, and efficient
+approaches to working with data.

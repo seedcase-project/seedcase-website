@@ -1,0 +1,27 @@
+---
+title: Design specification and architecture of Seedcase
+---
+
+<!-- Following [arc42](https://arc42.org) and [C4](https://c4model.com/) -->
+
+{{ include introduction.qmd }}
+
+{{ include constraints.qmd }}
+
+{{ include context.qmd }}
+
+{{ include solution-strategy.qmd }}
+
+{{ include building-block-view.qmd }}
+
+{{ include runtime-view.qmd }}
+
+{{ include deployment-view.qmd }}
+
+{{ include cross-cutting-concepts.qmd }}
+
+{{ include architectural-decisions.qmd }}
+
+{{ include quality-requirements.qmd}}
+
+{{ include risks.qmd }}

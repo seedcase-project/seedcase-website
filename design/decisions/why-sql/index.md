@@ -1,7 +1,7 @@
 ---
 title: "Why SQLite (or other SQL variant)"
 # description: ""
-author: "Luke W. Johnston"
+author: "Kristiane Beicher"
 # date: ""
 draft: true
 categories:
