@@ -3,6 +3,8 @@ title: "Seedcase"
 subtitle: "A framework for an open and scalable infrastructure for health data"
 ---
 
+{{< include includes/_wip.qmd >}}
+
 Many initiatives in clinical research, including the Danish Centre for
 Strategic Research in Type 2 Diabetes (DD2) initiative, have a hard time
 getting funds for building and maintaining needed software that make

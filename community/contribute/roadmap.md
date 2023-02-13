@@ -1,6 +1,6 @@
 # Project roadmap
 
-{{< include ../../includes/_wip.qmd >}}
+{{< include /includes/_wip.qmd >}}
 
 ## Deliverables and milestones
 
