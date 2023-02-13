@@ -2,7 +2,7 @@
 title: Project blocks
 ---
 
-{{< include ../../includes/_wip.qmd >}}
+{{< include /includes/_wip.qmd >}}
 
 This document is written to help give a bigger picture overview of the
 different components that make up Seedcase, not just Seedcase the
@@ -126,9 +126,9 @@ Decisions](/community/contribute/decisions.md) (files in
 ## "How" support block
 
 The "How" Support block is the more technical aspects of how this
-project is managed (in the [Governance](/community/GOVERANCE.md)
+project is managed (in the [Governance](/community/GOVERNANCE.md)
 document), how to contribute (in the
-[Contributing](/community/CONTRIBUTING.md) document), and what are
+[Contributing](/community/contribute/index.qmd) document), and what are
 expected behaviours (in the [Code of
 Conduct](/community/CODE_OF_CONDUCT.md) document). More detail is found
-in the [Community](/community/index.md) page.
+in the [Community](/community/index.qmd) page.
