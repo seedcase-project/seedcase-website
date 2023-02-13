@@ -1,10 +1,8 @@
-# Community involvement and
+# Community
 
--   contributing
+{{< include /includes/_wip.qmd >}}
 
--   team specific documents
-
-## Sustainability
+### Sustainability
 
 Integral to this framework is ensuring it is sustainable over the
 long-term by:
