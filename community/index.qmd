@@ -1,29 +1,31 @@
-# Community
+---
+title: Community
+---
 
 {{< include /includes/_wip.qmd >}}
 
-### Sustainability
+## Sustainability
 
-Integral to this framework is ensuring it is sustainable over the
+A key consideration to Seedcase is ensuring it is sustainable over the
 long-term by:
 
 1.  Integrating the development of the framework and using it in
     multiple projects at the host institution Steno Diabetes Center
     Aarhus (SDCA).
-2.  Prototyping MVP to build and document maintenance procedures.
+2.  Build and document maintenance procedures while prototyping the
+    minimum viable product.
 3.  Incorporating fundamental open source sustainability concepts and
-    documentation such as writing a Code of Conduct and Contributing
-    Guidelines and encouraging external users to contribute.
-4.  Including duties for the hired personnel to contribute back to open
-    source software that the framework depends on to help their, and
-    indirectly the framework's, sustainability.
+    documentation such having a Code of Conduct and Contributing
+    Guidelines, as well as encouraging external users to contribute.
+4.  Actively contributing back to other open source software that
+    Seedcase depends on or that might be used alongside.
 
-### Training and educational development
+## Training and educational development
 
-Usage of this framework depends on the quality of its documentation and
-training material. A key concept we will use heavily is Documentation
-Driven Development, where the framework's development is guided and
-informed from the development of the documentation, which places
-documentation as a high priority. We will also be creating and running
-short workshops and tutorials that teach researchers how they can use
-this framework.
+How widely used Seedcase is or will be depends heavily on the quality of
+its documentation and training material. A key concept we will use
+throughout development of Seedcase is Documentation Driven Development,
+where Seedcase's development is guided and informed from the development
+of its documentation. Meaning that we will place a high priority on
+documentation. We also be creating and running short workshops and
+tutorials that teach researchers how they can use Seedcase.
