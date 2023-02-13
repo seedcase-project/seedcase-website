@@ -1,18 +1,9 @@
 project:
   type: website
-  output-dir: _site
   execute-dir: project
-  render:
-    - "*.Rmd"
-    - "*.md"
-    - "*.qmd"
-  post-render:
-    - touch _site/.nojekyll
 
 website:
-  title: "seedcase"
-  # apple-touch-icon: "images/apple-touch-icon.png"
-  # apple-touch-icon-size: 180
+  title: "Seedcase"
   # favicon: "images/favicon.ico"
   site-url: "https://steno-aarhus.github.io/seedcase-project/"
   repo-url: "https://github.com/steno-aarhus/seedcase-project"
@@ -23,21 +14,18 @@ website:
     type: overlay
   page-footer:
     center:
-      - text: "License under CC-BY 4.0"
+      - text: "License: CC-BY 4.0"
         href: LICENSE.md
   navbar:
-    left:
-      - text: "Design"
-        href: design/index.md
-      - text: "Community"
-        href: community/contribute/index.md
+    right:
       - text: "About"
         href: about/index.md
-    right:
-      - icon: "globe"
-        href: "https://www.stenoaarhus.dk/research"
-      - icon: "twitter"
-        href: "https://twitter.com/StenoAarhusRes"
+      - text: "Community"
+        href: community/index.qmd
+      - text: "Design"
+        href: design/index.md
+      - icon: github
+        href: "https://github.com/steno-aarhus/seedcase-project"
   sidebar:
     - id: community
       title: "Community"
@@ -46,16 +34,17 @@ website:
       contents:
         - community/index.qmd
         - community/posts.md
-        - community/CODE_OF_CONDUCT.md
         - section: "Contributing"
           contents:
-          - community/contribute/index.md
+          - community/contribute/index.qmd
+          - community/contribute/blocks.qmd
           - community/contribute/roadmap.md
           - community/contribute/decisions.md
         - section: "Team"
           contents:
             - community/contribute/team/index.md
             - community/contribute/team/events.md
+        - community/CODE_OF_CONDUCT.md
     - id: design
       title: "Design"
       style: "floating"
