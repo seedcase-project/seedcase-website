@@ -11,7 +11,7 @@ understanding of all the files and folders as well as the reasons we
 have them.
 
 ![Project blocks that make up the seedcase
-project.](/images/project-blocks.svg){width="70%"}
+project.](images/project-blocks.svg){width="70%"}
 
 While the core of the seedcase project is the seedcase software
 "Product" itself, it depends on the proper functioning of additional
