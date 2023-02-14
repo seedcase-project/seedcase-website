@@ -1,11 +1,66 @@
 ---
-title: "Why choose Discord"
-description: "Reasons for using Discord as our communication platform."
+title: "Why choose Discord?"
+description: "Our reasons for using Discord as our communication platform."
 author: "Luke W. Johnston"
-date: "2022-10-31"
-draft: true
+date: last-modified
 categories:
   - communication
 ---
 
-To justify why we are using discord
+Communication within a team is often done with email or, in more modern
+and tech environments, with Slack. While email is a great tool when
+communicating with people external to a team (or organization), there
+are numerous reasons why it is a poor communication tool within teams
+(and potentially across organizations). Without making this post about
+why to *not* use email, a few reasons include:
+
+-   It is asynchronous communication, so you can't chat in real-time,
+    which makes it not suited for team communication.
+-   Slow to write and send emails within a team (steps are: create new
+    email, type out all team members, write a subject, write an email
+    body, click send).
+-   Lack of history (without having to use the Search functionality all
+    the time, if emails are kept) of all dialogue within a team.
+-   New team members don't have access to history of dialogue within a
+    team.
+-   Organization of emails is dependent on the team member and not in
+    control of the team. You can't control how the information is stored
+    (related to the history).
+
+Email is a useful tool for certain types of communication, but it isn't
+really the best option for team communication. Other tools like instant
+messaging, project management software, or video conferencing are more
+suitable for team collaboration and communication.
+
+Slack is a better option, since it has synchronous communication, and
+you can control how information is distributed and organized (in
+"Channels"). Their features are targeted to teams in corporate
+environments, so the focus is more around productivity and work.
+However, Slack's main focus is also, for us, its biggest weakness: It
+isn't designed around being inclusive since corporate teams are by
+default exclusive. Slack has also recently changed its pricing model, so
+messages are not accessible after 90 days unless you pay (a high fee).
+
+An alternative to Slack is Discord, which has become a popular
+communication platform, particularly for online communities. It was
+originally built for use by people playing video games together in a
+group, so they can chat while plying. However, because of this informal
+and easy way of joining voice channels and the text channels, as well as
+other features, non-gaming communities have been increasingly making use
+of Discord because of its focus on community engagement. Here are
+reasons why we are deciding to use it:
+
+-   Its free plan is more suitable to our purposes.
+
+-   Its overall focus and values (community based) align with our goals
+    and values, since we want to encourage and build an online (and in
+    person) community around Seedcase and related projects.
+
+-   Text chat history is available in the free version. So onboarding a
+    new member is easier for them to see what's been happening.
+
+-   Joining the voice/video channels are very easy, which is perfect in
+    remote working settings and when co-working together.
+
+There are few other reasons, but these are the biggest ones why we
+decided on using Discord.
