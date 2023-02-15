@@ -428,6 +428,54 @@ if __name__ == '__main__':
     app.run(debug=True)
 ````
 
+## Plugin function to Clean (QC) data file
+
+Here is an example of the plugin for cleaning data
+
+````
+from django.core.files.storage import default_storage
+
+def process_sample_analysis_data_file(file):
+    # Create an empty list to store the cleaned data
+    processed_data = []
+    
+    # Call different clean data function
+    
+    # Loop through each line in the file
+    processed_data = clean_data_function(file)
+
+    # Return the cleaned data as a string with each line separated by a newline character
+    return '\n'.join(processed_data )
+
+    project_data_model = MyModel.objects.get(pk=1)
+
+    # Get the uploaded file from the FileField
+    file = project_data.data_file
+
+    # Open the file and read the data
+    with default_storage.open(file.name) as f:
+        data = f.readlines()
+
+````
+
+## Plugin function to sort data file
+
+Here is an example of the plugin for sorting data in to different part such
+as metadata
+
+````
+def get_metadata_from_csv(file):
+    # Open the file and create a CSV reader
+    csv_file = csv.reader(file)
+
+    # Read the header row as metadata
+    metadata = next(csv_file)
+
+    # Return the metadata as a list
+    return metadata
+````
+
+
 
 
 
