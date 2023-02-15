@@ -117,7 +117,7 @@ are some basic steps.
 
 ### Use PUT request for uploading one file (csv/txt)
 
-Here is an example use this API endpoint to upload csv/txt file to Seedcase box 
+Here is an example of API endpoint to upload csv/txt file to Seedcase box 
 
 ````
 # API PUT request
@@ -167,6 +167,38 @@ def post_file(request):
         )
     
     return Response(status=status.HTTP_201_CREATED)
+
+````
+
+Here is an example making API call to post file to backend
+
+````
+import requests
+
+# Set the URL of the API endpoint
+url = "https://seedcase.com/api/raw_data_file_upload"
+
+# Set the path to the text file you want to post
+file_path = "path/to/text/file.txt"
+
+# Set the security code for the API call
+security_code = "security_code_here"
+
+# Open the text file and read its contents
+with open(file_path, 'rb') as file:
+    file_contents = file.read()
+
+# Set the request headers, including the security code
+headers = {"Authorization": "Bearer " + security_code}
+
+# Set the request parameters to include the project ID
+params = {"project_id": project_id}
+
+# Make the API call with the requests library
+response = requests.put(url, data=file_contents, headers=headers, params=params)
+
+# Check the status code of the response to ensure the request was successful
+assert response.status_code == 200, 'Fail to post file!'
 
 ````
 
@@ -223,6 +255,41 @@ def post_data_from_database(request):
 
 ````
 
+Here is an example making API directly post data to the database
+
+````
+# Set the URL of the API endpoint to retrieve raw data from
+get_url = "https://raw_data_database.com/api/get_raw_data"
+
+# Set the parameters for the GET call
+get_params = {"auth_token": "your_auth_token_here", "filter_by": "some_criteria"}
+
+# Make the GET call to retrieve the raw data
+response = requests.get(get_url, params=get_params)
+
+# Check the status code of the response to ensure the request was successful
+if response.status_code == 200:
+    raw_data = response.json()
+else:
+    self.fail('Fail to get the data!')
+
+# Set the API endpoint URL to post the raw data to, including the project ID as a query parameter
+post_url = "https://seedcase.com/api/post_raw_data"
+post_params = {"project_id": project_id}
+
+# Set the security code for the API call
+security_code = "security_code_here"
+
+# Set the headers for the API call, including the security code
+headers = {"Authorization": f"Bearer {security_code}", "Content-Type": "application/json"}
+
+# Make the POST call to post the raw data to the database
+response = requests.post(post_url, json=raw_data, headers=headers, params=post_params)
+
+assert response.status_code == 200, 'Fail to post raw data to database!'
+
+````
+
 ## API endpoint for data output
 
 ### Use GET request to output data as json format
@@ -251,6 +318,24 @@ def download_data_json(request):
             f'Failed in exporting to data with error {e}', 
             status=status.HTTP_400_BAD_REQUEST
         )
+````
+
+Here is the example how to use the GET call download file
+
+````
+download_url = "https://ssedcase.com/api/download_file"
+
+# Set any required authentication or filtering parameters as query parameters
+auth_token = "your_auth_token_here"
+filter_param = "some_criteria"
+params = {"auth_token": auth_token, "filter_by": filter_param}
+
+# Set the headers for the API call, including any required security tokens
+headers = {"Authorization": "Bearer your_security_token_here"}
+
+# Make the GET call to download the file
+response = requests.get(download_url, params=params, headers=headers)
+
 ````
 
 
@@ -305,6 +390,42 @@ def fetch_create_data(request):
         )
     # Could add function to notify user
 
+````
+
+Here is an example how to use this API endpoint
+
+````
+# Set the URL of the API endpoint to retrieve the data from the database
+data_url = "https://seedcase.com/api/get_data"
+
+# Set any required authentication or filtering parameters as query parameters
+auth_token = "auth_token_here"
+filter_param = "some_criteria"
+params = {"auth_token": auth_token, "filter_by": filter_param}
+
+# Set the headers for the API call, including any required security tokens
+headers = {"Authorization": "Bearer your_security_token_here"}
+
+# Make the GET call to retrieve the data from the database
+response = requests.get(data_url, params=params, headers=headers)
+
+# Check the status code of the response to ensure the request was successful
+if response.status_code == 200:
+    # If the request was successful, save the data to a file in a temporary directory
+    data = response.content
+    filename = "data.txt"
+    with open(os.path.join(app.config['UPLOAD_FOLDER'], filename), "wb") as f:
+        f.write(data)
+
+def download_file():
+    # Serve the file for download when the user visits the /download route
+    filename = "data.txt"
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
+
+if __name__ == '__main__':
+    # Set up the app with a temporary directory to store the file
+    app.config['UPLOAD_FOLDER'] = '/tmp'
+    app.run(debug=True)
 ````
 
 
