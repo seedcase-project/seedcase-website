@@ -1,0 +1,22 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Person(user_data_input, "User: Data input")
+Person(user_data_request, "User: Data discover and request")
+Person(user_results, "User: Explore findings and projects")
+Person(user_admin, "User: Admin")
+
+System_Boundary(seedcase, "Seedcase") {
+  System(ui, "User portal")
+  System(backend, "Data in backend")
+}
+System_Ext(external_server, "External secure server")
+
+Rel(user_data_input, ui, "Uploads data")
+Rel(user_data_request, ui, "Find and request data for project")
+Rel(user_results, ui, "Explore findings of study")
+Rel(user_admin, ui, "Manages requests for data projects")
+Rel(user_admin, backend, "Manages data and issues")
+Rel(ui, backend, "Send as standardized data")
+Rel(backend, external_server, "Data extract for approved data projects")
+@enduml
