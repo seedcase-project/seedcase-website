@@ -1,0 +1,52 @@
+@startuml
+node "Seedcase Docker Framework" {
+ node "Front End" {
+  node "User Interface" {
+    [Landing page]
+    [User Login pages]
+    [Project list pages]
+    [Project information ages]
+    [Data list pages]
+    [Data information pages]
+    [Upload Data pages]
+    [Download Data pages]
+    [Data QC process Pages]
+ }
+ node "User ID Management" {
+    [Local authentication]
+    [Connect remote ID server]
+  }
+ }
+ node "Django Framework" {
+  node "Admin Portal" {
+    [Project Management]
+    [Project Dataset Management]
+    [Data QC process Management]
+    [User Permission Management]
+    [API Security Management]
+    [External Connection Management]
+  }
+
+  node "API Layer" {
+    [API security]
+    [Upload/Update data]
+    [Upload/Update data file]
+    [data clean process]
+    [List all projects]
+    [List project log]
+    [Update one dataset]
+    [Add/Update researchers]
+   }
+  }
+
+database "Backend" {
+  folder "Raw Data files" {
+  }
+  folder "Image files"
+
+  database "Processed Data"{
+     [need to update]
+  }
+
+}
+@enduml
