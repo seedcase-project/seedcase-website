@@ -2,95 +2,82 @@
 title: "Constraints"
 ---
 
-This document lists technical, political/organizational,
-
-Any requirement that constrains software architects in their freedom of
-design and implementation decisions or decision about the development
-process. These constraints sometimes go beyond individual systems and
-are valid for whole organizations and companies.
-
-Anything that constrains teams in design and implementation decisions,
-or decision about related processes. Constraints can sometimes go beyond
-individual systems and might valid for whole organizations and companies
-(e.g. company-wide technology choices or government regulations). Time
-and money are common constraints in many organizations. You should
-clarify the consequences of constraints, e.g. resulting (additional)
-costs or effort.
+This document lists technical, political/organizational, and
+convention-based constraints that we must consider when developing
+Seedcase.
 
 The main "philosophical" and value-based constraints are described in
 the [Guiding Principles](/design/introduction.qmd#guiding-principles)
-section. These form the basis for all other decisions and designs.
+section. These form the basis for all other decisions and designs. Some
+of those constraints are summarized below.
 
 ## Technical constraints
 
-| Constraints                                       | Background/Motivation |
-|---------------------------------------------------|-----------------------|
-| Run on Windows, MacOS, and Linux                  |                       |
-| Use open source software dependencies             |                       |
-| Use software that's (relatively) familiar to many |                       |
-| Integrate GDPR, privacy, and security compliance  |                       |
-| Deployable to servers                             |                       |
+| Constraints                                        | Background/Motivation                                                            |
+|----------------------------------------------------|----------------------------------------------------------------------------------|
+| Run on Windows, MacOS, and Linux                   | Our potential users work on any of these systems, so need to design for that     |
+| Use open source software dependencies              | We will use an open license, so need to use components that are open as well     |
+| Use software that's (relatively) familiar to many  | We want others to contribute, so need to use tools others (likely) know          |
+| Integrate GDPR, privacy, and security compliance   | Our target users work with health data, so this is vital to consider             |
+| Deployable to servers and locally                  | Could be used locally but mainly used on a server environment                    |
+| Storage and computing maybe be different locations | Where data are stored vs analyzed will likely be different, see subsection below |
 
-### Computating and storage locations
+: Technical constraints we need to consider for Seedcase.
 
-## Computational and physical infrastructure
+### Computational and storage locations
 
-While the proposed framework is software-based, storing and deploying
-the infrastructure requires server space and IT support. The framework
-itself takes up little space and can optimise computational resources,
-but the underlying DD2 data requires considerable server space.
+Considering that Seedcase aim is to simplify structuring and working
+with data, we need to clarify and consider that the locations where data
+stored and where data is analyzed may be different. These are the
+possible combinations described in @tbl-data-analysis-locations.
+
+| Storage | Analysis         |
+|---------|------------------|
+| Server  | Same server      |
+| Server  | Different server |
+| Server  | Local            |
+| Local   | Local            |
+| Local   | Server           |
+
+: Potential combinations where data is stored vs where analysis is done.
+'Local' would be the computer itself, while 'server' is an external set
+of computers (online or connected internally).
+{#tbl-data-analysis-locations}
+
+If the data owners are the same people as the data analysts (for
+instance, within a research group), the data and analysis location could
+be the same. If the data analysts are external to the owners, the
+locations will likely be different. The consequences of these different
+combinations is that we need to design Seedcase to be flexible to these
+scenarios.
 
 ## Organizational constraints
 
-| Constraints                     | Background/Motivation |
-|---------------------------------|-----------------------|
-| Time schedule                   |                       |
-| Resources                       |                       |
-| Small team                      |                       |
-| Limited knowledge/skill support |                       |
-| Use open source license         |                       |
+| Constraints                     | Background/Motivation                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------|
+| Time schedule                   | Funding is until end of \~2027                                                                          |
+| Resources                       | Currently only have a fixed set of funds                                                                |
+| Small team                      | Only have 4-5 people on team, \~3 who are full-time                                                     |
+| Limited knowledge/skill support | Data/software engineering is not common in research environments, so local knowledge/skills are limited |
+
+: Organizational constraints we need to consider for Seedcase.
 
 ## Political/legal constraints
 
-| Constraints             | Background/Motivation |
-|-------------------------|-----------------------|
-| Use open source license |                       |
+| Constraints                        | Background/Motivation                                                                       |
+|------------------------------------|---------------------------------------------------------------------------------------------|
+| Use open source license            | For both practical and philosophical reasons, we will license Seedcase with an open license |
+| Need endorsement from legal and IT | They have broad institutional influence, so at least having some support is vital           |
+
+: Political/legal constraints we need to consider for Seedcase.
 
 ## Conventions
 
-| Conventions                         | Background/Motivation |
-|-------------------------------------|-----------------------|
-| Follow standard styling (e.g. PIP3) |                       |
-| Follow [CalVer]() versioning        |                       |
+| Conventions                                      | Background/Motivation                                            |
+|--------------------------------------------------|------------------------------------------------------------------|
+| Follow standard styling (e.g. PIP3)              | Coding style is vital to readability, so we follow best practice |
+| Use [CalVer](https://calver.org/) versioning     | This style is simple and easily shows the age of the software    |
+| Incorporate "Test/Doc-Driven Development" styles | Each has pros and cons, we use what works best                   |
 
-conventions (e.g. programming or versioning guidelines, documentation or
-naming conventions)
+: Conventions that we should follow or consider for Seedcase.
 
-(e.g., programming guidelines, documentation-, naming- or organisational
-conventions).
-
-Content
-
-Motivation
-
-Architects should know exactly where they are free in their design
-decisions and where they must adhere to constraints. Constraints must
-always be dealt with; they may be negotiable, though.
-
-Form
-
-If constraints bring unreasonable consequences (e.g., can only be
-satisfied with excessively high costs), you should negotiate about them
-with the relevant stakeholders.
-
-Sometimes such constraints relate to development processes, third party
-contracting or legal concerns. Discuss them with your management.
-
-In addition to the organisational constraints (see tip 2-3), technical
-contraints will probably apply as well to the design and development of
-your system. That can be guidelines from the managements or the
-organisation itself regarding hardware, operations, technology
-selection, use of products, frameworks or reference architectures.
-
-If necessary, differentiate between technical, organizational and
-political constraints or overlapping conventions
