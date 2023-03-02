@@ -1,4 +1,4 @@
 ::: callout-warning
-🚧 This section is still in active development, so is incomplete and
-subject to many changes 🚧
+🚧 This section is still in active development and is subject to changes
+🚧
 :::

@@ -1,4 +1,8 @@
-# Team Contributing Guidelines
+---
+title: How we work
+---
+
+{{< include /includes/_wip.qmd >}}
 
 ## Communication across team and collaborators
 
