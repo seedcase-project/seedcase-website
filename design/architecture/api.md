@@ -1,44 +1,3 @@
-## API security
-
-Adding a security layer to an API is crucial for ensuring the
-confidentiality, integrity, and availability of the data and systems
-that use the API. APIs are often used to connect different systems and
-applications, and they provide a way for external parties to access and
-interact with data. Because of this, they can be an attractive target
-for cyber attackers looking to gain unauthorized access, steal sensitive
-information, or disrupt service availability. To protect against these
-threats, it is important to implement a robust security strategy for the
-API.
-
-### Approach 1: Basic Authentication
-
-Basic Authentication is a simple authentication scheme used by APIs to
-authenticate users based on a username and password. In this scheme, the user's
-credentials are encoded in a Base64-encoded string and included in the HTTP
-Authorization header of each request.The server verifies the credentials and
-either grants or denies access to the requested resource.
-
-### Approach 2: User Token for API requests
-
-User Token is a type of authentication token used by APIs to authenticate and
-authorize user requests. When a user logs in, the API generates a unique token
-for that user, which is then stored securely on the client side (seedcase box).
-User Tokens are more secure than Basic Authentication because they are not
-transmitted in plaintext and can be set to expire after a certain period of
-time, forcing the user to log in again to obtain a new token. They can also be
-revoked by the server if the user's access needs to be terminated.
-
-### Approach 3: OAuth
-
-Use OAuth approach is more complicated compared to previously two. Here
-are some basic steps.
-
-1. User request access to the project data of the seedcase.
-2. Seedcase redirect the OAuth server (e.g. Shib-Identity-Provider)
-3. OAuth Server authenticates user by username and password.
-4. OAuth Server sends secret key back the seedcase
-5. Seedcase used the secret key from OAuth server provide correct
-   authorization of the user for accessing the data
 
 ## API Endpoint: POST /projects/{project_id}/research-data
 
@@ -128,11 +87,15 @@ call.
 
 #### Response status codes
 
-201 process completed - The request was successful and the data cleaning
-function was executed.
-400 Bad Request - The request body was missing required fields or contained
-invalid data.
+| | |
+|--|--|
+
+| 201 process completed - The request was successful and the data cleaning function was executed.
+
+| 400 Bad Request - The request body was missing required fields or contained invalid data.
+
 404 Not Found - The specified function name does not exist.
+
 500 Internal Server Error - There was an error processing the request.
 
 ## API Endpoint: GET /projects
@@ -159,7 +122,7 @@ they create an account.
 invalid or missing.
 500 Internal Server Error - There was an error processing the request.
 
-## API Endpoint: GET /projects/{project_id}/datasets
+## API Endpoint: GET `/projects/{project_id}/datasets`
 
 This endpoint allows users to retrieve metadata for all datasets associated with
 a specific research project.
@@ -182,7 +145,7 @@ invalid or missing.
 404 Not Found - The specified project ID does not exist.
 500 Internal Server Error - There was an error processing the request.
 
-## API Endpoint: GET /projects/{project_id}/datasets/{dataset_id}
+## API Endpoint: `GET /projects/{project_id}/datasets/{dataset_id}`
 
 This endpoint allows users to retrieve the metadata of a specific dataset
 associated with a given research project.
@@ -199,7 +162,7 @@ dataset_id (string, required) - The ID of the dataset to retrieve metadata for.
 404 Not Found - The specified project or dataset ID does not exist.
 500 Internal Server Error - There was an error processing the request.
 
-## API Endpoint: GET /projects/{project_id}/researchers
+## API Endpoint: `GET /projects/{project_id}/researchers`
 
 This endpoint allows users to retrieve public information about all researchers
 associated with a specific research project.
@@ -215,7 +178,7 @@ information for.
 404 Not Found - The specified project ID does not exist.
 500 Internal Server Error - There was an error processing the request.
 
-## API Endpoint: POST /project_id/researchers/permissions
+## API Endpoint: `POST /project_id/researchers/permissions`
 
 This endpoint allows users to add, remove, or update user permissions for a
 project. The user must provide the project ID as a parameter in the URL, and the
