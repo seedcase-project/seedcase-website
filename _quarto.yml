@@ -53,7 +53,8 @@ website:
         - design/index.md
         - Section: "Architecture Documentation"
           contents:
-            - design/introduction.md
+            - design/introduction.qmd
+            - design/constraints.qmd
         - design/decisions.md
     - id: about
       title: "About"
