@@ -9,18 +9,13 @@ Person_Ext(user_results, "Explore findings and projects")
 
 Lay_Right(user_admin, user_results)
 
-System_Boundary(seedcase, "Seedcase") {
-  System(ui, "User portal")
-  System(backend, "Data in backend")
-}
+System(ui, "Seedcase System for Data Resource")
 System_Ext(external_server, "External secure server")
 
 Rel(user_data_input, ui, "Uploads data")
 Rel(user_data_request, ui, "Find and request data for project")
 Rel(user_results, ui, "Explore findings of study")
-Rel(user_admin, ui, "Manages requests for data projects")
-Rel(user_admin, backend, "Manages data and issues")
-Rel_Down(ui, backend, "Send as standardized data")
-Rel_Right(backend, external_server, "Data extract for approved data projects")
+Rel(user_admin, ui, "Manages issues and requests for data projects")
+Rel_Right(ui, external_server, "Data extract for approved data projects")
 Rel(user_data_request, external_server, "Access requested data")
 @enduml
