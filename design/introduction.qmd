@@ -55,18 +55,18 @@ Primary **goals** of the Seedcase software are:
     generated data from source locations (such as the clinic or
     laboratories) that may be distributed geographically or
     organizationally and store it in a secure, centralized location in a
-    standardized and efficient format. Metadata are similarly stored and
-    linked to the data.
+    standardized and efficient format to form a Data Resource. Metadata
+    are similarly stored and linked to the data.
 2.  **Showcasing data and metadata for discoverability and data access
     requests**: Take stored metadata as well as some basic descriptive
-    information of the data and display them on a web portal as a list.
-    Users can select specific data they are interested in from the list
-    and submit a request to use these data. These requests for data are
-    saved and stored in the backend.
-3.  **Tracking projects using the data for managing and auditing**: The
-    stored requests for data are displayed for admin users to approve of
-    (or not). Approved requests get converted to ongoing projects, which
-    are displayed on the web portal.
+    information of the data inside the Data Resource and display them on
+    a web portal as a list. Users can select specific data they are
+    interested in from the list and submit a request to use these data.
+    These requests for data are saved and stored in the backend.
+3.  **Tracking data projects using the data for managing and auditing**:
+    The stored requests for data are displayed for admin users to
+    approve of (or not). Approved requests get converted to ongoing data
+    projects, which are displayed on the web portal.
 
 While the architecture documentation largely encompasses the software
 and data components of Seedcase, because of our secondary aims, we need
@@ -81,9 +81,9 @@ functionalities of Seedcase.
 
 Any human creation is influenced by our values and perspectives of the
 world around us. We can either unconsciously and implicitly let these
-values guide the development of this project, unexamined and
-unevaluated, or we can explicitly and consciously select, describe, and
-explain the values we want to be guided by while developing Seedcase.
+values guide the development of Seedcase, unexamined and unevaluated, or
+we can explicitly and consciously select, describe, and explain the
+values we want to be guided by while developing Seedcase.
 
 In our case, we want to be explicit and conscious about what, how, and
 importantly, why we are doing what we decide to do. Being explicit will
@@ -140,32 +140,34 @@ fit these principles:
 
 The four users and their associated use cases are:
 
-1.  **User 1**: Those *inputting data*, e.g., authorized centers and
-    researchers. The use cases are:
+1.  **User 1**: Those *inputting data* into the Data Resource, e.g.,
+    authorized centers and researchers. The use cases are:
     1.  Authorized centers (GPs and hospitals) upload standardized and
         routine data through the data entry web portal.
-    2.  Authorized researchers upload generated data from completed
+    2.  Authorized researchers upload generated data from completed data
         projects. Non-standardized data is either manually processed and
         cleaned before entering into the database or uploaded in its raw
         format and processed with a plugin specific to that data.
-2.  **User 2**: Those *requesting access*, e.g., researchers and
-    clinicians. Use cases are:
+2.  **User 2**: Those *requesting access* to a subset of data in the
+    Data Resource, e.g., researchers and clinicians. Use cases are:
     1.  Interested researchers browse the catalogue of available data
         and the data dictionary.
     2.  Researchers request access to data by submitting a description
-        of their proposed project and selecting the relevant data from
-        the catalogue. This request is sent to a list of projects to
-        await approval from the data controllers (User 4).
-3.  **User 3**: Those *viewing updates on findings and results* such as
-    aggregate statistics, e.g., policymakers, healthcare workers,
-    journalists, researchers, and the general public. Use cases are:
+        of their proposed data project and selecting the relevant data
+        from the catalogue. This request is sent to a list of data
+        projects to await approval from the data controllers (User 4).
+3.  **User 3**: Those *viewing updates on findings and results* from the
+    Data Resource such as aggregate statistics, e.g., policymakers,
+    healthcare workers, journalists, researchers, and the general
+    public. Use cases are:
     1.  Users view and read through the list of completed, ongoing, and
-        proposed projects that use the database.
+        proposed data projects that use the Data Resource.
     2.  Users access and view aggregate statistics and the latest
         published findings that are relevant to them/their practice.
-4.  **User 4**: Administrators and data controllers. Use cases are:
-    1.  Approve newly submitted projects that request data and manage
-        existing projects.
+4.  **User 4**: Administrators and data controllers of the Data
+    Resource. Use cases are:
+    1.  Approve newly submitted data projects that request data and
+        manage existing data projects.
     2.  Approve and authorize researchers to access the web portal for
         data requests and to manage current authorized researchers.
     3.  Manage collection centers' access and authorization.
@@ -174,25 +176,32 @@ The four users and their associated use cases are:
 
 ### Main functionality
 
--   \*\*One instance per
--   **Upload or update data**: Input data in batches or continuously
-    into the backend storage, either into the database or as raw data
-    files.
+-   **One Seedcase "instance" per Data Resource**: Some users may have
+    multiple Data Resources, so the Seedcase Product will create
+    separate "instances" for each Data Resource.
+-   **Upload or update data**: Input data into the Data Resource in
+    batches or continuously into the backend storage, either into the
+    database or as raw data files.
 -   **Upload or update metadata**: When inputting data, attach metadata
     along side it.
--   **Store changes to the data in a changelog**:
--   **Display metadata and basic information on the data on a user
-    interface**:
+-   **Store changes to the data in a changelog**: Track and list changes
+    made to the data within the Data Resource for auditing and
+    recordkeeping.
+-   **Display metadata and basic information on the data in the Data
+    Resource on a user interface**: So external users and users
+    interested in data in the Data Resource can browse what is
+    available.
 -   **Provide a data access submission process**: Allow users to submit
-    a data access request, along with a data selection process (for
-    instance, like a shopping cart). Submit a request for access that
-    includes selected data and a brief reason as
--   **Store data request submissions for auditing and managing**: Save
-    submissions as "projects", where admin users can approve these
-    projects and manage whether they are "ongoing" or "completed". The
-    stored ongoing or completed projects will be displayed on the web
-    portal for discoverability and transparency on the data resources
-    use.
+    a data access request for data in the Data Resource, along with a
+    data selection process (for instance, like a shopping cart). Submit
+    a request for access as a data project that includes selected data
+    and a brief reason as
+-   **Store data request submissions as data projects for auditing and
+    managing**: Save submissions as "data projects", where admin users
+    can approve these data projects and manage whether they are
+    "ongoing" or "completed". The stored ongoing or completed data
+    projects will be displayed on the web portal for discoverability and
+    transparency on the data resources use.
 
 ## Quality Goals
 
@@ -256,4 +265,3 @@ expectations we believe they have for these documents.
     be enough to get researchers using it. We also have to ensure that
     we have institutional IT on board and see that Seedcase fits legal,
     privacy, and security concerns they may have.
-
