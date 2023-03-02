@@ -51,7 +51,9 @@ website:
       align: left
       contents:
         - design/index.md
-        - design/overview.qmd
+        - Section: "Architecture Documentation"
+          contents:
+            - design/introduction.md
         - design/decisions.md
     - id: about
       title: "About"

@@ -1,0 +1,267 @@
+---
+title: "Introduction"
+---
+
+{{< include ../includes/_wip.qmd >}}
+
+Seedcase was born out of a desire to bring modern data engineering
+practices, technologies, and processes to research environments.
+Technological and computing skills and knowledge within health research
+(at least in our experience) often lags far behind what is the current
+state-of-the-art. The connected Design documents describe the
+architecture of the Seedcase software as well as the underlying data
+architecture that Seedcase implements as a framework. In other words:
+
+> Our **primary aim** is to create and implement an efficient, scalable,
+> and open source data infrastructure framework that connects data
+> collectors, researchers, clinicians, and other stakeholders, with the
+> data, documentation, and findings from a study.
+
+The framework acts as an (open source) starting template for setting up
+data infrastructures that follow principles and requirements listed
+below. *Framework* here is defined as: 1) a bundled or recommended set
+of software programs; 2) a defined and standardized set of conventions
+on the structure and format of the filesystem, URL paths, and API calls;
+and, 3) a defined and standardized structure to the data and associated
+documentation, all of which are linked together as modular components.
+
+The secondary aims, that are covered more in our
+[Community](/community/index.qmd) page, revolve around building a
+community and building up data engineering capacity within health
+research. While this aim is not related to the software itself, it does
+impact architectural and design decisions we make.
+
+## Definition of terms
+
+-   **Seedcase Product**: This is the software itself that is installed
+    on computer or server.
+-   **Data Resource**: This is the "instance" created by Seedcase that
+    manages and stores data from a research study or data source. For
+    instance, our external partner DD2 (listed below in the Stakeholder
+    section) collects a wide variety of data on a set of participants.
+    The data generated from these participants enrolled with DD2 would
+    form a single "Data Resource".
+-   **Data Project**: A data project, also called a data extract, would
+    be a subset of data from a Data Resource that researchers or other
+    analysts would request access to use for a specific purpose. This
+    request, when approved, would result in a data extract that is sent
+    to the user.
+
+## Requirements Overview
+
+Primary **goals** of the Seedcase software are:
+
+1.  **Ingesting data and metadata into standardized storage**: Take
+    generated data from source locations (such as the clinic or
+    laboratories) that may be distributed geographically or
+    organizationally and store it in a secure, centralized location in a
+    standardized and efficient format to form a Data Resource. Metadata
+    are similarly stored and linked to the data.
+2.  **Showcasing data and metadata for discoverability and data access
+    requests**: Take stored metadata as well as some basic descriptive
+    information of the data inside the Data Resource and display them on
+    a web portal as a list. Users can select specific data they are
+    interested in from the list and submit a request to use these data.
+    These requests for data are saved and stored in the backend.
+3.  **Tracking data projects using the data for managing and auditing**:
+    The stored requests for data are displayed for admin users to
+    approve of (or not). Approved requests get converted to ongoing data
+    projects, which are displayed on the web portal.
+
+While the architecture documentation largely encompasses the software
+and data components of Seedcase, because of our secondary aims, we need
+to describe additional requirements that aren't strictly technical.
+We'll cover some Guiding Principles we need to follow for Seedcase,
+describe our target users and use-cases, and then list the main
+functionalities of Seedcase.
+
+### Guiding principles
+
+<!-- TODO: Some of this could be moved somewhere else maybe? -->
+
+Any human creation is influenced by our values and perspectives of the
+world around us. We can either unconsciously and implicitly let these
+values guide the development of Seedcase, unexamined and unevaluated, or
+we can explicitly and consciously select, describe, and explain the
+values we want to be guided by while developing Seedcase.
+
+In our case, we want to be explicit and conscious about what, how, and
+importantly, why we are doing what we decide to do. Being explicit will
+also help focus our work and (hopefully) make us more efficient and
+effective. And so, we will adhere to these key principles, that are
+supported by strong philosophical and scientific rationale, while
+developing Seedcase:
+
+1.  Follow FAIR (Findable, Accessible, Interoperable, and Reusable),
+    open, and transparent principles for the framework itself and to
+    enable FAIR principles in the database.
+2.  Be openly licensed and re-usable to facilitate uptake in other
+    national groups (or companies) who are unable to invest in and build
+    it.
+3.  Uses state-of-the-art principles and tools in software design and
+    development.
+4.  Be beginner-friendly and targeted to (potential) non-computationally
+    technical users of the framework.
+
+In order to maximise the potential for re-use and to minimise the
+technical debt and expertise needed to use, maintain, and modify the
+framework, we will use software and tools underlying the framework that
+fit these principles:
+
+1.  Wherever possible, re-use existing material: There already exists
+    many great software tools, infrastructures, and resources that
+    haven't been incorporated into common health research practice. We
+    will make use of and/or modify these materials where we can.
+2.  Be familiar to or used by researchers currently or within the near
+    future: To ensure the greatest potential for continued maintenance,
+    development, and use, the framework should use or be built with
+    tools and skills that are at least familiar or soon to be familiar
+    to researchers.
+3.  Be familiar to skilled personnel (e.g. research software engineers,
+    data engineers, data scientists): Skilled personnel will build this
+    framework and need to be familiar with them.
+4.  Be open source: Software that isn't open source is by definition not
+    transparent, FAIR, or open. This is a requirement as it will
+    encourage wide and easy re-use.
+5.  Integrates easily with other software: Modular software that follows
+    common input/output conventions and has well-designed and documented
+    APIs are easier to build with and maintain.
+6.  Historically stable and reliable: While there are always new
+    software being built, maintenance and development is easier when
+    using those that are established.
+7.  Likely to be used in the future or is easily interchangeable with
+    potential future tools: Technology progresses quite quickly, so we
+    will rely on software that is likely to still be used or can be
+    switched to other tools.
+
+### Users and use-cases
+
+<!-- TODO: Users diagram here. -->
+
+The four users and their associated use cases are:
+
+1.  **User 1**: Those *inputting data* into the Data Resource, e.g.,
+    authorized centers and researchers. The use cases are:
+    1.  Authorized centers (GPs and hospitals) upload standardized and
+        routine data through the data entry web portal.
+    2.  Authorized researchers upload generated data from completed data
+        projects. Non-standardized data is either manually processed and
+        cleaned before entering into the database or uploaded in its raw
+        format and processed with a plugin specific to that data.
+2.  **User 2**: Those *requesting access* to a subset of data in the
+    Data Resource, e.g., researchers and clinicians. Use cases are:
+    1.  Interested researchers browse the catalogue of available data
+        and the data dictionary.
+    2.  Researchers request access to data by submitting a description
+        of their proposed data project and selecting the relevant data
+        from the catalogue. This request is sent to a list of data
+        projects to await approval from the data controllers (User 4).
+3.  **User 3**: Those *viewing updates on findings and results* from the
+    Data Resource such as aggregate statistics, e.g., policymakers,
+    healthcare workers, journalists, researchers, and the general
+    public. Use cases are:
+    1.  Users view and read through the list of completed, ongoing, and
+        proposed data projects that use the Data Resource.
+    2.  Users access and view aggregate statistics and the latest
+        published findings that are relevant to them/their practice.
+4.  **User 4**: Administrators and data controllers of the Data
+    Resource. Use cases are:
+    1.  Approve newly submitted data projects that request data and
+        manage existing data projects.
+    2.  Approve and authorize researchers to access the web portal for
+        data requests and to manage current authorized researchers.
+    3.  Manage collection centers' access and authorization.
+    4.  Manage or handle potential issues with the data itself, through
+        direct access to the data storage.
+
+### Main functionality
+
+-   **One Seedcase "instance" per Data Resource**: Some users may have
+    multiple Data Resources, so the Seedcase Product will create
+    separate "instances" for each Data Resource.
+-   **Upload or update data**: Input data into the Data Resource in
+    batches or continuously into the backend storage, either into the
+    database or as raw data files.
+-   **Upload or update metadata**: When inputting data, attach metadata
+    along side it.
+-   **Store changes to the data in a changelog**: Track and list changes
+    made to the data within the Data Resource for auditing and
+    recordkeeping.
+-   **Display metadata and basic information on the data in the Data
+    Resource on a user interface**: So external users and users
+    interested in data in the Data Resource can browse what is
+    available.
+-   **Provide a data access submission process**: Allow users to submit
+    a data access request for data in the Data Resource, along with a
+    data selection process (for instance, like a shopping cart). Submit
+    a request for access as a data project that includes selected data
+    and a brief reason as
+-   **Store data request submissions as data projects for auditing and
+    managing**: Save submissions as "data projects", where admin users
+    can approve these data projects and manage whether they are
+    "ongoing" or "completed". The stored ongoing or completed data
+    projects will be displayed on the web portal for discoverability and
+    transparency on the data resources use.
+
+## Quality Goals
+
+<!-- TODO: Add more as we develop the documents. -->
+
+| Goals                        | Scenarios                                                                                           |
+|------------------------------|-----------------------------------------------------------------------------------------------------|
+| Secure and legally compliant | Seedcase currently targets health data, so it needs to be compliant with privacy and security laws. |
+| Beginner-friendly interfaces | We want non-technical users to use this, so ease of use is high priority.                           |
+
+## Stakeholders
+
+This section contains an explicit list of those who will need, use, or
+review the design documentation. This is the "audience" or readers of
+these documents. Specifically it is anyone who:
+
+-   Should know the architecture
+-   Have to be convinced of the architecture
+-   Have to work with the architecture or the code
+-   Need the documentation of the architecture for their work
+-   Have to come up with decisions about the system or its development
+
+Currently, we've identified these stakeholders along with some
+expectations we believe they have for these documents.
+
+-   **Developers/contributors**: Either core developer or external
+    contributor, who use these documents to better understand what needs
+    to be done and why things were done the way they are. They will read
+    it for general and technical reasons.
+
+-   **Key partners ([DD2](https://dd2.dk/),
+    [SDCA](https://www.stenoaarhus.dk/))**: They were co-applicants for
+    the funding and will be the first users (and testers) of Seedcase.
+    They will likely review the overview sections and higher-level
+    diagrams for general understanding, rather than for technical
+    purposes.
+
+-   **External reviewers**: Part of our plan is to send this document to
+    a software consultancy firm to critically review it and provide
+    feedback on it. This will ensure that we do not miss anything
+    important or critical. These reviewers will read these documents
+    critically from a technical perspective.
+
+-   **Funder (NNF)**: We need to send progress reports to our funders.
+    They will likely use them for record-keeping, accountability, and
+    auditing purposes.
+
+-   **Data owners/generators (users of the software)**: These may
+    include study coordinators or principal investigators of studies who
+    will or have generated data and who are looking for solutions to
+    store and share their data. They will likely read this document from
+    a high-level, such as the overview sections and diagrams, to assess
+    if it fits their needs.
+
+-   **Interested researchers**: Researchers whose duties include
+    research software or data engineering may be interested in the
+    technical side of Seedcase, either to become a contributor or to
+    modify for their own purposes.
+
+-   **Institutional admin/IT**: Building the Seedcase software will not
+    be enough to get researchers using it. We also have to ensure that
+    we have institutional IT on board and see that Seedcase fits legal,
+    privacy, and security concerns they may have.
