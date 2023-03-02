@@ -31,6 +31,22 @@ community and building up data engineering capacity within health
 research. While this aim is not related to the software itself, it does
 impact architectural and design decisions we make.
 
+## Definition of terms
+
+-   **Seedcase Product**: This is the software itself that is installed
+    on computer or server.
+-   **Data Resource**: This is the "instance" created by Seedcase that
+    manages and stores data from a research study or data source. For
+    instance, our external partner DD2 (listed below in the Stakeholder
+    section) collects a wide variety of data on a set of participants.
+    The data generated from these participants enrolled with DD2 would
+    form a single "Data Resource".
+-   **Data Project**: A data project, also called a data extract, would
+    be a subset of data from a Data Resource that researchers or other
+    analysts would request access to use for a specific purpose. This
+    request, when approved, would result in a data extract that is sent
+    to the user.
+
 ## Requirements Overview
 
 Primary **goals** of the Seedcase software are:
@@ -158,6 +174,7 @@ The four users and their associated use cases are:
 
 ### Main functionality
 
+-   \*\*One instance per
 -   **Upload or update data**: Input data in batches or continuously
     into the backend storage, either into the database or as raw data
     files.
@@ -239,3 +256,4 @@ expectations we believe they have for these documents.
     be enough to get researchers using it. We also have to ensure that
     we have institutional IT on board and see that Seedcase fits legal,
     privacy, and security concerns they may have.
+
