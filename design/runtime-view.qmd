@@ -1,0 +1,39 @@
+---
+title: "Runtime view"
+---
+
+## Applying for data from the data ressource
+
+### Existing data project
+
+The owner of an existing data project can submit additional applications for extra data variables throughout the life-cycle of the data project.  This is done by logging into the front end of the seedcase data ressource and accessing the project.  If the project is not archived there will be an option to 'add variables to the project'.  This is done by giving access to the data dictionary in selection mode so that the researcher is able to tick any additional variables they may need.  The data ressource owner may want/need a reason for the application, and it should be possible to add such to the application before submitting it.
+
+### New data project
+
+A researcher with the correct permissions can apply for data from the data ressource at any time.  This can be done in two ways, either via exploring the data dictionary and putting together an application based on the variables identified there, or by cloning the variable list of an existing project and adding a new application to a modified version of this.  The application is then submitted to the owner of the seedcase data ressource for consideration.  It should be possible for the data owner to modify the application form to comply with local regulations and legal requirements in terms of which additional fields (apart from the variable list), may be required.
+
+-- mermaid flowchart, now where to put it!
+flowchart LR
+    D2 --> C1
+    D1 --> N1
+    E1 --> T1
+    E1 --> T2
+    subgraph SG1[Apply for data page]
+        subgraph SG5[Submit application for new data project]
+        C1[Cloned version of \nprevious project]-->N1[<b>New data project \napplication</b> \ntitle, applicant, \ndescription, list \nof variables, ...]
+        end
+    end
+
+    subgraph SG2[Display Information page]
+        subgraph SSG1[Meta Data pages]
+        T1[<b>Top level area</b> \ntitle, description, \nno of entities] --> D1[<b>Detail Level</b> \nvariable name, \ntype, min/max, \ndescription, \ncompletion, ...] 
+
+        end
+        subgraph SSG2[Data Project pages]
+        T2[<b>Top level</b> \ntitle, owner, \ndescription] --> D2[<b>Detail Level</b> \ntitle, description, \nvariable list]
+        end
+    end
+
+    subgraph SG4[Overview page]
+    E1[Explore Data \nand Projects]
+    end
