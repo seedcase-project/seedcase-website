@@ -1,0 +1,24 @@
+flowchart LR
+    D2 --> C1
+    D1 --> N1
+    E1 --> T1
+    E1 --> T2
+    subgraph SG1[Apply for data page]
+        subgraph SG5[Submit application for new data project]
+        C1[Cloned version of \nprevious project]-->N1[<b>New data project \napplication</b> \ntitle, applicant, \ndescription, list \nof variables, ...]
+        end
+    end
+
+    subgraph SG2[Display Information page]
+        subgraph SSG1[Meta Data pages]
+        T1[<b>Top level area</b> \ntitle, description, \nno of entities] --> D1[<b>Detail Level</b> \nvariable name, \ntype, min/max, \ndescription, \ncompletion, ...] 
+
+        end
+        subgraph SSG2[Data Project pages]
+        T2[<b>Top level</b> \ntitle, owner, \ndescription] --> D2[<b>Detail Level</b> \ntitle, description, \nvariable list]
+        end
+    end
+
+    subgraph SG4[Overview page]
+    E1[Explore Data \nand Projects]
+    end

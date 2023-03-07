@@ -1,0 +1,30 @@
+@startuml
+
+title : User updates an existing row of ressource data manually
+
+participant "user" as u
+participant "front end" as f
+participant "api" as api
+participant "db" as db
+
+u -> f ++: login to continue \ndata entry
+f -> api ++: send login request
+api -> db ++: check user have \ncorrect permissions
+return user have correct \npermission
+api -> f --: permit show of UI
+f -> u ++: show data search UI
+u -> f --: enter ID of partially \ncompleted record
+f -> api ++: send ID
+api -> db ++: request data for ID
+db -> db : check that user has \npermission to view record
+db -> api --: send back record data
+api -> f --: send back data
+f -> u ++: show pre-populated UI
+u -> f --: enter missing data
+f -> api ++: send entered data
+api -> db ++: send data back
+db -> db : update record
+db -> api --: confirm update \nof row in table
+api -> f --: receive confirmation
+f -> u --: display confirmation
+@enduml
