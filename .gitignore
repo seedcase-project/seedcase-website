@@ -8,3 +8,4 @@ _site
 _ignore
 .Rbuildignore
 .DS_Store
+bin/

@@ -2,39 +2,26 @@
 title: Design specification and architecture of Seedcase
 ---
 
-<!-- connects all docs and sends to Zenodo for each "release" -->
+<!-- Following [arc42](https://arc42.org) and [C4](https://c4model.com/) -->
 
-{{ include index.md }}
+{{ include introduction.qmd }}
 
-{{ include overview.md }}
+{{ include constraints.qmd }}
 
-{{ include use-cases.md }}
+{{ include context.qmd }}
 
-# User interaction and internal pathways
+{{ include solution-strategy.qmd }}
 
-<!-- NOTE: Orchestration? -->
+{{ include building-block-view.qmd }}
 
-{{ include pathways/data-input.md }}
+{{ include runtime-view.qmd }}
 
-{{ include pathways/data-discovery.md }}
+{{ include deployment-view.qmd }}
 
-{{ include pathways/knowledge-sharing.md }}
+{{ include cross-cutting-concepts.qmd }}
 
-{{ include pathways/admin.md }}
+{{ include architectural-decisions.qmd }}
 
-# Architecture of the layers
+{{ include quality-requirements.qmd}}
 
-{{ include architecture/frontend.md }}
-
-{{ include architecture/api.md }}
-
-{{ include architecture/backend.md }}
-
-# Security and privacy
-
-{{ include security.md }}
-
-# Requirements
-
-{{ include requirements.qmd }}
-
+{{ include risks.qmd }}
