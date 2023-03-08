@@ -1,0 +1,85 @@
+
+
+## Level 1
+#### Container
+![seedcase container](../images/container.png)
+
+#### Contained Blackboxes:
+
+| Building Block                     | Description |
+| ---------------------------------- | ----------- |
+| Web Interface                      |             |
+| User Authentication             |             |
+| User and Data Management Framework | It provides developers with a powerful set of tools to create robust, secure, and user-friendly web applications that can easily handle user accounts and data management.|
+| Database                           |             |
+| File Storage                       |             |
+| Large File Storage                 |             |
+| External Secure Server             |             |
+
+
+## Level 2
+
+#### Front End (whitebox)
+
+![front end](../images/front_end.png)
+
+#### Contained Blackboxes:
+
+| Building Block        | Description                                                                                                                                                                                                                                          |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Landing Page          | The initial page that a user sees when they visit the seedcase. It provides an overview of the seedcase project and includes links to other important pages.                                                                                         |
+| User Login Pages      | It is used to authenticate users before they can access protected areas. It includes fields for users to enter their login credentials, such as a username and password.                                                                             |
+| Project List Pages    | It displays a list of all data projects that a user has access to. Each project is typically displayed as a separate item in a list and includes basic information about the project such as its name and status.                                    |
+| Data List Pages       | It displays a list of all data sets of one project that a user has access to. Each data set is typically displayed as a separate item in a list and includes basic information about the data such as its description, source, and date of creation. |
+| Data Detail Pages     | It provides detailed information about a specific data set. This includes any relevant metadata.                                                                                                                                                     |
+| Upload Data Pages     | It allows authorized users to upload new data sets to the seedcase. It includes fields for users to enter information about the data set, as well as a file upload field to select the data file.                                                    |
+| Download Data Pages   | It allows authorized users to download data sets from the seedcase. It includes options to filter the data set based on various criteria, such as date range or specific fields.                                                                     |
+| Data QC Process Pages | It provides information about the quality control process used to ensure that data sets are accurate and reliable. It provides a list of the quality control functions.  It also provides the result to determine if a data set passes or fails.     |
+
+
+#### User Authentication (whitebox)
+
+![user id](../images/user-id.png)
+
+#### Contained Blackboxes:
+
+| Building Block           | Description                                   |
+| ------------------------ | --------------------------------------------- |
+| Local Authentication     | Use seedcase local user authentication server |
+| Connect Remote ID Server | Connect to remote user authentication server  |
+
+#### User and Data Management Framework (whitebox)
+
+![user data management](../images/user-data-management.png)
+
+#### API Layer Contained Blackboxes:
+
+| Building Block         | Desritpion                                                                                                                                                                                                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| API Security           | Implementing measures to protect an API from unauthorized access, data theft, and other security threats. |
+| Dataset CRUD API       | API endpoint allows creating, reading, updating, and deleting the dataset in the system.                                                                                                                                                                                                          |
+| Data file CRUD API     | API endpoint allows creating, reading, updating, and deleting the data file in the system.                                                                                                                                                                                                        |
+| List Projects Metadata | API endpoint allows listing all existing projects, it could use parameters to display related project metadata.                                                                                                                                                                                   |
+| List Project Log       | API endpoint allows displaying a log of all activity related to a specific project in the system.                                                                                                                                                                                                 |
+| Researchers CRUD API   | API endpoint allows creating, reading, updating, and deleting a researcher user in the system.
+
+#### Admin Portal Contained Blackboxes:
+
+| Building Block                 | Description                                                                                                                                                                                                                                                                            |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Project Management             | These admin pages allow administrators to manage projects in the system. This includes creating new projects, updating existing projects, and assigning researchers to projects.                                                                                                       |
+| Project Dataset Management     | These admin pages allow administrators to manage the datasets associated with a specific project. This includes adding new datasets to the project, updating existing datasets, and managing the access permissions for each dataset.                                                  |
+| Data QC Process Management     | These admin pages allow administrators to manage the quality control process for data sets in the system. This includes setting thresholds for pass/fail criteria and managing the process for reviewing and approving data sets that have been cleaned and prepared.                  |
+| User Role Management           | These admin pages allow administrators to manage the access permissions for users in the system. This includes defining roles and permissions for different types of users, such as administrators, researchers, and data analysts, and managing the access permissions for each user. |
+| API Security Management        | These admin pages allow administrators to manage the security measures that are in place to protect the API for the system.                                                                                                                                                            |
+| External Connection Management | These admin pages allow administrators to manage the connections between the system and external data sources or applications. This includes setting up new connections, updating existing connections, and managing the access permissions for each connection.                       |
+
+
+#### Back End (whitebox)
+![back end](../images/back_end.png)
+
+| Building Block | Description |
+| -------------- | ----------- |
+| File Storage   |             |
+| Large File     |             |
+| Database       |             |
