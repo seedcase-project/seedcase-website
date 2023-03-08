@@ -13,12 +13,9 @@ title: Why PostgreSQL
 
 # Backend technology
 
-We will at some point be selecting an open source database as the
-backbone of our project. This will support not only the access and
-security features, but it will also be the place where the user will
-ultimately store their data. As the specifications for our system is
-still being developed, we have not yet made the decision of which
-database to work with.
+An open source database is the
+backbone of our project. It will support the access,
+security features, and data storage.
 
 Below we have first detailed the specifications that we are looking for
 in a backend database, and then a discussion of a selection of specific
@@ -26,10 +23,9 @@ systems that may meet our requirements.
 
 # Database specifications
 
-This part of the document is expected to change and grow as we narrow
-down what we will need the seedcase database to do. There are though
-some things that we already know it must be able to handle, and these
-are detailed here.
+This document will change and grow as we develop
+Seedcase database. This section lists some specifications we need 
+and that we already know it must be able to handle. 
 
 ## Must have functionality
 
@@ -133,11 +129,10 @@ technologies (ADO.NET, JDBC, ODBC, and native APIs).
 -   There is currently no option in MySQL to store data in a columnar
     table.
 
-## [PostgreSQL](www.postgresql.org)
+## PostgreSQL
 
-First released in 1989 from UC Berkeley, it is maintained by the
-PostgreSQL Development Group and is (at the time of writing) on version
-15.1. It is an open source platform with the option to deploy either as
+[PostgreSQL](www.postgresql.org) was first released in 1989 from UC Berkeley, it is maintained by the
+PostgreSQL Development Group. It is an open source platform with the option to deploy either as
 a local server solution or cloud based. The implementation language is C
 and it runs of a variety of operating systems. The system allows access
 through standard technologies (ADO.NET, JDBC, ODBC, a native C library,
@@ -147,7 +142,7 @@ and streaming APIs).
 
 -   At present the fourth most popular database overall and the second
     most popular open source db. There is a thriving community with a
-    lot of engage users delivering support.
+    lot of engaging users delivering support.
 -   Traditional database system with a recognisable format, should be
     easy to manipulate and work with for the advanced seedcase user.
 -   Support for both XML and JSON formats, both reading and writing.
@@ -158,34 +153,38 @@ and streaming APIs).
 
 **Drawbacks**
 
--   There is always a risk that an open source community will break
-    apart and leave a product unsupported, but the risk here looks
-    minimal.
+-   We don't see any major drawbacks.
 
 ## SQLite
 
 First released in 2000 it is slightly different to the two systems
 described above, as it is an embedded serverless database primarily
 maintained by an international team of programmers (see [About
-SQLite](https://www.sqlite.org/about.html)). It is (at the time of
-writing) on version 3.39.4. It is an open source platform with the
+SQLite](https://www.sqlite.org/about.html)). It is an open source platform with the
 option to deploy either as a locally or in the cloud. The implementation
 language is C and it is platform independent. The system allows access
 through standard technologies (ADO.NET, JDBC, and ODBC).
 
-**Benefits** - Support for both xml and json formats, both reading and
-writing. - Easy to set up and implement, works well with R and other
+**Benefits** 
+
+- Support for both xml and json formats, both reading and
+writing. 
+- Easy to set up and implement, works well with R and other
 languages.
 
-**Drawbacks** - The database is designed primarily as a tool to sit
+**Drawbacks** 
+
+- The database is designed primarily as a tool to sit
 underneath applications running in single user mode. This means that the
-database does not as a standard support multi-user work.\
+database does not as a standard support multi-user work.
 - SQLite is not fully ACID (atomicity, consistency, isolation, and
 durability) compliant, which is always a risk when working with larger
-data sets. - There is always a risk that an open source community will
+data sets.
+- There is always a risk that an open source community will
 break apart and leave a product unsupported, but the risk here looks
 minimal. The explicitly stated intention from the core developers of
-SQLite is to support the product until at least 2050. - As the database
+SQLite is to support the product until at least 2050. 
+- As the database
 is serverless it is quite possible that the target audience for the
 seedcase project will struggle to work with the database in the
 instances where local development is needed.
