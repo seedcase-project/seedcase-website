@@ -1,28 +1,66 @@
-### Privacy
+# Cross-cutting concepts
 
-The seedcase project itself will not contain any data that requires the project team to deal with privacy concerns.  This will be an issue once the seedcase program has been downloaded and installed, at which point there are two main threads, the first is privacy of the entered data, the second is the privacy of the people working on the project using the seedcase program (the data project).
+## Privacy
 
-The seedcase program will be designed with the option of setting up multiple layers of user access to a version of the seedcase program.  As default there will be an administrator who will have access to everything to do with user roles and permissions.  In principle it should be possible for that user to set the program up in a way that they themselves cannot view any of the uploaded data, but this will not be a standard setup.
+The Seedcase Product itself does not contain any data that requires
+considering privacy concerns. However, Seedcase will be used to manage
+data and has two main privacy concerns: privacy related to the data that
+is entered into the Data Resource; and privacy with the people working
+on a subset of the data from the Data Resource handled by Seedcase (the
+data project).
 
-We envision that the database back end will hold all information about users and their permissions.  This is done by allowing the administrator to assign an individual user to either roles or groups, some of which will come pre-defined.  It should also be possible for an administrator to create their own roles and groups based on the people working on a particular project that is using the seedcase program to handle their data.
+The Seedcase Product will allow setting up multiple layers of user
+access and authorization levels to the Data Resource instance. As
+default there will be an administrator who will have access to
+everything to do with user roles and permissions. In principle it should
+be possible for that user to set Seedcase up in a way that they
+themselves cannot view any of the uploaded data, but this will not be a
+standard setup.
 
-The seedcase program will ship with the following user roles pre-defined to make it easier for the data project administrator to ensure the security and privacy of the data entered into the system.
+The database back end will hold all information about users and their
+permissions. This is done by allowing the administrator to assign an
+individual user to either roles or groups, some of which will come
+pre-defined. It should also be possible for an administrator to create
+their own roles and groups based on the people working on a particular
+project that is using the Seedcase Product to handle their data.
 
-Administrator - initial user, will as a standard be assigned permissions to do everything in the database. CRUD (create, read, update, and delete) permissions on data, database objects, and users (including assigning other users to Administrator role).
+The Seedcase Product will ship with the following user roles pre-defined
+to make it easier for the data project administrator to ensure the
+security and privacy of the data entered into the system.
 
-Administrator light (CRUD of data) - a user assigned this role will have full CRUD permission on data, but not on user permissions, tables, or other database objects.
+-   **Administrator**: Initial user, will as a standard be assigned
+    permissions to do everything in the database. Create, read, update,
+    and delete (CRUD) permissions on data, database objects, and users
+    (including assigning other users to Administrator role).
 
-Views only - likely to be a way of connecting specific users with specific views created on the data contained in the database.  These views would be created by someone with a type of administrator role.
+-   **Administrator light (CRUD of data)**: A user assigned this role
+    will have full CRUD permission on data, but not on user permissions,
+    tables, or other database objects.
 
-Data create-update - a user with permission to enter data, and to view the data that they have entered in the past.
+-   **Views only**: Likely to be a way of connecting specific users with
+    specific views created on the data contained in the database. These
+    views would be created by someone with a type of administrator role.
 
-DD commenting - if implemented this role will be given to anyone creating an account on a specific seedcase program and will allow the new user access to comment on data dictionary definitions without given them access to anything else.  This specific role is dependent on which solution we decide on for implementation of the data dictionary.
+-   **Data create-update**: A user with permission to enter data, and to
+    view the data that they have entered in the past.
 
-DBMS viewer (read of data and db structure) - role for datamanagers who would like to connect to the database using a Database Management System.  The role will allow for a DBMS to view the structure of the database as well as the data in the tables.
+-   **DBMS viewer (read of data and database structure)**: Role for data
+    managers who would like to connect to the database using a Database
+    Management System. The role will allow for a DBMS to view the
+    structure of the database as well as the data in the tables.
 
-There will be other pre-defined roles, but those will be for the interaction between the back end and front end and mainly coded into the APIs.  The above roles should be used by activated users.
+There will be other pre-defined roles, but those will be for the
+interaction between the back end and front end and mainly coded into the
+APIs. The above roles should be used by activated users.
 
+## Legal
 
-### Legal stuff
+Seedcase will have the MIT license (see the section on [Why choose a MIT
+License](/design/decisions/why-license/) for more info). We will also be
+using a Developer Certification of Origin (DCO) for anyone developing
+and submitting code from outside the core project team. This will be
+implemented using [GitHub App DCO](https://github.com/apps/dco). The
+licence text itself is available
+[here](https://developercertificate.org).
 
-The seedcase project will run on the standard MIT license (see the section on [Why choose a MIT License]() for more info).  We will also be using a Developer Certification of Origin (DCO) for anyone developing and submitting code from outside the core project team.  This will be implemented using [GitHub App DCO](https://github.com/apps/dco). The licence text itself is available [here](https://developercertificate.org).
+TODO: Add more about legal around data.
