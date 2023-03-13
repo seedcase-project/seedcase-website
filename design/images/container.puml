@@ -6,13 +6,15 @@ Person(user_admin, "Admin")
 Person_Ext(user_public, "Public (unauthorized)")
 
 System_Boundary(seedcase, "Seedcase instance for Data Resource") {
-  System(web_framework, "Web Interface")
-  System(id_management, "User Authentication")
-  System(management_framework, "User and Data Management Layer")
-  System(backend_database, "Database")
-  System(backend_file_storage, "File Storage")
-  System(backend_large_file_storage, "Large File Storage")
+  Container(web_framework, "Web Interface")
+  Container(id_management, "User Authentication")
+  Container(management_framework, "User and Data Management Layer")
 
+  Container_Boundary(backend, "Backend environment for data") {
+    ContainerDb(backend_database, "Database")
+    ContainerDb(backend_file_storage, "File Storage")
+    ContainerDb(backend_large_file_storage, "Large File Storage")
+  }
 }
 System_Ext(external_server, "External secure server")
 
@@ -26,3 +28,5 @@ Rel(management_framework, backend_database, "Database-specific commands")
 Rel(management_framework, backend_file_storage, "Request to read, create, update, or delete files")
 Rel(management_framework, backend_large_file_storage, "Request to read, create, update, or delete files")
 Rel(management_framework, external_server, "Data extract for approved data projects")
+
+@enduml
