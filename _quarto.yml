@@ -51,7 +51,10 @@ website:
       align: left
       contents:
         - design/index.md
-        - design/overview.qmd
+        - Section: "Architecture Documentation"
+          contents:
+            - design/introduction.qmd
+            - design/constraints.qmd
         - design/decisions.md
     - id: about
       title: "About"
@@ -79,7 +82,7 @@ format:
       # - "includes/site-counter.html"
       # - "includes/contribute.html"
 
-editor_options:
+editor:
   markdown:
     wrap: 72
     canonical: true
