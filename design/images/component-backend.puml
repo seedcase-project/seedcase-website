@@ -1,0 +1,13 @@
+@startuml
+node "Seedcase Docker Framework" {
+database "Backend" {
+  folder "Raw Data files" {
+  }
+  folder "Image files"
+
+  database "Processed Data"{
+     [need to update]
+  }
+
+}
+@enduml
