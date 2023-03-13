@@ -30,6 +30,9 @@ and legal requirements in terms of which additional fields (apart from
 the variable list), may be required.
 
 ```{mermaid}
+%%| eval: true
+%%| label: fig-runtime-apply-data
+%%| fig-cap: "The flow for applying to data from a Data Resource."
 flowchart LR
     D2 --> C1
     D1 --> N1
