@@ -1,17 +1,57 @@
-##Getting clinical/research data into the seedcase data ressource
+## Getting clinical/research data into the seedcase data ressource
 
-There are two ways of adding data to a seedcase data ressource, the first is automated batch file uploads where a file (eg. csv, xls, txt) is uploaded by the administrator or a trusted user.  In either case it will be the administrator who will be doing the initial upload, as that will entail setting up tables and allocating space in the raw data file storage.  The second way of getting data into the ressource is by manual entering by an approved member of staff.
+There are two ways of adding data to a seedcase data ressource, the
+first is automated batch file uploads where a file (eg. csv, xls, txt)
+is uploaded by the administrator or a trusted user. In either case it
+will be the administrator who will be doing the initial upload, as that
+will entail setting up tables and allocating space in the raw data file
+storage. The second way of getting data into the ressource is by manual
+entering by an approved member of staff.
 
 ### Manual entry of research data into seedcase - all data in one session
 
-The approved user will open the login screen in the seedcase front end.  They will enter their credentials which will be transmitted to the API layer.  The API Security layer will check with the list of users and permissions in the database and confirm that the specific user has permission to enter data into a specific table (or set of tables) in the database.
+The approved user will open the login screen in the seedcase front end.
+They will enter their credentials which will be transmitted to the API
+layer. The API Security layer will check with the list of users and
+permissions in the database and confirm that the specific user has
+permission to enter data into a specific table (or set of tables) in the
+database.
 
-Once this check is complete the front end will receive permission from the API Security layer to display the data entry form.  The user completes all fields in the form and clicks Save and Submit.  This sends the data to the API layer where it is confirmed as valid, parcelled up and submitted to the database.  The database will then write the data into a new record in the table (or tables).  Once done the database will confirm successful entry of data to the API which will in turn send the confirmation back to the user via the front end.  
+Once this check is complete the front end will receive permission from
+the API Security layer to display the data entry form. The user
+completes all fields in the form and clicks Save and Submit. This sends
+the data to the API layer where it is confirmed as valid, parcelled up
+and submitted to the database. The database will then write the data
+into a new record in the table (or tables). Once done the database will
+confirm successful entry of data to the API which will in turn send the
+confirmation back to the user via the front end.
 
 ### Manual entry of research data into seedcase - data written in more than one session
 
-There may be situations where an approved user will be prevented from completing the data entry form in one session.  In that case it would be beneficial if there is an option of saving the data as it is, and be able to return to the data entry at a later time.  Much of the initial workflow is the same as above, until the user is interrupted and selects Save instead of Save and Submit.  This will send the data to the API with a flag showing that fields may be incomplete, thus preventing the API from rejecting the data due to NULL values.  The API will submit the data to the database along the incomplete flag.
+There may be situations where an approved user will be prevented from
+completing the data entry form in one session. In that case it would be
+beneficial if there is an option of saving the data as it is, and be
+able to return to the data entry at a later time. Much of the initial
+workflow is the same as above, until the user is interrupted and selects
+Save instead of Save and Submit. This will send the data to the API with
+a flag showing that fields may be incomplete, thus preventing the API
+from rejecting the data due to NULL values. The API will submit the data
+to the database along the incomplete flag.
 
-When the user at a later time goes back to the data entry they will be presented with the option of completing any incomplete records as well as entering new data.  If they click on Complete Records they are shown the records that they have started but not submitted.  Once they select a partially completed record the front end will request the currently completed items from the database via the API layer before displaying the entry form with the completed fields.  
+When the user at a later time goes back to the data entry they will be
+presented with the option of completing any incomplete records as well
+as entering new data. If they click on Complete Records they are shown
+the records that they have started but not submitted. Once they select a
+partially completed record the front end will request the currently
+completed items from the database via the API layer before displaying
+the entry form with the completed fields.
 
-Once the user has completed more data they can either click on Save or Save and Submit.  The first option will put them back to the top of this workflow, the second will send the data back to the API layer for validation.  Once the data is validated it will be submitted to the database.  The database will then write the data into a new record in the table (or tables) and update the flag to show the record is complete.  Once done the database will confirm successful entry of data to the API which will in turn send the confirmation back to the user via the front end. 
+Once the user has completed more data they can either click on Save or
+Save and Submit. The first option will put them back to the top of this
+workflow, the second will send the data back to the API layer for
+validation. Once the data is validated it will be submitted to the
+database. The database will then write the data into a new record in the
+table (or tables) and update the flag to show the record is complete.
+Once done the database will confirm successful entry of data to the API
+which will in turn send the confirmation back to the user via the front
+end.
