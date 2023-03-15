@@ -1,6 +1,6 @@
 @startuml
 
-title : User writes a new row of ressource data manually
+title : User manually writes a new row to the Data Resource
 
 participant "user" as u
 participant "front end" as f

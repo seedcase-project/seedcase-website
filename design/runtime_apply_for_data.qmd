@@ -1,7 +1,7 @@
 ## Runtime / applying for data
 
-We envision that there are two main ways to apply for data from a
-ressource using seedcase to manage their data. The first will be through
+We envision that there are two main ways to apply for data from a Data
+Resource using seedcase to manage their data. The first will be through
 an investigation of the meta data, which will lead to making an
 application, the second is by building on an already existing
 application, which will re-use some of the work already done by a
@@ -14,7 +14,7 @@ following, supported by the flowchart below.
 ### Applying via the meta data layer
 
 A researcher will click through to an overview page where they will
-select to investigate the meta data for the seedcase ressource. This
+select to investigate the meta data for the seedcase Data Resource. This
 will take them through to a second layer page which will contain a list
 of the top level data areas. This list will show the title of the area
 (eg. Person Information), as well as a description (eg. Person
@@ -35,37 +35,37 @@ detailed variable lists they may decide to go ahead and start an
 application for a data extract (data project). This should be done in a
 new part of the front end, where the admin has set up a form to capture
 the information the data owners deem necessary for assessing whether or
-not a data project can get data from the ressource.
+not a data project can get data from the Data Resource.
 
 ### Applying via the data project layer
 
-It should be an option for the administrator of the seedcase ressource
-to enable researchers to clone an existing project to save time for
-researchers who may be wanting to continue a piece of work by taking it
-in a slightly different direction. This is not an option we expect to
-set as a default, but it may be convenient for large data ressources
+It should be an option for the administrator of the seedcase Data
+Resource to enable researchers to clone an existing project to save time
+for researchers who may be wanting to continue a piece of work by taking
+it in a slightly different direction. This is not an option we expect to
+set as a default, but it may be convenient for large Data Resources
 where it can take a lot of time to work through and select all the
 variables necessary for a new project.
 
 As above the researcher will start with the overview page and select to
-look at the data projects already using data from the ressource. This
-may be both running and closed project, it should be possible for the
-data owner to decide either or both. The researcher will be presented
-with a top level page which contains a list of data projects. This could
-include the title of the project, the name of the applicant, as well as
-a short description written as part of the data project application. If
-the researcher is interested they should be able to click through to a
-more detailed description of the individual project which will display a
-list of the variables that the data project has been granted access to.
-The level of detail in the variable list should be the same as for the
-meta data detail layer.
+look at the data projects already using data from the Data Resource.
+This may be both running and closed project, it should be possible for
+the data owner to decide either or both. The researcher will be
+presented with a top level page which contains a list of data projects.
+This could include the title of the project, the name of the applicant,
+as well as a short description written as part of the data project
+application. If the researcher is interested they should be able to
+click through to a more detailed description of the individual project
+which will display a list of the variables that the data project has
+been granted access to. The level of detail in the variable list should
+be the same as for the meta data detail layer.
 
 We imagine that the permission to clone a variable list from an existing
-project will be something that the ressource data owner will decide in
-advance whether to grant to users or not. Should the permission be
+project will be something that the Data Resource data owner will decide
+in advance whether to grant to users or not. Should the permission be
 granted, then it should be possible to select an option from the page
 showing the detailed description of an existing project to clone the
 variable list and add it to a new application for data. It should be
 possible to edit the list, as well as complete the form to capture the
 information the data owners deem necessary for assessing whether or not
-a data project can get data from the ressource.
+a data project can get data from the Data Resource.
