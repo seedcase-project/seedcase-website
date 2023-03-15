@@ -1,7 +1,7 @@
 ## Runtime / applying for data
 
 We envision that there are two main ways to apply for data from a Data
-Resource using seedcase to manage their data. The first will be through
+Resource using Seedcase to manage their data. The first will be through
 an investigation of the meta data, which will lead to making an
 application, the second is by building on an already existing
 application, which will re-use some of the work already done by a
@@ -14,7 +14,7 @@ following, supported by the flowchart below.
 ### Applying via the meta data layer
 
 A researcher will click through to an overview page where they will
-select to investigate the meta data for the seedcase Data Resource. This
+select to investigate the meta data for the Seedcase Data Resource. This
 will take them through to a second layer page which will contain a list
 of the top level data areas. This list will show the title of the area
 (eg. Person Information), as well as a description (eg. Person
@@ -39,7 +39,7 @@ not a data project can get data from the Data Resource.
 
 ### Applying via the data project layer
 
-It should be an option for the administrator of the seedcase Data
+It should be an option for the administrator of the Seedcase Data
 Resource to enable researchers to clone an existing project to save time
 for researchers who may be wanting to continue a piece of work by taking
 it in a slightly different direction. This is not an option we expect to
