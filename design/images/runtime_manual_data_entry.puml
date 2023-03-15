@@ -13,8 +13,9 @@ api -> db ++: check user have \ncorrect permissions
 return user have correct \npermission
 api -> f --: permit show of  \ndata entry UI
 f -> u ++: show data entry UI
-u -> f --: enter data
-f -> api ++: send entered data
+u -> f --: enter data and click \non Save and Submit
+f -> api ++: send entered data \nwith Complete flag
+api -> api : validate data
 api -> db ++: write data back
 db -> db : create record
 db -> api --: confirm creation \nof row in table

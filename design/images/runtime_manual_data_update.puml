@@ -1,29 +1,47 @@
 @startuml
 
-title : User updates an existing row of ressource data manually
+title : User enters data manually - data written in more than one session
 
 participant "user" as u
 participant "front end" as f
 participant "api" as api
 participant "db" as db
 
-u -> f ++: login to continue \ndata entry
+u -> f ++: login
 f -> api ++: send login request
 api -> db ++: check user have \ncorrect permissions
 return user have correct \npermission
-api -> f --: permit show of UI
-f -> u ++: show data search UI
-u -> f --: enter ID of partially \ncompleted record
+api -> f --: permit show of  \ndata entry UI
+f -> u ++: show data entry UI
+u -> f --: enter data and \nclick on Save
+f -> api ++: send entered data \nwith Incomplete flag
+api -> api : validate data for \ncompleted fields only
+api -> db ++: write data back
+db -> db : create record, \nset flag to incomplete
+db -> api --: confirm creation \nof row in table
+api -> f --: receive confirmation
+f -> u --: display confirmation
+
+u -> f ++: login to continue \ndata entry
+f -> api ++: send login request
+api -> db ++: check user have \ncorrect permissions
+db -> db : check for incomplete records
+return user have correct \npermission and \n incomplete records
+api -> f --: permit show of UI \nadd option to view \nincomplete records
+f -> u ++: give option to \ncontinue data input
+u -> f --: select partially \ncompleted record ID
+'u -> f : enter data
 f -> api ++: send ID
 api -> db ++: request data for ID
-db -> db : check that user has \npermission to view record
+db -> db : check user has \npermission to view record
 db -> api --: send back record data
 api -> f --: send back data
+'api -> f --: permit show of  \ndata entry UI
 f -> u ++: show pre-populated UI
 u -> f --: enter missing data
 f -> api ++: send entered data
 api -> db ++: send data back
-db -> db : update record
+db -> db : update record, \nset flag to complete
 db -> api --: confirm update \nof row in table
 api -> f --: receive confirmation
 f -> u --: display confirmation
