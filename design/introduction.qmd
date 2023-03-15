@@ -105,18 +105,18 @@ developing Seedcase:
 
 In order to maximise the potential for re-use and to minimise the
 technical debt and expertise needed to use, maintain, and modify the
-framework, we will use software and tools underlying the framework that
-fit these principles:
+framework, we will use software and tools underlying Seedcase that fit
+these principles:
 
-1.  Wherever possible, re-use existing material: There already exists
-    many great software tools, infrastructures, and resources that
-    haven't been incorporated into common health research practice. We
-    will make use of and/or modify these materials where we can.
+1.  Re-use existing material: There already exists many great software
+    tools, infrastructures, and resources that haven't been incorporated
+    into common health research practice. We will make use of and/or
+    modify these materials where we can.
 2.  Be familiar to or used by researchers currently or within the near
     future: To ensure the greatest potential for continued maintenance,
     development, and use, the framework should use or be built with
     tools and skills that are at least familiar or soon to be familiar
-    to researchers.
+    to more technical researchers.
 3.  Be familiar to skilled personnel (e.g. research software engineers,
     data engineers, data scientists): Skilled personnel will build this
     framework and need to be familiar with them.
@@ -133,6 +133,16 @@ fit these principles:
     potential future tools: Technology progresses quite quickly, so we
     will rely on software that is likely to still be used or can be
     switched to other tools.
+8.  Be developed or supported by organizations that adhere to open
+    principles: There are many organizations that develop or support
+    open source software, but not all of them have openness as a core
+    value and mission.
+9.  Be usable in diverse computing environments: Not all institutions or
+    companies have the funding or access to more powerful computing
+    environments. To be equitable and inclusive, we will consider, and
+    where relevant, develop for environments with less powerful
+    read/write speeds, limits in memory and storage, and/or lower
+    Internet access and connectivity.
 
 ### Users and use-cases
 
