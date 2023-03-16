@@ -35,12 +35,7 @@ impact architectural and design decisions we make.
 
 -   **Seedcase Product**: This is the software itself that is installed
     on computer or server.
--   **Data Resource**: This is the "instance" created by Seedcase that
-    manages and stores data from a research study or data source. For
-    instance, our external partner DD2 (listed below in the Stakeholder
-    section) collects a wide variety of data on a set of participants.
-    The data generated from these participants enrolled with DD2 would
-    form a single "Data Resource".
+-   **Data Resource**: {{< var design.data-resource >}}
 -   **Data Project**: A data project, also called a data extract, would
     be a subset of data from a Data Resource that researchers or other
     analysts would request access to use for a specific purpose. This
