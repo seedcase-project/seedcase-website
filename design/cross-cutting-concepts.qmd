@@ -63,22 +63,43 @@ implemented using [GitHub App DCO](https://github.com/apps/dco). The
 licence text itself is available
 [here](https://developercertificate.org).
 
-
 ### Compliance with data regulations
 
-There are a number of legal requirements when working with and storing research data containing person-identifiable data.  There are two ways that the Seedcase Product can help a research team to comply with the regulations.  The first is storage of data, the second is the limiting access to data for employees.
+There are a number of legal requirements when working with and storing
+research data containing person-identifiable data. There are two ways
+that the Seedcase Product can help a research team to comply with the
+regulations. The first is storage of data, the second is the limiting
+access to data for employees.
 
 ### Storing the data
 
-The Seedcase Product is designed to sit in two containers.  The first is the front end which contains the user interface as well as the API layer (see section on C4 design).  This container is designed to sit either on a researchers own machine, or on a webserver hosted by the organisation employing the researcher.  The second is the back end which contains the database and a file storage area.  This second container is meant to sit on a secure server environment with access controlled by the organisations IT department.  Only the back end container will hold the research data.
+The Seedcase Product is designed to sit in two containers. The first is
+the front end which contains the user interface as well as the API layer
+(see section on C4 design). This container is designed to sit either on
+a researchers own machine, or on a webserver hosted by the organisation
+employing the researcher. The second is the back end which contains the
+database and a file storage area. This second container is meant to sit
+on a secure server environment with access controlled by the
+organisations IT department. Only the back end container will hold the
+research data.
 
-+TODO - Do we have anything about how the front end container communicates with the back end that can be referenced here?
++TODO - Do we have anything about how the front end container
+communicates with the back end that can be referenced here?
 
-The back end container will have a very limited amount of ports available, and should only allow communication from the front end container.
-
+The back end container will have a very limited amount of ports
+available, and should only allow communication from the front end
+container.
 
 ### Limiting access to data
 
-The Seedcase Product is designed with a default set of user roles which makes it possible to limit access to research data to the people who are set up as administrators (a role the seedcase team envisions will only be given to one or two people, at most the core members of the research team).  Any other role with read access to the data will only be able to see aggregated information about the content of the ressource data.  
+The Seedcase Product is designed with a default set of user roles which
+makes it possible to limit access to research data to the people who are
+set up as administrators (a role the seedcase team envisions will only
+be given to one or two people, at most the core members of the research
+team). Any other role with read access to the data will only be able to
+see aggregated information about the content of the ressource data.
 
-The Seedcase Product will also allow the initial user (administrator) to create their own user roles.  This should prevent that use case where a large group of people are assigned as administrators because they need to view a single table.
+The Seedcase Product will also allow the initial user (administrator) to
+create their own user roles. This should prevent that use case where a
+large group of people are assigned as administrators because they need
+to view a single table.
