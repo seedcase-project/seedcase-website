@@ -139,45 +139,21 @@ these principles:
     read/write speeds, limits in memory and storage, and/or lower
     Internet access and connectivity.
 
-### Users and use-cases
+### Users
 
-<!-- TODO: Users diagram here. -->
+The four users, which are described in more detail in the [Context
+section](context.qmd), are:
 
-The four users and their associated use cases are:
-
-1.  **User 1**: Those *inputting data* into the Data Resource, e.g.,
-    authorized centers and researchers. The use cases are:
-    1.  Authorized centers (GPs and hospitals) upload standardized and
-        routine data through the data entry web portal.
-    2.  Authorized researchers upload generated data from completed data
-        projects. Non-standardized data is either manually processed and
-        cleaned before entering into the database or uploaded in its raw
-        format and processed with a plugin specific to that data.
-2.  **User 2**: Those *requesting access* to a subset of data in the
-    Data Resource, e.g., researchers and clinicians. Use cases are:
-    1.  Interested researchers browse the catalogue of available data
-        and the data dictionary.
-    2.  Researchers request access to data by submitting a description
-        of their proposed data project and selecting the relevant data
-        from the catalogue. This request is sent to a list of data
-        projects to await approval from the data controllers (User 4).
-3.  **User 3**: Those *viewing updates on findings and results* from the
-    Data Resource such as aggregate statistics, e.g., policymakers,
+1.  **Users inputting data** into the Data Resource, e.g., authorized
+    centers and researchers.
+2.  **Users requesting access** to a subset of data in the Data
+    Resource, e.g., researchers and clinicians.
+3.  **Users viewing updates on findings and results** from the Data
+    Resource such as aggregate statistics, e.g., policymakers,
     healthcare workers, journalists, researchers, and the general
-    public. Use cases are:
-    1.  Users view and read through the list of completed, ongoing, and
-        proposed data projects that use the Data Resource.
-    2.  Users access and view aggregate statistics and the latest
-        published findings that are relevant to them/their practice.
-4.  **User 4**: Administrators and data controllers of the Data
-    Resource. Use cases are:
-    1.  Approve newly submitted data projects that request data and
-        manage existing data projects.
-    2.  Approve and authorize researchers to access the web portal for
-        data requests and to manage current authorized researchers.
-    3.  Manage collection centers' access and authorization.
-    4.  Manage or handle potential issues with the data itself, through
-        direct access to the data storage.
+    public.
+4.  **Users who are administrators and data controllers** of the Data
+    Resource.
 
 ### Main functionality
 
