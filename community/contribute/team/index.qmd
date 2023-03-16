@@ -50,6 +50,7 @@ you can run the reformat markdown script.
 |------------------------------------------------------|------------------------------------------|
 | Reformat Markdown to Pandoc canonical format         | `bash src/pr/reformat-markdown.sh`       |
 | Run PlantUML on `.puml` files to re-build the images | `bash src/regenerate-plantuml-images.sh` |
+| Convert file names to `kebab-case`                   | `bash src/filename-to-kebab-case.sh`     |
 
 : Scripts to help automate our work.
 
