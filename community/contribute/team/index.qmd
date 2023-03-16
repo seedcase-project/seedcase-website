@@ -66,3 +66,15 @@ you can run the reformat markdown script.
 | Reformat Markdown | `/reformat_markdown` |
 
 : Pull Request helpers
+
+### Installation of R dependencies
+
+For R, packages the scripts depend on are installed by opening the
+`seedcase-project.Rproj` RStudio R Project file and running these
+functions in the R Console:
+
+``` r
+# Install the pak package if necessary.
+# install.packages("pak")
+pak::pak()
+```
