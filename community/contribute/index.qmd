@@ -18,7 +18,7 @@ Then download the PlantUML program by running this command in the
 project root directory (`seedcase-project/`).
 
 ``` bash
-mkdir bin
+mkdir -p bin
 gh release --repo plantuml/plantuml download --clobber -p "plantuml.jar" -D bin/
 ```
 
@@ -29,3 +29,5 @@ folder of `seedcase-project/`) the command below, replacing `*` with the
 ``` bash
 java -jar bin/plantuml.jar design/images/*.puml
 ```
+
+<!-- TODO: Add link to the teams/index.qmd instructions? -->
