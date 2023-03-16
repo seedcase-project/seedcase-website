@@ -55,6 +55,7 @@ website:
           contents:
             - design/introduction.qmd
             - design/constraints.qmd
+            - design/context.qmd
         - design/decisions.md
     - id: about
       title: "About"
