@@ -1,9 +1,20 @@
 #!/usr/bin/env bash
 
-# This script finds any modified Markdown files in the branch
-# (relative to main) and reformats them to "canonical" Markdown
-# format. Used for the `/reformat_markdown` Pull Request command,
-# found in `.github/workflows/pr-commands.yaml`.
+# This script finds any modified Markdown files in the branch (relative to main)
+# and reformats them to "canonical" Markdown format. Can be used on it's own or
+# used for the GitHub Pull Request command `/reformat_markdown` (managed in
+# `.github/workflows/pr-commands.yaml`).
+# 
+# See `community/contribute/team/index.qmd` for more details on using this
+# script.
+# 
+# Usage:
+# 
+#   - From the Terminal and in the parent folder: 
+#       bash src/pr/reformat-markdown.sh
+#   - From GitHub in a Pull request as a comment:
+#       /reformat_markdown
+#
 for file in $(git diff --name-only --relative main... | cat); do
   echo "- The file '$file' was modified in this branch."
   if [[ $file =~ \.[qRr]?md$ ]]; then
