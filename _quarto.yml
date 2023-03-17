@@ -51,7 +51,7 @@ website:
       align: left
       contents:
         - design/index.md
-        - Section: "Architecture Documentation"
+        - section: "Architecture Documentation"
           contents:
             - design/introduction.qmd
             - design/constraints.qmd
