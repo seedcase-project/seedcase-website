@@ -28,7 +28,7 @@ internal parts of Seedcase.
 Seedcase.](images/container.png)
 
 | Building Block                 | Description                                                                                   |
-|--------------------------------|-----------------------------------------------------------------------------------------------|
+|-------------------------|------------------------------------------------|
 | Web Interface                  | User Interface as a web portal for interacting with the Seedcase-managed Data Resource.       |
 | User Authentication            | Managing and controlling who gets access to what sections of the Data Resource.               |
 | User and Data Management Layer | The programmatic layer connecting the web interface to the back end environment.              |
@@ -69,7 +69,7 @@ This list describes the individual blackbox parts in more detail:
 ![front end](images/front_end.png)
 
 | Building Block        | Description                                                                                                                                                                                                                                          |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------------------|--------------------------------------------------|
 | Landing Page          | The initial page that a user sees when they visit the seedcase. It provides an overview of the seedcase project and includes links to other important pages.                                                                                         |
 | User Login Pages      | It is used to authenticate users before they can access protected areas. It includes fields for users to enter their login credentials, such as a username and password.                                                                             |
 | Project List Pages    | It displays a list of all data projects that a user has access to. Each project is typically displayed as a separate item in a list and includes basic information about the project such as its name and status.                                    |
@@ -84,7 +84,7 @@ This list describes the individual blackbox parts in more detail:
 #### Admin management
 
 | Building Block                 | Description                                                                                                                                                                                                                                                                            |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------------------|--------------------------------------------------|
 | Project Management             | These admin pages allow administrators to manage projects in the system. This includes creating new projects, updating existing projects, and assigning researchers to projects.                                                                                                       |
 | Project Dataset Management     | These admin pages allow administrators to manage the datasets associated with a specific project. This includes adding new datasets to the project, updating existing datasets, and managing the access permissions for each dataset.                                                  |
 | Data QC Process Management     | These admin pages allow administrators to manage the quality control process for data sets in the system. This includes setting thresholds for pass/fail criteria and managing the process for reviewing and approving data sets that have been cleaned and prepared.                  |
@@ -116,8 +116,8 @@ Management Layer* part.
 
 #### Data entry
 
-| Building Block         | Desritpion                                                                                                      |
-|------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Building Block         | Description                                                                                                     |
+|-----------------------|-------------------------------------------------|
 | API Security           | Implementing measures to protect an API from unauthorized access, data theft, and other security threats.       |
 | Dataset CRUD API       | API endpoint allows creating, reading, updating, and deleting the dataset in the system.                        |
 | Data file CRUD API     | API endpoint allows creating, reading, updating, and deleting the data file in the system.                      |
@@ -132,11 +132,76 @@ Management Layer* part.
 
 ![back end](images/back_end.png)
 
-| Building Block | Description |
-|----------------|-------------|
-| File Storage   |             |
-| Large File     |             |
-| Database       |             |
+| Building Block         | Description                                                                                                     |
+|-----------------------|-------------------------------------------------|
+| Raw File Storage    | File storage for files with data uploaded into the Seedcase Ressource, these will typically be either csv or json files.                    |
+| Large File Storage  | Area reserved for Seedcase Products working with files (eg. images) that are too big to store in the database.                              |
+| Relational Database | PostgreSQL relational database containing Ressource data, Metadata, information on Data Projects, Common data models, and User information. |
 
 : Blackboxes within the *Back End Environment* part.
 
+```plantuml
+@startuml
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+title Component diagram for The Seedcase product - Backend: File Storage
+
+Container(api, "API Layer","")
+Container(rdb,"Database","")
+
+Container_Boundary(fs, "File storage") {
+  Component(Raw_file, "Raw file storage", "copies of uploaded data files")
+  Component(Large_file, "Large file storage", "area reserved for large files (eg. images)")
+}
+
+Rel(rdb, Raw_file, "reads data from")
+Rel(api, Large_file, "")
+Rel(api, Raw_file, "writes to / reads from")
+Rel(rdb, Large_file, "refers to")
+
+@enduml
+```
+
+| Building Block         | Description                                                                                                     |
+|-----------------------|-------------------------------------------------|
+| Raw File Storage    | File storage for files with data uploaded into the Seedcase Ressource, these will typically be either csv or json files.  The API layer will use this area for storing files after they have been uploaded into the database. |
+| Large File Storage  | Area reserved for Seedcase Products working with files (eg. images) that are too big to store in the database.  The database will reference the file path for these files.  |
+
+
+
+
+``` plantuml
+
+@startuml
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+title Component diagram for The Seedcase product - BAckend: Relational Database
+
+Container(uia,"User ID Authentication","")
+Container(api, "API Layer","")
+
+Container_Boundary(db, "Relational database") {
+  Component(User_info, "User information", "contains data on users of seedcase")
+  Component(Ressource_data, "Ressource data", "research data generated by the ressource owners and stored in seedcase")
+  Component(About_data, "Data About", "information about data projects, timelines, etc")
+  Component(Data_dictionary, "Ressource data dictionary", "the data dictionary unique to the data ressource")
+  Component(CDM_data, "Common Data Models", "pre-loaded data dictionaries from common data models")
+}
+
+Rel(uia, User_info, "fetches permissions from")
+Rel(api, Ressource_data, "reads data from")
+Rel(api, About_data, "reads data from")
+Rel(api, Data_dictionary, "reads data from")
+Rel(Data_dictionary, CDM_data, "may copy data from")
+
+@enduml
+```
+
+| Building Block         | Description                                                                                                     |
+|-----------------------|-------------------------------------------------|
+| User information      | Data needed to authenticate users and control which parts of the data contained in the Ressource the logged in users is allowed to see.  It will only be available for modifications for the Administrator.  |
+| Ressource data        | The actually research data collected, uploaded and store by the team using the Seedcase Product.  |
+| Data About            | If researchers would like to use the data in the Ressource they will need to apply for them.  This section will contain information about these applications, including things like project description and list of variables. |
+| Resssource data dictionary | 
