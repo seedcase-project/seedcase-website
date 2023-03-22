@@ -2,6 +2,8 @@
 title: "Solution strategy"
 ---
 
+{{< include ../includes/_wip.qmd >}}
+
 This document describes what overall strategy we have decided on to
 solve our problem, as outlined in the [Introduction
 section](introduction.qmd). Specifically, what main technologies and
@@ -45,4 +47,3 @@ In relation to our [Quality Goals](introduction.qmd#quality-goals):
         Development](https://en.wikipedia.org/wiki/Test-driven_development))
         to ensure that what the user interacts with is the first thing
         we consider and document.
-
