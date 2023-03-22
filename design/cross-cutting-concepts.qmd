@@ -85,3 +85,30 @@ licence text itself is available
 | Add data to existing tables                | Y     |              | Y          |             |
 
 : Permission levels for tasks given to each user type.
+
+## Computational and storage locations
+
+Considering that Seedcase aim is to simplify structuring and working
+with data, we need to clarify and consider that the locations where data
+stored and where data is analyzed may be different. These are the
+possible combinations described in @tbl-data-analysis-locations.
+
+| Storage | Analysis         |
+|---------|------------------|
+| Server  | Same server      |
+| Server  | Different server |
+| Server  | Local            |
+| Local   | Local            |
+| Local   | Server           |
+
+: Potential combinations where data is stored vs where analysis is done.
+'Local' would be the computer itself, while 'server' is an external set
+of computers (online or connected internally).
+{#tbl-data-analysis-locations}
+
+If the data owners are the same people as the data analysts (for
+instance, within a research group), the data and analysis location could
+be the same. If the data analysts are external to the owners, the
+locations will likely be different. The consequences of these different
+combinations is that we need to design Seedcase to be flexible to these
+scenarios.
