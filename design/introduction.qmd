@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: Introduction
 ---
 
 {{< include ../includes/_wip.qmd >}}

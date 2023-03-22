@@ -1,4 +1,8 @@
-# System context and scope
+---
+title: System context and scope
+---
+
+{{< include ../includes/_wip.qmd >}}
 
 This document is an overview of the different connections, both human
 and computer, with a Data Resource managed by Seedcase.
