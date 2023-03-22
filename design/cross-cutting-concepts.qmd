@@ -1,5 +1,7 @@
 # Cross-cutting concepts
 
+{{< include ../includes/_wip.qmd >}}
+
 ## Privacy
 
 The Seedcase Product itself does not contain any data that requires

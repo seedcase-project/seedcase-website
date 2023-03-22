@@ -2,6 +2,8 @@
 title: "Constraints"
 ---
 
+{{< include ../includes/_wip.qmd >}}
+
 This document lists technical, political/organizational, and
 convention-based constraints that we must consider when developing
 Seedcase.
