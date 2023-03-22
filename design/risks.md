@@ -42,7 +42,14 @@ Django. However, there are several areas where technical debt has accumulated.
 ### PostgreSQL Database
 
 The PostgreSQL Database is a powerful open-source database that provides many
-benefits. However, there are several areas where technical debt has accumulated.
+benefits. There are some areas where technical debt has accumulated, primarily regarding situations where a large number of transactions are happening at the same time.  These should not impact the Seedcase Product.  Technical debt is more likely to arise over time, as the database is being built.  
+
+#### To address these issues, the following strategies are recommended:
+
+* A standard for naming components in the database should be identified and followed.
+* All code should be documented.
+* Commenting should be employed directly in the code where a script depends on another.
+* It should be considered whether or not it would be useful to force key relationships between entities to minimise the risk of orphan data.
 
 #### Need to updated
 
