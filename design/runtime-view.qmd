@@ -178,20 +178,17 @@ Once done the database will confirm successful entry of data to the API
 which will in turn send the confirmation back to the user via the front
 end.
 
-## Exploring metadata and requesting data
+## Requesting data
 
-We envision that there are two main ways to apply for data from a Data
-Resource using Seedcase to manage their data. The first will be through
-an investigation of the meta data, which will lead to making an
-application, the second is by building on an already existing
-application, which will re-use some of the work already done by a
-researcher. In these scenarios we are assuming that the person making
-the application has already been validated by the security layer and is
-allowed to see meta data/existing data projects, and is allowed to make
-an application for data. The two processes are described in the
-following, supported by the flowchart below.
+There are two main ways to request for data from a Data Resource managed
+by Seedcase:
 
-### Applying via the meta data layer
+1.  Submitting an application to request data, which will create a new
+    data project.
+2.  Updating the variable list and other selection criteria from an
+    existing data project.
+
+### Applying via the metadata layer
 
 A researcher will click through to an overview page where they will
 select to investigate the meta data for the Seedcase Data Resource. This
