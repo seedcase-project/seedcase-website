@@ -26,7 +26,30 @@ authentication/permission-based, and server-based.
     level are those who control the data and who manage the servers, and
     so is outside the scope of Seedcase.
 
-<!-- TODO: Diagram showing layers for security and privilege. -->
+-   Security layer diagram
+
+     +---------------------------------------+
+     |          Authentication and           |
+     |             Authorization             |
+     +---------------------------------------+
+                      |
+     +---------------------------------------+
+     |         API Security and Access       |
+     +---------------------------------------+
+                      |
+     +---------------------------------------+
+     |       Application Logic and Data      |
+     |              Validation               |
+     +---------------------------------------+
+                      |
+     +---------------------------------------+
+     |            Database Management        |
+     |            System (DBMS)              |
+     +---------------------------------------+
+                      |
+     +---------------------------------------+
+     |            Database Security          |
+     +---------------------------------------+
 
 ### Software and code
 
