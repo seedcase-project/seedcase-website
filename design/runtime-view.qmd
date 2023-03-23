@@ -50,8 +50,6 @@ output. Specifically, these items are described as:
     control checks, adding to the changelog, and storage into the
     database.
 
-<!-- TODO: Include links to these sections once they are done. -->
-
 ### Expected type of input data
 
 Given the (current) focus on health data as well as our own experiences,
