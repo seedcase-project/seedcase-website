@@ -6,6 +6,31 @@ This section describes the concrete behaviour, interactions, and
 pathways that data take within Seedcase. "Runtime" in this case refers
 to how the software works "in action".
 
+## Login and authentication
+
+Almost all users will need to log into the Seedcase-managed Data
+Resources. The steps for logging in and having their permission levels
+checked follows the sequence described in @fig-login-sequence.
+
+```{mermaid}
+%%| label: fig-login-sequence
+%%| fig-cap: Login and authentication sequence of a registered user.
+%%| echo: false
+%%| eval: true
+%%{init:{'sequence':{'mirrorActors': false}}}%%
+sequenceDiagram
+  actor User
+  participant f as Frontend
+  participant api as API
+  participant be as Backend
+  
+  User ->>+ f: Enter login information
+  f ->>+ api: Send login request
+  api ->>+ be: Check permissions level
+  be -->>- api: Send permissions level
+  api -->>+ f: Show permission-dependent content
+```
+
 ## Data input
 
 The overall aim of this section is to describe the general path that
