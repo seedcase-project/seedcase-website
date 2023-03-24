@@ -1,6 +1,6 @@
 @startuml
 
-title: Logged in user who manually writes a new row to the Data Resource.
+' Logged in user who manually writes a new row to the Data Resource.
 
 participant "User" as u
 participant "Front end" as f
@@ -8,10 +8,10 @@ participant "API" as api
 participant "Back end" as db
 
 f -> u ++: Show data entry UI
-u -> f --: Enter data,\nsave, and submit
-f -> api ++: Send data with\n"Completed" flag
+u -> f --: Entering data
+f -> api ++: Clicked "Save and Submit"
 api -> api : Validate data
-api -> db ++: Write data back
+api -> db ++: Post data with\n"Completed" flag
 db -> db : Create record
 db -> api --: Confirm created row
 api -> f --: Receive confirmation
