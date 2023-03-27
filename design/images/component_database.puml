@@ -5,7 +5,29 @@
 title Component diagram for seedcase product - Relational Database
 
 Container(uia,"User ID Authentication","")
-Container(api, "API Layer","")
+
+Container_Boundary(api, "API Layer","") {
+    Component(API_Security, "API Security", "API security layer") {
+      [Authenticate user]
+      [Authorize user access]
+      [Secure data transmission]
+      [logging]
+    }
+    Component(Data_Management, "Data Management", "Process data and data file") {
+      [Create/Read/Update/Delete data]
+      [Create/Read/Update/Delete data file]
+      [Data clean process]
+    }
+    Component(Project_Management, "Project Management", "Data project management"){
+      [List all projects]
+      [List project log]
+      [Create/Read/Update/Delete project]
+      [Create/Read/Update/Delete user]
+    }
+    API_Security --> Data_Management
+    API_Security --> Project_Management
+    Data_Management <--> Project_Management
+}
 
 Container_Boundary(db, "Relational database") {
   Component(User_info, "User information", "contains data on users of seedcase")
