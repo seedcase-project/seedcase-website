@@ -103,3 +103,17 @@ The Seedcase Product will also allow the initial user (administrator) to
 create their own user roles. This should prevent that use case where a
 large group of people are assigned as administrators because they need
 to view a single table.
+
+## Logging and Monitoring
+
+The Seedcase Product will be designed in a way that will allow the administrator to not only control who has access to the ressource data but also allow them to monitor who changes what data and when.  We want to make it easy to show which version of data is current, and what the changes are that have been made and when.  
+
+There are two main types of data that can be changes.  The first is the local data dictionary where the Ressource will store information about the data it contains.  We envision that suggested changes to this data will be handled by a combination of the database and GitHub.  
+
+The second type of data is the actual research data.  We propose that the Seedcase Product is set up with the option to record against each row of data who the user that created the row is, and when it was done.  We will then make it an option to engage the monitoring of various parts of the data, in a way that will allow the administrator to see which data items have been changed, when the change was made and which user effected the change.  This will be done using a set of audit tables that the database will write to when accepting a change to a data item.
+
+## Multiple domain-specific standards
+
+One of the core ideas for the Seedcase Project is to make it easy for researchers to handle data in a way that will allow them to share that data later on based on the FAIR principles.  To that effect Seedcase will incorporate several domain-specific standards for naming conventions.  The first to be considered should be an open source standard, but later itterations may use some that are slightly more restricted (like SNOMED where the host organisation may have a subscription).
+
+The standard should be able to help with naming and defining the variables that the research team needs in order to build their database.  It should also be acknowledged by one or more open source data storage areas to help facilitate the Re-use aspect of the FAIR principles.
