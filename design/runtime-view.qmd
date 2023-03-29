@@ -148,6 +148,9 @@ into a new record in the table (or tables). Once done the database will
 confirm successful entry of data to the API which will in turn send the
 confirmation back to the user via the front end.
 
+![Logged in user who manually writes a new row to the Data
+Resource.](images/runtime-manual-data-entry.png){#fig-manual-data-entry}
+
 #### Manual data entry: Done in multiple sessions
 
 There may be situations where an approved user will be prevented from
@@ -178,6 +181,9 @@ Once done the database will confirm successful entry of data to the API
 which will in turn send the confirmation back to the user via the front
 end.
 
+![Logged in user enters data manually in more than one
+session](images/runtime-manual-data-update.png){#fig-manual-data-update}
+
 ## Requesting data
 
 There are two main ways to request for data from a Data Resource managed
@@ -185,64 +191,57 @@ by Seedcase:
 
 1.  Submitting an application to request data, which will create a new
     data project.
-2.  Updating the variable list and other selection criteria from an
-    existing data project.
+2.  Re-using parts of an existing data project.
 
-### Applying via the metadata layer
+```{mermaid}
+%%| eval: true
+%%| label: fig-data-request
+%%| fig-cap: "Logged in user who is requesting data from a Data Resource."
+%%| file: images/runtime-apply-for-data.mmd
+sequenceDiagram
+    actor User
+    
+    participant f as Front end
+    participant api as API
+    participant be as Back end
+    
+    User ->>+ f: Browses variable list
+    f ->>+ api: Clicked 
+    
+  
+```
 
-A researcher will click through to an overview page where they will
-select to investigate the meta data for the Seedcase Data Resource. This
-will take them through to a second layer page which will contain a list
-of the top level data areas. This list will show the title of the area
-(eg. Person Information), as well as a description (eg. Person
-identifiable information including postal code and information about
-diagnosis), as well as an indication of how many entities are registered
-(eg. 2,539 participants fully registered, 27 partial records).
+### Applying for a new data project
 
-If the researcher would like to see more details about a data area they
-will click through to the detail level, where they will be presented
-with a full list of variables. This list will include the variable
-description from the data dictionary (variable name, description and
-data type), as well as some basic information calculated at the time of
-viewing (this could be minimum and maximum values, average value, and
-how many records the variable is complete for).
+Users who want to request data can browse the metadata, which includes a
+list of variables and datasets available as well as a data dictionary
+and changelog, in the Seedcase-managed Data Resource. Similar to an
+online shopping cart, users who want specific variables in the Data
+Resource will select them from the list of variables, which will go into
+the request application as a new data project. These data projects would
+be used to automate the data extraction process. In order to add the
+variables to a new data project application, the user would have to be
+registered and logged in.
 
-Once the researcher have investigated the various data areas and
-detailed variable lists they may decide to go ahead and start an
-application for a data extract (data project). This should be done in a
-new part of the front end, where the admin has set up a form to capture
-the information the data owners deem necessary for assessing whether or
-not a data project can get data from the Data Resource.
+Aside from the selected list of requested variables, the user would need
+to write some information about the rationale for and intended use of
+the data as well as other project-specific metadata.
 
-### Applying via the data project layer
+Admin users would approve any new data project applications. This would
+trigger automated processes to run the data extraction and subsetting
+process. It would also bundle it and prepare it for transfer to the
+applicant user's secure server or other location where the data will be
+stored.
 
-It should be an option for the administrator of the Seedcase Data
-Resource to enable researchers to clone an existing project to save time
-for researchers who may be wanting to continue a piece of work by taking
-it in a slightly different direction. This is not an option we expect to
-set as a default, but it may be convenient for large Data Resources
-where it can take a lot of time to work through and select all the
-variables necessary for a new project.
+The user can update the data project at any point. The admin users would
+then need to approve these updates.
 
-As above the researcher will start with the overview page and select to
-look at the data projects already using data from the Data Resource.
-This may be both running and closed project, it should be possible for
-the data owner to decide either or both. The researcher will be
-presented with a top level page which contains a list of data projects.
-This could include the title of the project, the name of the applicant,
-as well as a short description written as part of the data project
-application. If the researcher is interested they should be able to
-click through to a more detailed description of the individual project
-which will display a list of the variables that the data project has
-been granted access to. The level of detail in the variable list should
-be the same as for the meta data detail layer.
+### Re-using an existing data project
 
-We imagine that the permission to clone a variable list from an existing
-project will be something that the Data Resource data owner will decide
-in advance whether to grant to users or not. Should the permission be
-granted, then it should be possible to select an option from the page
-showing the detailed description of an existing project to clone the
-variable list and add it to a new application for data. It should be
-possible to edit the list, as well as complete the form to capture the
-information the data owners deem necessary for assessing whether or not
-a data project can get data from the Data Resource.
+Because data projects are stored (and optionally displayed on the Web
+Portal) as JSON or other machine-readable format, users who want to copy
+and modify an existing data project can extract and use the details from
+that data project as part of a new data project. The data projects
+listing on the Web Portal will include a button to either download the
+JSON metadata or to copy the project into a new data project
+application.
