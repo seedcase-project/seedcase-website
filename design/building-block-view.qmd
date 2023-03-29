@@ -81,6 +81,28 @@ This list describes the individual blackbox parts in more detail:
 
 : Blackboxes within the *Web Portal* part.
 
+#### Data catalog
+
+-   Is a list or table with variable name, a brief description, and a
+    link to further details that includes the data dictionary entry for
+    the variable. The data dictionary would contain basic aggregate
+    statistics (like number of missingness, general distribution of the
+    data values) as well as a changelog of the variable. Alongside the
+    list of variables are buttons to select them for a data request
+    application. The variable list or table would be built from the
+    underlying set of files that contain the documentation.
+
+#### Data projects
+
+-   The page contains a list of all data projects connected to the Data
+    Resource. This would include the title of the project, the name of
+    the applicant and who else will have access to the data, as well as
+    a short description written as part of the data project application.
+    If the researcher is interested they should be able to click through
+    to a more detailed description of the individual project which will
+    display a list of the variables that the data project has been
+    granted access to.
+
 #### Admin management
 
 | Building Block                 | Description                                                                                                                                                                                                                                                                            |
@@ -139,4 +161,3 @@ Management Layer* part.
 | Database       |             |
 
 : Blackboxes within the *Back End Environment* part.
-
