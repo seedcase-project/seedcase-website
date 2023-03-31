@@ -35,6 +35,23 @@ However, Ruby on Rails requires developers to have experience with the Ruby
 programming language, which may not be ideal for all teams. Additionally, Ruby
 on Rails has a large footprint and can be slow for certain use cases.
 
+### FastAPI
+
+FastAPI is a modern, high-performance web framework for building APIs with
+Python. It is designed to be fast, and easy to use. FastAPI includes features
+like automatic validation of request bodies, async support, and built-in OpenAPI
+documentation. These features make it a popular choice for building scalable and
+maintainable APIs, especially for applications that require high performance
+real-time responses.
+
+However, it's important to consider the specific needs of the application.
+FastAPI may be a good choice for applications that require high performance
+real-time responses, while Django may be a better fit for complex web
+applications that require a full-stack framework with many built-in features.
+Additionally, Django's mature and widely adopted nature means that it has a
+large and active community, which can be a significant advantage in terms of
+support and available resources.
+
 ## Factors that influenced the decision
 
 Several factors influenced our decision to use Django over Flask and Ruby on
