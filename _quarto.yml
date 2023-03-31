@@ -51,10 +51,12 @@ website:
       align: left
       contents:
         - design/index.md
-        - Section: "Architecture Documentation"
+        - section: "Architecture Documentation"
           contents:
             - design/introduction.qmd
             - design/constraints.qmd
+            - design/context.qmd
+            - design/solution-strategy.qmd
         - design/decisions.md
     - id: about
       title: "About"
