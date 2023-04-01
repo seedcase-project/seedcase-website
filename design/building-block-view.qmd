@@ -141,14 +141,14 @@ Container.](images/component-backend.png)
 
 : Blackboxes within the *Back End Environment* part.
 
-![C4 Component diagram showing the Relational Database Component of the
-Back End Environment Container.](images/component-backend-db.png)
-
 | Building Block           | Description                                                                                                 |
 |--------------------------|-------------------------------------------------------------------------------------------------------------|
 | User information         | Details about registered users and their permission levels, viewable by admin users.                        |
 | Resource data            | Research data collected, uploaded, and store by users of Data Resource.                                     |
 | Data project information | Submitted requests for data as a data project, with details like project description and list of variables. |
+| Changelog                | Changes made to data recorded as a table.                                                                   |
+
+: Blackboxes of Tables in relational database within the *Back End
+Environment* part.
 
 <!-- TODO: Not sure where Data dictionary details will go... -->
-
