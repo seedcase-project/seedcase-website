@@ -1,0 +1,24 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+' Component diagram - Back End Environment: Relational Database
+
+Container(uia, "User ID Authentication")
+Container(api, "API Layer")
+
+Container_Boundary(db, "Relational database") {
+  Component(user_info, "Information on users", "Metadata on registered users of the Data Resource")
+  Component(resource_data, "Data", "Data entered into the Data Resource")
+  Component(data_projects, "Information on data projects", "information about data projects, timelines, etc")
+  Component(data_dictionary, "Resource data dictionary", "the data dictionary unique to the data Resource")
+  Component(cdm_data, "Common Data Models", "pre-loaded data dictionaries from common data models")
+}
+
+Rel(uia, user_info, "fetches permissions from")
+Rel(api, resource_data, "reads data from")
+Rel(data_projects, api, "Reads data from")
+Rel(api, data_projects, "Writes data to")
+Rel(api, data_dictionary, "reads data from")
+Rel(data_dictionary, cdm_data, "may copy data from")
+
+@enduml
