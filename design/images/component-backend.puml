@@ -1,13 +1,29 @@
 @startuml
-node "Seedcase Docker Framework" {
-database "Backend" {
-  folder "Raw Data files" {
-  }
-  folder "Image files"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
 
-  database "Processed Data"{
-     [need to update]
-  }
+' Component diagram for The Seedcase product - Backend: File Storage
 
+Container(api, "API Layer")
+
+Container_Boundary(bee, "Back End Environment") {
+  Container_Boundary(rdb, "Relational Database") {
+    Component(dt, "Data in Tables")
+    Component(projects, "Data projects in Tables", "Details on data projects in the Data Resource")
+    Component(changelog, "Changelog in Tables", "Changes made to the data")
+  }
+  Container_Boundary(fs, "File storage") {
+    Component(raw_file, "Raw file storage", "For uploaded raw data files")
+    Component(large_file, "Large file storage", "For for large files not suitable for entry into database (eg. images)")
+  }
 }
+
+Rel(api, fs, "Write data")
+
+Rel(api, dt, "Write and read")
+Rel(api, changelog, "Update table with changes made")
+Rel(api, projects, "Update table with data project requests or changes")
+
+Rel(raw_file, dt, "Process and write to")
+Rel(dt, large_file, "Link to")
+
 @enduml
