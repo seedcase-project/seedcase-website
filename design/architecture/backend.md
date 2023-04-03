@@ -80,20 +80,20 @@ We need a system that is capable of handling users. We will need a
 system that can take the access policies we design and implement them,
 likely through a system of roles and groups which the individual user
 can be assigned to. We are currently working with a model where we
-expect most instances of seedcase to be used by a single user, but it
+expect most instances of Seedcase to be used by a single user, but it
 will need to be able to scale to allow for multiple users with very
 different roles.
 
 ### Security
 
-The security of seedcase is discussed in [a different document](link).
+The security of Seedcase is discussed in [a different document](link).
 We will need to be able to comply with different regulations (like
 GDPR), it is therefore likely that it will be a combination of backend
 and frontend security working together to keep data safe.
 
 ### Monitoring
 
-The backend of seedcase should contain measures that will ensure that if
+The backend of Seedcase should contain measures that will ensure that if
 data is changed or lost it is possible to restore it. There are a couple
 of ways to achieve this, either monitoring/logging of changes to the
 data, or by running backups of all or parts of the data on a regular
