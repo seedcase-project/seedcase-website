@@ -12,11 +12,9 @@ Almost all users will need to log into the Seedcase-managed Data
 Resources. The steps for logging in and having their permission levels
 checked follows the sequence described in @fig-login-sequence.
 
-```{mermaid}
+```{mermaid login-sequence}
 %%| label: fig-login-sequence
 %%| fig-cap: Login and authentication sequence of a registered user.
-%%| echo: false
-%%| eval: true
 %%{init:{'sequence':{'mirrorActors': false}}}%%
 sequenceDiagram
   actor User
@@ -193,11 +191,9 @@ by Seedcase:
     data project.
 2.  Re-using parts of an existing data project.
 
-```{mermaid}
-%%| eval: true
+```{mermaid data-request}
 %%| label: fig-data-request
 %%| fig-cap: "Logged in user who is requesting data from a Data Resource."
-%%| file: images/runtime-apply-for-data.mmd
 sequenceDiagram
     actor User
     
@@ -205,10 +201,19 @@ sequenceDiagram
     participant api as API
     participant be as Back end
     
-    User ->>+ f: Browses variable list
-    f ->>+ api: Clicked 
+    alt New data project
+      User ->>+ f: Selects variables to request
+      User ->>+ f: Fills in project metadata
+    else Re-use data project
+      User ->>+ f: Browse and select data project
+      User ->>+ f: Copy project metadata and modify
+    end
     
-  
+    f ->>+ api: Clicked "Submit"
+    api ->>+ be: Store request metadata
+    api ->>+ api: Inform admin
+    be ->>- api: Application approved
+    api ->>- User: Send information<br>for next steps
 ```
 
 ### Applying for a new data project
