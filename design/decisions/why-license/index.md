@@ -6,7 +6,8 @@ description: |
   intellectual ideas with others. The MIT License is a very permissive 
   copyright license.
 author: "Kris Beicher"
-date: last-modified
+date: "2023-04-01"
+date-modified: last-modified
 categories:
   - licensing
   - copyright
@@ -119,4 +120,3 @@ by checking that a commit contains the signed-off-by clause before
 merging it, or by implementing something like the [GitHub App
 DCO](https://github.com/apps/dco). The licence text itself is available
 [here](https://developercertificate.org).
-
