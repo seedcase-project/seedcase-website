@@ -27,22 +27,8 @@ authentication/permission-based, and server-based.
     so is outside the scope of Seedcase.
 
 -   Security layer diagram
+    ![image](images/Security_Layer.png)
 
-    @startuml
-    title Security layer diagram
-
-    rectangle "Authentication and Authorization" as auth
-    rectangle "API Security and Access" as api
-    rectangle "Application Logic and Data Validation" as logic
-    rectangle "Database Management System (DBMS)" as dbms
-    rectangle "Database Security" as db_security
-
-    auth --> api
-    api --> logic
-    logic --> dbms
-    dbms --> db_security
-    @enduml
-    
 ### Software and code
 
 For managing security related to software dependencies, our main
