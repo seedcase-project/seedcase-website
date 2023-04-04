@@ -97,7 +97,7 @@ To mitigate these risks, the following strategies are recommended:
     infrastructure by reducing the number of containers and optimizing
     their configurations.
 
-## Django Framework
+### Django Framework
 
 The Django Framework presents several technical risks, including:
 
@@ -156,4 +156,3 @@ To mitigate these risks, the following strategies are recommended:
     communication protocols, such as HTTPS, to prevent MITM attacks.
 -   Regularly perform security audits: The team should regularly perform
     security audits to identify and address potential vulnerabilities.
-
