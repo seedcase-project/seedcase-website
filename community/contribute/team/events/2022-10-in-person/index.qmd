@@ -208,7 +208,7 @@ For project:
     -   For now, me and then soon will be team decisions.
     -   And also, if you want it, do it? Do rather than ask
         -   Like, the popularity of "addons", depends on extensibility
-            of seedcase
+            of Seedcase
         -   We don't *have* to incorporate something if someone submits
             a PR, but we're more likely to if they do
 -   TODO: Luke will start making it
@@ -303,7 +303,7 @@ For project:
         shell
     -   Most of our ideas were already taken by similar data/software
         type companies/projects
-    -   seedcase was one that we liked the most, we will use that one
+    -   Seedcase was one that we liked the most, we will use that one
         for now
 -   Tasks:
     -   Start adding issues and project (Luke)
@@ -317,7 +317,7 @@ For project:
     -   Visualizing the underlying database:
         -   Lucy Charts for making diagrams (of databases)
             -   Is there a CLI for something like that for visualizing
-                data inside seedcase?
+                data inside Seedcase?
         -   Graph Database? Focus on visualizing the database
             -   Similar product is Neo4J?
     -   Unit testing

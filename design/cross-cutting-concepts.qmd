@@ -1,4 +1,6 @@
-# Cross-cutting concepts
+---
+title: Cross-cutting concepts
+---
 
 {{< include ../includes/_wip.qmd >}}
 
@@ -65,7 +67,87 @@ implemented using [GitHub App DCO](https://github.com/apps/dco). The
 licence text itself is available
 [here](https://developercertificate.org).
 
-<!-- TODO: Add more about legal around data. -->
+### Compliance with data regulations
+
+There are a number of legal requirements when working with and storing
+research data containing person-identifiable data. There are two ways
+that the Seedcase Product can help a research team to comply with the
+regulations. The first is storage of data, the second is the limiting
+access to data for employees.
+
+### Storing the data
+
+The Seedcase Product is designed to sit in two containers. The first is
+the front end which contains the user interface as well as the API layer
+(see section on C4 design). This container is designed to sit either on
+a researchers own machine, or on a webserver hosted by the organisation
+employing the researcher. The second is the back end which contains the
+database and a file storage area. This second container is meant to sit
+on a secure server environment with access controlled by the
+organisations IT department. Only the back end container will hold the
+research data.
+
+<!-- TODO: How does the front end communicate to the backend? -->
+
+The back end container will have a very limited amount of ports
+available, and should only allow communication from the front end
+container.
+
+### Limiting access to data
+
+The Seedcase Product is designed with a default set of user roles which
+makes it possible to limit access to research data to the people who are
+set up as administrators (a role the seedcase team envisions will only
+be given to one or two people, at most the core members of the research
+team). Any other role with read access to the data will only be able to
+see aggregated information about the content of the ressource data.
+
+The Seedcase Product will also allow the initial user (administrator) to
+create their own user roles. This should prevent that use case where a
+large group of people are assigned as administrators because they need
+to view a single table.
+
+## Logging and monitoring
+
+The Seedcase Product will allow the administrator to control who has
+access to the resource data as well as allow them to monitor who changes
+what data and when. Part of creating and managing data that is
+transparent, rigorous, and FAIR is with keeping a changelog and tracking
+versions.
+
+Logging is done on both data, metadata, and user activities parts.
+Through logging, admin users will be able to monitor the Data Resource.
+
+1.  Data: The actual (research) data that is entered into the database
+    or saved as raw files. Logging tracks which data records are added,
+    deleted, or modified, when the change was made, and which user did
+    the change. This is done as audit tables that the database will
+    write to when accepting a change to a data record, which are
+    built-in capabilities of most modern SQL database technology. By
+    using the logs, admin users will be able to monitor activity on the
+    data.
+
+2.  Metadata: This includes metadata on the data projects and the data
+    dictionary for the Data Resource. Logging on these metadata will be
+    handled with a combination of Git and capabilities of the database.
+
+3.  User activities: This is specific to admin users or users with
+    access to parts of the database. Activities include changes to user
+    roles and permissions.
+
+## Multiple domain-specific standards
+
+One of the core ideas for Seedcase is that it makes it easier for
+researchers to handle data in a way that will allow them to share that
+data later on based on the FAIR principles. Part of FAIR data is also in
+how variables are named. There are a few domain-specific
+standards/conventions for variable naming that Seedcase will
+incorporate. Open standards will be prioritized first, and maybe later
+we will incorporate the slightly more restricted standards (like
+[SNOMED](https://www.snomed.org/) if the host organisation may have a
+subscription). Standards help with naming and defining the variables
+that the research team needs in order to build their database, so are
+important to consider how they will be used.
 
 ## User permission levels
 

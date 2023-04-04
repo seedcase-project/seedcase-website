@@ -36,7 +36,7 @@ categories:
         description about data)?
 -   Next steps and aims:
     -   Create an architecture/specification document detailing how
-        seedcase will look like
+        Seedcase will look like
     -   Send spec document to get reviewed by external third-party
 -   How to split up tasks, some milestones?
 

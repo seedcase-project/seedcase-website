@@ -69,7 +69,7 @@ When make API request need to include the correct username and password
 User Token is a type of authentication token used by APIs to
 authenticate and authorize user requests. When a user logs in, the API
 generates a unique token for that user, which is then stored securely on
-the client side (seedcase box). User Tokens are more secure than Basic
+the client side (Seedcase box). User Tokens are more secure than Basic
 Authentication because they are not transmitted in plaintext and can be
 set to expire after a certain period of time, forcing the user to log in
 again to obtain a new token. They can also be revoked by the server if
@@ -121,9 +121,9 @@ When make API request need to include the correct token as the header
 Use OAuth approach is more complicated compared to previously two. Here
 are some basic steps.
 
-1.  User request access to the project data of the seedcase.
+1.  User request access to the project data of the Seedcase.
 2.  Seedcase redirect the OAuth server (e.g. Shib-Identity-Provider)
 3.  OAuth Server authenticates user by username and password.
-4.  OAuth Server sends secret key back the seedcase
+4.  OAuth Server sends secret key back the Seedcase
 5.  Seedcase used the secret key from OAuth server provide correct
     authorization of the user for accessing the data \## API security
