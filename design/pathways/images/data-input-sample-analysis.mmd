@@ -1,0 +1,43 @@
+flowchart TB
+  subgraph Data and Metadata
+    data_batch_sample_analysis_raw
+    metadata_batch_sample_analysis_raw
+  end
+
+  subgraph UI
+    ui_upload_sample_analysis_raw
+  end
+
+  subgraph API
+    post_data_raw
+    sample_analysis_data
+    plugins_qc_sample_analysis_data_process
+    plugins_sort_process_sample_analysis_data
+    post_data_to_database
+    append_changelog
+    qc_general
+    qc_process_specific_sample_analysis
+    post_metadata_raw
+    extract_metadata_sample_analysis_processed
+  end
+
+  subgraph Backend
+    path_database
+    path_sample_analysis_raw
+    path_metadata_raw
+    path_metadata_processed
+    path_changelog
+    path_qc_results_sample_analysis
+  end
+
+  data_batch_sample_analysis_raw --> ui_upload_sample_analysis_raw --> qc_general --> post_data_raw --> path_sample_analysis_raw
+
+  qc_general --> plugins_qc_sample_analysis_data_process --> sample_analysis_data --> plugins_sort_process_sample_analysis_data --> post_data_to_database --> path_database
+
+  post_data_raw --> append_changelog --> path_changelog
+
+  plugins_sort_process_sample_analysis_data --> qc_process_specific_sample_analysis --> path_qc_results_sample_analysis
+
+  plugins_sort_process_sample_analysis_data --> extract_metadata_sample_analysis_processed --> path_metadata_processed
+
+  metadata_batch_sample_analysis_raw --> post_metadata_raw --> path_metadata_raw

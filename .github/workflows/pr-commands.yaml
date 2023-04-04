@@ -32,7 +32,7 @@ jobs:
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git add .
-          git commit -m 'Reformatted changed Markdown files to canonical format'
+          git commit -m 'Reformatted changed Markdown files to canonical format [skip ci]'
 
       - uses: r-lib/actions/pr-push@v2
         with:

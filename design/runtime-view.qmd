@@ -2,59 +2,255 @@
 title: "Runtime view"
 ---
 
-## Applying for data from the Data Resource
+This section describes the concrete behaviour, interactions, and
+pathways that data take within Seedcase. "Runtime" in this case refers
+to how the software works "in action".
 
-### Existing data project
+## Login and authentication
 
-The owner of an existing data project can submit additional applications
-for extra data variables throughout the life-cycle of the data project.
-This is done by logging into the front end of the seedcase Data Resource
-and accessing the project. If the project is not archived there will be
-an option to 'add variables to the project'. This is done by giving
-access to the data dictionary in selection mode so that the researcher
-is able to tick any additional variables they may need. The data
-resource owner may want/need a reason for the application, and it should
-be possible to add such to the application before submitting it.
+Almost all users will need to log into the Seedcase-managed Data
+Resources. The steps for logging in and having their permission levels
+checked follows the sequence described in @fig-login-sequence.
 
-### New data project
-
-A researcher with the correct permissions can apply for data from the
-Data Resource at any time. This can be done in two ways, either via
-exploring the data dictionary and putting together an application based
-on the variables identified there, or by cloning the variable list of an
-existing project and adding a new application to a modified version of
-this. The application is then submitted to the owner of the seedcase
-Data Resource for consideration. It should be possible for the data
-owner to modify the application form to comply with local regulations
-and legal requirements in terms of which additional fields (apart from
-the variable list), may be required.
-
-```{mermaid}
-%%| eval: true
-%%| label: fig-runtime-apply-data
-%%| fig-cap: "The flow for applying to data from a Data Resource."
-flowchart LR
-    D2 --> C1
-    D1 --> N1
-    E1 --> T1
-    E1 --> T2
-    subgraph SG1[Apply for data page]
-        subgraph SG5[Submit application for new data project]
-        C1[Cloned version of \nprevious project]-->N1[<b>New data project \napplication</b> \ntitle, applicant, \ndescription, list \nof variables, ...]
-        end
-    end
-
-    subgraph SG2[Display Information page]
-        subgraph SSG1[Meta Data pages]
-        T1[<b>Top level area</b> \ntitle, description, \nno of entities] --> D1[<b>Detail Level</b> \nvariable name, \ntype, min/max, \ndescription, \ncompletion, ...] 
-
-        end
-        subgraph SSG2[Data Project pages]
-        T2[<b>Top level</b> \ntitle, owner, \ndescription] --> D2[<b>Detail Level</b> \ntitle, description, \nvariable list]
-        end
-    end
-
-    subgraph SG4[Overview page]
-    E1[Explore Data \nand Projects]
-    end
+```{mermaid login-sequence}
+%%| label: fig-login-sequence
+%%| fig-cap: Login and authentication sequence of a registered user.
+%%{init:{'sequence':{'mirrorActors': false}}}%%
+sequenceDiagram
+  actor User
+  participant f as Frontend
+  participant api as API
+  participant be as Backend
+  
+  User ->>+ f: Enter login information
+  f ->>+ api: Send login request
+  api ->>+ be: Check permissions level
+  be -->>- api: Send permissions level
+  api -->>+ f: Show permission-dependent content
 ```
+
+## Data input
+
+The overall aim of this section is to describe the general path that
+data takes through a Seedcase Data Resource, from input into the final
+output. Specifically, these items are described as:
+
+-   *Input*: Because we currently focus on health research, the type of
+    input data and metadata will be what is typically generated from
+    health studies.
+-   *Output*: The final output object would be the input data stored
+    together as a single database, or at least multiple databases and
+    files explicitly linked in such a way that it conceptually
+    represents a single database.
+-   *Path*: The computational and programmatic steps the input data and
+    metadata takes from being uploaded by a human (and potentially
+    automatically by a program) into Seedcase, passing through quality
+    control checks, adding to the changelog, and storage into the
+    database.
+
+### Expected type of input data
+
+Given the (current) focus on health data as well as our own experiences,
+we make some assumptions about the type of data that will be input into
+Seedcase. Health data tends to consist of specific types of data:
+
+-   **Clinical**: This data is typically collected during patient visits
+    to doctors. Depending on the country or adminitrative region, there
+    will likely already be well-established data processing and storage
+    pipelines in place.
+-   **Register**: This type of data is highly dependent on the country
+    or region. Generally, this data is collected for national or
+    regional administrative purposes, such as, recording employment
+    status, income, address, medication purchases, and diagnoses. Like
+    the routine clinical data, the pipelines in place for processing and
+    storage of this data are usually very extensive and established.
+-   **Biological sample analysis**: This type of data is generated from
+    biological samples, like blood, saliva, semen, hair, or urine. Data
+    generated from sample analytic techniques often produce large
+    volumes of data per person. Samples may be generated in larger
+    established laboratories or in smaller research groups, depending on
+    how what analytic technology is used and how new it is. The
+    structure and format of the generated data also tends to be highly
+    variable and depends heavily on the technology used, sometimes
+    requiring specialized software to process and output.
+-   **Survey or questionnaire**: This type of data is often done based
+    on a given study's aims and research questions. There are hundreds
+    of different questionnaires that can have highly specific purposes
+    and uses for their data. They are also highly variable in the volume
+    of data collected based on the survey, and on the format of the
+    data.
+
+### Expected flow of input data
+
+The above described data tends to fit into, mostly, two categories for
+data input.
+
+-   *Routine or continuous collection*, where ingested data into
+    Seedcase would occur as soon as the data was collected from one
+    "observational unit"[^1] or very shortly afterwards. Clinical data
+    as well as survey or questionnaire data may likely fall under this
+    category.
+-   *Batch collection*, where ingested data occurs some time after the
+    data was collected and from multiple observational units. Biological
+    sample data would fall under this category, since laboratories
+    usually run several samples at once and input data after internal
+    quality control checks and machine-specific data processing. While
+    register-based data does get collected continuously, direct access
+    to it is only given on a batch basis, usually once every year.
+    Survey data may also come in batches, depending on the questionnaire
+    and software used for its collection.
+
+[^1]: Observational unit is the "entity" that the data was collected
+    from at a given point in time, such as a human participant in a
+    cohort study or a rat in an animal study at a specific time point.
+
+For sources of data from routine collection with well-established data
+input processes, the data input pipeline would likely involve
+redirecting these data sources from their generation into Seedcase via a
+direct call to the API so the data continues on to the backend and
+eventual data storage.
+
+Sources of data that don't have well-established data input processes,
+such as from hospitals or medical laboratories, would need to use the
+Seedcase data batch-input Web Portal. This Portal would only accept data
+that is in a pre-defined format (as determined and created by the data
+owner) and would include documentation, and potentially automation
+scripts, on how to pre-process the data prior to uploading it.
+
+These uploaded files might be a variety of file types, like `.csv`,
+`.xls`, or `.txt`). Only users with the correct permission levels are
+allowed to upload data. In either case it will be the administrator who
+will be doing the initial upload, as that will entail setting up tables
+and allocating space in the raw data file storage. The second way of
+getting data into the Data Resource is by manually enter it by an
+authorized user.
+
+Once the data is submitted through the Portal, it would get sent in an
+encrypted, legally-compliant format to the server and stored in the way
+defined by the API and common data model.
+
+#### Manual data entry: Done in one session
+
+The approved user will open the login screen in the Web Portal. They
+will enter their credentials which will be transmitted to the API layer.
+The API Security layer will check with the list of users and permissions
+in the database and confirm that the specific user has permission to
+enter data into a specific table (or set of tables) in the database.
+
+Once this check is complete the front end will receive permission from
+the API Security layer to display the data entry form. The user
+completes all fields in the form and clicks Save and Submit. This sends
+the data to the API layer where it is confirmed as valid, parcelled up
+and submitted to the database. The database will then write the data
+into a new record in the table (or tables). Once done the database will
+confirm successful entry of data to the API which will in turn send the
+confirmation back to the user via the front end.
+
+![Logged in user who manually writes a new row to the Data
+Resource.](images/runtime-manual-data-entry.png){#fig-manual-data-entry}
+
+#### Manual data entry: Done in multiple sessions
+
+There may be situations where an approved user will be prevented from
+completing the data entry form in one session. In that case it would be
+beneficial if there is an option of saving the data as it is, and be
+able to return to the data entry at a later time. Much of the initial
+workflow is the same as above, until the user is interrupted and selects
+Save instead of Save and Submit. This will send the data to the API with
+a flag showing that fields may be incomplete, thus preventing the API
+from rejecting the data due to NULL values. The API will submit the data
+to the database along the incomplete flag.
+
+When the user at a later time goes back to the data entry they will be
+presented with the option of completing any incomplete records as well
+as entering new data. If they click on Complete Records they are shown
+the records that they have started but not submitted. Once they select a
+partially completed record the front end will request the currently
+completed items from the database via the API layer before displaying
+the entry form with the completed fields.
+
+Once the user has completed more data they can either click on Save or
+Save and Submit. The first option will put them back to the top of this
+workflow, the second will send the data back to the API layer for
+validation. Once the data is validated it will be submitted to the
+database. The database will then write the data into a new record in the
+table (or tables) and update the flag to show the record is complete.
+Once done the database will confirm successful entry of data to the API
+which will in turn send the confirmation back to the user via the front
+end.
+
+![Logged in user enters data manually in more than one
+session](images/runtime-manual-data-update.png){#fig-manual-data-update}
+
+## Requesting data
+
+There are two main ways to request for data from a Data Resource managed
+by Seedcase:
+
+1.  Submitting an application to request data, which will create a new
+    data project.
+2.  Re-using parts of an existing data project.
+
+```{mermaid data-request}
+%%| label: fig-data-request
+%%| fig-cap: "Logged in user who is requesting data from a Data Resource."
+sequenceDiagram
+    actor User
+    
+    participant f as Front end
+    participant api as API
+    participant be as Back end
+    
+    alt New data project
+      User ->>+ f: Selects variables to request
+      User ->>+ f: Fills in project metadata
+    else Re-use data project
+      User ->>+ f: Browse and select data project
+      User ->>+ f: Copy project metadata and modify
+    end
+    
+    f ->>+ api: Clicked "Submit"
+    api ->>+ be: Store request metadata
+    api ->>+ api: Inform admin
+    be ->>- api: Application approved
+    api ->>- User: Send information<br>for next steps
+```
+
+### Applying for a new data project
+
+Users who want to request data can browse the metadata, which includes a
+list of variables and datasets available as well as a data dictionary
+and changelog, in the Seedcase-managed Data Resource. Similar to an
+online shopping cart, users who want specific variables in the Data
+Resource will select them from the list of variables, which will go into
+the request application as a new data project. These data projects would
+be used to automate the data extraction process. In order to add the
+variables to a new data project application, the user would have to be
+registered and logged in.
+
+Aside from the selected list of requested variables, the user would need
+to write some information about the rationale for and intended use of
+the data as well as other project-specific metadata.
+
+Admin users would approve any new data project applications. This would
+trigger automated processes to run the data extraction and subsetting
+process. It would also bundle it and prepare it for transfer to the
+applicant user's secure server or other location where the data will be
+stored. Admin users can also modify the application form to comply with
+local regulations and legal requirements, such as removing or adding
+variables (apart from the variable list) may be required.
+
+The user can update the data project at any point in the data project's
+life-cycle. This includes requesting more variables or modifying the
+data project description and aim. The admin users would then need to
+approve these updates.
+
+### Re-using an existing data project
+
+Because data projects are stored (and optionally displayed on the Web
+Portal) as JSON or other machine-readable format, users who want to copy
+and modify an existing data project can extract and use the details from
+that data project as part of a new data project. The data projects
+listing on the Web Portal will include a button to either download the
+JSON metadata or to copy the project into a new data project
+application.
