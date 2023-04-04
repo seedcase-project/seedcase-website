@@ -8,9 +8,8 @@ author: "Richard Ding"
 date: "2023-03-22"
 date-modified: last-modified
 categories:
-  - api
-  - web
-  - front-end
+  - programming
+  - development
 ---
 
 ## Introduction
