@@ -100,7 +100,7 @@ as the host.
 ## Conclusion
 
 After researching the container platform on the market, Docker still is
-the best option for seedcase. First of all, Docker has the world's
+the best option for Seedcase. First of all, Docker has the world's
 largest repository of container images that allow Docker users to
 create, test, store and distribute containers. Secondly, Docker is a
 single, robust, and autonomous tool. Docker manages, runs, builds, and

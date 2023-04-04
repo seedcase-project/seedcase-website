@@ -51,7 +51,7 @@ ODBC, and native APIs).
 -   At present the second most popular database both open source and
     overall with good support and a large community.
 -   Traditional database system with a recognisable format, should be
-    easy to manipulate and work with for the advanced seedcase user.
+    easy to manipulate and work with for the advanced Seedcase user.
 -   Support for both XML and JSON formats, both reading and writing.
 -   There are a number of ways for MySQL to interact with Apache Parquet
     files.
@@ -82,7 +82,7 @@ streaming APIs).
     most popular open source db. There is a thriving community with a
     lot of engaging users delivering support.
 -   Traditional database system with a recognisable format, should be
-    easy to manipulate and work with for the advanced seedcase user.
+    easy to manipulate and work with for the advanced Seedcase user.
 -   Support for both XML and JSON formats, both reading and writing.
 -   There are scripts that will allow for PostgreSQL to interact with
     Apache Parquet files.
@@ -122,5 +122,5 @@ ODBC).
     minimal. The explicitly stated intention from the core developers of
     SQLite is to support the product until at least 2050.
 -   As the database is serverless it is quite possible that the target
-    audience for the seedcase project will struggle to work with the
+    audience for the Seedcase project will struggle to work with the
     database in the instances where local development is needed.
