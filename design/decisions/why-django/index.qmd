@@ -1,30 +1,28 @@
 ---
 title: "Why Django"
 description: |
-  Containers are a way to bundle a software's environment to simplify
-  development, installation, and dependency management.
+  Web frameworks are designed to support building a web front end as well
+  as the API layer. Django is a popular and widely used framework.
 author: "Richard Ding"
 date: "2022-12-10"
 date-modified: last-modified
 categories:
-  - containers
-  - installation
-  - software
-  - tools
-  - technology
+  - api
+  - web
+  - front-end
 ---
 
 ## Introduction
 
-We have evaluated several web frameworks for the Seedcase project, and
+We have evaluated several web frameworks for the Seedcase Product, and
 have chosen Django as the most suitable option for the web framework.
 This document describes the reasoning behind this decision and outlines
 the key factors that influenced it.
 
 ## Decision
 
-After evaluating Flask, Ruby on Rails, and Django, we have decided to
-use Django as the web framework for our project.
+After evaluating Flask, Ruby on Rails, FastAPI, and Django, we have
+decided to use Django as the web framework for Seedcase.
 
 ## Alternatives Considered
 
@@ -49,9 +47,9 @@ a good option for rapid application development and has good support for
 testing.
 
 However, Ruby on Rails requires developers to have experience with the
-Ruby programming language, which may not be ideal for all teams.
-Additionally, Ruby on Rails has a large footprint and can be slow for
-certain use cases.
+Ruby programming language, which may not be ideal for all teams and
+isn't a common language in scientific environments. Additionally, Ruby
+on Rails has a large footprint and can be slow for certain use cases.
 
 ### FastAPI
 
@@ -64,16 +62,16 @@ for applications that require high performance real-time responses.
 
 However, it's important to consider the specific needs of the
 application. FastAPI may be a good choice for applications that require
-high performance real-time responses, while Django may be a better fit
-for complex web applications that require a full-stack framework with
-many built-in features. Additionally, Django's mature and widely adopted
-nature means that it has a large and active community, which can be a
-significant advantage in terms of support and available resources.
+high performance real-time responses, but not as good a choice for more
+complex web applications that require a full-stack framework with many
+built-in features. It is also newer, so is still maturing and has a
+small, though active, community, which limits the amount of available
+support and resources.
 
 ## Factors that influenced the decision
 
-Several factors influenced our decision to use Django over Flask and
-Ruby on Rails as the web framework:
+Several factors influenced our decision to use Django over Flask,
+FastAPI, and Ruby on Rails as the web framework:
 
 ### API Development
 
@@ -87,26 +85,25 @@ for other types of APIs, such as GraphQL.
 
 Django provides a powerful ORM that abstracts away much of the database
 logic and allows developers to work with database models in a Pythonic
-way. Additionally, Django provides good support for migrations, which
-makes it easy to evolve the database schema over time. Django also
-provides a built-in admin interface that allows non-technical users to
-manage data.
+way. It provides good support for migrations, which makes it easy to
+evolve the database schema over time. Django also provides a built-in
+admin interface that allows non-technical users to manage data.
 
 ### Security
 
 Django provides good support for security through its built-in
 authentication system and its support for common security practices such
-as CSRF protection and password hashing. Additionally, Django provides
-good support for role-based access control and fine-grained permissions.
+as CSRF protection and password hashing. It also provides good support
+for role-based access control and fine-grained permissions.
 
 ### User Management
 
 Django provides good support for user management through its built-in
 authentication system and its support for user profiles and social
-authentication. Additionally, Django provides good support for password
-resets and account activation.
+authentication. It also provides good support for password resets and
+account activation.
 
 ## Conclusion
 
-After evaluating Flask, Ruby on Rails, and Django, we have made the
-decision that Django is the better fit for the project.
+After evaluating Flask, FastAPI, Ruby on Rails, and Django, we have made
+the decision that Django is the better fit for Seedcase.
