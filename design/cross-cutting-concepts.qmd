@@ -32,26 +32,26 @@ The Seedcase Product will ship with the following user roles pre-defined
 to make it easier for the data project administrator to ensure the
 security and privacy of the data entered into the system.
 
--   **Administrator**: Initial user, will as a standard be assigned
-    permissions to do everything in the database. Create, read, update,
-    and delete (CRUD) permissions on data, database objects, and users
-    (including assigning other users to Administrator role).
+- **Administrator**: Initial user, will as a standard be assigned
+  permissions to do everything in the database. Create, read, update,
+  and delete (CRUD) permissions on data, database objects, and users
+  (including assigning other users to Administrator role).
 
--   **Administrator light (CRUD of data)**: A user assigned this role
-    will have full CRUD permission on data, but not on user permissions,
-    tables, or other database objects.
+- **Administrator light (CRUD of data)**: A user assigned this role
+  will have full CRUD permission on data, but not on user permissions,
+  tables, or other database objects.
 
--   **Views only**: Likely to be a way of connecting specific users with
-    specific views created on the data contained in the database. These
-    views would be created by someone with a type of administrator role.
+- **Views only**: Likely to be a way of connecting specific users with
+  specific views created on the data contained in the database. These
+  views would be created by someone with a type of administrator role.
 
--   **Data create-update**: A user with permission to enter data, and to
-    view the data that they have entered in the past.
+- **Data create-update**: A user with permission to enter data, and to
+  view the data that they have entered in the past.
 
--   **DBMS viewer (read of data and database structure)**: Role for data
-    managers who would like to connect to the database using a Database
-    Management System. The role will allow for a DBMS to view the
-    structure of the database as well as the data in the tables.
+- **DBMS viewer (read of data and database structure)**: Role for data
+  managers who would like to connect to the database using a Database
+  Management System. The role will allow for a DBMS to view the
+  structure of the database as well as the data in the tables.
 
 There will be other pre-defined roles, but those will be for the
 interaction between the back end and front end and mainly coded into the
@@ -118,22 +118,22 @@ versions.
 Logging is done on both data, metadata, and user activities parts.
 Through logging, admin users will be able to monitor the Data Resource.
 
-1.  Data: The actual (research) data that is entered into the database
-    or saved as raw files. Logging tracks which data records are added,
-    deleted, or modified, when the change was made, and which user did
-    the change. This is done as audit tables that the database will
-    write to when accepting a change to a data record, which are
-    built-in capabilities of most modern SQL database technology. By
-    using the logs, admin users will be able to monitor activity on the
-    data.
+1. Data: The actual (research) data that is entered into the database
+   or saved as raw files. Logging tracks which data records are added,
+   deleted, or modified, when the change was made, and which user did
+   the change. This is done as audit tables that the database will
+   write to when accepting a change to a data record, which are
+   built-in capabilities of most modern SQL database technology. By
+   using the logs, admin users will be able to monitor activity on the
+   data.
 
-2.  Metadata: This includes metadata on the data projects and the data
-    dictionary for the Data Resource. Logging on these metadata will be
-    handled with a combination of Git and capabilities of the database.
+2. Metadata: This includes metadata on the data projects and the data
+   dictionary for the Data Resource. Logging on these metadata will be
+   handled with a combination of Git and capabilities of the database.
 
-3.  User activities: This is specific to admin users or users with
-    access to parts of the database. Activities include changes to user
-    roles and permissions.
+3. User activities: This is specific to admin users or users with
+   access to parts of the database. Activities include changes to user
+   roles and permissions.
 
 ## Multiple domain-specific standards
 
@@ -194,3 +194,37 @@ be the same. If the data analysts are external to the owners, the
 locations will likely be different. The consequences of these different
 combinations is that we need to design Seedcase to be flexible to these
 scenarios.
+
+## Dissemination
+
+Seedcase would be a tool that is easy to install for researchers or
+institution. The official Seedcase image will be published on docker hub
+website: https://hub.docker.com/. All the users will able to directly download
+the Seedcase docker image and follow the simple guide to install the
+seedcase at your computer or server.
+
+### Prerequisites
+
+Before you can install and run our Docker image, you'll need to have the
+Docker Engine installed on your machine. You can download and install Docker
+Engine from the official Docker website: https://www.docker.com/
+
+### Installation Steps
+
+Open a terminal or command prompt on your local machine.
+Pull the most recent Seedcase Docker image from Docker Hub by running the
+following command:
+
+`docker pull seedcase`
+
+Once the Docker image is downloaded, run it with the following command:
+
+`docker run -d -p 8080:8080 seedcase`
+
+This command will start the Docker container in detached mode, which means it
+will run in the background.
+Open a web browser and navigate to http://localhost:8080 to access the
+application running inside the Docker container.
+
+
+
