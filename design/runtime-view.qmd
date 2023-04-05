@@ -1,5 +1,5 @@
 ---
-title: Runtime View
+title: "Runtime view"
 ---
 
 This section describes the concrete behaviour, interactions, and
@@ -236,10 +236,14 @@ Admin users would approve any new data project applications. This would
 trigger automated processes to run the data extraction and subsetting
 process. It would also bundle it and prepare it for transfer to the
 applicant user's secure server or other location where the data will be
-stored.
+stored. Admin users can also modify the application form to comply with
+local regulations and legal requirements, such as removing or adding
+variables (apart from the variable list) may be required.
 
-The user can update the data project at any point. The admin users would
-then need to approve these updates.
+The user can update the data project at any point in the data project's
+life-cycle. This includes requesting more variables or modifying the
+data project description and aim. The admin users would then need to
+approve these updates.
 
 ### Re-using an existing data project
 
