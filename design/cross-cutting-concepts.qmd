@@ -309,3 +309,36 @@ be the same. If the data analysts are external to the owners, the
 locations will likely be different. The consequences of these different
 combinations is that we need to design Seedcase to be flexible to these
 scenarios.
+
+## Dissemination
+
+Seedcase would be a tool that is easy to install for researchers or
+institutions. The Seedcase will be published on [Docker
+Hub](https://hub.docker.com/) where it can be installed from. All the
+users will able to directly download the Seedcase Docker image and
+follow the guide to install Seedcase on your computer or server.
+
+This dissemination process would require installing the Docker Engine on
+the local computer or a server. Docker can be downloaded and installed
+from the official [Docker website](https://www.docker.com/).
+
+### Installing
+
+After installing Docker, Seedcase can be installed by opening a Terminal
+or Command Prompt on the local computer. To get the most recent Seedcase
+Docker image from Docker Hub, you would run the following command:
+
+``` bash
+docker pull seedcase
+```
+
+Once the Docker image is downloaded, run it with the following command:
+
+``` bash
+docker run -d -p 8080:8080 seedcase
+```
+
+This command will start the Docker container in detached mode, which
+means it will run in the background. Opening a web browser and
+navigating to http://localhost:8080 would give you access to the
+application running inside the Docker container.
