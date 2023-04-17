@@ -8,7 +8,7 @@ about:
     - icon: cone-striped
       text: "Software (incomplete)"
       href: https://github.com/steno-aarhus/seedcase
-    - icon: person-vcard
+    - icon: info-circle
       text: "About"
       href: /about/
     - icon: people
@@ -18,6 +18,9 @@ about:
       text: "Design"
       href: /design/
 ---
+
+::: {#hero-heading}
+:::
 
 Getting funds, finding personnel, and allocating resources to build
 functioning software is very difficult in research.
