@@ -24,12 +24,6 @@ initiative established in 2010 with continual enrollment of persons with
 type 2 diabetes. DD2 is one of our collaborators and key stakeholders of
 Seedcase.
 
-> So, our **primary aim** for Seedcase is to create and implement an
-> efficient, scalable, and open source data infrastructure framework
-> that connects data collectors, researchers, clinicians, and other
-> stakeholders, with the data, documentation, and findings, starting
-> with the DD2 study.
-
 We hope that Seedcase will improve and extend the existing DD2 research
 infrastructure into an open national state-of-the-art research
 infrastructure that will provide easy and transparent access to this

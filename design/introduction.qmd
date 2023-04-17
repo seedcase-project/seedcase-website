@@ -10,12 +10,10 @@ Technological and computing skills and knowledge within health research
 (at least in our experience) often lags far behind what is the current
 state-of-the-art. The connected Design documents describe the
 architecture of the Seedcase software as well as the underlying data
-architecture that Seedcase implements as a framework. In other words:
+architecture that Seedcase implements as a framework. Our specific goals
+for the Seedcase project are:
 
-> Our **primary aim** is to create and implement an efficient, scalable,
-> and open source data infrastructure framework that connects data
-> collectors, researchers, clinicians, and other stakeholders, with the
-> data, documentation, and findings from a study.
+{{< include ../includes/_goals.qmd >}}
 
 The framework acts as an (open source) starting template for setting up
 data infrastructures that follow principles and requirements listed
@@ -25,11 +23,10 @@ on the structure and format of the filesystem, URL paths, and API calls;
 and, 3) a defined and standardized structure to the data and associated
 documentation, all of which are linked together as modular components.
 
-The secondary aims, that are covered more in our
-[Community](/community/index.qmd) page, revolve around building a
-community and building up data engineering capacity within health
-research. While this aim is not related to the software itself, it does
-impact architectural and design decisions we make.
+The Community based aims are covered more in our
+[Community](/community/index.qmd) page. While these aims are not related
+to the software itself, it does impact architectural and design
+decisions we make.
 
 ## Definition of terms
 
