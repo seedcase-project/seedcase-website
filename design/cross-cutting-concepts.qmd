@@ -4,14 +4,130 @@ title: Cross-cutting concepts
 
 {{< include ../includes/_wip.qmd >}}
 
-## Privacy
+## Security
+
+There are a few main security concerns: software/code-based,
+authentication/permission-based, and server-based.
+
+-   **Software and code-based concerns**: They are the technical
+    decisions we make, the code we write, and the software we depend on.
+
+-   **Authentication and permission-based concerns**: They are related
+    to how permission levels are given, who can do what to the data, and
+    how users are authenticated.
+
+-   **Data-in-transit concerns**: These would be how secure the
+    connection is whenever data is transmitted across the Internet
+    between locations, such as with data entry.
+
+-   **Server-based concerns**: These are related mostly to data privacy,
+    discussed in detail in the [subsection](#privacy) below. Those
+    legally responsible for the security and privacy concerns at this
+    level are those who control the data and who manage the servers, and
+    so is outside the scope of Seedcase.
+
+![Layers for the various stages of security.](images/security.png)
+
+### Software and code
+
+For managing security related to software dependencies, our main
+approaches will be to:
+
+-   Use open source software: More people are examining the codebase,
+    which means there are more chances to find issues and fix them
+    quickly.
+-   Minimize the number of dependencies: The more dependencies we rely
+    on, the higher the chance of a security breach or vulnerability
+    happening with one of them.
+-   Using popular and established dependencies: A larger userbase will
+    mean it has more exposure to different use cases, more opportunity
+    to identify and fix issues, and more people examining the code.
+-   Being very careful when selecting dependencies: Relates to all of
+    the above items. We will evaluate each dependency in the context of
+    our [constraints](constraints.qmd), as well as security and privacy
+    considerations.
+
+For security issues connected to writing code that could introduce
+vulnerabilities, our main approach is to conduct regular code reviews,
+have the codebase externally reviewed by experts, and to encourage more
+developers to look at and contribute to the code so we have more eyes
+looking for issues.
+
+### Authentication/permission
+
+One easy approach to managing security is limiting who has access to
+internal components of an infrastructure and software. With this, we
+have a set of tasks that a user can be assigned permission levels to,
+detailed in the [Permissions subsection](#permissions)
+
+Key authentication principles such as two-factor authentication and
+OAuth (open standard for access authentication) will be central to the
+framework to control who can update or transfer the data. The endpoint
+of the data transfer is dealt with by the legal teams of the relevant
+institutions.
+
+-   **Basic Authentication** is a simple authentication scheme used by
+    APIs to authenticate users based on a username and password. In this
+    scheme, the user's credentials are encoded in a Base64-encoded
+    string and included in the HTTP Authorization header of each
+    request.The server verifies the credentials and either grants or
+    denies access to the requested resource. When make API request need
+    to include the correct username and password.
+
+-   **User Tokens** is a type of authentication token used by APIs to
+    authenticate and authorize user requests. When a user logs in, the
+    API generates a unique token for that user, which is then stored
+    securely on the client side (seedcase box). User Tokens are more
+    secure than Basic Authentication because they are not transmitted in
+    plaintext and can be set to expire after a certain period of time,
+    forcing the user to log in again to obtain a new token. They can
+    also be revoked by the server if the user's access needs to be
+    terminated. When make API request need to include the correct token
+    as the header.
+
+-   **OAuth** approach is more complicated compared to previously two.
+    Here are some basic steps.
+
+    1.  User requests access to a Data Resource managed by Seedcase.
+    2.  Seedcase redirects the user to an OAuth server (e.g.
+        Shib-Identity-Provider).
+    3.  The OAuth server authenticates the user by username and
+        password.
+    4.  The OAuth server sends the secret key back to Seedcase.
+    5.  Seedcase uses the secret key from OAuth server, providing
+        correct authorization of the user for accessing components of
+        the Data Resource.
+
+### Data-in-transit
+
+For data transfers of personal data, either from data collection
+centers, data generated from researchers, or when transferring data for
+approved projects, we would use well-established and compliant encrypted
+data transfer processes.
+
+Since many components of Seedcase are managed with an API, adding a
+security layer to it is crucial for ensuring the confidentiality,
+integrity, and availability of the data and systems that use the API.
+APIs are often used to connect different systems and applications,
+including with data-in-transit, and they provide a way for external
+parties to access and interact with data. Because of this, they can be
+an attractive target for cyber attackers looking to gain unauthorized
+access, steal sensitive information, or disrupt service availability. To
+protect against these threats, it is important to implement a robust
+security strategy for the API. The main approach to dealing with API
+connections across the Internet is with the use of authentication as
+described above, as well as managing [permission levels](#permissions).
+
+## Privacy {#privacy}
 
 The Seedcase Product itself does not contain any data that requires
 considering privacy concerns. However, Seedcase will be used to manage
 data and has two main privacy concerns: privacy related to the data that
 is entered into the Data Resource; and privacy with the people working
 on a subset of the data from the Data Resource handled by Seedcase (the
-data project).
+data project). Aside from managing data, when Seedcase is deployed to
+manage a Data Resource, only aggregate statistics, and not
+individual-level personal data, would be publicly accessible.
 
 The Seedcase Product will allow setting up multiple layers of user
 access and authorization levels to the Data Resource instance. As
@@ -48,16 +164,15 @@ security and privacy of the data entered into the system.
 -   **Data create-update**: A user with permission to enter data, and to
     view the data that they have entered in the past.
 
--   **DBMS viewer (read of data and database structure)**: Role for data
-    managers who would like to connect to the database using a Database
-    Management System. The role will allow for a DBMS to view the
-    structure of the database as well as the data in the tables.
-
 There will be other pre-defined roles, but those will be for the
 interaction between the back end and front end and mainly coded into the
-APIs. The above roles should be used by activated users.
+APIs. The above roles should be used by activated users. A full list of
+permissions to specific tasks is listed in the [Permissions
+subsection](#permissions) below.
 
 ## Legal
+
+### Copyright and licensing
 
 Seedcase will have the MIT license (see the section on [Why choose a MIT
 License](/design/decisions/why-license/) for more info). We will also be
@@ -149,7 +264,7 @@ subscription). Standards help with naming and defining the variables
 that the research team needs in order to build their database, so are
 important to consider how they will be used.
 
-## User permission levels
+## User permissions {#permissions}
 
 | Task                                       | Admin | Data Request | Data Entry | Third Party |
 |--------------------------------------------|-------|--------------|------------|-------------|
@@ -194,3 +309,36 @@ be the same. If the data analysts are external to the owners, the
 locations will likely be different. The consequences of these different
 combinations is that we need to design Seedcase to be flexible to these
 scenarios.
+
+## Dissemination
+
+Seedcase would be a tool that is easy to install for researchers or
+institutions. The Seedcase will be published on [Docker
+Hub](https://hub.docker.com/) where it can be installed from. All the
+users will able to directly download the Seedcase Docker image and
+follow the guide to install Seedcase on your computer or server.
+
+This dissemination process would require installing the Docker Engine on
+the local computer or a server. Docker can be downloaded and installed
+from the official [Docker website](https://www.docker.com/).
+
+### Installing
+
+After installing Docker, Seedcase can be installed by opening a Terminal
+or Command Prompt on the local computer. To get the most recent Seedcase
+Docker image from Docker Hub, you would run the following command:
+
+``` bash
+docker pull seedcase
+```
+
+Once the Docker image is downloaded, run it with the following command:
+
+``` bash
+docker run -d -p 8080:8080 seedcase
+```
+
+This command will start the Docker container in detached mode, which
+means it will run in the background. Opening a web browser and
+navigating to http://localhost:8080 would give you access to the
+application running inside the Docker container.

@@ -1,4 +1,4 @@
-# seedcase project
+# Seedcase project
 
 -   Grant proposal: [![Grant proposal
     DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6511112.svg)](https://doi.org/10.5281/zenodo.6511112)
@@ -17,7 +17,7 @@ the website.
 ## Contributing
 
 Looking to contribute? Check out our [contributing
-guidelines](CONTRIBUTING.md). Please note that the seedcase project is
+guidelines](CONTRIBUTING.md). Please note that the Seedcase project is
 released with a [Contributor Code of
 Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its
