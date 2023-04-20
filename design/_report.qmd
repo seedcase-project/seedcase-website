@@ -1,16 +1,25 @@
 ---
 title: Design specification and architecture of Seedcase
+format:
+  pdf:
+    papersize: a4
+    fontsize: 12pt
+    geometry:
+      - top=30mm
+      - bottom=30mm
+      - left=30mm
+      - right=30mm
 ---
 
 <!-- Following [arc42](https://arc42.org) and [C4](https://c4model.com/) -->
 
-{{ include introduction.qmd }}
+# Introduction
 
-{{ include constraints.qmd }}
+{{< include introduction.qmd >}}
 
-{{ include context.qmd }}
+# Constraints
 
-{{ include solution-strategy.qmd }}
+{{< include constraints.qmd >}}
 
 {{ include building-block-view.qmd }}
 
