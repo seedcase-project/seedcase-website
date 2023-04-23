@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-{{< include ../includes/_wip.qmd >}}
+{{< include ../../includes/_wip.qmd >}}
 
 Seedcase was born out of a desire to bring modern data engineering
 practices, technologies, and processes to research environments.
@@ -13,7 +13,7 @@ architecture of the Seedcase software as well as the underlying data
 architecture that Seedcase implements as a framework. Our specific goals
 for the Seedcase project are:
 
-{{< include ../includes/_goals.qmd >}}
+{{< include /includes/_goals.qmd >}}
 
 The framework acts as an (open source) starting template for setting up
 data infrastructures that follow principles and requirements listed

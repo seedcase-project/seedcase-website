@@ -147,7 +147,7 @@ confirm successful entry of data to the API which will in turn send the
 confirmation back to the user via the front end.
 
 ![Logged in user who manually writes a new row to the Data
-Resource.](images/runtime-manual-data-entry.png){#fig-manual-data-entry}
+Resource.](/design/images/runtime-manual-data-entry.png){#fig-manual-data-entry}
 
 #### Manual data entry: Done in multiple sessions
 
@@ -180,7 +180,7 @@ which will in turn send the confirmation back to the user via the front
 end.
 
 ![Logged in user enters data manually in more than one
-session](images/runtime-manual-data-update.png){#fig-manual-data-update}
+session](/design/images/runtime-manual-data-update.png){#fig-manual-data-update}
 
 ## Requesting data
 

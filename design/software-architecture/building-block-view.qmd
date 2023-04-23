@@ -2,6 +2,8 @@
 title: Building block view
 ---
 
+{{< include /includes/_wip.qmd >}}
+
 This document describes the core parts of the software, what each of the
 "building blocks" are for Seedcase and how they connect and interact
 with one another. This is the "blueprint" for the design of Seedcase, so
@@ -25,7 +27,7 @@ part within the diagram is a blackbox representation of the core
 internal parts of Seedcase.
 
 ![C4 Container diagram showing the major internal parts of
-Seedcase.](images/container.png)
+Seedcase.](/design/images/container.png)
 
 | Building Block                 | Description                                                                                   |
 |--------------------------------|-----------------------------------------------------------------------------------------------|
@@ -66,7 +68,7 @@ This list describes the individual blackbox parts in more detail:
 
 <!-- TODO: Need a components diagram for this. -->
 
-![front end](images/front_end.png)
+![front end](/design/images/front_end.png)
 
 | Building Block        | Description                                                                                                                                                                                                                                          |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -121,7 +123,7 @@ Management Layer* part.
 
 <!-- TODO: Need a components diagram for this. -->
 
-![user id](images/user-id.png)
+![user id](/design/images/user-id.png)
 
 | Building Block           | Description                                   |
 |--------------------------|-----------------------------------------------|
@@ -134,7 +136,7 @@ Management Layer* part.
 
 <!-- TODO: Need a components diagram for this. -->
 
-![user data management](images/user-data-management.png)
+![user data management](/design/images/user-data-management.png)
 
 #### Data entry
 
@@ -153,7 +155,7 @@ Management Layer* part.
 ### Back End Environment (whitebox)
 
 ![C4 Component diagram showing the Back End Environment
-Container.](images/component-backend.png)
+Container.](/design/images/component-backend.png)
 
 | Building Block      | Description                                                                                                                                      |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|

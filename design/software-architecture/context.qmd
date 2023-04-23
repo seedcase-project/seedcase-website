@@ -2,13 +2,13 @@
 title: System context and scope
 ---
 
-{{< include ../includes/_wip.qmd >}}
+{{< include /includes/_wip.qmd >}}
 
 This document is an overview of the different connections, both human
 and computer, with a Data Resource managed by Seedcase.
 
 ![C4 Context diagram showing users and external systems that connect to
-the Data Resource managed by Seedcase.](images/context.png)
+the Data Resource managed by Seedcase.](/design/images/context.png)
 
 <!-- ## User and organizational -->
 

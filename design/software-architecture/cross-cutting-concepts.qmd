@@ -2,7 +2,7 @@
 title: Cross-cutting concepts
 ---
 
-{{< include ../includes/_wip.qmd >}}
+{{< include /includes/_wip.qmd >}}
 
 ## Security
 
@@ -26,7 +26,7 @@ authentication/permission-based, and server-based.
     level are those who control the data and who manage the servers, and
     so is outside the scope of Seedcase.
 
-![Layers for the various stages of security.](images/security.png)
+![Layers for the various stages of security.](/design/images/security.png)
 
 ### Software and code
 

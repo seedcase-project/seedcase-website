@@ -2,7 +2,7 @@
 title: "Solution strategy"
 ---
 
-{{< include ../includes/_wip.qmd >}}
+{{< include /includes/_wip.qmd >}}
 
 This document describes what overall strategy we have decided on to
 solve our problem, as outlined in the [Introduction

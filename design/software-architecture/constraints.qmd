@@ -2,14 +2,15 @@
 title: "Constraints"
 ---
 
-{{< include ../includes/_wip.qmd >}}
+{{< include /includes/_wip.qmd >}}
 
 This document lists technical, political/organizational, and
 convention-based constraints that we must consider when developing
 Seedcase.
 
 The main "philosophical" and value-based constraints are described in
-the [Guiding Principles](/design/introduction.qmd#guiding-principles)
+the [Guiding
+Principles](/design/software-architecture/introduction.qmd#guiding-principles)
 section. These form the basis for all other decisions and designs. Some
 of those constraints are summarized below.
 
@@ -55,3 +56,4 @@ of those constraints are summarized below.
 | Incorporate "Test/Doc-Driven Development" styles | Each has pros and cons, we use what works best                   |
 
 : Conventions that we should follow or consider for Seedcase.
+
