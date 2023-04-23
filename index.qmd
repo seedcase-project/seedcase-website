@@ -10,13 +10,13 @@ about:
       href: https://github.com/steno-aarhus/seedcase
     - icon: info-circle
       text: "About"
-      href: /about/
+      href: about/
     - icon: people
       text: "Community"
-      href: /community/
+      href: community/
     - icon: diagram-2
       text: "Design"
-      href: /design/
+      href: design/
 ---
 
 ::: {#hero-heading}
