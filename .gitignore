@@ -9,3 +9,4 @@ _ignore
 .Rbuildignore
 .DS_Store
 bin/
+_book
