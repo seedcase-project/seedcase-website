@@ -1,0 +1,82 @@
+%%{init: {"theme": "neutral","themeCSS": ".grid .tick {stroke: lightgrey; opacity: 0.2;}"}}%%
+gantt
+    dateFormat YYYY-MM-DD
+    # title 
+    # todayMarker off
+    axisFormat %Y-%m
+
+    section General
+    Searching for and hiring skilled personnel: pre_hire_staff, 2022-01-01, 32w
+    Continual testing of software and assessing security: continuous_testing, after docs_sw_arch, 156w
+
+    section Documentation
+    Documentation on maintaining and contributing to Seedcase: docs_contributing, after pre_hire_staff, 156w
+    Usage docs for each individual component: docs_usage, after docs_sw_arch, 156w
+    Design documentation on software architecture: docs_sw_arch, after pre_hire_staff, 42w
+    Design documentation on data architecture: docs_data_arch, after docs_sw_arch, 32w
+    Design documents sent for review: docs_review, after docs_sw_arch, 32w
+
+    section Data entry user
+    API for CRUD processes on database and files: api_data_upload, after docs_sw_arch, 18w
+    API trigger for cleaning and processing software: api_trigger_data_cleaning, after api_routine_data_upload, 10w
+    Pipeline trigger to updating the changelog and data version: api_trigger_update_changelog, after api_data_upload api_trigger_data_cleaning, 8w
+    Backend structure for storing the changelog info: backend_changelog, after api_trigger_update_changelog, 4w
+    Backend formal structure for storing the final database: backend_database, after api_trigger_data_cleaning, 16w
+    Backend version control structure for data: backend_dvc, after backend_changelog backend_database, 16w
+    Frontend UI for uploading routine or new data: frontend_data_upload, after backend_database, 12w
+    MVP of data upload: crit, mvp_data_upload, after frontend_data_upload, 2w
+
+    section Admin user
+    API to authenticate users: api_auth_users, after docs_sw_arch, 6w
+    API to register (CRUD) users: api_register_users, after docs_sw_arch, 6w
+    API base structure for list of researchers: api_researchers_list, after pre_hire_staff, 8w
+    Backend structure for storing researcher info: backend_researchers_list, after api_register_users, 8w
+    API trigger for approving projects for data transfer: api_trigger_authorization_projects, after backend_projects, 12w
+    API trigger for approving authorization for researchers: api_trigger_authorization_researchers, after backend_researchers_list, 12w
+    Frontend UI for listing projects for admin: frontend_admin_projects_list, after mvp_projects, 8w
+    Frontend UI for listing researchers for admin: frontend_admin_researchers_list, after backend_researchers_list, 8w
+
+    section Data discovery user
+    API base structure for the data catalogue: api_data_catalogue, after mvp_data_upload, 8w
+    Backend structure for storing the data dictionary: backend_data_dictionary, after api_data_catalogue, 8w
+    Frontend UI for showing data catalogue: frontend_data_catalogue, after backend_data_dictionary, 8w
+    MVP of data catalogue: crit, mvp_data_catalogue, after frontend_data_catalogue, 2w
+    API base structure for the data selection and request: api_data_request, after api_data_catalogue api_projects, 12w
+    Backend software for extracting requested data: backend_trigger_data_request_extraction, after api_data_request, 12w
+    Backend software for transferring data: backend_trigger_data_request_transfer, after backend_trigger_data_request_extraction, 16w
+    Frontend UI for selecting and requesting data: frontend_data_request, after backend_trigger_data_request_extraction, 8w
+    MVP of data request and transfer: crit, mvp_data_request, after frontend_data_request, 8w
+    API base structure for projects listings: api_projects, after api_data_catalogue, 8w
+    Backend structure for storing project info: backend_projects, after api_projects, 8w
+    Frontend UI for submitting data access request: frontend_projects_request_form, after backend_projects, 8w
+    MVP of projects listings: crit, mvp_projects, after backend_projects, 2w
+
+    section Public user
+    API trigger for formatting projects into listing: api_trigger_format_projects, after mvp_data_upload, 8w
+    API trigger for formatting project results into listing: api_trigger_format_projects_results, after api_trigger_format_projects, 8w
+    API trigger for formatting changelog into listing: api_trigger_format_changelog, after backend_changelog api_trigger_format_projects, 8w
+    API trigger for formatting aggregate statistics into listing/images: api_trigger_format_statistics, after backend_database api_trigger_format_projects, 8w
+    Backend trigger for generating aggregrate statistics: backend_trigger_aggregate_statistics, after api_trigger_format_statistics, 10w
+    Frontend UI for list of projects: frontend_projects, after api_trigger_format_projects, 4w
+    Frontend UI for listing changelog: frontend_changelog, after api_trigger_format_changelog, 4w
+    Frontend UI for showing aggregate statistic results and images: frontend_statistics, after api_trigger_format_statistics, 4w
+    MVP for listing of projects: crit, mvp_projects_list, after frontend_projects, 8w
+    MVP for listing of changelog: crit, mvp_changelog_list, after frontend_changelog, 8w
+    MVP for listing of aggregate statistics: crit, mvp_statistics_list, after frontend_statistics, 8w
+
+    section Apply to DD2
+    Determine location of all DD2 data and plan to link them: dd2_survey_all_files, after mvp_data_upload, 24w
+    Determine how and where all data are input from: dd2_survey_data_inputs, after mvp_data_upload, 24w
+    Move existing DD2 data and restructure to the CDM: dd2_restructure_to_cdm, after dd2_survey_data_inputs, 24w
+    Build DD2 data processing and linking software: dd2_processing_software, after dd2_restructure_to_cdm, 24w
+    Fully implemented in DD2: crit, dd2_implement_framework, after dd2_processing_software, 4w
+
+    section Training
+    Training docs on deploying the Seedcase: docs_deploy_framework, after mvp_data_upload, 156w
+    Training docs on using the deployed Seedcase: docs_use_framework, after mvp_data_upload, 156w
+    Training docs on customizing the Seedcase: docs_customize_framework, after mvp_data_upload, 156w
+
+    section Next steps
+    Replicating in ADDITION cohort: next_replic_addition, after dd2_implement_framework, 24w
+    Continue refining, testing, checking Seedcase: continued_dev, after mvp_statistics_list, 24w
+

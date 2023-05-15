@@ -1,9 +1,0 @@
-variable_name,description
-order,"The order for which sections will start first, largely for visual display on the Gantt Chart"
-section_name,The values in this column are for grouping the Gantt Chart into sections.
-task_label,"This is a task ID that's used for setting tasks that are dependencies, e.g. in start_date with ""after ID""."
-task_name,This is the text description that will be shown in the Gantt Chart.
-start_date,"This indicates when the task will start. You can set dependencies like ""after ID"" or by setting a specific date."
-end_date,"This is for either how long the task will take (e.g. ""24hr"" or ""3d"" or ""1y"") or is a date for the ending of the task."
-is_milestone,This can be used for highlighting the specific tasks as milestones.
-is_deliverable,"Same as is_milestone, can be used to distinguish deliverable from other tasks."
