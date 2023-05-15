@@ -2,6 +2,7 @@ library(dplyr)
 library(tidyr)
 library(readr)
 library(stringr)
+library(here)
 
 # Taken and modified from https://lazappi.id.au/post/2016-06-13-gantt-charts-in-r/
 
@@ -36,7 +37,7 @@ gantt_full_spec <- function(tasks_df, title = "") {
     gantt
         dateFormat YYYY-MM-DD
         # title {title}
-        todayMarker off
+        # todayMarker off
         axisFormat \\%Y-\\%m
 
     {tasks_string}
@@ -47,25 +48,24 @@ gantt_full_spec <- function(tasks_df, title = "") {
 }
 
 # Produces a Gantt chart from a data frame of tasks
-create_gantt_chart <- function(tasks_df, title = "") {
-    gantt_string <- gantt_full_spec(tasks_df = tasks_df, title = title)
-    gantt <- DiagrammeR::mermaid(gantt_string)
-
-    return(gantt)
-}
+# create_gantt_chart <- function(tasks_df, title = "") {
+#     gantt_string <- gantt_full_spec(tasks_df = tasks_df, title = title)
+#     gantt <- DiagrammeR::mermaid(gantt_string)
+#
+#     return(gantt)
+# }
 
 timeline <- read_csv(here::here("data/gantt.csv"), col_types = "c") %>%
     filter(!is.na(section_name), !is.na(start_date))
 
 # For copying to https://mermaid-js.github.io/mermaid-live-editor
 # To determine width, the browser window itself must be resized.
-gantt_full_spec(timeline) %>%
-    clipr::write_clip()
+# %>%
+#     clipr::write_clip()
 
 # create_gantt_chart(timeline)
 
 # Theme for chart
-'{
-  "theme": "neutral",
-  "themeCSS": ".grid .tick {stroke: lightgrey; opacity: 0.2;}"
-}'
+str_c('%%{init: {"theme": "neutral","themeCSS": ".grid .tick {stroke: lightgrey; opacity: 0.2;}"}}%%',
+      gantt_full_spec(timeline), sep = "\n") %>%
+  write_lines(here("community/contribute/images/gantt.mmd"))

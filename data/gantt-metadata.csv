@@ -7,4 +7,3 @@ start_date,"This indicates when the task will start. You can set dependencies li
 end_date,"This is for either how long the task will take (e.g. ""24hr"" or ""3d"" or ""1y"") or is a date for the ending of the task."
 is_milestone,This can be used for highlighting the specific tasks as milestones.
 is_deliverable,"Same as is_milestone, can be used to distinguish deliverable from other tasks."
-done_by,"Who could build this: dba = database administrator, rse = research software engineer"
