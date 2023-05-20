@@ -38,7 +38,7 @@ website:
           contents:
           - community/contribute/index.qmd
           - community/contribute/blocks.qmd
-          - community/contribute/roadmap.md
+          - community/contribute/roadmap.qmd
           - community/contribute/decisions.md
         - section: "Team"
           contents:
