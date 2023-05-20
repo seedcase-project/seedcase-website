@@ -1,5 +1,5 @@
 ---
-title: Cross-cutting concepts
+title: "Cross-cutting concepts"
 ---
 
 {{< include /includes/_wip.qmd >}}
@@ -26,7 +26,8 @@ authentication/permission-based, and server-based.
     level are those who control the data and who manage the servers, and
     so is outside the scope of Seedcase.
 
-![Layers for the various stages of security.](/design/images/security.png)
+![Layers for the various stages of
+security.](/design/images/security.png)
 
 ### Software and code
 
@@ -299,9 +300,8 @@ possible combinations described in @tbl-data-analysis-locations.
 | Local   | Server           |
 
 : Potential combinations where data is stored vs where analysis is done.
-'Local' would be the computer itself, while 'server' is an external set
-of computers (online or connected internally).
-{#tbl-data-analysis-locations}
+'Local' is the computer itself, while 'server' is an external set of
+computers (inter- or intra-net). {#tbl-data-analysis-locations}
 
 If the data owners are the same people as the data analysts (for
 instance, within a research group), the data and analysis location could
@@ -340,5 +340,5 @@ docker run -d -p 8080:8080 seedcase
 
 This command will start the Docker container in detached mode, which
 means it will run in the background. Opening a web browser and
-navigating to http://localhost:8080 would give you access to the
+navigating to <http://localhost:8080> would give you access to the
 application running inside the Docker container.
