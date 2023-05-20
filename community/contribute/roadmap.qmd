@@ -1,6 +1,14 @@
-# Project roadmap
+---
+title: Roadmap
+---
 
 {{< include /includes/_wip.qmd >}}
+
+## General timeline
+
+```{mermaid}
+
+```
 
 ## Deliverables and milestones
 
