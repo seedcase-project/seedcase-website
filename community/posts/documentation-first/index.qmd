@@ -1,0 +1,22 @@
+---
+title: "Documentation-first culture"
+description: ""
+author: "Luke W. Johnston"
+date: "2023-05-20"
+date-modified: last-modified
+categories:
+  - culture
+  - communication
+  - teamwork
+  - documentation
+---
+
+https://about.gitlab.com/company/culture/all-remote/handbook-first-documentation/
+
+https://www.remote-work.io/how-to-nurture-a-culture-of-documentation-in-remote-teams/
+
+https://www.ebiester.com/documentation/2022/12/23/building-documentation-culture.html
+
+https://hickamsdictum.com/how-to-build-a-culture-of-documentation-534bd75817d6
+
+https://towardsdatascience.com/data-documentation-woes-heres-a-framework-6aba8f20626c
