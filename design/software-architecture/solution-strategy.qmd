@@ -1,0 +1,49 @@
+---
+title: "Solution strategy"
+---
+
+{{< include /includes/_wip.qmd >}}
+
+This document describes what overall strategy we have decided on to
+solve our problem, as outlined in the [Introduction
+section](introduction.qmd). Specifically, what main technologies and
+what architectural designs we will use. Any solution we decide must
+adhere to the [Guiding principles](introduction.qmd#guiding-principles)
+and the [constraints](constraints.qmd).
+
+The main technologies we will use are:
+
+-   For Seedcase itself, it will be developed using **Python**, for
+    multiple reasons, including because it is open source and because it
+    is one of the most commonly used languages within research and
+    industry alike.
+-   For the data, the formal database will be created and managed by
+    **PostgreSQL**, since it is an established and open source software,
+    while raw data will be stored as either **CSV** or **JSON** files as
+    they are the most common forms of storing data as well as being
+    plain text.
+-   For general software development and managing computing
+    environments, we will build Seedcase within **Docker containers**.
+    Containers are a modern and powerful way of management software and
+    environment dependencies. Docker is very popular and the program is
+    open source.
+-   For building the web and API layer, we will use **Django** for the
+    framework since it is very popular and has a large amount of online
+    resources. Django also implements **RESTful API** (representational
+    state transfer), which is the de facto standard way for building
+    APIs.
+
+In relation to our [Quality Goals](introduction.qmd#quality-goals):
+
+-   **Secure and legally compliant**:
+    -   We will separate the data in the backend with its own Docker
+        container to ensure greater security.
+    -   We will use established security and authentication protocols as
+        plugins to Seedcase, rather than build a custom solution.
+-   **Beginner-friendly interfaces**:
+    -   Incorporate components of [Documentation Driven
+        Development](https://gist.github.com/zsup/9434452) (followed by
+        components of [Test Driven
+        Development](https://en.wikipedia.org/wiki/Test-driven_development))
+        to ensure that what the user interacts with is the first thing
+        we consider and document.

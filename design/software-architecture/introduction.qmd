@@ -1,8 +1,8 @@
 ---
-title: "Introduction"
+title: Introduction
 ---
 
-{{< include ../includes/_wip.qmd >}}
+{{< include ../../includes/_wip.qmd >}}
 
 Seedcase was born out of a desire to bring modern data engineering
 practices, technologies, and processes to research environments.
@@ -10,12 +10,10 @@ Technological and computing skills and knowledge within health research
 (at least in our experience) often lags far behind what is the current
 state-of-the-art. The connected Design documents describe the
 architecture of the Seedcase software as well as the underlying data
-architecture that Seedcase implements as a framework. In other words:
+architecture that Seedcase implements as a framework. Our specific goals
+for the Seedcase project are:
 
-> Our **primary aim** is to create and implement an efficient, scalable,
-> and open source data infrastructure framework that connects data
-> collectors, researchers, clinicians, and other stakeholders, with the
-> data, documentation, and findings from a study.
+{{< include /includes/_goals.qmd >}}
 
 The framework acts as an (open source) starting template for setting up
 data infrastructures that follow principles and requirements listed
@@ -25,22 +23,16 @@ on the structure and format of the filesystem, URL paths, and API calls;
 and, 3) a defined and standardized structure to the data and associated
 documentation, all of which are linked together as modular components.
 
-The secondary aims, that are covered more in our
-[Community](/community/index.qmd) page, revolve around building a
-community and building up data engineering capacity within health
-research. While this aim is not related to the software itself, it does
-impact architectural and design decisions we make.
+The Community based aims are covered more in our
+[Community](/community/index.qmd) page. While these aims are not related
+to the software itself, it does impact architectural and design
+decisions we make.
 
 ## Definition of terms
 
 -   **Seedcase Product**: This is the software itself that is installed
     on computer or server.
--   **Data Resource**: This is the "instance" created by Seedcase that
-    manages and stores data from a research study or data source. For
-    instance, our external partner DD2 (listed below in the Stakeholder
-    section) collects a wide variety of data on a set of participants.
-    The data generated from these participants enrolled with DD2 would
-    form a single "Data Resource".
+-   **Data Resource**: {{< var design.data-resource >}}
 -   **Data Project**: A data project, also called a data extract, would
     be a subset of data from a Data Resource that researchers or other
     analysts would request access to use for a specific purpose. This
@@ -144,45 +136,21 @@ these principles:
     read/write speeds, limits in memory and storage, and/or lower
     Internet access and connectivity.
 
-### Users and use-cases
+### Users
 
-<!-- TODO: Users diagram here. -->
+The four users, which are described in more detail in the [Context
+section](context.qmd), are:
 
-The four users and their associated use cases are:
-
-1.  **User 1**: Those *inputting data* into the Data Resource, e.g.,
-    authorized centers and researchers. The use cases are:
-    1.  Authorized centers (GPs and hospitals) upload standardized and
-        routine data through the data entry web portal.
-    2.  Authorized researchers upload generated data from completed data
-        projects. Non-standardized data is either manually processed and
-        cleaned before entering into the database or uploaded in its raw
-        format and processed with a plugin specific to that data.
-2.  **User 2**: Those *requesting access* to a subset of data in the
-    Data Resource, e.g., researchers and clinicians. Use cases are:
-    1.  Interested researchers browse the catalogue of available data
-        and the data dictionary.
-    2.  Researchers request access to data by submitting a description
-        of their proposed data project and selecting the relevant data
-        from the catalogue. This request is sent to a list of data
-        projects to await approval from the data controllers (User 4).
-3.  **User 3**: Those *viewing updates on findings and results* from the
-    Data Resource such as aggregate statistics, e.g., policymakers,
+1.  **Users inputting data** into the Data Resource, e.g., authorized
+    centers and researchers.
+2.  **Users requesting access** to a subset of data in the Data
+    Resource, e.g., researchers and clinicians.
+3.  **Users viewing updates on findings and results** from the Data
+    Resource such as aggregate statistics, e.g., policymakers,
     healthcare workers, journalists, researchers, and the general
-    public. Use cases are:
-    1.  Users view and read through the list of completed, ongoing, and
-        proposed data projects that use the Data Resource.
-    2.  Users access and view aggregate statistics and the latest
-        published findings that are relevant to them/their practice.
-4.  **User 4**: Administrators and data controllers of the Data
-    Resource. Use cases are:
-    1.  Approve newly submitted data projects that request data and
-        manage existing data projects.
-    2.  Approve and authorize researchers to access the web portal for
-        data requests and to manage current authorized researchers.
-    3.  Manage collection centers' access and authorization.
-    4.  Manage or handle potential issues with the data itself, through
-        direct access to the data storage.
+    public.
+4.  **Users who are administrators and data controllers** of the Data
+    Resource.
 
 ### Main functionality
 

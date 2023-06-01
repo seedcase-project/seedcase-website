@@ -1,48 +1,34 @@
 @startuml
 
-title : User enters data manually - data written in more than one session
+' Logged in user enters data manually in more than one session.
 
-participant "user" as u
-participant "front end" as f
-participant "api" as api
-participant "db" as db
+participant "User" as u
+participant "Front end" as f
+participant "API" as api
+participant "Back end" as db
 
-u -> f ++: login
-f -> api ++: send login request
-api -> db ++: check user have \ncorrect permissions
-return user have correct \npermission
-api -> f --: permit show of  \ndata entry UI
-f -> u ++: show data entry UI
-u -> f --: enter data and \nclick on Save
-f -> api ++: send entered data \nwith Incomplete flag
-api -> api : validate data for \ncompleted fields only
-api -> db ++: write data back
-db -> db : create record, \nset flag to incomplete
-db -> api --: confirm creation \nof row in table
-api -> f --: receive confirmation
-f -> u --: display confirmation
+f -> u ++: Show data entry UI
+u -> f --: Entering data
+f -> api ++: Clicked save data
+api -> db ++: Post data with\n"Incomplete" flag
+db -> db : Create record with\n"Incomplete" flag
+db -> api --: Confirm created row
+api -> f --: Receive confirmation
+f -> u --: Display confirmation
 
-u -> f ++: login to continue \ndata entry
-f -> api ++: send login request
-api -> db ++: check user have \ncorrect permissions
-db -> db : check for incomplete records
-return user have correct \npermission and \n incomplete records
-api -> f --: permit show of UI \nadd option to view \nincomplete records
-f -> u ++: give option to \ncontinue data input
-u -> f --: select partially \ncompleted record ID
-'u -> f : enter data
-f -> api ++: send ID
-api -> db ++: request data for ID
-db -> db : check user has \npermission to view record
-db -> api --: send back record data
-api -> f --: send back data
-'api -> f --: permit show of  \ndata entry UI
-f -> u ++: show pre-populated UI
-u -> f --: enter missing data
-f -> api ++: send entered data
-api -> db ++: send data back
-db -> db : update record, \nset flag to complete
-db -> api --: confirm update \nof row in table
-api -> f --: receive confirmation
-f -> u --: display confirmation
+f -> u ++: Show data entry UI
+u -> f --: Continuing data entry
+f -> api ++: Get previous\nsession from user ID
+db -> db : Check for\n"Incomplete" flags
+db -> api --: Send "Incomplete" data
+api -> f --: Show "Incomplete" data
+f -> u ++: Request to \ncontinue data entry
+u -> f --: Finish entering data
+f -> api ++: Clicked "Save and Submit"
+api -> api : Validate data
+api -> db ++: Post data with\n"Completed" flag
+db -> db : Create record
+db -> api --: Confirm created row
+api -> f --: Receive confirmation
+f -> u --: Display confirmation
 @enduml

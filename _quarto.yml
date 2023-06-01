@@ -38,7 +38,7 @@ website:
           contents:
           - community/contribute/index.qmd
           - community/contribute/blocks.qmd
-          - community/contribute/roadmap.md
+          - community/contribute/roadmap.qmd
           - community/contribute/decisions.md
         - section: "Team"
           contents:
@@ -51,10 +51,19 @@ website:
       align: left
       contents:
         - design/index.md
-        - Section: "Architecture Documentation"
+        - section: "Software Architecture Documentation"
           contents:
-            - design/introduction.qmd
-            - design/constraints.qmd
+            - design/software-architecture/introduction.qmd
+            - design/software-architecture/constraints.qmd
+            - design/software-architecture/context.qmd
+            - design/software-architecture/solution-strategy.qmd
+            - design/software-architecture/building-block-view.qmd
+            - design/software-architecture/runtime-view.qmd
+            # - design/software-architecture/deployment-view.qmd
+            - design/software-architecture/cross-cutting-concepts.qmd
+            # - design/software-architecture/architecture-decisions.qmd
+            # - design/software-architecture/quality-requirements.qmd
+            - design/software-architecture/risks.qmd
         - design/decisions.md
     - id: about
       title: "About"
@@ -86,3 +95,6 @@ editor:
   markdown:
     wrap: 72
     canonical: true
+
+execute:
+  echo: false

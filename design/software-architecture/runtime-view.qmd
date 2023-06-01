@@ -1,10 +1,33 @@
 ---
-title: Runtime View
+title: "Runtime view"
 ---
 
 This section describes the concrete behaviour, interactions, and
 pathways that data take within Seedcase. "Runtime" in this case refers
 to how the software works "in action".
+
+## Login and authentication
+
+Almost all users will need to log into the Seedcase-managed Data
+Resources. The steps for logging in and having their permission levels
+checked follows the sequence described in @fig-login-sequence.
+
+```{mermaid login-sequence}
+%%| label: fig-login-sequence
+%%| fig-cap: Login and authentication sequence of a registered user.
+%%{init:{'sequence':{'mirrorActors': false}}}%%
+sequenceDiagram
+  actor User
+  participant f as Frontend
+  participant api as API
+  participant be as Backend
+  
+  User ->>+ f: Enter login information
+  f ->>+ api: Send login request
+  api ->>+ be: Check permissions level
+  be -->>- api: Send permissions level
+  api -->>+ f: Show permission-dependent content
+```
 
 ## Data input
 
@@ -24,8 +47,6 @@ output. Specifically, these items are described as:
     automatically by a program) into Seedcase, passing through quality
     control checks, adding to the changelog, and storage into the
     database.
-
-<!-- TODO: Include links to these sections once they are done. -->
 
 ### Expected type of input data
 
@@ -125,6 +146,9 @@ into a new record in the table (or tables). Once done the database will
 confirm successful entry of data to the API which will in turn send the
 confirmation back to the user via the front end.
 
+![Logged in user who manually writes a new row to the Data
+Resource.](/design/images/runtime-manual-data-entry.png){#fig-manual-data-entry}
+
 #### Manual data entry: Done in multiple sessions
 
 There may be situations where an approved user will be prevented from
@@ -154,3 +178,79 @@ table (or tables) and update the flag to show the record is complete.
 Once done the database will confirm successful entry of data to the API
 which will in turn send the confirmation back to the user via the front
 end.
+
+![Logged in user enters data manually in more than one
+session](/design/images/runtime-manual-data-update.png){#fig-manual-data-update}
+
+## Requesting data
+
+There are two main ways to request for data from a Data Resource managed
+by Seedcase:
+
+1.  Submitting an application to request data, which will create a new
+    data project.
+2.  Re-using parts of an existing data project.
+
+```{mermaid data-request}
+%%| label: fig-data-request
+%%| fig-cap: "Logged in user who is requesting data from a Data Resource."
+sequenceDiagram
+    actor User
+    
+    participant f as Front end
+    participant api as API
+    participant be as Back end
+    
+    alt New data project
+      User ->>+ f: Selects variables to request
+      User ->>+ f: Fills in project metadata
+    else Re-use data project
+      User ->>+ f: Browse and select data project
+      User ->>+ f: Copy project metadata and modify
+    end
+    
+    f ->>+ api: Clicked "Submit"
+    api ->>+ be: Store request metadata
+    api ->>+ api: Inform admin
+    be ->>- api: Application approved
+    api ->>- User: Send information<br>for next steps
+```
+
+### Applying for a new data project
+
+Users who want to request data can browse the metadata, which includes a
+list of variables and datasets available as well as a data dictionary
+and changelog, in the Seedcase-managed Data Resource. Similar to an
+online shopping cart, users who want specific variables in the Data
+Resource will select them from the list of variables, which will go into
+the request application as a new data project. These data projects would
+be used to automate the data extraction process. In order to add the
+variables to a new data project application, the user would have to be
+registered and logged in.
+
+Aside from the selected list of requested variables, the user would need
+to write some information about the rationale for and intended use of
+the data as well as other project-specific metadata.
+
+Admin users would approve any new data project applications. This would
+trigger automated processes to run the data extraction and subsetting
+process. It would also bundle it and prepare it for transfer to the
+applicant user's secure server or other location where the data will be
+stored. Admin users can also modify the application form to comply with
+local regulations and legal requirements, such as removing or adding
+variables (apart from the variable list) may be required.
+
+The user can update the data project at any point in the data project's
+life-cycle. This includes requesting more variables or modifying the
+data project description and aim. The admin users would then need to
+approve these updates.
+
+### Re-using an existing data project
+
+Because data projects are stored (and optionally displayed on the Web
+Portal) as JSON or other machine-readable format, users who want to copy
+and modify an existing data project can extract and use the details from
+that data project as part of a new data project. The data projects
+listing on the Web Portal will include a button to either download the
+JSON metadata or to copy the project into a new data project
+application.

@@ -1,0 +1,25 @@
+---
+title: Roadmap
+---
+
+{{< include /includes/_wip.qmd >}}
+
+Because Seedcase will be built with modularity in mind, each component
+could be used (relatively) alone or together, nearly all the components
+could be deliverables (each User by each layer). Each deliverable would
+be to prototype a Minimum Viable Product (MVP) to begin testing it,
+identifying bugs, getting feedback, and establishing maintenance
+procedures. In addition to each component being a deliverable, each
+documentation or training section listed in @fig-roadmap-gantt could
+also be a deliverable.
+
+```{mermaid}
+%%| file: images/gantt.mmd
+%%| label: fig-roadmap-gantt
+%%| fig-cap: "General timeline of main tasks and milestones for the Seedcase project."
+```
+
+Acronyms used in the Gantt chart are: API for Application Programming
+Interface; CRUD for Create, Read, Update, Delete; UI for User Interface;
+and, MVP for Minimum Viable Product. Milestones are shown as diamonds.
+

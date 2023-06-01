@@ -25,8 +25,9 @@ Within the R world, a recent new tool came out called
 [Quarto](https://quarto.org/). Since its release, it has completely
 taken over as the tool to use when working with R and data science. We
 will use this tool because it aligns with our values and philosophies
-(described more in the Design [Introduction](/design/introduction.qmd)
-section) for multiple reasons.
+(described more in the Design
+[Introduction](/design/software-architecture/introduction.qmd) section)
+for multiple reasons.
 
 1.  It is open source.
 2.  The documentation is phenomenal and very beginner friendly.
@@ -48,4 +49,3 @@ section) for multiple reasons.
 
 For these reasons, we write our documentation that includes the website
 with Quarto.
-
