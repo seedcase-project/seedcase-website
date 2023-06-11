@@ -1,0 +1,89 @@
+---
+title: "In-person team meeting"
+description: "Details and agenda for our in-person team meeting."
+author: "Luke W. Johnston"
+date: "2023-06-12"
+categories:
+  - in-person
+  - meeting
+  - brainstorming
+  - planning
+---
+
+## Details
+
+-   Lunch with everyone on Tuesday
+
+-   2-days at SDCA in Forum (rooms in calendar invite)
+
+-   **Main aims of meeting**:
+
+    -   Look through applicants and discuss hiring process.
+    -   Discuss and decide on how we will work with the consulting
+        company.
+    -   Discuss and decide on next steps, any potential/current
+        barriers, and misc items.
+    -   Discuss and brainstorm how we can contribute to work across
+        Steno, for instance helping build software/organization to
+        streamline work, running short workshops, etc.
+
+## Schedule
+
+The schedule is meant as a **guide only**. We might spend more time on
+some topics and less on others.
+
+### Day 1: June 12
+
+| Time  | Item                                           |
+|-------|------------------------------------------------|
+| 10:00 | Discuss applicants, hiring, and job            |
+| 12:15 | 🍴 Lunch                                       |
+| 13:30 | Discuss how we'll work with consulting company |
+| 16:00 | End for day                                    |
+
+### Day 2: June 13
+
+| Time  | Item                                   |
+|-------|----------------------------------------|
+| 10:00 | Discuss next steps and any other items |
+| 12:15 | 🍴 Lunch all together                  |
+| 13:30 | Luke's meeting with company.           |
+| 14:30 | Discuss contributions across Steno     |
+| 16:00 | End for day                            |
+
+## Sessions
+
+### Job candidates and hiring process
+
+-   Go through candidates, discuss, and send out emails for interviews.
+
+### Working with consulting company
+
+-   Details on what our original plan was for consulting company, what
+    they can actually provide and do.
+-   Brainstorm what we want the company to do, how we can best use their
+    expertise and time, and how we can coordinate working with them.
+-   Plan out priorities to discuss with them for next meeting with them.
+
+### Next steps, barriers, and other items
+
+-   General update on progress and bigger picture items.
+-   What are some things we need to improve on?
+-   Any areas of struggle or barriers to progress?
+-   Next steps, areas of focus.
+-   **Optional tasks**:
+    -   Split up seedcase main project into sub websites? E.g. design,
+        community, learn, etc?
+    -   Move project over into rostools or create whole new
+        organization? Or stay with SDCA organization?
+    -   Review several "Discussion" labelled issues on repositories.
+    -   Brainstorm logo! :grin:
+
+### Cross-Steno contributions
+
+-   Brainstorm what we can offer and what we can provide
+    -   For instance, helping build software/organization to streamline
+        work, running short workshops, etc.
+-   Create a plan for organizing getting started, mapping out
+    people/roles, coordinating dates for further brainstorming meetings,
+    etc.
