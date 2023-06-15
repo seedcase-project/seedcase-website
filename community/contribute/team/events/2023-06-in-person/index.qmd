@@ -156,12 +156,22 @@ some topics and less on others.
             Seedcase.
         -   Colour blind friendly
         -   Simple and minimal
+    -   Ideas on general theme of Seedcase Product UI:
+        -   Create it so there are some default themes built-in, but
+            that it can be easily customizable with Sass (`.scss`) or
+            something similar.
     -   Logo, Kris started making some with Midjourney app, and made a
         basic draft of it.
     -   To fix on website: Community sidebar is weird and "View source"
         isn't on all pages.
     -   Splitting up repo contents (for seedcase website), others are
         neutral to the idea, might be good for admin/organizing though.
+    -   Seedcase will eventually need involvement of IT department,
+        since we will need a server to host the software.
+        -   Kris will eventually be responsible for connecting with IT
+            and coordinate things.
+        -   We can use the experience to inform how to set things up
+            with other IT departments in other organizations.
 
 ### Steno contributions
 
@@ -183,3 +193,4 @@ some topics and less on others.
     projects or things we can help with, then we can start working on
     those one-by-one. And so we can start building up a wait list.
     -   [ ] **Action**: Luke will create this and advertise it
+
