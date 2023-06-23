@@ -1,0 +1,51 @@
+project:
+  type: book
+  output-dir: _report
+
+
+book:
+  title: "Seedcase: Software Design and Architecture Documentation"
+  output-file: "seedcase-design.pdf"
+  chapters:
+    - index.qmd
+    - design/software-architecture/index.qmd
+    - design/software-architecture/introduction.qmd
+    - design/software-architecture/constraints.qmd
+    - design/software-architecture/context.qmd
+    - design/software-architecture/solution-strategy.qmd
+    - design/software-architecture/building-block-view.qmd
+    - design/software-architecture/runtime-view.qmd
+    # - design/software-architecture/deployment-view.qmd
+    - design/software-architecture/cross-cutting-concepts.qmd
+    # - design/software-architecture/architecture-decisions.qmd
+    # - design/software-architecture/quality-requirements.qmd
+    - design/software-architecture/risks.qmd
+  page-footer:
+    center:
+      - text: "License: CC-BY 4.0"
+
+bibliography: "includes/references.bib"
+csl: "includes/vancouver.csl"
+
+format:
+  pdf:
+    papersize: a4
+    fontsize: 12pt
+    geometry:
+      - top=30mm
+      - bottom=30mm
+      - left=30mm
+      - right=30mm
+    toc: true
+    toc-depth: 3
+
+editor:
+  markdown:
+    wrap: 72
+    canonical: true
+
+execute:
+  echo: false
+
+crossref:
+  chapters: true
