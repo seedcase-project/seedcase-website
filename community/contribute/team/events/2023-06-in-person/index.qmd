@@ -87,3 +87,110 @@ some topics and less on others.
 -   Create a plan for organizing getting started, mapping out
     people/roles, coordinating dates for further brainstorming meetings,
     etc.
+
+## Minutes
+
+### Interviews and hiring
+
+-   Went through candidates and started process towards interviewing.
+
+### Consulting company
+
+-   Areas we'd like help in:
+    -   Security
+    -   General/initial setup for best practices
+    -   General review of design/architecture
+-   Ideas on how often to work, when, and for how long? **Ultimately
+    depends on our discussion with them during a
+    "introduction/brainstorming" workshop**, where we will negotiate and
+    decide on what works best for everyone.
+    -   Maybe 2 days a week? Tue-Wed?
+        -   If this weekday setup, we should move meetings to Wed
+            afternoon.
+    -   Go in 6 months intervals? First phase would be for design and
+        getting set up, second would be focused on security and testing,
+        final maybe focusing on frontend/UI/UX?
+    -   Should of course be comfortable with English and working
+        remotely.
+
+### Next steps
+
+-   Areas of improvements:
+    -   Code reviews:
+        -   For bigger PRs, the submitter should schedule time with
+            someone else on the team for a virtual review to go through
+            the PR verbally, so we can move those PRs through sooner.
+        -   For smaller PRs, a simple visual/asynch review will work
+            fine.
+        -   For commit messages, have more detailed, descriptive
+            messages, especially emphasizing the why, not just the what.
+            Better yet is to reference an individual issue.
+        -   Include more documentation on the functions/code created.
+            For external facing code, include a complete docstring. For
+            internal code, write code in a descriptive enough way,
+            supplement with detailed enough comments, with a "top-level"
+            comment describing the basic purpose, type of input, and
+            type of output.
+    -   [ ] **Action**: Luke to put these into the contributing
+        document.
+    -   For meetings:
+        -   Use a template to cover some basic things that each person
+            covers, in 5 minutes or less.
+        -   Use "scrum standups" as inspiration.
+        -   [ ] **Action**: Luke will create templates we can follow.
+-   Struggles and barriers:
+    -   What is the general design for the common data model?
+    -   Using GitHub and Git
+        -   Potential solution for this is create some workshops on
+            using Git and GitHub. One for the basics and another for use
+            in collaboration settings.
+        -   [ ] **Action**: Luke create two new repos on the
+            steno-aarhus account with basic setup for how it will look.
+        -   [ ] **Action**: Kris organize times with other Steno people
+            (Julie) on creating these workshops.
+-   Misc:
+    -   Got domain name (`seedcase-project.org`) as well as a `.dk`
+        version.
+    -   Ideas on general theme of websites:
+        -   A light, soft blue/teal/green colour, to match idea of
+            Seedcase.
+        -   Colour blind friendly
+        -   Simple and minimal
+    -   Ideas on general theme of Seedcase Product UI:
+        -   Create it so there are some default themes built-in, but
+            that it can be easily customizable with Sass (`.scss`) or
+            something similar.
+    -   Logo, Kris started making some with Midjourney app, and made a
+        basic draft of it.
+    -   To fix on website: Community sidebar is weird and "View source"
+        isn't on all pages.
+    -   Splitting up repo contents (for seedcase website), others are
+        neutral to the idea, might be good for admin/organizing though.
+    -   Seedcase will eventually need involvement of IT department,
+        since we will need a server to host the software.
+        -   Kris will eventually be responsible for connecting with IT
+            and coordinate things.
+        -   We can use the experience to inform how to set things up
+            with other IT departments in other organizations.
+
+### Steno contributions
+
+-   Start with brainstorming with Kasper on how we can help him out with
+    his tasks
+    -   Schedule brainstorming session to see what his day *actually*
+        looks like, so we can identify sources of contribution.
+-   Start bringing together people who work on data on the management
+    side (not analysis side).
+    -   [ ] **Action**: Kris to learn who is doing data management stuff
+        and coordinate bringing them together.
+    -   [ ] **Action**: Luke to start creating docs describing what we
+        are doing and why we are doing it and how to go about it.
+-   Start working more on the project listing/registration module of
+    Seedcase, since others at Steno could benefit from that a lot. Would
+    be a nice "showcase" of what we are doing and how it can help
+    others.
+-   Create a survey/form for people across Steno to submit ideas for
+    projects or things we can help with, then we can start working on
+    those one-by-one. And so we can start building up a wait list.
+    -   [ ] **Action**: Luke will create this and advertise it
+
