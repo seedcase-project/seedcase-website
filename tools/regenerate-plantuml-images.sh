@@ -6,7 +6,7 @@
 # Usage:
 #
 #   - In the Terminal while in the project root folder:
-#       bash src/regenerate-plantuml-images.sh
+#       bash tools/regenerate-plantuml-images.sh
 #
 project_folder=$(git rev-parse --show-toplevel)
 plantuml_file="bin/plantuml.jar"

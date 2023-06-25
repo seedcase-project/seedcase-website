@@ -11,7 +11,7 @@
 # Usage:
 #
 #   - From the Terminal and in the parent folder:
-#       bash src/pr/reformat-markdown.sh
+#       bash tools/pr/reformat-markdown.sh
 #   - From GitHub in a Pull request as a comment:
 #       /reformat_markdown
 #
