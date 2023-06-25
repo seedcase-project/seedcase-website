@@ -5,7 +5,7 @@
 # used for the GitHub Pull Request command `/reformat_markdown` (managed in
 # `.github/workflows/pr-commands.yaml`).
 #
-# See `community/contribute/team/index.qmd` for more details on using this
+# See `team.seedcase-project.org` for more details on using this
 # script.
 #
 # Usage:
