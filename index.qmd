@@ -7,16 +7,16 @@ about:
   links: 
     - icon: cone-striped
       text: "Software (incomplete)"
-      href: "https://github.com/steno-aarhus/seedcase"
+      href: "https://github.com/seedcase-project/seedcase"
     - icon: info-circle
       text: "About"
-      href: "https://steno-aarhus.github.io/seedcase-project/about/"
+      href: "https://seedcase-project.org/about/"
     - icon: people
       text: "Community"
-      href: "https://steno-aarhus.github.io/seedcase-project/community/"
+      href: "https://seedcase-project.org/community/"
     - icon: diagram-2
       text: "Design"
-      href: "https://steno-aarhus.github.io/seedcase-project/design/"
+      href: "https://seedcase-project.org/design/"
 ---
 
 ::: {#hero-heading}

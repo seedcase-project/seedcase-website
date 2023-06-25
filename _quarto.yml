@@ -19,7 +19,7 @@ website:
       - text: "Design"
         href: design/index.md
       - icon: github
-        href: "https://github.com/steno-aarhus/seedcase-project"
+        href: "https://github.com/seedcase-project/seedcase-project"
   sidebar:
     - id: community
       title: "Community"
