@@ -120,15 +120,14 @@ just for the Product itself, but also for the Documentation and Culture
 and Collaboration. Files and content related to this support block are
 found in [Design Decisions](/design/decisions.md) (files in
 `design/decisions/`) and [Contributing
-Decisions](/community/contribute/decisions.md) (files in
-`community/contribute/decisions/`).
+Decisions](/community/decisions.md) (files in `community/decisions/`).
 
 ## "How" support block
 
 The "How" Support block is the more technical aspects of how this
 project is managed (in the [Governance](/community/GOVERNANCE.md)
 document), how to contribute (in the
-[Contributing](/community/contribute/index.qmd) document), and what are
-expected behaviours (in the [Code of
-Conduct](/community/CODE_OF_CONDUCT.md) document). More detail is found
-in the [Community](/community/index.qmd) page.
+[Contributing](/community/index.qmd) document), and what are expected
+behaviours (in the [Code of Conduct](/community/CODE_OF_CONDUCT.md)
+document). More detail is found in the [Community](/community/index.qmd)
+page.

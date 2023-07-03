@@ -1,30 +1,67 @@
 @startuml
-node "Seedcase Docker Framework" {
- node "User ID Management" {
-    [Local authentication]
-    [Connect remote ID server]
-  }
- }
- node "Django Framework" {
-  node "Admin Portal" {
-    [Project Management]
-    [Project Dataset Management]
-    [Data QC process Management]
-    [User Permission Management]
-    [API Security Management]
-    [External Connection Management]
-  }
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
 
-  node "API Layer" {
-    [API security]
-    [Upload/Update data]
-    [Upload/Update data file]
-    [data clean process]
-    [List all projects]
-    [List project log]
-    [Update one dataset]
-    [Add/Update researchers]
-   }
-  }
+' C4 Component diagram for The Seedcase product - API
+
+Person(direct_access, "Direct connection")
+Person(admin, "Admin user")
+Container(frontend, "Front end")
+Container(backend, "Back end")
+Container(uia, "User ID Authentication")
+System_Ext(external_server, "External secure server")
+
+Container_Boundary(api, "API") {
+  Component(post_update_project, "", "")
+  Component(approve_project, "", "")
+  Component(get_projects, "", "")
+
+  Component(get_metadata, "", "")
+  Component(post_update_metadata, "", "")
+
+  Component(post_update_user, "", "")
+  Component(approve_user, "", "")
+  Component(assign_user_roles, "", "")
+
+  Component(get_changelog, "", "")
+  Component(post_update_changelog, "", "")
+
+  Component(post_update_data_to_db, "", "")
+  Component(post_update_data_raw, "", "")
+  Component(process_data_raw_to_db, "", "")
+  Component(get_data, "", "")
+  Component(send_data, "", "")
+
+  Component(qc_general, "", "")
+  Component(qc_plugins, "", "")
 }
+
+Rel(direct_access, uia, "Authenticate access")
+Rel(uia, admin, "Admin access")
+Rel(frontend, uia, "Authenticate access")
+
+Rel(get_projects, frontend, "Update public list")
+Rel(get_metadata, frontend, "Update public list")
+Rel(get_changelog, frontend, "Update public list")
+
+Rel(admin, approve_project, "")
+Rel(admin, approve_user, "")
+Rel(admin, assign_user_roles, "")
+Rel(uia, post_update_user, "")
+Rel(approve_user, post_update_user, "")
+Rel(assign_user_roles, post_update_user, "")
+Rel(admin, assign_user_roles, "")
+Rel(backend, get_data, "")
+Rel(get_data, admin, "")
+
+Rel(approve_project, send_data, "")
+Rel(send_data, external_server, "")
+
+Rel(uia, post_update_project, "")
+Rel(uia, post_update_metadata, "")
+Rel(uia, post_update_changelog, "")
+Rel(uia, post_update_data_to_db, "")
+Rel(uia, post_update_data_raw, "")
+Rel(post_update_data_raw, process_data_raw_to_db, "")
+
+
 @enduml

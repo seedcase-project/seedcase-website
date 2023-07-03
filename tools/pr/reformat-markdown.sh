@@ -5,13 +5,13 @@
 # used for the GitHub Pull Request command `/reformat_markdown` (managed in
 # `.github/workflows/pr-commands.yaml`).
 #
-# See `community/contribute/team/index.qmd` for more details on using this
+# See `team.seedcase-project.org` for more details on using this
 # script.
 #
 # Usage:
 #
 #   - From the Terminal and in the parent folder:
-#       bash src/pr/reformat-markdown.sh
+#       bash tools/pr/reformat-markdown.sh
 #   - From GitHub in a Pull request as a comment:
 #       /reformat_markdown
 #
