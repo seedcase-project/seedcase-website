@@ -25,7 +25,7 @@ version_tag <- git_tag_create(
 )
 git_push()
 git_tag_push(repo_version)
-if (interactive()) browseURL("https://github.com/steno-aarhus/seedcase-project/releases/new")
+if (interactive()) browseURL("https://github.com/seedcase-project/seedcase-project/releases/new")
 
 # This is for when we upload to Zenodo
 # tag_archive_file <- str_c("seedcase-project", repo_version, ".zip")
