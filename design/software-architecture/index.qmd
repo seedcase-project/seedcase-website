@@ -1,5 +1,21 @@
 ---
-title: "Overview of report"
+title: "Software architecture documentation overview"
 ---
 
-<!-- Following [arc42](https://arc42.org) and [C4](https://c4model.com/) -->
+We structured the software architecture documentation to follow the
+[arc42](https://arc42.org) template and the [C4
+Model](https://c4model.com/) as much as is relevant for our situation,
+since these both are fairly popular and common templates to use.
+
+We've written these documents considering a few people in mind. The full
+list is found in the [Stakeholders](introduction.qmd#stakeholders)
+section of the Introduction. Briefly,
+
+-   **New contributors/team members**: The biggest reason to have these
+    documentation are to quickly onboard new contributors or team
+    members to the project. We assume that this reader will potentially
+    read through all the documentation.
+-   **Other research software engineers**: This might be fo
+-   **External, non-technical stakeholders**: These are readers who
+    might
+
