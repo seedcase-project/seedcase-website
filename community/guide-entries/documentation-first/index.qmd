@@ -1,8 +1,8 @@
 ---
 title: "Documentation-first culture"
-description: ""
+description: "Principles and reasons for building a documentation-first work culture."
 author: "Luke W. Johnston"
-date: "2023-05-20"
+date: "2023-07-03"
 date-modified: last-modified
 categories:
   - culture
@@ -11,12 +11,93 @@ categories:
   - documentation
 ---
 
-https://about.gitlab.com/company/culture/all-remote/handbook-first-documentation/
+Documentation that is easy to find, search, update, and use is crucial
+not just for the Product users, but also to the development team and to
+an organization's members. Whether it is for onboarding, general
+support, or other questions related to doing our work, there needs to be
+documentation on how to do that. Often that "documentation" is
+communicated through a team or organization verbally and through its
+culture. This has a lot of consequences though, for instance, if a team
+member who has more knowledge about a process or code leaves, that
+knowledge is lost. Likewise, onboarding new team members is more
+difficult if it needs to be done verbally or informally learned on the
+job.
 
-https://www.remote-work.io/how-to-nurture-a-culture-of-documentation-in-remote-teams/
+Many of these issues can be solved with having a "documentation-first"
+culture. There are a few role models for this type of work culture, but
+[GitLab](https://about.gitlab.com/company/culture/all-remote/handbook-first-documentation/)
+is a company that shows some of the best examples of how useful this
+type of culture is. We use them as inspiration for describing this
+philosophy.
 
-https://www.ebiester.com/documentation/2022/12/23/building-documentation-culture.html
+## Benefits to a "doc-first" culture
 
-https://hickamsdictum.com/how-to-build-a-culture-of-documentation-534bd75817d6
+-   **Retain and spread knowledge**: Having our processes, workflows,
+    and decisions written down makes it easier to record knowledge and
+    skills we've gained and learned as well as to share it with others.
+-   **Reduce need to ask for help**: If it is documented in an easy to
+    search location, it means less time is spent asking another team
+    member a question.
+-   **Easier onboarding experience**: Being a new member means having
+    lots of questions and learning to do about the team culture and how
+    to do things. If it is documented somewhere, new members can learn
+    by reviewing those documents.
+-   **Reduce need for meetings**: Meetings are often used to answer
+    questions from the team. If it is documented, there is less need for
+    meetings.
 
-https://towardsdatascience.com/data-documentation-woes-heres-a-framework-6aba8f20626c
+## Basic principles we aim to follow
+
+-   Documentation is always evolving and is never finished.
+-   Something documented is better than nothing documented.
+-   Something incompletely and/or imperfectly documented is better than
+    something completed and/or perfect.
+-   Search the documentation first, ask a team member if it's not in the
+    documentation.
+-   If it isn't in the documentation, add it.
+-   Empowering action is better than asking for permission, so the less
+    barriers to making contribution, the better.
+-   Any are welcome to contribute, though we will always discuss and
+    potentially modify that contribution to fit our style and content.
+-   Public documentation is prioritized over private documentation.
+
+## Add documentation as soon as it is needed
+
+If there is a new topic or if documentation doesn't exist on something,
+the best time to create it is now! Creating documentation will always
+take priority over other tasks, and deadlines will always try to reflect
+that priority. If more time is needed for a task because documentation
+needs to be created first? Perfect, deadlines can almost always be
+extended.
+
+If you are thinking of sending an email or writing a longer form message
+about a question or topic, re-think that and instead take the time to
+create new file in the repository and start written down your question
+and the answers you've found for it. The content doesn't have to be
+much, a paragraph or two is fine! Then submit a Pull Request in the
+GitHub repository. If you feel the question is something we should
+discuss as a team, then instead create an Issue so we can discuss it
+there.
+
+## All documentation is found on GitHub
+
+All our documentation on Seedcase, whether it is processes, workflows,
+culture, or technical, are found on our
+[`seedcase-project`](https://github.com/seedcase-project) GitHub
+organization account.
+
+-   Documentation on software and data design, contributing guidelines,
+    and learning (either on usage of Seedcase or general) are found on
+    the
+    [`seedcase-project`](https://github.com/seedcase-project/seedcase-project)
+    repository.
+-   "Internal" team documentation is found on our
+    [`team`](https://github.com/seedcase-project/team) repository.
+-   Product specific documentation will be found on our
+    [`seedcase`](https://github.com/seedcase-project/seedcase)
+    repository.
+
+## Reviewing our contributing guidelines
+
+To add or modify documentation, check out the guidelines section of the
+[contributing](community/CONTRIBUTING.md) document.
