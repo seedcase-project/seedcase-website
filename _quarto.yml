@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Seedcase Project"
-  # favicon: "images/favicon.ico"
+  favicon: "/images/logo.png"
   site-url: "https://seedcase-project.org/"
   repo-url: "https://github.com/seedcase-project/seedcase-project"
   page-footer:
@@ -11,6 +11,7 @@ website:
       - text: "License: CC-BY 4.0"
         href: LICENSE.md
   navbar:
+    logo: "/images/logo.png"
     right:
       - text: "About"
         href: about/index.md
