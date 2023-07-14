@@ -50,8 +50,8 @@ philosophy.
 
 -   Documentation is always evolving and is never finished.
 -   Something documented is better than nothing documented.
--   Something incompletely and/or imperfectly documented is better than
-    something completed and/or perfect.
+-   Something incompletely and/or imperfectly documented *now* is better than
+    something fully completed and/or perfectly done *later*.
 -   Search the documentation first, ask a team member if it's not in the
     documentation.
 -   If it isn't in the documentation, add it.
