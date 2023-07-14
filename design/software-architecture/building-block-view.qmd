@@ -1,5 +1,6 @@
 ---
 title: Building block view
+order: 5
 ---
 
 {{< include /includes/_wip.qmd >}}
