@@ -20,6 +20,7 @@ website:
         href: community/index.qmd
       - text: "Design"
         href: design/index.md
+    tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-project"
   sidebar:
@@ -50,17 +51,8 @@ website:
         - design/index.md
         - section: "Software Architecture Documentation"
           contents:
-            - design/software-architecture/introduction.qmd
-            - design/software-architecture/constraints.qmd
-            - design/software-architecture/context.qmd
-            - design/software-architecture/solution-strategy.qmd
-            - design/software-architecture/building-block-view.qmd
-            - design/software-architecture/runtime-view.qmd
-            # - design/software-architecture/deployment-view.qmd
-            - design/software-architecture/cross-cutting-concepts.qmd
-            # - design/software-architecture/architecture-decisions.qmd
-            # - design/software-architecture/quality-requirements.qmd
-            - design/software-architecture/risks.qmd
+            # Orders by using the `order:` key in the YAML header of the files
+            - auto: design/software-architecture/
         - design/decisions.md
     - id: about
       title: "About"
