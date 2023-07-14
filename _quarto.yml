@@ -11,6 +11,7 @@ website:
       - text: "License: CC-BY 4.0"
         href: LICENSE.md
   navbar:
+    pinned: true
     right:
       - text: "About"
         href: about/index.md
@@ -23,20 +24,27 @@ website:
   sidebar:
     - id: community
       title: "Community"
+      pinned: true
       style: "floating"
       align: left
+      collapse-level: 1
       contents:
         - community/index.qmd
-        - community/posts.md
-        - community/CONTRIBUTING.md
+        - section: "Contributing"
+          contents:
+            - text: "Overview"
+              href: community/CONTRIBUTING.md
+            - auto: community/guide-entries
+            - auto: community/decisions
+            - community/CODE_OF_CONDUCT.md
         - community/blocks.qmd
         - community/roadmap.qmd
-        - community/decisions.md
-        - community/CODE_OF_CONDUCT.md
     - id: design
       title: "Design"
+      pinned: true
       style: "floating"
       align: left
+      collapse-level: 1
       contents:
         - design/index.md
         - section: "Software Architecture Documentation"
@@ -55,6 +63,10 @@ website:
         - design/decisions.md
     - id: about
       title: "About"
+      pinned: true
+      style: "floating"
+      align: left
+      collapse-level: 1
       contents:
       - about/index.md
       - text: "History"
