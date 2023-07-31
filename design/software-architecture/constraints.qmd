@@ -1,5 +1,6 @@
 ---
 title: "Constraints"
+order: 2
 ---
 
 {{< include /includes/_wip.qmd >}}
@@ -56,4 +57,3 @@ of those constraints are summarized below.
 | Incorporate "Test/Doc-Driven Development" styles | Each has pros and cons, we use what works best                   |
 
 : Conventions that we should follow or consider for Seedcase.
-

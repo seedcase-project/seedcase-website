@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Seedcase Project"
-  # favicon: "images/favicon.ico"
+  favicon: "/images/logo.png"
   site-url: "https://seedcase-project.org/"
   repo-url: "https://github.com/seedcase-project/seedcase-project"
   page-footer:
@@ -11,6 +11,8 @@ website:
       - text: "License: CC-BY 4.0"
         href: LICENSE.md
   navbar:
+    pinned: true
+    logo: "/images/logo.png"
     right:
       - text: "About"
         href: about/index.md
@@ -18,43 +20,46 @@ website:
         href: community/index.qmd
       - text: "Design"
         href: design/index.md
+    tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-project"
   sidebar:
     - id: community
       title: "Community"
+      pinned: true
       style: "floating"
       align: left
+      collapse-level: 1
       contents:
         - community/index.qmd
-        - community/posts.md
-        - community/CONTRIBUTING.md
+        - section: "Contributing"
+          contents:
+            - text: "Overview"
+              href: community/CONTRIBUTING.md
+            - auto: community/guide-entries
+            - auto: community/decisions
+            - community/CODE_OF_CONDUCT.md
         - community/blocks.qmd
         - community/roadmap.qmd
-        - community/decisions.md
-        - community/CODE_OF_CONDUCT.md
     - id: design
       title: "Design"
+      pinned: true
       style: "floating"
       align: left
+      collapse-level: 1
       contents:
         - design/index.md
         - section: "Software Architecture Documentation"
           contents:
-            - design/software-architecture/introduction.qmd
-            - design/software-architecture/constraints.qmd
-            - design/software-architecture/context.qmd
-            - design/software-architecture/solution-strategy.qmd
-            - design/software-architecture/building-block-view.qmd
-            - design/software-architecture/runtime-view.qmd
-            # - design/software-architecture/deployment-view.qmd
-            - design/software-architecture/cross-cutting-concepts.qmd
-            # - design/software-architecture/architecture-decisions.qmd
-            # - design/software-architecture/quality-requirements.qmd
-            - design/software-architecture/risks.qmd
+            # Orders by using the `order:` key in the YAML header of the files
+            - auto: design/software-architecture/
         - design/decisions.md
     - id: about
       title: "About"
+      pinned: true
+      style: "floating"
+      align: left
+      collapse-level: 1
       contents:
       - about/index.md
       - text: "History"

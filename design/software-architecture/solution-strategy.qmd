@@ -1,5 +1,6 @@
 ---
 title: "Solution strategy"
+order: 4
 ---
 
 {{< include /includes/_wip.qmd >}}
