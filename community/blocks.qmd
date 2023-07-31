@@ -118,8 +118,9 @@ This support block contains explanations and justifications for why we
 choose the technologies, workflows, and designs that we do. This is not
 just for the Product itself, but also for the Documentation and Culture
 and Collaboration. Files and content related to this support block are
-found in [Design Decisions](/design/decisions.md) (files in
-`design/decisions/`) and [Contributing
+found in the software architecture [Design
+Decisions](/design/software-architecture/architecture-decisions.qmd)
+(files in `design/software-architecture/decisions/`) and [Contributing
 Decisions](/community/CONTRIBUTING.md#decisions) (files in
 `community/decisions/`).
 

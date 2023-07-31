@@ -177,11 +177,11 @@ subsection](#permissions) below.
 ### Copyright and licensing
 
 Seedcase will have the MIT license (see the section on [Why choose a MIT
-License](/design/decisions/why-license/) for more info). We will also be
-using a Developer Certification of Origin (DCO) for anyone developing
-and submitting code from outside the core project team. This will be
-implemented using [GitHub App DCO](https://github.com/apps/dco). The
-licence text itself is available
+License](/design/software-architecture/decisions/why-license/) for more
+info). We will also be using a Developer Certification of Origin (DCO)
+for anyone developing and submitting code from outside the core project
+team. This will be implemented using [GitHub App
+DCO](https://github.com/apps/dco). The licence text itself is available
 [here](https://developercertificate.org).
 
 ### Compliance with data regulations
