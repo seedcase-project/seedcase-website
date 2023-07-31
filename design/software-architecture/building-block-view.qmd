@@ -295,6 +295,24 @@ Management Layer* part.
 
 ### Back End Environment (whitebox)
 
+The input data will be quite heterogeneous and so the Seedcase backend
+will need to be composed of multiple components:
+
+-   Raw data files as plain text
+-   Cleaning and processing programming scripts
+-   A formal database structure (e.g. SQL), that is ACID (Atomic,
+    Consistent, Isolated, and Durable) compliant for data integrity and
+    that handles heterogeneous data types
+-   A Common Data Model that is standardized and structured for use by
+    the database
+-   A version control system to track changes to the raw data and
+    processing scripts, for recordkeeping, auditing, and transparency
+-   A data version numbering system, to help track which data the user
+    is working with and to allow for comparison between versions
+-   A changelog describing the changes
+-   A data dictionary linked to the variables contained in the database,
+    modified manually by the users but generated automatically
+
 ![C4 Component diagram showing the Back End Environment
 Container.](/design/images/component-backend.png)
 
