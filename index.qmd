@@ -1,9 +1,11 @@
 ---
-title: "Seedcase"
+title: "Seedcase Project"
 subtitle: A framework for an open and scalable infrastructure for health data
 about:
   id: hero-heading
-  template: jolla
+  template: solana
+  image: /images/logo-full-color.png
+  image-width: 20em 
   links: 
     - icon: cone-striped
       text: "Software (incomplete)"
