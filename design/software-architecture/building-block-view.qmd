@@ -307,8 +307,9 @@ will need to be composed of multiple components:
     the database
 -   A version control system to track changes to the raw data and
     processing scripts, for recordkeeping, auditing, and transparency
--   A data version numbering system, to help track which data the user
-    is working with and to allow for comparison between versions
+-   A data version numbering system, based on the
+    [CalVer](https://calver.org/) style, to help track which data the
+    user is working with and to allow for comparison between versions
 -   A changelog describing the changes
 -   A data dictionary linked to the variables contained in the database,
     modified manually by the users but generated automatically
