@@ -53,7 +53,6 @@ website:
           contents:
             # Orders by using the `order:` key in the YAML header of the files
             - auto: design/software-architecture/
-        - design/decisions.md
     - id: about
       title: "About"
       pinned: true
