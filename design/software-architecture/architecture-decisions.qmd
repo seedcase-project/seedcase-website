@@ -1,6 +1,12 @@
 ---
 title: "Architecture decisions"
 order: 9
+listing:
+  contents: decisions
+  type: table
+  table-hover: true
+  table-striped: true
+  categories: true
 ---
 
 {{< include /includes/_wip.qmd >}}
