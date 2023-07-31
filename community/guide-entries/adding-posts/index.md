@@ -15,7 +15,8 @@ ones, adding a post to this [Quarto](https://quarto.org/) website is
 relatively straight-forward. For now, I'll focus on adding a post to the
 Community section of the website, though these principles apply to any
 post/collection we use throughout this site (e.g. the [Community
-Posts](/community/posts.md) is a collection of post entries).
+Contributing Guide Entries](/community/CONTRIBUTING.md#guide-entries) is
+a collection of post entries).
 
 There are two ways to add a post:
 
