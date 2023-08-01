@@ -11,6 +11,7 @@ date-modified: last-modified
 categories:
   - licensing
   - copyright
+  - software-architecture
 ---
 
 For a project like Seedcase to fully succeed in our stated mission, a
