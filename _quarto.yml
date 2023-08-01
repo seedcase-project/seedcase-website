@@ -49,10 +49,7 @@ website:
       collapse-level: 1
       contents:
         - design/index.md
-        - section: "Software Architecture Documentation"
-          contents:
-            # Orders by using the `order:` key in the YAML header of the files
-            - auto: design/software-architecture/
+        - auto: design/software-architecture/
     - id: about
       title: "About"
       pinned: true
