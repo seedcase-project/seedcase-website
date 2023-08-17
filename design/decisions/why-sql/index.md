@@ -4,13 +4,14 @@ description: |
   SQL is the backbone of any database system. However there are many variants
   of SQL. PostgreSQL is a powerful and feature-full variant.
 author: Kristiane Beicher
-categories:
-- backend
-- database
-- software
-- tools
-- technology
 date: last-modified
+categories:
+  - backend
+  - database
+  - software
+  - tools
+  - technology
+  - software-architecture
 ---
 
 # Software evaluation

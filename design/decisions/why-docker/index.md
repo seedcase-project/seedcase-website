@@ -1,13 +1,17 @@
 ---
 title: "Why Docker as our container software"
-# description: ""
+description: |
+  While there are several container technologies, Docker is one of the
+  most popular and commonly used technologies.
 author: "Richard Ding"
 date: "2022-12-14"
+date-modified: last-modified
 categories:
   - container
   - software
   - tools
   - technology
+  - software-architecture
 ---
 
 ## Introduction

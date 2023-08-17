@@ -10,6 +10,7 @@ date-modified: last-modified
 categories:
   - programming
   - development
+  - software-architecture
 ---
 
 ## Introduction
