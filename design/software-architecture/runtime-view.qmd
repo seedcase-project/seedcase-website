@@ -255,3 +255,18 @@ that data project as part of a new data project. The data projects
 listing on the Web Portal will include a button to either download the
 JSON metadata or to copy the project into a new data project
 application.
+
+## Browsing projects and results
+
+There are at least three routes we anticipate the external user might
+take when browsing the Data Resource:
+
+1.  Reading about the Data Resource, its history, organizational
+    structure and ownership, and any other details in a typical "About"
+    section.
+2.  Browsing the completed and ongoing projects that are using or have
+    used the Data Resource, including viewing some of the basic results
+    of the completed projects.
+3.  Viewing some basic aggregate statistics of some key variables in the
+    Data Resource. The aggregate statistics would be generated
+    programmatically.
