@@ -35,6 +35,9 @@ and anyone can submit an entry to be added (or modify an existing one).
 ::: {#guide-entries}
 :::
 
+For team-specific contributing guidelines, check out our
+[team.seedcase-project.org](https://team.seedcase-project.org/) website.
+
 ## Decisions on choices
 
 For transparency and recordkeeping, we try to document and explain why
@@ -43,4 +46,3 @@ the community.
 
 ::: {#decisions}
 :::
-
