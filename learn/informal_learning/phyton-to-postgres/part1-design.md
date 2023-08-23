@@ -10,5 +10,15 @@ Once I've mentally played with the ideas for a few days I do prefer to put an ol
 
 ### Actual pen(cil) to paper
 
-For this project I ended up with two sheets of paper, one detailing what the user should be able to do, both initially and if there are later versions.  The other being a list of which functionality the app should therefore contain at various stages throughout its lifecycle.  All of this is without me actually thinking about any sort of interface, although having worked with user acceptance testing for as many years as I have, I can never be entirely free of keeping a potential interface at the very back of my mind while thinking about practicalities.  For now though, the whole project is a thing run either in jyypiter notebook or directly in the command line.
+For this project I ended up with a list with two columns.  The first details the user interaction, the second what is then happening in the program in order to make it happen.  These were then divided into a version 1 and a version 2+, so basic functionality is in one list, and more elaborate functions are kept separate.  All of this is before thinking about any sort of interface, for now the whole project is a thing run either in jupyter notebook or directly from the command line.
 
+| Python Side|Postgres Side |
+|----------|----------|
+| v.1 | v.1 |
+|connect to ChatGPT <br>connect to the database <br>create question <br>-send to ChatGPT <br>-capture and send to db <br>get answer back <br>-capture as variable <br>-send to db |store questions <br>store answers <br>capture user data <br>generate a Q&A ID based on the userID|
+| v.2 | v.2 |
+|web front end <br>-login option <br>-pick either new question or archive <br>share QAs with other users |identify QA by user <br>option to share QA with other named user(s)/public|
+
+
+
+<!-- TODO: transcribe the sheet here -->
