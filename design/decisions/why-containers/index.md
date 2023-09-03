@@ -12,6 +12,7 @@ categories:
   - software
   - tools
   - technology
+  - software-architecture
 ---
 
 ## What is Containerization
