@@ -223,8 +223,8 @@ Users who want to request data can browse the metadata, which includes a
 list of variables and datasets available as well as a data dictionary
 and changelog, in the Seedcase-managed Data Resource. Similar to an
 online shopping cart, users who want specific variables in the Data
-Resource will select them from the list of variables, which will go into
-the request application as a new data project. These data projects would
+Resource will be able to select them from the list of variables. These selected variables will go into
+the request application as a new data project, which would
 be used to automate the data extraction process. In order to add the
 variables to a new data project application, the user would have to be
 registered and logged in.
@@ -233,13 +233,13 @@ Aside from the selected list of requested variables, the user would need
 to write some information about the rationale for and intended use of
 the data as well as other project-specific metadata.
 
-Admin users would approve any new data project applications. This would
+Admin users would approve any new data project applications. When an application is approved, it would
 trigger automated processes to run the data extraction and subsetting
 process. It would also bundle it and prepare it for transfer to the
 applicant user's secure server or other location where the data will be
 stored. Admin users can also modify the application form to comply with
 local regulations and legal requirements, such as removing or adding
-variables (apart from the variable list) may be required.
+variables (apart from the variable list), that may be required.
 
 The user can update the data project at any point in the data project's
 life-cycle. This includes requesting more variables or modifying the
@@ -251,14 +251,14 @@ approve these updates.
 Because data projects are stored (and optionally displayed on the Web
 Portal) as JSON or other machine-readable format, users who want to copy
 and modify an existing data project can extract and use the details from
-that data project as part of a new data project. The data projects
+that project as part of a new data project. The data projects
 listing on the Web Portal will include a button to either download the
 JSON metadata or to copy the project into a new data project
 application.
 
 ## Browsing projects and results
 
-There are at least three routes we anticipate the external user might
+There are at least three routes, we anticipate the [external user](https://seedcase-project.org/design/software-architecture/context) might
 take when browsing the Data Resource:
 
 1.  Reading about the Data Resource, its history, organizational
