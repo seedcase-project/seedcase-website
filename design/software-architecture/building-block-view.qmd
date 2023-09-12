@@ -283,12 +283,12 @@ there are some overlapping features. For instance, each endpoint accepts
 
 | Building Block         | Description                                                                                                     |
 |--------------------------------|-----------------------------------------------------------------------------------------------|
-| API Security           | Implementing measures to protect an API from unauthorized access, data theft, and other security threats.       |
-| Dataset CRUD API       | API endpoint allows creating, reading, updating, and deleting the dataset in the system.                        |
-| Data file CRUD API     | API endpoint allows creating, reading, updating, and deleting the data file in the system.                      |
-| List Projects Metadata | API endpoint allows listing all existing projects, it could use parameters to display related project metadata. |
-| List Project Log       | API endpoint allows displaying a log of all activity related to a specific project in the system.               |
-| Researchers CRUD API   | API endpoint allows creating, reading, updating, and deleting a researcher user in the system.                  |
+| API Security           | This implements measures to protect an API from unauthorized access, data theft, and other security threats.       |
+| Dataset CRUD API       | This API endpoint allows creating, reading, updating, and deleting the dataset in the system.                        |
+| Data file CRUD API     | This API endpoint allows creating, reading, updating, and deleting the data file in the system.                      |
+| List Projects Metadata | This API endpoint allows listing all existing projects, it could use parameters to display related project metadata. |
+| List Project Log       | This API endpoint allows displaying a log of all activity related to a specific project in the system.               |
+| Researchers CRUD API   | This API endpoint allows creating, reading, updating, and deleting a researcher user in the system.                  |
 
 : Blackboxes related to *Data Entry* within the *User and Data
 Management Layer* part.
