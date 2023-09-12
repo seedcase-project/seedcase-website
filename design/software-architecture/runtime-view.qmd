@@ -164,7 +164,7 @@ to the database along the incomplete flag.
 
 When the user at a later time goes back to the data entry they will be
 presented with the option of completing any incomplete records as well
-as entering new data. If they click on Complete Records they are shown
+as entering new data. If they click on "Complete Records" they are shown
 the records that they have started but not submitted. Once they select a
 partially completed record the front end will request the currently
 completed items from the database via the API layer before displaying
