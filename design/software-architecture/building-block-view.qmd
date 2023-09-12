@@ -12,8 +12,8 @@ it is more detailed than the other design documents but not so detailed
 as to be describing actual code. To clarify how much detail each part
 will be described in, there are two established terms we use:
 
--   Whitebox: {{< var design.whitebox >}}
--   Blackbox: {{< var design.blackbox >}}
+-   **Whitebox**: {{< var design.whitebox >}}
+-   **Blackbox**: {{< var design.blackbox >}}
 
 The [first section](#level1) covers the overall view of the main parts
 inside Seedcase. The [second section](#level2) goes deeper and describes
@@ -42,25 +42,25 @@ Seedcase.](/design/images/container.png)
 
 This list describes the individual blackbox parts in more detail:
 
--   Web Interface: This is the interface that users will interact with,
+-   **Web Interface**: This is the interface that users will interact with,
     displayed as HTML pages. Different sections of the Web Interface are
     available to different users depending on their permission level
     (for instance, admin users will see more pages related to managing
     data projects).
--   User Authentication: This is the part that handles authenticating
+-   **User Authentication**: This is the part that handles authenticating
     users who log into the Web Portal of the Data Resource instance
     managed by Seedcase. Depending on the user's assigned permissions,
     they will see different pages within the Web Interface.
--   User and Data Management Layer: This is the programmatic interface
+-   **User and Data Management Layer**: This is the programmatic interface
     that connects the Web Portal to the Back End Environment. While all
     actions will be achieved through the Web Portal, advanced users will
     be able to directly connect to this layer (for instance, through the
     terminal, Python, or R).
--   Back End Environment: This enclosed environment will contain the
+-   **Back End Environment**: This enclosed environment will contain the
     database and file storage for the Data Resource. Raw data will be
     stored here, as well as administrative data files such as a listing
     of the data projects.
--   External Secure Server: This external system is where requested data
+-   **External Secure Server**: This external system is where requested data
     will be sent to depending on needs of the user.
 
 ## Building block Level 2
@@ -143,7 +143,7 @@ These are some potential endpoints for the API. For almost all of them,
 there are some overlapping features. For instance, each endpoint accepts
 (either as a requirement or optionally):
 
--   Authorization (string): A security code that is used to authenticate
+-   **Authorization (string)**: A security code that is used to authenticate
     the user. This security code should be generated and provided to the
     user when they create an account.
 
