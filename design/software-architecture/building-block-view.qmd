@@ -36,7 +36,7 @@ Seedcase.](/design/images/container.png)
 | User Authentication            | Managing and controlling who gets access to what sections of the Data Resource.               |
 | User and Data Management Layer | The programmatic layer connecting the web interface to the back end environment.              |
 | Back End Environment           | This enclosed environment contains the inputted data, admin details, changelog, and raw data. |
-| External Secure Server         | The external server where requested data is sent to (if needed).                              |
+| External Secure Server         | The external server where requested data is sent to (only needed if the user requesting access is an external partner).                              |
 
 : Core internal parts of Seedcase (as blackboxes).
 
