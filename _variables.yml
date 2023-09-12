@@ -10,13 +10,13 @@ design:
     A description of the internal functioning and behaviour of a system.
     For instance, how the internals of Seedcase like the web front end part,
     the programmatic API part, and the data back end environment part interact
-    with each other. "White" implying seen or visible (e.g. daylight).
+    with each other. "White" implying seen or visible (e.g., daylight).
   blackbox: |
     A description of the external functioning and behaviour of a system that
     doesn't include *how* it works internally. For instance, how the API part of
     Seedcase connects and communicates with the other parts within Seedcase,
     but not how the API internally makes these connections and communications.
-    "Black" implying unseen or not visible (e.g. night time).
+    "Black" implying unseen or not visible (e.g., night time).
   crud: |
     An acronym for Create, Read, Update, and Delete. These four actions are the
     core operations for data storage on computers.
