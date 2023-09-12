@@ -6,7 +6,7 @@ order: 5
 {{< include /includes/_wip.qmd >}}
 
 This document describes the core parts of the software, what each of the
-"building blocks" are for Seedcase and how they connect and interact
+"building blocks" are for Seedcase, and how they connect and interact
 with one another. This is the "blueprint" for the design of Seedcase, so
 it is more detailed than the other design documents but not so detailed
 as to be describing actual code. To clarify how much detail each part
@@ -21,7 +21,7 @@ the contents within each main part, but only as blackboxes.
 
 ## Whitebox overall system, Level 1 {#level1}
 
-This section is a high level overview of the internals of Seedcase, and
+This section is a high level overview of the internals of Seedcase and
 is visually represented with the ["C4
 Container"](https://c4model.com/#ContainerDiagram) diagram below. Each
 part within the diagram is a blackbox representation of the core
@@ -63,7 +63,7 @@ This list describes the individual blackbox parts in more detail:
 -   **External Secure Server**: This external system is where requested data
     will be sent to depending on needs of the user.
 
-## Building block Level 2
+## Building block, Level 2
 
 ### Web Portal (whitebox)
 
@@ -99,7 +99,7 @@ This list describes the individual blackbox parts in more detail:
 
 -   The page contains a list of all data projects connected to the Data
     Resource. This would include the title of the project, the name of
-    the applicant and who else will have access to the data, as well as
+    the applicant, and who else will have access to the data, as well as
     a short description written as part of the data project application.
     If the researcher is interested they should be able to click through
     to a more detailed description of the individual project which will
