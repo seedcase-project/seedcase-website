@@ -140,7 +140,7 @@ enter data into a specific table (or set of tables) in the database.
 
 Once this check is complete the front end will receive permission from
 the API Security layer to display the data entry form. The user
-completes all fields in the form and clicks Save and Submit. This sends
+completes all fields in the form and clicks "Save and Submit". This sends
 the data to the API layer where it is confirmed as valid, parcelled up
 and submitted to the database. The database will then write the data
 into a new record in the table (or tables). Once done the database will
@@ -157,7 +157,7 @@ completing the data entry form in one session. In that case it would be
 beneficial if there is an option of saving the data as it is, and be
 able to return to the data entry at a later time. Much of the initial
 workflow is the same as above, until the user is interrupted and selects
-Save instead of Save and Submit. This will send the data to the API with
+"Save" instead of "Save and Submit". This will send the data to the API with
 a flag showing that fields may be incomplete, thus preventing the API
 from rejecting the data due to NULL values. The API will submit the data
 to the database along the incomplete flag.
@@ -170,8 +170,8 @@ partially completed record the front end will request the currently
 completed items from the database via the API layer before displaying
 the entry form with the completed fields.
 
-Once the user has completed more data they can either click on Save or
-Save and Submit. The first option will put them back to the top of this
+Once the user has completed more data they can either click on "Save" or
+"Save and Submit". The first option will put them back to the top of this
 workflow, the second will send the data back to the API layer for
 validation. Once the data is validated it will be submitted to the
 database. The database will then write the data into a new record in the
