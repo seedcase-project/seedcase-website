@@ -102,10 +102,10 @@ This list describes the individual blackbox parts in more detail:
     Resource. This would include the title of the project, the name of
     the applicant, and who else will have access to the data, as well as
     a short description written as part of the data project application.
-    If the researcher is interested they should be able to click through
+    If the researcher is interested, they should be able to click through
     to a more detailed description of the individual project which will
     display a list of the variables that the data project has been
-    granted access to.
+    granted access to as well as simple aggregations of the variables.
 
 #### Admin management
 
