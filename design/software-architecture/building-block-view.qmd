@@ -129,8 +129,9 @@ Management Layer* part.
 
 | Building Block           | Description                                   |
 |--------------------------------|-----------------------------------------------------------------------------------------------|
-| Local Authentication     | Use seedcase local user authentication server |
 | Connect Remote ID Server | Connect to remote user authentication server  |
+| Local Authentication     | Use seedcase local user authentication server |
+
 
 : Blackboxes within the *User Authentication* part.
 
