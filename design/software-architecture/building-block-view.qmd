@@ -117,7 +117,7 @@ This list describes the individual blackbox parts in more detail:
 | API Security Management        | These admin pages allow administrators to manage the security measures that are in place to protect the API for the system.                                                                                                                                                            |
 | External Connection Management | These admin pages allow administrators to manage the connections between the system and external data sources or applications. This includes setting up new connections, updating existing connections, and managing the access permissions for each connection.                       |
 
-: Blackboxes related to *admin management* within the *User and Data
+: Blackboxes related to *Admin Management* within the *User and Data
 Management Layer* part.
 
 ### User Authentication (whitebox)
@@ -290,7 +290,7 @@ there are some overlapping features. For instance, each endpoint accepts
 | List Project Log       | API endpoint allows displaying a log of all activity related to a specific project in the system.               |
 | Researchers CRUD API   | API endpoint allows creating, reading, updating, and deleting a researcher user in the system.                  |
 
-: Blackboxes related to *data entry* within the *User and Data
+: Blackboxes related to *Data Entry* within the *User and Data
 Management Layer* part.
 
 ### Back End Environment (whitebox)
@@ -332,7 +332,7 @@ Container.](/design/images/component-backend.png)
 | Data project information | Submitted requests for data as a data project, with details like project description and list of variables. |
 | Changelog                | Changes made to data recorded as a table.                                                                   |
 
-: Blackboxes of Tables in Relational Database within the *Back End
+: Blackboxes of tables in *Relational Database* within the *Back End
 Environment* part.
 
 <!-- TODO: Not sure where Data dictionary details will go... -->
