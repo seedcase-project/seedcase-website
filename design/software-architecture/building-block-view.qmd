@@ -72,7 +72,7 @@ This list describes the individual blackbox parts in more detail:
 ![front end](/design/images/front_end.png)
 
 | Building Block        | Description                                                                                                                                                                                                                                          |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------|-----------------------------------------------------------------------------------------------|
 | Landing Page          | The initial page that a user sees when they visit the seedcase. It provides an overview of the seedcase project and includes links to other important pages.                                                                                         |
 | User Login Pages      | It is used to authenticate users before they can access protected areas. It includes fields for users to enter their login credentials, such as a username and password.                                                                             |
 | Project List Pages    | It displays a list of all data projects that a user has access to. Each project is typically displayed as a separate item in a list and includes basic information about the project such as its name and status.                                    |
@@ -109,7 +109,7 @@ This list describes the individual blackbox parts in more detail:
 #### Admin management
 
 | Building Block                 | Description                                                                                                                                                                                                                                                                            |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------|-----------------------------------------------------------------------------------------------|
 | Project Management             | These admin pages allow administrators to manage projects in the system. This includes creating new projects, updating existing projects, and assigning researchers to projects.                                                                                                       |
 | Project Dataset Management     | These admin pages allow administrators to manage the datasets associated with a specific project. This includes adding new datasets to the project, updating existing datasets, and managing the access permissions for each dataset.                                                  |
 | Data QC Process Management     | These admin pages allow administrators to manage the quality control process for data sets in the system. This includes setting thresholds for pass/fail criteria and managing the process for reviewing and approving data sets that have been cleaned and prepared.                  |
@@ -127,7 +127,7 @@ Management Layer* part.
 ![user id](/design/images/user-id.png)
 
 | Building Block           | Description                                   |
-|--------------------------|-----------------------------------------------|
+|--------------------------------|-----------------------------------------------------------------------------------------------|
 | Local Authentication     | Use seedcase local user authentication server |
 | Connect Remote ID Server | Connect to remote user authentication server  |
 
@@ -282,7 +282,7 @@ there are some overlapping features. For instance, each endpoint accepts
 #### Data entry
 
 | Building Block         | Description                                                                                                     |
-|------------------------|-----------------------------------------------------------------------------------------------------------------|
+|--------------------------------|-----------------------------------------------------------------------------------------------|
 | API Security           | Implementing measures to protect an API from unauthorized access, data theft, and other security threats.       |
 | Dataset CRUD API       | API endpoint allows creating, reading, updating, and deleting the dataset in the system.                        |
 | Data file CRUD API     | API endpoint allows creating, reading, updating, and deleting the data file in the system.                      |
@@ -318,7 +318,7 @@ will need to be composed of multiple components:
 Container.](/design/images/component-backend.png)
 
 | Building Block      | Description                                                                                                                                      |
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------|-----------------------------------------------------------------------------------------------|
 | Raw File Storage    | Raw data that requires processing before entering the database, preferably as CSV or other plain text format.                                    |
 | Large File Storage  | Data files (like images) that are too big or can't be stored in the database. A variable for the file path will be used in the database instead. |
 | Relational Database | PostgreSQL relational database containing the data, as well as some metadata, data projects, and user information.                               |
@@ -326,7 +326,7 @@ Container.](/design/images/component-backend.png)
 : Blackboxes within the *Back End Environment* part.
 
 | Building Block           | Description                                                                                                 |
-|--------------------------|-------------------------------------------------------------------------------------------------------------|
+|--------------------------------|-----------------------------------------------------------------------------------------------|
 | User information         | Details about registered users and their permission levels, viewable by admin users.                        |
 | Resource data            | Research data collected, uploaded, and store by users of Data Resource.                                     |
 | Data project information | Submitted requests for data as a data project, with details like project description and list of variables. |
