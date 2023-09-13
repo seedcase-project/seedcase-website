@@ -25,7 +25,7 @@ the key factors that influenced it.
 After evaluating Flask, Ruby on Rails, FastAPI, and Django, we have
 decided to use Django as the web framework for Seedcase. 
 
-All considered web frameworks use Python. For our decision on using Python, see the page [Why Python](https://seedcase-project.org/design/decisions/why-python/).
+All considered web frameworks use Python. For our decision to use Python, see the page [Why Python](https://seedcase-project.org/design/decisions/why-python/).
 
 ## Alternatives Considered
 
@@ -109,4 +109,4 @@ account activation.
 ## Conclusion
 
 After evaluating Flask, FastAPI, Ruby on Rails, and Django, we have made
-the decision that Django is the better fit for Seedcase.
+the decision that Django is the better fit for Seedcase. Django has the benefits of a built-in serialization framework and REST framework for API development, providing a powerful ORM and good built-in support for security, as well as user management.
