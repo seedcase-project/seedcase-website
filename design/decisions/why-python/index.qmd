@@ -55,4 +55,4 @@ applications.
 
 Python is the most suitable option for this project, as it provides a
 powerful, flexible, and easy-to-use platform for building a data
-management system.
+management system. Python is also one of the most common and widely used programming languages and is used across multiple domains and industries.
