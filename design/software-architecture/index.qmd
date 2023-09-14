@@ -7,15 +7,15 @@ order: 0
 
 ## Purpose
 
-The core purpose of writing these architecture documentation is to be
+The core purpose of writing this architecture documentation is to be
 able to describe to ourselves and others what Seedcase is aiming to
 accomplish and how it will do that.
 
 We structured the software architecture documentation to follow the
 [arc42](https://arc42.org) template and the [C4
 Model](https://c4model.com/) as much as is relevant for our situation,
-since these both are fairly popular and common templates to use. These
-documentation are also continuously evolving documentation as we learn,
+since these both are fairly popular and common templates to use. This
+documentation is also continuously evolving as we learn,
 test, develop, and grow as a team.
 
 ## Reader
