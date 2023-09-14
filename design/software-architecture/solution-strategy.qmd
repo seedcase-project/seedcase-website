@@ -34,6 +34,8 @@ The main technologies we will use are:
     state transfer), which is the de facto standard way for building
     APIs.
 
+For our decisions to use these technologies, see [Architecture decisions](https://seedcase-project.org/design/software-architecture/architecture-decisions)
+
 In relation to our [Quality Goals](introduction.qmd#quality-goals):
 
 -   **Secure and legally compliant**:
