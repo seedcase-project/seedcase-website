@@ -1,4 +1,4 @@
-@startuml c4-component-ui
+@startuml 
 ' Component diagram for the Seedcase product - Backend: File Storage
 !include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 

@@ -1,4 +1,4 @@
-@startuml c4-container
+@startuml 
 ' Container diagram showing overview of Seedcase
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
