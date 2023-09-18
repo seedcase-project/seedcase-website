@@ -67,9 +67,7 @@ This list describes the individual blackbox parts in more detail:
 
 ### Web Portal (whitebox)
 
-<!-- TODO: Need a components diagram for this. -->
-
-![front end](/design/images/front_end.png)
+![C4 Component diagram of Web Portal interface.](/design/images/component-ui.png)
 
 | Building Block        | Description                                                                                                                                                                                                                                          |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -13,52 +13,46 @@ Container_Boundary(ui, "Front End User Interface") {
   Container_Boundary(web, "Public web interface") {
     Component(page_landing, "Landing page", $descr="Welcome and overview page that directs users to other pages")
     Component(page_login, "Login page", $descr="To give some users access to specific pages in the Data Resource")
-    Component(page_projects_list, "List of data projects", $descr="")
-    Component(page_projects_details, "Details on each data project", $descr="")
-    Component(page_metadata_list, "List of variables in Data Resource", $descr="")
-    Component(page_metadata_details, "Details on each variable in Data Resource", $descr="")
+    Component(page_projects_list, "List of data projects", $descr="Displays all approved data projects as a list or table")
+    Component(page_projects_details, "Details on each data project", $descr="Individual pages of each data project with more details")
+    Component(page_metadata_list, "List of variables in Data Resource", $descr="Display all available variables in the Data Resource as a list or table")
+    Component(page_metadata_details, "Details on each variable in Data Resource", $descr="Individual pages for each variable with more details")
   }
   Container_Boundary(web_admin, "Internal web interface") {
     ' Admin
-    Component(page_project_admin, "", $descr="")
-    Component(page_data_admin, "", $descr="")
+    Component(page_project_admin, "Data project admin page", $descr="Management of proposed and current data projects")
+    Component(page_data_admin, "Data admin page", $descr="Management of data within the Data Resource, such as adding a new table")
+    Component(page_data_qc, "Data quality control details page", $descr="Reports on basic quality and validation of data")
 
     ' Data entry
-    Component(page_data_upload, "", $descr="")
-    Component(page_data_download, "", $descr="")
-    Component(page_data_qc, "", $descr="")
+    Component(page_data_upload, "Data entry and upload page", $descr="Adding new or updating existing data in the Data Resource")
 
     ' Data request
-    Component(page_data_request, "", $descr="")
+    Component(page_data_request, "Data request submission page", $descr="Requesting data by filling in a form with details like a description and variables needed")
+    Component(page_data_download, "Download link or instructions page", $descr="For approved data requests, this page gives details about getting or downloading the data")
   }
 }
 
 ' Logged in users
-Rel(page_login, user_info, "Retrieve user permissions")
+BiRel(page_login, user_info, "Retrieve user permissions")
+
 Rel(page_login, page_data_upload, "Access with data entry permissions")
+
 Rel(page_login, page_data_request, "Access with data request permissions")
+Rel(page_login, page_data_download, "Access with data request permissions")
+
 Rel(page_login, page_project_admin, "Access with admin permissions")
 Rel(page_login, page_data_admin, "Access with admin permissions")
+Rel(page_login, page_data_qc, "Access with admin permissions")
 
 ' Accessing back end
 Rel(management, bee, "Retrieve metadata")
 Rel(bee, management, "Store metadata")
-Rel(management, page_projects_list, "Display")
-Rel(management, page_projects_details, "Display")
+Rel(management, page_projects_list, "Retrieve and display")
+Rel(management, page_projects_details, "Retrieve and display")
 Rel(management, page_metadata_list, "Retrieve and display")
 Rel(management, page_metadata_details, "Retrieve and display")
 
-
+' Requesting data
+Rel(management, page_data_download, "Retrieve and display")
 @enduml
-
-  node "User Interface" {
-    [Landing page]
-    [User Login pages]
-    [Project list pages]
-    [Project information ages]
-    [Data list pages]
-    [Data information pages]
-    [Upload Data pages]
-    [Download Data pages]
-    [Data QC process Pages]
- }
