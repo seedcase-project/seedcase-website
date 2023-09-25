@@ -22,11 +22,17 @@ See some discussion of the beginning of this issue [here](https://github.com/see
 
 ## Decision Drivers
 
-- Tracking project management: Looking over the 
+- Tracking and managing projects: 
+    - Looking over the list of issues in any given project right now can feel overwhelming because of the number of issues (the list will only grow). Trying to look through the list to find ones relevant to the component of the project you are working on can be a bit of an "analysis paralysis".
+    - Tracking issues in sub-projects/components within a single repo means making heavily use of custom labels, which can be a challenge from a management point of view.
+    - I'd like to eventually get to a place where we can dedicate a chunk of time to working on one specific project. My inspiration for how to do that comes from the tidyverse team at RStudio/Posit. They let issues build up in an R package/project over time before dedicating time to working through as many of those issues as possible. Once done, they switch to another project that has a lot of issues.
 - Setting up continuous integration and deployment: We haven't yet set up CI/CD, but a lot of standard templates are based on a one repo is one package/app/product approach (for instance, CI's for testing and building Python packages or deploying Docker images to DockerHub). 
-- Already splitting projects into other repos
-- Open source projects are usually a "one-repo is one-product/output" format (e.g. R or Python package). Contributors will be 
-- We are starting to and will be 
+- We're already splitting projects into other repos.
+    - We're building a separate `seedcase-registry` product, which is the data project registration component of `seedcase`. This product will be imported/loaded into `seedcase`.
+- Open source projects are usually a "one-repo is one-product/output" format (e.g. R or Python package). Contributors will likely be people who have experience working in open source communities and projects.
+- We are starting to and will be creating and building multiple products, both within the overall aim of Seedcase, but also sub-projects at Steno and potential (independent) extensions to Seedcase.
+- Providing common repository templates
+- We need to consider the workflow for the team over the long term. Some decisions make more sense in the short term, but in the long term we'll 
 
 ## Considered Options
 
