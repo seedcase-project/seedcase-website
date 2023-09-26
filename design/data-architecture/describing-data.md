@@ -1,5 +1,5 @@
 ---
-title: "How data should be structured in seedcase"
+title: "How data should be structureddescribed/documented in Seedcase"
 description: |
   TBC
 author: "Kristiane Beicher"
@@ -11,11 +11,13 @@ categories:
   - data-schema
 ---
 
-## Title
+# Title
 
-### High level structuring of data
+## High level structuring of data
 
 Seedcase is designed to be a tool to help researchers to organise their research data as well as help to ...
+
+TODO!  write the rest of the intro
 
 Table Schema
 Data description
@@ -46,9 +48,6 @@ constraints - limits the data that can be written into a field, a constraint wil
 reader-friendly title - for use in front-end applications
 example - it can sometimes be of value to give examples of how data should be recorded
 key - primary and foreign, these will need to be defined in a one-to-one relationship
-
-
-
 
 - definition
 

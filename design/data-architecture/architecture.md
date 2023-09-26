@@ -6,12 +6,15 @@ Data Architecture is generally defined as a framework defining how data is organ
 
 Seedcase is in its core a tool to help with good data architecture.  As it is meant to be a highly flexible solution it is near to impossible to control how it is used.  What we can do, is to offer recommendations on best practice.  The follwoing will describe the thre most common ways in which we envisage that the Seedcase product will be utilised, which is either as a static, semi-static or dynamic repository for data.
 
-TODO! integrate something about two types of data, research and supporting data (eg users, and business logic)
+<!-- #TODO: write something about two types of data, research and supporting data (eg users, and business logic) -->
 
 ### Static
 
-- Research data is loaded in, described, and used, then archived, shared, or discarded.  
-- Internal user data can be either a one-off or semi-static.
+Some users of the Seedcase product will only want to use it to sore an already existing data set, with the express purpose of analysing the data, producing a paper, and then either archiving or discarding the data.  For that type of use it is excessive to want to document much more than the data itself to a level where it is possible to re-trace the analysis work done with the research data.  The way Seedcase encourages good data documentation can be seen in the Describing data section.
+
+As for the data internal to Seedcase (user accounts), it would be standard in a static model for it to be set up once and then never edited again, see the section User set-up for more information on how the Seedcase Product handles user accounts.
+
+<!-- #TODO: Add links to the two sections mentioned once the documents start to take shape-->
 
 ### Semi-Static
 
