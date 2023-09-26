@@ -52,7 +52,7 @@ of those constraints are summarized below.
 
 | Conventions                                      | Background/Motivation                                            |
 |--------------------------------------------------|------------------------------------------------------------------|
-| Follow standard styling (e.g., PIP3)             | Coding style is vital to readability, so we follow best practice |
+| Follow standard styling (e.g., [PIP3](https://pypi.org/project/pip/))             | Coding style is vital to readability, so we follow best practice |
 | Use [CalVer](https://calver.org/) versioning     | This style is simple and easily shows the age of the software    |
 | Incorporate "Test/Doc-Driven Development" styles | Each has pros and cons, we use what works best                   |
 
