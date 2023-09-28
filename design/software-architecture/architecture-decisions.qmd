@@ -12,3 +12,5 @@ listing:
 ---
 
 {{< include /includes/_wip.qmd >}}
+
+On this page, you will find the explanations and justifications for why we choose the technologies, workflows, and designs that we do in relation to the software architecture of Seedcase.
