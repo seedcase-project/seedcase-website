@@ -115,4 +115,5 @@ does all other container-related tasks independently of any other
 third-party tools. Lastly, Docker has a lengthy history of working with
 well-known cloud platforms like Amazon Web Services (AWS) and Google Cloud
 Platform (GCP). It is also compatible with Microsoft, Azure, and OpenStack.
-Overall, regardless of how great the alternatives are, Docker is still a viable option.
+Overall, regardless of how great the alternatives are, Docker is the most 
+suitable container platform for this project.
