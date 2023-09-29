@@ -226,8 +226,8 @@ to view a single table.
 The Seedcase Product will allow the administrator to control who has
 access to the resource data as well as allow them to monitor who changes
 what data and when. Part of creating and managing data that is
-transparent, rigorous, and FAIR is keeping a changelog and tracking
-versions.
+transparent, rigorous, and [FAIR](https://www.go-fair.org/fair-principles/) 
+is keeping a changelog and tracking versions.
 
 Through logging, admin users will be able to monitor the Data Resource. Logging is done on both data, metadata, and user activities.
 
@@ -252,7 +252,7 @@ Through logging, admin users will be able to monitor the Data Resource. Logging 
 
 One of the core ideas for Seedcase is that it makes it easier for
 researchers to handle data in a way that will allow them to share that
-data later on based on the FAIR principles. A part of FAIR data is
+data later on based on the [FAIR principles](https://www.go-fair.org/fair-principles/). A part of FAIR data is
 how variables are named, and there are a few domain-specific
 standards/conventions for variable naming that Seedcase will
 incorporate. Open standards will be prioritized first, and maybe later
