@@ -8,7 +8,7 @@ design:
     form a single "Data Resource".
   whitebox: |
     A description of the internal functioning and behaviour of a system.
-    For instance, how the internals of Seedcase like the web front end part,
+    For instance, how the internals of Seedcase like the web interface,
     the programmatic API part, and the data back end environment part interact
     with each other. "White" implying seen or visible (e.g., daylight).
   blackbox: |
