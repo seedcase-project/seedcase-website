@@ -12,19 +12,19 @@ it is more detailed than the other design documents but not so detailed
 as to be describing actual code. To clarify how much detail each part
 will be described in, there are two established terms we use:
 
--   **Whitebox**: {{< var design.whitebox >}}
--   **Blackbox**: {{< var design.blackbox >}}
+-   **White box**: {{< var design.whitebox >}}
+-   **Black box**: {{< var design.blackbox >}}
 
 The [first section](#level1) covers the overall view of the main parts
 inside Seedcase. The [second section](#level2) goes deeper and describes
-the contents within each main part, but only as blackboxes.
+the contents within each main part, but only as black boxes.
 
-## Whitebox overall system, Level 1 {#level1}
+## White box overall system, Level 1 {#level1}
 
 This section is a high level overview of the internals of Seedcase and
 is visually represented with the ["C4
 Container"](https://c4model.com/#ContainerDiagram) diagram below. Each
-part within the diagram is a blackbox representation of the core
+part within the diagram is a black box representation of the core
 internal parts of Seedcase.
 
 ![C4 Container diagram showing the major internal parts of
@@ -38,9 +38,9 @@ Seedcase.](/design/images/container.png)
 | Back End Environment           | This enclosed environment contains the inputted data, admin details, changelog, and raw data. |
 | External Secure Server         | The external server where requested data is sent to (only needed if the user requesting access is an external partner).                              |
 
-: Core internal parts of Seedcase (as blackboxes).
+: Core internal parts of Seedcase (as black boxes).
 
-This list describes the individual blackbox parts in more detail:
+This list describes the individual black box parts in more detail:
 
 -   **Web Interface**: This is the interface that users will interact with,
     displayed as HTML pages. Different sections of the Web Interface are
@@ -65,7 +65,7 @@ This list describes the individual blackbox parts in more detail:
 
 ## Building block, Level 2
 
-### Web Portal (whitebox)
+### Web Portal (white box)
 
 <!-- TODO: Need a components diagram for this. -->
 
@@ -83,7 +83,7 @@ This list describes the individual blackbox parts in more detail:
 | Download Data Pages   | It allows authorized users to download data sets from the seedcase. It includes options to filter the data set based on various criteria, such as date range or specific fields.                                                                     |
 | Data QC Process Pages | It provides information about the quality control (QC) process used to ensure that data sets are accurate and reliable. It provides a list of the quality control functions. It also provides the result to determine if a data set passes or fails.      |
 
-: Blackboxes within the *Web Portal* part.
+: Black boxes within the *Web Portal* part.
 
 #### Data catalog
 
@@ -118,10 +118,10 @@ This list describes the individual blackbox parts in more detail:
 | API Security Management        | These admin pages allow administrators to manage the security measures that are in place to protect the API for the system.                                                                                                                                                            |
 | External Connection Management | These admin pages allow administrators to manage the connections between the system and external data sources or applications. This includes setting up new connections, updating existing connections, and managing the access permissions for each connection.                       |
 
-: Blackboxes related to *Admin Management* within the *User and Data
+: Black boxes related to *Admin Management* within the *User and Data
 Management Layer* part.
 
-### User Authentication (whitebox)
+### User Authentication (white box)
 
 <!-- TODO: Need a components diagram for this. -->
 
@@ -133,9 +133,9 @@ Management Layer* part.
 | Local Authentication     | Use seedcase local user authentication server |
 
 
-: Blackboxes within the *User Authentication* part.
+: Black boxes within the *User Authentication* part.
 
-### User and Data Management Layer (whitebox)
+### User and Data Management Layer (white box)
 
 <!-- TODO: Need a components diagram for this. -->
 
@@ -292,10 +292,10 @@ there are some overlapping features. For instance, each endpoint accepts
 | List Project Log       | This API endpoint allows displaying a log of all activity related to a specific project in the system.               |
 | Researchers CRUD API   | This API endpoint allows creating, reading, updating, and deleting a researcher user in the system.                  |
 
-: Blackboxes related to *Data Entry* within the *User and Data
+: Black boxes related to *Data Entry* within the *User and Data
 Management Layer* part.
 
-### Back End Environment (whitebox)
+### Back End Environment (white box)
 
 The input data will be quite heterogeneous and so the Seedcase backend
 will need to be composed of multiple components:
@@ -325,7 +325,7 @@ Container.](/design/images/component-backend.png)
 | Large File Storage  | Data files (like images) that are too big or can't be stored in the database. A variable for the file path will be used in the database instead. |
 | Relational Database | PostgreSQL relational database containing the data, as well as some metadata, data projects, and user information.                               |
 
-: Blackboxes within the *Back End Environment* part.
+: Black boxes within the *Back End Environment* part.
 
 | Building Block           | Description                                                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------------------------|
@@ -334,7 +334,7 @@ Container.](/design/images/component-backend.png)
 | Data project information | Submitted requests for data as a data project, with details like project description and list of variables. |
 | Changelog                | Changes made to data recorded as a table.                                                                   |
 
-: Blackboxes of tables in *Relational Database* within the *Back End
+: Black boxes of tables in *Relational Database* within the *Back End
 Environment* part.
 
 <!-- TODO: Not sure where Data dictionary details will go... -->
