@@ -63,7 +63,7 @@ This list describes the individual black box parts in more detail:
 -   **External Secure Server**: This external system is where requested data
     will be sent to depending on needs of the user.
 
-## Building block, Level 2
+## Building block, Level 2 {#level2}
 
 ### Web Portal (white box)
 
