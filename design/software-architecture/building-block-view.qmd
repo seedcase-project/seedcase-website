@@ -107,20 +107,6 @@ This list describes the individual black box parts in more detail:
     display a list of the variables that the data project has been
     granted access to as well as simple aggregations of the variables.
 
-#### Admin management
-
-| Building Block                 | Description                                                                                                                                                                                                                                                                            |
-|--------------------------------|-----------------------------------------------------------------------------------------------|
-| Project Management             | These admin pages allow administrators to manage projects in the system. This includes creating new projects, updating existing projects, and assigning researchers to projects.                                                                                                       |
-| Project Dataset Management     | These admin pages allow administrators to manage the datasets associated with a specific project. This includes adding new datasets to the project, updating existing datasets, and managing the access permissions for each dataset.                                                  |
-| Data QC Process Management     | These admin pages allow administrators to manage the quality control (QC) process for data sets in the system. This includes setting thresholds for pass/fail criteria and managing the process for reviewing and approving data sets that have been cleaned and prepared.                  |
-| User Role Management           | These admin pages allow administrators to manage the access permissions for users in the system. This includes defining roles and permissions for different types of users, such as administrators, researchers, and data analysts, and managing the access permissions for each user. |
-| API Security Management        | These admin pages allow administrators to manage the security measures that are in place to protect the API for the system.                                                                                                                                                            |
-| External Connection Management | These admin pages allow administrators to manage the connections between the system and external data sources or applications. This includes setting up new connections, updating existing connections, and managing the access permissions for each connection.                       |
-
-: Black boxes related to *Admin Management* within the *User and Data
-Management Layer* part.
-
 ### User Authentication (white box)
 
 <!-- TODO: Need a components diagram for this. -->
@@ -140,6 +126,20 @@ Management Layer* part.
 <!-- TODO: Need a components diagram for this. -->
 
 ![user data management](/design/images/user-data-management.png)
+
+#### Admin management
+
+| Building Block                 | Description                                                                                                                                                                                                                                                                            |
+|--------------------------------|-----------------------------------------------------------------------------------------------|
+| Project Management             | These admin pages allow administrators to manage projects in the system. This includes creating new projects, updating existing projects, and assigning researchers to projects.                                                                                                       |
+| Project Dataset Management     | These admin pages allow administrators to manage the datasets associated with a specific project. This includes adding new datasets to the project, updating existing datasets, and managing the access permissions for each dataset.                                                  |
+| Data QC Process Management     | These admin pages allow administrators to manage the quality control (QC) process for data sets in the system. This includes setting thresholds for pass/fail criteria and managing the process for reviewing and approving data sets that have been cleaned and prepared.                  |
+| User Role Management           | These admin pages allow administrators to manage the access permissions for users in the system. This includes defining roles and permissions for different types of users, such as administrators, researchers, and data analysts, and managing the access permissions for each user. |
+| API Security Management        | These admin pages allow administrators to manage the security measures that are in place to protect the API for the system.                                                                                                                                                            |
+| External Connection Management | These admin pages allow administrators to manage the connections between the system and external data sources or applications. This includes setting up new connections, updating existing connections, and managing the access permissions for each connection.                       |
+
+: Black boxes related to *Admin Management* within the *User and Data
+Management Layer* part.
 
 These are some potential endpoints for the API. For almost all of them,
 there are some overlapping features. For instance, each endpoint accepts
