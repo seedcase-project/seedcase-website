@@ -127,6 +127,20 @@ This list describes the individual black box parts in more detail:
 
 ![user data management](/design/images/user-data-management.png)
 
+#### API Layer
+
+| Building Block         | Description                                                                                                     |
+|--------------------------------|-----------------------------------------------------------------------------------------------|
+| API Security           | This implements measures to protect an API from unauthorized access, data theft, and other security threats.       |
+| Dataset CRUD API       | This API endpoint allows creating, reading, updating, and deleting the dataset in the system.                        |
+| Data file CRUD API     | This API endpoint allows creating, reading, updating, and deleting the data file in the system.                      |
+| List Projects Metadata | This API endpoint allows listing all existing projects, it could use parameters to display related project metadata. |
+| List Project Log       | This API endpoint allows displaying a log of all activity related to a specific project in the system.               |
+| Researchers CRUD API   | This API endpoint allows creating, reading, updating, and deleting a researcher user in the system.                  |
+
+: Black boxes related to *API Layer* within the *User and Data
+Management Layer* part.
+
 #### Admin management
 
 | Building Block                 | Description                                                                                                                                                                                                                                                                            |
@@ -281,19 +295,6 @@ there are some overlapping features. For instance, each endpoint accepts
 | 200 OK               | The request was successful and the history log was retrieved. |
 | 404 Not Found        | No history logs were found for the specified criteria.        |
 
-#### Data entry
-
-| Building Block         | Description                                                                                                     |
-|--------------------------------|-----------------------------------------------------------------------------------------------|
-| API Security           | This implements measures to protect an API from unauthorized access, data theft, and other security threats.       |
-| Dataset CRUD API       | This API endpoint allows creating, reading, updating, and deleting the dataset in the system.                        |
-| Data file CRUD API     | This API endpoint allows creating, reading, updating, and deleting the data file in the system.                      |
-| List Projects Metadata | This API endpoint allows listing all existing projects, it could use parameters to display related project metadata. |
-| List Project Log       | This API endpoint allows displaying a log of all activity related to a specific project in the system.               |
-| Researchers CRUD API   | This API endpoint allows creating, reading, updating, and deleting a researcher user in the system.                  |
-
-: Black boxes related to *Data Entry* within the *User and Data
-Management Layer* part.
 
 ### Back End Environment (white box)
 
