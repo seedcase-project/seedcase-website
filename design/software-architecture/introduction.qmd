@@ -181,6 +181,7 @@ section](context.qmd), are:
     "ongoing" or "completed". The stored ongoing or completed data
     projects will be displayed on the web portal for discoverability and
     transparency on the data resources use.
+- **Allow for individual parts to be independently installable and usable**: Users might not need or want some of the functionality, so being able to have individual and independent parts that are usable on their own is necessary. These independent parts also need to be able to connect and work together.
 
 ## Quality Goals
 
