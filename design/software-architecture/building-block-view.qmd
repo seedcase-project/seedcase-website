@@ -300,7 +300,7 @@ there are some overlapping features. For instance, each endpoint accepts
 
 ### Back End Environment (white box)
 
-The input data will be quite heterogeneous and so the Seedcase backend
+The input data will be quite heterogeneous, and so the Seedcase backend
 will need to be composed of multiple components:
 
 -   Raw data files as plain text
