@@ -3,9 +3,9 @@
 ' Login and authentication sequence of a registered user
 
 participant "User" as u
-participant "Front end" as f
+participant "Frontend" as f
 participant "API" as api
-participant "Back end" as db
+participant "Backend" as db
 
 u -> f --: Enter login information
 f -> api --: Send login request

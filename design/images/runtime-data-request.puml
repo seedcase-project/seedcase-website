@@ -4,9 +4,9 @@ skinparam SequenceMessageAlignment center
 ' Logged in user who is requesting data from a Data Resource.
 
 participant "User" as u
-participant "Front end" as f
+participant "Frontend" as f
 participant "API" as api
-participant "Back end" as db
+participant "Backend" as db
 
 alt New data project
   u -> f --: Select variables to request
