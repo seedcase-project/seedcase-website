@@ -177,7 +177,7 @@ by Seedcase:
     data project.
 2.  Re-using parts of an existing data project.
 
-![Logged in user who is requesting data from a Data Resource.](/design/images/runtime-data-request.png){#fig-data-request}
+![Logged in user who is requesting data from a Data Resource. <br> The "alt" box shows the alternative workflows depending on whether the user requests a new data projects or re-uses an existing data project for the request.](/design/images/runtime-data-request.png){#fig-data-request}
 
 ### Applying for a new data project
 
