@@ -139,7 +139,7 @@ be possible for that user to set Seedcase up in a way that they
 themselves cannot view any of the uploaded data, but this will not be a
 standard setup.
 
-The database back end will hold all information about users and their
+The database backend will hold all information about users and their
 permissions. This is done by allowing the administrator to assign an
 individual user to either roles or groups, some of which will come
 pre-defined. It should also be possible for an administrator to create
@@ -167,7 +167,7 @@ security and privacy of the data entered into the system.
     view the data that they have entered in the past.
 
 There will be other pre-defined roles, but those will be for the
-interaction between the back end and front end and mainly coded into the
+interaction between the backend and frontend and mainly coded into the
 APIs. The above roles should be used by activated users. A full list of
 permissions to specific tasks is listed in the [Permissions
 subsection](#permissions) below.
@@ -195,19 +195,19 @@ access to data for employees.
 ### Storing the data
 
 The Seedcase Product is designed to sit in two containers. The first is
-the front end which contains the user interface as well as the API layer
+the frontend which contains the user interface as well as the API layer
 (see section on C4 design). This container is designed to sit either on
 a researchers own machine, or on a webserver hosted by the organisation
-employing the researcher. The second is the back end which contains the
+employing the researcher. The second is the backend which contains the
 database and a file storage area. This second container is meant to sit
 on a secure server environment with access controlled by the
-organisations IT department. Only the back end container will hold the
+organisations IT department. Only the backend container will hold the
 research data.
 
-<!-- TODO: How does the front end communicate to the backend? -->
+<!-- TODO: How does the frontend communicate to the backend? -->
 
-The back end container will have a very limited amount of ports
-available, and should only allow communication from the front end
+The backend container will have a very limited amount of ports
+available, and should only allow communication from the frontend
 container.
 
 ### Limiting access to data

@@ -32,7 +32,7 @@ The four users and their associated use cases are:
         from the catalog. This request is sent to a list of data
         projects to await approval from the data controllers (User 4).
 3.  **Users who are administrators and data controllers** of the Data
-    Resource. Use cases are:
+    Resource, including data managers. Use cases are:
     1.  Approve newly submitted data projects that request data and
         manage existing data projects.
     2.  Approve and authorize researchers to access the web portal for
