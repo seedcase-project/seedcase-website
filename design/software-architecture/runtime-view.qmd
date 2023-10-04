@@ -138,14 +138,14 @@ The API Security layer will check with the list of users and permissions
 in the database and confirm that the specific user has permission to
 enter data into a specific table (or set of tables) in the database.
 
-Once this check is complete the front end will receive permission from
+Once this check is complete the frontend will receive permission from
 the API Security layer to display the data entry form. The user
 completes all fields in the form and clicks Save and Submit. This sends
 the data to the API layer where it is confirmed as valid, parcelled up
 and submitted to the database. The database will then write the data
 into a new record in the table (or tables). Once done the database will
 confirm successful entry of data to the API which will in turn send the
-confirmation back to the user via the front end.
+confirmation back to the user via the frontend.
 
 ![Logged in user who manually writes a new row to the Data
 Resource.](/design/images/runtime-manual-data-entry.png){#fig-manual-data-entry}
@@ -166,7 +166,7 @@ When the user at a later time goes back to the data entry they will be
 presented with the option of completing any incomplete records as well
 as entering new data. If they click on Complete Records they are shown
 the records that they have started but not submitted. Once they select a
-partially completed record the front end will request the currently
+partially completed record the frontend will request the currently
 completed items from the database via the API layer before displaying
 the entry form with the completed fields.
 
@@ -198,9 +198,9 @@ by Seedcase:
 sequenceDiagram
     actor User
     
-    participant f as Front end
+    participant f as Frontend
     participant api as API
-    participant be as Back end
+    participant be as Backend
     
     alt New data project
       User ->>+ f: Selects variables to request

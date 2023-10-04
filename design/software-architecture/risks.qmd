@@ -139,9 +139,9 @@ To mitigate these risks, the following strategies are recommended:
 -   Implement access controls: The team should implement access controls
     to restrict access to sensitive data and functions.
 
-### Front End
+### Frontend
 
-Front End presents several technical risks, including:
+Frontend presents several technical risks, including:
 
 -   Cross-site scripting (XSS) attacks: The application may be
     vulnerable to XSS attacks if user input is not properly sanitized.
