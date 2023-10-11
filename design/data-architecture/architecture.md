@@ -18,12 +18,22 @@ As for the data internal to Seedcase (user accounts), it would be standard in a 
 
 ### Semi-Static
 
-- Research data is loaded in, described, added to (with new data or additional data), and used, then archived, shared, or discarded.
-- Research data can be used to create new data sets, this will require the option to display data, as well as being able to request data in new combinations (thus requirering business logic)
-- Internal user data can be either a one-off or changing.
+We expect that most users of Seedcase will be small groups of people who will either have an existing data set that they would like to store and curate (eg add to or modify), or who will build one or more modules that will allow for adding to the research data throughout the lifecycle of the Seedcase product.  Depending on the exact nature of the data it may be worth documenting who the data is collected and stored, and establish a small set of policies for how data is amended and used.  
+
+A semi-static model would also encompas the situation where people external to the project would wish to request extracts of data.  If this is the intent of the project then there is a strong case to be made for some written down business logic that would govern how the data is recombined (and there may be a legal requirement as well).
+
+As for the data internal to Seedcase (user accounts), it would be standard in a semi-static model for it to be set up once and then rarely (or never) edited again, as a small team of collaborators would be mostly static.  See the section User set-up for more information on how the Seedcase Product handles user accounts.
+
+<!-- #TODO: Add links to the section mentioned once the documents start to take shape-->
 
 ### Dynamic
 
-- Research data is constantly being loaded in, described and added to.  
-- Research data is being used and made available to others to use (see above need for business logic)
-- Internal user data is also being changed on a regular basis.
+Some projects using a Seedcase solution will want to build a system that is highly adaptable and much more dynamic in nature than the examples above.  There will be a larger group of users, they may be dispersed geographically, and they will be accessing the system with different levels of permission (some may just enter data, others will be extracting, checking, and cleaning it).  There may be an initial data set, but there will also be a need for continually adding both more data to the existing structures, and new data sets that will need to link up to the existing research data.  For data of this nature it will be important to have a set of written instructions on for instance how data is handled, how changes are being processed, and what level of access is needed for a variety of user groups.
+
+If data is being added through webforms and subsequently augmented with calculated fields it is also of importance to document how those calculations are made, and how they can be used.
+
+As with the semi-static model there may well be potential users outside the immediate team who will want to use data from the ressource at a later date.  In addition to the points above, it would probably also be a good idea to have a structure in place that allows for a clear picture of exactly what data has been released outside the project, and what the recepient is intending to do with the data (again, there may also be local guidelines/regulations that demands this).
+
+A larger project will often mean that staff is more likely to come and go.  It is recommended that there is clear guidelines from the start designed to cope with the specific user types the core project team expects to handle.  There is rarely a one-size-fits-all in these situations, and it is important to tailor the types of user access to avoid a situation where a number of individual users have 'add-ons' in terms of access rights, as this can quickly become un-manageble.  See the section User set-up for more information on how the Seedcase Product handles user accounts.
+
+<!-- #TODO: Add links to the section mentioned once the documents start to take shape-->
