@@ -63,7 +63,7 @@ website:
       # - text: "Mission"
       #   href: about/mission.md
       - text: "Team Members"
-        href: about/team-members/index.md
+        href: about/team/index.md
 
 
 bibliography: "includes/references.bib"
