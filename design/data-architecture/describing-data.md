@@ -1,5 +1,5 @@
 ---
-title: "How data should be structureddescribed/documented in Seedcase"
+title: "How data should be structured/described/documented in Seedcase"
 description: |
   TBC
 author: "Kristiane Beicher"
@@ -29,7 +29,7 @@ In relation to the Seedcase project we define a Research Data Resource as a coll
 An instance of Seedcase will contain one or more tables with data relevant for research (as well as tables defining security and user access).
 
 Tables
-As Seedcase contains a releational database as basis for all research data, it will naturally contain one or more tables.  These tables will be defined in the table schema, and it is the table schema that will control the layout of all tables.  Some tables will come pre-defined (those to do with user access and security), the rest will be created by the user to accomodate the exact nature of the research data.  
+As Seedcase contains a relational database as basis for all research data, it will naturally contain one or more tables.  These tables will be defined in the table schema, and it is the table schema that will control the layout of all tables.  Some tables will come pre-defined (those to do with user access and security), the rest will be created by the user to accommodate the exact nature of the research data.  
 
 - contains
 

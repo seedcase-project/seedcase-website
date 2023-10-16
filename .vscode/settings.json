@@ -8,5 +8,17 @@
   "quarto.visualEditor.markdownWrapColumn": 72,
   "autoDocstring.docstringFormat": "numpy",
   "autoDocstring.includeName": true,
-  "autoDocstring.startOnNewLine": true
+  "autoDocstring.startOnNewLine": true,
+  "cSpell.words": [
+    "analysing",
+    "Beicher",
+    "initialisation",
+    "organisation",
+    "organisations",
+    "organise",
+    "organised",
+    "organises",
+    "utilised",
+    "webforms"
+  ]
 }
