@@ -62,6 +62,8 @@ website:
         href: about/history/index.md
       # - text: "Mission"
       #   href: about/mission.md
+      - text: "Team Members"
+        href: about/team/index.md
 
 
 bibliography: "includes/references.bib"
