@@ -1,6 +1,6 @@
 @startuml
 node "Seedcase Docker Framework" {
- node "Front End" {
+ node "Frontend" {
   node "User Interface" {
     [Landing page]
     [User Login pages]

@@ -34,7 +34,7 @@ Seedcase.](/design/images/container.png)
 |--------------------------------|-----------------------------------------------------------------------------------------------|
 | Web Interface                  | User Interface as a web portal for interacting with the Seedcase-managed Data Resource.       |
 | User Authentication            | Managing and controlling who gets access to what sections of the Data Resource.               |
-| User and Data Management Layer | The programmatic layer connecting the web interface to the back end environment.              |
+| User and Data Management Layer | The programmatic layer connecting the web interface to the backend environment.              |
 | Back End Environment           | This enclosed environment contains the inputted data, admin details, changelog, and raw data. |
 | External Secure Server         | The external server where requested data is sent to (only needed if the user requesting access is an external partner).                              |
 
@@ -69,7 +69,7 @@ This list describes the individual black box parts in more detail:
 
 <!-- TODO: Need a components diagram for this. -->
 
-![front end](/design/images/front_end.png)
+![frontend](/design/images/front_end.png)
 
 | Building Block        | Description                                                                                                                                                                                                                                          |
 |--------------------------------|-----------------------------------------------------------------------------------------------|
