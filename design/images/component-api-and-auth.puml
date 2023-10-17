@@ -2,9 +2,11 @@
 ' C4 Component diagram for the API and Authentication modules
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
+Person(direct_access, "Direct connection")
+Person(admin, "Admin user")
 Container(frontend, "Frontend")
-Container(bee, "Backend environment")
-Container(uia, "User ID authentication")
+Container(backend, "Backend")
+Container(uia, "User ID Authentication")
 System_Ext(external_server, "External secure server")
 
 Container_Boundary(api, "API layer") {
