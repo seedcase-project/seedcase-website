@@ -16,7 +16,7 @@ design:
     doesn't include *how* it works internally. For example, how the API part of
     Seedcase connects and communicates with the other parts within Seedcase,
     but not how the API internally makes these connections and communications.
-    "Black" implying unseen or not visible (e.g. night time).
+    "Black" implying unseen or not visible (e.g., night time).
   crud: |
     An acronym for Create, Read, Update, and Delete. These four actions are the
     core operations for data storage on computers.

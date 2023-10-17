@@ -97,10 +97,13 @@ Regardless, in both routes the steps are:
         # Switch to the main branch
         git checkout main
         ```
-
+        
         After pushing up the GitHub, you will need to go to the
         repository and create a new Pull Request from your newly pushed
         branch.
+    
+    -   No matter if you want to add a file directly on GitHub or via the command line, you can find more guidance in the [GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
+        
 
 6.  You are all done! That's it :smile:
 
