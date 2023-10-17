@@ -18,6 +18,8 @@ The core issue and question here is:
 
 We are ultimately building a final, single software product that can be installed on servers and used as is. However, some components of our software could be useful on their own. So we've started building another product as a Git repo. Which has lead us into this issue and question, since we don't want to start doing something major without considering why we are doing it and what the impact might be. And then coming to a conscious and agreed upon decision.
 
+We also will be working on other, side projects for Steno Aarhus and other potential projects related, but not connected to the core Seedcase product. For example, we will be helping design and build CPR validation checks or volunteer databases. We will be creating multiple repositories/projects, so if we have a streamlined approach and workflow to creating and developing projects in this way, of having multiple repositories for different projects, it would be easier to manage.
+
 See some discussion of the beginning of this issue [here](https://github.com/seedcase-project/seedcase-registry/pull/9).
 
 ## Decision Drivers
@@ -31,8 +33,8 @@ See some discussion of the beginning of this issue [here](https://github.com/see
     - We're building a separate `seedcase-registry` product, which is the data project registration component of `seedcase`. This product will be imported/loaded into `seedcase`.
 - Open source projects are usually a "one-repo is one-product/output" format (e.g. R or Python package). Contributors will likely be people who have experience working in open source communities and projects.
 - We are starting to and will be creating and building multiple products, both within the overall aim of Seedcase, but also sub-projects at Steno and potential (independent) extensions to Seedcase.
-- Providing common repository templates
-- We need to consider the workflow for the team over the long term. Some decisions make more sense in the short term, but in the long term we'll 
+- Providing common repository templates, build processes, and CI/CD for Steno Aarhus (and others in the future), so we'll need to build these anyway.
+- We need to consider the workflow for the team over the long term. Some decisions make more sense in the short term, but in the long term don't make sense.
 
 ## Considered Options
 
@@ -49,6 +51,7 @@ There are multiple existing posts about this exact issue of mono- vs poly-repos,
 - [Mono-Repo vs Multi-Repo: Throwing Light On Code Repository Strategies](https://geekflare.com/code-repository-strategies/)
 - [Monorepo vs multirepo decision: Using monorepos for rapid iteration, polyrepos for sustained stability](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples/monorepo-vs-multirepo)
 - [Monorepos and the Fallacy of Scale](https://presumably.de/monorepos-and-the-fallacy-of-scale.html)
+- [Monorepo Vs Polyrepo Architecture: A Comparison For Effective Software Development](https://intuji.com/monorepo-vs-polyrepo-architecture/)
 
 Almost all sources say, which you choose depends on your own situation.
 
@@ -83,9 +86,11 @@ main/
 - Project management and issue tracking all happens in one location, so it's easier for a dedicated coordinator or manager to track the project.
 - Components can be tightly coupled and easily updated within a mono-repo.
 - Single codebase is enticing, since it theoretically makes it easier to get onboarded, manage, and track progress on a project.
+- All code is in one location, so finding code might be easier.
 
 **Cons:**
 
+- Paradoxically, it is harder for smaller teams to manage the complexity of a mono-repo because of the reasons below.
 - Within the open source world, mono-repo's are not common, so contributors might not know how to navigate the repo.
 - Tend to require custom built CI/CD tooling rather than make use the many open source templates available.
 - Versioning of the software happens all at once, so a change in one component requires a version update, even though other components don't change.
@@ -94,6 +99,8 @@ main/
 - Deploying and testing may take longer because you have to deploy and test the *whole* repo, so if a small change was made, that would trigger long deployment and testing times.
 - Effective management of a project may require more complex git branching processes.
 - It's more difficult to manage ownership of code on a per-directory level.
+- If a bug or conflict occurs, it breaks the whole product.
+- As a codebase grows, the complexity involved in managing a mono-repo can increase substantially.
 
 ### Poly-repo 
 
@@ -134,6 +141,7 @@ In many ways, the pros and cons are the reverse with the mono-repo, but there ar
 - Standard open source templates for CI/CD and other basic repo and build files can be used.
 - Onboarding for contributors is easier if they come from the open source community.
 - Open source projects very often follow this approach, so its easier to draw inspiration and learn how other projects do things. 
+- Using version control, managing the commit history, and working with pull requests can be easier, since they will be specific to the project.
 
 **Cons:**
 
@@ -148,9 +156,10 @@ In general, whether you decide on following a mono-repo or poly-repo approach, t
 
 ## Decision Outcome
 
-We decided on THIS because of THAT.
+Ultimately, we decided on using a poly-repo approach because we'll need to build workflows and processes for developing multiple repositories simultaneously anyway, in addition to the easier project-level management and ability for users to install individual components as well. It also works well for our ideal team workflow of working on individual projects in rotations.
 
 ### Consequences
 
--
--  
+- Means we will need to develop templates for different project types (website, Python Package, R Package, Django App).
+- We'll need to connect and synch common files across projects.
+- We'll have to learn and apply team-based workflows around using this approach.
