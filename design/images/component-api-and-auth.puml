@@ -5,8 +5,8 @@
 
 Person(direct_access, "Direct connection")
 Person(admin, "Admin user")
-Container(frontend, "Front end")
-Container(backend, "Back end")
+Container(frontend, "Frontend")
+Container(backend, "Backend")
 Container(uia, "User ID Authentication")
 System_Ext(external_server, "External secure server")
 

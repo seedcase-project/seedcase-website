@@ -11,9 +11,9 @@ System_Boundary(seedcase, "Seedcase instance for Data Resource") {
   Container(id_authentication, "User Authentication")
   Container(management, "User and Data Management Layer")
 
-  Container_Boundary(backend, "Back end environment") {
-    ContainerDb(backend_database_data, "Database for data")
-    ContainerDb(backend_database_metadata, "Database for metadata")
+  Container_Boundary(backend, "Backend environment") {
+    ContainerDb(backend_database_data, "Relational Database for Data")
+    ContainerDb(backend_database_metadata, "Relational Database for Metadata")
     ContainerDb(backend_file_storage, "File Storage")
     ContainerDb(backend_large_file_storage, "Large File Storage")
   }

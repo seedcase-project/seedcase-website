@@ -6,7 +6,7 @@
 Container(uia, "User ID Authentication")
 Container(api, "API Layer")
 
-Container_Boundary(bee, "Back End Environment") {
+Container_Boundary(bee, "Backend Environment") {
   Container_Boundary(rdb_metadata, "Relational Database for Metadata") {
     Component(data_projects, "Data projects in Tables", $descr="Details on data projects in the Data Resource")
     Component(changelog, "Changelog in Tables", $descr="Changes made to the data")

@@ -34,8 +34,8 @@ Seedcase.](/design/images/container.png)
 |--------------------------------|-----------------------------------------------------------------------------------------------|
 | Web Interface                  | User Interface as a web portal for interacting with the Seedcase-managed Data Resource.       |
 | User Authentication            | Managing and controlling who gets access to what sections of the Data Resource.               |
-| User and Data Management Layer | The programmatic layer connecting the web interface to the back end environment.              |
-| Back End Environment           | This enclosed environment contains the inputted data, admin details, changelog, and raw data. |
+| User and Data Management Layer | The programmatic layer connecting the web interface to the backend environment.              |
+| Backend Environment           | This enclosed environment contains the inputted data, admin details, changelog, and raw data. |
 | External Secure Server         | The external server where requested data is sent to (if needed).                              |
 
 : Core internal parts of Seedcase (as blackboxes).
@@ -52,11 +52,11 @@ This list describes the individual blackbox parts in more detail:
     managed by Seedcase. Depending on the user's assigned permissions,
     they will see different pages within the Web Interface.
 -   User and Data Management Layer: This is the programmatic interface
-    that connects the Web Portal to the Back End Environment. While all
+    that connects the Web Portal to the Backend Environment. While all
     actions will be achieved through the Web Portal, advanced users will
     be able to directly connect to this layer (for instance, through the
     terminal, Python, or R).
--   Back End Environment: This enclosed environment will contain the
+-   Backend Environment: This enclosed environment will contain the
     database and file storage for the Data Resource. Raw data will be
     stored here, as well as administrative data files such as a listing
     of the data projects.
@@ -292,7 +292,7 @@ there are some overlapping features. For instance, each endpoint accepts
 : Blackboxes related to *data entry* within the *User and Data
 Management Layer* part.
 
-### Back End Environment (whitebox)
+### Backend Environment (whitebox)
 
 The input data will be quite heterogeneous and so the Seedcase backend
 will need to be composed of multiple components:
@@ -313,7 +313,7 @@ will need to be composed of multiple components:
 -   A data dictionary linked to the variables contained in the database,
     modified manually by the users but generated automatically
 
-![C4 Component diagram showing the Back End Environment
+![C4 Component diagram showing the Backend Environment
 Container.](/design/images/component-backend.png)
 
 | Building Block      | Description                                                                                                                                      |
@@ -322,7 +322,7 @@ Container.](/design/images/component-backend.png)
 | Large File Storage  | Data files (like images) that are too big or can't be stored in the database. A variable for the file path will be used in the database instead. |
 | Relational Database | PostgreSQL relational database containing the data, as well as some metadata, data projects, and user information.                               |
 
-: Blackboxes within the *Back End Environment* part.
+: Blackboxes within the *Backend Environment* part.
 
 | Building Block           | Description                                                                                                 |
 |--------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -331,7 +331,7 @@ Container.](/design/images/component-backend.png)
 | Data project information | Submitted requests for data as a data project, with details like project description and list of variables. |
 | Changelog                | Changes made to data recorded as a table.                                                                   |
 
-: Blackboxes of Tables in relational database within the *Back End
+: Blackboxes of Tables in relational database within the *Backend
 Environment* part.
 
 <!-- TODO: Not sure where Data dictionary details will go... -->
