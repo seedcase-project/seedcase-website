@@ -97,7 +97,7 @@ streaming APIs).
 
 ## SQLite
 
-First released in 2000,  SQLite is slightly different to the two systems
+First released in 2000, SQLite is slightly different to the two systems
 described above, as it is an embedded serverless database primarily
 maintained by an international team of programmers (see [About
 SQLite](https://www.sqlite.org/about.html)). It is an open source
@@ -128,5 +128,6 @@ ODBC).
     database in the instances where local development is needed.
 
 ## Conclusion
+
 After evaluating MySQL, PostgreSQL, and SQLite, we have made
 the decision that PostgreSQL is the better fit for Seedcase. PostgreSQL is the most popular open source database with a thriving community, has a recognisable format of a traditional database system, supports XML and JSON, can interact with Apache Parquet files, and columnar based tables can be created directly in PostgreSQL.

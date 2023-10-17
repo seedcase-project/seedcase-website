@@ -16,7 +16,7 @@ categories:
 
 ## Introduction
 
-For a project like Seedcase to fully succeed in our stated [vision and mission](https://seedcase-project.org/about/mission.html), a
+For a project like Seedcase to fully succeed in our stated [vision and mission](/about/mission.md), a
 critical key is to decide on which copyright license to use. Without a
 license, other users will not be allowed to (easily) (re-)use, modify,
 contribute, or enhance our software due to copyright reasons. Our
@@ -108,9 +108,9 @@ DCO](https://beeware.org/contributing/how/dco/what/)).
 
 ## Our choice
 
-It is our stated [goals](https://seedcase-project.org/design/software-architecture/introduction.html) include the Seedcase software is available for
+It is our stated [goals](../../software-architecture/introduction.qmd) include the Seedcase software is available for
 commercial enterprises as well as academic/healthcare organizations and
-groups. Aligning with our stated [Guiding Principles](https://seedcase-project.org/design/software-architecture/introduction#guiding-principles), we will use a
+groups. Aligning with our stated [Guiding Principles](../software-architecture/introduction.qmd#guiding-principles), we will use a
 **permissive** license as it will be the best fit for the Seedcase
 project. Of the permissive license types we will go with the MIT
 License.

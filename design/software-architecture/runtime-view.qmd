@@ -220,7 +220,7 @@ application.
 
 ## Browsing projects and results
 
-There are at least three routes, we anticipate the [external user](https://seedcase-project.org/design/software-architecture/context) might
+There are at least three routes, we anticipate the [external user](context.qmd) might
 take when browsing the Data Resource:
 
 1.  Reading about the Data Resource, its history, organizational

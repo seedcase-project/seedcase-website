@@ -3,7 +3,7 @@ title: "Risks and technical debt"
 order: 11
 ---
 
-As discussed under [Architecture Decisions](https://seedcase-project.org/design/software-architecture/architecture-decisions), we have chosen to use Django, PostgreSQL, and Docker for the Seedcase Product. Even though we have deemed these technologies the most suitable the product, they include technical debt and risks, which will be discussed below.
+As discussed under [Architecture Decisions](architecture-decisions.qmd), we have chosen to use Django, PostgreSQL, and Docker for the Seedcase Product. Even though we have deemed these technologies the most suitable the product, they include technical debt and risks, which will be discussed below.
 
 ## Technical debt
 

@@ -6,7 +6,7 @@ order: 3
 {{< include /includes/_wip.qmd >}}
 
 This document is an overview of the different connections, both human
-and computer, with a [Data Resource](https://seedcase-project.org/design/software-architecture/introduction.html#definition-of-terms) managed by Seedcase.
+and computer, with a [Data Resource](introduction.qmd#definition-of-terms) managed by Seedcase.
 
 ![[C4 Context diagram](https://c4model.com/#SystemContextDiagram) showing users and external systems that connect to
 the Data Resource managed by Seedcase.](/design/images/context.png)

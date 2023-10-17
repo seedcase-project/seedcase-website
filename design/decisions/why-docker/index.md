@@ -22,7 +22,7 @@ are different platforms on the market, each with unique approaches and
 use cases. Even though all have a similar concept of images and
 containers, there are some technical differences worth noting.
 
-As to why we have chosen containerization, see the page [Why choose containerization technology](https://seedcase-project.org/design/decisions/why-containers/).
+As to why we have chosen containerization, see the page [Why choose containerization technology](../why-containers/index.md).
 
 ## Comparison of technologies
 
@@ -86,7 +86,7 @@ unforeseen vulnerabilities.
 
 The rkt is not a complete platform, end-to-end solution. It is instead
 utilised in conjunction with other technologies or in substitute of
-particular Docker system components. Furthermore, the [rkt project](https://github.com/rkt/rkt) has been archieved on GitHub as of February, 2020.
+particular Docker system components. Furthermore, the [rkt project](https://github.com/rkt/rkt) has been archived on GitHub as of February, 2020.
 
 ### Hyper-V
 

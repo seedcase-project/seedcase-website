@@ -2,16 +2,17 @@
 title: "Architecture decisions"
 order: 9
 listing:
-  - id: decisions
-    contents: "../decisions/*/*"
-    type: default
-    sort: "title"
-    categories: true
-    fields: 
-      - "title"
-      - "author"
-      - "description"
-      - "date"
+  contents: "../decisions/*/*"
+  type: default
+  sort: "title"
+  include:
+    categories: ["software-architecture"]
+  categories: true
+  fields: 
+    - "title"
+    - "author"
+    - "description"
+    - "date"
 ---
 
 {{< include /includes/_wip.qmd >}}

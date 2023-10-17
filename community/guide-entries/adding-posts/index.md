@@ -102,7 +102,7 @@ Regardless, in both routes the steps are:
         repository and create a new Pull Request from your newly pushed
         branch.
     
-    -   No matter if want to add a file directly on GitHub or via the command line, you can find more guidance in the [GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
+    -   No matter if you want to add a file directly on GitHub or via the command line, you can find more guidance in the [GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
         
 
 6.  You are all done! That's it :smile:
