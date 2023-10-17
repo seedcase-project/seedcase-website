@@ -3,7 +3,7 @@
 ' Logged in user who manually writes a new row to the Data Resource.
 
 participant "User" as u
-participant "Front end" as f
+participant "Frontend" as f
 participant "API" as api
 participant "Backend" as db
 

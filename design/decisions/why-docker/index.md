@@ -22,6 +22,8 @@ are different platforms on the market, each with unique approaches and
 use cases. Even though all have a similar concept of images and
 containers, there are some technical differences worth noting.
 
+As to why we have chosen containerization, see the page [Why choose containerization technology](../why-containers/index.md).
+
 ## Comparison of technologies
 
 ### Docker
@@ -29,8 +31,9 @@ containers, there are some technical differences worth noting.
 Docker is without a doubt the most popular container
 application/platform. According to Stack Overflow's [2020 Developer
 Survey](https://insights.stackoverflow.com/survey/2020), which included
-almost 65,000 respondents, Docker was the second most popular platform
-among developers, trailing only Linux.
+almost 65,000 respondents, Docker was the [third most popular](https://insights.stackoverflow.com/survey/2020#technology-platforms) platform
+among developers, trailing only Linux and Windows. In this survey, Docker
+was the [most wanted and the second most loved](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-platforms) platform.
 
 Docker is incredible in many ways. It is a developer-friendly open
 source platform that can be used for rapid application development and
@@ -50,10 +53,10 @@ from the outside environment.
 
 ### Podman
 
-Podman is an open-source, Linux-native tool designed to develop, manage,
+[Podman](https://podman.io) is an open-source, Linux-native tool designed to develop, manage,
 and run containers and pods under the Open Container Initiative (OCI)
 standards. Presented as a user-friendly container orchestrator developed
-by Red Hat.
+by [Red Hat](https://www.redhat.com/en).
 
 Podman is a daemonless container engine that enables users to create,
 manage, and run OCI Containers on the Linux system. Podman, like Docker,
@@ -69,7 +72,7 @@ containers is viewed by some as improving system security.
 
 ### rkt
 
-rkt, like other container technologies, lets you separate your software
+[rkt](https://github.com/rkt/rkt), like other container technologies, lets you separate your software
 from its surroundings. However, rkt provides adjustable isolation,
 allowing you to choose the appropriate amount of isolation utilising
 rkt's pluggable runtime architecture, which is divided into different
@@ -83,7 +86,7 @@ unforeseen vulnerabilities.
 
 The rkt is not a complete platform, end-to-end solution. It is instead
 utilised in conjunction with other technologies or in substitute of
-particular Docker system components.
+particular Docker system components. Furthermore, the [rkt project](https://github.com/rkt/rkt) has been archived on GitHub as of February, 2020.
 
 ### Hyper-V
 
@@ -110,6 +113,7 @@ create, test, store and distribute containers. Secondly, Docker is a
 single, robust, and autonomous tool. Docker manages, runs, builds, and
 does all other container-related tasks independently of any other
 third-party tools. Lastly, Docker has a lengthy history of working with
-well-known cloud platforms like AWS and GCP. It is also compatible with
-Microsoft, Azure, and OpenStack. Overall, regardless of how great the
-alternatives are, Docker is still a viable option.
+well-known cloud platforms like Amazon Web Services (AWS) and Google Cloud
+Platform (GCP). It is also compatible with Microsoft, Azure, and OpenStack.
+Overall, regardless of how great the alternatives are, Docker is the most 
+suitable container platform for this project.

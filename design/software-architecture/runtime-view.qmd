@@ -177,34 +177,7 @@ by Seedcase:
     data project.
 2.  Re-using parts of an existing data project.
 
-<<<<<<< HEAD
 ![Logged in user who is requesting data from a Data Resource. <br> The "alt" box shows the alternative workflows depending on whether the user requests a new data projects or re-uses an existing data project for the request.](/design/images/runtime-data-request.png){#fig-data-request}
-=======
-```{mermaid data-request}
-%%| label: fig-data-request
-%%| fig-cap: "Logged in user who is requesting data from a Data Resource."
-sequenceDiagram
-    actor User
-    
-    participant f as Frontend
-    participant api as API
-    participant be as Backend
-    
-    alt New data project
-      User ->>+ f: Selects variables to request
-      User ->>+ f: Fills in project metadata
-    else Re-use data project
-      User ->>+ f: Browse and select data project
-      User ->>+ f: Copy project metadata and modify
-    end
-    
-    f ->>+ api: Clicked "Submit"
-    api ->>+ be: Store request metadata
-    api ->>+ api: Inform admin
-    be ->>- api: Application approved
-    api ->>- User: Send information<br>for next steps
-```
->>>>>>> a83ffb3208dfb9de6c70ac84c3293b9abe9985a2
 
 ### Applying for a new data project
 
@@ -247,7 +220,7 @@ application.
 
 ## Browsing projects and results
 
-There are at least three routes, we anticipate the [external user](https://seedcase-project.org/design/software-architecture/context) might
+There are at least three routes, we anticipate the [external user](context.qmd) might
 take when browsing the Data Resource:
 
 1.  Reading about the Data Resource, its history, organizational

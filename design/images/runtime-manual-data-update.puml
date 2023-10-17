@@ -3,7 +3,7 @@
 ' Logged in user enters data manually in more than one session.
 
 participant "User" as u
-participant "Front end" as f
+participant "Frontend" as f
 participant "API" as api
 participant "Backend" as db
 

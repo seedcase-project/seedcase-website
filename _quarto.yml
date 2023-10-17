@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Seedcase Project"
-  favicon: "/images/logo.png"
+  favicon: "/images/logo.svg"
   site-url: "https://seedcase-project.org/"
   repo-url: "https://github.com/seedcase-project/seedcase-project"
   page-footer:
@@ -12,7 +12,7 @@ website:
         href: LICENSE.md
   navbar:
     pinned: true
-    logo: "/images/logo.png"
+    logo: "/images/logo.svg"
     right:
       - text: "About"
         href: about/index.md
@@ -62,6 +62,8 @@ website:
         href: about/history/index.md
       # - text: "Mission"
       #   href: about/mission.md
+      - text: "Team Members"
+        href: about/team/index.md
 
 
 bibliography: "includes/references.bib"
