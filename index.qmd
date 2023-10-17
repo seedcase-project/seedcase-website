@@ -4,6 +4,7 @@ subtitle: A framework for an open and scalable infrastructure for health data
 about:
   id: hero-heading
   template: jolla
+  image: /images/logo-full-color.png
   links: 
     - icon: cone-striped
       text: "Software (incomplete)"
