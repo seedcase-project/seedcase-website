@@ -2,17 +2,18 @@
 ' Component diagram for the Seedcase product - Backend: File Storage
 !include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
-Container(bee, "Back End Environment")
+Container(bee, "Backend Environment")
 Container(management, "User and Data Management Layer")
 Container(auth, "Authentication")
+Container(auth, "Authentication") {
+  Component(user_info, "Information on users", $descr="Metadata on registered users of the Data Resource")
+}
 
-Container_Boundary(ui, "Front End User Interface") {
-  Container_Boundary(auth, "Authentication") {
-    Component(user_info, "Information on users", "Metadata on registered users of the Data Resource")
-  }
+Container_Boundary(ui, "Web Interface") {
+
   Container_Boundary(web, "Public web interface") {
     Component(page_landing, "Landing page", $descr="Welcome and overview page that directs users to other pages")
-    Component(page_login, "Login page", $descr="To give some users access to specific pages in the Data Resource")
+    Component(page_login, "Login page", $descr="To give authorized users access to specific pages in the Data Resource")
     Component(page_projects_list, "List of data projects", $descr="Displays all approved data projects as a list or table")
     Component(page_projects_details, "Details on each data project", $descr="Individual pages of each data project with more details")
     Component(page_metadata_list, "List of variables in Data Resource", $descr="Display all available variables in the Data Resource as a list or table")
@@ -45,9 +46,8 @@ Rel(page_login, page_project_admin, "Access with admin permissions")
 Rel(page_login, page_data_admin, "Access with admin permissions")
 Rel(page_login, page_data_qc, "Access with admin permissions")
 
-' Accessing back end
-Rel(management, bee, "Retrieve metadata")
-Rel(bee, management, "Store metadata")
+' Accessing backend
+BiRel(bee, management, "Store and retrieve metadata")
 Rel(management, page_projects_list, "Retrieve and display")
 Rel(management, page_projects_details, "Retrieve and display")
 Rel(management, page_metadata_list, "Retrieve and display")
