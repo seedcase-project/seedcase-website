@@ -1,12 +1,12 @@
-## Setting up the environment
+# Setting up the environment
 
 Because we are already using Docker containers with Seedcase, it made sense to use that as the starting point for my database.  One reason being, that you create additional problems for yourself if you run both a Postgres database locally and one in Docker, as they seem to compete for the local host domain.  I am aware that this should be solvable by referencing directly to the different set-ups when using for instance pgAdmin, but I haven't been able to figure that bit out (yet).
 
 Everything described below is done on a Mac running Ventura (13.5).
 
-### Docker setup
+## Docker setup
 
-Installing the Docker Desktop is straight forward, setting up the containers less so.  When starting the desktop app you have a few options on the left side, Containers, Images, and Volumens.  They are all a bit of a mystery, and quite empty to start with.  There is nothing intuitive telling me how to create a container and load it with for instance postgres, and I keep ending up using a bit of code in the terminal to set up a new container, which populates the container section as well as the image section of the Docker Desktop.
+Installing the Docker Desktop is straight forward, setting up the containers less so.  When starting the desktop app you have a few options on the left side, Containers, Images, and Volumes.  They are all a bit of a mystery, and quite empty to start with.  There is nothing intuitive telling me how to create a container and load it with for instance postgres, and I keep ending up using a bit of code in the terminal to set up a new container, which populates the container section as well as the image section of the Docker Desktop.
 
 The code I modify is the following:
 
@@ -28,7 +28,6 @@ Breaking down the code can be useful (also for myself a couple of months from no
 
 `postgres:latest` is the Image that you are asking Docker to use, it is always the last thing in the command.  You can specify a specific version of postgres if you are working with other software where you are not sure that the latest version of postgres is compatible.
 
-
 ## Database setup and connections
 
 There are several ways to connect to a sql database.  Most DBAs will use a database management system, like Microsoft SQL Management Studio, or Azure Data Studio, but it is also possible to communicate via the terminal (using psql), or through a coding environment in python or R. As our system will be relying on access via python, I wanted to ensure that I could access the database using that.  
@@ -40,6 +39,7 @@ There are a few steps that I felt would be useful before trying to manipulate th
 The software itself is easy to install.  I picked it up from the official [website](https://azure.microsoft.com/en-us/products/data-studio), and ran the standard installation on my Mac.  Once up and running the only thing needed is the plug-in for postgres.  There are a few minor tweaks to the connection string, or in this instance the connection wizard, but once you have the right port set it is fairly easy.  
 
 ::: callout-info
+
 * Connection type: PostgreSQL
 * Server name: localhost
 * User name: postgres
@@ -50,9 +50,23 @@ Once those parameters are set the connection string should be working, allowing 
 
 ### psql
 
+Because the postgres databases will be running in Docker containers a full install of Postgres isn't needed on the local machine.  It is though necessary to have psql installed, as this is the language that will be used to communicate with the database.
 
+The easiest way to install psql is to go to the postgres [website](https://www.postgresql.org/download/), and download the latest version of the database.  When running the install, it is possible to deselect everything apart from psql, which will install the software.
+Docker containers.
 
-### python - psycopg
+### python, pip, and psycopg
 
+All Macs come with a version of python installed already.  It is though a good idea to check that it version 3, which can be done by opening a Terminal window and running the command
+
+``` bash
+python3 --version 
+```
+
+If you get an error, then you do not have Python 3 installed.  You should also check the latest version on the Python [website](https://www.python.org/downloads/), and update it if you are significantly behind.  The package downloaded is a standard install, and once run the above code snip should tell you which version of Python 3 is installed.
+
+With Python comes pip (pip Install Packages) which is the default package manager for python packages.  Python packages are additional sets of code and commands that can be installed and called upon when you need your scripts to do something extra that isn't part of pythons standard repertoire.  If you are new to python and pip then the website Real Python have an excellent [introduction](https://realpython.com/what-is-pip/).
+
+The last thing to get set up is such a package, the one called `psycopg`.  This is a library of commands that will allow python to talk to a postgres database.  The full installation can be a bit complicated, fortunately there is a version called `psycopg2-binary` which can be installed using pip and will allow you to use the full library as far as I can determine.
 
 <!-- TODO: describe how to set up the access control file   -->
