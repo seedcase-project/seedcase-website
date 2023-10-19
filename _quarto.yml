@@ -10,6 +10,7 @@ website:
     center:
       - text: "License: CC-BY 4.0"
         href: LICENSE.md
+  page-navigation: true
   navbar:
     pinned: true
     logo: "/images/logo.svg"
