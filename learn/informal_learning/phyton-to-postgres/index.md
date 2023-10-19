@@ -1,10 +1,10 @@
 # Learning python and database interactions
 
-These pages will end up documenting how I'm currently learning to use python to manipulate a postgres database.  At the same time it will help me learn how to navigate Git and GitHub, and hopefully allow me to become better at integrating my writting on our website.  They are not meant to be a guide or a how-to, rather the detailing of how I personally have gone about learning a new skill.  Much of it will be borderline chatty, and may go in many directions, I may come back later to prune it and make it more streamlined (although, knowing me, I probably won't).
+These pages will end up documenting how I'm currently learning to use python to manipulate a postgres database.  At the same time it will help me learn how to navigate Git and GitHub, and hopefully allow me to become better at integrating my writing on our website.  They are not meant to be a guide or a how-to, rather the detailing of how I personally have gone about learning a new skill.  Much of it will be borderline chatty, and may go in many directions, I may come back later to prune it and make it more streamlined (although, knowing me, I probably won't).
 
 ## Introduction
 
-Over the last couple of months I've been watching a lot of video courses on LinkedIn detailing how to use python, eventually honig in on how to use python to work with a postgres database.
+Over the last couple of months I've been watching a lot of video courses on LinkedIn detailing how to use python, eventually honing in on how to use python to work with a postgres database.
 
 One thing that teachers and instructors all agree on, is that once you have learned the fundamentals, it is time to put that knowledge into a more practical setting.  All that remains is to then find a small project to do, preferably something that does produce a meaningful result at the end.
 
@@ -12,7 +12,7 @@ In one of the courses I followed I picked up a script which used the ChatGPT API
 
 ## Idea to Design
 
-In my experience, going from idea to design can be both arduous and really easy at almost the same time.  Sometimes and idea springs fully formed out into your conscious brain, others needs to be coaxed and drawn, put back to ferment, and then revisited several times before it may eventually become something you can actually work with. 
+In my experience, going from idea to design can be both arduous and really easy at almost the same time.  Sometimes and idea springs fully formed out into your conscious brain, others needs to be coaxed and drawn, put back to ferment, and then revisited several times before it may eventually become something you can actually work with.
 
 In this instance I knew that I wanted something that would generate data but I also had a list of other criteria.  It shouldn't generate too many variables, but it should be data that could be augmented with user information, as well as something that I could later use for searching and returning results.  It would also be nice if I could work with limiting the data returned to a specific user, as well as opening it up for multiple users that could potentially share some or all of their data with others.
 
@@ -38,7 +38,7 @@ Would be nice to Have
 
 - option to share a specific set of data with other users or make them public
 - option to see all the data which has been set to public on separate screen
-- option to pick a specific user and see what they have shared 
+- option to pick a specific user and see what they have shared
 
 Shortly after doing a short intro course on ChatGPT's API from OpenAI I thought that this might be a place to start.  The API generates two pieces of data, the question and the reply.  In addition there is data about the user that can be captured alongside the interaction for further use.
 
