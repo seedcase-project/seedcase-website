@@ -1,7 +1,7 @@
 ---
 name: User story
 about: Suggest a feature from the perspective of a specific user role
-title: "[User story] "
+title: "[User story]"
 labels: ''
 assignees: ''
 
@@ -9,7 +9,7 @@ assignees: ''
 
 As a [user], 
 
-I [want to], 
+I want to [functionality], 
 
 so that [benefit].
 
