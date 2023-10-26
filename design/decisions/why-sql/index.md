@@ -14,8 +14,6 @@ categories:
   - software-architecture
 ---
 
-# Software evaluation
-
 To fit our [Guiding
 Principles](/design/software-architecture/introduction.qmd#guiding-principles) of using established and well-known
 technologies, we're only going to look at the top three open source
@@ -48,24 +46,24 @@ languages are C and C++, and it runs of a variety of operating systems.
 The system allows access through standard technologies (ADO.NET, JDBC,
 ODBC, and native APIs).
 
-**Benefits**
+### Benefits
 
--   At present the second most popular database both open source and
+- At present the second most popular database both open source and
     overall with good support and a large community.
--   Traditional database system with a recognisable format which should be
+- Traditional database system with a recognisable format which should be
     easy to manipulate and work with for the advanced Seedcase user.
--   Support for both XML and JSON formats, both reading and writing.
--   There are a number of ways for MySQL to interact with Apache Parquet
+- Support for both XML and JSON formats, both reading and writing.
+- There are a number of ways for MySQL to interact with Apache Parquet
     files.
 
-**Drawbacks**
+### Drawbacks
 
--   MySQL is run by Oracle which is a commercial entity. There is always
+- MySQL is run by Oracle which is a commercial entity. There is always
     a risk that the company decides to reverse the open source concept
     and go move to a solution with a free light version and full payable
     version. In the case of MySQL, it is very unlikely as the software is very
     well established and the user community quite large.
--   There is currently no option in MySQL to store data in a columnar
+- There is currently no option in MySQL to store data in a columnar
     table.
 
 ## PostgreSQL
@@ -78,22 +76,22 @@ a variety of operating systems. The system allows access through
 standard technologies (ADO.NET, JDBC, ODBC, a native C library, and
 streaming APIs).
 
-**Benefits**
+### Benefits
 
--   At present the fourth most popular database overall, and the second
+- At present the fourth most popular database overall, and the second
     most popular open source database. There is a thriving community with a
     lot of engaging users delivering support.
--   Traditional database system with a recognisable format which should be
+- Traditional database system with a recognisable format which should be
     easy to manipulate and work with for the advanced Seedcase user.
--   Support for both XML and JSON formats, both reading and writing.
--   There are scripts that will allow for PostgreSQL to interact with
+- Support for both XML and JSON formats, both reading and writing.
+- There are scripts that will allow for PostgreSQL to interact with
     Apache Parquet files.
--   It is possible to create columnar based tables directly in
+- It is possible to create columnar based tables directly in
     PostgreSQL.
 
-**Drawbacks**
+### Drawbacks
 
--   We don't see any major drawbacks.
+- We don't see any major drawbacks.
 
 ## SQLite
 
@@ -106,24 +104,24 @@ The implementation language is C, and it is platform independent. The
 system allows access through standard technologies (ADO.NET, JDBC, and
 ODBC).
 
-**Benefits**
+### Benefits
 
--   Support for both XML and JSON formats, both reading and writing.
--   Easy to set up and implement, works well with R and other languages.
+- Support for both XML and JSON formats, both reading and writing.
+- Easy to set up and implement, works well with R and other languages.
 
-**Drawbacks**
+### Drawbacks
 
--   The database is designed primarily as a tool to sit underneath
+- The database is designed primarily as a tool to sit underneath
     applications running in single user mode. This means that the
     database does not as a standard support multi-user work.
--   SQLite is not fully ACID (atomicity, consistency, isolation, and
+- SQLite is not fully ACID (atomicity, consistency, isolation, and
     durability) compliant, which is always a risk when working with
     larger data sets.
--   There is always a risk that an open source community will break
+- There is always a risk that an open source community will break
     apart and leave a product unsupported, but the risk here looks
     minimal. The explicitly stated intention from the core developers of
     SQLite is to support the product until at least 2050.
--   As the database is serverless it is quite possible that the target
+- As the database is serverless it is quite possible that the target
     audience for the Seedcase project will struggle to work with the
     database in the instances where local development is needed.
 
