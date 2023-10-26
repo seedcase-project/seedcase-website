@@ -4,8 +4,6 @@
 
 	// List of extensions which should be recommended for users of this workspace.
 	"recommendations": [
-	  "vstirbu.vscode-mermaid-preview",
-	  "bierner.markdown-mermaid",
 	  "jebbs.plantuml",
 		"batisteo.vscode-django",
 		"DavidAnson.vscode-markdownlint",
