@@ -87,11 +87,11 @@ Looking at a number of **CLA**s (in particular [Threema](https://threema.ch/en/o
 [ImageWorks](https://www.imageworks.com/technology/opensource/cla)), it seems that these projects are mainly concerned with the
 following:
 
--   A person submitting code that they are not the copyright holder for.
--   Withdrawal of the right to use the submitted code.
--   The need to apply for patents in future for parts or all of the
+- A person submitting code that they are not the copyright holder for.
+- Withdrawal of the right to use the submitted code.
+- The need to apply for patents in future for parts or all of the
     source code.
--   A change in the type of license that the source code was given at
+- A change in the type of license that the source code was given at
     the time of contribution.
 
 There are also some agreements that touch on the subject of loss and
@@ -121,5 +121,5 @@ implementing a **DCO** that future contributors will need to agree to
 before making a contribution to the project. This could be done either
 by checking that a commit contains the signed-off-by clause before
 merging it, or by implementing something like the [GitHub App
-DCO](https://github.com/apps/dco). The licence text itself is available
+DCO](https://github.com/apps/dco). The license text itself is available
 [here](https://developercertificate.org).
