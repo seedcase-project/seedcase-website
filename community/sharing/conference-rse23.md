@@ -1,12 +1,27 @@
-### Title: Research Software Engineering Conference 2023
+---
+title: "Experiences from the Research Software Engineering Conference 2023"
+description: "Some thoughts and experiences learned from the Research Software Engineering Conference 2023 in Swansea, UK."
+author: "Richard Ding"
+date: "2023-10-18"
+categories:
+  - conference
+  - learning
+  - experiences
+  - software engineering
+---
 
-I woudd love to share my experience at the RSE Conference 2023,
+I attended the [RSE Conference 2023](https://rsecon23.society-rse.org/)
 hosted at
-beautiful Swansea University's Bay campus. This conference illuminated
-three takeaways: community growth, the responsible handling of health
-data, and the prowess of Python-powered tools.
+beautiful Swansea University's Bay campus and
+I would love to share my experiences of it in this blog post.
+This conference illuminated
+three takeaways for me:
 
-#### 1. RSE Community: Strengthened and Acknowledged
+- Community growth
+- The responsible handling of health data
+- The power of Python tools
+
+## RSE Community: Strengthened and Acknowledged
 
 The RSE Conference 2023 showed that the RSE community is growing up and
 getting more recognition. At this lively event, software engineers,
@@ -17,12 +32,12 @@ engineering.
 In the last ten years, the RSE community has been figuring out what we
 do in our jobs, where we fit in, and how people can join us. This helps
 make research software engineering important for society. Neil Chu
-Hong's keynote speak got us thinking about how our job can keep getting
+Hong's keynote presentation got us thinking about how our job can keep getting
 better, bigger, and easier for people who aren't part of our group. His
 talk got us talking about how our work affects everyone in society,
 which was a big theme at the conference.
 
-#### 2. Responsible Handling of Sensitive Health Data
+## Responsible Handling of Sensitive Health Data
 
 Imagine you're a scientist working on important research about
 healthcare, education, or economics. Some of this research involves
@@ -33,7 +48,7 @@ as safe as we possibly can.
 
 To tackle this challenge, research teams have come up with something
 called Trusted Research Environments (TREs). These are like special
-computer spaces designed to be super safe and secure, just like a
+computer spaces designed to be safe and secure, just like a
 top-secret vault. But they also have to be super useful for researchers,
 just like a well-equipped lab.
 
