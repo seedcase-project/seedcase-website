@@ -1,17 +1,12 @@
 ---
 name: User story
-about: Suggest a feature from the perspective of a specific user role
+about: Suggest a feature from the perspective of a specific type of user
 title: "[User story]"
 labels: ''
 assignees: ''
 
 ---
 
-As a [user], 
-
-I want to [functionality], 
-
-so that [benefit].
+As a [user], I want to [functionality], so that [benefit].
 
 
-**Relates to issue:** #
