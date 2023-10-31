@@ -54,7 +54,7 @@ just like a well-equipped lab.
 
 When we talk about sensitive data, we're talking about information that
 belongs to real people – people like you and me. We call them "data
-subjects." These are the folks whose data is being used for research
+subjects". These are the folks whose data is being used for research
 inside a TRE. We want them to feel safe and comfortable knowing their
 information is being handled with care.
 
@@ -69,8 +69,8 @@ and that it's actually getting results.
 
 So, at the RSE Conference 2023, we talked about how to make these TREs
 safe and productive for everyone involved. We also learned about the
-Alan Turing Institute's open-source Data Safe Haven project, which helps
-with this. During workshops, we had discussions about what makes a TRE
+Alan Turing Institute's open-source [Data Safe Haven](https://github.com/alan-turing-institute/data-safe-haven) project, which helps
+with this. During the workshops, we had discussions about what makes a TRE
 good or bad, what information we'd want to know before using one, and
 what concerns we have about TREs.
 
@@ -81,14 +81,14 @@ everyone involved. Plus, our discussions will help improve the Alan
 Turing Institute Data Safe Haven project, making TREs even better in the
 future.
 
-#### 3. Python Power: Tools and Applications
+## Python Power: Tools and Applications
 
 The conference was all about Python tools. I got to see lots of cool
 tools and packages powered by Python that really amazed us.
 
-- Carrot-CDM: Carrot-CDM is a powerful Python tool designed to simplify
-  the transformation of messy health datasets into the organized Common
-  Data Model (CDM) format. Using a command line interface, it extracts
+- [Carrot-CDM](https://hdruk.github.io/CaRROT-Docs/CaRROT-CDM/About/): Carrot-CDM is a powerful Python tool designed to simplify
+  the transformation of messy health datasets into the organized [OHDSI Common
+  Data Model](https://www.ohdsi.org/data-standardization/) (CDM) format. Using a command line interface, it extracts
   input datasets, applies mapping rules defined in a JSON file, and then
   outputs the transformed data in TSV format, ready for loading into a
   database or another destination. Carrot-CDM's clever use of Python
@@ -96,11 +96,11 @@ tools and packages powered by Python that really amazed us.
   research data management, helping researchers make sense of complex
   health data effortlessly.
 
-- Apptainer: Apptainer is a Python package that simplifies running
+- [Apptainer](https://apptainer.org/): Apptainer is a Python package that simplifies running
   complex applications using containers. As an open-source project,
   Apptainer boasts a welcoming community and stands out in the container
   landscape for its focus on verifiable reproducibility and security,
-  streamlined integration, ease of mobility with its single-file SIF
+  streamlined integration, ease of mobility with its single-file Singularity Image Format (SIF)
   container format, and a straightforward yet effective security model.
   With Apptainer, you work inside a container as you do outside,
   ensuring a simple yet robust approach to security while harnessing the
@@ -110,11 +110,11 @@ tools and packages powered by Python that really amazed us.
   simplicity and secure design are your allies in the world of
   containerized computing.
 
-- Scikit-Learn: scikit-learn is a Python library offers a wealth of data
+- [scikit-Learn](https://scikit-learn.org/stable/): scikit-learn is a Python library offers a wealth of data
   analysis and machine learning tools, but one standout feature is its
   automated feature selection capability. When diving into complex
   datasets, it's often challenging to pinpoint which variables are truly
-  influential for making accurate predictions. Scikit-learn simplifies
+  influential for making accurate predictions. scikit-learn simplifies
   this process by automatically identifying and selecting the most
   relevant features, eliminating noise, and enhancing the precision of
   your research models. This feature is a game-changer for researchers,
@@ -125,7 +125,7 @@ tools and packages powered by Python that really amazed us.
   insights with surgical precision, elevating the quality and depth of
   your research findings.
 
-#### Conclusion: Better Software Better Research
+## Conclusion: Better Software Better Research
 
 RSEcon 2023 showed us a lot about Research Software Engineering (RSE).
 We had some interesting talks that got us thinking, and we had sessions
