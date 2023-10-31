@@ -4,9 +4,9 @@ title: Roadmap
 
 {{< include /includes/_wip.qmd >}}
 
-While the core deliverable of Seedcase is the Product described in the [design](/design/index.md) documentation, there are several deliverables that form this core Product.
+While the core deliverable of Seedcase is the software product described in the [design](/design/software-architecture/index.qmd) documentation, there are several deliverables that form this core Product.
 
-Because of the evolving nature of software, they never are "completed" as they continue to be improved on and updated. So here we define deliverable for software as the first Minimally Viable Product (or prototype). After the first release of a Minimally Viable Product, the Product continues to be tested and refined based on user feedback, identifying bugs, and adding features.
+Because of the evolving nature of developing software, the software product is never "completed" as it continues to be improved on and updated. So here we define deliverable for software as the first Minimally Viable Product (or prototype). After the first release of a Minimally Viable Product, the software product will continue to be tested and refined based on user feedback, identifying bugs, and adding features.
 
 Likewise, our non-software projects will also continue to be refined and updated. So we define deliverable as the first time they are uploaded to an archive (like a software release) to create a DOI (digital object identifier).
 
@@ -24,13 +24,13 @@ Likewise, our non-software projects will also continue to be refined and updated
     - Web portal for displaying basic details on a Data Resource
     - Plugin/extension system for theming of User Interface elements
 
-- Documents
+- Documentation
     - Contributing to and maintaining Seedcase software
     - Using and interacting with Seedcase software through their API and the command line
     - Using and interacting with Seedcase software through the User Interface
     - Software and data design and architecture for each Seedcase software
     - Installing and deploying Seedcase software
-    - Usin customizing Seedcase software
+    - Using customizing Seedcase software
 
 - Workshops (in-person and maybe virtual as videos)
     - Installing and setting up Seedcase on a server so Data Resources can be created
@@ -52,13 +52,15 @@ Likewise, our non-software projects will also continue to be refined and updated
     - "What is research data engineering?"
 
 - Training and learning
-    - Workshop: "Data engineering in a research environment
+    - Workshop: "Data engineering in a research environment"
 
 ## Major milestones
 
 - First upload of documents to archive (for DOI)
     - Design and architecture
     - Team workflow and infrastructure
+
+- Modules/components of each software deliverable
 
 - Real-world deployment of Seedcase
     - DD2
