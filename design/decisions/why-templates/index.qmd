@@ -1,0 +1,42 @@
+---
+title: "Using templates to support team workflow"
+description: "When creating a piece of software like Seedcase there are a lot of things that it would be a good idea to either standardise, or to avoid having to type up again and again.  Templates is one way of dealing with these challenges."
+author: "Kristiane Beicher"
+date: last-modified
+categories:
+  - templates
+  - standardisation
+  - team work
+---
+
+## Context and Problem Statement
+
+When working together with other people on a project it is easy to get bogged down in the 'how' to do things rather than actually doing something.  There may also be situations where a workflow will be easier if it looks the same each time you encounter it.  The question here becomes:
+
+> How do we ensure that we work most efficiently, and have all the information we need to do our job to hand, when we need it?
+
+Not everything can be solved by standardisation, but quite a few workflow will always benefit from having a standard list of items that must be present before the next step in the process is initialised.
+
+## Decision Drivers
+
+As we have expanded the team it has become increasingly clear that we need some more standardised ways of dealing with some of the issues that a team of people encounter when working on a shared project.  There are for instance a number of things that we need to have present when reviewing pull request, or merging branches.  A number of these challenges can be overcome by setting standards for how we present data, and how we hand tasks over internally within the team.
+
+## Considered Options
+
+::: content-hidden
+List and describe some of the options, as well as some of the pros and
+cons for each option.
+:::
+
+## Decision Outcome
+
+::: content-hidden
+What decision was made, use the form "We decided on CHOICE because of
+REASONS."
+:::
+
+### Consequences
+
+::: content-hidden
+List some potential consequences of this decision.
+:::
