@@ -25,12 +25,13 @@ As we have expanded the team it has become increasingly clear that we need some 
 ## Considered Options
 
 ::: content-hidden
-- templates
-- code snippets
-- joint list of categories (under code snippets?)
-
 List and describe some of the options, as well as some of the pros and
 cons for each option.
+
+- templates
+- code snippets
+- joint list of categories
+- Projects on GitHub (using 'workflows')
 :::
 
 ## Decision Outcome
