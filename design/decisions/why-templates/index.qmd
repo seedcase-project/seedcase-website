@@ -1,12 +1,13 @@
 ---
-title: "Using templates to support team workflow"
-description: "When creating a piece of software like Seedcase there are a lot of things that it would be a good idea to either standardise, or to avoid having to type up again and again.  Templates is one way of dealing with these challenges."
+title: "Standardisation tools to support team workflow"
+description: "When creating a piece of software like Seedcase there are a lot of things that it would be a good idea to either standardise, or to avoid having to type up again and again.  Templates and code snippets are some of the tools available to deal with these challenges."
 author: "Kristiane Beicher"
 date: last-modified
 categories:
   - templates
   - standardisation
   - team work
+  - code snippets
 ---
 
 ## Context and Problem Statement
@@ -24,6 +25,10 @@ As we have expanded the team it has become increasingly clear that we need some 
 ## Considered Options
 
 ::: content-hidden
+- templates
+- code snippets
+- joint list of categories (under code snippets?)
+
 List and describe some of the options, as well as some of the pros and
 cons for each option.
 :::
