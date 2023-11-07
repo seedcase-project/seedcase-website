@@ -1,0 +1,62 @@
+{
+	// Place your snippets for quarto here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	//
+	// Don't forget to edit VSCode to accept tab completion for quarto, this is not available through the standard settings for quarto
+	// Go to the quarto extension settings and search for: @lang:quarto snippets
+	// Set Tab Completion to On
+	// Ensure that Show Snippets is ticked
+	// Optional: choose where the snippets comes in the list of suggestions
+	// 
+
+	"Insert a 2 col table for unstructured points":{
+		"prefix": "tbl2unstr",
+		"body": [
+			"::: columns"
+			"::: {.column width=\"50%\" style=\"font-size: 90%\"}"
+			""
+			"${1:First column text or list here}""
+			""
+			":::"
+			"::: {.column width=\"50%\" style=\"font-size: 90%\"}"
+			""
+			"${0:Second column text or list here}"
+			""
+			":::"
+			":::"
+		],
+		"description": "Insert a 2 col table for unstructured points"
+	}
+
+	"Insert a hidden comment section":{
+		"prefix": "hddn",
+		"body": [
+			"::: content-hidden" 
+			"${0:Write comments here}"
+			":::"
+		],
+		"description": "Insert a hidden content section"
+	}
+
+	"Insert a 2 col table": {
+		"prefix": "tbl2",
+		"body": [
+				"|${1:title} |${0:title} |",
+				"| --- | --- |",
+				"|   |   |"
+		],
+		"description": "Insert a 2 col table"
+	}    
+
+	"Insert a 3 col table": {
+		"prefix": "tbl3",
+		"body": [
+				"|${1:title} |${2:title} |${0:title} |",
+				"| --- | --- | --- |",
+				"|   |   |   |"
+		],
+		"description": "Insert a 3 col table"
+	}    
+}
