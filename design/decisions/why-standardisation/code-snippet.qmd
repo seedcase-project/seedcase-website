@@ -1,0 +1,53 @@
+---
+title: "Creating, sharing, and using Code Snippets in Visual Studio Code"
+description: "How to create and implement code snippets as a shared resource using GitHub."
+author: "Kristiane Beicher"
+date: last-modified
+categories:
+  - code-snippets
+  - teamworking
+  - implementation
+  - vs-code
+---
+
+## Code snippets in Quarto markdown files (.qmd)
+
+It is possible to set up and share code snippets for `.qmd` files using VSCode and GitHub allowing a team to share for instance formatting code, something that can greatly benefit documentation in particular.
+
+There are though a few hoops to jump through in order for the sharing to work.  First of all there is the setting to allow for tab completion to work in a quarto file, and then there is the issue of placing the shared code snippet file in a folder that will allow it to be shared between users.  Although not the best documented feature it was possible to get both up and running, with the result that we are now able to ensure that things like formatting of the title section in our documentation is consistent across multiple authors.
+
+### Set-up of tab completion
+
+Setting up tab completion in quarto is not a part of the extension settings that you have access to, if you open the settings in VSCode.  You will need to access the settings and then search for the following settings
+
+``` bash
+@lang:quarto snippets
+```
+
+This will make it possible to set Tab Completion to Yes, and also give an option to decide where in the list of suggestions the prefixes should turn up.
+
+### File placement
+
+It is possible to share a code snippet file within a team using GitHub, but the default placement of the snippet files (in Library/../Code/User/snippets) is outside the scope of GitHub, it is therefore necessary to move the file into VSCode itself.  This was an extension from Rebornix until 2018 where it became a part of VSCode.  
+
+There are a couple of requirements that will need to be fulfilled in order for the code to work.  The file must be named [language].[codesnippets] (so in this case quarto.codesnippets), and it must be in the top level .vscode folder in VSCode, this is not the case VSCode will ignore the file and tab completion won't pick up on the shortcuts.
+
+### Layout of the code-snippet file
+
+The actual code snippets are written in json, but because the file extension is `.codesnippets` the file itself will ignore a couple of json file requirements.  The main one being that there shouldn't be any comments (denoted by `//`) in the file itself, as well as some requirements to keep sections apart using commas.
+
+<!--TODO: check with team if the comma thing is actually a thing in json -->
+
+The json format consists of a prefix and a body section, as well as an optional description.  An example of the code used to insert a hidden comment is given below.
+
+``` bash
+	"Insert a hidden comment section":{
+		"prefix": "hddn",
+		"body": [
+			"::: content-hidden" 
+			"${0:Write comments here}"
+			":::"
+		],
+		"description": "Insert a hidden content section"
+	}
+```
