@@ -4,11 +4,12 @@ description: "How to create and implement code snippets as a shared resource usi
 author: "Kristiane Beicher"
 date: last-modified
 categories:
-  - code-snippets
+  - code snippets
   - teamworking
   - implementation
-  - vs-code
+  - vs code
 ---
+<!--TODO May want to move this somewhere else, maybe placed with some of the guidance documentation that Signe is writing?-->
 
 ## Code snippets in Quarto markdown files (.qmd)
 
@@ -30,11 +31,11 @@ This will make it possible to set Tab Completion to Yes, and also give an option
 
 It is possible to share a code snippet file within a team using GitHub, but the default placement of the snippet files (in Library/../Code/User/snippets) is outside the scope of GitHub, it is therefore necessary to move the file into VSCode itself.  This was an extension from Rebornix until 2018 where it became a part of VSCode.  
 
-There are a couple of requirements that will need to be fulfilled in order for the code to work.  The file must be named [language].[codesnippets] (so in this case quarto.codesnippets), and it must be in the top level .vscode folder in VSCode, this is not the case VSCode will ignore the file and tab completion won't pick up on the shortcuts.
+There are a couple of requirements that will need to be fulfilled in order for the code to work.  The file must be named [language].[code-snippets] (so in this case quarto.code-snippets), and it must be in the top level .vscode folder in VSCode, if this is not the case VSCode will ignore the file and tab completion won't pick up on the shortcuts.
 
 ### Layout of the code-snippet file
 
-The actual code snippets are written in json, but because the file extension is `.codesnippets` the file itself will ignore a couple of json file requirements.  The main one being that there shouldn't be any comments (denoted by `//`) in the file itself, as well as some requirements to keep sections apart using commas.
+The actual code snippets are written in json, but because the file extension is `.code-snippets` the file itself will ignore a couple of json file requirements.  The main one being that there shouldn't be any comments (denoted by `//`) in the file itself, as well as some requirements to keep sections apart using commas.
 
 <!--TODO: check with team if the comma thing is actually a thing in json -->
 
@@ -51,3 +52,7 @@ The json format consists of a prefix and a body section, as well as an optional 
 		"description": "Insert a hidden content section"
 	}
 ```
+
+As can be seen above there are some characters that are 'reserved' when writing the body.  The one that will probably most frequently be an issue is the quotation mark `"`, if used in the body it should be prefixed with a backslash `\`, which here acts like an escape character.
+
+<!--TODO Do we want to maintain a list of code snippets here?-->
