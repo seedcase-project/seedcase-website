@@ -36,16 +36,36 @@ User generated code snippets is a tool that was made available in Visual Studio 
 
 <!--TODO Check with Richard if pyCharm has similar function for 'text' editing-->
 
-::: content-hidden
+### Joint list of key words for documentation
 
-- joint list of categories
-- Projects on GitHub (using 'workflows')
-- DevContainer
-- Extension
+Quarto allows for the generation of key words that can be used to filter documentation.  It is important for usability of the website that the words used are the same, and spelled the same, so that if a person is looking for how Seedcase handles databases they get everything by clicking on the keyword database, and aren't missing half the documents because they are tagged with the key word databases.  
+
+The following guidelines for selecting key words apply:
+
+* **Form** we prefer using nouns over verbs (eg. documentation over documenting, contribution over contributing)
+* **Plural vs Singular** we prefer singular over plural (eg. database over databases, and container over containers)
+* **More than one word** we prefer to write keywords that consist of more than one word without hyphens (eg. design architecture over design-architecture), the exception is of course where the word is normally spelled with a hyphen (eg. back-end)
+
+The list of key words is included in the code snippet for setting up the title section in the documentation, it is the plan that it will also be accessible through a dedicated page at a later date, but this is still in the design phase.
+
+<!--TODO #207 Add the key words to the title code snippet-->
+
+### Project pages on GitHub
+
+It is debatable whether or not the project pages on GitHub is a tool for standardising workflows.  Here we have included a brief description, further information on how we expect to use it is detailed on this page.
+
+<!--TODO Insert link to page once it is created-->
+
+We hope to use the project pages to track the issues that are being worked on each month (sprint), and to some degree use it to move issues between people associated with the project, so that we all know who is working on what and when.
+
+<!--TODO We should have a discussion on this soon-->
+
+::: content-hidden
+Should we have a section on Devcontainers and extensions here?
 :::
 
 ## Decision Outcome
 
 There won't be any decisions made for now on whether or not to use the above mentioned ways of working.  In stead we will be implementing (and have been implementing) them over the coming months, and testing out which works for us, and which will slowly stop being used and therefore turn out not to be something that is ideal for the seedcase team.
 
-<!--TODO Consider: Should this be moved to another part of seedcase, the team section for instance?-->
+<!--TODO Consider: Should the entire document be moved to another part of seedcase, the team section for instance?-->
