@@ -11,23 +11,36 @@
 	// Optional: choose where the snippets comes in the list of suggestions
 	// 
 
-	"Insert a 2 col table for unstructured points":{
-		"prefix": "tbl2unstr",
+	"Insert TODO formatting":{
+		"prefix": "TODO",
 		"body": [
-			"::: columns"
-			"::: {.column width=\"50%\" style=\"font-size: 90%\"}"
-			""
-			"${1:First column text or list here}""
-			""
-			":::"
-			"::: {.column width=\"50%\" style=\"font-size: 90%\"}"
-			""
-			"${0:Second column text or list here}"
-			""
-			":::"
-			":::"
+			"<!--TODO ${0:Write text here}-->"
 		],
-		"description": "Insert a 2 col table for unstructured points"
+		"description": "Insert TODO formatting"
+	}
+	
+	"Insert bash formatted text":{
+		"prefix": "bash",
+		"body": [
+			"``` bash"
+			"${0:Write text here}"
+			"```"
+		],
+		"description": "Insert bash formatted text"
+	}
+	
+	"Insert title section":{
+		"prefix": "ttl_sec",
+		"body": [
+			"---"
+			"title: \"\""
+			"description: \"Our reasons for ...\""
+			"author: \"\""
+			"date: last-modified"
+			"categories:"
+			"---"
+		],
+		"description": "Insert title section"
 	}
 
 	"Insert a hidden comment section":{
@@ -58,5 +71,56 @@
 				"|   |   |   |"
 		],
 		"description": "Insert a 3 col table"
-	}    
+	}
+
+	"Insert title section with list of category words": {
+		"prefix": "ttl_sec_cat",
+		"body": [
+			"---"
+			"title: \"\""
+			"description: \"Our reasons for ...\""
+			"author: \"\""
+			"date: last-modified"
+			"categories:"
+			"  - api"
+			"  - backend"
+			"  - blogs"
+			"  - code snippets"
+			"  - communication"
+			"  - container"
+			"  - contributing"
+			"  - copyright"
+			"  - culture"
+			"  - database"
+			"  - development"
+			"  - documentation"
+			"  - frontend"
+			"  - github"
+			"  - implementation"
+			"  - installation"
+			"  - licensing"
+			"  - management"
+			"  - markdown"
+			"  - organization"
+			"  - programming"
+			"  - repositories"
+			"  - reviewing"
+			"  - software"
+			"  - software architecture"
+			"  - standardisation"
+			"  - structure"
+			"  - team work"
+			"  - teamworking"
+			"  - technology"
+			"  - templates"
+			"  - tools"
+			"  - vs code"
+			"  - web"
+			"  - website"
+			"  - workflow"
+			"  - writing"
+			"---"
+		],
+		"description": "Insert title with category words"
+	}
 }
