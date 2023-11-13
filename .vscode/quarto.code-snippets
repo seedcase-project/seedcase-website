@@ -1,14 +1,20 @@
 {
-	// Place your snippets for quarto here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
+	// Place your snippets for Quarto here. 
+	// Each snippet is defined under a snippet name and has a prefix, body and description. 
+	// The prefix is what is used to trigger the snippet and the body will be expanded and inserted. 
+	// Possible variables are:
 	//
-	// Don't forget to edit VSCode to accept tab completion for quarto, this is not available through the standard settings for quarto
-	// Go to the quarto extension settings and search for: @lang:quarto snippets
-	// Set Tab Completion to On
-	// Ensure that Show Snippets is ticked
-	// Optional: choose where the snippets comes in the list of suggestions
+	// - $1 and $2 for tab stops, 
+	// - $0 for the final cursor position, and 
+	// - ${1:label}, ${2:another} for placeholders
+	// 
+	// Placeholders with the same ids are connected.
+	//
+	// Don't forget to edit VS Code to accept tab completion for Quarto - this is not available through the standard settings for Quarto
+	// Go to VS Code settings (Click gear icon in bottom left corner or use the shortcut Cmd+,) and search for: @lang:quarto snippets
+	// Set "Tab Completion" to "On"
+	// Ensure that "Show Snippets" is ticked
+	// Optional: Choose where the snippets comes in the list of suggestions in the field "Editor: Snippet Suggestions"
 	// 
 
 	"Insert TODO formatting":{
