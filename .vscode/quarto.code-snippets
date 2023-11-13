@@ -10,12 +10,6 @@
 	// 
 	// Placeholders with the same ids are connected.
 	//
-	// Don't forget to edit VS Code to accept tab completion for Quarto - this is not available through the standard settings for Quarto
-	// Go to VS Code settings (Click gear icon in bottom left corner or use the shortcut Cmd+,) and search for: @lang:quarto snippets
-	// Set "Tab Completion" to "On"
-	// Ensure that "Show Snippets" is ticked
-	// Optional: Choose where the snippets comes in the list of suggestions in the field "Editor: Snippet Suggestions"
-	// 
 	// How to use the code snippets:
 	// After you have set the above settings, a suggestion for one of the code snippets below will pop up automatically, when
 	// you start writing the prefix. Press "Enter" or "Tab" to insert the code snippet.
@@ -38,8 +32,8 @@
 		"description": "Insert bash formatted text"
 	}
 	
-	"Insert title section":{
-		"prefix": "ttl_sec",
+	"Insert YAML header for blogs":{
+		"prefix": "yaml_blog",
 		"body": [
 			"---"
 			"title: \"\""
@@ -49,11 +43,11 @@
 			"categories:"
 			"---"
 		],
-		"description": "Insert title section"
+		"description": "Insert YAML header for Quarto blog posts."
 	}
 
 	"Insert a hidden comment section":{
-		"prefix": "hddn",
+		"prefix": "hidden",
 		"body": [
 			"::: content-hidden" 
 			"${0:Write comments here}"
