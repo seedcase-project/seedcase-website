@@ -16,6 +16,9 @@
 	// Ensure that "Show Snippets" is ticked
 	// Optional: Choose where the snippets comes in the list of suggestions in the field "Editor: Snippet Suggestions"
 	// 
+	// How to use the code snippets:
+	// After you have set the above settings, a suggestion for one of the code snippets below will pop up automatically, when
+	// you start writing the prefix. Press "Enter" to insert the code snippet.
 
 	"Insert TODO formatting":{
 		"prefix": "TODO",
