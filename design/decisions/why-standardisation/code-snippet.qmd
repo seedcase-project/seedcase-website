@@ -35,7 +35,7 @@ There are a couple of requirements that will need to be fulfilled in order for t
 
 ### Layout of the code-snippet file
 
-The actual code snippets are written in json, but because the file extension is `.code-snippets` the file itself will ignore a couple of json file requirements.  The main one being that there shouldn't be any comments (denoted by `//`) in the file itself, as well as some requirements to keep sections apart using commas.
+The actual code snippets are written in JSON, but because the file extension is `.code-snippets` the file itself will ignore a couple of JSON file requirements.  The main one being that there shouldn't be any comments (denoted by `//`) in the file itself, as well as some requirements to keep sections apart using commas.
 
 <!--TODO: check with team if the comma thing is actually a thing in json -->
 
