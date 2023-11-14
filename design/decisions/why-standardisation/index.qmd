@@ -1,50 +1,50 @@
 ---
 title: "Standardisation tools to support team workflow"
-description: "When creating a piece of software like Seedcase there are a lot of things that it would be a good idea to either standardise, or to avoid having to type up again and again.  Templates and code snippets are some of the tools available to deal with these challenges."
+description: "When creating a piece of software like Seedcase there are a lot of things that it would be a good idea to either standardise, or to avoid having to type up again and again. Templates and code snippets are some of the tools available to deal with these challenges."
 author: "Kristiane Beicher"
 date: last-modified
 categories:
-  - templates
-  - standardisation
-  - team work
-  - code snippets
+- templates
+- standardisation
+- team work
+- code snippets
 ---
 
 ## Context and Problem Statement
 
-When working together with other people on a project it is easy to get bogged down in the 'how' to do things rather than actually doing something.  There may also be situations where a workflow will be easier if it looks the same each time you encounter it.  The question here becomes:
+When working together with other people on a project it is easy to get bogged down in the 'how' to do things rather than actually doing something.There may also be situations where a workflow will be easier if it looks the same each time you encounter it. The question here becomes:
 
 > How do we ensure that we work most efficiently, and have all the information we need to do our job to hand, when we need it?
 
-Not everything can be solved by standardisation, but quite a few workflow will always benefit from having a standard list of items that must be present before the next step in the process is initialised.
+Not everything can be solved by standardisation, but quite a few workflows will benefit from having a standard list of items that team members can select from to homogenise contributions.
 
 ## Decision Drivers
 
-As we have expanded the team it has become increasingly clear that we need some more standardised ways of dealing with some of the issues that a team of people encounter when working on a shared project.  There are for instance a number of things that we need to have present when reviewing pull request, or merging branches.  A number of these challenges can be overcome by setting standards for how we present data, and how we hand tasks over internally within the team.
+As we have expanded the team it has become increasingly clear that we need some more standardised ways of dealing with some of the issues that a team of people encounter when working on a shared project. There are for instance a number of things that we need to have present when reviewing pull request, or merging branches. 
 
 ## Considered Options
 
 ### Templates
 
-Templates helps with streamlining workflows, where implemented they enforce certain requirements regarding the information needed for a workflow to commence, and they help with ensuring that all the data needed to make a decision is present.  Templates can be used in many areas, we have (for now) focused on implementing them in the GitHub workflows. We are focusing on setting up templates for creating issues, and at the other end submitting pull requests.  In between we are recommending an extension for commits (Conventional Commits) which guides you through submitting a commit with more sensible comments.  
+Templates helps with streamlining workflows, where implemented they enforce certain requirements regarding the information needed for a workflow to commence, and they help with ensuring that all the data needed to make a decision is present. Templates can be used in many areas, we have (for now) focused on implementing them in the GitHub workflows.  We are focusing on setting up templates for creating issues, and at the other end submitting pull requests. In between we are recommending an extension for commits (Conventional Commits) which guides you through submitting a commit with more sensible comments. 
 
 ### Code snippets in VS Code 
 
-User generated code snippets is a tool that was made available in Visual Studio Code back in 2018.  There is similar functionality in other editors, but VSCode seems to be the one that have support for markdown and quarto.  Code snippets rely on tab completion being enabled, but once that has been set it is very easy to create a set of custom snippets.  For the seedcase team we have (for now) focused on creating snippets that will allow us to use the same markdown/quarto formatting when writing our documentation.  There are snippets for creating tables as well as standardising comments, more information on how to use code snippets can be found here.
+User generated code snippets is a tool that was made available in VS Code back in 2018. There is similar functionality in other editors, but VS Code seems to be the one that have support for markdown and quarto. Code snippets rely on tab completion being enabled, but once that has been set it is very easy to create a set of custom snippets. For the seedcase team we have (for now) focused on creating snippets that will allow us to use the same markdown/quarto formatting when writing our documentation. There are snippets for creating tables as well as standardising comments, more information on how to use code snippets can be found here. 
 
 <!--TODO link to doc on code snippets once we decide where to place it -->
 
 <!--TODO Check with Richard if pyCharm has similar function for 'text' editing-->
 
-### Joint list of key words for documentation
+### Joint list of keywords for documentation
 
-Quarto allows for the generation of key words that can be used to filter documentation.  It is important for usability of the website that the words used are the same, and spelled the same, so that if a person is looking for how Seedcase handles databases they get everything by clicking on the keyword database, and aren't missing half the documents because they are tagged with the key word databases.  
+Quarto allows for the generation of keywords that can be used to filter documentation. It is important for usability of the website that the words used are the same, and spelled the same, so that if a person is looking for how Seedcase handles databases they get everything by clicking on the keyword "database", and aren't missing half the documents because they are tagged with the key word "databases".
 
 The following guidelines for selecting key words apply:
 
-* **Form** we prefer using nouns over verbs (eg. documentation over documenting, contribution over contributing)
-* **Plural vs Singular** we prefer singular over plural (eg. database over databases, and container over containers)
-* **More than one word** we prefer to write keywords that consist of more than one word without hyphens (eg. design architecture over design-architecture), the exception is of course where the word is normally spelled with a hyphen (eg. back-end)
+* **Form** we prefer using nouns over verbs (eg. "documentation" over "documenting", "contribution" over "contributing")
+* **Plural vs Singular** we prefer singular over plural (eg. "database" over "databases", and "container" over "containers")
+* **More than one word** we prefer to write keywords that consist of more than one word without hyphens (eg. "design architecture" over "design-architecture"), the exception is of course where the word is normally spelled with a hyphen (eg. "back-end")
 
 The list of key words is included in the code snippet for setting up the title section in the documentation, it is the plan that it will also be accessible through a dedicated page at a later date, but this is still in the design phase.
 
@@ -52,13 +52,11 @@ The list of key words is included in the code snippet for setting up the title s
 
 ### Project pages on GitHub
 
-It is debatable whether or not the project pages on GitHub is a tool for standardising workflows.  Here we have included a brief description, further information on how we expect to use it is detailed on this page.
+It is debatable whether or not the project pages on GitHub is a tool for standardising workflows. Here we have included a brief description, further information on how we expect to use it is detailed on this page.
 
 <!--TODO Insert link to page once it is created-->
 
-We hope to use the project pages to track the issues that are being worked on each month (sprint), and to some degree use it to move issues between people associated with the project, so that we all know who is working on what and when.
-
-<!--TODO We should have a discussion on this soon-->
+We use the project pages to track the issues that are being worked on each month (sprint), and to some degree use it to move issues between people associated with the project, so that we all know who is working on what and when.
 
 ::: content-hidden
 Should we have a section on Devcontainers and extensions here?
@@ -66,6 +64,6 @@ Should we have a section on Devcontainers and extensions here?
 
 ## Decision Outcome
 
-There won't be any decisions made for now on whether or not to use the above mentioned ways of working.  In stead we will be implementing (and have been implementing) them over the coming months, and testing out which works for us, and which will slowly stop being used and therefore turn out not to be something that is ideal for the seedcase team.
+There won't be any decisions made for now on whether or not to use the above mentioned ways of working. Instead we will be implementing (and have been implementing) them over the coming months, and testing out which works for us, and which will slowly stop being used and therefore turn out not to be something that is ideal for the Seedcase team.
 
 <!--TODO Consider: Should the entire document be moved to another part of seedcase, the team section for instance?-->
