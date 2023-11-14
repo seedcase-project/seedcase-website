@@ -19,7 +19,7 @@ There are though a few hoops to jump through in order for the sharing to work.  
 
 ### Set-up of tab completion
 
-Setting up tab completion in quarto is not a part of the extension settings that you have access to, if you open the settings in VSCode.  You will need to access the settings and then search for the following settings
+Setting up tab completion in Quarto is not a part of the extension settings that you have access to, if you open the settings in VSCode.  You will need to access the settings and then search for the following settings
 
 ``` bash
 @lang:quarto snippets
