@@ -39,7 +39,7 @@ The actual code snippets are written in JSON, but because the file extension is 
 
 <!--TODO: check with team if the comma thing is actually a thing in json -->
 
-The json format consists of a prefix and a body section, as well as an optional description.  An example of the code used to insert a hidden comment is given below.
+The JSON format consists of a prefix and a body section, as well as an optional description.  An example of the code used to insert a hidden comment is given below.
 
 ``` bash
 	"Insert a hidden comment section":{
