@@ -39,6 +39,8 @@ website:
               href: community/CONTRIBUTING.md
             - auto: community/guide-entries
             - auto: community/decisions
+            - text: "Code of Conduct"
+              href: "https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md"
         - community/blocks.qmd
         - community/roadmap.qmd
     - id: design
