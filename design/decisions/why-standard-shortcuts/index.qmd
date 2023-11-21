@@ -1,0 +1,85 @@
+---
+title: "Standardising shortcuts when writing documentation"
+description: "The larger a project is, the more important it becomes to have a joint set of standards when writing documentation.  One option is to set up shortcuts that are shared across the team, so that all documentation follows the same classification and formatting."
+author: "Kristiane Beicher"
+date: last-modified
+categories:
+  - code snippets
+  - communication
+  - culture
+  - documentation
+  - markdown
+  - quarto
+  - standardisation
+  - team work
+  - templates
+  - vs code
+  - workflow
+---
+
+## Context and Problem Statement
+
+The more documentation we create for Seedcase, the more important it becomes to ensure a smooth reader experience, both in terms of the layout of the pages, and in terms of the filtering using keywords.
+
+> How do we ensure a uniform layout and a usable set of keywords as the documentation for Seedcase grows?
+
+## Decision Drivers
+
+The documentation for Seedcase is ever growing, and we have reached a level where it is impossible for one person to keep an overview and ensure a consistent layout of the pages. To help with this there are a few tools that can be employed to ensure that most of the documentation looks the same. Quarto can help with quite a few things (like consistent layout of links and keywords), but it could also be of benefit to us as a team, if we use the same layout for things like tables and hidden comments. It is also becoming increasingly clear that we must find a way to ensure the consistent use of keywords, so that when a reader clicks a `tag` in a document they get all relevant pages, and don't miss any due to the fact that half are tagged in one way (eg. `database`) and the other half is tagged slightly differently (eg `databases`).
+
+<!--TODO Should we link to the page on Quarto above?-->
+
+## Considered Options
+
+We have so far looked at two ways of streamlining the writing of documentation, code snippets, and shared keywords. One has now been integrated into the other.  
+
+
+### Code snippets in Quarto markdown files (.qmd)
+
+It is possible to set up and share code snippets for `.qmd` files using VS Code and GitHub allowing a team to share for instance formatting code, something that can greatly benefit documentation in particular.  
+
+There are though a few hoops to jump through in order for the sharing to work. First of all there is the setting to allow for tab completion to work in a quarto file, and then there is the issue of placing the shared code snippet file in a folder that will allow it to be shared between users. Although not the best documented feature it was possible to get both up and running, with the result that we are now able to ensure that things like formatting of the title section in our documentation is consistent across multiple authors.
+
+#### File placement
+
+It is possible to share a code snippet file within a team using Git, but the default placement of the snippet files (in Library/../Code/User/snippets) is outside the scope of Git and the project, it is therefore necessary to move the file into the project as a file that VS Code can access and use. This was an extension from Rebornix until 2018 where it became a part of VS Code. 
+
+There are a couple of requirements that will need to be fulfilled in order for the code to work. The file must be named `[language].[code-snippets]` (so in this case `quarto.code-snippets`), and it must be in the top level .vscode folder in VS Code, if this is not the case VS Code will ignore the file and tab completion won't pick up on the shortcuts.
+
+#### Layout of the code-snippet file
+
+The actual code snippets are written in json, but because the file extension is `.code-snippets` the file itself will ignore a couple of json file requirements. The main one being that there shouldn't be any comments (denoted by `//`) in the file itself, as well as some requirements to keep sections apart using commas.
+
+An example of the code used to insert a hidden comment is given below.
+
+``` bash
+	"Insert a hidden comment section":{
+		"prefix": "hidden",
+		"body": [
+			"::: content-hidden" 
+			"${0:Write comments here}"
+			":::"
+		],
+		"description": "Insert a hidden content section"
+	}
+```
+
+As can be seen above there are some characters that are 'reserved' when writing the body. The one that will probably most frequently be an issue is the quotation mark `"`, if used in the body it should be prefixed with a backslash `\`, which here acts like an escape character.
+
+### Shared keywords for documentation files
+
+We would like to ensure that the keywords we use to tag our documentation files with are consistent in both spelling and tenses. It is important for usability of the website that the words used are the same, and spelled the same, so that if a person is looking for how Seedcase handles databases they get everything by clicking on the keyword "database", and aren't missing half the documents because they are tagged with the key word "databases".
+
+The following guidelines for selecting key words apply:
+
+* **Form** we prefer using nouns over verbs (eg. "documentation" over "documenting", "contribution" over "contributing")
+* **Plural vs Singular** we prefer singular over plural (eg. "database" over "databases", and "container" over "containers")
+* **More than one word** we prefer to write keywords that consist of more than one word without hyphens (eg. "design architecture" over "design-architecture"), the exception is of course where the word is normally spelled with a hyphen (eg. "back-end")
+
+#### Implementation
+
+We have decided that for now, the list of keywords is included in the code snippet for setting up the title section in the documentation, it is the plan that it will also be accessible through a dedicated page at a later date, but this is still in the design phase.
+
+## Decision Outcome
+
+Both code snippets and a joint list of keywords have been implemented in VS Code. We will be looking at other editors at a later date, but for now this is the tool used by most of the team, and thus a good place to start.

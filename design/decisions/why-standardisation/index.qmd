@@ -7,7 +7,6 @@ categories:
 - templates
 - standardisation
 - team work
-- code snippets
 ---
 
 ## Context and Problem Statement
@@ -27,28 +26,6 @@ As we have expanded the team it has become increasingly clear that we need some 
 ### Templates
 
 Templates helps with streamlining workflows, where implemented they enforce certain requirements regarding the information needed for a workflow to commence, and they help with ensuring that all the data needed to make a decision is present. Templates can be used in many areas, we have (for now) focused on implementing them in the GitHub workflows.  We are focusing on setting up templates for creating issues, and at the other end submitting pull requests. In between we are recommending an extension for commits (Conventional Commits) which guides you through submitting a commit with more sensible comments. 
-
-### Code snippets in VS Code 
-
-User generated code snippets is a tool that was made available in VS Code back in 2018. There is similar functionality in other editors, but VS Code seems to be the one that have support for markdown and quarto. Code snippets rely on tab completion being enabled, but once that has been set it is very easy to create a set of custom snippets. For the seedcase team we have (for now) focused on creating snippets that will allow us to use the same markdown/quarto formatting when writing our documentation. There are snippets for creating tables as well as standardising comments, more information on how to use code snippets can be found here. 
-
-<!--TODO link to doc on code snippets once we decide where to place it -->
-
-<!--TODO Check with Richard if pyCharm has similar function for 'text' editing-->
-
-### Joint list of keywords for documentation
-
-Quarto allows for the generation of keywords that can be used to filter documentation. It is important for usability of the website that the words used are the same, and spelled the same, so that if a person is looking for how Seedcase handles databases they get everything by clicking on the keyword "database", and aren't missing half the documents because they are tagged with the key word "databases".
-
-The following guidelines for selecting key words apply:
-
-* **Form** we prefer using nouns over verbs (eg. "documentation" over "documenting", "contribution" over "contributing")
-* **Plural vs Singular** we prefer singular over plural (eg. "database" over "databases", and "container" over "containers")
-* **More than one word** we prefer to write keywords that consist of more than one word without hyphens (eg. "design architecture" over "design-architecture"), the exception is of course where the word is normally spelled with a hyphen (eg. "back-end")
-
-The list of key words is included in the code snippet for setting up the title section in the documentation, it is the plan that it will also be accessible through a dedicated page at a later date, but this is still in the design phase.
-
-<!--TODO #207 Add the key words to the title code snippet-->
 
 ### Project pages on GitHub
 
