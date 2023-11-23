@@ -1,0 +1,36 @@
+---
+title: "Using GitHub Project within the Seedcase environment"
+description: "As a project grows, it becomes both more important and more difficult to keep track of where the project is at.  This can be helped by using visualisation tools, like GitHub Projects."
+author: "Kristiane Beicher"
+date: last-modified
+categories:
+  - documentation
+  - github
+  - github projects
+  - implementation
+  - management
+  - standardisation
+  - team work
+  - tools
+  - workflow
+---
+
+## Context and Problem Statement
+
+The larger a team is, the more important it becomes to keep track of how is doing what and how far they are with certain tasks.  One way of creating such an overview is by using visualisation tools, which are designed to create overviews quickly. The question then becomes:
+
+> How do we create an overview of our current and upcoming tasks which will allow not only the person working on the task to monitor progress, but also help fellow team members to see where the project is?
+
+## Decision Drivers
+
+As a team we have been struggling to keep track of who is completing which tasks, and how far along that work is.  We have therefore agreed, that we will try to communicate this better internally within the team, not only with frequent commits and reviews, but also utilising the new project tools that GitHub are rolling out. 
+
+## Considered Options
+
+There are a number of free options when it comes to visualisation tools specialising in workflows (monday.com, Google Kanban, to mention a couple), but since they would all require us to export our issues log, it makes sense to work with the built in version of project visualisation that is GitHub Projects.  It comes with [extensive documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects), and is fairly intuitive to set up.  As well as a standard overview it allows for a layout with vertical swim lanes (Sprint Board), and gantt-like features (Roadmap).  
+
+## Decision Outcome
+
+We have decided to utilise the two chart options mentioned above, the Sprint Board, and the Roadmap.  The sprint board will be our primary way of tracking progress within the team, and the Roadmap will be an optional way for individual team members to track the time they spend on tasks.  The latter should also help with learning how to estimate time spent on each task, making it easier in future to state how many issues can be resolved in each sprint.
+
+<!--TODO Should we detail the precise ways that we should be working with the boards here, or in a different file (maybe on teams)?-->
