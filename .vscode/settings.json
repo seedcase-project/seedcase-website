@@ -8,8 +8,5 @@
   "quarto.visualEditor.markdownWrapColumn": 72,
   "autoDocstring.docstringFormat": "numpy",
   "autoDocstring.includeName": true,
-  "autoDocstring.startOnNewLine": true,
-  "cSpell.words": [
-    "teamworking"
-  ]
+  "autoDocstring.startOnNewLine": true
 }
