@@ -76,6 +76,30 @@
 		"description": "Insert a 3 col table"
 	}
 
+	"Insert video": {
+		"prefix": "video", 
+		"body": [
+			"{{< video ${0:Insert link here} >}}"
+		],
+		"description": "Insert video that will be shown"
+	}
+
+	"Insert paneltab": {
+		"prefix": "paneltab", 
+		"body": [
+			::: panel-tabset
+			### ${0:Header}
+			
+			${1:Text body}
+
+			### ${2:Header}
+			
+			${3:Text body}
+			:::
+		],
+		"description": "Insert paneltab (including two tabs here). If you want additional tabs, just include more headers."
+	}
+
 // All our key words are included in this code snippet
 // The idea is that we can insert this section and then delete the words we aren't interested in
 // If words are missing then they can be added to the document, and then also added to the code snippet
