@@ -1,0 +1,78 @@
+---
+title: "Why standardise shortcuts for writing documentation"
+description: "The larger a project is, the more important it becomes to have a joint set of standards when writing documentation.  We decided to set up shortcuts that are shared across the team, so that all documentation follows the same classification and formatting."
+author: "Kristiane Beicher"
+date: last-modified
+categories:
+  - code snippets
+  - communication
+  - culture
+  - documentation
+  - markdown
+  - quarto
+  - standardisation
+  - team work
+  - templates
+  - vs code
+  - workflow
+---
+
+## Context and Problem Statement
+
+The more documentation we create for Seedcase, the more important it becomes to ensure a smooth reader experience, both in terms of consistency between authors, and in terms of managing the keywords.
+
+> How do we ensure a uniform layout, an easier to creating documentation, and a usable set of keywords as the documentation for Seedcase grows?
+
+## Decision Drivers
+
+As the documentation for Seedcase growing, and we have reached a level where it is impossible for one person to keep an overview and ensure a consistent layout of the pages. To help with this there are a few tools that can standardise how we write the documentation. [Quarto](why-quarto/index.qmd) can help with quite a few things (like consistent layout of links and keywords), but it could also be of benefit to us as a team, if it is easy to use the same layout for things like tables and hidden comments. 
+
+We also need to find a way to ensure the consistent use of keywords, so that when a reader clicks a `tag` in a document they get all relevant pages, and don't miss any due to the fact that half are tagged in one way (eg. `database`) and the other half is tagged slightly differently (eg `databases`).
+
+<!--TODO Should we link to the page on Quarto above?-->
+
+## Considered Options
+
+We have so far looked at two ways of streamlining the writing of documentation through the use of code snippets and shared keywords, which can be set using the same settings file. There aren't many "generic" methods to share code snippets across IDE's (e.g. between RStudio or PyCharm), so we only investigated ways of adding these in VS Code.
+
+### Code snippets in Quarto markdown files (`.qmd`)
+
+It is possible to set up and share code snippets for `.qmd` files using VS Code and GitHub allowing a team to share for instance formatting code, something that can greatly benefit documentation in particular. These can be added as a file (`.code-snippets`) in the `.vscode` folder for VS Code to find it. Since this a file, we can share it with the team through Git. In the case of Quarto code snippets, the setting file name would be called `quarto.code-snippets`.
+
+#### Layout of the code-snippet file
+
+Code snippets in this file are written as a JSON structure. Because the file extension is `.code-snippets` the file itself will ignore a couple of JSON file requirements. The main one being that there shouldn't be any comments (denoted by `//`) in the file itself, as well as some requirements to keep sections separated with commas.
+
+An example of the code used to insert a hidden comment is given below.
+
+``` json
+	"Insert a hidden comment section":{
+		"prefix": "hidden",
+		"body": [
+			"::: content-hidden" 
+			"${0:Write comments here}"
+			":::"
+		],
+		"description": "Insert a hidden content section"
+	}
+```
+
+As can be seen above there are some characters that are 'reserved' when writing the body. The one that will probably most frequently be an issue is the quotation mark `"`, if used in the body it should be prefixed with a backslash `\`, which here acts like an escape character.
+
+### Shared keywords for documentation files
+
+We want to standardise keywords used in the `categories:` tag of posts to be consistent in both spelling and tenses. It is important for usability of the website that the words used are the same, and spelled the same, so that if a person is looking for how Seedcase handles databases they get everything by clicking on the keyword "database", and aren't missing half the documents because they are tagged with the key word "databases".
+
+The following guidelines for selecting key words apply:
+
+* **Form** we prefer using nouns over verbs (eg. "documentation" over "documenting", "contribution" over "contributing")
+* **Plural vs Singular** we prefer singular over plural (eg. "database" over "databases", and "container" over "containers")
+* **More than one word** we prefer to write keywords that consist of more than one word without hyphens (eg. "design architecture" over "design-architecture"), the exception is of course where the word is normally spelled with a hyphen (eg. "back-end")
+
+#### Implementation
+
+It seems the best way to implement this shared set of keywords is through the code snippets file.
+
+## Decision Outcome
+
+We have decided that we would create and use a set of common code snippets, with the list of keywords for the `categories:` YAML metadata included as a snippet, because that would make it easier for us to write documentation consistently. We will be looking at other editors at a later date, but for now this is the tool used by most of the team, and thus a good place to start.
