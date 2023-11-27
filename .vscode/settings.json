@@ -20,5 +20,9 @@
     "organises",
     "utilised",
     "webforms"
-  ]
+  ],
+  "[quarto]": {
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "inline"
+  }
 }

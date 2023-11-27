@@ -9,7 +9,7 @@ Seedcase was born out of a desire to bring modern data engineering
 practices, technologies, and processes to research environments.
 Technological and computing skills and knowledge within health research
 (at least in our experience) often lags far behind what is the current
-state-of-the-art. The connected Design documents describe the
+state-of-the-art. The connected design documents describe the
 architecture of the Seedcase software as well as the underlying data
 architecture that Seedcase implements as a framework. Our specific goals
 for the Seedcase project are:
@@ -42,7 +42,7 @@ decisions we make.
 
 ## Requirements Overview
 
-Primary **goals** of the Seedcase software are:
+Primary **goals** of the Seedcase Product are:
 
 1.  **Ingesting data and metadata into standardized storage**: Take
     generated data from source locations (such as the clinic or
@@ -61,12 +61,13 @@ Primary **goals** of the Seedcase software are:
     approve of (or not). Approved requests get converted to ongoing data
     projects, which are displayed on the web portal.
 
-While the architecture documentation largely encompasses the software
-and data components of Seedcase, because of our secondary aims, we need
-to describe additional requirements that aren't strictly technical.
-We'll cover some Guiding Principles we need to follow for Seedcase,
-describe our target users and use-cases, and then list the main
-functionalities of Seedcase.
+While the software architecture documentation largely encompasses the software
+and data components of Seedcase, because of our secondary aims (to create a 
+framework that other research groups and companies can relatively easily 
+implement, and modify, for their own purposes), we need to describe additional 
+requirements that aren't strictly technical. We'll cover some Guiding 
+Principles we need to follow for Seedcase, describe our target users and 
+use-cases, and then list the main functionalities of Seedcase.
 
 ### Guiding principles
 
@@ -85,9 +86,9 @@ effective. And so, we will adhere to these key principles, that are
 supported by strong philosophical and scientific rationale, while
 developing Seedcase:
 
-1.  Follow FAIR (Findable, Accessible, Interoperable, and Reusable),
-    open, and transparent principles for the framework itself and to
-    enable FAIR principles in the database.
+1.  Follow [FAIR](https://www.go-fair.org/fair-principles/) (Findable, 
+    Accessible, Interoperable, and Reusable), open, and transparent principles 
+    for the framework itself and to enable FAIR principles in the database.
 2.  Be openly licensed and re-usable to facilitate uptake in other
     national groups (or companies) who are unable to invest in and build
     it.
@@ -139,8 +140,7 @@ these principles:
 
 ### Users
 
-The four users, which are described in more detail in the [Context
-section](context.qmd), are:
+Seedcase is developed and designed with four users and uses cases in mind. The four users, which are described in more detail in the [Context section](context.qmd), are:
 
 1.  **Users inputting data** into the Data Resource, e.g., authorized
     centers and researchers.
@@ -177,10 +177,11 @@ section](context.qmd), are:
     and a brief reason as
 -   **Store data request submissions as data projects for auditing and
     managing**: Save submissions as "data projects", where admin users
-    can approve these data projects and manage whether they are
-    "ongoing" or "completed". The stored ongoing or completed data
+    can approve (or decline) these data projects and manage whether they are
+    "ongoing", "completed", or "declined". The stored ongoing or completed data
     projects will be displayed on the web portal for discoverability and
     transparency on the data resources use.
+- **Allow for individual parts to be independently installable and usable**: Users might not need or want some of the functionality, so being able to have individual and independent parts that are usable on their own is necessary. These independent parts also need to be able to connect and work together.
 
 ## Quality Goals
 
@@ -224,7 +225,7 @@ expectations we believe they have for these documents.
     important or critical. These reviewers will read these documents
     critically from a technical perspective.
 
--   **Funder (NNF)**: We need to send progress reports to our funders.
+-   **Funder (Novo Nordisk Foundation)**: We need to send progress reports to our funders.
     They will likely use them for record-keeping, accountability, and
     auditing purposes.
 

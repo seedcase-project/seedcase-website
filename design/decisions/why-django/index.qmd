@@ -1,7 +1,7 @@
 ---
 title: "Why Django"
 description: |
-  Web frameworks are designed to support building a web front end as well
+  Web frameworks are designed to support building a web frontend as well
   as the API layer. Django is a popular and widely used framework.
 author: "Richard Ding"
 date: "2023-03-22"
@@ -9,27 +9,29 @@ date-modified: last-modified
 categories:
   - api
   - web
-  - front-end
+  - frontend
   - software-architecture
 ---
 
 ## Introduction
 
 We have evaluated several web frameworks for the Seedcase Product, and
-have chosen Django as the most suitable option for the web framework.
+have chosen [Django](https://www.djangoproject.com) as the most suitable option for the web framework.
 This document describes the reasoning behind this decision and outlines
 the key factors that influenced it.
 
 ## Decision
 
 After evaluating Flask, Ruby on Rails, FastAPI, and Django, we have
-decided to use Django as the web framework for Seedcase.
+decided to use Django as the web framework for Seedcase. 
+
+All considered web frameworks use Python. For our decision to use Python, see the page [Why Python](https://seedcase-project.org/design/decisions/why-python/).
 
 ## Alternatives Considered
 
 ### Flask
 
-Flask is a lightweight web framework that is easy to use and has a low
+[Flask](https://flask.palletsprojects.com/en/2.3.x/) is a lightweight web framework that is easy to use and has a low
 learning curve. It provides a lot of flexibility and does not enforce
 any particular project structure. Flask has a small footprint and is a
 good option for simple web applications or prototypes.
@@ -41,7 +43,7 @@ to be implemented manually or by using third-party libraries.
 
 ### Ruby on Rails
 
-Ruby on Rails is a popular web framework that provides a lot of built-in
+[Ruby on Rails](https://rubyonrails.org) is a popular web framework that provides a lot of built-in
 features and conventions. It has a large and active community and
 provides good support for agile development practices. Ruby on Rails is
 a good option for rapid application development and has good support for
@@ -54,7 +56,7 @@ on Rails has a large footprint and can be slow for certain use cases.
 
 ### FastAPI
 
-FastAPI is a modern, high-performance web framework for building APIs
+[FastAPI](https://fastapi.tiangolo.com) is a modern, high-performance web framework for building APIs
 with Python. It is designed to be fast, and easy to use. FastAPI
 includes features like automatic validation of request bodies, async
 support, and built-in OpenAPI documentation. These features make it a
@@ -62,10 +64,10 @@ popular choice for building scalable and maintainable APIs, especially
 for applications that require high performance real-time responses.
 
 However, it's important to consider the specific needs of the
-application. FastAPI may be a good choice for applications that require
+Seedcase Product. FastAPI may be a good choice for applications that require
 high performance real-time responses, but not as good a choice for more
 complex web applications that require a full-stack framework with many
-built-in features. It is also newer, so is still maturing and has a
+built-in features. It is also newer, so it is still maturing and has a
 small, though active, community, which limits the amount of available
 support and resources.
 
@@ -94,7 +96,7 @@ admin interface that allows non-technical users to manage data.
 
 Django provides good support for security through its built-in
 authentication system and its support for common security practices such
-as CSRF protection and password hashing. It also provides good support
+as Cross-Site Request Forgery (CSRF) protection and password hashing. It also provides good support
 for role-based access control and fine-grained permissions.
 
 ### User Management
@@ -107,4 +109,4 @@ account activation.
 ## Conclusion
 
 After evaluating Flask, FastAPI, Ruby on Rails, and Django, we have made
-the decision that Django is the better fit for Seedcase.
+the decision that Django is the better fit for Seedcase. Django has the benefits of a built-in serialization framework and REST framework for API development, providing a powerful ORM and good built-in support for security, as well as user management.

@@ -3,16 +3,17 @@ project:
 
 website:
   title: "Seedcase Project"
-  favicon: "/images/logo.png"
+  favicon: "/images/logo.svg"
   site-url: "https://seedcase-project.org/"
   repo-url: "https://github.com/seedcase-project/seedcase-project"
   page-footer:
     center:
       - text: "License: CC-BY 4.0"
         href: LICENSE.md
+  page-navigation: true
   navbar:
     pinned: true
-    logo: "/images/logo.png"
+    logo: "/images/logo.svg"
     right:
       - text: "About"
         href: about/index.md
@@ -38,7 +39,8 @@ website:
               href: community/CONTRIBUTING.md
             - auto: community/guide-entries
             - auto: community/decisions
-            - community/CODE_OF_CONDUCT.md
+            - text: "Code of Conduct"
+              href: "https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md"
         - community/blocks.qmd
         - community/roadmap.qmd
     - id: design
@@ -62,6 +64,8 @@ website:
         href: about/history/index.md
       # - text: "Mission"
       #   href: about/mission.md
+      - text: "Team Members"
+        href: about/team/index.md
 
 
 bibliography: "includes/references.bib"
