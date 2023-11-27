@@ -20,3 +20,5 @@ design:
   crud: |
     An acronym for Create, Read, Update, and Delete. These four actions are the
     core operations for data storage on computers.
+  instance: |
+    An Instance of Seedcase is .. <!--TODO Finish text here. -->

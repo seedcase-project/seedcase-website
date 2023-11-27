@@ -9,6 +9,18 @@
   "autoDocstring.docstringFormat": "numpy",
   "autoDocstring.includeName": true,
   "autoDocstring.startOnNewLine": true,
+  "cSpell.words": [
+    "analysing",
+    "Beicher",
+    "initialisation",
+    "organisation",
+    "organisations",
+    "organise",
+    "organised",
+    "organises",
+    "utilised",
+    "webforms"
+  ],
   "[quarto]": {
     "editor.tabCompletion": "on",
     "editor.snippetSuggestions": "inline"
