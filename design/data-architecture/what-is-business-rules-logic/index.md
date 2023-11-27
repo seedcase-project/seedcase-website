@@ -2,13 +2,11 @@
 title: "Why business rules and business logic is important when working with data"
 description: |
   Business rules is the structure that governs how and organisation works.  Business logic is the structure and rules governing a software system.
-author: "Kris Beicher"
 date: "2023-10-16"
 date-modified: last-modified
-categories:
-  - business logic
-  - business rules
 ---
+
+TODO: short introduction on what this post will cover and why it's important, so the reader knows right away?
 
 ## What is the difference between business rules and business logic
 
@@ -56,7 +54,7 @@ What is it always worth recording in the data resource:
 
 What should always be documented outside the data resource:
 
-Item |Description|
+| Item |Description|
 |---|-----|
 |Origin of data set| Where did the data come from, how was it obtained and where there any restrictions place (eg in relation to an extract from a national register, where there any year or geographical restrictions)|
 |ETL Extract/Transform/Load| Was any data changed or cleaned at the point of being loaded into the system.  Has any data been dropped due to perceived data quality issues (eg any person height under 2.5 cm)|
