@@ -87,7 +87,7 @@ It can be difficult to document or make explicit. Depending on the
 specific social dynamics of the team, of internal collaborators, and of
 external contributors, culture can change quite a bit. Much of these
 dynamics might happen through other channels like in-person activities,
-Issue discussions, or on online communication platforms like Discord).
+issue discussions, or on online communication platforms like Discord.
 However, a healthy culture requires some self-awareness,
 self-reflection, and ultimately some self-regulation to stay healthy.
 
@@ -97,7 +97,7 @@ logistical and organizational aspects, like where and how often we meet
 milestones, what expectations there are for working together (for
 instance during co-working sessions), and how we do work. There is some
 back-and-forth between this component and the Support blocks, with the
-Support blocks informing on, and than being refined by, how the culture
+Support blocks informing on, and then being refined by, how the culture
 should be and how we collaborate.
 
 The informal component is almost entirely about the spontaneous social
@@ -114,9 +114,9 @@ into something more official, like publishing in an outlet.
 
 ## "Why" support block
 
-This support block contains explanations and justifications for why we
+The "Why" support block contains explanations and justifications for why we
 choose the technologies, workflows, and designs that we do. This is not
-just for the Product itself, but also for the Documentation and Culture
+just for the Product itself, but also for the Documentation, Culture
 and Collaboration. Files and content related to this support block are
 found in the software architecture [Design
 Decisions](/design/software-architecture/architecture-decisions.qmd)
@@ -126,10 +126,10 @@ Decisions](/community/CONTRIBUTING.md#decisions) (files in
 
 ## "How" support block
 
-The "How" Support block is the more technical aspects of how this
+The "How" support block is the more technical aspects of how this
 project is managed (in the [Governance](/community/GOVERNANCE.md)
 document), how to contribute (in the
-[Contributing](/community/index.qmd) document), and what are expected
+[Contributing](/community/CONTRIBUTING.md) document), and what are expected
 behaviours (in the [Code of Conduct](/community/CODE_OF_CONDUCT.md)
 document). More detail is found in the [Community](/community/index.qmd)
 page.

@@ -25,8 +25,6 @@ listing:
 
 {{< include /includes/_wip.qmd >}}
 
-<!-- TODO: Add link to the teams/index.qmd instructions? -->
-
 ## Individual guide entries
 
 These entries are small pages about a specific topic for contributing
@@ -34,6 +32,9 @@ and anyone can submit an entry to be added (or modify an existing one).
 
 ::: {#guide-entries}
 :::
+
+For team-specific contributing guidelines, check out our
+[team.seedcase-project.org](https://team.seedcase-project.org/) website.
 
 ## Decisions on choices
 
@@ -44,3 +45,10 @@ the community.
 ::: {#decisions}
 :::
 
+## Code of Conduct
+
+Please note that the Seedcase project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its
+[terms](CODE_OF_CONDUCT.md).
