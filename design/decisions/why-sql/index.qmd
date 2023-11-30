@@ -2,7 +2,8 @@
 title: Why PostgreSQL
 description: |
   SQL is the backbone of any database system. However there are many variants
-  of SQL. PostgreSQL is a powerful and feature-full variant.
+  of SQL. This decision post contains the reasons for using PostgreSQL, which is
+  a powerful and feature-full variant of SQL.
 author: Kristiane Beicher
 date: last-modified
 categories:
@@ -16,29 +17,29 @@ categories:
 
 ## Context and Problem Statement
 
+Building databases are best done through by using formal database systems. Most scientific research makes use of or uses databases that are relational rather than unstructured, and we believe that the user base for Seedcase will likely want or be familiar with a relational database structure. The type of database systems that are relational are called Structured Query Language ([SQL](https://en.wikipedia.org/wiki/SQL)). There are a large number of different SQL variants available, so we need to decide which one to use.
+
 To fit our [Guiding Principles](/design/software-architecture/introduction.qmd#guiding-principles) of using established and well-known technologies, we're only going to look at the top three open source relational databases (as defined by [DB-Engines](https://db-engines.com/en/ranking/relational+dbms) in November 2022): MySQL, PostgreSQL, and SQLite.
 
-We have chosen to focus on relational databases, as we believe that the user base for a project like Seedcase will, overall, be more familiar with this form for database system which means that we are not looking at NoSQL systems like MongoDB and Redis.
-
-As we are planning to use [container technology](/../seedcase-project/design/decisions/why-containers/index.md) to run the database it is not as important which operating systems the database will run on.  Having said that, of the three systems that we are looking at, MySQL and PostgreSQL will run on multiple operating systems (e.g. Linux, Mac OS, and Windows), and SQLite is a classic serverless application.
+As we are planning to use [container technology](/design/decisions/why-containers/index.md) to run the database it is not as important which operating systems the database will run on.  Having said that, of the three systems that we are looking at, MySQL and PostgreSQL will run on multiple operating systems (e.g. Linux, Mac OS, and Windows), and SQLite is a classic serverless application.
 
 A [side-by-side comparison](https://db-engines.com/en/system/MySQL%3BPostgreSQL%3BSQLite)
 on [DB-Engines](https://db-engines.com) was used to compile some of the comparison below.
 
 ## Decision Drivers
 
-One of the most important functions of Seedcase is to handle data, and the most efficient and flexible ways of doing this is to store it in a database. Seedcase will be stored in two containers, one for the front end, and one for the data.  This second container will primarily house a relational database which will contain the research data alongside information about the users of the particular instance of Seedcase.
+One of the most important functions of Seedcase is to handle data, and the most efficient and flexible ways of doing this is to store it in a database. We need a SQL database system that fits our needs best. 
 
 ## Considered Options
 
-#### MySQL
+### MySQL
 
 [MySQL](www.mysql.com) was first released in 1995 and is maintained by Oracle Corp. It is an open source platform with the option to deploy either as a local server solution or cloud based. The implementation languages are C and C++, and it runs of a variety of operating systems. The system allows access through standard technologies (ADO.NET, JDBC, ODBC, and native APIs).
 
 ::: columns
 ::: {.column width="50%" style="font-size: 90%"}
 
-BENEFITS 
+#### Benefits 
 
 * At present the second most popular database both open source and overall with good support and a large community.
 
@@ -51,47 +52,52 @@ BENEFITS
 :::
 ::: {.column width="50%" style="font-size: 90%"}
 
-DRAWBACKS
+#### Drawbacks
 
 * MySQL is run by Oracle which is a commercial entity. There is always a risk that the company decides to reverse the open source concept and go move to a solution with a free light version and full payable version. In the case of MySQL, it is very unlikely as the software is very well established and the user user community quite large.
 
-* There is currently no option in MySQL to store data in a columnar table.
+* There is currently no option in MySQL to store data in a columnar (rather than row-based) table.
 
 :::
 :::
 
-#### PostgreSQL
+### PostgreSQL
 
 [PostgreSQL](www.postgresql.org) was first released in 1989 from UC Berkeley and is maintained by the PostgreSQL Development Group. It is an open source platform with the option to deploy either as a local server solution or cloud based. The implementation language is C, and it runs of a variety of operating systems. The system allows access through standard technologies (ADO.NET, JDBC, ODBC, a native C library, and streaming APIs).
 
 ::: columns
 ::: {.column width="50%" style="font-size: 90%"}
 
-BENEFITS 
+#### Benefits 
 
-* At present the fourth most popular database overall, and the second most popular open source database. There is a thriving community with a lot of engaging users delivering support.
+* At present, it is the fourth most popular database overall, and the second most popular open source database. There is a thriving community with a lot of engaging users delivering support.
 
-* Traditional database system with a recognisable format which should be easy to manipulate and work with for the advanced Seedcase user.Support for both XML and JSON formats, both reading and writing.There are scripts that will allow for PostgreSQL to interact with Apache Parquet files.It is possible to create columnar based tables directly in PostgreSQL.
+* Traditional database system with a recognisable format which should be easy to manipulate and work with for the advanced Seedcase user. 
+
+* Support for both XML and JSON formats, both reading and writing.
+
+* There are scripts that will allow for PostgreSQL to interact with Apache Parquet files.
+
+* It is possible to create columnar based tables directly in PostgreSQL.
 
 :::
 ::: {.column width="50%" style="font-size: 90%"}
 
-DRAWBACKS
+#### Drawbacks
 
 * We don't see any major drawbacks.
 
 :::
 :::
 
-#### SQLite
+### SQLite
 
-First released in 2000, SQLite is slightly different to the two systems described above, as it is an embedded serverless database primarily maintained by an international team of programmers (see [About SQLite](https://www.sqlite.org/about.html)). It is an open source platform with the option to deploy either locally or in the cloud.
-The implementation language is C, and it is platform independent. The system allows access through standard technologies (ADO.NET, JDBC, and ODBC).
+First released in 2000, SQLite is slightly different to the two systems described above, as it is an embedded serverless database primarily maintained by an international team of programmers (see [About SQLite](https://www.sqlite.org/about.html)). It is an open source platform with the option to deploy either locally or in the cloud. The implementation language is C, and it is platform independent. The system allows access through standard technologies (ADO.NET, JDBC, and ODBC).
 
 ::: columns
 ::: {.column width="50%" style="font-size: 90%"}
 
-BENEFITS 
+#### Benefits 
 
 * Support for both XML and JSON formats, both reading and writing. 
 
@@ -102,7 +108,7 @@ BENEFITS
 :::
 ::: {.column width="50%" style="font-size: 90%"}
 
-DRAWBACKS
+#### Drawbacks
 
 * SQLite is not fully ACID (atomicity, consistency, isolation, and durability) compliant, which is always a risk when working with larger data sets.
 
@@ -115,8 +121,8 @@ DRAWBACKS
 
 ## Decision Outcome
 
-We've decided to work with PostgreSQL as our backend database as it fulfils all our needs and is a very popular open source tool. MySQL would be the other obvious choice, the application does everything that Seedcase needs, but the user community for PostgreSQL seems to be a bit more active. SQLite is quite popular within the application developer community, but it doesn't have a reliable multi-user functionality, so it may be an uphill battle to get it to do the things we are hoping to do with Seedcase.
+We've decided to work with PostgreSQL as our backend database as it fulfills all our needs and is a very popular open source tool. MySQL would be the other obvious choice, the application does everything that Seedcase needs, but the user community for PostgreSQL seems to be a bit more active. SQLite is quite popular within the application developer community, but it doesn't have a reliable multi-user functionality, so it may be an uphill battle to get it to do the things we are hoping to do with Seedcase.
 
 ### Consequences
 
-The main consequence of our choice is the limiting factor in who can work on the project. Anyone wanting to work on the database part will need to have an understanding of for instance psql which is the command line tool to work with Postgres.  There are not many differences between postgres and the other large database systems, but there is always some differences in the version of sql they use, and which terms are used. 
+The main consequence of our choice is the limiting factor in who can work on the project. Anyone wanting to work on the database part will need to have an understanding of for instance [psql](https://www.postgresql.org/docs/current/app-psql.html), which is the command line tool to work with Postgres.  There are not many differences between Postgres and the other large database systems, but there is always some differences in the version of SQL they use, and which terms are used. 
