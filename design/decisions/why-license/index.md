@@ -1,23 +1,26 @@
 ---
-title: "Why choose MIT License"
+title: "Why MIT License"
 description: |
   Open and permissive licensing of copyrighted content is a way to increase 
   use of a software product, ease collaboration and re-use, and share
   intellectual ideas with others. The MIT License is a very permissive 
   copyright license.
-author: "Kris Beicher"
+author: "Kristiane Beicher"
 date: "2023-04-01"
 date-modified: last-modified
 categories:
   - licensing
   - copyright
+  - software-architecture
 ---
 
-For a project like Seedcase to fully succeed in our stated mission, a
-critical key to that is what our copyright license is. Without a
+## Introduction
+
+For a project like Seedcase to fully succeed in our stated [vision and mission](/about/mission.md), a
+critical key is to decide on which copyright license to use. Without a
 license, other users will not be allowed to (easily) (re-)use, modify,
-contribute, or enhance our software because of copyright reasons. Our
-mission isn't only to build a product, we also aim to develop a creative
+contribute, or enhance our software due to copyright reasons. Our
+mission isn't only to build a product; we also aim to develop a creative
 community around Seedcase and the topics we work on. We want people to
 be able to freely and smoothly contribute enhancements and other
 improvements that can be incorporated into future releases of Seedcase.
@@ -46,12 +49,12 @@ which we discussion below as well.
 
 ### Software license
 
-Overall the Open Source community have licenses that work along two
-strands, **permissive** and **copy-left**. Both of these 'allow software
-to be freely used, modified, and shared' (see more detail on the [Open
+Overall, the Open Source community have licenses that work along two
+strands, **permissive** and **copy-left**. Both of these "allow software
+to be freely used, modified, and shared" (see more detail on the [Open
 Source Initiative](https://opensource.org/licenses) website). We will be
 using the OSI's definition of free software which among other things
-talk about the source code being available to download and read/study,
+covers the source code being available to download and read/study,
 to allow for derived works to be created and distributed without
 violating the given license.
 
@@ -63,25 +66,25 @@ software, as it forces any subsequent development to be shared for free
 (although most of those licenses state that you are allowed to modify
 code for own use, the copy-left license only comes into play if you make
 your modifications available outside your organisation). Examples of
-Copy-Left licenses are EUPL-1.2, GPL, and LGPL.
+Copy-Left licenses are [EUPL-1.2](https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt), [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html), and [LGPL](https://www.gnu.org/licenses/lgpl-3.0.en.html).
 
 The **Permissive licenses** gives you all the above mentioned rights,
-but they do not enforce that you must make derived works or new works
-created by taking bits of source code from the original product
+but they do not enforce that derived works or new works
+created by taking bits of source code from the original product are made
 available under the same license. These type of licenses are generally
 seen as more friendly to commercial enterprises as they will allow
 companies to use bits of code in proprietary software without having to
 release the source code for free. Examples of Permissive licenses are
-Apache, BSD (no matter the number of clauses), and MIT.
+[Apache](https://www.apache.org/licenses/LICENSE-2.0), BSD (no matter the number of clauses, e.g., [BSD 2-Clause](https://opensource.org/license/bsd-2-clause/) or [BSD 3-Clause](https://opensource.org/license/bsd-3-clause/)), and [MIT](https://opensource.org/license/mit/).
 
 ### CLA versus DCO
 
-Some Open Source projects are asking contributors to sign up to a
+Some open source projects are asking contributors to sign up to a
 Contributor License Agreement (CLA) or, alternatively, a Developer
 Certificate of Origin (DCO).
 
-Looking at a number of **CLA**s (in particular Threema, Meta, and
-ImageWorks) it seems that these projects are mainly concerned with the
+Looking at a number of **CLA**s (in particular [Threema](https://threema.ch/en/open-source/cla), [Meta](https://code.facebook.com/cla), and
+[ImageWorks](https://www.imageworks.com/technology/opensource/cla)), it seems that these projects are mainly concerned with the
 following:
 
 -   A person submitting code that they are not the copyright holder for.
@@ -95,8 +98,8 @@ There are also some agreements that touch on the subject of loss and
 damages which may arise from the use of a particular section of code, as
 well as how a request for support will be dealt with in future.
 
-An alternative to a CLA is a Developer Certificate of Origin or DCO. The
-**DCO** was first employed by the Linux Foundation in 2004, and is
+An alternative to a CLA is a **DCO**. The
+**DCO** was first employed by the Linux Foundation in 2004 and is
 basically a short document that confirms that the person contributing
 code is allowed to do so, gives permission for the project to
 subsequently use it, by adding a Signed-off-by line to their commit
@@ -105,9 +108,9 @@ DCO](https://beeware.org/contributing/how/dco/what/)).
 
 ## Our choice
 
-It is our stated goal that the Seedcase software is available for
-commercial enterprises as well as academics/healthcare organizations and
-groups. Aligning with our stated Guiding Principles, we will use a
+It is our stated [goals](../../software-architecture/introduction.qmd) include the Seedcase software is available for
+commercial enterprises as well as academic/healthcare organizations and
+groups. Aligning with our stated [Guiding Principles](../software-architecture/introduction.qmd#guiding-principles), we will use a
 **permissive** license as it will be the best fit for the Seedcase
 project. Of the permissive license types we will go with the MIT
 License.

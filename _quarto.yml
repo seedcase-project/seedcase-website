@@ -1,22 +1,19 @@
 project:
-  type: website
-  execute-dir: project
+  type: seedcase-theme
 
 website:
-  title: "Seedcase"
-  # favicon: "images/favicon.ico"
-  site-url: "https://steno-aarhus.github.io/seedcase-project/"
-  repo-url: "https://github.com/steno-aarhus/seedcase-project"
-  repo-branch: main
-  repo-actions: [edit, issue, source]
-  search:
-    location: navbar
-    type: overlay
+  title: "Seedcase Project"
+  favicon: "/images/logo.svg"
+  site-url: "https://seedcase-project.org/"
+  repo-url: "https://github.com/seedcase-project/seedcase-project"
   page-footer:
     center:
       - text: "License: CC-BY 4.0"
         href: LICENSE.md
+  page-navigation: true
   navbar:
+    pinned: true
+    logo: "/images/logo.svg"
     right:
       - text: "About"
         href: about/index.md
@@ -24,69 +21,57 @@ website:
         href: community/index.qmd
       - text: "Design"
         href: design/index.md
+    tools:
       - icon: github
-        href: "https://github.com/steno-aarhus/seedcase-project"
+        href: "https://github.com/seedcase-project/seedcase-project"
   sidebar:
     - id: community
       title: "Community"
+      pinned: true
       style: "floating"
       align: left
+      collapse-level: 1
       contents:
         - community/index.qmd
-        - community/posts.md
         - section: "Contributing"
           contents:
-          - community/contribute/index.qmd
-          - community/contribute/blocks.qmd
-          - community/contribute/roadmap.md
-          - community/contribute/decisions.md
-        - section: "Team"
-          contents:
-            - community/contribute/team/index.md
-            - community/contribute/team/events.md
-        - community/CODE_OF_CONDUCT.md
+            - text: "Overview"
+              href: community/CONTRIBUTING.md
+            - auto: community/guide-entries
+            - auto: community/decisions
+            - text: "Code of Conduct"
+              href: "https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md"
+        - community/blocks.qmd
+        - community/roadmap.qmd
     - id: design
       title: "Design"
+      pinned: true
       style: "floating"
       align: left
+      collapse-level: 1
       contents:
         - design/index.md
-        - section: "Software Architecture Documentation"
-          contents:
-            - design/software-architecture/introduction.qmd
-            - design/software-architecture/constraints.qmd
-            - design/software-architecture/context.qmd
-            - design/software-architecture/solution-strategy.qmd
-            - design/software-architecture/building-block-view.qmd
-            - design/software-architecture/runtime-view.qmd
-            # - design/software-architecture/deployment-view.qmd
-            - design/software-architecture/cross-cutting-concepts.qmd
-            # - design/software-architecture/architecture-decisions.qmd
-            # - design/software-architecture/quality-requirements.qmd
-            - design/software-architecture/risks.qmd
-        - design/decisions.md
+        - auto: design/software-architecture/
     - id: about
       title: "About"
+      pinned: true
+      style: "floating"
+      align: left
+      collapse-level: 1
       contents:
       - about/index.md
       - text: "History"
         href: about/history/index.md
       # - text: "Mission"
       #   href: about/mission.md
+      - text: "Team Members"
+        href: about/team/index.md
 
 
 bibliography: "includes/references.bib"
-csl: "includes/vancouver.csl"
 
-format:
-  html:
-    from: markdown+emoji
-    theme:
-      - zephyr
-      - theme.scss
-    toc: true
-    toc-location: right
-    toc-depth: 3
+# format:
+#   seedcase-theme-html:
     # include-before-body:
       # - "includes/site-counter.html"
       # - "includes/contribute.html"

@@ -1,39 +1,36 @@
 ---
-title: "Seedcase"
+title: "Seedcase Project"
 subtitle: A framework for an open and scalable infrastructure for health data
 about:
   id: hero-heading
-  template: jolla
+  template: solana
+  image: /images/logo-full-color.png
+  image-width: 20em 
   links: 
     - icon: cone-striped
       text: "Software (incomplete)"
-      href: "https://github.com/steno-aarhus/seedcase"
+      href: "https://github.com/seedcase-project/seedcase"
     - icon: info-circle
       text: "About"
-      href: "https://steno-aarhus.github.io/seedcase-project/about/"
+      href: "https://seedcase-project.org/about/"
     - icon: people
       text: "Community"
-      href: "https://steno-aarhus.github.io/seedcase-project/community/"
+      href: "https://seedcase-project.org/community/"
     - icon: diagram-2
       text: "Design"
-      href: "https://steno-aarhus.github.io/seedcase-project/design/"
+      href: "https://seedcase-project.org/design/"
 ---
 
 ::: {#hero-heading}
+We believe that by developing high-quality software and providing
+training on activities and tasks related to building, managing, and
+sharing health data, the science and research on health and well-being
+can become better, ultimately helping prevent or manage diseases like
+diabetes.
 :::
 
-Getting funds, finding personnel, and allocating resources to build
-functioning software is very difficult in research.
-
-Seedcase aims to ease the burden of building, managing, sharing, and
-accessing health data by developing both user-friendly software to
-automate or streamline these jobs as well as beginner-friendly training
-material for data engineering. Our specific goals are:
+Our specific goals are:
 
 {{< include includes/_goals.qmd >}}
-
-We believe that with these tools and knowledge, science on health and
-well-being can become better, ultimately helping people with people with
-diseases like diabetes and society in general.
 
 <!-- TODO: List overview of purposes/principles here? -->

@@ -10,6 +10,7 @@ date-modified: last-modified
 categories:
   - programming
   - development
+  - software-architecture
 ---
 
 ## Introduction
@@ -21,7 +22,7 @@ well with other technologies commonly used in the research area.
 
 ## Considered Options
 
-We considered Python, Java, C++, and R.
+We considered [Python](https://www.python.org), [Java](https://www.java.com/en/), [C++](https://cplusplus.com), and [R](https://www.r-project.org).
 
 ## Decision Outcome
 
@@ -36,10 +37,10 @@ following reasons:
 -   Has a large community of developers who contribute to its
     development, ensuring that it is constantly evolving and improving.
 -   Has strong support for web development, with a number of popular
-    frameworks such as Django and Flask, making it easy to build RESTful
+    frameworks such as [Django](https://www.djangoproject.com) and [Flask](https://flask.palletsprojects.com/en/2.3.x/), making it easy to build RESTful
     APIs for Seedcase.
 -   Has excellent support for working with databases, with libraries
-    such as SQLAlchemy and Django ORM, making it easy to manage and
+    such as [SQLAlchemy](https://www.sqlalchemy.org) and Django ORM, making it easy to manage and
     query large datasets.
 -   Is a cross-platform language, making it easy to deploy the system on
     a variety of operating systems and hardware.
@@ -54,4 +55,4 @@ applications.
 
 Python is the most suitable option for this project, as it provides a
 powerful, flexible, and easy-to-use platform for building a data
-management system.
+management system. Python is also one of the most common and widely used programming languages and is used across multiple domains and industries.

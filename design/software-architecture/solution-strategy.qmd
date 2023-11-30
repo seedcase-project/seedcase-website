@@ -1,5 +1,6 @@
 ---
 title: "Solution strategy"
+order: 4
 ---
 
 {{< include /includes/_wip.qmd >}}
@@ -32,6 +33,8 @@ The main technologies we will use are:
     resources. Django also implements **RESTful API** (representational
     state transfer), which is the de facto standard way for building
     APIs.
+
+For our decisions to use these technologies, see [Architecture decisions](architecture-decisions.qmd)
 
 In relation to our [Quality Goals](introduction.qmd#quality-goals):
 

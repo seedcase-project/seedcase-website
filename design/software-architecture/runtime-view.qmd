@@ -1,5 +1,6 @@
 ---
 title: "Runtime view"
+order: 6
 ---
 
 This section describes the concrete behaviour, interactions, and
@@ -10,24 +11,9 @@ to how the software works "in action".
 
 Almost all users will need to log into the Seedcase-managed Data
 Resources. The steps for logging in and having their permission levels
-checked follows the sequence described in @fig-login-sequence.
+checked follows the sequence described in the figure below.
 
-```{mermaid login-sequence}
-%%| label: fig-login-sequence
-%%| fig-cap: Login and authentication sequence of a registered user.
-%%{init:{'sequence':{'mirrorActors': false}}}%%
-sequenceDiagram
-  actor User
-  participant f as Frontend
-  participant api as API
-  participant be as Backend
-  
-  User ->>+ f: Enter login information
-  f ->>+ api: Send login request
-  api ->>+ be: Check permissions level
-  be -->>- api: Send permissions level
-  api -->>+ f: Show permission-dependent content
-```
+![Login and authentication sequence of a registered user.](/design/images/runtime-login-sequence.png){#fig-login-sequence}
 
 ## Data input
 
@@ -137,14 +123,14 @@ The API Security layer will check with the list of users and permissions
 in the database and confirm that the specific user has permission to
 enter data into a specific table (or set of tables) in the database.
 
-Once this check is complete the front end will receive permission from
+Once this check is complete the frontend will receive permission from
 the API Security layer to display the data entry form. The user
-completes all fields in the form and clicks Save and Submit. This sends
+completes all fields in the form and clicks "Save and Submit". This sends
 the data to the API layer where it is confirmed as valid, parcelled up
 and submitted to the database. The database will then write the data
 into a new record in the table (or tables). Once done the database will
 confirm successful entry of data to the API which will in turn send the
-confirmation back to the user via the front end.
+confirmation back to the user via the frontend.
 
 ![Logged in user who manually writes a new row to the Data
 Resource.](/design/images/runtime-manual-data-entry.png){#fig-manual-data-entry}
@@ -156,21 +142,21 @@ completing the data entry form in one session. In that case it would be
 beneficial if there is an option of saving the data as it is, and be
 able to return to the data entry at a later time. Much of the initial
 workflow is the same as above, until the user is interrupted and selects
-Save instead of Save and Submit. This will send the data to the API with
+"Save" instead of "Save and Submit". This will send the data to the API with
 a flag showing that fields may be incomplete, thus preventing the API
 from rejecting the data due to NULL values. The API will submit the data
 to the database along the incomplete flag.
 
 When the user at a later time goes back to the data entry they will be
 presented with the option of completing any incomplete records as well
-as entering new data. If they click on Complete Records they are shown
+as entering new data. If they click on "Complete Records" they are shown
 the records that they have started but not submitted. Once they select a
-partially completed record the front end will request the currently
+partially completed record the frontend will request the currently
 completed items from the database via the API layer before displaying
 the entry form with the completed fields.
 
-Once the user has completed more data they can either click on Save or
-Save and Submit. The first option will put them back to the top of this
+Once the user has completed more data they can either click on "Save" or
+"Save and Submit". The first option will put them back to the top of this
 workflow, the second will send the data back to the API layer for
 validation. Once the data is validated it will be submitted to the
 database. The database will then write the data into a new record in the
@@ -191,30 +177,7 @@ by Seedcase:
     data project.
 2.  Re-using parts of an existing data project.
 
-```{mermaid data-request}
-%%| label: fig-data-request
-%%| fig-cap: "Logged in user who is requesting data from a Data Resource."
-sequenceDiagram
-    actor User
-    
-    participant f as Front end
-    participant api as API
-    participant be as Back end
-    
-    alt New data project
-      User ->>+ f: Selects variables to request
-      User ->>+ f: Fills in project metadata
-    else Re-use data project
-      User ->>+ f: Browse and select data project
-      User ->>+ f: Copy project metadata and modify
-    end
-    
-    f ->>+ api: Clicked "Submit"
-    api ->>+ be: Store request metadata
-    api ->>+ api: Inform admin
-    be ->>- api: Application approved
-    api ->>- User: Send information<br>for next steps
-```
+![Logged in user who is requesting data from a Data Resource. <br> The "alt" box shows the alternative workflows depending on whether the user requests a new data projects or re-uses an existing data project for the request.](/design/images/runtime-data-request.png){#fig-data-request}
 
 ### Applying for a new data project
 
@@ -222,8 +185,8 @@ Users who want to request data can browse the metadata, which includes a
 list of variables and datasets available as well as a data dictionary
 and changelog, in the Seedcase-managed Data Resource. Similar to an
 online shopping cart, users who want specific variables in the Data
-Resource will select them from the list of variables, which will go into
-the request application as a new data project. These data projects would
+Resource will be able to select them from the list of variables. These selected variables will go into
+the request application as a new data project, which would
 be used to automate the data extraction process. In order to add the
 variables to a new data project application, the user would have to be
 registered and logged in.
@@ -232,13 +195,13 @@ Aside from the selected list of requested variables, the user would need
 to write some information about the rationale for and intended use of
 the data as well as other project-specific metadata.
 
-Admin users would approve any new data project applications. This would
+Admin users would approve any new data project applications. When an application is approved, it would
 trigger automated processes to run the data extraction and subsetting
 process. It would also bundle it and prepare it for transfer to the
 applicant user's secure server or other location where the data will be
 stored. Admin users can also modify the application form to comply with
 local regulations and legal requirements, such as removing or adding
-variables (apart from the variable list) may be required.
+variables (apart from the variable list), that may be required.
 
 The user can update the data project at any point in the data project's
 life-cycle. This includes requesting more variables or modifying the
@@ -250,7 +213,22 @@ approve these updates.
 Because data projects are stored (and optionally displayed on the Web
 Portal) as JSON or other machine-readable format, users who want to copy
 and modify an existing data project can extract and use the details from
-that data project as part of a new data project. The data projects
+that project as part of a new data project. The data projects
 listing on the Web Portal will include a button to either download the
 JSON metadata or to copy the project into a new data project
 application.
+
+## Browsing projects and results
+
+There are at least three routes, we anticipate the [external user](context.qmd) might
+take when browsing the Data Resource:
+
+1.  Reading about the Data Resource, its history, organizational
+    structure and ownership, and any other details in a typical "About"
+    section.
+2.  Browsing the completed and ongoing projects that are using or have
+    used the Data Resource, including viewing some of the basic results
+    of the completed projects.
+3.  Viewing some basic aggregate statistics of some key variables in the
+    Data Resource. The aggregate statistics would be generated
+    programmatically.

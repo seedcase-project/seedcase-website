@@ -7,27 +7,26 @@ date: "2023-03-22"
 date-modified: last-modified
 categories:
   - api
+  - software-architecture
 ---
 
 ## Introduction
 
 Application programming interfaces (APIs) are ways that applications
 communicate to each other through a standard structure or design. There
-are several design styles available for building APIs, including REST,
-SOAP, and GraphQL.
+are several design styles available for building APIs, including Representational State Transfer (REST), Simple Object Access Protocol (SOAP), and GraphQL.
 
 ## Decision
 
-We will use the REST (Representational State Transfer) architectural
-style for implementing the communication protocol between our client and
-server components, instead of SOAP (Simple Object Access Protocol) or
+We will use the REST architectural style for implementing the communication 
+protocol between our client and server components, instead of SOAP or
 GraphQL.
 
 ## Alternatives
 
 ### SOAP
 
-SOAP is a widely used technology for implementing web services. SOAP is
+[SOAP](https://www.w3.org/TR/soap12-part0/) is a widely used technology for implementing web services. SOAP is
 based on the XML protocol and supports a wide range of messaging
 formats, such as binary and MIME types, making it quite flexible.
 
@@ -40,7 +39,7 @@ communication logs.
 
 ### GraphQL
 
-GraphQL is an increasingly popular technology for building web APIs.
+[GraphQL](https://graphql.org) is an increasingly popular technology for building web APIs.
 GraphQL allows for very fine-grained control over what data is requested
 and given, so it offers the most flexibility. However, GraphQL can be
 complex to set up and maintain, especially for simple use cases. GraphQL
@@ -66,6 +65,5 @@ These are the reasons we are deciding on REST:
 -   Has better tooling support and is more widely adopted.
 
 ## Conclusion
-
-we believe that the simplicity, flexibility, and scalability of REST
-make it a better choice for our client-server communication needs.
+We believe that the simplicity, flexibility, and scalability of REST
+make it a better choice for the client-server communication needs of Seedcase.

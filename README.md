@@ -11,8 +11,7 @@ and training issue, complicated by the fact that funding is often
 restricted for this type of work as it is often undervalued. For this
 project, we aim to build software tools and training documentation that
 make it easier to manage and work with data. More details are found on
-the [landing page](https://steno-aarhus.github.io/seedcase-project/) of
-the website.
+the [landing page](https://seedcase-project.org) of the website.
 
 ## Contributing
 
