@@ -18,22 +18,22 @@ categories:
 
 To fit our [Guiding Principles](/design/software-architecture/introduction.qmd#guiding-principles) of using established and well-known technologies, we're only going to look at the top three open source relational databases (as defined by [DB-Engines](https://db-engines.com/en/ranking/relational+dbms) in November 2022): MySQL, PostgreSQL, and SQLite.
 
-We have chosen to focus on relational databases, as we believe that the user base for a project like Seedcase will, overall, be more familiar with this form for database system. Moreover, we will have users that will require access to the raw data and therefore we are not looking at systems like MongoDB and Redis.
+We have chosen to focus on relational databases, as we believe that the user base for a project like Seedcase will, overall, be more familiar with this form for database system which means that we are not looking at NoSQL systems like MongoDB and Redis.
 
-As we are planning to use container technology to run the database it is not as important which operating systems the database will run on.  Having said that, of the three systems that we are looking at, MySQL and PostgreSQL will run on multiple operating systems (e.g. Linux, Mac OS, and Windows), and SQLite is a classic serverless application.
+As we are planning to use [container technology](/../seedcase-project/design/decisions/why-containers/index.md) to run the database it is not as important which operating systems the database will run on.  Having said that, of the three systems that we are looking at, MySQL and PostgreSQL will run on multiple operating systems (e.g. Linux, Mac OS, and Windows), and SQLite is a classic serverless application.
 
 A [side-by-side comparison](https://db-engines.com/en/system/MySQL%3BPostgreSQL%3BSQLite)
 on [DB-Engines](https://db-engines.com) was used to compile some of the comparison below.
 
 ## Decision Drivers
 
-One of the most important functions of Seedcase is to handle data, and the most efficient and flexible ways of doing this is to store it in a database.  The backbone of the Seedcase Docker container will be a relational database, where both information about those who have access to the raw data, and the data itself will be stored.
+One of the most important functions of Seedcase is to handle data, and the most efficient and flexible ways of doing this is to store it in a database. Seedcase will be stored in two containers, one for the front end, and one for the data.  This second container will primarily house a relational database which will contain the research data alongside information about the users of the particular instance of Seedcase.
 
 ## Considered Options
 
 #### MySQL
 
-[MySQL](www.mysql.com) was first released in 1995 and is maintained by Oracle Corp. It is an open source platform with the option to deploy either as a local server solution or cloud based. The implementation languages are C and C++, and it runs of a variety of operating systems.  The system allows access through standard technologies (ADO.NET, JDBC, ODBC, and native APIs).
+[MySQL](www.mysql.com) was first released in 1995 and is maintained by Oracle Corp. It is an open source platform with the option to deploy either as a local server solution or cloud based. The implementation languages are C and C++, and it runs of a variety of operating systems. The system allows access through standard technologies (ADO.NET, JDBC, ODBC, and native APIs).
 
 ::: columns
 ::: {.column width="50%" style="font-size: 90%"}
@@ -115,8 +115,8 @@ DRAWBACKS
 
 ## Decision Outcome
 
-We've decided to work with PostgreSQL as our backend database as it fulfills all our needs and is a very popular open source tool.  MySQL would be the other obvious choice, the application does everything that Seedcase needs, but the user community for PostgreSQL seems to be a bit more active.  SQLite is quite popular within the application developer community, but it doesn't have a reliable multi-user functionality, so it may be an uphil battle to get it to do the things we are hoping to do with Seedcase.
+We've decided to work with PostgreSQL as our backend database as it fulfils all our needs and is a very popular open source tool. MySQL would be the other obvious choice, the application does everything that Seedcase needs, but the user community for PostgreSQL seems to be a bit more active. SQLite is quite popular within the application developer community, but it doesn't have a reliable multi-user functionality, so it may be an uphill battle to get it to do the things we are hoping to do with Seedcase.
 
 ### Consequences
 
-The main consequence of our choice is the limiting factor in who can work on the project.  Anyone wanting to work on the database part will need to have an understanding of for instance psql which is the command line tool to work with Postgres.  There are not many differences between postgres and the other large database systems, but there is always some differences in the version of sql they use, and which terms are used. 
+The main consequence of our choice is the limiting factor in who can work on the project. Anyone wanting to work on the database part will need to have an understanding of for instance psql which is the command line tool to work with Postgres.  There are not many differences between postgres and the other large database systems, but there is always some differences in the version of sql they use, and which terms are used. 
