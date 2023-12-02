@@ -1,123 +1,109 @@
 ---
-title: "Why Flake8?"
-description: "Overview and rationale for choosing Flake8 as a code
-linting tool."
-author: "Richard"
+title: "Why Ruff"
+description: |
+  Enforcing style of code with automatic linters and formatters is important for
+  code reviews to focus on content, not style. This post covers the reasons why we
+  decided on Ruff for our linting and formatting purposes.
+author: 
+  - "Richard Ding"
+  - "Luke Johnston"
 date: 2023-11-27
 categories:
+  - contributing
+  - culture
+  - development
+  - management
+  - markdown
+  - programming
+  - reviewing
+  - standardisation
+  - team work
+  - tools
+  - workflow
 ---
 
 ## Context and Problem Statement
 
-Flake8 is a powerful linting tool for Python, integrating various
-functionalities to ensure code quality. Its underlying tools include
-pyflakes for identifying issues like undefined names, pycodestyle for
-enforcing PEP 8 style guide conventions, and mccabe for detecting code
-complexity. This integration provides a comprehensive solution for code
-analysis and style enforcement in Python development.
+Humans are prone to error when writing, whether it is code or text. In a team setting, more people working on the same things increase the chance of more issues occuring. And writing code is not done for the computer, but for other humans to read, so readability and consistency in style become important when reviewing that code. So our problem is:
 
-Flake8's suite of tools includes pyflakes for issues identification,
-pycodestyle for style guide enforcement, and mccabe for complexity
-detection. These tools collectively ensure thorough code analysis,
-essential in Python development.
+> How do we enforce a consistent style across people and code? And how do we catch simple errors that happen because of the style or format of the code?
 
 ## Decision Drivers
 
-Flake8's modularity allows for extensive customization, aligning with
-diverse project requirements. Its widespread adoption in the Python
-community ensures robust support and documentation. Moreover, the active
-community around Flake8 drives continual development and responsiveness
-to evolving best practices.
+- We want to review content and logical of code, not code style.
+- We want an automated way of fixing simple typographical errors and issues.
+- We want an automated way of enforcing a standard style.
 
 ## Considered Options
 
-When selecting a linting tool for Python development, several options
-were considered alongside Flake8. Each tool offers unique features and
-capabilities, making them suitable for different project needs. The
-primary alternatives evaluated were Pylint, Black, and ruff.
+The terms "linting" or "formatting" are used to describe scanning, analysing, and (potentially) fixing code for style and typographical issues. The important difference between linting and formatting is that linting only tells you about the issues while formatting will fix (many of) the issues. Some issues can't be solved from formatting alone, so both linting and formatting are often used together.
+
+There are many tools available for Python, with many websites that have detailed comparisons of them (like [this](https://realpython.com/python-code-quality/), [this](https://geekflare.com/python-linter-platforms/), or [this](https://github.com/caramelomartins/awesome-linters#python) website). Based on this list and based on quick searchs on Google, these are the tools that come up the most often:
+
+- [Pylint](https://github.com/pylint-dev/pylint)
+- [Flake8](https://github.com/PyCQA/flake8)
+- [Black](https://github.com/psf/black)
+- [Ruff](https://github.com/astral-sh/ruff)
+
+Below is a detailed description of the pros and cons based on what others have written about them.
 
 ### Pylint
 
-- **Features**: Pylint is known for its comprehensive code analysis
-  capabilities. It is particularly adept at identifying potential bugs,
-  adhering to coding standards, and highlighting design issues in the
-  codebase.
-- **Configurability**: One of the standout features of Pylint is its
-  high configurability. It allows developers to adjust the strictness of
-  linting rules, making it highly adaptable to specific project
-  preferences and coding standards.
-- **Feedback**: Pylint provides extensive feedback on code quality,
-  including scores, which can be instrumental in maintaining high coding
-  standards across a project.
+- Pros:
+  - Very old, well-established linter
+  - Large community of users and contributors
+  - Very comprehensive list of checks
+  - Highly configurable
+  - Is integrated into many other tools (like flake8, black, and ruff)
+  - Linting feedback is extensive
+- Cons:
+  - Too much configuration needed.
+  - Slow to run.
+  - Is often not needed to use on it's own because it is integrated with other tools.
+  - Linting feedback is extensive and a bit overwhelming.
+
+### Flake8
+
+- Pros:
+  - Extensive list of checks
+  - Includes many other linters
+  - Often used with formatters like Black
+  - Customizable
+  - Large userbase and community
+  - Can use plugins to expand functionality
+- Cons:
+  - Only lints and doesn't format
+  - Is integrated into newer tools (like Ruff), so might not need to be used on it's own
 
 ### Black
 
-- **Focus**: Black is primarily a code formatting tool. It automatically
-  reformats Python code to adhere to a consistent style, reducing the
-  cognitive load associated with manual styling.
-- **Consistency**: With its opinionated approach to code styling, Black
-  ensures a uniform code style across the project. This consistency is
-  particularly beneficial in projects where readability and
-  collaboration are prioritized.
-- **Integration**: Black easily integrates into development workflows,
-  often used as a pre-commit hook or part of the continuous integration
-  process, ensuring code style consistency with minimal developer
-  intervention.
+- Pros:
+  - Is a code formatter, not linter.
+  - Opinionated set of rules for code formatting, so removes need to configure things.
+  - Recommend to use with a linter (often suggested to use flake8 or pylint)
+- Cons:
+  - Difficult to configure customizations
+  - Integrated/compatible with newer tools (like Ruff)
 
 ### Ruff
 
-- **Speed**: Ruff is a relatively new linting tool known for its speed,
-  leveraging Rust's performance to deliver quick linting results.
-- **Simplicity**: It offers a simpler setup and operation, appealing for
-  projects looking for straightforward linting solutions.
-- **Emerging Tool**: While promising, ruff is still gaining traction and
-  may not yet have the extensive community support and plugin ecosystem
-  compared to more established tools.
+- Pros:
+  - Very fast
+  - Implements almost all of Black and flake8 features
+  - Implements many other features from other code analysis and checking tools
+  - Is in very active development
+  - Newer and has more modern development
+  - Configuration is available and relatively straightforward to use
+  - Can be implemented alongside other tools
+- Cons:
+  - Is still new, so bugs and other features are still being developed
+  - Does not yet have all of pylint features implemented
 
 ## Decision Outcome
 
-### Comparison with Flake8
-
-- **Versatility**: While Pylint offers detailed analysis, Black excels
-  in formatting, and ruff impresses with its speed, Flake8 strikes a
-  balance between enforcing style guidelines, maintaining code quality,
-  and providing a wide range of features through its integration of
-  tools like pyflakes, pycodestyle, and mccabe.
-
-- **Customization**: Flake8’s modularity allows for significant
-  customization, enabling developers to adapt the linting process to
-  their specific project needs without sacrificing essential linting
-  features.
-- **Community and Ecosystem**: The widespread adoption of Flake8 in the
-  Python community has led to a robust ecosystem of plugins and active
-  community support. This ecosystem ensures continual improvement and
-  responsiveness to emerging needs in Python development.
-
-### Conclusion
-
-In summary, while Pylint, Black, and ruff each have their strengths in
-specific areas, Flake8 was chosen for its balanced approach,
-adaptability, and strong community support, making it an ideal choice
-for our Python development needs. Its mature ecosystem and the ability
-to integrate various functionalities make it a versatile and reliable
-tool for diverse Python projects.
+We decided on Ruff because it is a newer tool that implements many of the other tools that exist. It also is designed to be mostly used "as is", without needing to customize many things. It is also seems to be design in a way that makes customizations relatively easy to set up.
 
 ## Potential Consequences
 
-- **Positive Impact on Code Quality**: Choosing Flake8 is likely to
-  improve overall code quality, as it enforces coding standards and
-  identifies potential issues. This can lead to more maintainable and
-  error-free code in the long run.
-- **Enhanced Consistency in Codebase**: The adoption of Flake8 will
-  promote consistency across the codebase, as all developers will adhere
-  to a unified set of coding standards and practices.
-- **Dependency on Community Support**: Given Flake8’s reliance on
-  community contributions and plugins, any slowdown in community support
-  or updates could impact its effectiveness.
-- **Potential for Overhead**: While Flake8 is a powerful tool, its
-  extensive features and customizability could add overhead to the
-  development process, especially if not properly configured to match
-  the project’s needs.
-- **Integration with Existing Workflow**: The integration of Flake8 into
-  the existing development workflow may require adjustments,
-  particularly if other tools or practices are already in place.
+- We might miss out on some features from pylint (since right now we won't include pylint).
+- There may be some bugs along the way because Ruff is relatively new, though this can be minimized by relying on more stable versions of it.
