@@ -1,0 +1,45 @@
+@startuml 
+!include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+' Component diagram for The Seedcase product - Backend: File Storage
+
+Container(uia, "User ID Authentication")
+Container(api, "API Layer")
+
+Container_Boundary(bee, "Backend Environment") {
+  Container_Boundary(rdb_metadata, "Relational Database for Metadata") {
+    Component(data_projects, "Data projects in Tables", $descr="Details on data projects in the Data Resource")
+    Component(changelog, "Changelog in Tables", $descr="Changes made to the data")
+    Component(user_info, "Information on users", $descr="Metadata on registered users of the Data Resource")
+    ' TODO: Not sure what to do about these.
+    ' Component(data_dictionary, "Resource data dictionary", "the data dictionary unique to the data Resource")
+    ' Component(cdm_data, "Common Data Models", "pre-loaded data dictionaries from common data models")
+  }
+  Container_Boundary(rdb_data, "Relational Database for Data") {
+    Component(dt, "Data in Tables", $descr="Data from Data Resource entered into database")
+    ' TODO: Not sure what to do about these.
+    ' Component(data_dictionary, "Resource data dictionary", "the data dictionary unique to the data Resource")
+    ' Component(cdm_data, "Common Data Models", "pre-loaded data dictionaries from common data models")
+    ' Component(schema, "Schema Metadata", "Schema data pre-loaded?")
+  }
+  Container_Boundary(fs, "File storage") {
+    Component(raw_file, "Raw file storage", $descr="For uploaded raw data files")
+    Component(large_file, "Large file storage", $descr="For for large files not suitable for entry into database (eg. images)")
+  }
+}
+
+Rel(api, fs, "Write data")
+
+Rel(api, dt, "Write and read")
+BiRel(api, changelog, "Write and read table with changes made")
+BiRel(api, data_projects, "Write and read table with data project requests or changes")
+
+Rel(raw_file, dt, "Process and insert")
+Rel(dt, large_file, "Link to")
+
+BiRel(uia, user_info, "Fetch permissions")
+
+' TODO: Not sure what to do about these yet.
+' Rel(api, data_dictionary, "reads data from")
+' Rel(data_dictionary, cdm_data, "may copy data from")
+@enduml

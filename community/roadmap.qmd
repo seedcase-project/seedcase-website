@@ -1,0 +1,78 @@
+---
+title: Roadmap
+---
+
+{{< include /includes/_wip.qmd >}}
+
+While the core deliverable of Seedcase is the software product described in the [design](/design/software-architecture/index.qmd) documentation, there are several deliverables that form this core Product.
+
+Because of the evolving nature of developing software, the software product is never "completed" as it continues to be improved on and updated. So here we define deliverable for software as the first Minimally Viable Product (or prototype). After the first release of a Minimally Viable Product, the software product will continue to be tested and refined based on user feedback, identifying bugs, and adding features.
+
+Likewise, our non-software projects will also continue to be refined and updated. So we define deliverable as the first time they are uploaded to an archive (like a software release) to create a DOI (digital object identifier).
+
+## Primary deliverables
+
+<!-- TODO: Convert this into a table? -->
+
+- Software
+    - Authenticating users and managing permissions
+    - Uploading and managing research data
+        - Plugin/extension system for processing or enriching data
+    - Cataloging and browsing metadata on data in a Data Resource
+    - Managing and displaying Data Projects (`seedcase-registry`)
+    - Submitting request for accessing specific data
+    - Web portal for displaying basic details on a Data Resource
+    - Plugin/extension system for theming of User Interface elements
+
+- Documentation
+    - Contributing to and maintaining Seedcase software
+    - Using and interacting with Seedcase software through their API and the command line
+    - Using and interacting with Seedcase software through the User Interface
+    - Software and data design and architecture for each Seedcase software
+    - Installing and deploying Seedcase software
+    - Using customizing Seedcase software
+
+- Workshops (in-person and maybe virtual as videos)
+    - Installing and setting up Seedcase on a server so Data Resources can be created
+    - Using Seedcase to create and manage a Data Resource
+    - Requesting to start a data project for a Data Resource
+
+- Sub-projects
+    - Workflows and digital infrastructure for building software in a team-based research environment
+        - Report
+        - Documentation
+        - Templates
+
+## Secondary deliverables
+
+- General sharing
+    - Knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management
+
+- Awareness/education
+    - "What is research data engineering?"
+
+- Training and learning
+    - Workshop: "Data engineering in a research environment"
+
+## Major milestones
+
+- First upload of documents to archive (for DOI)
+    - Design and architecture
+    - Team workflow and infrastructure
+
+- Modules/components of each software deliverable
+
+- Real-world deployment of Seedcase
+    - DD2
+    - ADDITION
+    - Health in Central Region
+    - DARTER (register-based research project at Steno)
+
+## Ongoing activities
+
+Throughout the entire lifespan of this project, we will be assessing, reviewing, updating, and adding to these activities: 
+
+- Security
+- General documentation
+- Refining the User Interface
+- Testing and re-testing of the code

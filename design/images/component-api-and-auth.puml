@@ -1,0 +1,66 @@
+@startuml component-api-and-auth
+' C4 Component diagram for the API and Authentication modules
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+Person(direct_access, "Direct connection")
+Person(admin, "Admin user")
+Container(frontend, "Frontend")
+Container(backend, "Backend")
+Container(uia, "User ID Authentication")
+System_Ext(external_server, "External secure server")
+
+Container_Boundary(api, "API layer") {
+  ' Data projects
+  Component(post_update_project, "", $descr="")
+  Component(approve_project, "Approve data project", $descr="")
+  Component(get_projects, "", $descr="")
+
+  ' Variable metadata
+  Component(get_metadata, "", $descr="")
+  Component(post_update_metadata, "", $descr="")
+
+  Component(post_update_user, "", $descr="")
+  Component(approve_user, "", $descr="")
+  Component(assign_user_roles, "", $descr="")
+
+  Component(get_changelog, "", $descr="")
+  Component(post_update_changelog, "", $descr="")
+
+  Component(post_update_data_to_db, "", $descr="")
+  Component(post_update_data_raw, "", $descr="")
+  Component(process_data_raw_to_db, "", $descr="")
+  Component(get_data, "", $descr="")
+  Component(send_data, "", $descr="")
+
+  Component(qc_general, "", $descr="")
+  Component(qc_plugins, "", $descr="")
+}
+
+Rel(direct_access, uia, "Authenticate access")
+Rel(frontend, uia, "Authenticate access")
+
+Rel(get_projects, frontend, "Update public list")
+Rel(get_metadata, frontend, "Update public list")
+Rel(get_changelog, frontend, "Update public list")
+
+Rel(admin, approve_project, "")
+Rel(admin, approve_user, "")
+Rel(admin, assign_user_roles, "")
+Rel(uia, post_update_user, "")
+Rel(approve_user, post_update_user, "")
+Rel(assign_user_roles, post_update_user, "")
+Rel(admin, assign_user_roles, "")
+Rel(bee, get_data, "")
+Rel(get_data, admin, "")
+
+Rel(approve_project, send_data, "")
+Rel(send_data, external_server, "")
+
+Rel(uia, post_update_project, "")
+Rel(uia, post_update_metadata, "")
+Rel(uia, post_update_changelog, "")
+Rel(uia, post_update_data_to_db, "")
+Rel(uia, post_update_data_raw, "")
+Rel(post_update_data_raw, process_data_raw_to_db, "")
+
+@enduml

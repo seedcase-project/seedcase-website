@@ -1,0 +1,9 @@
+---
+title: "Orchestration"
+---
+
+Orchestration for backend management
+
+See: https://airflow.apache.org/docs/apache-airflow/stable/index.html
+
+-   Trigger to run processing when new raw data is stored

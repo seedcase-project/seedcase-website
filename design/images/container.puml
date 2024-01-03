@@ -1,0 +1,34 @@
+@startuml 
+' Container diagram showing overview of Seedcase
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(user_request_input, "Data input and request")
+Person(user_admin, "Admin")
+Person_Ext(user_public, "Public (unauthorized)")
+
+System_Boundary(seedcase, "Seedcase instance for Data Resource") {
+  Container(web_framework, "Web Interface")
+  Container(id_authentication, "User Authentication")
+  Container(management, "User and Data Management Layer")
+
+  Container_Boundary(backend, "Backend environment") {
+    ContainerDb(backend_database_data, "Relational Database for Data")
+    ContainerDb(backend_database_metadata, "Relational Database for Metadata")
+    ContainerDb(backend_file_storage, "File Storage")
+    ContainerDb(backend_large_file_storage, "Large File Storage")
+  }
+}
+System_Ext(external_server, "External secure server")
+
+Rel(user_public, web_framework, "View general details about Data Resource")
+Rel(user_request_input, web_framework, "Input to or request data from Data Resource")
+Rel(user_admin, web_framework, "Create, manage, and update data projects")
+BiRel(web_framework, id_authentication, "User Authentication")
+BiRel(web_framework, management, "Send or receive information")
+BiRel(management, backend_database_data, "Database-specific commands")
+BiRel(management, backend_database_metadata, "Database-specific commands")
+BiRel(management, backend_file_storage, "Request to read, create, update, or delete files")
+BiRel(management, backend_large_file_storage, "Request to read, create, update, or delete files")
+Rel(management, external_server, "Data extract for approved data projects")
+
+@enduml

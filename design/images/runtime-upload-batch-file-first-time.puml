@@ -1,0 +1,30 @@
+@startuml
+
+start
+:User selects option to upload new file;
+:System loads file and displays back
+headers and data types from upload;
+   if (System ask if user want to use 
+     CDM for some or all fields) then (no)
+   else (yes)
+:System fetches list of CDMs from db, 
+displays back to user;
+:User selects the CDM section the want;
+:System fetches detailed terms from db and
+populates drop-downs against each uploaded field;
+:User selects the relevant CDM term 
+against each header;
+   endif
+   while (System checks that all headers have definitions) is (no)
+:System generates list of undefined headers 
+and displays with drop-down for type, 
+and text boxes for name and description;
+:User enters field name, data type and 
+description against non-defined headers;
+   endwhile (yes)
+:System saves the new schema to db;
+:Systems confirms back to user that
+new schema has been saved;
+stop
+
+@enduml

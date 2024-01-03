@@ -1,92 +1,85 @@
 project:
-  type: website
-  output-dir: _site
-  execute-dir: project
-  render:
-    - "*.Rmd"
-    - "*.md"
-    - "*.qmd"
-  post-render:
-    - touch _site/.nojekyll
+  type: seedcase-theme
 
 website:
-  title: "seedcase"
-  # apple-touch-icon: "images/apple-touch-icon.png"
-  # apple-touch-icon-size: 180
-  # favicon: "images/favicon.ico"
-  site-url: "https://steno-aarhus.github.io/seedcase-project/"
-  repo-url: "https://github.com/steno-aarhus/seedcase-project"
-  repo-branch: main
-  repo-actions: [edit, issue, source]
-  search:
-    location: navbar
-    type: overlay
+  title: "Seedcase Project"
+  favicon: "/images/logo.svg"
+  site-url: "https://seedcase-project.org/"
+  repo-url: "https://github.com/seedcase-project/seedcase-project"
   page-footer:
     center:
-      - text: "License under CC-BY 4.0"
+      - text: "License: CC-BY 4.0"
         href: LICENSE.md
+  page-navigation: true
   navbar:
-    left:
-      - text: "Design"
-        href: design/index.md
-      - text: "Community"
-        href: community/contribute/index.md
+    pinned: true
+    logo: "/images/logo.svg"
+    right:
       - text: "About"
         href: about/index.md
-    right:
-      - icon: "globe"
-        href: "https://www.stenoaarhus.dk/research"
-      - icon: "twitter"
-        href: "https://twitter.com/StenoAarhusRes"
+      - text: "Community"
+        href: community/index.qmd
+      - text: "Design"
+        href: design/index.md
+    tools:
+      - icon: github
+        href: "https://github.com/seedcase-project/seedcase-project"
   sidebar:
     - id: community
       title: "Community"
+      pinned: true
       style: "floating"
       align: left
+      collapse-level: 1
       contents:
-        - community/contribute/index.md
-        - community/posts.md
-        - community/CODE_OF_CONDUCT.md
-        - section: "Team"
+        - community/index.qmd
+        - section: "Contributing"
           contents:
-            - community/contribute/team/events.md
+            - text: "Overview"
+              href: community/CONTRIBUTING.md
+            - auto: community/guide-entries
+            - auto: community/decisions
+            - text: "Code of Conduct"
+              href: "https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md"
+        - community/blocks.qmd
+        - community/roadmap.qmd
     - id: design
       title: "Design"
+      pinned: true
       style: "floating"
       align: left
+      collapse-level: 1
       contents:
         - design/index.md
-        - design/overview.md
-        - design/decisions.md
+        - auto: design/software-architecture/
     - id: about
       title: "About"
+      pinned: true
+      style: "floating"
+      align: left
+      collapse-level: 1
       contents:
       - about/index.md
       - text: "History"
         href: about/history/index.md
       # - text: "Mission"
       #   href: about/mission.md
+      - text: "Team Members"
+        href: about/team/index.md
 
 
 bibliography: "includes/references.bib"
-csl: "includes/vancouver.csl"
 
-format:
-  html:
-    from: markdown+emoji
-    # Not sure this works without R, since it uses the downlit package.
-    # code-link: true
-    theme:
-      - zephyr
-      - theme.scss
-    toc: true
-    toc-location: right
-    toc-depth: 3
+# format:
+#   seedcase-theme-html:
     # include-before-body:
       # - "includes/site-counter.html"
       # - "includes/contribute.html"
 
-editor_options:
+editor:
   markdown:
     wrap: 72
     canonical: true
+
+execute:
+  echo: false

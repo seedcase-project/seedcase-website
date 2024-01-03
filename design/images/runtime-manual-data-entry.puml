@@ -1,0 +1,19 @@
+@startuml
+
+' Logged in user who manually writes a new row to the Data Resource.
+
+participant "User" as u
+participant "Frontend" as f
+participant "API" as api
+participant "Backend" as db
+
+f -> u ++: Show data entry UI
+u -> f --: Entering data
+f -> api ++: Clicked "Save and Submit"
+api -> api : Validate data
+api -> db ++: Post data with\n"Completed" flag
+db -> db : Create record
+db -> api --: Confirm created row
+api -> f --: Receive confirmation
+f -> u --: Display confirmation
+@enduml

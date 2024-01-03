@@ -1,0 +1,34 @@
+@startuml
+
+' Logged in user enters data manually in more than one session.
+
+participant "User" as u
+participant "Frontend" as f
+participant "API" as api
+participant "Backend" as db
+
+f -> u ++: Show data entry UI
+u -> f --: Entering data
+f -> api ++: Clicked save data
+api -> db ++: Post data with\n"Incomplete" flag
+db -> db : Create record with\n"Incomplete" flag
+db -> api --: Confirm created row
+api -> f --: Receive confirmation
+f -> u --: Display confirmation
+
+f -> u ++: Show data entry UI
+u -> f --: Continuing data entry
+f -> api ++: Get previous\nsession from user ID
+db -> db : Check for\n"Incomplete" flags
+db -> api --: Send "Incomplete" data
+api -> f --: Show "Incomplete" data
+f -> u ++: Request to \ncontinue data entry
+u -> f --: Finish entering data
+f -> api ++: Clicked "Save and Submit"
+api -> api : Validate data
+api -> db ++: Post data with\n"Completed" flag
+db -> db : Create record
+db -> api --: Confirm created row
+api -> f --: Receive confirmation
+f -> u --: Display confirmation
+@enduml

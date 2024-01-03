@@ -1,0 +1,59 @@
+---
+title: "Constraints"
+order: 2
+---
+
+{{< include /includes/_wip.qmd >}}
+
+This document lists technical, political/organizational, and
+convention-based constraints that we must consider when developing
+Seedcase.
+
+The main "philosophical" and value-based constraints are described in
+the [Guiding
+Principles](/design/software-architecture/introduction.qmd#guiding-principles)
+section. These form the basis for all other decisions and designs. Some
+of those constraints are summarized below.
+
+## Technical constraints
+
+| Constraints                                        | Background/Motivation                                                            |
+|----------------------------------------------------|----------------------------------------------------------------------------------|
+| Run on Windows, MacOS, and Linux                   | Our potential users work on any of these systems, so we need to design for that     |
+| Use open source software dependencies              | We will use an open license, so we need to use components that are open as well     |
+| Use software that's (relatively) familiar to many  | We want others to contribute, so weneed to use tools others (likely) know          |
+| Integrate GDPR, privacy, and security compliance   | Our target users work with health data, so this is vital to consider             |
+| Deployable to servers and locally                  | Could be used locally but mainly used on a server environment                    |
+| Storage and computing may be at different locations | Where data are stored vs analyzed will likely be different, see subsection below |
+
+: Technical constraints we need to consider for Seedcase.
+
+## Organizational constraints
+
+| Constraints                     | Background/Motivation                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------|
+| Time schedule                   | Funding is until end of \~2027                                                                          |
+| Resources                       | Currently only have a fixed set of funds                                                                |
+| Small team                      | Only have 4-5 people on team, \~3 who are full-time                                                     |
+| Limited knowledge/skill support | Data/software engineering is not common in research environments, so local knowledge/skills are limited |
+
+: Organizational constraints we need to consider for Seedcase.
+
+## Political/legal constraints
+
+| Constraints                        | Background/Motivation                                                                       |
+|------------------------------------|---------------------------------------------------------------------------------------------|
+| Use open source license            | For both practical and philosophical reasons, we will license Seedcase with an open license |
+| Need endorsement from legal and IT | They have broad institutional influence, so at least having some support is vital           |
+
+: Political/legal constraints we need to consider for Seedcase.
+
+## Conventions
+
+| Conventions                                      | Background/Motivation                                            |
+|--------------------------------------------------|------------------------------------------------------------------|
+| Follow standard styling (e.g., [PIP3](https://pypi.org/project/pip/))             | Coding style is vital to readability, so we follow best practice |
+| Use [CalVer](https://calver.org/) versioning     | This style is simple and easily shows the age of the software    |
+| Incorporate "Test/Doc-Driven Development" styles | Each has pros and cons, we use what works best. See the [Contributing Guidelines](https://seedcase-project.org/community/contributing).                  |
+
+: Conventions that we should follow or consider for Seedcase.

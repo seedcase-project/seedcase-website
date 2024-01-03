@@ -1,23 +1,36 @@
 ---
-title: "Seedcase"
-subtitle: "A framework for an open and scalable infrastructure for health data"
+title: "Seedcase Project"
+subtitle: A framework for an open and scalable infrastructure for health data
+about:
+  id: hero-heading
+  template: solana
+  image: /images/logo-full-color.png
+  image-width: 20em 
+  links: 
+    - icon: cone-striped
+      text: "Software (incomplete)"
+      href: "https://github.com/seedcase-project/seedcase"
+    - icon: info-circle
+      text: "About"
+      href: "https://seedcase-project.org/about/"
+    - icon: people
+      text: "Community"
+      href: "https://seedcase-project.org/community/"
+    - icon: diagram-2
+      text: "Design"
+      href: "https://seedcase-project.org/design/"
 ---
 
-Many initiatives in clinical research, including the Danish Centre for
-Strategic Research in Type 2 Diabetes (DD2) initiative, have a hard time
-getting funds for building and maintaining needed software that make
-sure health science is the highest quality it can be. For this project,
-we aim to build software tools that make it easier to do better
-research, especially for managing and working with data. We'll first be
-building these tools to help support the DD2 initiative.
+::: {#hero-heading}
+We believe that by developing high-quality software and providing
+training on activities and tasks related to building, managing, and
+sharing health data, the science and research on health and well-being
+can become better, ultimately helping prevent or manage diseases like
+diabetes.
+:::
 
-<!-- TODO: List overview of purposes here -->
+Our specific goals are:
 
-We will be sharing these tools widely and freely, so that as many
-research groups as possible can use it for their own projects. Not only
-will we build these tools to help researchers with managing and sharing
-their data, we also will create them with beginner-friendly
-documentation and training material to make sure more researchers use
-our tools, no matter their skill level. We believe that with these
-tools, science on health and well-being can become better, ultimately
-helping people with diabetes and society in general.
+{{< include includes/_goals.qmd >}}
+
+<!-- TODO: List overview of purposes/principles here? -->

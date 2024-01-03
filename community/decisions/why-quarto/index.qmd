@@ -1,0 +1,51 @@
+---
+title: "Why choose Quarto?"
+description: "Our reasons for using Quarto to build the website and write the general documentation."
+author: "Luke W. Johnston"
+date: last-modified
+categories:
+  - documentation
+  - markdown
+  - website
+---
+
+There are many different types of "static website generators"[^1], like
+[Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/). They all
+have their pros and cons, and we ultimately have to choose one to use
+when writing content for this website and to build it, as well as when
+writing the documentation for Seedcase itself.
+
+[^1]: A static website or blog generator is a framework for building
+    websites based on pure, plain HTML files (unlike building websites
+    from SQL databases and programming languages like PHP). "Static"
+    meaning it is a simple file that is being shown by the browser as a
+    webpage.
+
+Within the R world, a recent new tool came out called
+[Quarto](https://quarto.org/). Since its release, it has completely
+taken over as the tool to use when working with R and data science. We
+will use this tool because it aligns with our values and philosophies
+(described more in the Design
+[Introduction](/design/software-architecture/introduction.qmd) section)
+for multiple reasons.
+
+1.  It is open source.
+2.  The documentation is phenomenal and very beginner friendly.
+3.  It is sponsored by an organization ([Posit](https://posit.co/)) with
+    an established history of supporting and contributing to open source
+    projects.
+4.  The software design is extremely well developed and structured,
+    which makes it easier to use compared to other alternatives.
+5.  It has multi-language support (like R and Python), but is itself
+    language-agnostic.
+6.  Because it is integrated into RStudio, many data scientists and
+    researchers who use R will quickly become familiar with it.
+7.  It has support for integration with other applications, like [VS
+    Code](https://code.visualstudio.com/), which is also used by many
+    software developers and data scientists.
+8.  It is built on top of [Pandoc Markdown](https://pandoc.org/), which
+    the de facto standard for writing Markdown, with strong historical
+    use and community support.
+
+For these reasons, we write our documentation that includes the website
+with Quarto.
