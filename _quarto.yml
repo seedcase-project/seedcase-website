@@ -18,31 +18,13 @@ website:
       - text: "About"
         href: about/index.md
       - text: "Community"
-        href: community/index.qmd
+        href: https://community.seedcase-project.org
       - text: "Design"
         href: design/index.md
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-project"
   sidebar:
-    - id: community
-      title: "Community"
-      pinned: true
-      style: "floating"
-      align: left
-      collapse-level: 1
-      contents:
-        - community/index.qmd
-        - section: "Contributing"
-          contents:
-            - text: "Overview"
-              href: community/CONTRIBUTING.md
-            - auto: community/guide-entries
-            - auto: community/decisions
-            - text: "Code of Conduct"
-              href: "https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md"
-        - community/blocks.qmd
-        - community/roadmap.qmd
     - id: design
       title: "Design"
       pinned: true

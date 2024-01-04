@@ -54,6 +54,6 @@ of those constraints are summarized below.
 |--------------------------------------------------|------------------------------------------------------------------|
 | Follow standard styling (e.g., [PIP3](https://pypi.org/project/pip/))             | Coding style is vital to readability, so we follow best practice |
 | Use [CalVer](https://calver.org/) versioning     | This style is simple and easily shows the age of the software    |
-| Incorporate "Test/Doc-Driven Development" styles | Each has pros and cons, we use what works best. See the [Contributing Guidelines](https://seedcase-project.org/community/contributing).                  |
+| Incorporate "Test/Doc-Driven Development" styles | Each has pros and cons, we use what works best. See the [Contributing Guidelines](https://community.seedcase-project.org).                  |
 
 : Conventions that we should follow or consider for Seedcase.
