@@ -15,7 +15,7 @@ about:
       href: "https://seedcase-project.org/about/"
     - icon: people
       text: "Community"
-      href: "https://seedcase-project.org/community/"
+      href: "https://community.seedcase-project.org/"
     - icon: diagram-2
       text: "Design"
       href: "https://seedcase-project.org/design/"
