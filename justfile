@@ -7,4 +7,4 @@ generate-puml:
 
 # Build the website using Quarto
 build-website:
-  quarto render
+  docker run --rm -v $(pwd):/site -w /site ghcr.io/quarto-dev/quarto:latest quarto render
