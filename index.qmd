@@ -18,7 +18,7 @@ about:
       href: "https://community.seedcase-project.org/"
     - icon: diagram-2
       text: "Design"
-      href: "https://seedcase-project.org/design/"
+      href: "https://design.seedcase-project.org/"
 ---
 
 ::: {#hero-heading}
