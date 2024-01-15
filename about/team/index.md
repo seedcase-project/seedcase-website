@@ -9,11 +9,5 @@ Administrator](images/kristiane.jpg){width="150"}
 ![Signe Kirk Brødbæk, Software
 Engineer](images/signe.jpg){width="150"}
 
-![Richard Ding, Research Software
-Engineer](images/richard.jpg){width="150"}
-
 ![Luke W. Johnston, Team Leader](images/luke.jpg){width="150"}
-
-![Sia Kromann Nikolaisen, DD2 Data
-Manager](images/sia.jpg){width="150"}
 :::

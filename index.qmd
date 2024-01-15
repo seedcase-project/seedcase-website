@@ -19,6 +19,9 @@ about:
     - icon: diagram-2
       text: "Design"
       href: "https://design.seedcase-project.org/"
+    - icon: signpost-2
+      text: "Decisions"
+      href: "https://decisions.seedcase-project.org"
 ---
 
 ::: {#hero-heading}
