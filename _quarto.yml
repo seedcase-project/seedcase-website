@@ -20,20 +20,11 @@ website:
       - text: "Community"
         href: https://community.seedcase-project.org
       - text: "Design"
-        href: design/index.md
+        href: https://design.seedcase-project.org
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-project"
   sidebar:
-    - id: design
-      title: "Design"
-      pinned: true
-      style: "floating"
-      align: left
-      collapse-level: 1
-      contents:
-        - design/index.md
-        - auto: design/software-architecture/
     - id: about
       title: "About"
       pinned: true
