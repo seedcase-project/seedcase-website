@@ -6,9 +6,9 @@
   "git.autofetch": false,
   "quarto.visualEditor.markdownWrap": "column",
   "quarto.visualEditor.markdownWrapColumn": 72,
-  "autoDocstring.docstringFormat": "numpy",
-  "autoDocstring.includeName": true,
-  "autoDocstring.startOnNewLine": true,
+  "autoDocstring.docstringFormat": "google",
+  "autoDocstring.includeName": false,
+  "autoDocstring.startOnNewLine": false,
   "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "inline",
   "conventional-branch.type": [
