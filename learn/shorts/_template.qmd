@@ -1,0 +1,42 @@
+---
+title: ""
+description: |
+  Text
+author: ""
+date: ""
+date-modified: last-modified
+categories: 
+  - text
+---
+
+## Motivation for this micro-lesson
+
+-   REASONS
+
+## Assumed knowledge of reader
+
+-   ASSUMED KNOWLEDGE
+
+## Necessary software
+
+-   SOFTWARE NEEDED
+
+## Learning goal
+
+> GOAL
+
+## Take home messages
+
+-   SIMPLE MESSAGE
+
+## Lesson content
+
+### SECTION HEADER
+
+## Summary
+
+- BRIEF SUMMARY
+
+## Additional resources
+
+-   LINKS USED OR FOR FURTHER LEARNING
