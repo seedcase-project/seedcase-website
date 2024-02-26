@@ -1,0 +1,174 @@
+---
+title: "An brief introduction to automation using GitHub Actions"
+description: |
+  GitHub Actions are a powerful way of running code or a series of tasks on an 
+  independent and fresh computing environment. You can use these as a way of 
+  automating tasks, running tasks on a schedule, testing your code, or any number
+  of things that you'd rather a computer do that you do manually.
+author: "Luke W. Johnston"
+date: "2024-02-19"
+date-modified: last-modified
+categories: 
+  - github actions
+  - automation
+  - servers
+  - workflows
+---
+
+## Motivation for this micro-lesson
+
+- In our team, and in programming or software development in general, we often need
+to frequently run code every time a specific event happens (like someone makes
+changes to code) or we want to automate a task that needs to happen on a
+regular basis. To do that, we need to use tools that make it easier to automate those 
+tasks. This lesson aims to share our knowledge on using one of these tools called [GitHub Actions](https://github.com/features/actions).
+
+## Assumed knowledge of reader
+
+- No knowledge of any specific software or programming language is needed, including Git.
+- A general understanding of what "automation" means and answering questions like:
+    - How might a computer (conceptually) do a task for you, instead of you
+    doing it manually?
+    - How could you (conceptually) get a computer to do a task for you on a
+    schedule or based on a trigger or event?
+- A general familiarity with GitHub, including:
+    - Knowing what a Git repository means
+    - Navigating to a Git repository
+    - Creating a new file ("adding")
+    - Saving files ("committing")
+    - Making edits to files ("committing")
+
+## Necessary software
+
+- No software is needed.
+- Need to have a GitHub account.
+
+## Learning goal
+
+> At the end of this, you will be able to describe what an Action is and some basic uses of it, as well as being able to create a simple Action.
+
+## Take home messages
+
+- GitHub Actions are files with a list of instructions that the GitHub server uses to run to complete a set of tasks.
+- GitHub Actions are YAML files that must be placed in the `.github/workflows/` folder in a repository.
+
+## Lesson content
+
+### What is a GitHub Action?
+
+At it's core, a [GitHub Action](https://github.com/features/actions) is a set of
+instructions given to a server to run and complete a specific sequence of tasks.
+Before we can continue though, we need to answer the question: What is a server?
+
+A server is just like the computer you are using right now to read this lesson
+in your web browser, except that a server is a connected set of thousands of
+computers usually kept somewhere in a big, tightly-controlled and managed
+warehouse. Servers are very powerful, large "computers" that is used to run complex
+and intensive computations, and most often are used to run tasks for websites. All 
+of the Internet is found on servers across the world.
+
+<!-- TODO: Include a diagram or something here? -->
+
+In the case of GitHub Actions, the server is GitHub's server, and the
+instructions for the tasks to do are kept in a specific file. In order to GitHub
+to know about and use this file, it has to be kept in the `.github/workflows/`
+folder of the repository and the file must be a
+[YAML](https://en.wikipedia.org/wiki/YAML) file (ending in `.yml`):
+
+```
+reponame/
+└── .github/
+    └── workflows/
+        ├── action-name-1.yml
+        └── action-name-2.yml
+```
+
+In the folder setup above, there are two Actions that GitHub will run:
+`action-name-1` and `action-name-2`. 
+
+### General structure of a GitHub Action
+
+GitHub Actions are structured and organized into distinct sections:
+
+1. The trigger (`on`) section
+2. The permissions (`permissions`) section
+3. The jobs (`jobs`) section
+
+#### `on` section
+
+The `on` section tells GitHub when the Action should run. For instance, to only
+run the Action when an Issue (like bug reports, questions to ask, or tasks
+to do) is created (called "opened"), you write:
+
+``` .yaml
+on:
+  issues:
+    type: opened
+```
+
+::: callout-tip
+The way that commands are written as a shortened uses the `.` to separate each
+level. So for the one above, it would be `on.issues.type`.
+:::
+
+Other types of common triggers are for `pull_request` (when someone submits
+modifications to files and "requests" the repository owners to merge the change
+into the repository) or for `push` (any time a change is uploaded to the
+repository). If you wanted to trigger on both, it would look like:
+
+``` .yaml
+on:
+  pull_request:
+  push:
+```
+
+#### Optional `permissions` section
+
+This section tells GitHub what extra permissions the Action has. Permissions are
+the level of "access" a computer or person has to files. There are three
+permissions: `none`, `read`, and `write`. Read is being able to open a file, but
+not save it. Write is being able to open, modify, *and* save a file. For
+security purposes, you want to limit an Action's `write` permission unless
+completely necessary, but giving `read` access is usually fine. This section is
+optional because GitHub sets the default permission to `none` to have the most
+security, but allows you to set permissions for specific things.
+
+For instance, if you wanted to give an Action `write` permission to Issues only
+(for instance, to create a comment in an Issue or to close an Issue) you would
+write:
+
+``` .yaml
+permissions:
+  issues: write
+```
+
+When the `permissions` is set at this "top-level" (meaning it isn't nested under
+another section like `jobs`), then the permissions given apply to all `jobs`. If
+you only wanted one job to have a specific permission, you can use `permissions`
+as a nested level item in the `jobs` task (more on that below).
+
+#### `jobs` section
+
+This section is composed of its own set of subsections and is where the actual
+instructions are listed that form the core of an Action.
+
+
+
+
+### Creating a simple GitHub Action
+
+1. Create a new GitHub repository, call it anything you like. Something simple like `test-actions` works well.
+2. 
+
+```{.yaml}
+
+```
+
+## Summary
+
+- BRIEF SUMMARY
+
+## Additional resources
+
+- [Wikipedia page on Servers](https://en.wikipedia.org/wiki/Server_(computing))
+- [Official GitHub Actions Documentation](https://docs.github.com/en/actions)
