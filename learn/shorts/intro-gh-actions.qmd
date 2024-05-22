@@ -38,8 +38,7 @@ called [GitHub Actions](https://github.com/features/actions).
 -   A general familiarity with GitHub, including:
     -   Knowing what a Git repository, including branches, means
     -   Navigating to a Git repository
-    -   Creating a new file ("adding")
-    -   Saving files ("committing")
+    -   Creating a new file (called "adding" in Git)
     -   Making edits to files ("committing")
 
 ## Necessary software
@@ -72,7 +71,7 @@ A **server** is just like the computer you are using right now to read this
 lesson. Except that a server is a connected set of
 thousands of computers usually kept somewhere in a big,
 tightly-controlled, and managed warehouse. Servers are very powerful,
-large "computers" that is used to run complex and intensive
+large computers that is used to run complex and intensive
 computations, and often are used to run tasks for websites. For example, all of
 the Internet is found on servers across the world.
 
@@ -120,8 +119,8 @@ on:
 ```
 
 ::: callout-tip
-The way that commands are written as a shortened uses the `.` to
-separate each level. So for the one above, it would be `on.issues.type`.
+The way that commands are written in official documentation often uses a shortened form. So that a `.` is used to
+separate each level. In the example above, in documentation it would be referred to as `on.issues.type`.
 :::
 
 Other types of common triggers are for `pull_request` (when someone
