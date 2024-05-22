@@ -255,7 +255,7 @@ available to anyone. Like many tools, Quarto provides a
 action file for you to use. We'll use this as a starting point and walk
 through what each part of that action does.
 
-::: callout-info
+::: callout-note
 For more details and documentation on the Quarto actions and their
 template workflow file, you can visit their [Quarto GitHub Actions
 repository](https://github.com/quarto-dev/quarto-actions/tree/main).
@@ -370,7 +370,7 @@ accessible with the `with:` field) to be `gh-pages`. Saving to the
 `gh-pages` branch requires using the `GITHUB_TOKEN` environment, which
 is found within the `secrets` object.
 
-::: callout-info
+::: callout-note
 This information about the `GITHUB_TOKEN` is found within Quarto's
 [documentation](https://github.com/quarto-dev/quarto-actions/tree/main/publish#github-pages)
 as well as is included within their
