@@ -1,7 +1,7 @@
 ---
 title: "An brief introduction to automation using GitHub Actions"
 description: |
-  GitHub Actions are a powerful way of running code or a series of tasks on an 
+  The GitHub Actions feature is a powerful way of running code or a series of tasks on an 
   independent and fresh computing environment. You can use these to
   automate tasks, run tasks on a schedule, test your code, or perform any number
   of tasks that you'd rather have a computer handle instead of doing manually.
@@ -17,13 +17,13 @@ categories:
 
 ## Motivation for this micro-lesson
 
-In our team, and in programming or software development in general, 
-we often need to frequently run code every time a specific event
-happens (like someone makes changes to code) or we want to automate
-a task that needs to happen on a regular basis. To do that, we need
-to use tools that make it easier to automate those tasks. This
-lesson aims to share our knowledge on using one of these tools
-called [GitHub Actions](https://github.com/features/actions).
+In our team, and in programming or software development in general, we
+often need to frequently run code every time a specific event happens
+(like someone makes changes to code) or we want to automate a task that
+needs to happen on a regular basis. To do that, we need to use tools
+that make it easier to automate those tasks. This lesson aims to share
+our knowledge on using one of these tools called [GitHub
+Actions](https://github.com/features/actions).
 
 ## Assumed knowledge of reader
 
@@ -31,10 +31,8 @@ called [GitHub Actions](https://github.com/features/actions).
     needed, including Git.
 -   A general understanding of what "automation" means and answering
     questions like:
-    -   How might a computer (conceptually) do a task for you, instead
-        of you doing it manually?
-    -   How could you (conceptually) get a computer to do a task for you
-        on a schedule or based on a trigger or event?
+    -   How could you get a computer (conceptually) to do a task for
+        you, instead of you doing it manually?
 -   A general familiarity with GitHub, including:
     -   Knowing what a Git repository, including branches, means
     -   Navigating to a Git repository
@@ -48,55 +46,72 @@ called [GitHub Actions](https://github.com/features/actions).
 
 ## Learning goal
 
-> At the end of this, you will be able to describe what a GitHub Action is, 
-> understand some basic uses of it, and create a simple Action.
+> At the end of this, you will be able to describe what GitHub Actions
+> are, identify some basic uses of for it, explain the difference
+> between a workflow and an action, and finally create your own GitHub
+> Actions workflow.
 
 ## Take home messages
 
--   GitHub Actions are files with a list of instructions that the GitHub
-    server uses to run to complete a set of tasks.
--   GitHub Actions are YAML files that must be placed in the
+-   GitHub Actions is a feature that uses a file (called a *workflow*)
+    with a list of instructions that the GitHub server uses to run to
+    complete a set of tasks.
+-   A GitHub Actions workflow is a YAML file that must be placed in the
     `.github/workflows/` folder in a Git repository.
+-   A GitHub Actions *action* is a reusable workflow, built by you or
+    others, that you can find and use in your own workflows.
 
 ## Lesson content
 
-### What is a GitHub Action?
+### What is GitHub Actions?
 
-At it's core, a [GitHub Action](https://github.com/features/actions) is
-a set of instructions given to a server to run and complete a specific
-sequence of tasks. Before we can continue though, we need to answer the
-question: What is a server?
+At it's core, [GitHub Actions](https://github.com/features/actions) is a
+feature from GitHub that allows you to give a set of instructions to a
+server to run and complete a specific sequence of tasks. This sequence
+of tasks is called a workflow. Before we can continue though, we need to
+answer the question: What is a server?
 
-A **server** is just like the computer you are using right now to read this
-lesson. Except that a server is a connected set of
-thousands of computers usually kept somewhere in a big,
-tightly-controlled, and managed warehouse. Servers are very powerful,
-large computers that is used to run complex and intensive
-computations, and often are used to run tasks for websites. For example, all of
-the Internet is found on servers across the world.
+A **server** is just like the computer you are using right now to read
+this lesson. Except that a server is a connected set of thousands of
+computers usually kept somewhere in a big, tightly-controlled, and
+managed warehouse. Servers are very powerful, large computers that is
+used to run complex and intensive computations, and often are used to
+run tasks for websites. For example, all of the Internet is found on
+servers across the world.
 
 <!-- TODO: Include a diagram or something here? -->
 
 In the case of GitHub Actions, the server is GitHub's server, and the
-instructions for the tasks to do are kept in a specific file. In order
-for GitHub to know about and use this file, it has to be kept in the
-`.github/workflows/` folder of the repository and the file must be a
-[YAML](https://en.wikipedia.org/wiki/YAML) file (ending in `.yml` or `.yaml`):
+instructions for the tasks to do are kept in a specific file (the
+workflow file). In order for GitHub to know about and use this file, it
+has to be kept in the `.github/workflows/` folder of the repository and
+the file must be a [YAML](https://en.wikipedia.org/wiki/YAML) file
+(ending in `.yml` or `.yaml`):
 
 ```         
 reponame/
 └── .github/
     └── workflows/
-        ├── action-name-1.yml
-        └── action-name-2.yml
+        ├── workflow-name-1.yml
+        └── workflow-name-2.yml
 ```
 
-In the folder setup above, there are two Actions that GitHub will run:
-`action-name-1` and `action-name-2`.
+In the folder setup above, there are two workflows that GitHub will run:
+`workflow-name-1` and `workflow-name-2`.
 
-### General structure of a GitHub Action
+An action is a custom-built workflow that you or others can develop that
+allows anyone to reuse a set of instructions to complete a specific
+task. You can think of an action as a specific type of reusable
+workflow. There are hundreds of pre-made actions available from GitHub,
+for instance, those found in their
+[Marketplace](https://github.com/marketplace?type=actions). Because
+there are so many pre-made actions, you can often find one that does
+what you need without having to write your own, so usually your workflow
+would contain several actions.
 
-GitHub Actions are generally structured and organized into distinct
+### General structure of a workflow
+
+A workflow file is generally structured and organized into distinct
 sections:
 
 1.  The trigger (`on`) section
@@ -104,13 +119,14 @@ sections:
 3.  The jobs (`jobs`) section
 
 There is also a starting `name` field to tell GitHub what the name or
-title of the Action is, that is usually at the very top of the file.
+title of the action is, that is usually at the very top of the file.
 
 #### The `on` section (required)
 
-The `on` section tells GitHub when the Action should run. For instance,
-to only run the Action when an Issue (like a bug report, a question
-asked, or a task to do) is created (which is called "opened"), you write:
+The `on` section tells GitHub when the action should run. For instance,
+to only run the workflow when an issue (like a bug report, a question
+asked, or a task to do) is created (which is called "opened"), you
+write:
 
 ``` yaml
 on:
@@ -119,15 +135,17 @@ on:
 ```
 
 ::: callout-tip
-The way that commands are written in official documentation often uses a shortened form. So that a `.` is used to
-separate each level. In the example above, in documentation it would be referred to as `on.issues.type`.
+The way that commands are written in official documentation often uses a
+shortened form. So that a `.` is used to separate each level. In the
+example above, in documentation it would be referred to as
+`on.issues.type`.
 :::
 
 Other types of common triggers are for `pull_request` (when someone
 submits modifications to files and "requests" the repository owners to
-add the change to the repository) or for `push` (any time a change
-is uploaded to the repository). If you wanted to trigger on both pull requests and pushes, it
-would look like:
+add the change to the repository) or for `push` (any time a change is
+uploaded to the repository). If you wanted to trigger on both pull
+requests and pushes, it would look like:
 
 ``` yaml
 on:
@@ -137,19 +155,20 @@ on:
 
 #### The `permissions` section (optional)
 
-This section tells GitHub what extra permissions the Action has.
+This section tells GitHub what extra permissions the workflow has.
 Permissions are the level of "access" a computer or person has to files.
-There are three permissions: `none`, `read`, and `write`. **Read** is being
-able to open a file, but not save it. **Write** is being able to open,
-modify, *and* save a file. **None** is no access to files at all. For security purposes, you want to limit an
-Action's `write` permission unless completely necessary, but giving
-`read` access is usually fine. This section is optional because GitHub
-sets the default permission to `none` to have the most security, but
-allows you to set permissions for specific things.
+There are three permissions: `none`, `read`, and `write`. **Read** is
+being able to open a file, but not save it. **Write** is being able to
+open, modify, *and* save a file. **None** is no access to files at all.
+For security purposes, you want to limit an action's `write` permission
+unless completely necessary, but giving `read` access is usually fine.
+This section is optional because GitHub sets the default permission to
+`none` to have the most security, but allows you to set permissions for
+specific things.
 
-For instance, if you wanted to give an Action `write` permission to
-Issues only (for instance, to create a comment in an Issue or to close
-an Issue) you would write:
+For instance, if you wanted to give a workflow `write` permission to
+issues only (for instance, to create a comment in an issue or to close
+an issue) you would write:
 
 ``` yaml
 permissions:
@@ -158,21 +177,24 @@ permissions:
 
 When the `permissions` is set at this "top-level" (meaning it isn't
 nested under another section like `jobs`), then the permissions given
-apply to all `jobs` within the Action file. If you only wanted one job to have a specific
-permission, you can use `permissions` as a nested level item in the
-`jobs` task (more on that below).
+apply to all `jobs` within the action file. If you only wanted one job
+to have a specific permission, you can use `permissions` as a nested
+level item in the `jobs` task (more on that below).
 
 #### The `jobs` section (required)
 
-This section is where the actual instructions that form the core of an Action
-are listed. You can write as many jobs underneath this section as you need 
-in order to complete the task you want the GitHub servers to complete.
+This section is where the actual instructions that form the core of a
+workflow are listed. You can write as many jobs underneath this section
+as you need in order to complete the task you want the GitHub servers to
+complete.
 
 Each job is composed of a few subsections:
 
 -   The name of the job in the form of `job-name:`.
--   The `runs-on` section, which tells GitHub what type of computer to
-    run the job on.
+-   The `runs-on` section, which tells GitHub what type of computer,
+    more specifically the operating system, to run the job on. The
+    mostly commonly used options are `ubuntu-latest`, `windows-latest`,
+    or `macos-latest` for the three major operating systems.
 -   The `steps` section, which is a list of instructions to run.
 
 Within the `steps` section, you write a list of instructions that GitHub
@@ -180,29 +202,33 @@ will run. Each instruction is a separate item in the list and is
 composed of a few parts:
 
 -   The `name` of the step.
--   The `uses` section, which tells GitHub what "tool" or external
-    action to use to run the step. There are hundreds of pre-made
-    actions available from GitHub like in their
-    [Marketplace](https://github.com/marketplace?type=actions).
+-   The `uses` section, which tells GitHub what action to use to run the
+    step.
 -   The `with` section, which is a list of optional inputs/parameters to
-    give to the tool from the `uses` section.
+    give to the action from the `uses` section.
 -   The `env` section, which is a list of optional environment variables
     to set for the step, such as the commonly used `GITHUB_TOKEN`
     variable that allows your action to interact with the GitHub API.
-    -   This `GITHUB_TOKEN` is a special token that GitHub provides to
-        Actions that allows them to interact with the GitHub API. It is
-        automatically created and available to all Actions, but you need
-        to provide it to the Action in order to use it. You give it to
-        the Action by using `${{ secrets.GITHUB_TOKEN }}` in the `env`
-        section. Here, the `${{ }}` is a way to tell GitHub to "inject"
-        the value of the `secrets` object, which also contains the
-        `GITHUB_TOKEN` into the Action. The `.` is what tells GitHub to
-        look inside the `secrets` object for the `GITHUB_TOKEN` value.
+    See the note below for more information.
 -   The `run` section, which is the actual code to run. If you use the
     `run` section, you don't need to use the `uses` section. The default
-    code that you can use in the `run` section is [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) code.
+    code that you can use in the `run` section is
+    [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) code.
 
-An example of a job (called `checkout-repository`) with one step (to checkout a repository by cloning it), could look like:
+::: callout-tip
+This `GITHUB_TOKEN` is a special token that GitHub provides to workflows
+that allows them to interact with the GitHub API. It is automatically
+created and available to all workflows, but you need to provide it to
+the workflow in order to use it. You give it to the workflow by using
+`${{ secrets.GITHUB_TOKEN }}` in the `env` section. Here, the `${{ }}`
+is a way to tell GitHub to "inject" the value of the `secrets` object,
+which also contains the `GITHUB_TOKEN` into the workflow. The `.` is
+what tells GitHub to look inside the `secrets` object for the
+`GITHUB_TOKEN` value.
+:::
+
+An example of a job (called `checkout-repository`) with one step (to
+checkout a repository by cloning it), could look like:
 
 ``` yaml
 jobs:
@@ -218,7 +244,7 @@ jobs:
 You can keep chaining steps together, as many as you need, to complete
 the task you want your action to do.
 
-### Creating a simple GitHub Action
+### Creating a simple workflow
 
 Imagine you want to create a simple website, using
 [Quarto](https://quarto.org) (which we use to build this website) to
@@ -226,15 +252,22 @@ build a website for you and publish it to [GitHub
 Pages](https://pages.github.com/) so it will be hosted online and be
 available to anyone. Like many tools, Quarto provides a
 [template](https://github.com/quarto-dev/quarto-actions/blob/main/examples/quarto-publish-example.yml)
-action file for you to use.
+action file for you to use. We'll use this as a starting point and walk
+through what each part of that action does.
+
+::: callout-info
+For more details and documentation on the Quarto actions and their
+template workflow file, you can visit their [Quarto GitHub Actions
+repository](https://github.com/quarto-dev/quarto-actions/tree/main).
+:::
 
 What you would like is to have GitHub take the Quarto `.qmd` files,
 render them into HTML, and then publish them to GitHub Pages as a
 website. At least for this learning short, we will not get into any
-details on how to use Quarto, we'll only add a GitHub Action to a
-repository that will use Quarto to build a website.
+details on how to use Quarto, we'll only add a workflow to a repository
+that will use Quarto to build a website.
 
-First, we need to create a Git repository and prepare an action file:
+First, we need to create a Git repository and prepare a workflow file:
 
 1.  Create a new GitHub repository, call it anything you like. Something
     simple like `simple-website`.
@@ -244,10 +277,10 @@ First, we need to create a Git repository and prepare an action file:
 4.  Open the file in a text editor and start writing out these "code"
     instructions.
 
-We'll start with the `on` section, as well as the `name` of the Action.
-In this case, we want the Action to always run whenever you or someone
-else pushes changes to the `main` branch of the repository. So we'll
-start with:
+We'll start with the `on` section, as well as the `name` of the
+workflow. In this case, we want the workflow to always run whenever you
+or someone else pushes changes to the `main` branch of the repository.
+So we'll start with:
 
 ``` yaml
 name: Build website
@@ -259,7 +292,7 @@ on:
 
 Because we want GitHub to host the website on their GitHub Pages
 service, which uses a special branch called `gh-pages` in the
-repository, we need to give the Action some permissions to be able to
+repository, we need to give the workflow some permissions to be able to
 write to that branch. We'll add that by using the `permissions` section:
 
 ``` yaml
@@ -268,11 +301,13 @@ permissions:
     pages: write
 ```
 
-The `contents` permission grants the Action the ability to write to the repository, while the `pages` permission grants the action ability to write to the GitHub pages associated with the repository.
+The `contents` permission grants the workflow the ability to write to
+the repository, while the `pages` permission grants the workflow ability
+to write to the GitHub pages associated with the repository.
 
-Next is the core part of the Action, the `jobs` section. Because we want
-to build the contents of the repository using Quarto and then push to
-the `gh-pages` branch, we need at least three steps:
+Next is the core part of the workflow, the `jobs` section. Because we
+want to build the contents of the repository using Quarto and then push
+to the `gh-pages` branch, we need at least three steps:
 
 1.  Downloading the contents of the repository into the GitHub server by
     checking out the repository.
@@ -281,13 +316,15 @@ the `gh-pages` branch, we need at least three steps:
     store the output in the branch called `gh-pages`.
 
 Thankfully, we don't have to do all of these steps manually, since there
-already exists Actions that you can download and use, such as the
-`checkout` action provided by GitHub's `actions` account, along with the
+already exists actions that you can download and use, such as the
+`checkout` action provided by GitHub's
+[`actions`](https://github.com/actions) account, along with the
 `quarto-actions/setup` and `quarto-actions/publish` actions provided by
-the Quarto team in their `quarto-dev` GitHub account.
+the Quarto team in their `quarto-dev` [actions
+repository](https://github.com/quarto-dev/quarto-actions).
 
-So we'll first set up the `jobs` section with a job named `build-deploy` that
-`runs-on` the latest version of Ubuntu:
+So we'll first set up the `jobs` section with a job named `build-deploy`
+that `runs-on` the latest version of Ubuntu:
 
 ``` yaml
 jobs:
@@ -304,8 +341,8 @@ the repository:
         uses: actions/checkout@v4
 ```
 
-Note the use of `@v4` to indicate that we use the fourth version of the 
-`checkout` action. 
+Note the use of `@v4` to indicate that we use the fourth version of the
+`checkout` action.
 
 Next, we'll install Quarto:
 
@@ -314,9 +351,9 @@ Next, we'll install Quarto:
         uses: quarto-dev/quarto-actions/setup@v2
 ```
 
-In this case, we need to provide the Quarto `setup` action (using the second
-version `v2`). Lastly, we want to run Quarto to build the website and
-publish it to the `gh-pages` branch:
+In this case, we need to provide the Quarto `setup` action (using the
+second version `v2`). Lastly, we want to run Quarto to build the website
+and publish it to the `gh-pages` branch:
 
 ``` yaml
       - name: Publish to GitHub Pages (and render) 
@@ -333,7 +370,15 @@ accessible with the `with:` field) to be `gh-pages`. Saving to the
 `gh-pages` branch requires using the `GITHUB_TOKEN` environment, which
 is found within the `secrets` object.
 
-The action now look like this in it's entirety: 
+::: callout-info
+This information about the `GITHUB_TOKEN` is found within Quarto's
+[documentation](https://github.com/quarto-dev/quarto-actions/tree/main/publish#github-pages)
+as well as is included within their
+[template](https://github.com/quarto-dev/quarto-actions/blob/main/examples/quarto-publish-example.yml)
+file.
+:::
+
+Your workflow should now look something like this in it's entirety:
 
 ``` yaml
 name: Build website
@@ -360,33 +405,41 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 ```
 
-With these few lines of code, we now have a GitHub Action that will take
-the Markdown files (`.qmd`) within the repository and build them into a website every time changes are pushed to the main branch of your repository!
+With these few lines of code, we now have a GitHub Actions workflow that
+will take the Markdown files (`.qmd`) within the repository and build
+them into a website every time changes are pushed to the main branch of
+your repository!
 
 ## Summary
 
 -   You can use GitHub's servers to run code or a series of tasks by
     through the GitHub Actions feature.
--   An Action is a YAML file (`.yml` or `.yaml`) that is found in the `.github/workflows/`
-    folder of a Git repository.
--   One Action file contains a list of instructions for the server to run
-    to complete specific tasks.
--   Within the `.github/workflows/` folder you can have many Actions
+-   A workflow is a YAML file (`.yml` or `.yaml`) that is found in the
+    `.github/workflows/` folder of a Git repository.
+-   One workflow file contains a list of instructions for the server to
+    run to complete specific tasks.
+-   Make use of custom actions (reusable workflows) instead of creating
+    your own workflows from scratch.
+-   Within the `.github/workflows/` folder you can have many workflows
     doing many different things for you for the repository they are kept
     in.
--   There are three main sections to an Action: `on`, `permissions`, and
-    `jobs`.
-    -   The `on` section tells GitHub when the Action should run.
+-   There are three main sections to an workflow: `on`, `permissions`,
+    and `jobs`.
+    -   The `on` section tells GitHub when the workflow should run.
     -   The optional `permissions` section tells GitHub what extra
-        permissions the Action can have, if needed. The default is that the action will have no permissions to read or write to files in the repository.
+        permissions the workflow can have, if needed. The default is
+        that the workflow will have no permissions to read or write to
+        files in the repository.
     -   The `jobs` section is where the actual instructions are listed
-        that form the core of an Action. The `jobs` section is composed
+        that form the core of a workflow. The `jobs` section is composed
         of its own set of subsections: `name`, `runs-on`, and `steps`.
     -   The `steps` sub-section of `jobs` is where the actual code-based
         instructions are put that tell GitHub what it should run. Each
         step is a separate item in the list and is composed of a few
         parts: `name`, `uses`, `with`, `env`, and `run`.
--   There are a large number of pre-made Actions available from GitHub on their [Marketplace](https://github.com/marketplace?type=actions) and other sources that you can use in your own Actions.
+-   There are a large number of pre-made actions available from GitHub
+    on their [Marketplace](https://github.com/marketplace?type=actions)
+    and other sources that you can use in your own workflow.
 
 ## Additional resources
 
