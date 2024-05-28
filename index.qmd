@@ -32,7 +32,7 @@ can become better, ultimately helping prevent or manage diseases like
 diabetes.
 :::
 
-Our specific goals are:
+### Specific goals
 
 {{< include includes/_goals.qmd >}}
 
