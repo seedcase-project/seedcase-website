@@ -13,7 +13,6 @@ website:
   page-navigation: true
   navbar:
     pinned: true
-    logo: "/images/logo.svg"
     right:
       - text: "About"
         href: about/index.md
