@@ -1,0 +1,25 @@
+---
+title: Learn
+listing:
+  - id: shorts
+    contents: shorts
+    type: default
+    sort: "title"
+    fields: 
+      - "title"
+      - "author"
+      - "description"
+      - "date"
+---
+
+## Learning shorts
+
+Below is a list of learning shorts on things the Seedcase team has
+learned and want to share both internally and externally. Read our
+[Community
+Guide](https://community.seedcase-project.org/guides/learning-shorts)
+entry on what learning shorts are, what they are used for, and how to
+write them.
+
+::: {#shorts}
+:::

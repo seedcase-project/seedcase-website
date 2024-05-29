@@ -20,6 +20,8 @@ website:
         href: https://community.seedcase-project.org
       - text: "Design"
         href: https://design.seedcase-project.org
+      - text: "Learn"
+        href: learn/index.qmd
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-project"
@@ -38,7 +40,6 @@ website:
       #   href: about/mission.md
       - text: "Team Members"
         href: about/team/index.md
-
 
 bibliography: "includes/references.bib"
 
