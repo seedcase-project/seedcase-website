@@ -1,0 +1,9 @@
+figcaption {
+  text-align: center;
+}
+
+#team-members {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+}
