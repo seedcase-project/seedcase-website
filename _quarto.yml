@@ -5,7 +5,7 @@ website:
   title: "Seedcase Project"
   favicon: "/images/logo.svg"
   site-url: "https://seedcase-project.org/"
-  repo-url: "https://github.com/seedcase-project/seedcase-project"
+  repo-url: "https://github.com/seedcase-project/seedcase-website"
   page-footer:
     center:
       - text: "License: CC-BY 4.0"
@@ -24,7 +24,7 @@ website:
         href: learn/index.qmd
     tools:
       - icon: github
-        href: "https://github.com/seedcase-project/seedcase-project"
+        href: "https://github.com/seedcase-project/seedcase-website"
   sidebar:
     - id: about
       title: "About"
