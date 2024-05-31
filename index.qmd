@@ -9,7 +9,7 @@ about:
   links: 
     - icon: cone-striped
       text: "Software (incomplete)"
-      href: "https://github.com/seedcase-project/seedcase"
+      href: "https://github.com/seedcase-project/seedcase-sprout"
     - icon: info-circle
       text: "About"
       href: "https://seedcase-project.org/about/"
