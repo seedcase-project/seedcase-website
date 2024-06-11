@@ -19,4 +19,40 @@ The Seedcase Project is a value-driven initiative focused on open science and op
 
 :::
 
+## Our goals 
+
+The Seedcase Project is more than software. We aim to:
+
+:::{.grid .wider-grid}
+:::{.g-col-6 .g-col-md-3 .landing-page-card}
+ 
+### Develop open-source software for health data
+
+We develop software that is open-source, installable, and can be used by health research organizations, small-to-medium sized companies, or research groups or teams. The software will be designed to be scalable and flexible, and will be built with modern technologies.
+
+::: 
+:::{.g-col-6 .g-col-md-3 .landing-page-card}
+
+### Create training material and run workshops
+
+We want to improve and strengthen software and data engineering capacity within health research by developing educational and training material. We plan to run workshops with a focus on technical skills for researchers, open science, and best practices.
+
+:::
+:::{.g-col-6 .g-col-md-3 .landing-page-card}
+
+### Build and nurture an inclusive community
+
+We want to build and nurture a community that is open and inclusive with a focus on sharing knowledge and better practices in data management, data engineering, research software engineering, and reproducible and transparent research.
+
+:::
+:::{.g-col-6 .g-col-md-3 .landing-page-card}
+
+### Lead by example
+
+We want to practice what we preach and build a sustainable, open-source project that is open-sourced and documentation-driven. Our focus is to create a project that addresses not only the technical aspects but also the philosophical aspects of building software, and managing data. We will share our knowledge and learnings along the way.
+
+:::
+:::
+
+
 <!-- TODO: List overview of purposes/principles here? -->
