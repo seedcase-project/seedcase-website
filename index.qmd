@@ -13,79 +13,91 @@ about:
       href: "https://design.seedcase-project.org/"
 ---
 
-:::{#hero-heading}
-
-The Seedcase Project is a value-driven initiative focused on open science and open-source software. We believe that developing open-source software and offering researchers training in technical skills and knowledge can improve health and well-being research. This includes tasks related to building, managing, and sharing health data.
-
+::: {#hero-heading}
+The Seedcase Project is a value-driven initiative focused on open
+science and open-source software. We believe that developing open-source
+software and offering researchers training in technical skills and
+knowledge can improve health and well-being research. This includes
+tasks related to building, managing, and sharing health data.
 :::
 
-## Our goals 
+## Our goals
 
 The Seedcase Project is more than software. We aim to:
 
-:::{.grid .wider-grid}
-:::{.g-col-6 .g-col-md-3 .landing-page-card}
- 
+::: {.grid .wider-grid}
+::: {.g-col-6 .g-col-md-3 .landing-page-card}
 ### Develop open-source software for health data
 
-We develop software that is open-source, installable, and can be used by health research organizations, small-to-medium sized companies, or research groups or teams. The software will be designed to be scalable and flexible, and will be built with modern technologies.
+We develop software that is open-source, installable, and can be used by
+health research organizations, small-to-medium sized companies, or
+research groups or teams. The software will be designed to be scalable
+and flexible, and will be built with modern technologies.
+:::
 
-::: 
-:::{.g-col-6 .g-col-md-3 .landing-page-card}
-
+::: {.g-col-6 .g-col-md-3 .landing-page-card}
 ### Create training material and run workshops
 
-We want to improve and strengthen software and data engineering capacity within health research by developing educational and training material. We plan to run workshops with a focus on technical skills for researchers, open science, and best practices.
-
+We want to improve and strengthen software and data engineering capacity
+within health research by developing educational and training material.
+We plan to run workshops with a focus on technical skills for
+researchers, open science, and best practices.
 :::
-:::{.g-col-6 .g-col-md-3 .landing-page-card}
 
+::: {.g-col-6 .g-col-md-3 .landing-page-card}
 ### Build and nurture an inclusive community
 
-We want to build and nurture a community that is open and inclusive with a focus on sharing knowledge and better practices in data management, data engineering, research software engineering, and reproducible and transparent research.
-
+We want to build and nurture a community that is open and inclusive with
+a focus on sharing knowledge and better practices in data management,
+data engineering, research software engineering, and reproducible and
+transparent research.
 :::
-:::{.g-col-6 .g-col-md-3 .landing-page-card}
 
+::: {.g-col-6 .g-col-md-3 .landing-page-card}
 ### Lead by example
 
-We want to practice what we preach and build a sustainable, open-source project that is open-sourced and documentation-driven. Our focus is to create a project that addresses not only the technical aspects but also the philosophical aspects of building software, and managing data. We will share our knowledge and learnings along the way.
-
+We want to practice what we preach and build a sustainable, open-source
+project that is open-sourced and documentation-driven. Our focus is to
+create a project that addresses not only the technical aspects but also
+the philosophical aspects of building software, and managing data. We
+will share our knowledge and learnings along the way.
 :::
 :::
 
 
 <!-- TODO: List overview of purposes/principles here? -->
 
-:::{.landing-page-banner}
-:::{.landing-page-banner-content}
-
+::: landing-page-banner
+::: landing-page-banner-content
 ## Software products
 
-:::{.grid}
-:::{.g-col-8} 
+::: grid
+::: g-col-8
+Even though Seedcase Project is still a work in progress, we have a
+clear vision on the software we’re building.
 
-Even though Seedcase Project is still a work in progress, we have a clear vision on the software we’re building. 
+Seedcase will take you from structuring and documenting your data, being
+able to browse and share it, to tending to projects using the data.
 
-Seedcase will take you from structuring and documenting your data, being able to browse and share it, to tending to projects using the data.
-
-We plan to create four software products that run both separately and together: 
+We plan to create four software products that run both separately and
+together:
 
 **sprout**: Grow your data in a structured and healthy way
 
-**propagate**: Submit requests for accessing specific data from a Data Resource*
+**propagate**: Submit requests for accessing specific data from a Data
+Resource\*
 
-**flower**: Catalogue and browse metadata on data in a Data Resource*
+**flower**: Catalogue and browse metadata on data in a Data Resource\*
 
-**garden**: Tend to multiple projects using data from a Data Resource*
+**garden**: Tend to multiple projects using data from a Data Resource\*
 
-*Data Resources are the central point in the Seedcase ecosystem. They are the place where data is stored and managed.
-
+\*Data Resources are the central point in the Seedcase ecosystem. They
+are the place where data is stored and managed.
 :::
-:::{.g-col-4}
 
-![](_extensions/seedcase-project/seedcase-theme/logos/software-product-logos.svg){fig-alt="The logos of the Seedcase software products." fig-align="right" width="200px"}
-
+::: g-col-4
+![](_extensions/seedcase-project/seedcase-theme/logos/software-product-logos.svg){fig-alt="The logos of the Seedcase software products."
+fig-align="right" width="200px"}
 :::
 :::
 :::
@@ -93,8 +105,10 @@ We plan to create four software products that run both separately and together:
 
 ## Acknowledgements {#acknowledgements}
 
-The Seedcase Project is funded by a grant from the [Novo Nordisk Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462. See the application [here](https://seedcase-project.org/about/history/nnf-application).
+The Seedcase Project is funded by a grant from the [Novo Nordisk
+Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462.
+See the application
+[here](https://seedcase-project.org/about/history/nnf-application).
 
-
-![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo" width="200px"}
-
+![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo"
+width="200px"}
