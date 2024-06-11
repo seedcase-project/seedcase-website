@@ -56,3 +56,37 @@ We want to practice what we preach and build a sustainable, open-source project 
 
 
 <!-- TODO: List overview of purposes/principles here? -->
+
+:::{.landing-page-banner}
+:::{.landing-page-banner-content}
+
+## Software products
+
+:::{.grid}
+:::{.g-col-8} 
+
+Even though Seedcase Project is still a work in progress, we have a clear vision on the software we’re building. 
+
+Seedcase will take you from structuring and documenting your data, being able to browse and share it, to tending to projects using the data.
+
+We plan to create four software products that run both separately and together: 
+
+**sprout**: Grow your data in a structured and healthy way
+
+**propagate**: Submit requests for accessing specific data from a Data Resource*
+
+**flower**: Catalogue and browse metadata on data in a Data Resource*
+
+**garden**: Tend to multiple projects using data from a Data Resource*
+
+*Data Resources are the central point in the Seedcase ecosystem. They are the place where data is stored and managed.
+
+:::
+:::{.g-col-4}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/software-product-logos.svg){fig-alt="The logos of the Seedcase software products." fig-align="right" width="200px"}
+
+:::
+:::
+:::
+:::
