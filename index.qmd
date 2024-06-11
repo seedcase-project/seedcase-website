@@ -1,5 +1,5 @@
 ---
-title: "Seedcase Project"
+title: "Welcome to the Seedcase Project"
 subtitle: A framework for an open and scalable infrastructure for health data
 toc: false
 sidebar: false
@@ -12,5 +12,11 @@ about:
       text: "Design documentation"
       href: "https://design.seedcase-project.org/"
 ---
+
+:::{#hero-heading}
+
+The Seedcase Project is a value-driven initiative focused on open science and open-source software. We believe that developing open-source software and offering researchers training in technical skills and knowledge can improve health and well-being research. This includes tasks related to building, managing, and sharing health data.
+
+:::
 
 <!-- TODO: List overview of purposes/principles here? -->
