@@ -9,23 +9,8 @@ about:
   template: marquee
   links: 
     - icon: diagram-2
-      text: "Design"
+      text: "Design documentation"
       href: "https://design.seedcase-project.org/"
-    - icon: signpost-2
-      text: "Decisions"
-      href: "https://decisions.seedcase-project.org"
 ---
-
-::: {#hero-heading}
-We believe that by developing high-quality software and providing
-training on activities and tasks related to building, managing, and
-sharing health data, the science and research on health and well-being
-can become better, ultimately helping prevent or manage diseases like
-diabetes.
-:::
-
-### Specific goals
-
-{{< include includes/_goals.qmd >}}
 
 <!-- TODO: List overview of purposes/principles here? -->
