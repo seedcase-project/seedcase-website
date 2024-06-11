@@ -9,6 +9,8 @@ website:
     center:
       - text: "License: CC-BY 4.0"
         href: LICENSE.md
+      - text: "This project is funded by a grant from the Novo Nordisk Foundation"
+        href: index.qmd#acknowledgements
   page-navigation: true
   navbar:
     title: false
