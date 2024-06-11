@@ -90,3 +90,11 @@ We plan to create four software products that run both separately and together:
 :::
 :::
 :::
+
+## Acknowledgements {#acknowledgements}
+
+The Seedcase Project is funded by a grant from the [Novo Nordisk Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462. See the application [here](https://seedcase-project.org/about/history/nnf-application).
+
+
+![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo" width="200px"}
+
