@@ -6,19 +6,8 @@ sidebar: false
 css: styles.css
 about:
   id: hero-heading
-  template: solana
-  image: /images/logo-full-color.png
-  image-width: 20em 
+  template: marquee
   links: 
-    - icon: cone-striped
-      text: "Software (incomplete)"
-      href: "https://github.com/seedcase-project/seedcase-sprout"
-    - icon: info-circle
-      text: "About"
-      href: "https://seedcase-project.org/about/"
-    - icon: people
-      text: "Community"
-      href: "https://community.seedcase-project.org/"
     - icon: diagram-2
       text: "Design"
       href: "https://design.seedcase-project.org/"
