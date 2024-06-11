@@ -3,6 +3,7 @@ title: "Seedcase Project"
 subtitle: A framework for an open and scalable infrastructure for health data
 toc: false
 sidebar: false
+css: styles.css
 about:
   id: hero-heading
   template: solana
