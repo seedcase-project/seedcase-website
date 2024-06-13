@@ -15,6 +15,7 @@ website:
   navbar:
     title: false
     logo: _extensions/seedcase-project/seedcase-theme/logos/navbar-logo-seedcase-project.svg
+    logo-alt: "Seedcase Project logo"
     pinned: true
     left:
       - text: "About"
