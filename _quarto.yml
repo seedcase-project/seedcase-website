@@ -28,6 +28,7 @@ website:
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-website"
+        aria-label: GitHub
   sidebar:
     - id: about
       title: "About"
