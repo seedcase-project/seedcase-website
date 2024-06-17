@@ -15,7 +15,7 @@ website:
   navbar:
     title: false
     logo: _extensions/seedcase-project/seedcase-theme/logos/navbar-logo-seedcase-project.svg
-    logo-alt: "Seedcase Project logo"
+    logo-alt: "The Seedcase Project logo: Go to main page"
     pinned: true
     left:
       - text: "About"
@@ -29,7 +29,7 @@ website:
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-website"
-        aria-label: GitHub
+        aria-label: "GitHub icon: Go to the source code on GitHub"
   sidebar:
     - id: about
       title: "About"
