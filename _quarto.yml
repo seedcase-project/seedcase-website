@@ -39,6 +39,7 @@ website:
       collapse-level: 1
       contents:
       - about/index.md
+      - about/principles.qmd
       - text: "History"
         href: about/history/index.md
       # - text: "Mission"
