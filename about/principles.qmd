@@ -12,7 +12,7 @@ We want to be explicit and conscious about what, how, and importantly,
 why we are doing what we decide to do. Being explicit will also help
 focus our work and (hopefully) make us more efficient and effective.
 
-The values and principles of the Seedcase Project are ever evolving and 
+The values and principles of the Seedcase Project are ever evolving and
 we will update and refine them as we learn and grow.
 
 ## Values
@@ -39,8 +39,8 @@ We will:
     approach](https://community.seedcase-project.org/guides/documentation-first)
 -   work and communicate openly (though privately where necessary)
 -   use open licenses for all our outputs
--   design documentation, training material, and software for both people who
-    are not computationally technical and people who are
+-   design documentation, training material, and software for both
+    people who are not computationally technical and people who are
 -   incorporate accessibility and inclusive language in all our outputs
 -   use established standards and practices where possible and as
     appropriate
@@ -49,5 +49,5 @@ We will:
     [software](https://fair-software.nl/)
 -   use modern, newer tools even when they aren't widely used, as long
     as there is a strong rationale
--   develop our outputs for health research, but aim to be usable and 
-    useful for other domains as well
+-   develop our outputs for health research, but aim for it to be usable
+    and useful for other domains as well
