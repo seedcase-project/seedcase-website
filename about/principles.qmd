@@ -39,9 +39,9 @@ We will:
     approach](https://community.seedcase-project.org/guides/documentation-first)
 -   work and communicate openly (though privately where necessary)
 -   use open licenses for all our outputs
--   design documentation, training material, and software for both
-    people who are not computationally technical and people who are
--   incorporate accessibility and inclusive language in all our outputs
+-   design documentation, training material, and software with
+    non-technical people in mind 
+-   incorporate accessibility and inclusive design in both our software and documentation outputs
 -   use established standards and practices where possible and as
     appropriate
 -   follow FAIR principles for
