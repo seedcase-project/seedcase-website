@@ -5,12 +5,6 @@ website:
   title: "Seedcase Project"
   site-url: "https://seedcase-project.org/"
   repo-url: "https://github.com/seedcase-project/seedcase-website"
-  page-footer:
-    center:
-      - text: "License: CC-BY 4.0"
-        href: LICENSE.md
-      - text: "This project is funded by a grant from the Novo Nordisk Foundation"
-        href: index.qmd#acknowledgements
   page-navigation: true
   navbar:
     title: false
