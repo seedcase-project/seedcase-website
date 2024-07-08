@@ -28,6 +28,12 @@ Specific values:
 -   Inclusive and accessible design make software and documentation more
     usable and impactful
 -   Openness and transparency lead to better collaboration and products
+-   Prescriptive methods are easier to use than descriptive ones[^1]
+
+[^1]: An example of a descriptive approach would be describing how to
+    create a folder structure for a project and possibles names for
+    files while a prescriptive approach would be giving a template
+    folder structure that one uses and follows.
 
 ## Principles
 
@@ -52,3 +58,5 @@ We will:
     as there is a strong rationale
 -   develop our outputs for health research, but aim for it to be usable
     and useful for other domains as well
+-   build and design software and its documentation to follow
+    conventions rather than configurations
