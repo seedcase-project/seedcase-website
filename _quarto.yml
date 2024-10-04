@@ -13,7 +13,7 @@ website:
     pinned: true
     left:
       - text: "About"
-        href: about/index.md
+        href: about/index.qmd
       - text: "Community"
         href: https://community.seedcase-project.org
       - text: "Design"
@@ -32,14 +32,14 @@ website:
       align: left
       collapse-level: 1
       contents:
-      - about/index.md
+      - about/index.qmd
       - about/principles.qmd
       - text: "History"
-        href: about/history/index.md
+        href: about/history/index.qmd
       # - text: "Mission"
       #   href: about/mission.md
       - text: "Team Members"
-        href: about/team/index.md
+        href: about/team/index.qmd
 
 bibliography: "includes/references.bib"
 

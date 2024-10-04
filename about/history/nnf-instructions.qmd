@@ -1,4 +1,6 @@
-# NNF Data Science Research Infrastructure Grant 2021
+---
+title: NNF Data Science Research Infrastructure Grant 2021
+---
 
 ## Description of application
 

@@ -52,6 +52,6 @@ studies.
 The NovoNordiskFonden in Denmark had an grant application call titled
 *Data Science Research Infrastructure Grant* in 2021, of which we've
 included a modified version of the instructions
-[here](nnf-instructions.md). We submitted an
+[here](nnf-instructions.qmd). We submitted an
 [application](nnf-application.html) for it that resulted in receiving
 the requested funds.
