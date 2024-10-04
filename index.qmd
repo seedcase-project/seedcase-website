@@ -82,8 +82,7 @@ together:
 
 -   **flower**: Catalogue and browse metadata on data in a data package
 
--   **garden**: Tend to multiple projects using data from a data
-    package
+-   **garden**: Tend to multiple projects using data from a data package
 :::
 
 ::: g-col-4
@@ -94,10 +93,11 @@ fig-align="right" width="200px"}
 ::::::
 :::::::
 
-[^1]: [Data packages](https://datapackage.org/) are central structures in the Seedcase ecosystem,
-    specifically when it comes to the structure of metadata. See our
-    [decision post](https://decisions.seedcase-project.org/why-frictionless-data/) on why
-    we structure data and metadata this way.
+[^1]: [Data packages](https://datapackage.org/) are central structures
+    in the Seedcase ecosystem, specifically when it comes to the
+    structure of metadata. See our [decision
+    post](https://decisions.seedcase-project.org/why-frictionless-data/)
+    on why we structure data and metadata this way.
 
 ## Acknowledgements {#acknowledgements}
 
