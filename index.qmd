@@ -3,7 +3,7 @@ title: "Welcome to the Seedcase Project"
 subtitle: A framework for an open and scalable infrastructure for health data
 toc: false
 sidebar: false
-css: _extensions/seedcase-project/seedcase-theme/landing-page-theme.scss
+css: _extensions/seedcase-project/seedcase-theme/landing-page-theme.css
 about:
   id: hero-heading
   template: marquee
