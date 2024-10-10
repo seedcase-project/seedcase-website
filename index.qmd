@@ -3,7 +3,7 @@ title: "Welcome to the Seedcase Project"
 subtitle: A framework for an open and scalable infrastructure for health data
 toc: false
 sidebar: false
-css: styles.css
+css: _extensions/seedcase-project/seedcase-theme/landing-page-theme.scss
 about:
   id: hero-heading
   template: marquee
@@ -59,8 +59,7 @@ principles we teach and advocate for.
 
 <!-- TODO: List overview of purposes/principles here? -->
 
-::::::: landing-page-banner
-:::::: landing-page-banner-content
+::::::: full-width-banner
 ## Software products
 
 ::::: grid
@@ -91,7 +90,6 @@ fig-align="right" width="200px"}
 :::
 :::::
 ::::::
-:::::::
 
 [^1]: [Data packages](https://datapackage.org/) are central structures
     in the Seedcase ecosystem, specifically when it comes to the
