@@ -21,41 +21,6 @@ knowledge can improve health and well-being research. This includes
 tasks related to building, managing, and sharing health data.
 :::
 
-## Our goals
-
-The Seedcase Project is more than software, it is also about education,
-training, and the code itself.
-
-::::::: {.grid .wider-grid}
-::: {.g-col-6 .g-col-md-3 .landing-page-card}
-### Develop open-source software for health data
-
-Software that is open-source and targeted to diverse users, like health
-research organizations and small-to-medium sized companies.
-:::
-
-::: {.g-col-6 .g-col-md-3 .landing-page-card}
-### Create training material and run workshops
-
-Specifically training on technical skills such as software and data
-engineering, while following open scientific practices.
-:::
-
-::: {.g-col-6 .g-col-md-3 .landing-page-card}
-### Build and nurture an inclusive community
-
-A community that is open and inclusive that shares knowledge, learnings,
-and better practices in research data engineering and software
-engineering.
-:::
-
-::: {.g-col-6 .g-col-md-3 .landing-page-card}
-### Lead by example
-
-By building this project as fully open as possible and applying the same
-principles we teach and advocate for.
-:::
-:::::::
 
 <!-- TODO: List overview of purposes/principles here? -->
 

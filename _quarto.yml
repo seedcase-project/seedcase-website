@@ -34,6 +34,7 @@ website:
       contents:
       - about/index.qmd
       - about/principles.qmd
+      - about/goals.qmd
       - text: "History"
         href: about/history/index.qmd
       # - text: "Mission"
