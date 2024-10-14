@@ -5,23 +5,23 @@ title: Goals
 The Seedcase Project is more than software, it is also about education,
 training, and the code itself.
 
-### Develop open-source software for health data
+## Develop open-source software for health data
 
 Software that is open-source and targeted to diverse users, like health
 research organizations and small-to-medium sized companies.
 
-### Create training material and run workshops
+## Create training material and run workshops
 
 Specifically training on technical skills such as software and data
 engineering, while following open scientific practices.
 
-### Build and nurture an inclusive community
+## Build and nurture an inclusive community
 
 A community that is open and inclusive that shares knowledge, learnings,
 and better practices in research data engineering and software
 engineering.
 
-### Lead by example
+## Lead by example
 
 By building this project as fully open as possible and applying the same
 principles we teach and advocate for.
