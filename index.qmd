@@ -1,95 +1,82 @@
 ---
-title: "Welcome to the Seedcase Project"
-subtitle: A framework for an open and scalable infrastructure for health data
+title: "A framework for open and scalable data"
 toc: false
 sidebar: false
 css: _extensions/seedcase-project/seedcase-theme/landing-page-theme.css
+image: _extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg
 about:
   id: hero-heading
-  template: marquee
+  template: solana
+  image-width: 10em
   links:
-    - icon: diagram-2
-      text: "Design documentation"
+    - text: "Check out Sprout"
+      href: "https://sprout.seedcase-project.org/"
+    - text: "Explore our design docs"
       href: "https://design.seedcase-project.org/"
 ---
 
 ::: {#hero-heading}
-The Seedcase Project is a value-driven initiative focused on open
-science and open-source software. We believe that developing open-source
-software and offering researchers training in technical skills and
-knowledge can improve health and well-being research. This includes
-tasks related to building, managing, and sharing health data.
 :::
 
-## Our goals
+::: full-width-banner
+## A value-driven initiative
 
-The Seedcase Project is more than software, it is also about education,
-training, and the code itself.
+In the **Seedcase Project**, we're dedicated to open science and
+open-source software. We believe that by developing open-source tools
+and providing researchers with training in technical skills, we can
+enhance health and well-being research. This includes tasks related to
+building, managing, and sharing health data effectively.
 
-::::::: {.grid .wider-grid}
-::: {.g-col-6 .g-col-md-3 .landing-page-card}
-### Develop open-source software for health data
-
-Software that is open-source and targeted to diverse users, like health
-research organizations and small-to-medium sized companies.
+See our [About](about/index.qmd) page for more on the project, our
+values, and our goals.
 :::
 
-::: {.g-col-6 .g-col-md-3 .landing-page-card}
-### Create training material and run workshops
-
-Specifically training on technical skills such as software and data
-engineering, while following open scientific practices.
-:::
-
-::: {.g-col-6 .g-col-md-3 .landing-page-card}
-### Build and nurture an inclusive community
-
-A community that is open and inclusive that shares knowledge, learnings,
-and better practices in research data engineering and software
-engineering.
-:::
-
-::: {.g-col-6 .g-col-md-3 .landing-page-card}
-### Lead by example
-
-By building this project as fully open as possible and applying the same
-principles we teach and advocate for.
-:::
-:::::::
-
-<!-- TODO: List overview of purposes/principles here? -->
-
-::::::: full-width-banner
 ## Software products
 
-::::: grid
-::: g-col-8
-Even though Seedcase Project is still a work in progress, we have a
-clear vision on the software we’re building.
-
-Seedcase will take you from structuring and documenting your data, being
-able to browse and share it, to tending to projects using the data.
+**Seedcase** will take you from structuring and documenting your data,
+being able to browse and share it, to tending to projects using the
+data.
 
 We plan to create four software products that run both separately and
 together:
 
--   [**sprout**](https://github.com/seedcase-project/seedcase-sprout):
-    Grow your data in a structured and healthy way
+::: grid
+::: {.g-col-3 .text-center}
+![](_extensions/seedcase-project/seedcase-theme/logos/sprout-logo.svg){fig-alt="Sprout logo"
+position="center" width="80%"}
 
--   **propagate**: Submit requests for accessing specific data from a
-    data package[^1]
+### [Sprout](https://sprout.seedcase-project.org/)
 
--   **flower**: Catalogue and browse metadata on data in a data package
-
--   **garden**: Tend to multiple projects using data from a data package
+Grow your data in a structured and healthy way
 :::
 
-::: g-col-4
-![](_extensions/seedcase-project/seedcase-theme/logos/software-product-logos.svg){fig-alt="The logos of the Seedcase software products."
-fig-align="right" width="200px"}
+::: {.g-col-3 .text-center}
+![](_extensions/seedcase-project/seedcase-theme/logos/propagate-logo.svg){fig-alt="Propagate logo"
+position="center" width="80%"}
+
+### Propagate
+
+Submit requests for accessing specific data from a data package [^1]
 :::
-:::::
-::::::
+
+::: {.g-col-3 .text-center}
+![](_extensions/seedcase-project/seedcase-theme/logos/flower-logo.svg){fig-alt="Flower logo"
+position="center" width="80%"}
+
+### Flower
+
+Catalogue and browse metadata on data in a data package
+:::
+
+::: {.g-col-3 .text-center}
+![](_extensions/seedcase-project/seedcase-theme/logos/garden-logo.svg){fig-alt="Garden logo"
+position="center" width="80%"}
+
+### Garden
+
+Tend to multiple projects using data from a data package
+:::
+:::
 
 [^1]: [Data packages](https://datapackage.org/) are central structures
     in the Seedcase ecosystem, specifically when it comes to the
@@ -99,7 +86,7 @@ fig-align="right" width="200px"}
 
 ## Acknowledgements {#acknowledgements}
 
-::::: {layout="[60, 40]"}
+::: {layout="[60, 40]"}
 ::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462.
@@ -111,4 +98,4 @@ See the application
 ![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo"
 width="200px"}
 :::
-:::::
+:::
