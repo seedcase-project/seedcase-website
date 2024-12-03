@@ -63,7 +63,8 @@ position="center" width="80%"}
 
 ### Propagate
 
-Submit requests for accessing specific data from a data package [^1]
+Submit requests for accessing specific data from a [data
+package](https://decisions.seedcase-project.org/why-frictionless-data/)
 :::
 
 ::: {.g-col-3 .text-center}
@@ -83,14 +84,7 @@ position="center" width="80%"}
 
 Tend to multiple projects using data from a data package
 :::
-:::
-
-[^1]: [Data packages](https://datapackage.org/) are central structures
-    in the Seedcase ecosystem, specifically when it comes to the
-    structure of metadata. See our [decision
-    post](https://decisions.seedcase-project.org/why-frictionless-data/)
-    on why we structure data and metadata this way.
-:::
+::::::::
 
 ::: {.landing-page-block}
 ## Acknowledgements {#acknowledgements}
