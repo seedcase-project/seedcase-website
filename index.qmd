@@ -26,13 +26,13 @@ about:
 ## A value-driven initiative
 
 In the **Seedcase Project**, we're dedicated to open science and
-open-source software. We believe that by developing open-source tools
+open-source software. We believe that by developing open-source software
 and providing researchers with training in technical skills, we can
-enhance health and well-being research. This includes tasks related to
-building, managing, and sharing health data effectively.
+enhance health and well-being research.
 
-See our [About](about/index.qmd) page for more on the project, our
-values, and our goals.
+See our our [Roadmap](https://community.seedcase-project.org/roadmap) or
+[About](about/index.qmd) page for more information about the project,
+our values, and our goals.
 :::
 :::
 :::
