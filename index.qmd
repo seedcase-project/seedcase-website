@@ -106,6 +106,7 @@ See the application
 
 ::: {#acknowledgements-right}
 ![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo"
+width="200px" fig-align="right"}
 :::
 :::
 :::
