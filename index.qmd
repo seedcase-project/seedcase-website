@@ -58,21 +58,21 @@ Grow your data in a structured and healthy way
 :::
 
 ::: {.g-col-3 .text-center}
-![](_extensions/seedcase-project/seedcase-theme/logos/propagate-logo.svg){fig-alt="Propagate logo"
-position="center" width="80%"}
-
-### Propagate
-
-Submit requests for accessing specific data from a data package [^1]
-:::
-
-::: {.g-col-3 .text-center}
 ![](_extensions/seedcase-project/seedcase-theme/logos/flower-logo.svg){fig-alt="Flower logo"
 position="center" width="80%"}
 
 ### Flower
 
-Catalogue and browse metadata on data in a data package
+Catalogue and browse metadata on data in a data package[^1]
+:::
+
+::: {.g-col-3 .text-center}
+![](_extensions/seedcase-project/seedcase-theme/logos/propagate-logo.svg){fig-alt="Propagate logo"
+position="center" width="80%"}
+
+### Propagate
+
+Submit requests for accessing specific data from a data package
 :::
 
 ::: {.g-col-3 .text-center}
