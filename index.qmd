@@ -26,13 +26,13 @@ about:
 ## A value-driven initiative
 
 In the **Seedcase Project**, we're dedicated to open science and
-open-source software. We believe that by developing open-source tools
+open-source software. We believe that by developing open-source software
 and providing researchers with training in technical skills, we can
-enhance health and well-being research. This includes tasks related to
-building, managing, and sharing health data effectively.
+enhance health and well-being research.
 
-See our [About](about/index.qmd) page for more on the project, our
-values, and our goals.
+See our [Roadmap](https://community.seedcase-project.org/roadmap) or
+our [About](about/index.qmd) page for more information about the project,
+our values, and our goals.
 :::
 ::::
 :::::
@@ -58,22 +58,22 @@ Grow your data in a structured and healthy way
 :::
 
 ::: {.g-col-3 .text-center}
-![](_extensions/seedcase-project/seedcase-theme/logos/propagate-logo.svg){fig-alt="Propagate logo"
+![](_extensions/seedcase-project/seedcase-theme/logos/flower-logo.svg){fig-alt="Flower logo"
 position="center" width="80%"}
 
-### Propagate
+### Flower
 
 Submit requests for accessing specific data from a [data
 package](https://decisions.seedcase-project.org/why-frictionless-data/)
 :::
 
 ::: {.g-col-3 .text-center}
-![](_extensions/seedcase-project/seedcase-theme/logos/flower-logo.svg){fig-alt="Flower logo"
+![](_extensions/seedcase-project/seedcase-theme/logos/propagate-logo.svg){fig-alt="Propagate logo"
 position="center" width="80%"}
 
-### Flower
+### Propagate
 
-Catalogue and browse metadata on data in a data package
+Submit requests for accessing specific data from a data package
 :::
 
 ::: {.g-col-3 .text-center}
@@ -90,7 +90,7 @@ Tend to multiple projects using data from a data package
 :::::: landing-page-block
 ## Acknowledgements {#acknowledgements}
 
-::::: {layout="[60, 40]"}
+::::: {layout="[70, 30]"}
 ::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462.
@@ -100,7 +100,8 @@ See the application
 :::
 
 ::: {#acknowledgements-right}
-![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo" width="250px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo"
+width="250px" fig-align="right"}
 :::
 :::::
 ::::::
