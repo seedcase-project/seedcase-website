@@ -95,7 +95,7 @@ Tend to multiple projects using data from a data package
 ::: {.landing-page-block}
 ## Acknowledgements {#acknowledgements}
 
-::::: {layout="[60, 40]"}
+::::: {layout="[70, 30]"}
 ::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462.
