@@ -2,7 +2,7 @@
 title: "A framework for open and scalable data"
 toc: false
 sidebar: false
-css: _extensions/seedcase-project/seedcase-theme/landing-page-theme.css
+page-layout: custom
 image: _extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg
 about:
   id: hero-heading
@@ -15,10 +15,14 @@ about:
       href: "https://design.seedcase-project.org/"
 ---
 
+::: {.landing-page-block}
 ::: {#hero-heading}
 :::
+:::
 
-::: full-width-banner
+::: {.hero-banner}
+::: {.landing-page-block}
+::: {.hero-text}
 ## A value-driven initiative
 
 In the **Seedcase Project**, we're dedicated to open science and
@@ -30,7 +34,10 @@ building, managing, and sharing health data effectively.
 See our [About](about/index.qmd) page for more on the project, our
 values, and our goals.
 :::
+:::
+:::
 
+::: {.landing-page-block}
 ## Software products
 
 **Seedcase** will take you from structuring and documenting your data,
@@ -83,7 +90,9 @@ Tend to multiple projects using data from a data package
     structure of metadata. See our [decision
     post](https://decisions.seedcase-project.org/why-frictionless-data/)
     on why we structure data and metadata this way.
+:::
 
+::: {.landing-page-block}
 ## Acknowledgements {#acknowledgements}
 
 ::: {layout="[60, 40]"}
