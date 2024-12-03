@@ -2,7 +2,7 @@
 title: "A framework for open and scalable data"
 toc: false
 sidebar: false
-css: _extensions/seedcase-project/seedcase-theme/landing-page-theme.css
+page-layout: custom
 image: _extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg
 about:
   id: hero-heading
@@ -15,10 +15,14 @@ about:
       href: "https://design.seedcase-project.org/"
 ---
 
+:::: landing-page-block
 ::: {#hero-heading}
 :::
+::::
 
-::: full-width-banner
+::::: hero-banner
+:::: landing-page-block
+::: hero-text
 ## A value-driven initiative
 
 In the **Seedcase Project**, we're dedicated to open science and
@@ -30,7 +34,10 @@ building, managing, and sharing health data effectively.
 See our [About](about/index.qmd) page for more on the project, our
 values, and our goals.
 :::
+::::
+:::::
 
+:::::::: landing-page-block
 ## Software products
 
 **Seedcase** will take you from structuring and documenting your data,
@@ -40,7 +47,7 @@ data.
 We plan to create four software products that run both separately and
 together:
 
-::: grid
+::::::: grid
 ::: {.g-col-3 .text-center}
 ![](_extensions/seedcase-project/seedcase-theme/logos/sprout-logo.svg){fig-alt="Sprout logo"
 position="center" width="80%"}
@@ -56,7 +63,8 @@ position="center" width="80%"}
 
 ### Propagate
 
-Submit requests for accessing specific data from a data package [^1]
+Submit requests for accessing specific data from a [data
+package](https://decisions.seedcase-project.org/why-frictionless-data/)
 :::
 
 ::: {.g-col-3 .text-center}
@@ -76,26 +84,23 @@ position="center" width="80%"}
 
 Tend to multiple projects using data from a data package
 :::
-:::
+:::::::
+::::::::
 
-[^1]: [Data packages](https://datapackage.org/) are central structures
-    in the Seedcase ecosystem, specifically when it comes to the
-    structure of metadata. See our [decision
-    post](https://decisions.seedcase-project.org/why-frictionless-data/)
-    on why we structure data and metadata this way.
-
+:::::: landing-page-block
 ## Acknowledgements {#acknowledgements}
 
-::: {layout="[60, 40]"}
+::::: {layout="[60, 40]"}
 ::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462.
+
 See the application
 [here](https://seedcase-project.org/about/history/nnf-application).
 :::
 
 ::: {#acknowledgements-right}
-![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo"
-width="200px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo" width="250px"}
 :::
-:::
+:::::
+::::::
