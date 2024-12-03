@@ -34,8 +34,6 @@ See our our [Roadmap](https://community.seedcase-project.org/roadmap) or
 [About](about/index.qmd) page for more information about the project,
 our values, and our goals.
 :::
-:::
-:::
 ::::
 :::::
 
@@ -103,9 +101,7 @@ See the application
 
 ::: {#acknowledgements-right}
 ![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo"
-width="225px" fig-align="right"}
-:::
-:::
+width="250px" fig-align="right"}
 :::
 :::::
 ::::::
