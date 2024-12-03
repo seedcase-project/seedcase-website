@@ -15,14 +15,14 @@ about:
       href: "https://design.seedcase-project.org/"
 ---
 
-::: {.landing-page-block}
+:::: landing-page-block
 ::: {#hero-heading}
 :::
-:::
+::::
 
-::: {.hero-banner}
-::: {.landing-page-block}
-::: {.hero-text}
+::::: hero-banner
+:::: landing-page-block
+::: hero-text
 ## A value-driven initiative
 
 In the **Seedcase Project**, we're dedicated to open science and
@@ -36,8 +36,10 @@ our values, and our goals.
 :::
 :::
 :::
+::::
+:::::
 
-::: {.landing-page-block}
+:::::::: landing-page-block
 ## Software products
 
 **Seedcase** will take you from structuring and documenting your data,
@@ -47,7 +49,7 @@ data.
 We plan to create four software products that run both separately and
 together:
 
-::: grid
+::::::: grid
 ::: {.g-col-3 .text-center}
 ![](_extensions/seedcase-project/seedcase-theme/logos/sprout-logo.svg){fig-alt="Sprout logo"
 position="center" width="80%"}
@@ -63,7 +65,8 @@ position="center" width="80%"}
 
 ### Flower
 
-Catalogue and browse metadata on data in a data package[^1]
+Submit requests for accessing specific data from a [data
+package](https://decisions.seedcase-project.org/why-frictionless-data/)
 :::
 
 ::: {.g-col-3 .text-center}
@@ -83,16 +86,10 @@ position="center" width="80%"}
 
 Tend to multiple projects using data from a data package
 :::
-:::
+:::::::
+::::::::
 
-[^1]: [Data packages](https://datapackage.org/) are central structures
-    in the Seedcase ecosystem, specifically when it comes to the
-    structure of metadata. See our [decision
-    post](https://decisions.seedcase-project.org/why-frictionless-data/)
-    on why we structure data and metadata this way.
-:::
-
-::: {.landing-page-block}
+:::::: landing-page-block
 ## Acknowledgements {#acknowledgements}
 
 ::::: {layout="[70, 30]"}
@@ -106,7 +103,9 @@ See the application
 
 ::: {#acknowledgements-right}
 ![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo"
-width="200px" fig-align="right"}
+width="225px" fig-align="right"}
 :::
 :::
 :::
+:::::
+::::::
