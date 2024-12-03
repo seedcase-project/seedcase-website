@@ -95,16 +95,17 @@ Tend to multiple projects using data from a data package
 ::: {.landing-page-block}
 ## Acknowledgements {#acknowledgements}
 
-::: {layout="[60, 40]"}
+::::: {layout="[60, 40]"}
 ::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462.
+
 See the application
 [here](https://seedcase-project.org/about/history/nnf-application).
 :::
 
 ::: {#acknowledgements-right}
 ![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo"
-width="200px"}
+:::
 :::
 :::
