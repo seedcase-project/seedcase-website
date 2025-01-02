@@ -1,0 +1,241 @@
+---
+title: Roadmap
+format:
+    seedcase-theme-html:
+        tbl-colwidths: [20, 80]
+---
+
+{{< include /includes/_wip.qmd >}}
+
+This is a very high level roadmap and "wishlist" for products we aim or
+want to create and develop in the Seedcase Project. We do not include
+timelines or estimates for completion in this document (see note below).
+We have a more detailed and regularly updated roadmap that has some
+general timelines available on our [Long-term Planning GitHub
+Board](https://github.com/orgs/seedcase-project/projects/22/views/1).
+
+::: callout-important
+Estimating a timeline can be extremely difficult, as it is dependent on
+multiple factors that often can't be predicted or anticipated.
+Therefore, and from our experiences on timelines regularly needing to be
+updated, we avoid giving specific timelines in this document.
+:::
+
+## Product wishlist
+
+This is a non-exhaustive list of products or outputs that we believe
+fill multiple strong needs within the research community, especially in
+order to remain relevant and competitive in the modern research
+landscape. We believe that we have the capability, expertise,
+motivation, and passion to complete these products. These products, we
+believe, will substantially improve how research will be done in the
+future. However, given our current timelines and resources, we can't
+complete all of them but we list them here to show our visions and
+goals.
+
+They are split into three main categories: software and
+software-related, technical documentation, and events. Technical
+documentation encompasses more than just usage guides or manuals for
+software, but also includes courses, opinion pieces, and outreach
+materials.
+
+Products are listed in the order that we would like to work on and aim
+to complete them. Beside each product is a status, which is one of the
+following:
+
+| Status | Description |
+|:-----------------------------:|:----------------------------------------|
+| {{< var status.done >}} | Products we have completed a minimally viable product (MVP) of. As products are never truly "done", the "done" status simply indicates that the product is now in a usable state, but that we will continue improving and working on it. |
+| {{< var status.wip >}} | Products we are currently working on. |
+| {{< var status.planned >}} | Products we plan to work on and aim to complete within the current funding period (end of 2027). |
+| {{< var status.potential >}} | Products we are very interested in working on, but given the time and resources, may likely not get to within the current funding period (end of 2027). |
+| {{< var status.ongoing >}} | Products that we will continually work on and that don't strictly have a defined endpoint for "done" (e.g. aren't ever released or uploaded to an archive). |
+
+### Software and software-related
+
+Because of the evolving nature of developing software, software products
+are rarely "complete", as they continue to be improved on and updated.
+The product reaches MVP and done status when we have created its first
+release on an official software archive (like PyPI for Python packages).
+After the first release of a MVP and if it gets sufficient use, it will
+continue to be tested and refined based on user feedback and identified
+bugs.
+
+Some of these products are not strictly software, but can be used within
+a software environment, can be integrate into other workflows, or are
+used to support research software and data engineering.
+
+::: panel-tabset
+#### Software
+
+| Status | Software |
+|:---------------------------------------------:|:------------------------|
+| {{< var status.wip >}} | [`seedcase-project/seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Upload your research data to formally structure it for better, more reliable, and easier research. |
+| {{< var status.planned >}} | `seedcase-project/check-datapackage`: Check the correctness of a `datapackage.json` file. |
+| {{< var status.planned >}} | `seedcase-flower`: Cataloging and browsing metadata within a data package. |
+| {{< var status.planned >}} | `seedcase-propagate`: Submitting requests for accessing specific data from a data package. |
+| {{< var status.planned >}} | `seedcase-garden`: Tend to and track projects using data from a data package. |
+| {{< var status.potential >}} | `seedcase-sprout-extensions`: Extensions to Seedcase Sprout for common data processing or enriching tasks. |
+
+: "Wishlist" of software products we are currently working on, will work
+on, or hope to work on.
+
+#### Software-related products
+
+| Status | Software-related product |
+|:-----------------------------------------------:|:-------------------------|
+| {{< var status.ongoing >}} | [`seedcase-project/seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Template repository for website projects with a Seedcase-specific Quarto extension for aesthetics, helper commands, and infrastructural files. |
+| {{< var status.ongoing >}} | [`seedcase-project/template-python-project`](https://github.com/seedcase-project/template-python-project): A template repository to use when making a Python project for Seedcase. |
+| {{< var status.ongoing >}} | [`seedcase-project/spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects. |
+
+: "Wishlist" of software-related products we are currently working on,
+will work on, or hope to work on.
+:::
+
+### Technical documentation
+
+Following the [diátaxis](https://diataxis.fr/) method to structuring
+documentation, documentation is split up into four types: tutorials,
+how-to guides, reference, and explanation. A brief description of these
+types of documentation are expanded upon in the sections below. These
+technical documentation products reach MVP and done status when they are
+either:
+
+-   Uploaded to an archive like Zenodo (to generate a DOI).
+-   Taught to participants in a course setting.
+-   Uploaded to a software archive (like PyPI) if they are within a
+    software product's repository and are executable (the code within
+    runs).
+
+::::: panel-tabset
+#### Tutorials
+
+Tutorials are learning-oriented documentation that includes multi-day
+courses, online tutorials, and learning shorts. These will be developed
+as [open educational
+resources](https://en.wikipedia.org/wiki/Open_educational_resources).
+
+| Status | Learning resource |
+|:----------------------------------------------:|:--------------------------|
+| {{< var status.wip >}} | [`rostools/git4cats`](https://github.com/rostools/git4cats): 🐱 Git for Collaborative Teams: An introductory course on using Git and GitHub for team-based collaborative workflows and practices |
+| {{< var status.potential >}} | Course: Introduction to building research software using Python as a solo developer in research environments. |
+| {{< var status.potential >}} | Course: Iterative project management and development for effective collaboration and work. |
+| {{< var status.potential >}} | [`rostools/r-pkg-intro`](https://github.com/rostools/r-pkg-intro): Build research software using R as a solo developer in research environments. |
+| {{< var status.potential >}} | Course: Building research software using Python in a team setting. |
+
+: "Wishlist" of learning-type documentation products we are currently
+working on, will work on, or hope to work on.
+
+#### How-to guides
+
+How-to guides are goal-oriented documentation that helps the reader get
+something specific done. These include how-to guides, usage guides, and
+user manuals.
+
+| Status | Guides or manuals |
+|:----------------------------------------------:|:--------------------------|
+| {{< var status.wip >}} | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout`. |
+| {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower`. |
+| {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate`. |
+| {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden`. |
+| {{< var status.planned >}} | Improving the research software development lifecycle by integrating DevOps practices. |
+| {{< var status.planned >}} | A guided walkthrough: Team-based collaborative practices and workflows in a research environment. |
+| {{< var status.potential >}} | Sprout data extensions usage guide: Installing or creating extensions for `seedcase-sprout`. |
+| {{< var status.potential >}} | A guided walkthrough: Iterative and incremental project development and management in a research environment. |
+| {{< var status.potential >}} | Using DocOps workflows and infrastructure to reduce time between writing and dissemination. |
+| {{< var status.potential >}} | Building DataOps pipelines and infrastructure for improving research data quality and reduce time from collection to analysis. |
+| {{< var status.potential >}} | Integrating research operations in organizations to improve quality and speed up research. |
+
+: "Wishlist" of goal-type documentation products we are currently
+working on, will work on, or hope to work on.
+
+#### Reference
+
+Reference material is information-oriented documentation that are
+technical descriptions of how things work or why things are done a
+specific way. These include reference manuals, API documentation, and
+technical specifications, design documentation, as well as documentation
+for how we work together, decisions made, or any community contributing
+guidelines we have.
+
+::: callout-important
+Because of the nature of reference documentation, they don't really have
+a "done" status nor do they have clearly defined "endpoints", like
+uploading to an archive to generate a DOI. For these reasons, these
+products are all classified as "ongoing".
+:::
+
+| Status | Information resource |
+|:----------------------------------------------:|:--------------------------|
+| {{< var status.ongoing >}} | [`seedcase-project/design`](https://github.com/seedcase-project/design): Overall architectural design documentation for Seedcase software. |
+| {{< var status.ongoing >}} | [`seedcase-project/team`](https://github.com/seedcase-project/team): Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
+| {{< var status.ongoing >}} | [`seedcase-project/community`](https://github.com/seedcase-project/community): Content for community building, outreach, and contributing guidelines for the Seedcase Project. |
+| {{< var status.ongoing >}} | [`seedcase-project/seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project. |
+| {{< var status.ongoing >}} | [`seedcase-project/examples`](https://github.com/seedcase-project/examples): Practical examples of how to use Seedcase software to structure datasets and prepare them to be used by others. All data is either fake, synthetically generated, or completely open. |
+
+: "Wishlist" of informational-type documentation products we are
+currently working on, will work on, or hope to work on.
+
+#### Explanation
+
+Explanation material is understanding-oriented documentation that
+focuses on reflection and broadening knowledge or understanding. These
+include opinion pieces, explanations, theoretical or thought-provoking
+pieces, and outreach materials.
+
+<!-- TODO: This section needs some work -->
+
+| Status | Deliverable |
+|:----------------------------------------------:|:--------------------------|
+| {{< var status.ongoing >}} | [`seedcase-project/community`](https://github.com/seedcase-project/community): Sharing knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management |
+| {{< var status.ongoing >}} | [`seedcase-project/decisions`](https://github.com/seedcase-project/decisions): Archival records on the decisions made for tools or processes we use in the Seedcase Project. |
+| {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research? |
+| {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment. |
+
+: "Wishlist" of explanation-type documentation products we are currently
+working on, will work on, or hope to work on.
+
+::: content-hidden
+| Status | Deliverable |
+|:----------------------------------------------:|:--------------------------|
+| {{< var status.potential >}} | Challenges and barriers in research for effective software development and data engineering. |
+| {{< var status.potential >}} | Researchers don't know how to effectively work together: Current challenges and potential solutions. |
+| {{< var status.potential >}} | Research institutions and funding agencies are not yet designed to support effective and robust, and therefore vital, research software development. |
+:::
+:::::
+
+### Outreach and events
+
+These are activities that would involve engaging with the research
+community, mainly through in-person seminars, symposiums, or other
+events.
+
+::: callout-note
+Given the expertise and resources needed for these types of "products"
+(e.g. hosting and coordinating people), we will likely not be able to
+work on these types of activities in the near future. However, we
+believe that they are important for bringing greater awareness to the
+research community about the various topics we work on and advocate for.
+:::
+
+| Status | Deliverable |
+|:----------------------------------------------:|:--------------------------|
+| {{< var status.potential >}} | Seminar series: Unmet needs for research data engineering and current challenges in implementation |
+| {{< var status.potential >}} | Symposium: Current state of data engineering in research environment |
+
+: "Wishlist" of outreach event "products" we are currently working on,
+will work on, or hope to work on.
+
+## Collaborations and users
+
+Once we have a minimum viable product for any of the software
+deliverables, we aim to test and deploy them in real-world projects. We
+have several potential projects lined up for this:
+
+-   [DP-Next](https://dp-next.github.io/)
+-   [ADDITION](https://addition.au.dk/)
+-   [Health in Central
+    Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
+-   [DARTER](https://steno-aarhus.github.io/darter-project/)
+    (register-based research project at Steno)
+-   [DD2](https://dd2.dk/)
