@@ -1,0 +1,6 @@
+status:
+    done: '[{{< fa circle-check size="xl" title="Completed an MVP" >}}]{style="color: #48DC76"}<br><small>*Completed*</small>'
+    wip: '[{{< fa hammer size="xl" title="In progress" >}}]{style="color: #32A255"}<br><small>*In progress*</small>'
+    planned: '[{{< fa map size="xl" title="Planned" >}}]{style="color: #ADADAD"}<br><small>*Planned*</small>'
+    potential: '[{{< fa circle-question size="xl" title="Potential" >}}]{style="color: #D6D6D6"}<br><small>*Potential*</small>'
+    ongoing: '[{{< fa repeat size="xl" title="Ongoing" >}}]{style="color: #32A255"}<br><small>*Ongoing*</small>'
