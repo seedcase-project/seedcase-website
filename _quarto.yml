@@ -12,6 +12,7 @@ website:
     logo-alt: "Seedcase Project logo: Main page"
     pinned: true
     left:
+      - roadmap/index.qmd
       - text: "About"
         href: about/index.qmd
       - text: "Community"
