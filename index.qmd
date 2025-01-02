@@ -30,8 +30,8 @@ open-source software. We believe that by developing open-source software
 and providing researchers with training in technical skills, we can
 enhance health and well-being research.
 
-See our [Roadmap](https://community.seedcase-project.org/roadmap) or
-our [About](about/index.qmd) page for more information about the project,
+See our [Roadmap](/roadmap/index.qmd) or our
+[About](about/index.qmd) page for more information about the project,
 our values, and our goals.
 :::
 ::::
@@ -86,6 +86,38 @@ Tend to multiple projects using data from a data package
 :::
 :::::::
 ::::::::
+
+::::::::: hero-banner
+:::::::: landing-page-block
+::::::: hero-text
+## Goals
+
+The Seedcase Project is more than software: It is also about education,
+training, and the code itself.
+
+### Develop open-source software for health data
+
+Software that is open-source and targeted to diverse users, like health
+research organizations and small-to-medium sized companies.
+
+### Create training material and run workshops
+
+Specifically training on technical skills such as software and data
+engineering, while following open scientific practices.
+
+### Build and nurture an inclusive community
+
+A community that is open and inclusive that shares knowledge, learnings,
+and better practices in research data engineering and software
+engineering.
+
+### Lead by example
+
+By building this project as fully open as possible and applying the same
+principles we teach and advocate for.
+:::::::
+::::::::
+:::::::::
 
 :::::: landing-page-block
 ## Acknowledgements {#acknowledgements}
