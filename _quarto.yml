@@ -39,11 +39,10 @@ website:
 
 bibliography: "includes/references.bib"
 
-# format:
-#   seedcase-theme-html:
-    # include-before-body:
-      # - "includes/site-counter.html"
-      # - "includes/contribute.html"
+format:
+  seedcase-theme-html:
+    include-before-body:
+      - "includes/site-counter.html"
 
 editor:
   markdown:
