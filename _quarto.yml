@@ -34,8 +34,6 @@ website:
       - about/index.qmd
       - text: "History"
         href: about/history/index.qmd
-      - text: "Team Members"
-        href: about/team/index.qmd
 
 bibliography: "includes/references.bib"
 
