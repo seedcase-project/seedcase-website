@@ -49,7 +49,7 @@ Strategic Research in Type 2 Diabetes (DD2)](https://dd2.dk/) study
 improve not only DD2, but also the infrastructure of other Danish
 studies.
 
-The NovoNordiskFonden in Denmark had an grant application call titled
+The Novo Nordisk Foundation in Denmark had an grant application call titled
 *Data Science Research Infrastructure Grant* in 2021, of which we've
 included a modified version of the instructions
 [here](nnf-instructions.qmd). We submitted an
