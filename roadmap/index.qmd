@@ -76,7 +76,6 @@ used to support research software and data engineering.
 | {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/). |
 | {{< var status.planned >}} | `seedcase-propagate`: Submitting requests for accessing specific data from a data package. |
 | {{< var status.planned >}} | `seedcase-garden`: Tend to and track projects using data from a data package. |
-| {{< var status.potential >}} | `seedcase-sprout-extensions`: Extensions to Seedcase Sprout for common data processing or enriching tasks. |
 
 : "Wishlist" of software products we are currently working on, will work
 on, or hope to work on.
