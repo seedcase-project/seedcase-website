@@ -73,9 +73,9 @@ used to support research software and data engineering.
 | {{< var status.wip >}} | [`seedcase-project/seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Upload your research data to formally structure it for better, more reliable, and easier research. |
 | {{< var status.planned >}} | `seedcase-project/check-datapackage`: Check the correctness of a `datapackage.json` file. |
 | {{< var status.planned >}} | `seedcase-flower`: Cataloging and browsing metadata within a data package. |
+| {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/). |
 | {{< var status.planned >}} | `seedcase-propagate`: Submitting requests for accessing specific data from a data package. |
 | {{< var status.planned >}} | `seedcase-garden`: Tend to and track projects using data from a data package. |
-| {{< var status.potential >}} | `seedcase-sprout-extensions`: Extensions to Seedcase Sprout for common data processing or enriching tasks. |
 
 : "Wishlist" of software products we are currently working on, will work
 on, or hope to work on.
