@@ -3,8 +3,7 @@ extend-exclude = [
   "*.css",
   ".quarto/*",
   "_site/*",
-  "*.svg",
-  "*nnf-application.html"
+  "*.svg"
 ]
 
 [default.extend-words]
