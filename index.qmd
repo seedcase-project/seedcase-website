@@ -30,23 +30,22 @@ open-source software. We believe that by developing open-source software
 and providing researchers with training in technical skills, we can
 enhance health and well-being research.
 
-See our [Roadmap](/roadmap/index.qmd) or our
-[About](about/index.qmd) page for more information about the project,
-our values, and our goals.
+See our [Roadmap](/roadmap/index.qmd) or our [About](about/index.qmd)
+page for more information about the project, our values, and our goals.
 :::
 ::::
 :::::
 
-:::::::: landing-page-block
+:::::: landing-page-block
 ## Software products
 
 **Seedcase** will take you from structuring and documenting your data,
 and being able to browse and share your metadata.
 
-We plan to create multiple software products that run both separately and
-together:
+We plan to create multiple software products that run both separately
+and together:
 
-::::::: grid
+::::: grid
 ::: {.g-col-6 .text-center}
 ![](_extensions/seedcase-project/seedcase-theme/logos/sprout-logo.svg){fig-alt="Sprout logo"
 position="center" width="150px"}
@@ -65,13 +64,12 @@ position="center" width="150px"}
 
 Submit requests for accessing specific data from a data package
 :::
+:::::
+::::::
 
-:::::::
-::::::::
-
-::::::::: hero-banner
-:::::::: landing-page-block
-::::::: hero-text
+::::: hero-banner
+:::: landing-page-block
+::: hero-text
 ## Goals
 
 The Seedcase Project is more than software: It is also about education,
@@ -97,9 +95,9 @@ engineering.
 
 By building this project as fully open as possible and applying the same
 principles we teach and advocate for.
-:::::::
-::::::::
-:::::::::
+:::
+::::
+:::::
 
 :::::: landing-page-block
 ## Acknowledgements {#acknowledgements}
