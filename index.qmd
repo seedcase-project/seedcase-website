@@ -41,49 +41,31 @@ our values, and our goals.
 ## Software products
 
 **Seedcase** will take you from structuring and documenting your data,
-being able to browse and share it, to tending to projects using the
-data.
+and being able to browse and share your metadata.
 
-We plan to create four software products that run both separately and
+We plan to create multiple software products that run both separately and
 together:
 
 ::::::: grid
-::: {.g-col-3 .text-center}
+::: {.g-col-6 .text-center}
 ![](_extensions/seedcase-project/seedcase-theme/logos/sprout-logo.svg){fig-alt="Sprout logo"
-position="center" width="80%"}
+position="center" width="150px"}
 
 ### [Sprout](https://sprout.seedcase-project.org/)
 
-Grow your data in a structured and healthy way
-:::
-
-::: {.g-col-3 .text-center}
-![](_extensions/seedcase-project/seedcase-theme/logos/flower-logo.svg){fig-alt="Flower logo"
-position="center" width="80%"}
-
-### Flower
-
-Submit requests for accessing specific data from a [data
+Grow your data in a structured and healthy way in a [data
 package](https://decisions.seedcase-project.org/why-frictionless-data/)
 :::
 
-::: {.g-col-3 .text-center}
-![](_extensions/seedcase-project/seedcase-theme/logos/propagate-logo.svg){fig-alt="Propagate logo"
-position="center" width="80%"}
+::: {.g-col-6 .text-center}
+![](_extensions/seedcase-project/seedcase-theme/logos/flower-logo.svg){fig-alt="Flower logo"
+position="center" width="150px"}
 
-### Propagate
+### Flower
 
 Submit requests for accessing specific data from a data package
 :::
 
-::: {.g-col-3 .text-center}
-![](_extensions/seedcase-project/seedcase-theme/logos/garden-logo.svg){fig-alt="Garden logo"
-position="center" width="80%"}
-
-### Garden
-
-Tend to multiple projects using data from a data package
-:::
 :::::::
 ::::::::
 
