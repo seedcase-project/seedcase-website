@@ -4,6 +4,7 @@ toc: false
 sidebar: false
 page-layout: custom
 image: _extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg
+image-alt: Seedcase logo.
 about:
   id: hero-heading
   template: solana
