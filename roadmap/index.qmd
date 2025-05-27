@@ -233,9 +233,9 @@ deliverables, we aim to test and deploy them in real-world projects. We
 have several potential projects lined up for this:
 
 -   [DP-Next](https://dp-next.github.io/)
+-   [ON-LiMiT](https://steno-aarhus.github.io/ON-LiMiT/)
 -   [ADDITION](https://addition.au.dk/)
 -   [Health in Central
     Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
 -   [DARTER](https://steno-aarhus.github.io/darter-project/)
     (register-based research project at Steno)
--   [DD2](https://dd2.dk/)
