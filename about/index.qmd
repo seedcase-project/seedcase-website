@@ -39,7 +39,7 @@ providing tools that ease the management of research data resources and
 improve transparency for researchers, clinicians, and stakeholders.
 Managing data is hard and can easily become time-consuming and complex.
 With the Seedcase Project, we want to provide a framework for managing
-data in a way that is scalable, efficient, and easy to use—while also
+data in a way that is scalable, efficient, and easy to use---while also
 being open source and transparent. This will allow researchers to spend
 more time on actual research by minimising the time spent on data
 management.
