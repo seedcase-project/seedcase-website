@@ -7,49 +7,55 @@ format:
 
 {{< include /includes/_wip.qmd >}}
 
-This is a high level roadmap for products we
-want to create in the Seedcase Project. We do not include
-timelines or estimates for completion in this document.
+This is a high level roadmap for products we want to create in the
+Seedcase Project. We do not include timelines or estimates for
+completion in this document.
 
-For a more detailed and regularly updated roadmap, see our [Long-term Planning GitHub
+For a more detailed and regularly updated roadmap, see our [Long-term
+Planning GitHub
 Board](https://github.com/orgs/seedcase-project/projects/22/views/1).
 
 ## Product roadmap
 
 This is a non-exhaustive list of products or outputs that we believe can
-fill multiple strong needs within the research community. These products, we
-believe, have the capacity to substantially improve how research is done. However, given our current timelines and resources, we can't
-complete all of them. We list them here to show our visions and
+fill multiple strong needs within the research community. These
+products, we believe, have the capacity to substantially improve how
+research is done. However, given our current timelines and resources, we
+can't complete all of them. We list them here to show our visions and
 goals.
 
 They are split into three main categories: software and
 software-related, technical documentation, and outreach.
 
-Products are listed in the order that we plan to work on and complete them. Beside each product is one of the following status icons:
+Products are listed in the order that we plan to work on and complete
+them. Beside each product is one of the following status icons:
 
 | Status | Description |
 |:-----------------------------:|:----------------------------------------|
 | {{< var status.done >}} | Products we've completed with a minimally viable product (MVP) that we'll continue to improve and work on. |
 | {{< var status.wip >}} | Products we are working on currently. |
 | {{< var status.planned >}} | Products we plan to complete within the current funding period (end of 2027). |
-| {{< var status.potential >}} | Products we'd like to work on, but probably won't finish within the current funding period (end of 2027) due to limited time and resources,  |
-| {{< var status.ongoing >}} | Ongoing products without a final release (e.g., not archived or officially published).
+| {{< var status.potential >}} | Products we'd like to work on, but probably won't finish within the current funding period (end of 2027) due to limited time and resources, |
+| {{< var status.ongoing >}} | Ongoing products without a final release (e.g., not archived or officially published). |
 
 ### Software and software-related
 
 Because software development is an ongoing process, software products
-are rarely truly "complete". They continue to evolve through updates and improvements.
-A product is considered to have reached MVP and "done" status once its first version is released on an official software archive (like PyPI for Python packages).
-If the product gets sufficient use, it will
-continue to be tested and refined based on user feedback.
+are rarely truly "complete". They continue to evolve through updates and
+improvements. A product is considered to have reached MVP and "done"
+status once its first version is released on an official software
+archive (like PyPI for Python packages). If the product gets sufficient
+use, it will continue to be tested and refined based on user feedback.
 
-Some of these products are not strictly software, but are designed to work within software environments, integrate with other workflows, or support research software and data engineering.
+Some of these products are not strictly software, but are designed to
+work within software environments, integrate with other workflows, or
+support research software and data engineering.
 
 ::: panel-tabset
 #### Software
 
 | Status | Software |
-|:---------------------------------------------:|:------------------------|
+|:--------------------------------------------:|:------------------------|
 | {{< var status.wip >}} | [`seedcase-project/seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Upload your research data to formally structure it for better, more reliable, and easier research. |
 | {{< var status.planned >}} | `seedcase-project/check-datapackage`: Check the correctness of a `datapackage.json` file. |
 | {{< var status.planned >}} | `seedcase-flower`: Cataloging and browsing metadata within a data package. |
@@ -62,7 +68,7 @@ Some of these products are not strictly software, but are designed to work withi
 #### Software-related products
 
 | Status | Software-related product |
-|:---------------------------------------------:|:------------------------|
+|:--------------------------------------------:|:------------------------|
 | {{< var status.ongoing >}} | [`seedcase-project/seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Template repository for website projects with a Seedcase-specific Quarto extension for aesthetics and infrastructural files. |
 | {{< var status.ongoing >}} | [`seedcase-project/template-python-project`](https://github.com/seedcase-project/template-python-project): A template repository to use when making a Python project for Seedcase. |
 | {{< var status.ongoing >}} | [`seedcase-project/spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects. |
@@ -72,11 +78,11 @@ Some of these products are not strictly software, but are designed to work withi
 
 ### Technical documentation
 
-Following the [diátaxis](https://diataxis.fr/) method, we split documentation into four types: tutorials,
-how-to guides, reference, and explanation. A brief description of these
-types are expanded upon in the sections below. These
-technical documentation products reach MVP and done status when they are
-either:
+Following the [diátaxis](https://diataxis.fr/) method, we split
+documentation into four types: tutorials, how-to guides, reference, and
+explanation. A brief description of these types are expanded upon in the
+sections below. These technical documentation products reach MVP and
+done status when they are either:
 
 -   Uploaded to an archive like Zenodo (to generate a DOI).
 -   Taught to participants in a workshop setting.
@@ -87,9 +93,9 @@ either:
 ::::: panel-tabset
 #### Tutorials
 
-Tutorials are learning-oriented documentation that includes
-workshops, online tutorials, and learning shorts. These will be developed
-as [open educational
+Tutorials are learning-oriented documentation that includes workshops,
+online tutorials, and learning shorts. These will be developed as [open
+educational
 resources](https://en.wikipedia.org/wiki/Open_educational_resources).
 
 | Status | Learning resource |
@@ -181,9 +187,8 @@ pieces, and outreach materials.
 
 ### Outreach and events
 
-These are activities involves engaging with the research
-community, mainly through in-person seminars, symposiums, or other
-events.
+These are activities involves engaging with the research community,
+mainly through in-person seminars, symposiums, or other events.
 
 ::: callout-note
 Given the expertise and resources needed for these types of "products"
