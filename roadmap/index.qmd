@@ -7,63 +7,43 @@ format:
 
 {{< include /includes/_wip.qmd >}}
 
-This is a very high level roadmap and "wishlist" for products we aim or
-want to create and develop in the Seedcase Project. We do not include
-timelines or estimates for completion in this document (see note below).
-We have a more detailed and regularly updated roadmap that has some
-general timelines available on our [Long-term Planning GitHub
+This is a high level roadmap for products we
+want to create in the Seedcase Project. We do not include
+timelines or estimates for completion in this document.
+
+For a more detailed and regularly updated roadmap, see our [Long-term Planning GitHub
 Board](https://github.com/orgs/seedcase-project/projects/22/views/1).
 
-::: callout-important
-Estimating a timeline can be extremely difficult, as it is dependent on
-multiple factors that often can't be predicted or anticipated.
-Therefore, and from our experiences on timelines regularly needing to be
-updated, we avoid giving specific timelines in this document.
-:::
+## Product roadmap
 
-## Product wishlist
-
-This is a non-exhaustive list of products or outputs that we believe
-fill multiple strong needs within the research community, especially in
-order to remain relevant and competitive in the modern research
-landscape. We believe that we have the capability, expertise,
-motivation, and passion to complete these products. These products, we
-believe, will substantially improve how research will be done in the
-future. However, given our current timelines and resources, we can't
-complete all of them but we list them here to show our visions and
+This is a non-exhaustive list of products or outputs that we believe can
+fill multiple strong needs within the research community. These products, we
+believe, have the capacity to substantially improve how research is done. However, given our current timelines and resources, we can't
+complete all of them. We list them here to show our visions and
 goals.
 
 They are split into three main categories: software and
-software-related, technical documentation, and events. Technical
-documentation encompasses more than just usage guides or manuals for
-software, but also includes courses, opinion pieces, and outreach
-materials.
+software-related, technical documentation, and outreach.
 
-Products are listed in the order that we would like to work on and aim
-to complete them. Beside each product is a status, which is one of the
-following:
+Products are listed in the order that we plan to work on and complete them. Beside each product is one of the following status icons:
 
 | Status | Description |
 |:-----------------------------:|:----------------------------------------|
-| {{< var status.done >}} | Products we have completed a minimally viable product (MVP) of. As products are never truly "done", the "done" status simply indicates that the product is now in a usable state, but that we will continue improving and working on it. |
-| {{< var status.wip >}} | Products we are currently working on. |
-| {{< var status.planned >}} | Products we plan to work on and aim to complete within the current funding period (end of 2027). |
-| {{< var status.potential >}} | Products we are very interested in working on, but given the time and resources, may likely not get to within the current funding period (end of 2027). |
-| {{< var status.ongoing >}} | Products that we will continually work on and that don't strictly have a defined endpoint for "done" (e.g. aren't ever released or uploaded to an archive). |
+| {{< var status.done >}} | Products we've completed with a minimally viable product (MVP) that we'll continue to improve and work on. |
+| {{< var status.wip >}} | Products we are working on currently. |
+| {{< var status.planned >}} | Products we plan to complete within the current funding period (end of 2027). |
+| {{< var status.potential >}} | Products we'd like to work on, but probably won't finish within the current funding period (end of 2027) due to limited time and resources,  |
+| {{< var status.ongoing >}} | Ongoing products without a final release (e.g., not archived or officially published).
 
 ### Software and software-related
 
-Because of the evolving nature of developing software, software products
-are rarely "complete", as they continue to be improved on and updated.
-The product reaches MVP and done status when we have created its first
-release on an official software archive (like PyPI for Python packages).
-After the first release of a MVP and if it gets sufficient use, it will
-continue to be tested and refined based on user feedback and identified
-bugs.
+Because software development is an ongoing process, software products
+are rarely truly "complete". They continue to evolve through updates and improvements.
+A product is considered to have reached MVP and "done" status once its first version is released on an official software archive (like PyPI for Python packages).
+If the product gets sufficient use, it will
+continue to be tested and refined based on user feedback.
 
-Some of these products are not strictly software, but can be used within
-a software environment, can be integrate into other workflows, or are
-used to support research software and data engineering.
+Some of these products are not strictly software, but are designed to work within software environments, integrate with other workflows, or support research software and data engineering.
 
 ::: panel-tabset
 #### Software
@@ -77,32 +57,29 @@ used to support research software and data engineering.
 | {{< var status.planned >}} | `seedcase-propagate`: Submitting requests for accessing specific data from a data package. |
 | {{< var status.planned >}} | `seedcase-garden`: Tend to and track projects using data from a data package. |
 
-: "Wishlist" of software products we are currently working on, will work
-on, or hope to work on.
+: "Wishlist" of software products.
 
 #### Software-related products
 
 | Status | Software-related product |
 |:---------------------------------------------:|:------------------------|
-| {{< var status.ongoing >}} | [`seedcase-project/seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Template repository for website projects with a Seedcase-specific Quarto extension for aesthetics, helper commands, and infrastructural files. |
+| {{< var status.ongoing >}} | [`seedcase-project/seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Template repository for website projects with a Seedcase-specific Quarto extension for aesthetics and infrastructural files. |
 | {{< var status.ongoing >}} | [`seedcase-project/template-python-project`](https://github.com/seedcase-project/template-python-project): A template repository to use when making a Python project for Seedcase. |
 | {{< var status.ongoing >}} | [`seedcase-project/spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects. |
 
-: "Wishlist" of software-related products we are currently working on,
-will work on, or hope to work on.
+: "Wishlist" of software-related products.
 :::
 
 ### Technical documentation
 
-Following the [diátaxis](https://diataxis.fr/) method to structuring
-documentation, documentation is split up into four types: tutorials,
+Following the [diátaxis](https://diataxis.fr/) method, we split documentation into four types: tutorials,
 how-to guides, reference, and explanation. A brief description of these
-types of documentation are expanded upon in the sections below. These
+types are expanded upon in the sections below. These
 technical documentation products reach MVP and done status when they are
 either:
 
 -   Uploaded to an archive like Zenodo (to generate a DOI).
--   Taught to participants in a course setting.
+-   Taught to participants in a workshop setting.
 -   Uploaded to a software archive (like PyPI) if they are within a
     software product's repository and are executable (the code within
     runs).
@@ -110,21 +87,21 @@ either:
 ::::: panel-tabset
 #### Tutorials
 
-Tutorials are learning-oriented documentation that includes multi-day
-courses, online tutorials, and learning shorts. These will be developed
+Tutorials are learning-oriented documentation that includes
+workshops, online tutorials, and learning shorts. These will be developed
 as [open educational
 resources](https://en.wikipedia.org/wiki/Open_educational_resources).
 
 | Status | Learning resource |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.wip >}} | [`rostools/git4cats`](https://github.com/rostools/git4cats): 🐱 Git for Collaborative Teams: An introductory course on using Git and GitHub for team-based collaborative workflows and practices |
-| {{< var status.potential >}} | Course: Introduction to building research software using Python as a solo developer in research environments. |
-| {{< var status.potential >}} | Course: Iterative project management and development for effective collaboration and work. |
+| {{< var status.done >}} | [`rostools/github-intro`](https://github.com/rostools/github-intro): An introductory workshop on using GitHub |
+| {{< var status.wip >}} | [`rostools/git4cats`](https://github.com/rostools/git4cats): 🐱 Git for Collaborative Teams: An introductory workshop on using Git and GitHub for team-based collaborative workflows and practices |
+| {{< var status.potential >}} | Workshop: Introduction to building research software using Python as a solo developer in research environments. |
+| {{< var status.potential >}} | Workshop: Iterative project management and development for effective collaboration and work. |
 | {{< var status.potential >}} | [`rostools/r-pkg-intro`](https://github.com/rostools/r-pkg-intro): Build research software using R as a solo developer in research environments. |
-| {{< var status.potential >}} | Course: Building research software using Python in a team setting. |
+| {{< var status.potential >}} | Workshop: Building research software using Python in a team setting. |
 
-: "Wishlist" of learning-type documentation products we are currently
-working on, will work on, or hope to work on.
+: "Wishlist" of learning-type documentation products.
 
 #### How-to guides
 
@@ -146,8 +123,7 @@ user manuals.
 | {{< var status.potential >}} | Building DataOps pipelines and infrastructure for improving research data quality and reduce time from collection to analysis. |
 | {{< var status.potential >}} | Integrating research operations in organizations to improve quality and speed up research. |
 
-: "Wishlist" of goal-type documentation products we are currently
-working on, will work on, or hope to work on.
+: "Wishlist" of goal-type documentation products.
 
 #### Reference
 
@@ -167,14 +143,14 @@ products are all classified as "ongoing".
 
 | Status | Information resource |
 |:--------------------------------------------:|:-------------------------|
+| {{< var status.ongoing >}} | [`seedcase-project/reference`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout. |
 | {{< var status.ongoing >}} | [`seedcase-project/design`](https://github.com/seedcase-project/design): Overall architectural design documentation for Seedcase software. |
 | {{< var status.ongoing >}} | [`seedcase-project/team`](https://github.com/seedcase-project/team): Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
 | {{< var status.ongoing >}} | [`seedcase-project/community`](https://github.com/seedcase-project/community): Content for community building, outreach, and contributing guidelines for the Seedcase Project. |
 | {{< var status.ongoing >}} | [`seedcase-project/seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project. |
 | {{< var status.ongoing >}} | [`seedcase-project/examples`](https://github.com/seedcase-project/examples): Practical examples of how to use Seedcase software to structure datasets and prepare them to be used by others. All data is either fake, synthetically generated, or completely open. |
 
-: "Wishlist" of informational-type documentation products we are
-currently working on, will work on, or hope to work on.
+: "Wishlist" of informational-type documentation products.
 
 #### Explanation
 
@@ -192,8 +168,7 @@ pieces, and outreach materials.
 | {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research? |
 | {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment. |
 
-: "Wishlist" of explanation-type documentation products we are currently
-working on, will work on, or hope to work on.
+: "Wishlist" of explanation-type documentation products.
 
 ::: content-hidden
 | Status | Deliverable |
@@ -206,7 +181,7 @@ working on, will work on, or hope to work on.
 
 ### Outreach and events
 
-These are activities that would involve engaging with the research
+These are activities involves engaging with the research
 community, mainly through in-person seminars, symposiums, or other
 events.
 
@@ -223,8 +198,7 @@ research community about the various topics we work on and advocate for.
 | {{< var status.potential >}} | Seminar series: Unmet needs for research data engineering and current challenges in implementation |
 | {{< var status.potential >}} | Symposium: Current state of data engineering in research environment |
 
-: "Wishlist" of outreach event "products" we are currently working on,
-will work on, or hope to work on.
+: "Wishlist" of outreach event "products".
 
 ## Collaborations and users
 
@@ -233,9 +207,9 @@ deliverables, we aim to test and deploy them in real-world projects. We
 have several potential projects lined up for this:
 
 -   [DP-Next](https://dp-next.github.io/)
+-   [ON-LiMiT](https://steno-aarhus.github.io/ON-LiMiT/)
 -   [ADDITION](https://addition.au.dk/)
 -   [Health in Central
     Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
 -   [DARTER](https://steno-aarhus.github.io/darter-project/)
     (register-based research project at Steno)
--   [DD2](https://dd2.dk/)
