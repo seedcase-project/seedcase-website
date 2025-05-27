@@ -239,4 +239,3 @@ have several potential projects lined up for this:
     Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
 -   [DARTER](https://steno-aarhus.github.io/darter-project/)
     (register-based research project at Steno)
--   [DD2](https://dd2.dk/)
