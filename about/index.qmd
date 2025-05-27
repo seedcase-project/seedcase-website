@@ -26,35 +26,33 @@ Software Engineer](images/marton.jpg){.profile-picture}
 Software Engineer](images/signe.jpg){.profile-picture}
 :::
 
-## Why we build Seedcase
+## What motivated the Seedcase Project
 
 In clinical and health research, especially for small- to mid-sized
-research groups, funding for building modern, open source software
+research groups, funding for building modern, open-source software
 infrastructures for managing and using data is limited. This lack of
-funding has naturally led to organizational challenges for managing
-existing and incoming data for many research initiatives, including the
-Danish Centre for Strategic Research in Type 2 Diabetes (DD2) initiative
-[@Nielsen2012; @DD2], a national research collaboration and database
-initiative established in 2010 with continual enrollment of persons with
-type 2 diabetes. DD2 is one of our collaborators and key stakeholders of
-Seedcase.
+funding has naturally led to organisational challenges in managing both
+existing and incoming data for many research initiatives.
 
-We hope that Seedcase will improve and extend the existing DD2 research
-infrastructure into an open national state-of-the-art research
-infrastructure that will provide easy and transparent access to this
-resource for researchers, clinicians and stakeholders, thus enabling
-excellent data science driven research. Within the DD2 setting, an open,
-transparent, and easy access to this constantly growing resource has the
-potential of greatly improving the interest in, use of, and scientific
-impact of this resource, thus leading to substantial scientific and
-medical advancements, individualised treatment and improved human health
-in not only persons with type 2 diabetes, but population overall.
+In the Seedcase Project, we aim to improve research infrastructure by
+providing tools that ease the management of research data resources and
+improve transparency for researchers, clinicians, and stakeholders.
+Managing data is hard and can easily become time-consuming and complex.
+With the Seedcase Project, we want to provide a framework for managing
+data in a way that is scalable, efficient, and easy to use—while also
+being open source and transparent. This will allow researchers to spend
+more time on actual research by minimising the time spent on data
+management.
 
-Seedcase will not be limited to only DD2. Our **secondary aim** to
-create this framework in such a way that other research groups and
-companies, who are unable to adequately invest in building
-infrastructures of this type, can relatively easily implement it, and
-modify as needed, for their own purposes. By building this framework, we
-hope to help propel research groups and companies across Denmark (and
-globally) to quickly getting updated on modern, scalable, and efficient
-approaches to working with data.
+More open, transparent, and easy access to data resources has the
+potential to greatly improve the interest in, use of, and scientific
+impact of those resources, enabling excellent data science-driven
+research.
+
+We aim to create this framework in a way that enables diverse research
+groups and companies who are unable to adequately invest in building
+infrastructures of this kind to implement it relatively easily and
+modify it as needed for their own purposes. By building this framework,
+we hope to help propel research groups and companies across Denmark (and
+globally) toward modern, scalable, and efficient approaches to working
+with data.
