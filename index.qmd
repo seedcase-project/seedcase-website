@@ -32,7 +32,7 @@ and providing researchers with training in technical skills, we can
 enhance health and well-being research.
 
 See our [Roadmap](/roadmap/index.qmd) or our [About](about/index.qmd)
-page for more information about the project, our values, and our goals.
+page for more information about the project.
 :::
 ::::
 :::::
