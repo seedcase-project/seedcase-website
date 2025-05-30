@@ -149,7 +149,7 @@ products are all classified as "ongoing".
 
 | Status | Information resource |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.ongoing >}} | [`seedcase-project/reference`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout. |
+| {{< var status.ongoing >}} | [`seedcase-project/sprout`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout. |
 | {{< var status.ongoing >}} | [`seedcase-project/design`](https://github.com/seedcase-project/design): Overall architectural design documentation for Seedcase software. |
 | {{< var status.ongoing >}} | [`seedcase-project/team`](https://github.com/seedcase-project/team): Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
 | {{< var status.ongoing >}} | [`seedcase-project/community`](https://github.com/seedcase-project/community): Content for community building, outreach, and contributing guidelines for the Seedcase Project. |
