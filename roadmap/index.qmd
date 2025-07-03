@@ -55,9 +55,9 @@ support research software and data engineering.
 #### Software
 
 | Status | Software |
-|:--------------------------------------------:|:------------------------|
-| {{< var status.wip >}} | [`seedcase-project/seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Upload your research data to formally structure it for better, more reliable, and easier research. |
-| {{< var status.planned >}} | `seedcase-project/check-datapackage`: Check the correctness of a `datapackage.json` file. |
+|:--------------------------------------------:|:-------------------------|
+| {{< var status.done >}} | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow structured, organised, and usable data. |
+| {{< var status.planned >}} | `check-datapackage`: Check the correctness of a `datapackage.json` file. |
 | {{< var status.planned >}} | `seedcase-flower`: Cataloging and browsing metadata within a data package. |
 | {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/). |
 | {{< var status.planned >}} | `seedcase-propagate`: Submitting requests for accessing specific data from a data package. |
@@ -68,10 +68,11 @@ support research software and data engineering.
 #### Software-related products
 
 | Status | Software-related product |
-|:--------------------------------------------:|:------------------------|
-| {{< var status.ongoing >}} | [`seedcase-project/seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Template repository for website projects with a Seedcase-specific Quarto extension for aesthetics and infrastructural files. |
-| {{< var status.ongoing >}} | [`seedcase-project/template-python-project`](https://github.com/seedcase-project/template-python-project): A template repository to use when making a Python project for Seedcase. |
-| {{< var status.ongoing >}} | [`seedcase-project/spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects. |
+|:--------------------------------------------:|:-------------------------|
+| {{< var status.wip >}} | [`template-data-package`](https://github.com/seedcase-project/template-data-package): A template for setting up a data package following the Seedcase structure. |
+| {{< var status.wip >}} | [`template-python-package`](https://github.com/seedcase-project/template-python-package): A template repository to use when making a Python package for Seedcase. |
+| {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Template repository for website projects with a Seedcase-specific Quarto extension for aesthetics and infrastructural files. |
+| {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects. |
 
 : "Wishlist" of software-related products.
 :::
@@ -80,9 +81,10 @@ support research software and data engineering.
 
 Following the [diátaxis](https://diataxis.fr/) method, we split
 documentation into four types: tutorials, how-to guides, reference, and
-explanation. A brief description of these types are expanded upon in the
-sections below. These technical documentation products reach MVP and
-done status when they are either:
+explanation. Right now, we don't create any tutorials, so only the other
+three are listed below. A brief description of these types are expanded
+upon in the sections below. These technical documentation products reach
+MVP and done status when they are either:
 
 -   Uploaded to an archive like Zenodo (to generate a DOI).
 -   Taught to participants in a workshop setting.
@@ -90,7 +92,8 @@ done status when they are either:
     software product's repository and are executable (the code within
     runs).
 
-::::: panel-tabset
+::::::: panel-tabset
+::: content-hidden
 #### Tutorials
 
 Tutorials are learning-oriented documentation that includes workshops,
@@ -100,14 +103,12 @@ resources](https://en.wikipedia.org/wiki/Open_educational_resources).
 
 | Status | Learning resource |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`rostools/github-intro`](https://github.com/rostools/github-intro): An introductory workshop on using GitHub |
-| {{< var status.wip >}} | [`rostools/git4cats`](https://github.com/rostools/git4cats): 🐱 Git for Collaborative Teams: An introductory workshop on using Git and GitHub for team-based collaborative workflows and practices |
 | {{< var status.potential >}} | Workshop: Introduction to building research software using Python as a solo developer in research environments. |
 | {{< var status.potential >}} | Workshop: Iterative project management and development for effective collaboration and work. |
-| {{< var status.potential >}} | [`rostools/r-pkg-intro`](https://github.com/rostools/r-pkg-intro): Build research software using R as a solo developer in research environments. |
 | {{< var status.potential >}} | Workshop: Building research software using Python in a team setting. |
 
 : "Wishlist" of learning-type documentation products.
+:::
 
 #### How-to guides
 
@@ -117,19 +118,29 @@ user manuals.
 
 | Status | Guides or manuals |
 |:--------------------------------------------:|:-------------------------|
+| {{< var status.wip >}} | [`guidebook.seedcase-project.org`](https://guidebook.seedcase-project.org/): Guidebook to doing research software engineering in a team-setting. |
 | {{< var status.wip >}} | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout`. |
 | {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower`. |
 | {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate`. |
 | {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden`. |
-| {{< var status.planned >}} | Improving the research software development lifecycle by integrating DevOps practices. |
-| {{< var status.planned >}} | A guided walkthrough: Team-based collaborative practices and workflows in a research environment. |
-| {{< var status.potential >}} | Sprout data extensions usage guide: Installing or creating extensions for `seedcase-sprout`. |
-| {{< var status.potential >}} | A guided walkthrough: Iterative and incremental project development and management in a research environment. |
-| {{< var status.potential >}} | Using DocOps workflows and infrastructure to reduce time between writing and dissemination. |
-| {{< var status.potential >}} | Building DataOps pipelines and infrastructure for improving research data quality and reduce time from collection to analysis. |
-| {{< var status.potential >}} | Integrating research operations in organizations to improve quality and speed up research. |
+| {{< var status.planned >}} | Shears usage guide: Using and interacting with `seedcase-shears`. |
 
 : "Wishlist" of goal-type documentation products.
+
+::: content-hidden
+Potentials:
+
+-   Improving the research software development lifecycle by integrating
+    DevOps practices.
+-   A guided walkthrough: Team-based collaborative practices and
+    workflows in a research environment.
+-   Using DocOps workflows and infrastructure to reduce time between
+    writing and dissemination.
+-   Building DataOps pipelines and infrastructure for improving research
+    data quality and reduce time from collection to analysis.
+-   Integrating research operations in organizations to improve quality
+    and speed up research.
+:::
 
 #### Reference
 
@@ -149,12 +160,10 @@ products are all classified as "ongoing".
 
 | Status | Information resource |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.ongoing >}} | [`seedcase-project/seedcase-sprout`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout. |
-| {{< var status.ongoing >}} | [`seedcase-project/design`](https://github.com/seedcase-project/design): Overall architectural design documentation for Seedcase software. |
-| {{< var status.ongoing >}} | [`seedcase-project/team`](https://github.com/seedcase-project/team): Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
-| {{< var status.ongoing >}} | [`seedcase-project/community`](https://github.com/seedcase-project/community): Content for community building, outreach, and contributing guidelines for the Seedcase Project. |
-| {{< var status.ongoing >}} | [`seedcase-project/seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project. |
-| {{< var status.ongoing >}} | [`seedcase-project/examples`](https://github.com/seedcase-project/examples): Practical examples of how to use Seedcase software to structure datasets and prepare them to be used by others. All data is either fake, synthetically generated, or completely open. |
+| {{< var status.ongoing >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout. |
+| {{< var status.ongoing >}} | [`design`](https://github.com/seedcase-project/design): General design principles and patterns for the organisation, teams, software, and data used throughout the Seedcase Project. |
+| {{< var status.ongoing >}} | [`team`](https://github.com/seedcase-project/team): Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
+| {{< var status.ongoing >}} | [`seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project. |
 
 : "Wishlist" of informational-type documentation products.
 
@@ -169,8 +178,8 @@ pieces, and outreach materials.
 
 | Status | Deliverable |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.ongoing >}} | [`seedcase-project/community`](https://github.com/seedcase-project/community): Sharing knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management |
-| {{< var status.ongoing >}} | [`seedcase-project/decisions`](https://github.com/seedcase-project/decisions): Archival records on the decisions made for tools or processes we use in the Seedcase Project. |
+| {{< var status.ongoing >}} | [`community`](https://github.com/seedcase-project/community): Content for community building, outreach, and news for the Seedcase Project. |
+| {{< var status.ongoing >}} | [`decisions`](https://github.com/seedcase-project/decisions): Archival records on the decisions made for tools or processes we use in the Seedcase Project. |
 | {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research? |
 | {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment. |
 
@@ -183,8 +192,21 @@ pieces, and outreach materials.
 | {{< var status.potential >}} | Researchers don't know how to effectively work together: Current challenges and potential solutions. |
 | {{< var status.potential >}} | Research institutions and funding agencies are not yet designed to support effective and robust, and therefore vital, research software development. |
 :::
-:::::
+:::::::
 
+### Examples that use our products
+
+These are practical examples of how to use Seedcase software to
+structure datasets and prepare them to be used by others. The data is
+openly licensed.
+
+| Status | Deliverable |
+|:--------------------------------------------:|:-------------------------|
+| {{< var status.ongoing >}} | [`example-rhesus-monkeys`](https://github.com/seedcase-project/example-rhesus-monkeys): Example repository for making a data package with data from a study of maternal obesity in rhesus monkeys |
+| {{< var status.ongoing >}} | [`example-seed-beetle`](https://github.com/seedcase-project/example-seed-beetle): Example repository for making a data package with data from a study of complex mitonuclear interactions and metabolic costs of mating in male seed beetles |
+| {{< var status.ongoing >}} | [`example-rainforest`](https://github.com/seedcase-project/example-rainforest): Example repository for making a data package with data from a study of seed germination in the rainforest |
+
+:::: content-hidden
 ### Outreach and events
 
 These are activities involves engaging with the research community,
@@ -204,6 +226,7 @@ research community about the various topics we work on and advocate for.
 | {{< var status.potential >}} | Symposium: Current state of data engineering in research environment |
 
 : "Wishlist" of outreach event "products".
+::::
 
 ## Collaborations and users
 
@@ -212,7 +235,7 @@ deliverables, we aim to test and deploy them in real-world projects. We
 have several potential projects lined up for this:
 
 -   [DP-Next](https://dp-next.github.io/)
--   [ON-LiMiT](https://steno-aarhus.github.io/ON-LiMiT/)
+-   [ON-LiMiT](https://onlimit.org/)
 -   [ADDITION](https://addition.au.dk/)
 -   [Health in Central
     Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
