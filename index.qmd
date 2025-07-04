@@ -33,7 +33,7 @@ dedication in nearly all aspects of our work. All of our values and
 principles are described on our
 [design](https://design.seedcase-project.org/) website.
 
-We believe that by developing open source software aimed firmly at
+We believe that by developing open-source software aimed firmly at
 solving real and difficult problems in health research, we can improve
 the quality of research data and ultimately improve health research.
 
