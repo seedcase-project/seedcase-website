@@ -136,7 +136,7 @@ Potentials:
     workflows in a research environment.
 -   Using DocOps workflows and infrastructure to reduce time between
     writing and dissemination.
--   Building DataOps pipelines and infrastructure for improving research
+-   Building DataOps pipelines and infrastructure to improve research
     data quality and reduce time from collection to analysis.
 -   Integrating research operations in organizations to improve quality
     and speed up research.
@@ -178,8 +178,8 @@ pieces, and outreach materials.
 
 | Status | Deliverable |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.ongoing >}} | [`community`](https://github.com/seedcase-project/community): Content for community building, outreach, and news for the Seedcase Project. |
-| {{< var status.ongoing >}} | [`decisions`](https://github.com/seedcase-project/decisions): Archival records on the decisions made for tools or processes we use in the Seedcase Project. |
+| {{< var status.ongoing >}} | [`community`](https://github.com/seedcase-project/community): Content for community building, outreach, and news about the Seedcase Project. |
+| {{< var status.ongoing >}} | [`decisions`](https://github.com/seedcase-project/decisions): Archival records of decisions made about tools or processes we use in the Seedcase Project. |
 | {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research? |
 | {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment. |
 
