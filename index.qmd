@@ -1,5 +1,5 @@
 ---
-title: "A framework for open and scalable data"
+title: "A framework for building modern infrastructures for structured, standardised, and usable research data"
 toc: false
 sidebar: false
 page-layout: custom
@@ -24,12 +24,18 @@ about:
 ::::: hero-banner
 :::: landing-page-block
 ::: hero-text
-## A value-driven initiative
+## A value-based and principle-driven software development initiative
 
-In the **Seedcase Project**, we're dedicated to open science and
-open-source software. We believe that by developing open-source software
-and providing researchers with training in technical skills, we can
-enhance health and well-being research.
+In the **Seedcase Project**, we don't just develop software. We also
+build a culture strongly centered on values and principles. We're
+dedicated to open science and open source, and we incorporate this
+dedication in nearly all aspects of our work. All of our values and
+principles are described on our
+[design](https://design.seedcase-project.org/) website.
+
+We believe that by developing open-source software aimed firmly at
+solving real and difficult problems in health research, we can improve
+the quality of research data and ultimately improve health research.
 
 See our [Roadmap](/roadmap/index.qmd) or our [About](about/index.qmd)
 page for more information about the project.
@@ -41,17 +47,18 @@ page for more information about the project.
 ## Goals
 
 The Seedcase Project is more than software: It is also about education,
-training, and the code itself.
+awareness, and the code itself.
 
 ### Develop open-source software for health data
 
 Software that is open-source and targeted to diverse users, like health
 research organizations and small-to-medium sized companies.
 
-### Create training material and run workshops
+### Create beginner-friendly documentation
 
-Specifically training on technical skills such as software and data
-engineering, while following open scientific practices.
+Software is nothing without documentation. We strive to create
+documentation that is beginner-friendly, easy to understand, and as
+accessible as possible.
 
 ### Build and nurture an inclusive community
 
