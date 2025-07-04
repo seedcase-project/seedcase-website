@@ -18,5 +18,5 @@ more information.
 Looking to contribute? Check out our [contributing
 guidelines](https://guidebook.seedcase-project.org). Please note that
 the Seedcase Project is released with a [Contributor Code of
-Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md)
+Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.
