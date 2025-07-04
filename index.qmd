@@ -24,13 +24,13 @@ about:
 ::::: hero-banner
 :::: landing-page-block
 ::: hero-text
-## A highly value-based and principles-driven software development initiative
+## A value-based and principle-driven software development initiative
 
 In the **Seedcase Project**, we don't just develop software. We also
 build a culture strongly centered on values and principles. We're
 dedicated to open science and open source, and we incorporate this
 dedication in nearly all aspects of our work. All of our values and
-principles are described in our
+principles are described on our
 [design](https://design.seedcase-project.org/) website.
 
 We believe that by developing open source software aimed firmly at
