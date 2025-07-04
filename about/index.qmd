@@ -1,5 +1,5 @@
 ---
-title: About Seedcase
+title: About
 format:
   seedcase-theme-html:
      css: styles.css
@@ -7,23 +7,23 @@ format:
 
 ## Who we are
 
-The Seedcase project is developed by the four of us at the Steno
+The Seedcase Project is developed by the four of us at the Steno
 Diabetes Center Aarhus and Department of Clinical Medicine at Aarhus
 University in Aarhus, Denmark, and is funded by a five year grant from
-the Novo Nordisk Foundation.
+the [Novo Nordisk Foundation](/index.qmd#acknowledgements).
 
 ::: {layout-ncol="2"}
 ![Kristiane Beicher\
-Database Administrator](images/kristiane.jpg){.profile-picture}
+Data Architect](images/kristiane.jpg){.profile-picture}
 
 ![Luke W. Johnston\
 Team Leader](images/luke.jpg){.profile-picture}
 
 ![Marton Vago\
-Software Engineer](images/marton.jpg){.profile-picture}
+Research Software Engineer](images/marton.jpg){.profile-picture}
 
 ![Signe Kirk Brødbæk\
-Software Engineer](images/signe.jpg){.profile-picture}
+Research Software Engineer](images/signe.jpg){.profile-picture}
 :::
 
 ## What motivated the Seedcase Project
