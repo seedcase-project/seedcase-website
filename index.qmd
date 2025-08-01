@@ -1,5 +1,5 @@
 ---
-title: "A framework for building modern infrastructures for structured, standardised, and usable research data"
+title: "A framework for building modern infrastructures for structured, standardised, and FAIR research data"
 toc: false
 sidebar: false
 page-layout: custom
@@ -24,6 +24,22 @@ about:
 ::::: hero-banner
 :::: landing-page-block
 ::: hero-text
+## Developing software that improves the quality and management of research data
+
+Our primary goal is to build software solutions that help:
+
+-   Research groups and institutions create and manage high-quality,
+    structured, modern, standardised, and FAIR (Findable, Accessible,
+    Interoperable, and Reusable) research data.
+-   Individual researchers to be more easily able to discover, find, and
+    (re-)use data for their own research.
+-   To reduce the time from data generation to eventual scientific
+    dissemination by focusing on streamlining and automating the data
+    ingestion, processing, storage, and management processes.
+
+See our [roadmap](/roadmap/index.qmd) for more details on specifics of
+the software we are building.
+
 ## A value-based and principle-driven software development initiative
 
 In the **Seedcase Project**, we don't just develop software. We also
