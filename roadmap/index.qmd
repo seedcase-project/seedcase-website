@@ -5,11 +5,10 @@ format:
         tbl-colwidths: [20, 80]
 ---
 
-{{< include /includes/_wip.qmd >}}
-
 This is a high level roadmap for products we want to create in the
 Seedcase Project. We do not include timelines or estimates for
-completion in this document.
+completion in this document. We also often update this roadmap as we
+progress through the project.
 
 For a more detailed and regularly updated roadmap, see our [Long-term
 Planning GitHub
@@ -35,7 +34,7 @@ them. Beside each product is one of the following status icons:
 | {{< var status.done >}} | Products we've completed with a minimally viable product (MVP) that we'll continue to improve and work on. |
 | {{< var status.wip >}} | Products we are working on currently. |
 | {{< var status.planned >}} | Products we plan to complete within the current funding period (end of 2027). |
-| {{< var status.potential >}} | Products we'd like to work on, but probably won't finish within the current funding period (end of 2027) due to limited time and resources, |
+| {{< var status.potential >}} | Products we'd like to work on, but probably won't finish within the current funding period (end of 2027) due to limited time and resources. |
 | {{< var status.ongoing >}} | Ongoing products without a final release (e.g., not archived or officially published). |
 
 ### Software and software-related
@@ -56,7 +55,7 @@ support research software and data engineering.
 
 | Status | Software |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow structured, organised, and usable data. |
+| {{< var status.done >}} | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow structured, organised, and FAIR data. |
 | {{< var status.planned >}} | `check-datapackage`: Check the correctness of a `datapackage.json` file. |
 | {{< var status.planned >}} | `seedcase-flower`: Cataloging and browsing metadata within a data package. |
 | {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/). |
@@ -69,8 +68,9 @@ support research software and data engineering.
 
 | Status | Software-related product |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.wip >}} | [`template-data-package`](https://github.com/seedcase-project/template-data-package): A template for setting up a data package following the Seedcase structure. |
+| {{< var status.done >}} | [`template-data-package`](https://github.com/seedcase-project/template-data-package): An opinionated template for Data Packages built with Seedcase packages. |
 | {{< var status.wip >}} | [`template-python-package`](https://github.com/seedcase-project/template-python-package): A template repository to use when making a Python package for Seedcase. |
+| {{< var status.wip >}} | [`template-website`](https://github.com/seedcase-project/template-website): An opinionated template for making Quarto-based websites. |
 | {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Template repository for website projects with a Seedcase-specific Quarto extension for aesthetics and infrastructural files. |
 | {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects. |
 
@@ -84,13 +84,17 @@ documentation into four types: tutorials, how-to guides, reference, and
 explanation. Right now, we don't create any tutorials, so only the other
 three are listed below. A brief description of these types are expanded
 upon in the sections below. These technical documentation products reach
-MVP and done status when they are either:
+MVP and "done" status when they are either:
 
 -   Uploaded to an archive like Zenodo (to generate a DOI).
--   Taught to participants in a workshop setting.
 -   Uploaded to a software archive (like PyPI) if they are within a
     software product's repository and are executable (the code within
     runs).
+
+Just like with the software products, these documentation products
+continue to evolve and improve over time. They are not static. So even
+though they have a "done" status, we continue working on them and
+continuously releasing updates to them.
 
 ::::::: panel-tabset
 ::: content-hidden
@@ -118,8 +122,11 @@ user manuals.
 
 | Status | Guides or manuals |
 |:--------------------------------------------:|:-------------------------|
+| {{< var status.done >}} | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout`. |
+| {{< var status.done >}} | [`template-data-package.seedcase-project.org`](https://template-data-package.seedcase-project.org/docs/guide) usage guide: Using the template to make data packages. |
+| {{< var status.wip >}} | [`template-website.seedcase-project.org`](https://template-website.seedcase-project.org/docs/guide) usage guide: Using the template to make websites. |
+| {{< var status.wip >}} | [`template-python-package.seedcase-project.org`](https://template-python-package.seedcase-project.org/docs/guide) usage guide: Using the template to make Python packages. |
 | {{< var status.wip >}} | [`guidebook.seedcase-project.org`](https://guidebook.seedcase-project.org/): Guidebook to doing research software engineering in a team-setting. |
-| {{< var status.wip >}} | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout`. |
 | {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower`. |
 | {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate`. |
 | {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden`. |
@@ -155,12 +162,15 @@ guidelines we have.
 Because of the nature of reference documentation, they don't really have
 a "done" status nor do they have clearly defined "endpoints", like
 uploading to an archive to generate a DOI. For these reasons, these
-products are all classified as "ongoing".
+products are usually classified as "ongoing". If they are part of a
+software product, they are considered "done" when the software product
+is released on an official software archive (like PyPI for Python
+packages).
 :::
 
 | Status | Information resource |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.ongoing >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout. |
+| {{< var status.done >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout. |
 | {{< var status.ongoing >}} | [`design`](https://github.com/seedcase-project/design): General design principles and patterns for the organisation, teams, software, and data used throughout the Seedcase Project. |
 | {{< var status.ongoing >}} | [`team`](https://github.com/seedcase-project/team): Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
 | {{< var status.ongoing >}} | [`seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project. |
@@ -230,12 +240,16 @@ research community about the various topics we work on and advocate for.
 
 ## Collaborations and users
 
-Once we have a minimum viable product for any of the software
-deliverables, we aim to test and deploy them in real-world projects. We
-have several potential projects lined up for this:
+As we now have working packages, we are currently collaborating with
+several other projects to integrate our software and build data packages
+for their data. The projects we collaborate with are:
 
 -   [DP-Next](https://dp-next.github.io/)
 -   [ON-LiMiT](https://onlimit.org/)
+
+We also have some groups interested and who may be future collaborators.
+These other projects are:
+
 -   [ADDITION](https://addition.au.dk/)
 -   [Health in Central
     Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
