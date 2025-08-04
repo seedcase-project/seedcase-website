@@ -94,7 +94,7 @@ MVP and "done" status when they are either:
 Just like with the software products, these documentation products
 continue to evolve and improve over time. They are not static. So even
 though they have a "done" status, we continue working on them and
-continuously releasing updates to them.
+continuously release updates to them.
 
 ::::::: panel-tabset
 ::: content-hidden
@@ -247,7 +247,7 @@ for their data. The projects we collaborate with are:
 -   [DP-Next](https://dp-next.github.io/)
 -   [ON-LiMiT](https://onlimit.org/)
 
-We also have some groups interested and who may be future collaborators.
+Other groups have also expressed interest and may become future collaborators.
 These other projects are:
 
 -   [ADDITION](https://addition.au.dk/)
