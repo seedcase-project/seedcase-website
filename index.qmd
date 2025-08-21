@@ -65,24 +65,24 @@ page for more information about the project.
 ::: hero-text
 ## Goals
 
-### Develop open-source software for health data
+### [{{< fa code >}}]{style="color: #48DC76"} Develop open-source software for health data
 
 Software that is open-source and targeted to diverse users, like health
 research organizations and small-to-medium sized companies.
 
-### Create beginner-friendly documentation
+### [{{< fa pen >}}]{style="color: #48DC76"} Create beginner-friendly documentation
 
 Software is nothing without documentation. We strive to create
 documentation that is beginner-friendly, easy to understand, and as
 accessible as possible.
 
-### Build and nurture an inclusive community
+### [{{< fa people-group >}}]{style="color: #48DC76"} Build an inclusive community
 
 A community that is open and inclusive that shares knowledge, learnings,
 and better practices in research data engineering and software
 engineering.
 
-### Lead by example
+### [{{< fa flag >}}]{style="color: #48DC76"} Lead by example
 
 By building this project as fully open as possible and applying the same
 principles we teach and advocate for.
