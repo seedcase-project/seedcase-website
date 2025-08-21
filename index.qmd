@@ -1,25 +1,25 @@
 ---
-title: "A framework for building modern infrastructures for structured, standardised, and FAIR research data"
 toc: false
-sidebar: false
 page-layout: custom
-image: _extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg
-image-alt: Seedcase logo.
-about:
-  id: hero-heading
-  template: solana
-  image-width: 10em
-  links:
-    - text: "Check out Sprout"
-      href: "https://sprout.seedcase-project.org/"
-    - text: "Explore our design docs"
-      href: "https://design.seedcase-project.org/"
 ---
 
-:::: landing-page-block
-::: {#hero-heading}
+::::: landing-page-block
+:::: hero-text
+::: text-center
+![](_extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg){fig-alt="Seedcase logo."
+width="150px"}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/seedcase-font.svg){fig-alt="Seedcase font."
+width="250px"}
+
+# A framework for building modern infrastructures for structured, standardised, and FAIR research data
+
+[Check out Sprout](https://sprout.seedcase-project.org/){.btn
+.about-link} [Explore our design
+docs](https://design.seedcase-project.org/){.btn .about-link}
 :::
 ::::
+:::::
 
 ::::: hero-banner
 :::: landing-page-block
@@ -37,10 +37,11 @@ Our primary goal is to build software solutions that help:
     dissemination by focusing on streamlining and automating the data
     ingestion, processing, storage, and management processes.
 
-See our [roadmap](/roadmap/index.qmd) for more details on specifics of
-the software we are building.
+:::
+::::
+:::::
 
-## A value-based and principle-driven software development initiative
+::: landing-page-block
 
 In the **Seedcase Project**, we don't just develop software. We also
 build a culture strongly centered on values and principles. We're
@@ -56,14 +57,11 @@ the quality of research data and ultimately improve health research.
 See our [Roadmap](/roadmap/index.qmd) or our [About](about/index.qmd)
 page for more information about the project.
 :::
-::::
-:::::
 
-::: landing-page-block
+::::: hero-banner
+:::: landing-page-block
+::: hero-text
 ## Goals
-
-The Seedcase Project is more than software: It is also about education,
-awareness, and the code itself.
 
 ### Develop open-source software for health data
 
@@ -87,10 +85,10 @@ engineering.
 By building this project as fully open as possible and applying the same
 principles we teach and advocate for.
 :::
+::::
+:::::
 
-::::::::::: hero-banner
-:::::::::: landing-page-block
-::::::::: hero-text
+::::::::: landing-page-block
 ## Acknowledgements {#acknowledgements}
 
 ::::: {layout="[70, 30]"}
@@ -122,5 +120,3 @@ We are employed at [Aarhus University](https://www.au.dk/en/) and at the
 :::
 :::::
 :::::::::
-::::::::::
-:::::::::::
