@@ -15,8 +15,7 @@ width="250px"}
 # A framework for building FAIR research data
 
 [Check out Sprout](https://sprout.seedcase-project.org/){.btn
-.about-link} [Explore our design
-docs](https://design.seedcase-project.org/){.btn .about-link}
+.about-link} [Explore our Roadmap](/roadmap/index.qmd){.btn .about-link}
 :::
 ::::
 :::::
