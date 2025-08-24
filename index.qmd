@@ -1,53 +1,56 @@
 ---
-title: "A framework for building modern infrastructures for structured, standardised, and FAIR research data"
 toc: false
-sidebar: false
 page-layout: custom
-image: _extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg
-image-alt: Seedcase logo.
-about:
-  id: hero-heading
-  template: solana
-  image-width: 10em
-  links:
-    - text: "Check out Sprout"
-      href: "https://sprout.seedcase-project.org/"
-    - text: "Explore our design docs"
-      href: "https://design.seedcase-project.org/"
 ---
 
-:::: landing-page-block
-::: {#hero-heading}
+::::: landing-page-block
+:::: hero-text
+::: text-center
+![](_extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg){fig-alt="Seedcase logo."
+width="150px"}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/seedcase-font.svg){fig-alt="Seedcase font."
+width="250px"}
+
+# A framework for building FAIR research data
+
+[Check out Sprout](https://sprout.seedcase-project.org/){.btn
+.about-link} [Explore our Roadmap](/roadmap/index.qmd){.btn .about-link}
 :::
 ::::
+:::::
 
 ::::: hero-banner
 :::: landing-page-block
 ::: hero-text
-## Developing software that improves the quality and management of research data
+## Software that improves research data quality and management
 
-Our primary goal is to build software solutions that help:
+Our primary goal is to build open software solutions that help:
 
--   Research groups and institutions create and manage high-quality,
-    structured, modern, standardised, and FAIR (Findable, Accessible,
-    Interoperable, and Reusable) research data.
--   Individual researchers to find and
-    (re-)use data more easily for their own research.
--   To reduce the time from data generation to eventual scientific
-    dissemination by focusing on streamlining and automating the data
-    ingestion, processing, storage, and management processes.
+-   Research groups and institutions create and manage high-quality and
+    FAIR (Findable, Accessible, Interoperable, and Reusable) research
+    data.
+-   Individual researchers to find and (re-)use data more easily for
+    their own research.
+-   Reduce the time from data generation to scientific dissemination by
+    focusing on streamlining and automating the data ingestion,
+    processing, storage, and management processes.
 
-See our [roadmap](/roadmap/index.qmd) for more details on specifics of
-the software we are building.
+See our [Roadmap](/roadmap/index.qmd) for more details on the software
+we are building.
+:::
+::::
+:::::
 
-## A value-based and principle-driven software development initiative
+::: landing-page-block
+## A value-based and principle-driven initiative
 
 In the **Seedcase Project**, we don't just develop software. We also
 build a culture strongly centered on values and principles. We're
-dedicated to open science and open source, and we incorporate this
-dedication in nearly all aspects of our work. All of our values and
-principles are described on our
-[design](https://design.seedcase-project.org/) website.
+dedicated to **open science** and **open source**, and we incorporate
+this dedication in all aspects of our work. Our values and principles
+are described on our [design](https://design.seedcase-project.org/)
+website.
 
 We believe that by developing open-source software aimed firmly at
 solving real and difficult problems in health research, we can improve
@@ -56,41 +59,38 @@ the quality of research data and ultimately improve health research.
 See our [Roadmap](/roadmap/index.qmd) or our [About](about/index.qmd)
 page for more information about the project.
 :::
-::::
-:::::
 
-::: landing-page-block
+::::: hero-banner
+:::: landing-page-block
+::: hero-text
 ## Goals
 
-The Seedcase Project is more than software: It is also about education,
-awareness, and the code itself.
-
-### Develop open-source software for health data
+### [{{< fa code >}}]{style="color: #48DC76"} Develop open-source software for health data
 
 Software that is open-source and targeted to diverse users, like health
 research organizations and small-to-medium sized companies.
 
-### Create beginner-friendly documentation
+### [{{< fa pen >}}]{style="color: #48DC76"} Create beginner-friendly documentation
 
 Software is nothing without documentation. We strive to create
 documentation that is beginner-friendly, easy to understand, and as
 accessible as possible.
 
-### Build and nurture an inclusive community
+### [{{< fa people-group >}}]{style="color: #48DC76"} Build an inclusive community
 
 A community that is open and inclusive that shares knowledge, learnings,
 and better practices in research data engineering and software
 engineering.
 
-### Lead by example
+### [{{< fa flag >}}]{style="color: #48DC76"} Lead by example
 
 By building this project as fully open as possible and applying the same
 principles we teach and advocate for.
 :::
+::::
+:::::
 
-::::::::::: hero-banner
-:::::::::: landing-page-block
-::::::::: hero-text
+::::::::: landing-page-block
 ## Acknowledgements {#acknowledgements}
 
 ::::: {layout="[70, 30]"}
@@ -122,5 +122,3 @@ We are employed at [Aarhus University](https://www.au.dk/en/) and at the
 :::
 :::::
 :::::::::
-::::::::::
-:::::::::::
