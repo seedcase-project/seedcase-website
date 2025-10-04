@@ -14,16 +14,16 @@ the [Novo Nordisk Foundation](/index.qmd#acknowledgements).
 
 ::: {layout-ncol="2"}
 ![Kristiane Beicher\
-Data Architect](images/kristiane.jpg){.profile-picture}
+Data Architect](images/k-beicher.jpg){.profile-picture}
 
 ![Luke W. Johnston\
-Team Leader](images/luke.jpg){.profile-picture}
+Team Leader](images/lwjohnst86.jpg){.profile-picture}
 
 ![Marton Vago\
-Research Software Engineer](images/marton.jpg){.profile-picture}
+Research Software Engineer](images/martonvago.jpg){.profile-picture}
 
 ![Signe Kirk Brødbæk\
-Research Software Engineer](images/signe.jpg){.profile-picture}
+Research Software Engineer](images/signekb.jpg){.profile-picture}
 :::
 
 ## What motivated the Seedcase Project
