@@ -24,6 +24,9 @@ Research Software Engineer](images/martonvago.jpg){.profile-picture}
 
 ![Signe Kirk Brødbæk\
 Research Software Engineer](images/signekb.jpg){.profile-picture}
+
+![Joel Ostblom\
+Consultant](images/joelostblom.jpg){.profile-picture}
 :::
 
 ## What motivated the Seedcase Project
