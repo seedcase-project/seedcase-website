@@ -122,12 +122,12 @@ user manuals.
 
 | Status | Guides or manuals |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout`. |
-| {{< var status.done >}} | [`check-datapackage.seedcase-project.org`](https://check-datapackage.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-check-datapackage`. |
-| {{< var status.done >}} | [`template-data-package.seedcase-project.org`](https://template-data-package.seedcase-project.org/docs/guide) usage guide: Using the template to make data packages. |
-| {{< var status.done >}} | [`template-website.seedcase-project.org`](https://template-website.seedcase-project.org/docs/guide) usage guide: Using the template to make websites. |
-| {{< var status.done >}} | [`template-python-package.seedcase-project.org`](https://template-python-package.seedcase-project.org/docs/guide) usage guide: Using the template to make Python packages. |
-| {{< var status.wip >}} | [`guidebook.seedcase-project.org`](https://guidebook.seedcase-project.org/): Guidebook on collaborating as a team on projects kept on GitHub. |
+| {{< var status.done >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout`. |
+| {{< var status.done >}} | [`check-datapackage`](https://check-datapackage.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-check-datapackage`. |
+| {{< var status.done >}} | [`template-data-package`](https://template-data-package.seedcase-project.org/docs/guide) usage guide: Using the template to make data packages. |
+| {{< var status.done >}} | [`template-website`](https://template-website.seedcase-project.org/docs/guide) usage guide: Using the template to make websites. |
+| {{< var status.done >}} | [`template-python-package`](https://template-python-package.seedcase-project.org/docs/guide) usage guide: Using the template to make Python packages. |
+| {{< var status.wip >}} | [`guidebook`](https://guidebook.seedcase-project.org/): Guidebook on collaborating as a team on projects kept on GitHub. |
 | {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower`. |
 | {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate`. |
 | {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden`. |
