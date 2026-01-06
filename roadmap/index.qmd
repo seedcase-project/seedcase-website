@@ -56,8 +56,8 @@ support research software and data engineering.
 | Status | Software |
 |:--------------------------------------------:|:-------------------------|
 | {{< var status.done >}} | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow structured, organised, and FAIR data. |
-| {{< var status.planned >}} | `check-datapackage`: Check the correctness of a `datapackage.json` file. |
-| {{< var status.planned >}} | `seedcase-flower`: Cataloging and browsing metadata within a data package. |
+| {{< var status.done >}} | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata. |
+| {{< var status.wip >}} | `seedcase-flower`: Display your `datapackage.json` file in a human-friendly way. |
 | {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/). |
 | {{< var status.planned >}} | `seedcase-propagate`: Submitting requests for accessing specific data from a data package. |
 | {{< var status.planned >}} | `seedcase-garden`: Tend to and track projects using data from a data package. |
@@ -69,9 +69,9 @@ support research software and data engineering.
 | Status | Software-related product |
 |:--------------------------------------------:|:-------------------------|
 | {{< var status.done >}} | [`template-data-package`](https://github.com/seedcase-project/template-data-package): An opinionated template for Data Packages built with Seedcase packages. |
-| {{< var status.wip >}} | [`template-python-package`](https://github.com/seedcase-project/template-python-package): A template repository to use when making a Python package for Seedcase. |
-| {{< var status.wip >}} | [`template-website`](https://github.com/seedcase-project/template-website): An opinionated template for making Quarto-based websites. |
-| {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Template repository for website projects with a Seedcase-specific Quarto extension for aesthetics and infrastructural files. |
+| {{< var status.done >}} | [`template-python-package`](https://github.com/seedcase-project/template-python-package): A template repository to use when making a Python package for Seedcase. |
+| {{< var status.done >}} | [`template-website`](https://github.com/seedcase-project/template-website): An opinionated template for making Quarto-based websites. |
+| {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Quarto extension that contains shortcodes, embedded extensions, and style theming for Seedcase Project Quarto-based website repositories. |
 | {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects. |
 
 : "Wishlist" of software-related products.
@@ -124,9 +124,9 @@ user manuals.
 |:--------------------------------------------:|:-------------------------|
 | {{< var status.done >}} | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout`. |
 | {{< var status.done >}} | [`template-data-package.seedcase-project.org`](https://template-data-package.seedcase-project.org/docs/guide) usage guide: Using the template to make data packages. |
-| {{< var status.wip >}} | [`template-website.seedcase-project.org`](https://template-website.seedcase-project.org/docs/guide) usage guide: Using the template to make websites. |
-| {{< var status.wip >}} | [`template-python-package.seedcase-project.org`](https://template-python-package.seedcase-project.org/docs/guide) usage guide: Using the template to make Python packages. |
-| {{< var status.wip >}} | [`guidebook.seedcase-project.org`](https://guidebook.seedcase-project.org/): Guidebook to doing research software engineering in a team-setting. |
+| {{< var status.done >}} | [`template-website.seedcase-project.org`](https://template-website.seedcase-project.org/docs/guide) usage guide: Using the template to make websites. |
+| {{< var status.done >}} | [`template-python-package.seedcase-project.org`](https://template-python-package.seedcase-project.org/docs/guide) usage guide: Using the template to make Python packages. |
+| {{< var status.wip >}} | [`guidebook.seedcase-project.org`](https://guidebook.seedcase-project.org/): Guidebook on collaborating as a team on projects kept on GitHub. |
 | {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower`. |
 | {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate`. |
 | {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden`. |
