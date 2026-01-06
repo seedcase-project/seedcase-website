@@ -249,8 +249,8 @@ for their data. The projects we collaborate with are:
 -   [DP-Next](https://dp-next.github.io/)
 -   [ON-LiMiT](https://onlimit.org/)
 
-Other groups have also expressed interest and may become future collaborators.
-These other projects are:
+Other groups have also expressed interest and may become future
+collaborators. These other projects are:
 
 -   [ADDITION](https://addition.au.dk/)
 -   [Health in Central
