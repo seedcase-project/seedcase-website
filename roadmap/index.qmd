@@ -123,6 +123,7 @@ user manuals.
 | Status | Guides or manuals |
 |:--------------------------------------------:|:-------------------------|
 | {{< var status.done >}} | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout`. |
+| {{< var status.done >}} | [`check-datapackage.seedcase-project.org`](https://check-datapackage.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-check-datapackage`. |
 | {{< var status.done >}} | [`template-data-package.seedcase-project.org`](https://template-data-package.seedcase-project.org/docs/guide) usage guide: Using the template to make data packages. |
 | {{< var status.done >}} | [`template-website.seedcase-project.org`](https://template-website.seedcase-project.org/docs/guide) usage guide: Using the template to make websites. |
 | {{< var status.done >}} | [`template-python-package.seedcase-project.org`](https://template-python-package.seedcase-project.org/docs/guide) usage guide: Using the template to make Python packages. |
@@ -171,6 +172,7 @@ packages).
 | Status | Information resource |
 |:--------------------------------------------:|:-------------------------|
 | {{< var status.done >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout. |
+| {{< var status.done >}} | [`check-datapackage`](https://check-datapackage.seedcase-project.org/docs/reference/): Reference docs for `check-datapackage`. |
 | {{< var status.ongoing >}} | [`design`](https://github.com/seedcase-project/design): General design principles and patterns for the organisation, teams, software, and data used throughout the Seedcase Project. |
 | {{< var status.ongoing >}} | [`team`](https://github.com/seedcase-project/team): Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
 | {{< var status.ongoing >}} | [`seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project. |
