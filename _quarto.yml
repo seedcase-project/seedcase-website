@@ -8,7 +8,7 @@ website:
   page-navigation: true
   navbar:
     title: false
-    logo: _extensions/seedcase-project/seedcase-theme/logos/navbar-logo-seedcase-project.svg
+    logo: _extensions/seedcase-project/seedcase-theme/logos/seedcase/navbar.svg
     logo-alt: "Seedcase Project logo: Main page"
     pinned: true
     left:
