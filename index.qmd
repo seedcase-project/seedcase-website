@@ -6,10 +6,10 @@ page-layout: custom
 ::::: landing-page-block
 :::: hero-text
 ::: text-center
-![](_extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg){fig-alt="Seedcase logo."
+![](_extensions/seedcase-project/seedcase-theme/logos/seedcase/icon.svg){fig-alt="Seedcase logo."
 width="150px"}
 
-![](_extensions/seedcase-project/seedcase-theme/logos/seedcase-font.svg){fig-alt="Seedcase font."
+![](_extensions/seedcase-project/seedcase-theme/logos/seedcase/font.svg){fig-alt="Seedcase font."
 width="250px"}
 
 # A framework for building FAIR research data
@@ -102,16 +102,16 @@ See the application
 :::
 
 ::: {#acknowledgements-right}
-![](_extensions/seedcase-project/seedcase-theme/logos/nnf-logo.png){fig-alt="The Novo Nordisk Foundation logo"
+![](_extensions/seedcase-project/seedcase-theme/logos/external/nnf.png){fig-alt="The Novo Nordisk Foundation logo"
 width="200px" fig-align="right"}
 :::
 :::::
 
 ::::: {layout="[30, 70]"}
 ::: {#employers-left}
-![](_extensions/seedcase-project/seedcase-theme/logos/au-logo.png){fig-alt="Aarhus University logo"
+![](_extensions/seedcase-project/seedcase-theme/logos/external/au.png){fig-alt="Aarhus University logo"
 width="200px" fig-align="center"}
-![](_extensions/seedcase-project/seedcase-theme/logos/rm-logo.svg){fig-alt="Central Denmark Region logo"
+![](_extensions/seedcase-project/seedcase-theme/logos/external/rm.svg){fig-alt="Central Denmark Region logo"
 width="140px" fig-align="center"}
 :::
 
