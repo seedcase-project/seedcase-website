@@ -2,7 +2,7 @@
     just --list --unsorted
 
 # Run all necessary build commands.
-run-all: check-spelling check-commits build-website
+run-all: check-spelling check-commits update-quarto-theme build-website
 
 # Install the pre-commit hooks
 install-precommit:
@@ -32,3 +32,8 @@ check-commits:
 # Build the website using Quarto
 build-website:
   quarto render
+
+# Update the Quarto seedcase-theme extension
+update-quarto-theme:
+  # Add theme if it doesn't exist, update if it does
+  quarto update seedcase-project/seedcase-theme --no-prompt
