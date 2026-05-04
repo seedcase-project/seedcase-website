@@ -57,7 +57,7 @@ support research software and data engineering.
 |:--------------------------------------------:|:-------------------------|
 | {{< var status.done >}} | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow organised and FAIR data |
 | {{< var status.done >}} | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata |
-| {{< var status.wip >}} | `seedcase-flower`: Turn your metadata into human-readable documentation |
+| {{< var status.wip >}} | [`seedcase-flower`](https://github.com/seedcase-project/seedcase-flower): Turn your metadata into human-readable documentation |
 | {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/) |
 | {{< var status.planned >}} | `seedcase-propagate`: Submit requests for Data Package data |
 | {{< var status.planned >}} | `seedcase-garden`: Track and manage Data Package requests |
