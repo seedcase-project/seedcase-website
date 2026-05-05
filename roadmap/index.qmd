@@ -31,11 +31,11 @@ them. Beside each product is one of the following status icons:
 
 | Status | Description |
 |:-----------------------------:|:----------------------------------------|
-| {{< var status.done >}} | Products we've completed with a minimally viable product (MVP) that we'll continue to improve and work on. |
-| {{< var status.wip >}} | Products we are working on currently. |
-| {{< var status.planned >}} | Products we plan to complete within the current funding period (end of 2027). |
-| {{< var status.potential >}} | Products we'd like to work on, but probably won't finish within the current funding period (end of 2027) due to limited time and resources. |
-| {{< var status.ongoing >}} | Ongoing products without a final release (e.g., not archived or officially published). |
+| {{< var status.done >}} | Products we've completed with a minimally viable product (MVP) that we'll continue to improve and work on |
+| {{< var status.wip >}} | Products we are working on currently |
+| {{< var status.planned >}} | Products we plan to complete within the current funding period (end of 2027) |
+| {{< var status.potential >}} | Products we'd like to work on, but probably won't finish within the current funding period (end of 2027) due to limited time and resources |
+| {{< var status.ongoing >}} | Ongoing products without a final release (e.g., not archived or officially published) |
 
 ### Software and software-related
 
@@ -55,14 +55,14 @@ support research software and data engineering.
 
 | Status | Software |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow structured, organised, and FAIR data. |
-| {{< var status.done >}} | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata. |
-| {{< var status.wip >}} | `seedcase-flower`: Display your `datapackage.json` file in a human-friendly way. |
+| {{< var status.done >}} | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow organised and FAIR data |
+| {{< var status.done >}} | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata |
+| {{< var status.wip >}} | [`seedcase-flower`](https://github.com/seedcase-project/seedcase-flower): Turn your metadata into human-readable documentation |
 | {{< var status.wip >}} | [`zen-do`](https://github.com/seedcase-project/zen-do): Command line utilities for working with Zenodo |
 | {{< var status.ongoing >}} | [`seedcase-soil`](https://github.com/seedcase-project/seedcase-soil): A shared foundation for building Seedcase Python packages |
-| {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/). |
-| {{< var status.planned >}} | `seedcase-propagate`: Submitting requests for accessing specific data from a data package. |
-| {{< var status.planned >}} | `seedcase-garden`: Tend to and track projects using data from a data package. |
+| {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/) |
+| {{< var status.planned >}} | `seedcase-propagate`: Submit requests for Data Package data |
+| {{< var status.planned >}} | `seedcase-garden`: Track and manage Data Package requests |
 
 : "Wishlist" of software products.
 
@@ -70,12 +70,12 @@ support research software and data engineering.
 
 | Status | Software-related product |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`template-data-package`](https://github.com/seedcase-project/template-data-package): An opinionated template for Data Packages built with Seedcase packages. |
-| {{< var status.done >}} | [`template-python-package`](https://github.com/seedcase-project/template-python-package): A template repository to use when making a Python package for Seedcase. |
-| {{< var status.done >}} | [`template-website`](https://github.com/seedcase-project/template-website): An opinionated template for making Quarto-based websites. |
+| {{< var status.done >}} | [`template-data-package`](https://github.com/seedcase-project/template-data-package): An opinionated template for building Data Packages using Seedcase |
+| {{< var status.done >}} | [`template-python-package`](https://github.com/seedcase-project/template-python-package): An opinionated toolkit for building Python packages |
+| {{< var status.done >}} | [`template-website`](https://github.com/seedcase-project/template-website): Set up and manage website projects |
 | {{< var status.done >}} | [`t-squared`](https://github.com/seedcase-project/t-squared): Template for building and managing templates |
-| {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Quarto extension that contains shortcodes, embedded extensions, and style theming for Seedcase Project Quarto-based website repositories. |
-| {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects. |
+| {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Quarto extension that contains shortcodes, embedded extensions, and style theming for Seedcase Project Quarto-based website repositories |
+| {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects |
 | {{< var status.ongoing >}} |[`actions`](https://github.com/seedcase-project/actions): GitHub Actions for continuous integration and delivery of Seedcase repositories |
 
 : "Wishlist" of software-related products.
@@ -90,10 +90,10 @@ three are listed below. A brief description of these types are expanded
 upon in the sections below. These technical documentation products reach
 MVP and "done" status when they are either:
 
--   Uploaded to an archive like Zenodo (to generate a DOI).
--   Uploaded to a software archive (like PyPI) if they are within a
-    software product's repository and are executable (the code within
-    runs).
+- Uploaded to an archive like Zenodo (to generate a DOI).
+- Uploaded to a software archive (like PyPI) if they are within a
+  software product's repository and are executable (the code within
+  runs).
 
 Just like with the software products, these documentation products
 continue to evolve and improve over time. They are not static. So even
@@ -126,32 +126,32 @@ user manuals.
 
 | Status | Guides or manuals |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout`. |
-| {{< var status.done >}} | [`check-datapackage`](https://check-datapackage.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-check-datapackage`. |
-| {{< var status.done >}} | [`template-data-package`](https://template-data-package.seedcase-project.org/docs/guide) usage guide: Using the template to make data packages. |
-| {{< var status.done >}} | [`template-website`](https://template-website.seedcase-project.org/docs/guide) usage guide: Using the template to make websites. |
-| {{< var status.done >}} | [`template-python-package`](https://template-python-package.seedcase-project.org/docs/guide) usage guide: Using the template to make Python packages. |
-| {{< var status.wip >}} | [`guidebook`](https://guidebook.seedcase-project.org/): Guidebook on collaborating as a team on projects kept on GitHub. |
-| {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower`. |
-| {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate`. |
-| {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden`. |
-| {{< var status.planned >}} | Shears usage guide: Using and interacting with `seedcase-shears`. |
+| {{< var status.done >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout` |
+| {{< var status.done >}} | [`check-datapackage`](https://check-datapackage.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-check-datapackage` |
+| {{< var status.done >}} | [`template-data-package`](https://template-data-package.seedcase-project.org/docs/guide) usage guide: Using the template to make data packages |
+| {{< var status.done >}} | [`template-website`](https://template-website.seedcase-project.org/docs/guide) usage guide: Using the template to make websites |
+| {{< var status.done >}} | [`template-python-package`](https://template-python-package.seedcase-project.org/docs/guide) usage guide: Using the template to make Python packages |
+| {{< var status.wip >}} | [`guidebook`](https://guidebook.seedcase-project.org/): A guidebook for team collaboration on GitHub |
+| {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower` |
+| {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate` |
+| {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden` |
+| {{< var status.planned >}} | Shears usage guide: Using and interacting with `seedcase-shears` |
 
 : "Wishlist" of goal-type documentation products.
 
 ::: content-hidden
 Potentials:
 
--   Improving the research software development lifecycle by integrating
-    DevOps practices.
--   A guided walkthrough: Team-based collaborative practices and
-    workflows in a research environment.
--   Using DocOps workflows and infrastructure to reduce time between
-    writing and dissemination.
--   Building DataOps pipelines and infrastructure to improve research
-    data quality and reduce time from collection to analysis.
--   Integrating research operations in organizations to improve quality
-    and speed up research.
+- Improving the research software development lifecycle by integrating
+  DevOps practices.
+- A guided walkthrough: Team-based collaborative practices and
+  workflows in a research environment.
+- Using DocOps workflows and infrastructure to reduce time between
+  writing and dissemination.
+- Building DataOps pipelines and infrastructure to improve research
+  data quality and reduce time from collection to analysis.
+- Integrating research operations in organizations to improve quality
+  and speed up research.
 :::
 
 #### Reference
@@ -175,11 +175,11 @@ packages).
 
 | Status | Information resource |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout. |
-| {{< var status.done >}} | [`check-datapackage`](https://check-datapackage.seedcase-project.org/docs/reference/): Reference docs for `check-datapackage`. |
-| {{< var status.ongoing >}} | [`design`](https://github.com/seedcase-project/design): General design principles and patterns for the organisation, teams, software, and data used throughout the Seedcase Project. |
-| {{< var status.ongoing >}} | [`team`](https://github.com/seedcase-project/team): Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
-| {{< var status.ongoing >}} | [`seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project. |
+| {{< var status.done >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout |
+| {{< var status.done >}} | [`check-datapackage`](https://check-datapackage.seedcase-project.org/docs/reference/): Reference docs for `check-datapackage` |
+| {{< var status.ongoing >}} | [`design`](https://github.com/seedcase-project/design): Principles and patterns for development in the Seedcase Project |
+| {{< var status.ongoing >}} | [`team`](https://github.com/seedcase-project/team): Internal docs for onboarding and admin information |
+| {{< var status.ongoing >}} | [`seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project |
 
 : "Wishlist" of informational-type documentation products.
 
@@ -194,19 +194,21 @@ pieces, and outreach materials.
 
 | Status | Deliverable |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.ongoing >}} | [`community`](https://github.com/seedcase-project/community): Content for community building, outreach, and news about the Seedcase Project. |
-| {{< var status.ongoing >}} | [`decisions`](https://github.com/seedcase-project/decisions): Archival records of decisions made about tools or processes we use in the Seedcase Project. |
+| {{< var status.ongoing >}} | [`community`](https://github.com/seedcase-project/community): Community building, outreach, and updates on the Seedcase Project |
+| {{< var status.ongoing >}} | [`decisions`](https://github.com/seedcase-project/decisions): A record of decisions on tools and processes in the Seedcase Project |
 | {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research? |
-| {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment. |
+| {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment |
 
 : "Wishlist" of explanation-type documentation products.
 
 ::: content-hidden
+
 | Status | Deliverable |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.potential >}} | Challenges and barriers in research for effective software development and data engineering. |
-| {{< var status.potential >}} | Researchers don't know how to effectively work together: Current challenges and potential solutions. |
-| {{< var status.potential >}} | Research institutions and funding agencies are not yet designed to support effective and robust, and therefore vital, research software development. |
+| {{< var status.potential >}} | Challenges and barriers in research for effective software development and data engineering |
+| {{< var status.potential >}} | Researchers don't know how to effectively work together: Current challenges and potential solutions |
+| {{< var status.potential >}} | Research institutions and funding agencies are not yet designed to support effective and robust, and therefore vital, research software development |
+
 :::
 :::::::
 
@@ -250,14 +252,14 @@ As we now have working packages, we are currently collaborating with
 several other projects to integrate our software and build data packages
 for their data. The projects we collaborate with are:
 
--   [DP-Next](https://dp-next.github.io/)
--   [ON-LiMiT](https://onlimit.org/)
+- [DP-Next](https://dp-next.github.io/)
+- [ON-LiMiT](https://onlimit.org/)
 
 Other groups have also expressed interest and may become future
 collaborators. These other projects are:
 
--   [ADDITION](https://addition.au.dk/)
--   [Health in Central
-    Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
--   [DARTER](https://steno-aarhus.github.io/darter-project/)
-    (register-based research project at Steno)
+- [ADDITION](https://addition.au.dk/)
+- [Health in Central
+  Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
+- [DARTER](https://steno-aarhus.github.io/darter-project/)
+  (register-based research project at Steno)
