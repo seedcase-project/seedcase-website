@@ -75,7 +75,7 @@ support research software and data engineering.
 | {{< var status.done >}} | [`template-website`](https://github.com/seedcase-project/template-website): Set up and manage website projects |
 | {{< var status.done >}} | [`t-squared`](https://github.com/seedcase-project/t-squared): Template for building and managing templates |
 | {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Quarto extension that contains shortcodes, embedded extensions, and style theming for Seedcase Project Quarto-based website repositories |
-| {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): A toolkit for developing Seedcase projects |
+| {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): Commands for managing Seedcase repositories |
 | {{< var status.ongoing >}} |[`actions`](https://github.com/seedcase-project/actions): GitHub Actions for continuous integration and delivery of Seedcase repositories |
 
 : "Wishlist" of software-related products.
