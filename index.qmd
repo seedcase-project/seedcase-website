@@ -73,23 +73,34 @@ Turn your metadata into human-readable documentation
 ::::
 :::::
 
-::: landing-page-block
+:::: landing-page-block
+::: hero-text
+
 ## A value-based and principle-driven initiative
 
-In the **Seedcase Project**, we don't just develop software. We also
-build a culture strongly centered on values and principles. We're
+In the **Seedcase Project**, we build software and community together. We're
 dedicated to **open science** and **open source**, and we incorporate
-this dedication in all aspects of our work. Our values and principles
+this in all aspects of our work. Our values and principles
 are described on our [design](https://design.seedcase-project.org/)
-website.
+website, and we write posts about our work and learnings on our
+[community](https://community.seedcase-project.org/) website.
 
-We believe that by developing open-source software aimed firmly at
-solving real and difficult problems in health research, we can improve
-the quality of research data and ultimately improve health research.
+We aim to:
 
-See our [Roadmap](/roadmap/index.qmd) or our [About](about/index.qmd)
-page for more information about the project.
+- Help research groups and institutions create and manage high-quality and
+FAIR (Findable, Accessible, Interoperable, and Reusable) research
+data.
+- Enable individual researchers to find and (re-)use data more easily for
+their own research.
+- Reduce the time from data generation to scientific dissemination by
+focusing on streamlining and automating the data ingestion,
+processing, storage, and management processes.
+
+We believe open, well-documented tools are how research data becomes truly reusable---not just in principle, but in practice
+
+[Read more about the project](/about/index.qmd){.about-link .btn}
 :::
+::::
 
 ::::: hero-banner
 :::: landing-page-block
