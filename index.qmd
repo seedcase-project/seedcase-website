@@ -25,21 +25,50 @@ width="250px"}
 ::::: hero-banner
 :::: landing-page-block
 ::: hero-text
-## Software that improves research data quality and management
 
-Our primary goal is to build open software solutions that help:
+## What we do
 
--   Research groups and institutions create and manage high-quality and
-    FAIR (Findable, Accessible, Interoperable, and Reusable) research
-    data.
--   Individual researchers to find and (re-)use data more easily for
-    their own research.
--   Reduce the time from data generation to scientific dissemination by
-    focusing on streamlining and automating the data ingestion,
-    processing, storage, and management processes.
+We develop open-source tools for research teams who need to collect,
+manage, and share data in a consistent and FAIR (Findable, Accessible, Interoperable, and Reusable) way.
 
-See our [Roadmap](/roadmap/index.qmd) for more details on the software
-we are building.
+:::: {layout="[33, 33, 33]"}
+::: landing-page-card
+![](_extensions/seedcase-project/seedcase-theme/logos/sprout/icon.svg){fig-alt="Sprout logo."
+width="50px"}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/sprout/font.svg){fig-alt="Sprout font."
+height="22px"}
+
+Grow organised and FAIR data
+
+[Learn more](https://sprout.seedcase-project.org/){.about-link .btn .stretched-link}
+:::
+
+::: landing-page-card
+![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/icon.svg){fig-alt="Check Datapackage logo."
+width="50px"}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/font.svg){fig-alt="Check Datapackage font."
+height="30px"}
+
+Ensure the compliance of your Data Package metadata
+
+[Learn more](https://check-datapackage.seedcase-project.org/){.about-link .btn .stretched-link}
+:::
+
+::: landing-page-card
+![](_extensions/seedcase-project/seedcase-theme/logos/flower/icon.svg){fig-alt="Flower logo."
+width="50px"}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/flower/font.svg){fig-alt="Flower font."
+height="19px"}
+
+Turn your metadata into human-readable documentation
+
+[Learn more](https://flower.seedcase-project.org/){.about-link .btn .stretched-link}
+:::
+::::
+
 :::
 ::::
 :::::
