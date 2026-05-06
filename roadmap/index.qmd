@@ -50,6 +50,13 @@ Some of these products are not strictly software, but are designed to
 work within software environments, integrate with other workflows, or
 support research software and data engineering.
 
+::: callout-note
+Since we aim to build beginner-friendly tools, we put a strong emphasis
+on documentation.
+Our software and software-related products include technical documentation in the form of design documentation, usage guides, and reference documentation when
+relevant.
+:::
+
 ::: panel-tabset
 #### Software
 
