@@ -14,8 +14,10 @@ width="250px"}
 
 # An open ecosystem for growing FAIR and tidy data
 
-[Check out Sprout](https://sprout.seedcase-project.org/){.btn
-.about-link} [Explore our Roadmap](/roadmap/index.qmd){.btn .about-link}
+::: {style="margin-top: 50px;"}
+[Explore our roadmap](/roadmap/index.qmd){.btn-primary .btn}
+:::
+
 :::
 ::::
 :::::
