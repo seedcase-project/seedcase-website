@@ -43,10 +43,9 @@ Because software development is an ongoing process, software products
 are rarely truly "complete". They continue to evolve through updates and
 improvements. A product is considered to have reached MVP and "done"
 status once its first version is released on an official software
-archive (like PyPI for Python packages). If the product gets sufficient
-use, it will continue to be tested and refined based on user feedback.
+archive (like PyPI for Python packages).
 
-Some of these products are not strictly software, but are designed to
+Some of these products are not strictly software (e.g., templates), but are designed to
 work within software environments, integrate with other workflows, or
 support research software and data engineering.
 
