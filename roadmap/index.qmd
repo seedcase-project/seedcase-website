@@ -10,9 +10,9 @@ Seedcase Project. We do not include timelines or estimates for
 completion in this document. We also often update this roadmap as we
 progress through the project.
 
-For a more detailed and regularly updated roadmap, see our [Long-term
-Planning GitHub
-Board](https://github.com/orgs/seedcase-project/projects/22/views/1).
+::: callout-tip
+For a more detailed and regularly updated roadmap, see our [GitHub Roadmap](https://github.com/orgs/seedcase-project/projects/22/views/1).
+:::
 
 ## Product roadmap
 
