@@ -50,10 +50,10 @@ work within software environments, integrate with other workflows, or
 support research software and data engineering.
 
 ::: callout-note
-Since we aim to build beginner-friendly tools, we put a strong emphasis
-on documentation.
-Our software and software-related products include technical documentation in the form of design documentation, usage guides, and reference documentation when
-relevant.
+To make our tools easier to get started with for novices and experts alike,
+we put a strong emphasis on documentation.
+Our software and software-related products generally include documentation
+on design decisions, usage patterns, and an API reference.
 :::
 
 ::: panel-tabset
