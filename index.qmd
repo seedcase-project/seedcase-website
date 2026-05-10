@@ -1,6 +1,10 @@
 ---
 toc: false
 page-layout: custom
+format:
+  seedcase-theme-html:
+    theme:
+      - custom-styles.scss
 ---
 
 ::::: landing-page-block
@@ -14,8 +18,10 @@ width="250px"}
 
 # An open ecosystem for growing FAIR and tidy data
 
-[Check out Sprout](https://sprout.seedcase-project.org/){.btn
-.about-link} [Explore our Roadmap](/roadmap/index.qmd){.btn .about-link}
+::: {style="margin-top: 50px;"}
+[Explore our roadmap](/roadmap/index.qmd){.btn-primary .btn}
+:::
+
 :::
 ::::
 :::::
@@ -23,42 +29,81 @@ width="250px"}
 ::::: hero-banner
 :::: landing-page-block
 ::: hero-text
-## Software that improves research data quality and management
 
-Our primary goal is to build open software solutions that help:
+## What we do
 
--   Research groups and institutions create and manage high-quality and
-    FAIR (Findable, Accessible, Interoperable, and Reusable) research
-    data.
--   Individual researchers to find and (re-)use data more easily for
-    their own research.
--   Reduce the time from data generation to scientific dissemination by
-    focusing on streamlining and automating the data ingestion,
-    processing, storage, and management processes.
+We develop open-source tools for research teams who need to collect,
+manage, and share data in a consistent and FAIR (Findable, Accessible,
+Interoperable, and Reusable) way.
 
-See our [Roadmap](/roadmap/index.qmd) for more details on the software
-we are building.
+:::: {layout="[33, 33, 33]"}
+::: landing-page-card
+![](_extensions/seedcase-project/seedcase-theme/logos/sprout/icon.svg){fig-alt="Sprout logo."
+width="50px"}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/sprout/font.svg){fig-alt="Sprout font."
+height="22px"}
+
+Grow organised and FAIR data
+
+[Learn more](https://sprout.seedcase-project.org/){.about-link .btn .stretched-link}
+:::
+
+::: landing-page-card
+![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/icon.svg){fig-alt="Check Datapackage logo."
+width="50px"}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/font.svg){fig-alt="Check Datapackage font."
+height="30px"}
+
+Ensure the compliance of your Data Package metadata
+
+[Learn more](https://check-datapackage.seedcase-project.org/){.about-link .btn .stretched-link}
+:::
+
+::: landing-page-card
+![](_extensions/seedcase-project/seedcase-theme/logos/flower/icon.svg){fig-alt="Flower logo."
+width="50px"}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/flower/font.svg){fig-alt="Flower font."
+height="19px"}
+
+Turn your metadata into human-readable documentation
+
+[Learn more](https://flower.seedcase-project.org/){.about-link .btn .stretched-link}
+:::
+::::
+
 :::
 ::::
 :::::
 
-::: landing-page-block
+:::: landing-page-block
+::: hero-text
+
 ## A value-based and principle-driven initiative
 
-In the **Seedcase Project**, we don't just develop software. We also
-build a culture strongly centered on values and principles. We're
+In the **Seedcase Project**, we build software and community together. We're
 dedicated to **open science** and **open source**, and we incorporate
-this dedication in all aspects of our work. Our values and principles
+this in all aspects of our work. Our values and principles
 are described on our [design](https://design.seedcase-project.org/)
-website.
+website, and we write posts about our work and learnings on our
+[community](https://community.seedcase-project.org/) website.
 
-We believe that by developing open-source software aimed firmly at
-solving real and difficult problems in health research, we can improve
-the quality of research data and ultimately improve health research.
+We aim to:
 
-See our [Roadmap](/roadmap/index.qmd) or our [About](about/index.qmd)
-page for more information about the project.
+- Help research groups and institutions create and manage high-quality and
+FAIR (Findable, Accessible, Interoperable, and Reusable) research
+data.
+- Enable individual researchers to find and (re-)use data more easily for
+their own research.
+- Reduce the time from data generation to scientific dissemination by
+focusing on streamlining and automating the data ingestion,
+processing, storage, and management processes.
+
+[Read more about the project](/about/index.qmd){.about-link .btn}
 :::
+::::
 
 ::::: hero-banner
 :::: landing-page-block
@@ -90,24 +135,24 @@ principles we teach and advocate for.
 ::::
 :::::
 
-::::::::: landing-page-block
+::::: landing-page-block
+
 ## Acknowledgements {#acknowledgements}
 
-::::: {layout="[70, 30]"}
+:::: {layout="[70, 30]"}
 ::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462.
-See the application
-[here](https://seedcase-project.org/about/history/nnf-application).
+See the [application](https://seedcase-project.org/about/history/nnf-application).
 :::
 
 ::: {#acknowledgements-right}
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/nnf.png){fig-alt="The Novo Nordisk Foundation logo"
 width="200px" fig-align="right"}
 :::
-:::::
+::::
 
-::::: {layout="[30, 70]"}
+:::: {layout="[30, 70]"}
 ::: {#employers-left}
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/au.png){fig-alt="Aarhus University logo"
 width="200px" fig-align="center"}
@@ -120,5 +165,5 @@ We are employed at [Aarhus University](https://www.au.dk/en/) and at the
 [Steno Diabetes Center Aarhus](https://www.stenoaarhus.dk/) in the
 [Central Denmark Region](https://www.rm.dk/).
 :::
+::::
 :::::
-:::::::::
