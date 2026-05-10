@@ -1,0 +1,12 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 0.25.0
+_src_path: gh:seedcase-project/template-website
+author_family_name: Brødbæk
+author_given_name: Signe Kirk
+github_board_number: '18'
+github_repo: seedcase-website
+github_user: seedcase-project
+hosting_provider: netlify
+is_seedcase_website: true
+review_team: '@seedcase-project/product'
+website_format: website

@@ -1,0 +1,8 @@
+The following people have contributed to this project by submitting pull requests :tada:
+
+ [\@lwjohnst86](https://github.com/lwjohnst86),
+ [\@signekb](https://github.com/signekb),
+ [\@K-Beicher](https://github.com/K-Beicher),
+ [\@rqding](https://github.com/rqding),
+ [\@martonvago](https://github.com/martonvago),
+ [\@namannimmo10](https://github.com/namannimmo10)

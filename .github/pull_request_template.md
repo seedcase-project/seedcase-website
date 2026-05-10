@@ -1,12 +1,11 @@
 # Description
 
-These changes PURPOSE, because REASON.
+EXPLANATION
 
 Closes #
 
-This PR needs a quick/an in-depth review.
+Needs a quick/thorough review.
 
 ## Checklist
 
-- [ ] Formatted Markdown
 - [ ] Ran `just run-all`

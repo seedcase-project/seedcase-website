@@ -2,13 +2,11 @@ project:
   type: seedcase-theme
 
 website:
-  title: "Seedcase Project"
   site-url: "https://seedcase-project.org/"
   repo-url: "https://github.com/seedcase-project/seedcase-website"
-  page-navigation: true
+  favicon: "_extensions/seedcase-project/seedcase-theme/logos/seedcase/icon.svg"
   navbar:
-    title: false
-    logo: _extensions/seedcase-project/seedcase-theme/logos/seedcase/navbar.svg
+    logo: "_extensions/seedcase-project/seedcase-theme/logos/seedcase/navbar.svg"
     logo-alt: "Seedcase Project logo: Main page"
     pinned: true
     left:
@@ -22,7 +20,7 @@ website:
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-website"
-        aria-label: "GitHub icon: Source code"
+        aria-label: "GitHub icon: Source repository"
   sidebar:
     - id: about
       title: "About"
@@ -39,13 +37,8 @@ bibliography: "includes/references.bib"
 
 format:
   seedcase-theme-html:
+    theme:
+      - brand
+      - custom-styles.scss
     include-before-body:
       - "includes/site-counter.html"
-
-editor:
-  markdown:
-    wrap: 72
-    canonical: true
-
-execute:
-  echo: false

@@ -1,12 +1,11 @@
 [files]
 extend-exclude = [
+  "*.html",
   "*.css",
   ".quarto/*",
   "_site/*",
-  "*.svg",
-  "*nnf-application.html"
+  "*.svg"
 ]
 
 [default.extend-words]
-TRE = "TRE" # trusted research environment
 SME = "SME" # small and medium-sized enterprises
