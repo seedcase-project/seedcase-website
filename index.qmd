@@ -1,6 +1,10 @@
 ---
 toc: false
 page-layout: custom
+format:
+  seedcase-theme-html:
+    theme:
+      - styles.scss
 ---
 
 ::::: landing-page-block

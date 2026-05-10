@@ -1,0 +1,26 @@
+/*-- scss:rules --*/
+
+.landing-page-card {
+  // display and flex-direction needed to make the button stick to the bottom of the card
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 300px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1.5px solid var(--quarto-scss-export-gray-300);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out;
+  text-align: center;
+}
+
+.landing-page-card:hover {
+  border: 1.5px solid $tertiary;
+}
+
+// place the button at the bottom of the card and add some spacing between it and the description
+.landing-page-card p:has(.about-link) {
+  margin-top: auto;
+  padding-top: 10px;
+}
