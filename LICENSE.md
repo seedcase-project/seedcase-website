@@ -4,7 +4,7 @@ Creative Commons Corporation (“Creative Commons”) is not a law firm and
 does not provide legal services or legal advice. Distribution of
 Creative Commons public licenses does not create a lawyer-client or
 other relationship. Creative Commons makes its licenses and related
-information available on an "as-is" basis. Creative Commons gives no
+information available on an “as-is” basis. Creative Commons gives no
 warranties regarding its licenses, any material licensed under their
 terms and conditions, or any related information. Creative Commons
 disclaims all liability for damages resulting from their use to the
@@ -357,7 +357,7 @@ d.  Nothing in this Public License constitutes or may be interpreted as
 > indicating that material is shared under a Creative Commons public
 > license or as otherwise permitted by the Creative Commons policies
 > published at
-> [creativecommons.org/policies](http://creativecommons.org/policies),
+> [creativecommons.org/policies/](http://creativecommons.org/policies/),
 > Creative Commons does not authorize the use of the trademark “Creative
 > Commons” or any other trademark or logo of Creative Commons without
 > its prior written consent including, without limitation, in connection

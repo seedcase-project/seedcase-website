@@ -1,8 +1,25 @@
 @_default:
     just --list --unsorted
 
-# Run all necessary build commands.
-run-all: check-spelling check-commits update-quarto-theme build-website
+@_checks: check-spelling check-urls check-commits
+
+@_builds: build-contributors build-readme build-website
+
+# Run all necessary build commands
+run-all: update-quarto-theme _checks format-md _builds
+
+# List all TODO items in the repository
+list-todos:
+  grep -R -n \
+    --exclude="*.code-snippets" \
+    --exclude-dir=.quarto \
+    --exclude=justfile \
+    --exclude=_site \
+    "TODO" *
+# Update the Quarto seedcase-theme extension
+update-quarto-theme:
+  # # Add theme if it doesn't exist, update if it does
+  quarto update seedcase-project/seedcase-theme --no-prompt
 
 # Install the pre-commit hooks
 install-precommit:
@@ -17,23 +34,52 @@ install-precommit:
 check-spelling:
   uvx typos
 
-# Run checks on commits with non-main branches
+# Install lychee from https://lychee.cli.rs/guides/getting-started/
+
+# Check that URLs work
+check-urls:
+    lychee . \
+      --verbose \
+      --extensions md,qmd \
+      --exclude-path "_badges.qmd"
+
+# Format Markdown files
+format-md:
+    uvx rumdl fmt --silent
+
+# Check the commit messages on the current branch that are not on the main branch
 check-commits:
-  #!/bin/zsh
+  #!/usr/bin/env bash
   branch_name=$(git rev-parse --abbrev-ref HEAD)
   number_of_commits=$(git rev-list --count HEAD ^main)
   if [[ ${branch_name} != "main" && ${number_of_commits} -gt 0 ]]
   then
+    # If issue happens, try `uv tool update-shell`
     uvx --from commitizen cz check --rev-range main..HEAD
   else
-    echo "Can't either be on ${branch_name} or have more than ${number_of_commits}."
+    echo "On 'main' or current branch doesn't have any commits."
   fi
 
 # Build the website using Quarto
 build-website:
   quarto render
 
-# Update the Quarto seedcase-theme extension
-update-quarto-theme:
-  # Add theme if it doesn't exist, update if it does
-  quarto update seedcase-project/seedcase-theme --no-prompt
+# Preview the documentation website with automatic reload on changes
+preview-website:
+  quarto preview
+
+# Re-build the README file from the Quarto version
+build-readme:
+  uvx --from quarto quarto render README.qmd --to gfm
+
+# Generate a Quarto include file with the contributors
+build-contributors:
+  sh ./tools/get-contributors.sh seedcase-project/seedcase-website > includes/_contributors.qmd
+
+# Check for and apply updates from the template
+update-from-template:
+  uvx copier update --trust --defaults
+
+# Reset repo changes to match the template
+reset-from-template:
+  uvx copier recopy --trust --defaults

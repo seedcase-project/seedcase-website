@@ -11,7 +11,8 @@ completion in this document. We also often update this roadmap as we
 progress through the project.
 
 ::: callout-tip
-For a more detailed and regularly updated roadmap, see our [GitHub Roadmap](https://github.com/orgs/seedcase-project/projects/22/views/1).
+For a more detailed and regularly updated roadmap, see our
+[GitHub Roadmap](https://github.com/orgs/seedcase-project/projects/22/views/1).
 :::
 
 ## Product roadmap
@@ -29,13 +30,13 @@ software-related, technical documentation, and outreach.
 Products are listed in the order that we plan to work on and complete
 them. Beside each product is one of the following status icons:
 
-| Status | Description |
-|:-----------------------------:|:----------------------------------------|
-| {{< var status.done >}} | Products we've completed with a minimally viable product (MVP) that we'll continue to improve and work on |
-| {{< var status.wip >}} | Products we are working on currently |
-| {{< var status.planned >}} | Products we plan to complete within the current funding period (end of 2027) |
+|            Status            | Description                                                                                                                                |
+|:----------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------|
+|   {{< var status.done >}}    | Products we've completed with a minimally viable product (MVP) that we'll continue to improve and work on                                  |
+|    {{< var status.wip >}}    | Products we are working on currently                                                                                                       |
+|  {{< var status.planned >}}  | Products we plan to complete within the current funding period (end of 2027)                                                               |
 | {{< var status.potential >}} | Products we'd like to work on, but probably won't finish within the current funding period (end of 2027) due to limited time and resources |
-| {{< var status.ongoing >}} | Ongoing products without a final release (e.g., not archived or officially published) |
+|  {{< var status.ongoing >}}  | Ongoing products without a final release (e.g., not archived or officially published)                                                      |
 
 ### Software and software-related
 
@@ -45,44 +46,44 @@ improvements. A product is considered to have reached MVP and "done"
 status once its first version is released on an official software
 archive (like PyPI for Python packages).
 
-Some of these products are not strictly software (e.g., templates), but are designed to
-work within software environments, integrate with other workflows, or
-support research software and data engineering.
+Some of these products are not strictly software (e.g., templates), but
+are designed to work within software environments, integrate with other
+workflows, or support research software and data engineering.
 
 ::: callout-note
-To make our tools easier to get started with for novices and experts alike,
-we put a strong emphasis on documentation.
-Our software and software-related products generally include documentation
-on design decisions, usage patterns, and an API reference.
+To make our tools easier to get started with for novices and experts
+alike, we put a strong emphasis on documentation. Our software and
+software-related products generally include documentation on design
+decisions, usage patterns, and an API reference.
 :::
 
 ::: panel-tabset
 #### Software
 
-| Status | Software |
-|:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow organised and FAIR data |
-| {{< var status.done >}} | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata |
-| {{< var status.done >}} | [`seedcase-flower`](https://github.com/seedcase-project/seedcase-flower): Turn your metadata into human-readable documentation |
-| {{< var status.wip >}} | [`zen-do`](https://github.com/seedcase-project/zen-do): Command line utilities for working with Zenodo |
-| {{< var status.ongoing >}} | [`seedcase-soil`](https://github.com/seedcase-project/seedcase-soil): A shared foundation for building Seedcase Python packages |
+|           Status           | Software                                                                                                                               |
+|:--------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------|
+|  {{< var status.done >}}   | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow organised and FAIR data                                 |
+|  {{< var status.done >}}   | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata      |
+|  {{< var status.done >}}   | [`seedcase-flower`](https://github.com/seedcase-project/seedcase-flower): Turn your metadata into human-readable documentation         |
+|   {{< var status.wip >}}   | [`zen-do`](https://github.com/seedcase-project/zen-do): Command line utilities for working with Zenodo                                 |
+| {{< var status.ongoing >}} | [`seedcase-soil`](https://github.com/seedcase-project/seedcase-soil): A shared foundation for building Seedcase Python packages        |
 | {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/) |
-| {{< var status.planned >}} | `seedcase-propagate`: Submit requests for Data Package data |
-| {{< var status.planned >}} | `seedcase-garden`: Track and manage Data Package requests |
+| {{< var status.planned >}} | `seedcase-propagate`: Submit requests for Data Package data                                                                            |
+| {{< var status.planned >}} | `seedcase-garden`: Track and manage Data Package requests                                                                              |
 
 : "Wishlist" of software products.
 
 #### Software-related products
 
-| Status | Software-related product |
-|:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`template-data-package`](https://github.com/seedcase-project/template-data-package): An opinionated template for building Data Packages using Seedcase |
-| {{< var status.done >}} | [`template-python-package`](https://github.com/seedcase-project/template-python-package): An opinionated toolkit for building Python packages |
-| {{< var status.done >}} | [`template-website`](https://github.com/seedcase-project/template-website): Set up and manage website projects |
-| {{< var status.done >}} | [`t-squared`](https://github.com/seedcase-project/t-squared): Template for building and managing templates |
+|           Status           | Software-related product                                                                                                                                                                                         |
+|:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  {{< var status.done >}}   | [`template-data-package`](https://github.com/seedcase-project/template-data-package): An opinionated template for building Data Packages using Seedcase                                                          |
+|  {{< var status.done >}}   | [`template-python-package`](https://github.com/seedcase-project/template-python-package): An opinionated toolkit for building Python packages                                                                    |
+|  {{< var status.done >}}   | [`template-website`](https://github.com/seedcase-project/template-website): Set up and manage website projects                                                                                                   |
+|  {{< var status.done >}}   | [`t-squared`](https://github.com/seedcase-project/t-squared): Template for building and managing templates                                                                                                       |
 | {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Quarto extension that contains shortcodes, embedded extensions, and style theming for Seedcase Project Quarto-based website repositories |
-| {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): Commands for managing Seedcase repositories |
-| {{< var status.ongoing >}} |[`actions`](https://github.com/seedcase-project/actions): GitHub Actions for continuous integration and delivery of Seedcase repositories |
+| {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): Commands for managing Seedcase repositories                                                                                                                |
+| {{< var status.ongoing >}} | [`actions`](https://github.com/seedcase-project/actions): GitHub Actions for continuous integration and delivery of Seedcase repositories                                                                        |
 
 : "Wishlist" of software-related products.
 :::
@@ -115,11 +116,11 @@ online tutorials, and learning shorts. These will be developed as [open
 educational
 resources](https://en.wikipedia.org/wiki/Open_educational_resources).
 
-| Status | Learning resource |
-|:--------------------------------------------:|:-------------------------|
+|            Status            | Learning resource                                                                                               |
+|:----------------------------:|:----------------------------------------------------------------------------------------------------------------|
 | {{< var status.potential >}} | Workshop: Introduction to building research software using Python as a solo developer in research environments. |
-| {{< var status.potential >}} | Workshop: Iterative project management and development for effective collaboration and work. |
-| {{< var status.potential >}} | Workshop: Building research software using Python in a team setting. |
+| {{< var status.potential >}} | Workshop: Iterative project management and development for effective collaboration and work.                    |
+| {{< var status.potential >}} | Workshop: Building research software using Python in a team setting.                                            |
 
 : "Wishlist" of learning-type documentation products.
 :::
@@ -130,8 +131,8 @@ How-to guides are goal-oriented documentation that helps the reader get
 something specific done. These include how-to guides, usage guides, and
 user manuals.
 
-| Status | Guides or manuals |
-|:--------------------------------------------:|:-------------------------|
+|         Status         | Guides or manuals                                                                                    |
+|:----------------------:|:-----------------------------------------------------------------------------------------------------|
 | {{< var status.wip >}} | [`guidebook`](https://guidebook.seedcase-project.org/): A guidebook for team collaboration on GitHub |
 
 : "Wishlist" of goal-type documentation products.
@@ -149,6 +150,7 @@ Potentials:
   data quality and reduce time from collection to analysis.
 - Integrating research operations in organizations to improve quality
   and speed up research.
+
 :::
 
 #### Reference
@@ -170,11 +172,11 @@ is released on an official software archive (like PyPI for Python
 packages).
 :::
 
-| Status | Information resource |
-|:--------------------------------------------:|:-------------------------|
+|           Status           | Information resource                                                                                                    |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------|
 | {{< var status.ongoing >}} | [`design`](https://github.com/seedcase-project/design): Principles and patterns for development in the Seedcase Project |
-| {{< var status.ongoing >}} | [`team`](https://github.com/seedcase-project/team): Internal docs for onboarding and admin information |
-| {{< var status.ongoing >}} | [`seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project |
+| {{< var status.ongoing >}} | [`team`](https://github.com/seedcase-project/team): Internal docs for onboarding and admin information                  |
+| {{< var status.ongoing >}} | [`seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project       |
 
 : "Wishlist" of informational-type documentation products.
 
@@ -187,21 +189,21 @@ pieces, and outreach materials.
 
 <!-- TODO: This section needs some work -->
 
-| Status | Deliverable |
-|:--------------------------------------------:|:-------------------------|
-| {{< var status.ongoing >}} | [`community`](https://github.com/seedcase-project/community): Community building, outreach, and updates on the Seedcase Project |
-| {{< var status.ongoing >}} | [`decisions`](https://github.com/seedcase-project/decisions): A record of decisions on tools and processes in the Seedcase Project |
-| {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research? |
-| {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment |
+|            Status            | Deliverable                                                                                                                        |
+|:----------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------|
+|  {{< var status.ongoing >}}  | [`community`](https://github.com/seedcase-project/community): Community building, outreach, and updates on the Seedcase Project    |
+|  {{< var status.ongoing >}}  | [`decisions`](https://github.com/seedcase-project/decisions): A record of decisions on tools and processes in the Seedcase Project |
+| {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research?                                                     |
+| {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment           |
 
 : "Wishlist" of explanation-type documentation products.
 
 ::: content-hidden
 
-| Status | Deliverable |
-|:--------------------------------------------:|:-------------------------|
-| {{< var status.potential >}} | Challenges and barriers in research for effective software development and data engineering |
-| {{< var status.potential >}} | Researchers don't know how to effectively work together: Current challenges and potential solutions |
+|            Status            | Deliverable                                                                                                                                         |
+|:----------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------|
+| {{< var status.potential >}} | Challenges and barriers in research for effective software development and data engineering                                                         |
+| {{< var status.potential >}} | Researchers don't know how to effectively work together: Current challenges and potential solutions                                                 |
 | {{< var status.potential >}} | Research institutions and funding agencies are not yet designed to support effective and robust, and therefore vital, research software development |
 
 :::
@@ -213,11 +215,11 @@ These are practical examples of how to use Seedcase software to
 structure datasets and prepare them to be used by others. The data is
 openly licensed.
 
-| Status | Deliverable |
-|:--------------------------------------------:|:-------------------------|
-| {{< var status.ongoing >}} | [`example-rhesus-monkeys`](https://github.com/seedcase-project/example-rhesus-monkeys): Example repository for making a data package with data from a study of maternal obesity in rhesus monkeys |
+|           Status           | Deliverable                                                                                                                                                                                                                                  |
+|:--------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| {{< var status.ongoing >}} | [`example-rhesus-monkeys`](https://github.com/seedcase-project/example-rhesus-monkeys): Example repository for making a data package with data from a study of maternal obesity in rhesus monkeys                                            |
 | {{< var status.ongoing >}} | [`example-seed-beetle`](https://github.com/seedcase-project/example-seed-beetle): Example repository for making a data package with data from a study of complex mitonuclear interactions and metabolic costs of mating in male seed beetles |
-| {{< var status.ongoing >}} | [`example-rainforest`](https://github.com/seedcase-project/example-rainforest): Example repository for making a data package with data from a study of seed germination in the rainforest |
+| {{< var status.ongoing >}} | [`example-rainforest`](https://github.com/seedcase-project/example-rainforest): Example repository for making a data package with data from a study of seed germination in the rainforest                                                    |
 
 :::: content-hidden
 ### Outreach and events
@@ -233,10 +235,10 @@ believe that they are important for bringing greater awareness to the
 research community about the various topics we work on and advocate for.
 :::
 
-| Status | Deliverable |
-|:--------------------------------------------:|:-------------------------|
+|            Status            | Deliverable                                                                                        |
+|:----------------------------:|:---------------------------------------------------------------------------------------------------|
 | {{< var status.potential >}} | Seminar series: Unmet needs for research data engineering and current challenges in implementation |
-| {{< var status.potential >}} | Symposium: Current state of data engineering in research environment |
+| {{< var status.potential >}} | Symposium: Current state of data engineering in research environment                               |
 
 : "Wishlist" of outreach event "products".
 ::::
@@ -254,7 +256,6 @@ Other groups have also expressed interest and may become future
 collaborators. These other projects are:
 
 - [ADDITION](https://addition.au.dk/)
-- [Health in Central
-  Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
+- [Health in Central Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
 - [DARTER](https://steno-aarhus.github.io/darter-project/)
   (register-based research project at Steno)
