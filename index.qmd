@@ -33,7 +33,8 @@ width="250px"}
 ## What we do
 
 We develop open-source tools for research teams who need to collect,
-manage, and share data in a consistent and FAIR (Findable, Accessible, Interoperable, and Reusable) way.
+manage, and share data in a consistent and FAIR (Findable, Accessible,
+Interoperable, and Reusable) way.
 
 :::: {layout="[33, 33, 33]"}
 ::: landing-page-card
