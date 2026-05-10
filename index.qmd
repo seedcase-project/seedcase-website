@@ -130,10 +130,11 @@ principles we teach and advocate for.
 ::::
 :::::
 
-::::::::: landing-page-block
+::::: landing-page-block
+
 ## Acknowledgements {#acknowledgements}
 
-::::: {layout="[70, 30]"}
+:::: {layout="[70, 30]"}
 ::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462.
@@ -145,9 +146,9 @@ See the application
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/nnf.png){fig-alt="The Novo Nordisk Foundation logo"
 width="200px" fig-align="right"}
 :::
-:::::
+::::
 
-::::: {layout="[30, 70]"}
+:::: {layout="[30, 70]"}
 ::: {#employers-left}
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/au.png){fig-alt="Aarhus University logo"
 width="200px" fig-align="center"}
@@ -160,5 +161,5 @@ We are employed at [Aarhus University](https://www.au.dk/en/) and at the
 [Steno Diabetes Center Aarhus](https://www.stenoaarhus.dk/) in the
 [Central Denmark Region](https://www.rm.dk/).
 :::
+::::
 :::::
-:::::::::
