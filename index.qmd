@@ -143,8 +143,7 @@ principles we teach and advocate for.
 ::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462.
-See the application
-[here](https://seedcase-project.org/about/history/nnf-application).
+See the [application](https://seedcase-project.org/about/history/nnf-application).
 :::
 
 ::: {#acknowledgements-right}
