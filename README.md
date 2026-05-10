@@ -1,7 +1,7 @@
 <p align="center">
 
 <a href="https://seedcase-project.org/">
-<img src="https://raw.githubusercontent.com/seedcase-project/seedcase-website/main/_extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg" alt="Link to Seedcase website" height="150"/>
+<img src="https://raw.githubusercontent.com/seedcase-project/seedcase-website/main/_extensions/seedcase-project/seedcase-theme/logos/seedcase/icon.svg" alt="Link to Seedcase website" height="150"/>
 </a>
 
 </p>
@@ -9,7 +9,7 @@
 <p align="center">
 
 <a href="https://seedcase-project.org/">
-<img src="https://raw.githubusercontent.com/seedcase-project/seedcase-website/main/_extensions/seedcase-project/seedcase-theme/logos/seedcase-font.svg" alt="Link to Seedcase website" height="50"/>
+<img src="https://raw.githubusercontent.com/seedcase-project/seedcase-website/main/_extensions/seedcase-project/seedcase-theme/logos/seedcase/font.svg" alt="Link to Seedcase website" height="50"/>
 </a>
 
 </p>
