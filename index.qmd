@@ -96,8 +96,6 @@ their own research.
 focusing on streamlining and automating the data ingestion,
 processing, storage, and management processes.
 
-We believe open, well-documented tools are how research data becomes truly reusable---not just in principle, but in practice
-
 [Read more about the project](/about/index.qmd){.about-link .btn}
 :::
 ::::
