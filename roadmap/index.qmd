@@ -10,9 +10,9 @@ Seedcase Project. We do not include timelines or estimates for
 completion in this document. We also often update this roadmap as we
 progress through the project.
 
-For a more detailed and regularly updated roadmap, see our [Long-term
-Planning GitHub
-Board](https://github.com/orgs/seedcase-project/projects/22/views/1).
+::: callout-tip
+For a more detailed and regularly updated roadmap, see our [GitHub Roadmap](https://github.com/orgs/seedcase-project/projects/22/views/1).
+:::
 
 ## Product roadmap
 
@@ -43,12 +43,18 @@ Because software development is an ongoing process, software products
 are rarely truly "complete". They continue to evolve through updates and
 improvements. A product is considered to have reached MVP and "done"
 status once its first version is released on an official software
-archive (like PyPI for Python packages). If the product gets sufficient
-use, it will continue to be tested and refined based on user feedback.
+archive (like PyPI for Python packages).
 
-Some of these products are not strictly software, but are designed to
+Some of these products are not strictly software (e.g., templates), but are designed to
 work within software environments, integrate with other workflows, or
 support research software and data engineering.
+
+::: callout-note
+To make our tools easier to get started with for novices and experts alike,
+we put a strong emphasis on documentation.
+Our software and software-related products generally include documentation
+on design decisions, usage patterns, and an API reference.
+:::
 
 ::: panel-tabset
 #### Software
@@ -57,7 +63,7 @@ support research software and data engineering.
 |:--------------------------------------------:|:-------------------------|
 | {{< var status.done >}} | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow organised and FAIR data |
 | {{< var status.done >}} | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata |
-| {{< var status.wip >}} | [`seedcase-flower`](https://github.com/seedcase-project/seedcase-flower): Turn your metadata into human-readable documentation |
+| {{< var status.done >}} | [`seedcase-flower`](https://github.com/seedcase-project/seedcase-flower): Turn your metadata into human-readable documentation |
 | {{< var status.wip >}} | [`zen-do`](https://github.com/seedcase-project/zen-do): Command line utilities for working with Zenodo |
 | {{< var status.ongoing >}} | [`seedcase-soil`](https://github.com/seedcase-project/seedcase-soil): A shared foundation for building Seedcase Python packages |
 | {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/) |
@@ -126,16 +132,7 @@ user manuals.
 
 | Status | Guides or manuals |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-sprout` |
-| {{< var status.done >}} | [`check-datapackage`](https://check-datapackage.seedcase-project.org/docs/guide) usage guide: Using and interacting with `seedcase-check-datapackage` |
-| {{< var status.done >}} | [`template-data-package`](https://template-data-package.seedcase-project.org/docs/guide) usage guide: Using the template to make data packages |
-| {{< var status.done >}} | [`template-website`](https://template-website.seedcase-project.org/docs/guide) usage guide: Using the template to make websites |
-| {{< var status.done >}} | [`template-python-package`](https://template-python-package.seedcase-project.org/docs/guide) usage guide: Using the template to make Python packages |
 | {{< var status.wip >}} | [`guidebook`](https://guidebook.seedcase-project.org/): A guidebook for team collaboration on GitHub |
-| {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower` |
-| {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate` |
-| {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden` |
-| {{< var status.planned >}} | Shears usage guide: Using and interacting with `seedcase-shears` |
 
 : "Wishlist" of goal-type documentation products.
 
@@ -175,8 +172,6 @@ packages).
 
 | Status | Information resource |
 |:--------------------------------------------:|:-------------------------|
-| {{< var status.done >}} | [`seedcase-sprout`](https://sprout.seedcase-project.org/docs/reference/): Reference docs for Sprout |
-| {{< var status.done >}} | [`check-datapackage`](https://check-datapackage.seedcase-project.org/docs/reference/): Reference docs for `check-datapackage` |
 | {{< var status.ongoing >}} | [`design`](https://github.com/seedcase-project/design): Principles and patterns for development in the Seedcase Project |
 | {{< var status.ongoing >}} | [`team`](https://github.com/seedcase-project/team): Internal docs for onboarding and admin information |
 | {{< var status.ongoing >}} | [`seedcase-website`](https://github.com/seedcase-project/seedcase-website): Main website for the Seedcase Project |
