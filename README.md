@@ -14,7 +14,7 @@
 
 </p>
 
-## Seedcase Project: A framework for building FAIR research data
+# An open ecosystem for growing FAIR and tidy data
 
 [![GitHub
 License](https://img.shields.io/github/license/seedcase-project/seedcase-website.svg)](https://github.com/seedcase-project/seedcase-website/blob/main/LICENSE.md)
