@@ -4,14 +4,7 @@ title: NNF Data Science Research Infrastructure Grant 2021
 
 ## Description of application
 
-Key bits of information were taken from the full description from the
-links below:
-
--   Application call:
-    <https://novonordiskfonden.dk/en/grants/data-science-research-infrastructure-2021/>
-
--   More details:
-    <https://novonordiskfonden.dk/wp-content/uploads/Data-Science-Research-Infrastructure-guidelines-2021-1.pdf>
+Key bits of information below were taken from the full description of the application call.
 
 ### Key points and takeaways
 
