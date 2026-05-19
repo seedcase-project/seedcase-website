@@ -13,10 +13,6 @@ website:
       - roadmap/index.qmd
       - text: "About"
         href: about/index.qmd
-      - text: "Community"
-        href: https://community.seedcase-project.org
-      - text: "Design"
-        href: https://design.seedcase-project.org
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-website"
@@ -29,9 +25,9 @@ website:
       align: left
       collapse-level: 1
       contents:
-      - about/index.qmd
-      - text: "History"
-        href: about/history/index.qmd
+        - about/index.qmd
+        - text: "History"
+          href: about/history/index.qmd
 
 bibliography: "includes/references.bib"
 

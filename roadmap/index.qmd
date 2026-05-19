@@ -256,6 +256,7 @@ Other groups have also expressed interest and may become future
 collaborators. These other projects are:
 
 - [ADDITION](https://addition.au.dk/)
-- [Health in Central Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
+- [Health in Central
+  Denmark Region](https://www.stenoaarhus.dk/forskning/helbred-i-midt/)
 - [DARTER](https://steno-aarhus.github.io/darter-project/)
   (register-based research project at Steno)
