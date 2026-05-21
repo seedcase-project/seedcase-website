@@ -10,11 +10,11 @@ format:
 ::::: landing-page-block
 :::: hero-text
 ::: text-center
-![](_extensions/seedcase-project/seedcase-theme/logos/seedcase/icon.svg){fig-alt="Seedcase logo."
-width="150px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/seedcase/icon.svg){fig-alt="Seedcase
+logo." width="150px"}
 
-![](_extensions/seedcase-project/seedcase-theme/logos/seedcase/font.svg){fig-alt="Seedcase font."
-width="250px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/seedcase/font.svg){fig-alt="Seedcase
+font." width="250px"}
 
 # An open ecosystem for growing FAIR and tidy data
 
@@ -147,17 +147,17 @@ See the [application](https://seedcase-project.org/about/history/nnf-application
 :::
 
 ::: {#acknowledgements-right}
-![](_extensions/seedcase-project/seedcase-theme/logos/external/nnf.png){fig-alt="The Novo Nordisk Foundation logo"
-width="200px" fig-align="right"}
+![](_extensions/seedcase-project/seedcase-theme/logos/external/nnf.png){fig-alt="The
+Novo Nordisk Foundation logo" width="200px" fig-align="right"}
 :::
 ::::
 
 :::: {layout="[30, 70]"}
 ::: {#employers-left}
-![](_extensions/seedcase-project/seedcase-theme/logos/external/au.png){fig-alt="Aarhus University logo"
-width="200px" fig-align="center"}
-![](_extensions/seedcase-project/seedcase-theme/logos/external/rm.svg){fig-alt="Central Denmark Region logo"
-width="140px" fig-align="center"}
+![](_extensions/seedcase-project/seedcase-theme/logos/external/au.png){fig-alt="Aarhus
+University logo" width="200px" fig-align="center"}
+![](_extensions/seedcase-project/seedcase-theme/logos/external/rm.svg){fig-alt="Central
+Denmark Region logo" width="140px" fig-align="center"}
 :::
 
 ::: {#employers-right}

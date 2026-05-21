@@ -1,28 +1,20 @@
+---
+format: gfm
+metadata-files:
+  - _metadata.yml
+---
 
-
+```{=html}
 <p align="center">
     <a href="https://seedcase-project.org/">
         <img src="https://raw.githubusercontent.com/seedcase-project/seedcase-website/main/_extensions/seedcase-project/seedcase-theme/logos/seedcase/navbar.svg" alt="Link to Seedcase website" height="150"/>
     </a>
 </p>
+```
 
-# seedcase-website: An open ecosystem for growing FAIR and tidy data
+# {{< meta gh.repo >}}: An open ecosystem for growing FAIR and tidy data
 
-<!-- TODO: Include DOI after uploading -->
-
-[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true.svg)](https://github.com/copier-org/copier)
-[![GitHub
-License](https://img.shields.io/github/license/seedcase-project/seedcase-website.svg)](https://github.com/seedcase-project/seedcase-website/blob/main/LICENSE.md)
-[![GitHub
-Release](https://img.shields.io/github/v/release/seedcase-project/seedcase-website.svg)](https://github.com/seedcase-project/seedcase-website/releases/latest)
-[![Build
-website](https://github.com/seedcase-project/seedcase-website/actions/workflows/build-website.yml/badge.svg)](https://github.com/seedcase-project/seedcase-website/actions/workflows/build-website.yml)
-[![pre-commit.ci
-status](https://results.pre-commit.ci/badge/github/seedcase-project/seedcase-website/main.svg)](https://results.pre-commit.ci/latest/github/seedcase-project/seedcase-website/main)
-[![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![Project Status: Active – The project has reached a stable, usable
-state and is being actively
-developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+{{< include /includes/_badges.qmd >}}
 
 In many fields of science, managing and structuring data in FAIR
 (Findable, Accessible, Interoperable, Reusable) ways can be a major
@@ -39,8 +31,8 @@ more information about the project, our values, and the software we are
 building.
 
 This project is funded by a grant from the Novo Nordisk Foundation. See
-our grant proposal here: [![Grant proposal
-DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6511112.svg)](https://doi.org/10.5281/zenodo.6511112).
+our grant proposal here:
+[![Grant proposal DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6511112.svg)](https://doi.org/10.5281/zenodo.6511112).
 
 We are employed at [Aarhus University](https://www.au.dk/en/) and at the
 [Steno Diabetes Center Aarhus](https://www.stenoaarhus.dk/) in the
@@ -51,22 +43,21 @@ We are employed at [Aarhus University](https://www.au.dk/en/) and at the
 Looking to contribute? Check out our [contributing
 guidelines](https://guidebook.seedcase-project.org).
 
-Please note that the Seedcase Project is released with a [Contributor
-Code of
-Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md).
+Please note that the Seedcase Project is released with a
+[Contributor Code of Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.
 
-> [!TIP]
->
-> This website repository was generated from the
-> [`template-website`](https://github.com/seedcase-project/template-website)
-> Seedcase template :tada:
+::: callout-tip
+This website repository was generated from the
+[`template-website`](https://github.com/seedcase-project/template-website)
+Seedcase template :tada:
+:::
 
 ## Project files and folders
 
 - `.copier-answers.yml`: Contains the answers you gave when copying the
-  project from the template. **You should not modify this file
-  directly.**
+  project from the template.
+  **You should not modify this file directly.**
 - `.cz.toml`:
   [Commitizen](https://commitizen-tools.github.io/commitizen/)
   configuration file for managing versions and changelogs.
@@ -104,9 +95,16 @@ Check out our [contributing document](CONTRIBUTING.md) for information
 on how to contribute to the project, including how to set up your
 development environment.
 
-Please note that this project is released with a [Contributor Code of
-Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
-to abide by its terms.
+Please note that this project is released with a
+[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in
+this project you agree to abide by its terms.
+
+::: content-hidden
+<!-- TODO: Unhide when there are more contributors -->
+### Contributors
+
+{{< include /includes/_contributors.qmd >}}
+:::
 
 ## Licensing
 
