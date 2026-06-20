@@ -2,10 +2,12 @@ project:
   type: seedcase-theme
 
 website:
+  title: "Seedcase Project"
   site-url: "https://seedcase-project.org/"
   repo-url: "https://github.com/seedcase-project/seedcase-website"
   page-navigation: true
   navbar:
+    title: false
     logo: "_extensions/seedcase-project/seedcase-theme/logos/seedcase/navbar.svg"
     logo-alt: "Seedcase Project logo: Main page"
     pinned: true
