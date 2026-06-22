@@ -1,12 +1,14 @@
 @_default:
-    just --list --unsorted
+  just --list --unsorted
 
-@_checks: check-spelling check-urls check-commits
+# Run all build-related recipes in the justfile
+run-all: update-quarto-theme check-all format-md build-all
 
-@_builds: build-contributors build-readme build-website
+# Run all check-related recipes
+check-all: check-spelling check-urls
 
-# Run all necessary build commands
-run-all: update-quarto-theme _checks format-md _builds
+# Run all build-related recipes
+build-all: build-contributors build-website build-readme
 
 # List all TODO items in the repository
 list-todos:
@@ -14,59 +16,35 @@ list-todos:
     --exclude="*.code-snippets" \
     --exclude-dir=.quarto \
     --exclude=justfile \
-    --exclude=_site \
+    --exclude-dir=_site \
     "TODO" *
-# Update the Quarto seedcase-theme extension
-update-quarto-theme:
-  # # Add theme if it doesn't exist, update if it does
-  quarto update seedcase-project/seedcase-theme --no-prompt
 
 # Install the pre-commit hooks
 install-precommit:
-  # Install pre-commit hooks
   uvx pre-commit install
-  # Run pre-commit hooks on all files
-  uvx pre-commit run --all-files
-  # Update versions of pre-commit hooks
   uvx pre-commit autoupdate
+  uvx pre-commit run --all-files
 
-# Check spelling
+# Update (or add if not present) the Quarto seedcase-theme extension
+update-quarto-theme:
+  quarto update seedcase-project/seedcase-theme --no-prompt
+
+# Check for spelling errors in files
 check-spelling:
-  uvx typos
-
-# Install lychee from https://lychee.cli.rs/guides/getting-started/
+  uvx typos --config .config/typos.toml
 
 # Check that URLs work
 check-urls:
-    lychee . \
-      --verbose \
-      --extensions md,qmd \
-      --exclude-path "_badges.qmd"
+  lychee . \
+    --verbose \
+    --extensions md,qmd \
+    --exclude-path "_badges.qmd"
 
 # Format Markdown files
 format-md:
-    uvx rumdl fmt --silent
-
-# Check the commit messages on the current branch that are not on the main branch
-check-commits:
-  #!/usr/bin/env bash
-  branch_name=$(git rev-parse --abbrev-ref HEAD)
-  number_of_commits=$(git rev-list --count HEAD ^main)
-  if [[ ${branch_name} != "main" && ${number_of_commits} -gt 0 ]]
-  then
-    # If issue happens, try `uv tool update-shell`
-    uvx --from commitizen cz check --rev-range main..HEAD
-  else
-    echo "On 'main' or current branch doesn't have any commits."
-  fi
-
-# Build the website using Quarto
-build-website:
-  quarto render
-
-# Preview the documentation website with automatic reload on changes
-preview-website:
-  quarto preview
+  # Use both rumdl and panache, for different purposes
+  uvx rumdl fmt --silent
+  uvx --from panache-cli panache format . --quiet
 
 # Re-build the README file from the Quarto version
 build-readme:
@@ -76,10 +54,18 @@ build-readme:
 build-contributors:
   sh ./tools/get-contributors.sh seedcase-project/seedcase-website > includes/_contributors.qmd
 
+# Build the website using Quarto
+build-website:
+  uvx --from quarto quarto render
+
+# Preview the website with automatic reload on changes
+preview-website:
+  quarto preview
+
 # Check for and apply updates from the template
 update-from-template:
-  uvx copier update --trust --defaults
+  uvx copier update --defaults
 
 # Reset repo changes to match the template
 reset-from-template:
-  uvx copier recopy --trust --defaults
+  uvx copier recopy --defaults
