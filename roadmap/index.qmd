@@ -64,12 +64,12 @@ and an API reference.
   |  {{< var status.done >}}   | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata      |
   |  {{< var status.done >}}   | [`seedcase-flower`](https://github.com/seedcase-project/seedcase-flower): Turn your metadata into human-readable documentation         |
   |   {{< var status.wip >}}   | [`zen-do`](https://github.com/seedcase-project/zen-do): Command line utilities for working with Zenodo                                 |
+  |   {{< var status.wip >}}   | [`seedcase-propagate`](https://github.com/seedcase-project/seedcase-propagate): Submit requests for Data Package data                  |
   | {{< var status.ongoing >}} | [`seedcase-soil`](https://github.com/seedcase-project/seedcase-soil): A shared foundation for building Seedcase Python packages        |
   | {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/) |
-  | {{< var status.planned >}} | `seedcase-propagate`: Submit requests for Data Package data                                                                            |
   | {{< var status.planned >}} | `seedcase-garden`: Track and manage Data Package requests                                                                              |
 
-  : "Wishlist" of software products.
+  : Status of current and future software products.
 
 #### Software-related products
 
@@ -79,11 +79,11 @@ and an API reference.
   |  {{< var status.done >}}   | [`template-python-package`](https://github.com/seedcase-project/template-python-package): An opinionated toolkit for building Python packages                                                                    |
   |  {{< var status.done >}}   | [`template-website`](https://github.com/seedcase-project/template-website): Set up and manage website projects                                                                                                   |
   |  {{< var status.done >}}   | [`t-squared`](https://github.com/seedcase-project/t-squared): Template for building and managing templates                                                                                                       |
+  |   {{< var status.wip >}}   | [`template-rs`](https://github.com/seedcase-project/template-rs): A Copier template for Rust packages                                                                                                            |
   | {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Quarto extension that contains shortcodes, embedded extensions, and style theming for Seedcase Project Quarto-based website repositories |
   | {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): Commands for managing Seedcase repositories                                                                                                                |
-  | {{< var status.ongoing >}} | [`actions`](https://github.com/seedcase-project/actions): GitHub Actions for continuous integration and delivery of Seedcase repositories                                                                        |
 
-  : "Wishlist" of software-related products.
+  : Status of current and future software-related products.
 :::
 
 ### Technical documentation
@@ -182,12 +182,10 @@ materials.
 
 <!-- TODO: This section needs some work -->
 
-  | Status                       | Deliverable                                                                                                                        |
-  | :--------------------------: | :--------------------------------------------------------------------------------------------------------------------------------- |
-  |  {{< var status.ongoing >}}  | [`community`](https://github.com/seedcase-project/community): Community building, outreach, and updates on the Seedcase Project    |
-  |  {{< var status.ongoing >}}  | [`decisions`](https://github.com/seedcase-project/decisions): A record of decisions on tools and processes in the Seedcase Project |
-  | {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research?                                                     |
-  | {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment           |
+  | Status                     | Deliverable                                                                                                                        |
+  | :------------------------: | :--------------------------------------------------------------------------------------------------------------------------------- |
+  | {{< var status.ongoing >}} | [`community`](https://github.com/seedcase-project/community): Community building, outreach, and updates on the Seedcase Project    |
+  | {{< var status.ongoing >}} | [`decisions`](https://github.com/seedcase-project/decisions): A record of decisions on tools and processes in the Seedcase Project |
 
   : "Wishlist" of explanation-type documentation products.
 
@@ -197,6 +195,8 @@ materials.
   | {{< var status.potential >}} | Challenges and barriers in research for effective software development and data engineering                                                         |
   | {{< var status.potential >}} | Researchers don't know how to effectively work together: Current challenges and potential solutions                                                 |
   | {{< var status.potential >}} | Research institutions and funding agencies are not yet designed to support effective and robust, and therefore vital, research software development |
+  | {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research?                                                                      |
+  | {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment                            |
 :::::
 :::
 
