@@ -46,10 +46,42 @@ just run-all
 
 When committing changes, please try to follow [Conventional
 Commits](https://decisions.seedcase-project.org/why-conventional-commits/) as
-Git messages. Using this convention allows us to be able to automatically create
-a release based on the commit message by using
-[Commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/).
-If you don't use Conventional Commits when making a commit, we will revise the
-pull request title to follow that format, as we use squash merges when merging
-pull requests, so all other commits in the pull request will be squashed into
-one commit.
+Git messages. If you don't use Conventional Commits when making a commit, we
+will revise the pull request title to follow that format. We use squash merges
+when merging pull requests, so all other commits in the pull request will be
+squashed into one commit.
+
+## :file_folder: Explanation of files and folders
+
+This is a description of some of the files in this repository.
+
+- `.copier-answers.yml`: Contains the answers you gave when copying the project
+  from the template. **You should not modify this file directly.**
+- `.github/`: Contains GitHub-specific files, such as issue and pull request
+  templates, workflows,
+  [dependabot](https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart-guide)
+  configuration, pull request templates, and a
+  [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+  file.
+- `_quarto.yml`: Quarto configuration file for the website, including settings
+  for the website, such as the theme, navigation, and other options.
+- `_metadata.yml`: Quarto metadata file for the website, including information
+  about the project, such as the titles and GitHub names.
+- `.gitignore`: This ignore file tells Git which files to not track. Unless you
+  know what you are doing, it's best to not touch this file.
+- `.pre-commit-config.yaml`: [Pre-commit](https://pre-commit.com/) configuration
+  file for managing and running checks before each commit.
+- `.config/`: Contains configuration files for various tools used in the
+  project, such as:
+  - `typos.toml`: [typos](https://github.com/crate-ci/typos) spell checker
+    configuration file.
+  - `rumdl.toml` and `panache.toml`: [rumdl](https://rumdl.dev) and
+    [Panache](https://panache.bz) configuration file for formatting Markdown
+    files in the project.
+- `.editorconfig`: Editor configuration file for
+  [EditorConfig](https://editorconfig.org/) to maintain consistent coding styles
+  across different editors and IDEs.
+- `justfile`: [`just`](https://just.systems/man/en/) configuration file for
+  scripting project tasks.
+- `CHANGELOG.md`: Changelog file for tracking changes in the project.
+- `CONTRIBUTING.md`: Guidelines for contributing to the project.
