@@ -8,11 +8,8 @@ on:
 # Limit token permissions for security
 permissions: read-all
 
-env:
-  USE_TINYTEX: false
-
 jobs:
-  build-deploy:
+  build-website:
     runs-on: ubuntu-latest
     # Stop builds from running more than one at a time, to save resources and also
     # to limit conflicts when uploading to the hosting provider.
@@ -30,22 +27,8 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
-      - name: Spell check repo
-        uses: crate-ci/typos@f8a58b6b53f2279f71eb605f03a4ae4d10608f45 # v1.47.0
-
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
-        # Use basic token to avoid rate limiting when downloading tinytex, which uses GitHub API.
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tinytex: ${{ env.USE_TINYTEX }}
-
-      - name: Install Chrome for PDF rendering
-        if: ${{ env.USE_TINYTEX }}
-        run: |
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo apt install ./google-chrome-stable_current_amd64.deb
 
       - name: Render and publish to Netlify
         uses: quarto-dev/quarto-actions/publish@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
