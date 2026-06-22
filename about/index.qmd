@@ -2,15 +2,15 @@
 title: About
 format:
   seedcase-theme-html:
-     css: styles.css
+    css: styles.css
 ---
 
 ## Who we are
 
-The Seedcase Project is developed by the four of us at the Steno
-Diabetes Center Aarhus and Department of Clinical Medicine at Aarhus
-University in Aarhus, Denmark, and is funded by a five year grant from
-the [Novo Nordisk Foundation](/index.qmd#acknowledgements).
+The Seedcase Project is developed by the four of us at the Steno Diabetes Center
+Aarhus and Department of Clinical Medicine at Aarhus University in Aarhus,
+Denmark, and is funded by a five year grant from the [Novo Nordisk
+Foundation](/index.qmd#acknowledgements).
 
 ::: {layout-ncol="2"}
 ![Kristiane Beicher\
@@ -31,31 +31,28 @@ Consultant](images/joelostblom.jpg){.profile-picture}
 
 ## What motivated the Seedcase Project
 
-In clinical and health research, especially for small- to mid-sized
-research groups, funding for building modern, open-source software
-infrastructures for managing and using data is limited. This lack of
-funding has naturally led to organisational challenges in managing both
-existing and incoming data for many research initiatives.
+In clinical and health research, especially for small- to mid-sized research
+groups, funding for building modern, open-source software infrastructures for
+managing and using data is limited. This lack of funding has naturally led to
+organisational challenges in managing both existing and incoming data for many
+research initiatives.
 
-In the Seedcase Project, we aim to improve research infrastructure by
-providing tools that ease the management of research data resources and
-improve transparency for researchers, clinicians, and stakeholders.
-Managing data is hard and can easily become time-consuming and complex.
-With the Seedcase Project, we want to provide a framework for managing
-data in a way that is scalable, efficient, and easy to use---while also
-being open source and transparent. This will allow researchers to spend
-more time on actual research by minimising the time spent on data
-management.
+In the Seedcase Project, we aim to improve research infrastructure by providing
+tools that ease the management of research data resources and improve
+transparency for researchers, clinicians, and stakeholders. Managing data is
+hard and can easily become time-consuming and complex. With the Seedcase
+Project, we want to provide a framework for managing data in a way that is
+scalable, efficient, and easy to use---while also being open source and
+transparent. This will allow researchers to spend more time on actual research
+by minimising the time spent on data management.
 
-More open, transparent, and easy access to data resources has the
-potential to greatly improve the interest in, use of, and scientific
-impact of those resources, enabling excellent data science-driven
-research.
+More open, transparent, and easy access to data resources has the potential to
+greatly improve the interest in, use of, and scientific impact of those
+resources, enabling excellent data science-driven research.
 
-We aim to create this framework in a way that enables diverse research
-groups and companies who are unable to adequately invest in building
-infrastructures of this kind to implement it relatively easily and
-modify it as needed for their own purposes. By building this framework,
-we hope to help propel research groups and companies across Denmark (and
-globally) toward modern, scalable, and efficient approaches to working
-with data.
+We aim to create this framework in a way that enables diverse research groups
+and companies who are unable to adequately invest in building infrastructures of
+this kind to implement it relatively easily and modify it as needed for their
+own purposes. By building this framework, we hope to help propel research groups
+and companies across Denmark (and globally) toward modern, scalable, and
+efficient approaches to working with data.
