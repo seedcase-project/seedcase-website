@@ -84,8 +84,8 @@ Infrastructure must **state-of-the-art** and is defined as:
 The infrastructure must be linked to ongoing research and be within the scope of
 the NNF Data Science Initiative:
 
-1. Development of new ... methods and technologies within data science, ...,
-   data engineering, ...
+1. Development of new... methods and technologies within data science,..., data
+   engineering,...
 
 For projects mainly concerned with data science methods development, it is
 important that the applicants clearly show the relevance for potential future
