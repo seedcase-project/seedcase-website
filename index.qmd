@@ -43,42 +43,45 @@ font." width="250px"}
 
 ::::::::: {layout="[33, 33, 33]"}
 ::::::::::: landing-page-card
-![](_extensions/seedcase-project/seedcase-theme/logos/sprout/icon.svg){fig-alt="Sprout logo."
-width="50px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/sprout/icon.svg){fig-alt="Sprout
+logo." width="50px"}
 
-![](_extensions/seedcase-project/seedcase-theme/logos/sprout/font.svg){fig-alt="Sprout font."
-height="22px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/sprout/font.svg){fig-alt="Sprout
+font." height="22px"}
 
 Grow organised and FAIR data
 
 [Learn
-more](https://sprout.seedcase-project.org/){.about-link .btn .stretched-link}
+more](https://sprout.seedcase-project.org/){.about-link .btn
+.stretched-link}
 :::::::::::
 
 ::::::::::: landing-page-card
-![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/icon.svg){fig-alt="Check Datapackage logo."
-width="50px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/icon.svg){fig-alt="Check
+Datapackage logo." width="50px"}
 
-![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/font.svg){fig-alt="Check Datapackage font."
-height="30px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/font.svg){fig-alt="Check
+Datapackage font." height="30px"}
 
 Ensure the compliance of your Data Package metadata
 
 [Learn
-more](https://check-datapackage.seedcase-project.org/){.about-link .btn .stretched-link}
+more](https://check-datapackage.seedcase-project.org/){.about-link .btn
+.stretched-link}
 :::::::::::
 
 ::::::::::: landing-page-card
-![](_extensions/seedcase-project/seedcase-theme/logos/flower/icon.svg){fig-alt="Flower logo."
-width="50px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/flower/icon.svg){fig-alt="Flower
+logo." width="50px"}
 
-![](_extensions/seedcase-project/seedcase-theme/logos/flower/font.svg){fig-alt="Flower font."
-height="19px"}
+![](_extensions/seedcase-project/seedcase-theme/logos/flower/font.svg){fig-alt="Flower
+font." height="19px"}
 
 Turn your metadata into human-readable documentation
 
 [Learn
-more](https://flower.seedcase-project.org/){.about-link .btn .stretched-link}
+more](https://flower.seedcase-project.org/){.about-link .btn
+.stretched-link}
 :::::::::::
 :::::::::
 :::::::
