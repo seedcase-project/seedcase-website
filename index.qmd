@@ -16,7 +16,7 @@ logo." width="150px"}
 ![](_extensions/seedcase-project/seedcase-theme/logos/seedcase/font.svg){fig-alt="Seedcase
 font." width="250px"}
 
-# An open ecosystem for growing FAIR and tidy data
+# Growing FAIR and tidy data
 
 ::::::::: {style="margin-top: 50px;"}
 [Explore our roadmap](/roadmap/index.qmd){.btn-primary .btn}
@@ -30,9 +30,16 @@ font." width="250px"}
 ::::::: hero-text
 ## What we do
 
-We develop open-source tools for research teams who need to collect, manage, and
-share data in a consistent and FAIR (Findable, Accessible, Interoperable, and
-Reusable) way.
+- We collaborate with research groups to engineer and build up data as FAIR
+  (Findable, Accessible, Interoperable, and Reusable) and tidy data packages
+- We develop open-source tools that automate and streamline how we and others
+  can build these data packages.
+- We upskill and empower researchers and data owners through mentoring,
+  training, and the development of guides and tutorials.
+
+<!-- TODO: include docs below. -->
+
+## Our tools
 
 ::::::::: {layout="[33, 33, 33]"}
 ::::::::::: landing-page-card
@@ -91,16 +98,6 @@ all aspects of our work. Our values and principles are described on our
 [design](https://design.seedcase-project.org/) website, and we write posts about
 our work and learnings on our
 [community](https://community.seedcase-project.org/) website.
-
-We aim to:
-
-- Help research groups and institutions create and manage high-quality and FAIR
-  (Findable, Accessible, Interoperable, and Reusable) research data.
-- Enable individual researchers to find and (re-)use data more easily for their
-  own research.
-- Reduce the time from data generation to scientific dissemination by focusing
-  on streamlining and automating the data ingestion, processing, storage, and
-  management processes.
 
 [Read more about the project](/about/index.qmd){.about-link .btn}
 :::::
