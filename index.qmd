@@ -38,11 +38,16 @@ font." width="250px"}
   training, and the development of guides and tutorials.
 
 <!-- TODO: include docs below. -->
+:::::::
+:::::
+:::
 
+::: landing-page-block
+::::: hero-text
 ## Our tools
 
-::::::::: {layout="[33, 33, 33]"}
-::::::::::: landing-page-card
+::::::: {layout="[33, 33, 33]"}
+::::::::: landing-page-card
 ![](_extensions/seedcase-project/seedcase-theme/logos/sprout/icon.svg){fig-alt="Sprout
 logo." width="50px"}
 
@@ -54,9 +59,9 @@ Grow organised and FAIR data
 [Learn
 more](https://sprout.seedcase-project.org/){.about-link .btn
 .stretched-link}
-:::::::::::
+:::::::::
 
-::::::::::: landing-page-card
+::::::::: landing-page-card
 ![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/icon.svg){fig-alt="Check
 Datapackage logo." width="50px"}
 
@@ -68,9 +73,9 @@ Ensure the compliance of your Data Package metadata
 [Learn
 more](https://check-datapackage.seedcase-project.org/){.about-link .btn
 .stretched-link}
-:::::::::::
+:::::::::
 
-::::::::::: landing-page-card
+::::::::: landing-page-card
 ![](_extensions/seedcase-project/seedcase-theme/logos/flower/icon.svg){fig-alt="Flower
 logo." width="50px"}
 
@@ -82,14 +87,14 @@ Turn your metadata into human-readable documentation
 [Learn
 more](https://flower.seedcase-project.org/){.about-link .btn
 .stretched-link}
-:::::::::::
 :::::::::
 :::::::
 :::::
 :::
 
-::: landing-page-block
-::::: hero-text
+::: hero-banner
+::::: landing-page-block
+::::::: hero-text
 ## A value-based and principle-driven initiative
 
 In the **Seedcase Project**, we build software and community together. We're
@@ -99,13 +104,14 @@ all aspects of our work. Our values and principles are described on our
 our work and learnings on our
 [community](https://community.seedcase-project.org/) website.
 
+::::::::: text-center
 [Read more about the project](/about/index.qmd){.about-link .btn}
+:::::::::
+:::::::
 :::::
 :::
 
-::: hero-banner
-::::: landing-page-block
-::::::: hero-text
+::: landing-page-block
 ## Goals
 
 ### [{{< fa code >}}]{style="color: #48DC76"} Develop open-source software for health data
@@ -127,38 +133,40 @@ better practices in research data engineering and software engineering.
 
 By building this project as fully open as possible and applying the same
 principles we teach and advocate for.
-:::::::
-:::::
 :::
 
-::: landing-page-block
+::: hero-banner
+::::: landing-page-block
+::::::: hero-text
 ## Acknowledgements {#acknowledgements}
 
-::::: {layout="[70, 30]"}
-::::::: {#acknowledgements-left}
+::::::::: {layout="[70, 30]"}
+::::::::::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462. See the
 [application](https://seedcase-project.org/about/history/nnf-application).
-:::::::
+:::::::::::
 
-::::::: {#acknowledgements-right}
+::::::::::: {#acknowledgements-right}
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/nnf.png){fig-alt="The
 Novo Nordisk Foundation logo" width="200px" fig-align="right"}
-:::::::
-:::::
+:::::::::::
+:::::::::
 
-::::: {layout="[30, 70]"}
-::::::: {#employers-left}
+::::::::: {layout="[30, 70]"}
+::::::::::: {#employers-left}
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/au.png){fig-alt="Aarhus
 University logo" width="200px" fig-align="center"}
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/rm.svg){fig-alt="Central
 Denmark Region logo" width="140px" fig-align="center"}
-:::::::
+:::::::::::
 
-::::::: {#employers-right}
+::::::::::: {#employers-right}
 We are employed at [Aarhus University](https://www.au.dk/en/) and at the [Steno
 Diabetes Center Aarhus](https://www.stenoaarhus.dk/) in the [Central Denmark
 Region](https://www.rm.dk/).
+:::::::::::
+:::::::::
 :::::::
 :::::
 :::
