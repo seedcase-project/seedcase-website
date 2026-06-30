@@ -104,7 +104,9 @@ all aspects of our work. Our values and principles are described on our
 our work and learnings on our
 [community](https://community.seedcase-project.org/) website.
 
+::::::::: text-center
 [Read more about the project](/about/index.qmd){.about-link .btn}
+:::::::::
 :::::::
 :::::
 :::
