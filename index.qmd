@@ -30,12 +30,19 @@ font." width="250px"}
 ::::::: hero-text
 ## What we do
 
-- We collaborate with research groups to engineer and build up data as FAIR
-  (Findable, Accessible, Interoperable, and Reusable) and tidy data packages
-- We develop open-source tools that automate and streamline how we and others
-  can build these data packages.
-- We upskill and empower researchers and data owners through mentoring,
-  training, and the development of guides and tutorials.
+Our vision is to make it as easy as possible to create, build, and use FAIR
+(Findable, Accessible, Interoperable, and Reusable), tidy, and high-quality
+data, so that we can reduce the time from data generation to scientific
+dissemination.
+
+Our strategy to work towards this vision is to:
+
+- Collaborate with research groups to engineer and build FAIR (Findable,
+  Accessible, Interoperable, and Reusable) and tidy data packages
+- Develop open-source tools that automate and streamline how we and others can
+  build these data packages.
+- Upskill and empower researchers and data owners through mentoring, training,
+  and the development of guides and tutorials.
 
 <!-- TODO: include docs below. -->
 :::::::
