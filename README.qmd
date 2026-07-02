@@ -35,6 +35,8 @@ Our strategy to work towards this vision is to:
 Check our [website](https://seedcase-project.org/) for more details, such as our
 roadmap, products, team, links to our other websites, and our collaborators.
 
+## Funding and affiliations
+
 This project is funded by a grant from the Novo Nordisk Foundation. See our
 grant proposal here: [![Grant proposal
 DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6511112.svg)](https://doi.org/10.5281/zenodo.6511112).
