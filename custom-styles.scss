@@ -5,8 +5,12 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 100%; // 100% of column width
   height: 300px;
+  // This is required because margin and Quarto's layout interact to make rows that
+  // don't fill up (e.g. layout-ncol of 3, with one row having 2 cards) result in cards
+  // that are bigger than the ones above (e.g. 283 px per card in full row vs 299 px
+  // in non-full row).
+  max-width: 280px;
   margin: 10px;
   border-radius: 20px;
   border: 1.5px solid var(--quarto-scss-export-gray-300);
@@ -15,7 +19,6 @@
   transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out;
   text-align: center;
 }
-
 
 .landing-page-card:hover {
   border: 1.5px solid $tertiary;

@@ -1,0 +1,20 @@
+::: {layout-ncol="3"}
+<% for (const item of items) { %>
+<% let has_logo=item.name.match(/sprout|flower|propagate|check-/) %>
+<% let product_name=item.name.replace("seedcase-", "" ) %>
+
+::: landing-page-card
+<% if (has_logo) { %>
+![](_extensions/seedcase-project/seedcase-theme/logos/<%= product_name %>/icon.svg){fig-alt="<%= product_name %> logo." width="45px"}
+
+![](_extensions/seedcase-project/seedcase-theme/logos/<%= product_name %>/font.svg){fig-alt="<%=product_name %> font." height="20px"}
+<% } else { %>
+**<%= item.name %>**
+<% } %>
+
+<%= item.description %>
+
+[Learn more](<%- item.homepageUrl %>){.about-link .btn .stretched-link}
+:::
+<% } %>
+:::

@@ -4,7 +4,28 @@ page-layout: custom
 format:
   seedcase-theme-html:
     theme:
+      - brand
       - custom-styles.scss
+listing:
+  - id: "product-tools"
+    contents: data/product-tools.yaml
+    sort: name
+    template: includes/cards.md.ejs
+
+  - id: "product-docs"
+    contents: data/product-docs.yaml
+    sort: name
+    template: includes/cards.md.ejs
+
+  - id: "platform-tools"
+    contents: data/platform-tools.yaml
+    sort: name
+    template: includes/cards.md.ejs
+
+  - id: "platform-docs"
+    contents: data/platform-docs.yaml
+    sort: name
+    template: includes/cards.md.ejs
 ---
 
 ::: landing-page-block
@@ -43,8 +64,6 @@ Our strategy to work towards this vision is to:
   packages.
 - Upskill and empower researchers and data owners through mentoring, training,
   guides, and tutorials.
-
-<!-- TODO: include docs below. -->
 :::::::
 :::::
 :::
@@ -53,48 +72,12 @@ Our strategy to work towards this vision is to:
 ::::: hero-text
 ## Our tools
 
-::::::: {layout="[33, 33, 33]"}
-::::::::: landing-page-card
-![](_extensions/seedcase-project/seedcase-theme/logos/sprout/icon.svg){fig-alt="Sprout
-logo." width="50px"}
+::::::: {#product-tools}
+:::::::
 
-![](_extensions/seedcase-project/seedcase-theme/logos/sprout/font.svg){fig-alt="Sprout
-font." height="22px"}
+## Our docs
 
-Grow organised and FAIR data
-
-[Learn
-more](https://sprout.seedcase-project.org/){.about-link .btn
-.stretched-link}
-:::::::::
-
-::::::::: landing-page-card
-![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/icon.svg){fig-alt="Check
-Datapackage logo." width="50px"}
-
-![](_extensions/seedcase-project/seedcase-theme/logos/check-datapackage/font.svg){fig-alt="Check
-Datapackage font." height="30px"}
-
-Ensure the compliance of your Data Package metadata
-
-[Learn
-more](https://check-datapackage.seedcase-project.org/){.about-link .btn
-.stretched-link}
-:::::::::
-
-::::::::: landing-page-card
-![](_extensions/seedcase-project/seedcase-theme/logos/flower/icon.svg){fig-alt="Flower
-logo." width="50px"}
-
-![](_extensions/seedcase-project/seedcase-theme/logos/flower/font.svg){fig-alt="Flower
-font." height="19px"}
-
-Turn your metadata into human-readable documentation
-
-[Learn
-more](https://flower.seedcase-project.org/){.about-link .btn
-.stretched-link}
-:::::::::
+::::::: {#product-docs}
 :::::::
 :::::
 :::
@@ -145,35 +128,52 @@ principles we teach and advocate for.
 ::: hero-banner
 ::::: landing-page-block
 ::::::: hero-text
+## Platform
+
+These are tools and documentation that we've created that help us work better.
+But we also believe these docs and tools could help others as well!
+
+### Tools
+
+::::::::: {#platform-tools}
+:::::::::
+
+## Docs
+
+::::::::: {#platform-docs}
+:::::::::
+:::::::
+:::::
+:::
+
+::: landing-page-block
 ## Acknowledgements {#acknowledgements}
 
-::::::::: {layout="[70, 30]"}
-::::::::::: {#acknowledgements-left}
+::::: {layout="[70, 30]"}
+::::::: {#acknowledgements-left}
 The Seedcase Project is funded by a grant from the [Novo Nordisk
 Foundation](https://novonordiskfonden.dk/en/), number NNF21OC0069462. See the
 [application](https://seedcase-project.org/about/history/nnf-application).
-:::::::::::
+:::::::
 
-::::::::::: {#acknowledgements-right}
+::::::: {#acknowledgements-right}
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/nnf.png){fig-alt="The
 Novo Nordisk Foundation logo" width="200px" fig-align="right"}
-:::::::::::
-:::::::::
+:::::::
+:::::
 
-::::::::: {layout="[30, 70]"}
-::::::::::: {#employers-left}
+::::: {layout="[30, 70]"}
+::::::: {#employers-left}
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/au.png){fig-alt="Aarhus
 University logo" width="200px" fig-align="center"}
 ![](_extensions/seedcase-project/seedcase-theme/logos/external/rm.svg){fig-alt="Central
 Denmark Region logo" width="140px" fig-align="center"}
-:::::::::::
+:::::::
 
-::::::::::: {#employers-right}
+::::::: {#employers-right}
 We are employed at [Aarhus University](https://www.au.dk/en/) and at the [Steno
 Diabetes Center Aarhus](https://www.stenoaarhus.dk/) in the [Central Denmark
 Region](https://www.rm.dk/).
-:::::::::::
-:::::::::
 :::::::
 :::::
 :::
