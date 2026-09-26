@@ -6,26 +6,6 @@ format:
     theme:
       - brand
       - custom-styles.scss
-listing:
-  - id: "product-tools"
-    contents: data/product-tools.yaml
-    sort: name
-    template: includes/cards.md.ejs
-
-  - id: "product-docs"
-    contents: data/product-docs.yaml
-    sort: name
-    template: includes/cards.md.ejs
-
-  - id: "platform-tools"
-    contents: data/platform-tools.yaml
-    sort: name
-    template: includes/cards.md.ejs
-
-  - id: "platform-docs"
-    contents: data/platform-docs.yaml
-    sort: name
-    template: includes/cards.md.ejs
 ---
 
 ::: landing-page-block
@@ -70,21 +50,6 @@ Our strategy to work towards this vision is to:
 
 ::: landing-page-block
 ::::: hero-text
-## Our tools
-
-::::::: {#product-tools}
-:::::::
-
-## Our docs
-
-::::::: {#product-docs}
-:::::::
-:::::
-:::
-
-::: hero-banner
-::::: landing-page-block
-::::::: hero-text
 ## A value-based and principle-driven initiative
 
 In the **Seedcase Project**, we build software and community together. We're
@@ -94,14 +59,15 @@ all aspects of our work. Our values and principles are described on our
 our work and learnings on our
 [community](https://community.seedcase-project.org/) website.
 
-::::::::: text-center
+::::::: text-center
 [Read more about the project](/about/index.qmd){.about-link .btn}
-:::::::::
 :::::::
 :::::
 :::
 
-::: landing-page-block
+::: hero-banner
+::::: landing-page-block
+::::::: hero-text
 ## Goals
 
 ### [{{< fa code >}}]{style="color: #48DC76"} Develop open-source software for health data
@@ -123,25 +89,6 @@ better practices in research data engineering and software engineering.
 
 By building this project as fully open as possible and applying the same
 principles we teach and advocate for.
-:::
-
-::: hero-banner
-::::: landing-page-block
-::::::: hero-text
-## Platform
-
-These are tools and documentation that we've created that help us work better.
-But we also believe these docs and tools could help others as well!
-
-### Tools
-
-::::::::: {#platform-tools}
-:::::::::
-
-## Docs
-
-::::::::: {#platform-docs}
-:::::::::
 :::::::
 :::::
 :::
