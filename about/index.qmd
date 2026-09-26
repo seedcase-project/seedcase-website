@@ -13,20 +13,28 @@ Denmark, and is funded by a five year grant from the [Novo Nordisk
 Foundation](/index.qmd#acknowledgements).
 
 ::: {layout-ncol="2"}
-![Kristiane Beicher\
-Data Architect](images/k-beicher.jpg){.profile-picture}
+[![Kristiane Beicher\
+Data
+Architect](images/k-beicher.jpg){.profile-picture}](https://github.com/k-beicher)
 
-![Luke W. Johnston\
-Team Leader](images/lwjohnst86.jpg){.profile-picture}
+[![Luke W. Johnston\
+Team
+Leader](images/lwjohnst86.jpg){.profile-picture}](https://github.com/lwjohnst86)
 
-![Marton Vago\
-Research Software Engineer](images/martonvago.jpg){.profile-picture}
+[![Marton Vago\
+Research Software
+Engineer](images/martonvago.jpg){.profile-picture}](https://github.com/martonvago)
 
-![Signe Kirk Brødbæk\
-Research Software Engineer](images/signekb.jpg){.profile-picture}
+[![Signe Kirk Brødbæk\
+Research Software
+Engineer](images/signekb.jpg){.profile-picture}](https://github.com/signekb)
 
-![Joel Ostblom\
-Consultant](images/joelostblom.jpg){.profile-picture}
+[![Joel Ostblom\
+Consultant](images/joelostblom.jpg){.profile-picture}](https://github.com/joelostblom)
+
+[![Daniel Mazhari-Jensen\
+Regular
+collaborator](images/danmazjen.jpg){.profile-picture}](https://github.com/danmazjen)
 :::
 
 ## What motivated the Seedcase Project
