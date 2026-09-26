@@ -19,7 +19,9 @@ font." width="250px"}
 # Growing FAIR and tidy data
 
 ::::::::: {style="margin-top: 50px;"}
-[Explore our roadmap](/roadmap/index.qmd){.btn-primary .btn}
+[Get started with our
+guide](https://data-pkg-guide.seedcase-project.org){.btn-primary .btn} [Explore
+our tools and docs](/docs/products.qmd){.btn-primary .btn}
 :::::::::
 :::::::
 :::::
