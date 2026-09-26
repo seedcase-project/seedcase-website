@@ -46,6 +46,10 @@ format-md:
   uvx rumdl fmt --silent
   uvx --from panache-cli panache format . --quiet
 
+# Build the repo listing files in `data/`
+build-repo-listing:
+  bash ./tools/build-repo-listing.sh
+
 # Re-build the README file from the Quarto version
 build-readme:
   uvx --from quarto quarto render README.qmd --to gfm

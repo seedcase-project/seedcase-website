@@ -1,0 +1,39 @@
+---
+toc: false
+page-layout: custom
+format:
+  seedcase-theme-html:
+    theme:
+      - brand
+      - ../custom-styles.scss
+listing:
+  - id: "platform-tools"
+    contents: ../data/platform-tools.yaml
+    sort: name
+    template: ../includes/cards.md.ejs
+
+  - id: "platform-docs"
+    contents: ../data/platform-docs.yaml
+    sort: name
+    template: ../includes/cards.md.ejs
+---
+
+::: landing-page-block
+::::: hero-text
+# Platform
+
+These are our [platform](https://en.wikipedia.org/wiki/Platform_engineering)
+tools and documentation that we've created that help us work better. But we also
+believe these docs and tools could help others as well!
+
+## Tools
+
+::::::: {#platform-tools}
+:::::::
+
+## Docs
+
+::::::: {#platform-docs}
+:::::::
+:::::
+:::

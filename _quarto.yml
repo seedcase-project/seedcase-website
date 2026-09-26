@@ -12,9 +12,11 @@ website:
     logo-alt: "Seedcase Project logo: Main page"
     pinned: true
     left:
-      - roadmap/index.qmd
+      - docs/products.qmd
+      - docs/platform.qmd
       - text: "About"
         href: about/index.qmd
+      - roadmap/index.qmd
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/seedcase-website"
