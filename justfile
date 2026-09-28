@@ -49,7 +49,7 @@ format-md:
 # Build the repo listing files in `data/`
 build-repo-listing:
   bash ./tools/build-repo-listing.sh
-  
+
 # Re-build the team profile pics
 build-team-pics:
   bash ./tools/get-github-avatars.sh
