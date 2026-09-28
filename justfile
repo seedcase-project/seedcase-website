@@ -8,7 +8,7 @@ run-all: update-quarto-theme check-all format-md build-all
 check-all: check-spelling check-urls
 
 # Run all build-related recipes
-build-all: build-contributors build-website build-readme
+build-all: build-contributors build-team-pics build-website build-readme
 
 # List all TODO items in the repository
 list-todos:
@@ -45,6 +45,10 @@ format-md:
   # Use both rumdl and panache, for different purposes
   uvx rumdl fmt --silent
   uvx --from panache-cli panache format . --quiet
+
+# Build the repo listing files in `data/`
+build-team-pics:
+  bash ./tools/get-github-avatars.sh
 
 # Re-build the README file from the Quarto version
 build-readme:
