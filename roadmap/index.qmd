@@ -79,7 +79,7 @@ and an API reference.
   |  {{< var status.done >}}   | [`template-python-package`](https://github.com/seedcase-project/template-python-package): An opinionated toolkit for building Python packages                                                                    |
   |  {{< var status.done >}}   | [`template-website`](https://github.com/seedcase-project/template-website): Set up and manage website projects                                                                                                   |
   |  {{< var status.done >}}   | [`t-squared`](https://github.com/seedcase-project/t-squared): Template for building and managing templates                                                                                                       |
-  |   {{< var status.wip >}}   | [`template-rs`](https://github.com/seedcase-project/template-rs): A Copier template for Rust packages                                                                                                            |
+  |  {{< var status.done >}}   | [`template-rs`](https://github.com/seedcase-project/template-rs): A Copier template for Rust packages                                                                                                            |
   | {{< var status.ongoing >}} | [`seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Quarto extension that contains shortcodes, embedded extensions, and style theming for Seedcase Project Quarto-based website repositories |
   | {{< var status.ongoing >}} | [`spaid`](https://github.com/seedcase-project/spaid): Commands for managing Seedcase repositories                                                                                                                |
 
@@ -127,26 +127,12 @@ How-to guides are goal-oriented documentation that helps the reader get
 something specific done. These include how-to guides, usage guides, and user
 manuals.
 
-  | Status                 | Guides or manuals                                                                                    |
-  | :--------------------: | :--------------------------------------------------------------------------------------------------- |
-  | {{< var status.wip >}} | [`guidebook`](https://guidebook.seedcase-project.org/): A guidebook for team collaboration on GitHub |
+  | Status                 | Guides or manuals                                                                                                                                     |
+  | :--------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | {{< var status.wip >}} | [`guidebook`](https://guidebook.seedcase-project.org/): A guidebook for team collaboration on GitHub                                                  |
+  | {{< var status.wip >}} | [`data-pkg-guide`](https://data-pkg-guide.seedcase-project.org/): A guide to engineering and developing research data as a FAIR and tidy data package |
 
   : "Wishlist" of goal-type documentation products.
-
-::::: content-hidden
-Potentials:
-
-- Improving the research software development lifecycle by integrating DevOps
-  practices.
-- A guided walkthrough: Team-based collaborative practices and workflows in a
-  research environment.
-- Using DocOps workflows and infrastructure to reduce time between writing and
-  dissemination.
-- Building DataOps pipelines and infrastructure to improve research data quality
-  and reduce time from collection to analysis.
-- Integrating research operations in organizations to improve quality and speed
-  up research.
-:::::
 
 #### Reference
 
@@ -188,16 +174,6 @@ materials.
   | {{< var status.ongoing >}} | [`decisions`](https://github.com/seedcase-project/decisions): A record of decisions on tools and processes in the Seedcase Project |
 
   : "Wishlist" of explanation-type documentation products.
-
-::::: content-hidden
-  | Status                       | Deliverable                                                                                                                                         |
-  | :--------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | {{< var status.potential >}} | Challenges and barriers in research for effective software development and data engineering                                                         |
-  | {{< var status.potential >}} | Researchers don't know how to effectively work together: Current challenges and potential solutions                                                 |
-  | {{< var status.potential >}} | Research institutions and funding agencies are not yet designed to support effective and robust, and therefore vital, research software development |
-  | {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research?                                                                      |
-  | {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment                            |
-:::::
 :::
 
 ### Examples that use our products
@@ -211,28 +187,6 @@ datasets and prepare them to be used by others. The data is openly licensed.
   | {{< var status.ongoing >}} | [`example-seed-beetle`](https://github.com/seedcase-project/example-seed-beetle): Example repository for making a data package with data from a study of complex mitonuclear interactions and metabolic costs of mating in male seed beetles |
   | {{< var status.ongoing >}} | [`example-rainforest`](https://github.com/seedcase-project/example-rainforest): Example repository for making a data package with data from a study of seed germination in the rainforest                                                    |
 
-::: content-hidden
-### Outreach and events
-
-These are activities involves engaging with the research community, mainly
-through in-person seminars, symposiums, or other events.
-
-::::: callout-note
-Given the expertise and resources needed for these types of "products" (e.g.
-hosting and coordinating people), we will likely not be able to work on these
-types of activities in the near future. However, we believe that they are
-important for bringing greater awareness to the research community about the
-various topics we work on and advocate for.
-:::::
-
-  | Status                       | Deliverable                                                                                        |
-  | :--------------------------: | :------------------------------------------------------------------------------------------------- |
-  | {{< var status.potential >}} | Seminar series: Unmet needs for research data engineering and current challenges in implementation |
-  | {{< var status.potential >}} | Symposium: Current state of data engineering in research environment                               |
-
-  : "Wishlist" of outreach event "products".
-:::
-
 ## Collaborations and users
 
 As we now have working packages, we are currently collaborating with several
@@ -245,7 +199,7 @@ The projects we collaborate with are:
 Other groups have also expressed interest and may become future collaborators.
 These other projects are:
 
-- [ADDITION](https://addition.au.dk/)
+- [ADDITION-PRO](https://addition.au.dk/research/addition-dk/addition-pro/)
 - [Health in Central Denmark
   Region](https://www.stenoaarhus.dk/forskning/helbred-i-midt/)
 - [DARTER](https://steno-aarhus.github.io/darter-project/) (register-based

@@ -8,7 +8,7 @@ run-all: update-quarto-theme check-all format-md build-all
 check-all: check-spelling check-urls
 
 # Run all build-related recipes
-build-all: build-contributors build-website build-readme
+build-all: build-contributors build-team-pics build-repo-listing build-website build-readme
 
 # List all TODO items in the repository
 list-todos:
@@ -49,6 +49,10 @@ format-md:
 # Build the repo listing files in `data/`
 build-repo-listing:
   bash ./tools/build-repo-listing.sh
+  
+# Re-build the team profile pics
+build-team-pics:
+  bash ./tools/get-github-avatars.sh
 
 # Re-build the README file from the Quarto version
 build-readme:
