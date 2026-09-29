@@ -1,0 +1,11 @@
+::: {layout-ncol="2"}
+<% for (const item of items) { %>
+<% let product_name=item.name.replace("seedcase-", "" ) %>
+
+::: landing-page-card
+[**`<%= item.name %>`**](<%- item.homepageUrl %>){.stretched-link}
+
+<%= item.description %>
+:::
+<% } %>
+:::
