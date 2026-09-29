@@ -23,8 +23,8 @@ listing:
 # Platform
 
 These are our [platform](https://en.wikipedia.org/wiki/Platform_engineering)
-tools and documentation. We've created these to help ourselves in our own work, but we also
-believe these tools and docs tools could help others as well!
+tools and documentation. We've created these to help ourselves in our own work,
+but we also believe these tools and docs tools could help others as well!
 
 ## Tools
 
