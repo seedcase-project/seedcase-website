@@ -22,6 +22,11 @@ listing:
 ::::: hero-text
 # Products
 
+These are our tools and website that we believe others could benefit from or
+use. We design and develop them with a stronger focus on external users, in
+comparison to how we design and develop our [platform tools and
+docs](platform.qmd).
+
 ## Tools
 
 ::::::: {#product-tools}
