@@ -5,8 +5,6 @@ format:
     css: styles.css
 ---
 
-## What motivated the Seedcase Project
-
 In clinical and health research, especially for small- to mid-sized research
 groups, funding for building modern, open-source software infrastructures for
 managing and using data is limited. This lack of funding has naturally led to
