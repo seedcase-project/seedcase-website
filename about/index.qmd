@@ -39,6 +39,8 @@ Regular collaborator\
 [<i class="fa-brands fa-github"></i>](https://github.com/danmazjen)  [<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/danmazjen/)](images/danmazjen.jpg){.profile-picture}
 :::
 
+## What motivated the Seedcase Project
+
 In clinical and health research, especially for small- to mid-sized research
 groups, funding for building modern, open-source software infrastructures for
 managing and using data is limited. This lack of funding has naturally led to
