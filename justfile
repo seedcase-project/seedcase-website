@@ -38,7 +38,8 @@ check-urls:
   lychee . \
     --verbose \
     --extensions md,qmd \
-    --exclude-path "_badges.qmd"
+    --exclude-path "_badges.qmd" \
+    --exclude "linkedin\.com"
 
 # Format Markdown files
 format-md:
