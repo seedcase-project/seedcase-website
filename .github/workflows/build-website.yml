@@ -36,6 +36,8 @@ jobs:
 
       - name: Run repo listing script
         run: bash ./tools/build-repo-listing.sh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
