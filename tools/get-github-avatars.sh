@@ -11,7 +11,7 @@ IFS=$'\n\t'
 # This script is used to download the profile pictures (avatars) of our team members,
 # to be used on our About page. It saves the images in the "about/images/" directory.
 
-USERNAMES=("lwjohnst86" "k-beicher" "martonvago" "signekb" "joelostblom" "danmazjen")
+USERNAMES=("lwjohnst86" "k-beicher" "fruvago" "signekb" "joelostblom" "danmazjen")
 SAVE_DIR="./about/images"
 
 for USER in "${USERNAMES[@]}"; do

@@ -21,9 +21,9 @@ Architect](images/k-beicher.jpg){.profile-picture}](https://github.com/k-beicher
 Team
 Leader](images/lwjohnst86.jpg){.profile-picture}](https://github.com/lwjohnst86)
 
-[![Marton Vago\
+[![Fruzsina Vago\
 Research Software
-Engineer](images/martonvago.jpg){.profile-picture}](https://github.com/martonvago)
+Engineer](images/fruvago.jpg){.profile-picture}](https://github.com/fruvago)
 
 [![Signe Kirk Brødbæk\
 Research Software
