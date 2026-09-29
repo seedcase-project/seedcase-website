@@ -13,31 +13,31 @@ Denmark, and is funded by a five year grant from the [Novo Nordisk
 Foundation](/index.qmd#acknowledgements).
 
 ::: {layout-ncol="2"}
-[![Kristiane Beicher\
+![Kristiane Beicher\
 Data
-Architect](images/k-beicher.jpg){.profile-picture}](https://github.com/k-beicher)
+Architect\
+[<i class="fa-brands fa-github"></i>](https://github.com/k-beicher)](images/k-beicher.jpg){.profile-picture}
 
-[![Luke W. Johnston\
-Team
-Leader](images/lwjohnst86.jpg){.profile-picture}](https://github.com/lwjohnst86)
+![Luke W. Johnston\
+Team Leader\
+[<i class="fa-brands fa-github"></i>](https://github.com/lwjohnst86)](images/lwjohnst86.jpg){.profile-picture}
 
-[![Fruzsina Vago\
-Research Software
-Engineer](images/fruvago.jpg){.profile-picture}](https://github.com/fruvago)
+![Fruzsina Vago\
+Research Software Engineer\
+[<i class="fa-brands fa-github"></i>](https://github.com/fruvago)](images/fruvago.jpg){.profile-picture}
 
-[![Signe Kirk Brødbæk\
-Research Software
-Engineer](images/signekb.jpg){.profile-picture}](https://github.com/signekb)
+![Signe Kirk Brødbæk\
+Research Software Engineer\
+[<i class="fa-brands fa-github"></i>](https://github.com/signekb)](images/signekb.jpg){.profile-picture}
 
-[![Joel Ostblom\
-Consultant](images/joelostblom.jpg){.profile-picture}](https://github.com/joelostblom)
+![Joel Ostblom\
+Consultant\
+[<i class="fa-brands fa-github"></i>](https://github.com/joelostblom)](images/joelostblom.jpg){.profile-picture}
 
-[![Daniel Mazhari-Jensen\
-Regular
-collaborator](images/danmazjen.jpg){.profile-picture}](https://github.com/danmazjen)
+![Daniel Mazhari-Jensen\
+Regular collaborator\
+[<i class="fa-brands fa-github"></i>](https://github.com/danmazjen)](images/danmazjen.jpg){.profile-picture}
 :::
-
-## What motivated the Seedcase Project
 
 In clinical and health research, especially for small- to mid-sized research
 groups, funding for building modern, open-source software infrastructures for
