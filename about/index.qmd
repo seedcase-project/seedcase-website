@@ -20,7 +20,7 @@ Architect\
 
 ![Luke W. Johnston\
 Team Leader\
-[<i class="fa-brands fa-github"></i>](https://github.com/lwjohnst86)](images/lwjohnst86.jpg){.profile-picture}
+[<i class="fa-brands fa-github"></i>](https://github.com/lwjohnst86) [<i class="fa-solid fa-globe"></i>](https://lukewjohnston.com/)](images/lwjohnst86.jpg){.profile-picture}
 
 ![Fruzsina Vago\
 Research Software Engineer\
@@ -32,7 +32,7 @@ Research Software Engineer\
 
 ![Joel Ostblom\
 Consultant\
-[<i class="fa-brands fa-github"></i>](https://github.com/joelostblom)](images/joelostblom.jpg){.profile-picture}
+[<i class="fa-brands fa-github"></i>](https://github.com/joelostblom) [<i class="fa-solid fa-globe"></i>](https://joelostblom.com/)](images/joelostblom.jpg){.profile-picture}
 
 ![Daniel Mazhari-Jensen\
 Regular collaborator\
