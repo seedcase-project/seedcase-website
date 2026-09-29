@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # Every 7 days at 3.30 hr (some time at night)
+    - cron: "30 3 */7 * *"
 
 # Limit token permissions for security
 permissions: read-all
@@ -26,6 +29,13 @@ jobs:
 
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+        # To process and run the bash script
+      - name: Install yq
+        run: sudo snap install yq
+
+      - name: Run repo listing script
+        run: bash ./tools/build-repo-listing.sh
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
