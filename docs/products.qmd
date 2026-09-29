@@ -1,0 +1,40 @@
+---
+toc: false
+page-layout: custom
+format:
+  seedcase-theme-html:
+    theme:
+      - brand
+      - ../custom-styles.scss
+listing:
+  - id: "product-tools"
+    contents: ../data/product-tools.yaml
+    sort: name
+    template: ../includes/cards.md.ejs
+
+  - id: "product-docs"
+    contents: ../data/product-docs.yaml
+    sort: name
+    template: ../includes/cards.md.ejs
+---
+
+::: landing-page-block
+::::: hero-text
+# Products
+
+These are our tools and website that we believe others could benefit from or
+use. We design and develop them with a stronger focus on external users, in
+comparison to how we design and develop our [platform tools and
+docs](platform.qmd).
+
+## Tools
+
+::::::: {#product-tools}
+:::::::
+
+## Docs
+
+::::::: {#product-docs}
+:::::::
+:::::
+:::

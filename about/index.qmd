@@ -7,10 +7,10 @@ format:
 
 ## Who we are
 
-The Seedcase Project is developed by the four of us at the Steno Diabetes Center
-Aarhus and Department of Clinical Medicine at Aarhus University in Aarhus,
-Denmark, and is funded by a five year grant from the [Novo Nordisk
-Foundation](/index.qmd#acknowledgements).
+The Seedcase Project is developed by a group at the Steno Diabetes Center Aarhus
+and Department of Clinical Medicine at Aarhus University in Aarhus, Denmark, and
+a couple of external collaborators. The project is funded by a five year grant
+from the [Novo Nordisk Foundation](/index.qmd#acknowledgements).
 
 ::: {layout-ncol="2"}
 ![Kristiane Beicher\
