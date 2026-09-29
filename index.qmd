@@ -46,6 +46,9 @@ Our strategy to work towards this vision is to:
   packages.
 - Upskill and empower researchers and data owners through mentoring, training,
   guides, and tutorials.
+
+We divide our work into [products](/docs/products.qmd) and
+[platform](/docs/platform.qmd), both including tools and documentation.
 :::::::
 :::::
 :::
