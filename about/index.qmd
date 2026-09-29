@@ -16,11 +16,11 @@ Foundation](/index.qmd#acknowledgements).
 ![Kristiane Beicher\
 Data
 Architect\
-[<i class="fa-brands fa-github"></i>](https://github.com/k-beicher)](images/k-beicher.jpg){.profile-picture}
+[<i class="fa-brands fa-github"></i>](https://github.com/k-beicher) [<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/k-beicher/)](images/k-beicher.jpg){.profile-picture}
 
 ![Luke W. Johnston\
 Team Leader\
-[<i class="fa-brands fa-github"></i>](https://github.com/lwjohnst86) [<i class="fa-solid fa-globe"></i>](https://lukewjohnston.com/)](images/lwjohnst86.jpg){.profile-picture}
+[<i class="fa-brands fa-github"></i>](https://github.com/lwjohnst86) [<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/lwjohnst/) [<i class="fa-solid fa-globe"></i>](https://lukewjohnston.com/)](images/lwjohnst86.jpg){.profile-picture}
 
 ![Fruzsina Vago\
 Research Software Engineer\
@@ -28,15 +28,15 @@ Research Software Engineer\
 
 ![Signe Kirk Brødbæk\
 Research Software Engineer\
-[<i class="fa-brands fa-github"></i>](https://github.com/signekb)](images/signekb.jpg){.profile-picture}
+[<i class="fa-brands fa-github"></i>](https://github.com/signekb) [<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/signekb/)](images/signekb.jpg){.profile-picture}
 
 ![Joel Ostblom\
 Consultant\
-[<i class="fa-brands fa-github"></i>](https://github.com/joelostblom) [<i class="fa-solid fa-globe"></i>](https://joelostblom.com/)](images/joelostblom.jpg){.profile-picture}
+[<i class="fa-brands fa-github"></i>](https://github.com/joelostblom) [<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/joelostblom/) [<i class="fa-solid fa-globe"></i>](https://joelostblom.com/)](images/joelostblom.jpg){.profile-picture}
 
 ![Daniel Mazhari-Jensen\
 Regular collaborator\
-[<i class="fa-brands fa-github"></i>](https://github.com/danmazjen)](images/danmazjen.jpg){.profile-picture}
+[<i class="fa-brands fa-github"></i>](https://github.com/danmazjen)  [<i class="fa-brands fa-linkedin"></i>](https://www.linkedin.com/in/danmazjen/)](images/danmazjen.jpg){.profile-picture}
 :::
 
 In clinical and health research, especially for small- to mid-sized research
