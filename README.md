@@ -73,9 +73,9 @@ By contributing to this project, you agree to abide by its terms.
 The following people have contributed to this project by submitting pull
 requests :tada:
 
+[@fruvago](https://github.com/fruvago),
 [@K-Beicher](https://github.com/K-Beicher),
 [@lwjohnst86](https://github.com/lwjohnst86),
-[@martonvago](https://github.com/martonvago),
 [@namannimmo10](https://github.com/namannimmo10),
 [@rqding](https://github.com/rqding),
 [@signekb](https://github.com/signekb)
