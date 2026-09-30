@@ -3,9 +3,22 @@
   border-radius: 50%;
   object-fit: cover;
   width: 200px;
-  height: 200px;
+  aspect-ratio: 1 / 1;
 }
 
 figcaption {
   text-align: center;
 }
+
+/* 
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
