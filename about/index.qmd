@@ -40,25 +40,31 @@ from the [Novo Nordisk Foundation](/index.qmd#acknowledgements).
 
 ::: {layout-ncol="3"}
 ![**Kristiane Beicher**\
-Data
-Architect\
-[{{< fa brands github >}}](https://github.com/k-beicher) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/k-beicher/)](images/k-beicher.jpg){.profile-picture}
+Data Architect\
+[{{< fa brands github >}}](https://github.com/k-beicher)
+[{{< fa brands linkedin >}}](https://www.linkedin.com/in/k-beicher/)](images/k-beicher.jpg){.profile-picture}
 
 ![**Signe Kirk Brødbæk**\
 Research Software Engineer\
-[{{< fa brands github >}}](https://github.com/signekb) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/signekb/)](images/signekb.jpg){.profile-picture}
+[{{< fa brands github >}}](https://github.com/signekb)
+[{{< fa brands linkedin >}}](https://www.linkedin.com/in/signekb/)](images/signekb.jpg){.profile-picture}
 
 ![**Luke W. Johnston**\
 Team Leader\
-[{{< fa brands github >}}](https://github.com/lwjohnst86) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/lwjohnst/) [{{< fa solid globe >}}](https://lukewjohnston.com/)](images/lwjohnst86.jpg){.profile-picture}
+[{{< fa brands github >}}](https://github.com/lwjohnst86)
+[{{< fa brands linkedin >}}](https://www.linkedin.com/in/lwjohnst/)
+[{{< fa solid globe >}}](https://lukewjohnston.com/)](images/lwjohnst86.jpg){.profile-picture}
 
 ![**Daniel Mazhari-Jensen**\
 Regular collaborator\
-[{{< fa brands github >}}](https://github.com/danmazjen)  [{{< fa brands linkedin >}}](https://www.linkedin.com/in/danmazjen/)](images/danmazjen.jpg){.profile-picture}
+[{{< fa brands github >}}](https://github.com/danmazjen)
+[{{< fa brands linkedin >}}](https://www.linkedin.com/in/danmazjen/)](images/danmazjen.jpg){.profile-picture}
 
 ![**Joel Ostblom**\
 Consultant\
-[{{< fa brands github >}}](https://github.com/joelostblom) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/joelostblom/) [{{< fa solid globe >}}](https://joelostblom.com/)](images/joelostblom.jpg){.profile-picture}
+[{{< fa brands github >}}](https://github.com/joelostblom)
+[{{< fa brands linkedin >}}](https://www.linkedin.com/in/joelostblom/)
+[{{< fa solid globe >}}](https://joelostblom.com/)](images/joelostblom.jpg){.profile-picture}
 
 ![**Fruzsina Vago**\
 Research Software Engineer\
