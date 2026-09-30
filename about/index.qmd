@@ -38,7 +38,7 @@ and Department of Clinical Medicine at Aarhus University in Aarhus, Denmark, and
 a couple of external collaborators. The project is funded by a five year grant
 from the [Novo Nordisk Foundation](/index.qmd#acknowledgements).
 
-::: {layout-ncol="2"}
+::: {layout-ncol="3"}
 ![**Kristiane Beicher**\
 Data
 Architect\
