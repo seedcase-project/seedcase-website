@@ -68,7 +68,7 @@ and an API reference.
   |   {{< var status.ongoing >}}   | [`seedcase-soil`](https://github.com/seedcase-project/seedcase-soil): A shared foundation for building Seedcase Python packages                       |
   |   {{< var status.planned >}}   | `seedcase-shears`: A toolkit for processing raw data into [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrames](https://pola.rs/)   |
   |   {{< var status.planned >}}   | `seedcase`: A Cargo- and uv-inspired package and project manager for data                                                                             |
-  |  {{< var status.potential >}}  | `seedcase-taxonomy`: Inspect a Seedcase data package against the specification                                                                        |
+  |  {{< var status.potential >}}  | `seedcase-taxonomy`: Inspect a data package against the Seedcase specification                                                                        |
   |  {{< var status.potential >}}  | `seedcase-graft`: Convert between different metadata formats                                                                                          |
   |  {{< var status.potential >}}  | `seedcase-clone`: Create fake data from metadata                                                                                                      |
   |  {{< var status.potential >}}  | `seedcase-nursery`: Track and manage data package requests                                                                                            |
