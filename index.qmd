@@ -21,7 +21,8 @@ font." width="250px"}
 
 ::::::::: {style="margin-top: 50px;"}
 [Get started with our
-guide](https://data-pkg-guide.seedcase-project.org){.btn-primary .btn} [Explore
+guide](https://data-pkg-guide.seedcase-project.org){.btn-primary
+.btn} [Explore
 our tools and docs](/docs/products.qmd){.btn-secondary .btn}
 :::::::::
 :::::::
