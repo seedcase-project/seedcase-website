@@ -70,6 +70,7 @@ and an API reference.
   |   {{< var status.planned >}}   | `seedcase`: A Cargo- and uv-inspired package and project manager for data                                                                             |
   |  {{< var status.potential >}}  | `seedcase-taxonomy`: Inspect a Seedcase data package against the specification                                                                        |
   |  {{< var status.potential >}}  | `seedcase-graft`: Convert between different metadata formats                                                                                          |
+  |  {{< var status.potential >}}  | `seedcase-clone`: Create fake data from metadata                                                                                                      |
   |  {{< var status.potential >}}  | `seedcase-nursery`: Track and manage data package requests                                                                                            |
 
   : Status of current and future software products.
