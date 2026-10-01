@@ -58,16 +58,20 @@ and an API reference.
 ::: panel-tabset
 #### Software
 
-  | Status                     | Software                                                                                                                               |
-  | :------------------------: | :------------------------------------------------------------------------------------------------------------------------------------- |
-  |  {{< var status.done >}}   | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow organised and FAIR data                                 |
-  |  {{< var status.done >}}   | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata      |
-  |  {{< var status.done >}}   | [`seedcase-flower`](https://github.com/seedcase-project/seedcase-flower): Turn your metadata into human-readable documentation         |
-  |   {{< var status.wip >}}   | [`zen-do`](https://github.com/seedcase-project/zen-do): Command line utilities for working with Zenodo                                 |
-  |   {{< var status.wip >}}   | [`seedcase-propagate`](https://github.com/seedcase-project/seedcase-propagate): Submit requests for Data Package data                  |
-  | {{< var status.ongoing >}} | [`seedcase-soil`](https://github.com/seedcase-project/seedcase-soil): A shared foundation for building Seedcase Python packages        |
-  | {{< var status.planned >}} | `seedcase-shears`: Processing raw data into a [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrame](https://pola.rs/) |
-  | {{< var status.planned >}} | `seedcase-garden`: Track and manage Data Package requests                                                                              |
+  | Status                         | Software                                                                                                                                              |
+  | :----------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+  |    {{< var status.done >}}     | [`seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Grow organised and FAIR data                                                |
+  |    {{< var status.done >}}     | [`check-datapackage`](https://github.com/seedcase-project/check-datapackage): Ensure the compliance of your Data Package metadata                     |
+  |    {{< var status.done >}}     | [`seedcase-flower`](https://github.com/seedcase-project/seedcase-flower): Turn your metadata into human-readable documentation                        |
+  |     {{< var status.wip >}}     | [`zen-do`](https://github.com/seedcase-project/zen-do): Zenodo tasks from the command-line                                                            |
+  |     {{< var status.wip >}}     | [`seedcase-propagate`](https://github.com/seedcase-project/seedcase-propagate): Submit requests for Data Package data                                 |
+  |   {{< var status.ongoing >}}   | [`seedcase-soil`](https://github.com/seedcase-project/seedcase-soil): A shared foundation for building Seedcase Python packages                       |
+  |   {{< var status.planned >}}   | `seedcase-shears`: A toolkit for processing raw data into [Tidy](https://vita.had.co.nz/papers/tidy-data.pdf) [Polars DataFrames](https://pola.rs/)   |
+  |   {{< var status.planned >}}   | `seedcase`: A Cargo- and uv-inspired package and project manager for data                                                                             |
+  |  {{< var status.potential >}}  | `seedcase-taxonomy`: Inspect a data package against the Seedcase specification                                                                        |
+  |  {{< var status.potential >}}  | `seedcase-graft`: Convert between different metadata formats                                                                                          |
+  |  {{< var status.potential >}}  | `seedcase-clone`: Create fake data from metadata                                                                                                      |
+  |  {{< var status.potential >}}  | `seedcase-nursery`: Track and manage data package requests                                                                                            |
 
   : Status of current and future software products.
 
